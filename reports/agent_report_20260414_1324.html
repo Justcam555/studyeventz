@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AU University Agents — Social Media Report</title>
+<style>
+  :root {
+    --primary: #003366;
+    --accent:  #F4A300;
+    --light:   #F0F4F8;
+    --text:    #1A1A2E;
+    --border:  #CBD5E1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #F8FAFC; color: var(--text); }
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, #005A9E 100%);
+    color: #fff; padding: 2.5rem 3rem;
+  }
+  .header h1 { font-size: 2rem; margin-bottom: .5rem; }
+  .header p { opacity: .8; font-size: .95rem; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 2rem 2.5rem; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+  .kpi-card {
+    background: #fff; border-radius: 12px; padding: 1.5rem 1rem;
+    text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    border-top: 4px solid var(--accent);
+  }
+  .kpi-card .value { font-size: 2.2rem; font-weight: 700; color: var(--primary); }
+  .kpi-card .label { font-size: .8rem; color: #64748B; margin-top: .3rem; text-transform: uppercase; letter-spacing: .05em; }
+  .section { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .section h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--light); }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th { background: var(--primary); color: #fff; padding: .6rem .8rem; text-align: left; font-weight: 600; }
+  td { padding: .5rem .8rem; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: var(--light); }
+  tr:hover td { background: #E8F0FE; }
+  .bar-wrap { display: flex; align-items: center; gap: .5rem; }
+  .bar { height: 14px; background: var(--accent); border-radius: 3px; min-width: 2px; transition: width .3s; }
+  .bar-val { font-size: .8rem; color: #64748B; white-space: nowrap; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: .75rem; font-weight: 600; }
+  .badge-green { background: #D1FAE5; color: #065F46; }
+  .badge-blue  { background: #DBEAFE; color: #1E40AF; }
+  .badge-amber { background: #FEF3C7; color: #92400E; }
+  .social-card {
+    border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem;
+    margin-bottom: .8rem; position: relative;
+  }
+  .social-card .platform { font-size: .75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: .4rem; }
+  .social-card p { line-height: 1.6; font-size: .9rem; }
+  .social-card .hashtags { margin-top: .5rem; color: #2563EB; font-size: .85rem; }
+  .copy-btn {
+    position: absolute; top: .8rem; right: .8rem;
+    background: var(--light); border: 1px solid var(--border);
+    border-radius: 6px; padding: 3px 10px; font-size: .75rem;
+    cursor: pointer; color: var(--text);
+  }
+  .copy-btn:hover { background: var(--border); }
+  footer { text-align: center; padding: 2rem; color: #94A3B8; font-size: .8rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎓 Australian University Agent Network</h1>
+  <p>Social Media Intelligence Report &nbsp;·&nbsp; Generated 2026-04-14 13:24
+  
+  </p>
+</div>
+
+<div class="container">
+
+  <!-- KPIs -->
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="value">1,087</div><div class="label">Total Agents</div></div>
+    <div class="kpi-card"><div class="value">18</div><div class="label">Countries</div></div>
+    <div class="kpi-card"><div class="value">11</div><div class="label">Universities</div></div>
+    <div class="kpi-card"><div class="value">1,068</div><div class="label">With Email</div></div>
+    <div class="kpi-card"><div class="value">2</div><div class="label">With Website</div></div>
+    <div class="kpi-card"><div class="value">98%</div><div class="label">Email Coverage</div></div>
+  </div>
+
+  <!-- By Country -->
+  <div class="section">
+    <h2>📍 Agent Distribution by Country (Top 30)</h2>
+    <table>
+      <thead><tr><th>Country</th><th>Agents</th><th>Universities</th><th>Volume</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Unknown</td>
+          <td><strong>1069</strong></td>
+          <td>5</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:200px"></div><span class="bar-val">1069</span></div></td>
+        </tr>
+        <tr>
+          <td>Who We Are</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>What to Study</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Student exchange enquiries</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Services</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Research at CQU</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Other options</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>International students</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Information for</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Information For</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Information About</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Industry</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>How We Operate</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Follow</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Directories</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Contact an international agent</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Connect With Us</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Community</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+        <tr>
+          <td>Apply to VU</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:0px"></div><span class="bar-val">1</span></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- By University -->
+  <div class="section">
+    <h2>🏛️ Agent Count by University</h2>
+    <table>
+      <thead><tr><th>University</th><th>Agents</th><th>Countries</th><th>Coverage</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Australian National University</td>
+          <td><strong>1053</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>CQUniversity Australia</td>
+          <td><strong>10</strong></td>
+          <td>10</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Canberra</td>
+          <td><strong>8</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Charles Darwin University</td>
+          <td><strong>6</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Victoria University</td>
+          <td><strong>3</strong></td>
+          <td>3</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Flinders University</td>
+          <td><strong>2</strong></td>
+          <td>2</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Australian Catholic University</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Sydney</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>UNSW Sydney</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Swinburne University of Technology</td>
+          <td><strong>1</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Western Australia</td>
+          <td><strong>1</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Notre Dame Australia</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Charles Sturt University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Macquarie University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Southern Cross University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of New England</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Newcastle</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Technology Sydney</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Wollongong</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Western Sydney University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Bond University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Griffith University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>James Cook University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Queensland University of Technology</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Queensland</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Southern Queensland / UniSQ</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Adelaide University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Tasmania</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Deakin University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Federation University Australia</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>La Trobe University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Monash University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>RMIT University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Melbourne</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Curtin University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Edith Cowan University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Murdoch University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Torrens University Australia</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of the Sunshine Coast / UniSC</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Avondale University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Batchelor Institute of Indigenous Tertiary Education</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Divinity</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Multi-University Agents -->
+  <div class="section">
+    <h2>🔗 Agents Representing Multiple Universities</h2>
+    <p style="font-size:.85rem;color:#64748B;margin-bottom:1rem;">
+      These agencies are authorised by more than one Australian university — high-value partnership targets.
+    </p>
+    <table>
+      <thead><tr><th>Agency</th><th>Unis</th><th>Countries</th><th>Email</th><th>Website</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td><strong>Unknown</strong></td>
+          <td><span class="badge badge-blue">6</span></td>
+          <td>18</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Social Media Content Ideas -->
+  <div class="section">
+    <h2>📱 Social Media Content Ideas</h2>
+    
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">LinkedIn</div>
+          <p>Australia's universities have a global network of 1,087 authorised education agents across 18 countries. These trusted partners are the bridge connecting international students with world-class Australian education. From Unknown, Who We Are, What to Study, Student exchange enquiries, Services and beyond — the reach is remarkable. 🌏</p>
+          <div class="hashtags">#StudyInAustralia #InternationalEducation #EducationAgents #Australia</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Twitter / X</div>
+          <p>Did you know? Australian universities work with 1,087 authorised education agents in 18 countries 📊 That's a massive global network helping students find the right study pathway 🇦🇺</p>
+          <div class="hashtags">#StudyInAustralia #HigherEducation #InternationalStudents</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Instagram Caption</div>
+          <p>Behind every international student's journey to Australia is an authorised education agent ✈️🎓 Our analysis of Australia's 11 universities reveals a network of 1,087 agents spanning 18 countries worldwide. Whether you're in Unknown, Europe, or the Americas — there's a trusted expert near you to guide your study abroad adventure.</p>
+          <div class="hashtags">#StudyAbroad #Australia #StudyInAustralia #InternationalStudent #UniversityLife #AustralianEducation #GlobalEducation</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Facebook</div>
+          <p>Thinking about studying in Australia? 🦘<br><br>Australia's top universities maintain a carefully vetted network of 1,087 authorised education agents across 18 countries — making quality guidance accessible wherever you are.<br><br>These agents are approved directly by universities, giving you peace of mind that you're getting genuine, accurate advice about your study options.<br><br>Reach out to find an authorised agent near you! 👇</p>
+          <div class="hashtags">#StudyInAustralia #AustralianUniversities #InternationalEducation</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">LinkedIn (Data Insight)</div>
+          <p>📊 Agent Network Data Insight<br><br>Our analysis of publicly listed education agents across Australian universities reveals:<br>• 1,087 total authorised agents<br>• 18 countries represented<br>• 98% of agents have publicly listed contact details<br><br>For institutions looking to expand international recruitment, the agent channel remains the dominant pathway for international student acquisition in Australian higher education.</p>
+          <div class="hashtags">#HigherEducation #InternationalRecruitment #EdTech #StudentRecruitment #Australia</div>
+        </div>
+  </div>
+
+</div>
+
+<footer>Australian University Agent Database &nbsp;·&nbsp; 2026-04-14 13:24</footer>
+
+<script>
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.social-card');
+    const text = card.querySelector('p').innerText + '\n' + (card.querySelector('.hashtags')?.innerText || '');
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 1500);
+    });
+  });
+});
+</script>
+</body>
+</html>

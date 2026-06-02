@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AU University Agents — Social Media Report</title>
+<style>
+  :root {
+    --primary: #003366;
+    --accent:  #F4A300;
+    --light:   #F0F4F8;
+    --text:    #1A1A2E;
+    --border:  #CBD5E1;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #F8FAFC; color: var(--text); }
+  .header {
+    background: linear-gradient(135deg, var(--primary) 0%, #005A9E 100%);
+    color: #fff; padding: 2.5rem 3rem;
+  }
+  .header h1 { font-size: 2rem; margin-bottom: .5rem; }
+  .header p { opacity: .8; font-size: .95rem; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 2rem 2.5rem; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+  .kpi-card {
+    background: #fff; border-radius: 12px; padding: 1.5rem 1rem;
+    text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    border-top: 4px solid var(--accent);
+  }
+  .kpi-card .value { font-size: 2.2rem; font-weight: 700; color: var(--primary); }
+  .kpi-card .label { font-size: .8rem; color: #64748B; margin-top: .3rem; text-transform: uppercase; letter-spacing: .05em; }
+  .section { background: #fff; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .section h2 { font-size: 1.1rem; color: var(--primary); margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--light); }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th { background: var(--primary); color: #fff; padding: .6rem .8rem; text-align: left; font-weight: 600; }
+  td { padding: .5rem .8rem; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: var(--light); }
+  tr:hover td { background: #E8F0FE; }
+  .bar-wrap { display: flex; align-items: center; gap: .5rem; }
+  .bar { height: 14px; background: var(--accent); border-radius: 3px; min-width: 2px; transition: width .3s; }
+  .bar-val { font-size: .8rem; color: #64748B; white-space: nowrap; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: .75rem; font-weight: 600; }
+  .badge-green { background: #D1FAE5; color: #065F46; }
+  .badge-blue  { background: #DBEAFE; color: #1E40AF; }
+  .badge-amber { background: #FEF3C7; color: #92400E; }
+  .social-card {
+    border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem;
+    margin-bottom: .8rem; position: relative;
+  }
+  .social-card .platform { font-size: .75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; margin-bottom: .4rem; }
+  .social-card p { line-height: 1.6; font-size: .9rem; }
+  .social-card .hashtags { margin-top: .5rem; color: #2563EB; font-size: .85rem; }
+  .copy-btn {
+    position: absolute; top: .8rem; right: .8rem;
+    background: var(--light); border: 1px solid var(--border);
+    border-radius: 6px; padding: 3px 10px; font-size: .75rem;
+    cursor: pointer; color: var(--text);
+  }
+  .copy-btn:hover { background: var(--border); }
+  footer { text-align: center; padding: 2rem; color: #94A3B8; font-size: .8rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎓 Australian University Agent Network</h1>
+  <p>Social Media Intelligence Report &nbsp;·&nbsp; Generated 2026-04-14 13:45
+  
+  </p>
+</div>
+
+<div class="container">
+
+  <!-- KPIs -->
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="value">11,494</div><div class="label">Total Agents</div></div>
+    <div class="kpi-card"><div class="value">164</div><div class="label">Countries</div></div>
+    <div class="kpi-card"><div class="value">33</div><div class="label">Universities</div></div>
+    <div class="kpi-card"><div class="value">11,475</div><div class="label">With Email</div></div>
+    <div class="kpi-card"><div class="value">10,409</div><div class="label">With Website</div></div>
+    <div class="kpi-card"><div class="value">100%</div><div class="label">Email Coverage</div></div>
+  </div>
+
+  <!-- By Country -->
+  <div class="section">
+    <h2>📍 Agent Distribution by Country (Top 30)</h2>
+    <table>
+      <thead><tr><th>Country</th><th>Agents</th><th>Universities</th><th>Volume</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Unknown</td>
+          <td><strong>1069</strong></td>
+          <td>5</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:200px"></div><span class="bar-val">1069</span></div></td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td><strong>877</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:164px"></div><span class="bar-val">877</span></div></td>
+        </tr>
+        <tr>
+          <td>Australia</td>
+          <td><strong>875</strong></td>
+          <td>25</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:163px"></div><span class="bar-val">875</span></div></td>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td><strong>637</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:119px"></div><span class="bar-val">637</span></div></td>
+        </tr>
+        <tr>
+          <td>Nepal</td>
+          <td><strong>503</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:94px"></div><span class="bar-val">503</span></div></td>
+        </tr>
+        <tr>
+          <td>Sri Lanka</td>
+          <td><strong>483</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:90px"></div><span class="bar-val">483</span></div></td>
+        </tr>
+        <tr>
+          <td>Vietnam</td>
+          <td><strong>428</strong></td>
+          <td>28</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:80px"></div><span class="bar-val">428</span></div></td>
+        </tr>
+        <tr>
+          <td>Bangladesh</td>
+          <td><strong>387</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:72px"></div><span class="bar-val">387</span></div></td>
+        </tr>
+        <tr>
+          <td>Indonesia</td>
+          <td><strong>363</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:67px"></div><span class="bar-val">363</span></div></td>
+        </tr>
+        <tr>
+          <td>Malaysia</td>
+          <td><strong>349</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:65px"></div><span class="bar-val">349</span></div></td>
+        </tr>
+        <tr>
+          <td>Pakistan</td>
+          <td><strong>274</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:51px"></div><span class="bar-val">274</span></div></td>
+        </tr>
+        <tr>
+          <td>Thailand</td>
+          <td><strong>263</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:49px"></div><span class="bar-val">263</span></div></td>
+        </tr>
+        <tr>
+          <td>Hong Kong</td>
+          <td><strong>249</strong></td>
+          <td>23</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:46px"></div><span class="bar-val">249</span></div></td>
+        </tr>
+        <tr>
+          <td>Kenya</td>
+          <td><strong>199</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:37px"></div><span class="bar-val">199</span></div></td>
+        </tr>
+        <tr>
+          <td>Singapore</td>
+          <td><strong>198</strong></td>
+          <td>28</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:37px"></div><span class="bar-val">198</span></div></td>
+        </tr>
+        <tr>
+          <td>Nigeria</td>
+          <td><strong>185</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:34px"></div><span class="bar-val">185</span></div></td>
+        </tr>
+        <tr>
+          <td>Saudi Arabia</td>
+          <td><strong>177</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:33px"></div><span class="bar-val">177</span></div></td>
+        </tr>
+        <tr>
+          <td>Colombia</td>
+          <td><strong>177</strong></td>
+          <td>29</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:33px"></div><span class="bar-val">177</span></div></td>
+        </tr>
+        <tr>
+          <td>Philippines</td>
+          <td><strong>153</strong></td>
+          <td>18</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:28px"></div><span class="bar-val">153</span></div></td>
+        </tr>
+        <tr>
+          <td>United Arab Emirates</td>
+          <td><strong>140</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:26px"></div><span class="bar-val">140</span></div></td>
+        </tr>
+        <tr>
+          <td>Iran</td>
+          <td><strong>126</strong></td>
+          <td>29</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:23px"></div><span class="bar-val">126</span></div></td>
+        </tr>
+        <tr>
+          <td>Bhutan</td>
+          <td><strong>126</strong></td>
+          <td>29</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:23px"></div><span class="bar-val">126</span></div></td>
+        </tr>
+        <tr>
+          <td>Taiwan</td>
+          <td><strong>119</strong></td>
+          <td>16</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:22px"></div><span class="bar-val">119</span></div></td>
+        </tr>
+        <tr>
+          <td>Brazil</td>
+          <td><strong>114</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:21px"></div><span class="bar-val">114</span></div></td>
+        </tr>
+        <tr>
+          <td>Cambodia</td>
+          <td><strong>105</strong></td>
+          <td>28</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:19px"></div><span class="bar-val">105</span></div></td>
+        </tr>
+        <tr>
+          <td>South Korea</td>
+          <td><strong>103</strong></td>
+          <td>16</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:19px"></div><span class="bar-val">103</span></div></td>
+        </tr>
+        <tr>
+          <td>Turkey</td>
+          <td><strong>98</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:18px"></div><span class="bar-val">98</span></div></td>
+        </tr>
+        <tr>
+          <td>Mongolia</td>
+          <td><strong>96</strong></td>
+          <td>27</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:17px"></div><span class="bar-val">96</span></div></td>
+        </tr>
+        <tr>
+          <td>Mexico</td>
+          <td><strong>94</strong></td>
+          <td>30</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:17px"></div><span class="bar-val">94</span></div></td>
+        </tr>
+        <tr>
+          <td>United Kingdom</td>
+          <td><strong>89</strong></td>
+          <td>29</td>
+          <td><div class="bar-wrap"><div class="bar" style="width:16px"></div><span class="bar-val">89</span></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- By University -->
+  <div class="section">
+    <h2>🏛️ Agent Count by University</h2>
+    <table>
+      <thead><tr><th>University</th><th>Agents</th><th>Countries</th><th>Coverage</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Australian National University</td>
+          <td><strong>1053</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>La Trobe University</td>
+          <td><strong>516</strong></td>
+          <td>70</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Western Sydney University</td>
+          <td><strong>486</strong></td>
+          <td>68</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Deakin University</td>
+          <td><strong>457</strong></td>
+          <td>71</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Curtin University</td>
+          <td><strong>442</strong></td>
+          <td>79</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Tasmania</td>
+          <td><strong>421</strong></td>
+          <td>66</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>CQUniversity Australia</td>
+          <td><strong>417</strong></td>
+          <td>70</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Newcastle</td>
+          <td><strong>407</strong></td>
+          <td>68</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Torrens University Australia</td>
+          <td><strong>400</strong></td>
+          <td>88</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Canberra</td>
+          <td><strong>393</strong></td>
+          <td>66</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Charles Sturt University</td>
+          <td><strong>393</strong></td>
+          <td>57</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Edith Cowan University</td>
+          <td><strong>371</strong></td>
+          <td>83</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Queensland</td>
+          <td><strong>369</strong></td>
+          <td>115</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of New England</td>
+          <td><strong>365</strong></td>
+          <td>77</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Monash University</td>
+          <td><strong>364</strong></td>
+          <td>72</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Griffith University</td>
+          <td><strong>359</strong></td>
+          <td>79</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Victoria University</td>
+          <td><strong>354</strong></td>
+          <td>65</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>James Cook University</td>
+          <td><strong>326</strong></td>
+          <td>75</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Adelaide University</td>
+          <td><strong>320</strong></td>
+          <td>68</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Swinburne University of Technology</td>
+          <td><strong>315</strong></td>
+          <td>57</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Wollongong</td>
+          <td><strong>308</strong></td>
+          <td>67</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Southern Queensland / UniSQ</td>
+          <td><strong>301</strong></td>
+          <td>66</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>UNSW Sydney</td>
+          <td><strong>299</strong></td>
+          <td>76</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>RMIT University</td>
+          <td><strong>293</strong></td>
+          <td>64</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Macquarie University</td>
+          <td><strong>286</strong></td>
+          <td>72</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Bond University</td>
+          <td><strong>280</strong></td>
+          <td>64</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Sydney</td>
+          <td><strong>273</strong></td>
+          <td>82</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Murdoch University</td>
+          <td><strong>268</strong></td>
+          <td>67</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Flinders University</td>
+          <td><strong>258</strong></td>
+          <td>72</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Charles Darwin University</td>
+          <td><strong>238</strong></td>
+          <td>48</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Melbourne</td>
+          <td><strong>160</strong></td>
+          <td>70</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>Australian Catholic University</td>
+          <td><strong>1</strong></td>
+          <td>1</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Western Australia</td>
+          <td><strong>1</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-green">✓ Data</span></td>
+        </tr>
+        <tr>
+          <td>University of Notre Dame Australia</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Southern Cross University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Technology Sydney</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Queensland University of Technology</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Federation University Australia</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of the Sunshine Coast / UniSC</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Avondale University</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>Batchelor Institute of Indigenous Tertiary Education</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+        <tr>
+          <td>University of Divinity</td>
+          <td><strong>0</strong></td>
+          <td>0</td>
+          <td><span class="badge badge-amber">No data</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Multi-University Agents -->
+  <div class="section">
+    <h2>🔗 Agents Representing Multiple Universities</h2>
+    <p style="font-size:.85rem;color:#64748B;margin-bottom:1rem;">
+      These agencies are authorised by more than one Australian university — high-value partnership targets.
+    </p>
+    <table>
+      <thead><tr><th>Agency</th><th>Unis</th><th>Countries</th><th>Email</th><th>Website</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td><strong>IDP Education Limited</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>5</td>
+          <td><a href="mailto:maksadbek.f@idp.com">maksadbek.f@idp.com</a></td>
+          <td><a href="www.idp.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Pty Ltd</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>5</td>
+          <td><a href="mailto:Ahmed.Ibrahim@IDP.com">Ahmed.Ibrahim@IDP.com</a></td>
+          <td><a href="www.idp.com/egypt" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Ltd</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>3</td>
+          <td><a href="mailto:christine.faugoo@idp.com">christine.faugoo@idp.com</a></td>
+          <td><a href="https://www.idp.com/mauritius" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AusEd Consultants Services Sdn Bhd  - A member of AUG Global Network</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td><a href="mailto:hweeling.lee@augstudy.com">hweeling.lee@augstudy.com</a></td>
+          <td><a href="https://augstudy.com/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Pty</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td><a href="mailto:osama.fouad@idp.com">osama.fouad@idp.com</a></td>
+          <td><a href="https://www.idp.com/saudiarabia" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Services Co., Ltd.</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td><a href="mailto:don.sanmanee@idp.com">don.sanmanee@idp.com</a></td>
+          <td><a href="https://www.idp.com/thailand/office/hat-yai/idp-hat-yai/th-1004/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Indonesia</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td>—</td>
+          <td><a href="https://www.idp.com/indonesia/office/kota-batam/idp-batam-office/id-1018/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Pakistan</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td><a href="mailto:shiraz.rasheed@idp.com">shiraz.rasheed@idp.com</a></td>
+          <td><a href="https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Turkey</strong></td>
+          <td><span class="badge badge-blue">30</span></td>
+          <td>1</td>
+          <td><a href="mailto:caglayan.imirzalioglu@idp.com">caglayan.imirzalioglu@idp.com</a></td>
+          <td><a href="https://www.idp.com/turkey/education-counsellor-office-finder/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>12</td>
+          <td><a href="mailto:info.vkp@aeccglobal.com">info.vkp@aeccglobal.com</a></td>
+          <td><a href="www.aeccglobal.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Education International Cooperation (EIC) Group Limited</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>2</td>
+          <td><a href="mailto:pmc.anz@eiceducation.com.cn">pmc.anz@eiceducation.com.cn</a></td>
+          <td><a href="www.eic.org.cn" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Global Reach</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>2</td>
+          <td><a href="mailto:kaushik@globalreachonline.com">kaushik@globalreachonline.com</a></td>
+          <td><a href="https://www.globalreachonline.com/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AAET - StudyCo  (KSA)</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:claire@studyco.com">claire@studyco.com</a></td>
+          <td><a href="www.studyco.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AAET-StudyCo (UAE)</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:asif.javed@studyco.com">asif.javed@studyco.com</a></td>
+          <td><a href="www.studyco.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AAET-StudyCo - Oman</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:shikkha.kukrejaa@studyco.com">shikkha.kukrejaa@studyco.com</a></td>
+          <td><a href="www.studyco.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AusEd-UniEd International Pty Ltd Trading as AUG (Indonesia)</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:fifi.wiryawan@augstudy.com">fifi.wiryawan@augstudy.com</a></td>
+          <td><a href="https://augstudy.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Global Reach - Kathmandu</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:birtamode@globalreachonline.com">birtamode@globalreachonline.com</a></td>
+          <td><a href="https://www.globalreach.in/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education - Lebanon</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:bilal.chaghouri@idp.com">bilal.chaghouri@idp.com</a></td>
+          <td><a href="https://www.idp.com/middleeast" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP EDUCATION BANGLADESH PRIVATE LTD.</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:pankaj.talukder@idp.com">pankaj.talukder@idp.com</a></td>
+          <td><a href="https://www.idp.com/bangladesh" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education India Private Ltd</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:sandip.sarkar@idp.com">sandip.sarkar@idp.com</a></td>
+          <td><a href="https://www.idp.com/india/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Lanka Private Ltd</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:umanga.weebedde@idp.com">umanga.weebedde@idp.com</a></td>
+          <td><a href="https://www.idp.com/srilanka" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Student Services Nepal Private Limited</strong></td>
+          <td><span class="badge badge-blue">29</span></td>
+          <td>1</td>
+          <td><a href="mailto:info.kathmandu@idp.com">info.kathmandu@idp.com</a></td>
+          <td><a href="https://www.idp.com/nepal/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AusEd UniEd Consultants Services Pte Ltd - A member of AUG Global Network</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>2</td>
+          <td><a href="mailto:nick.lim@augstudy.com.sg">nick.lim@augstudy.com.sg</a></td>
+          <td><a href="https://augstudy.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>PFEC GLOBAL</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>2</td>
+          <td><a href="mailto:mahmuda@pfecglobal.com.au">mahmuda@pfecglobal.com.au</a></td>
+          <td><a href="https://pfecglobal.in/contact-us/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Global Reach - Dhaka</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:shamim@globalreachonline.com">shamim@globalreachonline.com</a></td>
+          <td><a href="https://globalreachonline.com/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Cambodia Ltd</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:channthou.vay@idp.com">channthou.vay@idp.com</a></td>
+          <td><a href="www.idp.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Pty Ltd (China)</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:sophy.li@idp.com">sophy.li@idp.com</a></td>
+          <td><a href="https://www.idp.cn/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Education Vietnam Co Ltd</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:thanhgiang.nguyen@idp.com">thanhgiang.nguyen@idp.com</a></td>
+          <td><a href="https://www.idp.com/vietnam" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Kuwait</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:info.kuwait@idp.com">info.kuwait@idp.com</a></td>
+          <td><a href="https://www.idp.com/middleeast" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Nigeria</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:olalekan.ogunniyi@idp.com">olalekan.ogunniyi@idp.com</a></td>
+          <td><a href="https://www.idp.com/nigeria/study-abroad-consultants" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Institut Ranke-Heinemann</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:info@ranke-heinemann.de">info@ranke-heinemann.de</a></td>
+          <td><a href="www.ranke-heinemann.de" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Institut Ranke-Heinemann - IDP Wien</strong></td>
+          <td><span class="badge badge-blue">28</span></td>
+          <td>1</td>
+          <td><a href="mailto:hq@ranke-heinemann.de">hq@ranke-heinemann.de</a></td>
+          <td><a href="https://www.idp.com/office/vienna/idp-vienna-office/de-1004/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Latin American Education S.A</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>16</td>
+          <td><a href="mailto:sevilla@lae-edu.es">sevilla@lae-edu.es</a></td>
+          <td><a href="https://lae-edu.com/oficinas-lae/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Sonya International Education Centre Pty Ltd (SIEC Education))</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>5</td>
+          <td><a href="mailto:enquiry@siecindia.com">enquiry@siecindia.com</a></td>
+          <td><a href="www.siecindia.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>ACIC – Australian College Information Centre</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>3</td>
+          <td><a href="mailto:international@acic.com.au">international@acic.com.au</a></td>
+          <td><a href="www.acic.com.au" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Avenue To Success Company Limited</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>1</td>
+          <td><a href="mailto:hue.nguyen@ats.org.vn">hue.nguyen@ats.org.vn</a></td>
+          <td><a href="www.ats.org.vn" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Global Reach - Bhutan</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>1</td>
+          <td><a href="mailto:palden@globalreachonline.com">palden@globalreachonline.com</a></td>
+          <td><a href="www.globalreach.lk/contact-us.php" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Tehran</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>1</td>
+          <td><a href="mailto:Elnaz.Atashbiz@idp.com">Elnaz.Atashbiz@idp.com</a></td>
+          <td><a href="www.idp.com" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Latin American Education S.A.</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>1</td>
+          <td><a href="mailto:medellin@lae-edu.com">medellin@lae-edu.com</a></td>
+          <td><a href="https://lae-edu.com/oficina-cali-colombia/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Masiratna</strong></td>
+          <td><span class="badge badge-blue">27</span></td>
+          <td>1</td>
+          <td><a href="mailto:info@masiratna.com">info@masiratna.com</a></td>
+          <td><a href="https://masiratna.com/contact/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Expert Group Holdings Pty Ltd</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>10</td>
+          <td><a href="mailto:account@experteducation.com.au">account@experteducation.com.au</a></td>
+          <td><a href="https://experteducation.com/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>International Group for Educational Consultancy</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>2</td>
+          <td><a href="mailto:a.talafha@igec.com.au">a.talafha@igec.com.au</a></td>
+          <td><a href="https://igec.ae/our-office/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Beijing New Oriental Vision Overseas Consulting Co., Ltd.</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>1</td>
+          <td><a href="mailto:heliuxi@xdf.cn">heliuxi@xdf.cn</a></td>
+          <td><a href="https://liuxue.xdf.cn/chongqing/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Huatong Xinnuo Int'l Cultural Exchange Centre Limited (Hti)</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>1</td>
+          <td><a href="mailto:wenfeng.zhou@ht-international.net">wenfeng.zhou@ht-international.net</a></td>
+          <td><a href="https://www.huatong.org.cn/jg/detail/a246.html" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IDP Bahrain</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>1</td>
+          <td><a href="mailto:sujata.vora@idp.com">sujata.vora@idp.com</a></td>
+          <td><a href="https://www.idp.com/middleeast/office/bahrain/idp-bahrain-office/BH-1001/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>IGEC Dubai UAE</strong></td>
+          <td><span class="badge badge-blue">26</span></td>
+          <td>1</td>
+          <td><a href="mailto:g.gumapi@igec.com.au">g.gumapi@igec.com.au</a></td>
+          <td><a href="https://igec.ae/our-office/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>JJL International Education Exchange Promotion Ltd.</strong></td>
+          <td><span class="badge badge-blue">25</span></td>
+          <td>2</td>
+          <td><a href="mailto:likun.cq@jjl.cn">likun.cq@jjl.cn</a></td>
+          <td><a href="www.jjl.cn" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>AEO Pakistan</strong></td>
+          <td><span class="badge badge-blue">25</span></td>
+          <td>1</td>
+          <td><a href="mailto:dha.lhr@aeo.com.pk">dha.lhr@aeo.com.pk</a></td>
+          <td><a href="https://aeo.com.pk/contact-us/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>BridgeBlue Mongolia</strong></td>
+          <td><span class="badge badge-blue">25</span></td>
+          <td>1</td>
+          <td><a href="mailto:Enkhod@bridgeblueglobal.com">Enkhod@bridgeblueglobal.com</a></td>
+          <td><a href="https://www.bridgeblueglobal.com/contact-us/" target="_blank">🔗</a></td>
+        </tr>
+        <tr>
+          <td><strong>Global Reach - Sri Lanka</strong></td>
+          <td><span class="badge badge-blue">25</span></td>
+          <td>1</td>
+          <td><a href="mailto:asiri@globalreachonline.com">asiri@globalreachonline.com</a></td>
+          <td><a href="https://globalreachonline.com/" target="_blank">🔗</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Social Media Content Ideas -->
+  <div class="section">
+    <h2>📱 Social Media Content Ideas</h2>
+    
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">LinkedIn</div>
+          <p>Australia's universities have a global network of 11,494 authorised education agents across 164 countries. These trusted partners are the bridge connecting international students with world-class Australian education. From Unknown, India, Australia, China, Nepal and beyond — the reach is remarkable. 🌏</p>
+          <div class="hashtags">#StudyInAustralia #InternationalEducation #EducationAgents #Australia</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Twitter / X</div>
+          <p>Did you know? Australian universities work with 11,494 authorised education agents in 164 countries 📊 That's a massive global network helping students find the right study pathway 🇦🇺</p>
+          <div class="hashtags">#StudyInAustralia #HigherEducation #InternationalStudents</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Instagram Caption</div>
+          <p>Behind every international student's journey to Australia is an authorised education agent ✈️🎓 Our analysis of Australia's 33 universities reveals a network of 11,494 agents spanning 164 countries worldwide. Whether you're in Unknown, Europe, or the Americas — there's a trusted expert near you to guide your study abroad adventure.</p>
+          <div class="hashtags">#StudyAbroad #Australia #StudyInAustralia #InternationalStudent #UniversityLife #AustralianEducation #GlobalEducation</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">Facebook</div>
+          <p>Thinking about studying in Australia? 🦘<br><br>Australia's top universities maintain a carefully vetted network of 11,494 authorised education agents across 164 countries — making quality guidance accessible wherever you are.<br><br>These agents are approved directly by universities, giving you peace of mind that you're getting genuine, accurate advice about your study options.<br><br>Reach out to find an authorised agent near you! 👇</p>
+          <div class="hashtags">#StudyInAustralia #AustralianUniversities #InternationalEducation</div>
+        </div>
+        <div class="social-card">
+          <button class="copy-btn">Copy</button>
+          <div class="platform">LinkedIn (Data Insight)</div>
+          <p>📊 Agent Network Data Insight<br><br>Our analysis of publicly listed education agents across Australian universities reveals:<br>• 11,494 total authorised agents<br>• 164 countries represented<br>• 100% of agents have publicly listed contact details<br><br>For institutions looking to expand international recruitment, the agent channel remains the dominant pathway for international student acquisition in Australian higher education.</p>
+          <div class="hashtags">#HigherEducation #InternationalRecruitment #EdTech #StudentRecruitment #Australia</div>
+        </div>
+  </div>
+
+</div>
+
+<footer>Australian University Agent Database &nbsp;·&nbsp; 2026-04-14 13:45</footer>
+
+<script>
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.social-card');
+    const text = card.querySelector('p').innerText + '\n' + (card.querySelector('.hashtags')?.innerText || '');
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 1500);
+    });
+  });
+});
+</script>
+</body>
+</html>

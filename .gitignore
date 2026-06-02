@@ -1,0 +1,38 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Local DB & scraper debug artefacts ---
+# agents.db is the working scraper database (~15 MB, contains scraped agent
+# contact info). Excluded from the repo; events.json is the published artifact.
+data/agents.db
+data/agents.db-journal
+data/agents.db-wal
+data/agents.db-shm
+data/monash_cookies.json
+data/monash_fwuid.txt
+data/monash_debug.png
+
+# --- Local tool config ---
+.claude/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- macOS ---
+.DS_Store
+
+# --- Editor ---
+*.swp
+*.swo
+.idea/
+.vscode/

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thailand — Australian University Agent Network</title>
+<style>
+:root {
+  --primary: #003366;
+  --accent:  #F4A300;
+  --one-ed:  #E63946;
+  --green:   #2D6A4F;
+  --light:   #F0F4F8;
+  --border:  #CBD5E1;
+  --text:    #1A1A2E;
+  --cell-on: #003366;
+  --cell-off:#EEF2F7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #F8FAFC; color: var(--text); }
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #003366 0%, #1a5276 60%, #2874a6 100%);
+  color: #fff; padding: 2.5rem 3rem;
+  position: relative; overflow: hidden;
+}
+.header::after {
+  content: '🇹🇭';
+  position: absolute; right: 3rem; top: 50%; transform: translateY(-50%);
+  font-size: 6rem; opacity: .15;
+}
+.header h1 { font-size: 2rem; margin-bottom: .4rem; font-weight: 700; }
+.header p  { opacity: .8; font-size: .95rem; }
+
+/* KPI strip */
+.kpi-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 1rem; padding: 1.5rem 3rem; background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.kpi-card { text-align: center; }
+.kpi-card .val { font-size: 2rem; font-weight: 700; color: var(--primary); }
+.kpi-card .lbl { font-size: .75rem; color: #64748B; text-transform: uppercase; letter-spacing: .06em; margin-top: .2rem; }
+
+/* Tabs */
+.tabs { display: flex; gap: 0; background: #fff; border-bottom: 2px solid var(--border); padding: 0 3rem; }
+.tab {
+  padding: .8rem 1.4rem; cursor: pointer; font-size: .88rem; font-weight: 600;
+  color: #64748B; border-bottom: 3px solid transparent; margin-bottom: -2px;
+  transition: color .2s, border-color .2s;
+}
+.tab.active { color: var(--primary); border-bottom-color: var(--accent); }
+.tab:hover { color: var(--primary); }
+
+/* Panels */
+.panel { display: none; padding: 2rem 3rem; }
+.panel.active { display: block; }
+
+/* Matrix */
+.matrix-wrap { overflow-x: auto; }
+.matrix-legend { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1rem; font-size: .8rem; color: #64748B; }
+.legend-swatch { width: 16px; height: 16px; border-radius: 3px; display: inline-block; }
+
+table.matrix {
+  border-collapse: collapse;
+  font-size: .72rem;
+  white-space: nowrap;
+}
+table.matrix th.corner { width: 200px; min-width: 200px; }
+table.matrix th.uni-head {
+  height: 130px;
+  white-space: nowrap;
+  background: transparent;
+  padding: 0;
+  vertical-align: bottom;
+  border: none;
+  cursor: pointer;
+}
+table.matrix th.uni-head > div {
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+  width: 28px;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+table.matrix th.uni-head > div > span {
+  display: inline-block;
+  background: var(--primary); color: #fff;
+  font-weight: 600; font-size: .72rem;
+  padding: 3px 8px;
+  border-radius: 4px 4px 0 0;
+  white-space: nowrap;
+  max-width: 160px;
+  overflow: hidden; text-overflow: ellipsis;
+}
+table.matrix th.uni-head:hover > div > span { background: #1a5276; }
+table.matrix td.agent-name {
+  padding: .35rem .7rem; font-size: .78rem; font-weight: 500;
+  white-space: nowrap; max-width: 220px; overflow: hidden; text-overflow: ellipsis;
+  border-bottom: 1px solid #E8EDF2; cursor: pointer;
+  position: sticky; left: 0; background: #fff; z-index: 1;
+}
+table.matrix td.agent-name:hover { background: #EEF2F7; }
+table.matrix td.agent-name.one-ed {
+  background: #FFF5F5; color: var(--one-ed); font-weight: 700;
+  border-left: 3px solid var(--one-ed);
+}
+table.matrix td.cell {
+  width: 28px; min-width: 28px; height: 28px;
+  border: 1px solid #E8EDF2; cursor: pointer; transition: transform .1s;
+  position: relative;
+}
+table.matrix td.cell.on {
+  background: var(--cell-on);
+}
+table.matrix td.cell.on.one-ed { background: var(--one-ed); }
+table.matrix td.cell.off { background: var(--cell-off); }
+table.matrix td.cell:hover { transform: scale(1.4); z-index: 10; border-color: var(--accent); }
+table.matrix tr:hover td.agent-name { background: #EEF2F7 !important; }
+table.matrix tr.row-highlight td.cell.off { background: #DCE6F1; }
+.uni-count-badge {
+  display: inline-block; background: var(--accent); color: #fff;
+  border-radius: 10px; padding: 1px 7px; font-size: .65rem; font-weight: 700;
+  margin-left: .4rem; vertical-align: middle;
+}
+
+/* Bar chart */
+.bar-section { margin-bottom: 2rem; }
+.bar-section h2 { font-size: 1rem; color: var(--primary); margin-bottom: 1.2rem; font-weight: 700; }
+.bar-row { display: flex; align-items: center; gap: .8rem; margin-bottom: .45rem; }
+.bar-label { width: 220px; font-size: .78rem; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-label.one-ed { color: var(--one-ed); font-weight: 700; }
+.bar-track { flex: 1; background: #EEF2F7; border-radius: 4px; height: 22px; position: relative; }
+.bar-fill { height: 100%; border-radius: 4px; background: var(--primary); transition: width .4s ease; display: flex; align-items: center; padding-left: 8px; }
+.bar-fill.one-ed { background: var(--one-ed); }
+.bar-fill .bar-num { color: #fff; font-size: .72rem; font-weight: 700; }
+.bar-fill.short .bar-num { color: var(--text); position: absolute; left: calc(100% + 6px); }
+
+/* Agent cards */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.agent-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 10px;
+  padding: 1rem 1.2rem; transition: box-shadow .2s;
+}
+.agent-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+.agent-card.one-ed { border-color: var(--one-ed); border-width: 2px; }
+.agent-card .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: .6rem; }
+.agent-card .card-name { font-weight: 700; font-size: .88rem; color: var(--primary); line-height: 1.3; }
+.agent-card.one-ed .card-name { color: var(--one-ed); }
+.agent-card .card-city { font-size: .75rem; color: #64748B; margin-top: .15rem; }
+.agent-card .uni-count { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+.agent-card .uni-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .6rem; }
+.uni-tag {
+  background: var(--light); color: var(--primary);
+  font-size: .65rem; padding: 2px 7px; border-radius: 10px; border: 1px solid var(--border);
+}
+.agent-card .contact-row { display: flex; gap: .8rem; margin-top: .7rem; font-size: .72rem; color: #64748B; flex-wrap: wrap; }
+.agent-card .contact-row a { color: #2563EB; text-decoration: none; }
+.agent-card .contact-row a:hover { text-decoration: underline; }
+
+/* Tooltip */
+#tooltip {
+  position: fixed; background: rgba(0,0,30,.85); color: #fff;
+  padding: .5rem .9rem; border-radius: 6px; font-size: .78rem;
+  pointer-events: none; display: none; z-index: 1000; max-width: 280px; line-height: 1.5;
+}
+
+/* Uni coverage panel */
+.uni-bar-row { display: flex; align-items: center; gap: .8rem; margin-bottom: .5rem; }
+.uni-bar-label { width: 260px; font-size: .8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.uni-bar-track { flex: 1; background: #EEF2F7; border-radius: 4px; height: 20px; position: relative; }
+.uni-bar-fill { height: 100%; border-radius: 4px; background: var(--green); display: flex; align-items: center; padding-left: 8px; }
+.uni-bar-fill .uni-bar-num { color: #fff; font-size: .72rem; font-weight: 700; }
+
+footer { text-align: center; padding: 2rem; color: #94A3B8; font-size: .78rem; margin-top: 1rem; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🎓 Thailand — Australian University Agent Network</h1>
+  <p>Which agents are authorised to represent which Australian universities in Thailand</p>
+</div>
+
+<div class="kpi-grid" id="kpiStrip"></div>
+
+<div class="tabs">
+  <div class="tab active" onclick="showTab('matrix')">Coverage Matrix</div>
+  <div class="tab" onclick="showTab('ranking')">Agent Ranking</div>
+  <div class="tab" onclick="showTab('universities')">Universities</div>
+  <div class="tab" onclick="showTab('cards')">Agent Cards</div>
+</div>
+
+<div id="panel-matrix" class="panel active">
+  <div class="matrix-legend">
+    <span class="legend-swatch" style="background:var(--cell-on)"></span> Authorised
+    <span class="legend-swatch" style="background:var(--one-ed)"></span> One Education
+    <span class="legend-swatch" style="background:var(--cell-off)"></span> Not listed
+    <span style="margin-left:.5rem;color:#94A3B8">· Hover cells for details · Click column headers to sort</span>
+  </div>
+  <div class="matrix-wrap" id="matrixWrap"></div>
+</div>
+
+<div id="panel-ranking" class="panel">
+  <div class="bar-section" id="agentBarChart"></div>
+</div>
+
+<div id="panel-universities" class="panel">
+  <div id="uniBarChart"></div>
+</div>
+
+<div id="panel-cards" class="panel">
+  <div class="cards-grid" id="cardsGrid"></div>
+</div>
+
+<div id="tooltip"></div>
+
+<footer>Australian University Agent Database · Thailand · Generated 2026-04-14</footer>
+
+<script>
+const DATA = {"agents": [{"name": "IDP Education", "parent": "IDP Education Ltd", "city": "Bang Rak", "email": "don.sanmanee@idp.com", "website": "https://www.idp.com/thailand/education-counsellor-office-finder/", "unis": ["Adelaide University", "Bond University", "CQUniversity Australia", "Charles Darwin University", "Charles Sturt University", "Curtin University", "Deakin University", "Edith Cowan University", "Flinders University", "Griffith University", "James Cook University", "La Trobe University", "Macquarie University", "Monash University", "Murdoch University", "RMIT University", "Swinburne University of Technology", "Torrens University Australia", "UNSW Sydney", "University of Canberra", "University of Melbourne", "University of New England", "University of Newcastle", "University of Queensland", "University of Southern Queensland / UniSQ", "University of Sydney", "University of Tasmania", "University of Wollongong", "Victoria University", "Western Sydney University"]}, {"name": "AECC Global", "parent": "AECC Global", "city": "Pathum Wan", "email": "enquiry.th@aeccglobal.com", "website": "https://www.aeccglobal.co.th/en/contact-us", "unis": ["Adelaide University", "Bond University", "CQUniversity Australia", "Charles Darwin University", "Charles Sturt University", "Curtin University", "Deakin University", "Edith Cowan University", "Flinders University", "Griffith University", "James Cook University", "La Trobe University", "Macquarie University", "Monash University", "Murdoch University", "RMIT University", "Swinburne University of Technology", "Torrens University Australia", "UNSW Sydney", "University of Canberra", "University of New England", "University of Newcastle", "University of Southern Queensland / UniSQ", "University of Tasmania", "University of Wollongong", "Victoria University", "Western Sydney University"]}, {"name": "AVSS", "parent": "Australian Visa and Student Services", "city": "Watthana", "email": "pattra@theavss.net", "website": "www.theavss.net", "unis": ["Adelaide University", "CQUniversity Australia", "Curtin University", "Deakin University", "Edith Cowan University", "Griffith University", "Macquarie University", "Monash University", "Murdoch University", "RMIT University", "Swinburne University of Technology", "UNSW Sydney", "University of Canberra", "University of Newcastle", "University of Queensland", "University of Southern Queensland / UniSQ", "University of Sydney", "University of Tasmania", "University of Wollongong", "Victoria University", "Western Sydney University"]}, {"name": "One Education Consulting", "parent": "One Education Consulting Co., Ltd", "city": "Pathum Wan", "email": "usa@one-educationgroup.com", "website": "https://one-educationgroup.com/contact-us/chidlom/", "unis": ["Adelaide University", "Bond University", "Curtin University", "Deakin University", "Edith Cowan University", "Flinders University", "Griffith University", "James Cook University", "La Trobe University", "Macquarie University", "Monash University", "Murdoch University", "RMIT University", "Swinburne University of Technology", "UNSW Sydney", "University of Melbourne", "University of Newcastle", "University of Queensland", "University of Sydney", "University of Tasmania", "Victoria University"]}, {"name": "Hands On Education", "parent": "Hands On Education Consultants", "city": "Silom", "email": "tony@hands-on.co.th", "website": "www.hands-on.co.th", "unis": ["Adelaide University", "Curtin University", "Flinders University", "Griffith University", "James Cook University", "Macquarie University", "Monash University", "Murdoch University", "Swinburne University of Technology", "UNSW Sydney", "University of Queensland", "University of Southern Queensland / UniSQ", "University of Sydney", "University of Tasmania", "University of Wollongong", "Victoria University"]}, {"name": "Stellar Education", "parent": "Stellar Education & Visa Centre", "city": "Mueang Chiang Mai", "email": "ammie.th@stellaraustralia.com", "website": "https://www.stellaraustralia.com/branchs/", "unis": ["CQUniversity Australia", "Curtin University", "Deakin University", "Griffith University", "James Cook University", "Macquarie University", "Swinburne University of Technology", "Torrens University Australia", "UNSW Sydney", "University of Canberra", "University of Sydney", "University of Wollongong", "Victoria University", "Western Sydney University"]}, {"name": "iae GLOBAL", "parent": "iae GLOBAL", "city": "Watthana", "email": "chayinthorn@iaeglobal.in.th", "website": "https://www.iaeglobal.in.th", "unis": ["Adelaide University", "CQUniversity Australia", "Edith Cowan University", "Griffith University", "James Cook University", "Macquarie University", "Murdoch University", "RMIT University", "University of Canberra", "University of New England", "University of Newcastle", "University of Southern Queensland / UniSQ", "University of Tasmania", "University of Wollongong"]}, {"name": "Education For Life", "parent": "Education For Life Co Ltd", "city": "Ratchathewi", "email": "paiboon@eduforlife.net ", "website": "https://www.eduforlife.net", "unis": ["CQUniversity Australia", "Deakin University", "Griffith University", "La Trobe University", "Macquarie University", "Monash University", "Murdoch University", "University of Canberra", "University of Melbourne", "University of Sydney", "University of Tasmania", "University of Wollongong", "Western Sydney University"]}, {"name": "SOL Edu", "parent": "SOL Edu Pty Ltd", "city": "Bangkok", "email": "info@soledu.net", "website": "https://www.soledu.net/", "unis": ["CQUniversity Australia", "Charles Sturt University", "Griffith University", "James Cook University", "Macquarie University", "Torrens University Australia", "University of Canberra", "University of Queensland", "University of Southern Queensland / UniSQ", "University of Wollongong"]}, {"name": "Expert Education - EEVS Thailand", "parent": "Expert Education - EEVS Thailand", "city": "Bangkok", "email": "ruttiya.d@experteducation.com.au", "website": "https://experteducation.com/", "unis": ["Bond University", "CQUniversity Australia", "Charles Sturt University", "Edith Cowan University", "Griffith University", "Torrens University Australia", "University of Canberra", "University of Southern Queensland / UniSQ", "University of Wollongong"]}, {"name": "StudyIn", "parent": "StudyIn", "city": "Bangkok", "email": "bangkok@gostudyin.com", "website": "https://www.gostudyin.com", "unis": ["Edith Cowan University", "James Cook University", "Macquarie University", "Murdoch University", "Torrens University Australia", "University of Canberra", "University of New England", "University of Newcastle", "Victoria University"]}, {"name": "WIN Education", "parent": "WIN Education", "city": "Bangkok", "email": "bonian.c@westminster.co.th", "website": "www.win-ed.com", "unis": ["Adelaide University", "Deakin University", "Flinders University", "Griffith University", "Macquarie University", "RMIT University", "UNSW Sydney", "University of Sydney", "Western Sydney University"]}, {"name": "Asiania International Consulting", "parent": "Asiania International Consulting", "city": "Bangkok", "email": "apiradee@asiania.co.th", "website": "http://www.studyaus.co/", "unis": ["Edith Cowan University", "James Cook University", "Murdoch University", "RMIT University", "Swinburne University of Technology", "University of Canberra", "University of Newcastle", "University of Southern Queensland / UniSQ"]}, {"name": "Beyond Study Center Co", "parent": "Beyond Study Center Co", "city": "Watthana", "email": "info@beyondstudycenter.com", "website": "www.beyondstudycenter.com", "unis": ["CQUniversity Australia", "Charles Darwin University", "Curtin University", "Deakin University", "Macquarie University", "RMIT University", "Swinburne University of Technology", "Victoria University"]}, {"name": "Adventus Education", "parent": "Adventus Education", "city": "Khlong Toei", "email": "gaganjotkaur@adventus.io", "website": "https://adventus.io/contact-us/", "unis": ["Bond University", "CQUniversity Australia", "Edith Cowan University", "La Trobe University", "RMIT University", "University of Newcastle", "University of Wollongong"]}, {"name": "Eduyoung.Com - Thailand", "parent": "Eduyoung.Com - Thailand", "city": "Huai Khwang", "email": "nancha@eduyoung.com", "website": "https://www.eduyoungth.com/contact-us/", "unis": ["CQUniversity Australia", "Griffith University", "James Cook University", "Torrens University Australia", "University of Queensland", "University of Southern Queensland / UniSQ", "Western Sydney University"]}, {"name": "EDNET CO", "parent": "EDNET CO", "city": "Chatuchak", "email": "info@ednet.co.th", "website": "www.ednet.co.th/contact-us", "unis": ["Curtin University", "Deakin University", "Macquarie University", "Monash University", "University of Sydney", "University of Wollongong"]}, {"name": "Yes Education Group(Bangkok)", "parent": "Yes Education Group(Bangkok)", "city": "Bang Rak", "email": "pafan@yesedugroup.com.au", "website": "https://yesedugroup.com.au/", "unis": ["Deakin University", "Edith Cowan University", "Macquarie University", "University of Newcastle"]}, {"name": "Liu Cheng International Group", "parent": "Liu Cheng International Group", "city": "Watthana", "email": "support@lcig.io", "website": "http://www.lcig.io/contact", "unis": ["Charles Darwin University", "Charles Sturt University", "University of Canberra"]}, {"name": "ANZ Education Centre Co", "parent": "ANZ Education Centre Co", "city": "Bangkok", "email": "bkk@anzeducationcentre.com", "website": "", "unis": ["CQUniversity Australia", "Griffith University"]}, {"name": "At Education", "parent": "At Education", "city": "Pathum Wan", "email": "gus@ateducation.co.th", "website": "www.ateducation.co.th", "unis": ["CQUniversity Australia", "Deakin University"]}, {"name": "Further Education", "parent": "Further Education", "city": "Bang Bon", "email": "louise@furthereducation.co.th", "website": "www.furthereducation.co.th", "unis": ["Monash University", "Victoria University"]}, {"name": "Oec Global Education", "parent": "Oec Global Education", "city": "Bangkok", "email": "paweena@oecglobal.com", "website": "www.oecglobal.com", "unis": ["La Trobe University", "University of Tasmania"]}, {"name": "ABAC Study Abroad - Bangsaothong", "parent": "ABAC Study Abroad - Bangsaothong", "city": "Chatuchak", "email": "info@abacstudyabroad.com", "website": "www.abacstudyabroad.com", "unis": ["La Trobe University"]}, {"name": "AMET Education", "parent": "AMET Education", "city": "Silom", "email": "Bangkok@amet.com.au", "website": "", "unis": ["University of Southern Queensland / UniSQ"]}, {"name": "Apex Education Consultant", "parent": "Apex Education Consultant", "city": "klongluang", "email": "", "website": "www.apexeducate.com", "unis": ["University of Wollongong"]}, {"name": "AusConnect EduCoach - Thailand", "parent": "AusConnect EduCoach - Thailand", "city": "Khan Na Yao", "email": "thitima@sayexchange.com.au", "website": "http://www.sayexchange.com.au/th/contact-us/", "unis": ["Curtin University"]}, {"name": "Career Education Consultancy Australia - Thailand", "parent": "Career Education Consultancy Australia - Thailand", "city": "Pathum Wan", "email": "thailand@ceca.com.au", "website": "www.ceca.com.au", "unis": ["University of Southern Queensland / UniSQ"]}, {"name": "Chulalongkorn University (Faculty of Political Science)", "parent": "Chulalongkorn University (Faculty of Political Science)", "city": "Pathum Wan", "email": "saraban_polsci@chula.ac.th", "website": "https://www.chula.ac.th/en/academic/faculty-of-political-science/", "unis": ["University of Queensland"]}, {"name": "Chulalongkorn University (Faculty of Psychology)", "parent": "Chulalongkorn University (Faculty of Psychology)", "city": "Pathum Wan", "email": "vkarin16@gmail.com", "website": "www.chula.ac.th", "unis": ["University of Queensland"]}, {"name": "Complete Education and Touring Australia Co", "parent": "Complete Education and Touring Australia Co", "city": "Bangkok", "email": "study@ceta.co.th", "website": "https://www.ceta.co.th/contact/", "unis": ["RMIT University"]}, {"name": "EDEN STUDENT SERVICE", "parent": "EDEN STUDENT SERVICE", "city": "Udon Thani", "email": "udonthani@eden-studentservice.com", "website": "www.eden-studentservice.com", "unis": ["CQUniversity Australia"]}, {"name": "IBN EDUCATION(THAILAND)COMPANY", "parent": "IBN EDUCATION(THAILAND)COMPANY", "city": "Khlong Toei", "email": "", "website": "", "unis": ["Macquarie University"]}, {"name": "Imagine Global Edu and Migration- iGEM (Bangkok)", "parent": "Imagine Global Edu and Migration- iGEM (Bangkok)", "city": "Bangkok", "email": "bkkmanager.igemedu@gmail.com", "website": "https://igemedu.com", "unis": ["Griffith University"]}, {"name": "Phuket international Art Exchange Center Co", "parent": "Phuket international Art Exchange Center Co", "city": "Mueang Phuket", "email": "leeyuzhong@hotmail.com", "website": "", "unis": ["Curtin University"]}, {"name": "Professional Intereducation", "parent": "Professional Intereducation", "city": "Bangkok", "email": "noppawan@prointered.com", "website": "www.prointered.com", "unis": ["La Trobe University"]}, {"name": "RMIT English Worldwide", "parent": "RMIT English Worldwide", "city": "Chatuchak", "email": "rmitbkk@itecgroup.org", "website": "https://rmitenglish.ac.th/contactus.asp", "unis": ["RMIT University"]}, {"name": "Start Education Centre", "parent": "Start Education Centre", "city": "Pathum Wan", "email": "info@startedc.com", "website": "https://startedc.com/", "unis": ["Macquarie University"]}, {"name": "Thai Links Consultants / Merit Innovation Service", "parent": "Thai Links Consultants / Merit Innovation Service", "city": "Bangkok", "email": "TLC@thailinks.net", "website": "www.thailinks.net", "unis": ["Murdoch University"]}, {"name": "The Best Language and Education Centre Company", "parent": "The Best Language and Education Centre Company", "city": "San Sai", "email": "art.varintorn@the-best.edu.com", "website": "thebest-edu.com/", "unis": ["CQUniversity Australia"]}, {"name": "Uniadvice Co", "parent": "Uniadvice Co", "city": "Khan Na Yao", "email": "sarinya@uniadvice.co.th", "website": "http://uniadvice.co.th/index.php?page=contact", "unis": ["University of Tasmania"]}, {"name": "Union Plus", "parent": "Union Plus", "city": "Laksi", "email": "ask@iamstudy.com", "website": "www.iamstudy.com", "unis": ["Edith Cowan University"]}], "universities": ["Macquarie University", "CQUniversity Australia", "Griffith University", "University of Wollongong", "Deakin University", "Edith Cowan University", "RMIT University", "University of Canberra", "University of Southern Queensland / UniSQ", "Curtin University", "James Cook University", "Murdoch University", "University of Newcastle", "University of Tasmania", "Victoria University", "La Trobe University", "Monash University", "Swinburne University of Technology", "University of Queensland", "University of Sydney", "Adelaide University", "Torrens University Australia", "UNSW Sydney", "Western Sydney University", "Bond University", "Charles Sturt University", "Flinders University", "Charles Darwin University", "University of New England", "University of Melbourne"], "total_links": 263};
+
+const ONE_ED = "One Education Consulting Co., Ltd";
+const agents = DATA.agents;
+const universities = DATA.universities;
+
+function isOneEd(name) { return name === ONE_ED; }
+
+// Short name for display
+function shortUni(u) {
+  return u.replace("University of ", "U. of ")
+          .replace(" University", " Uni")
+          .replace("University", "Uni")
+          .replace("Australian Catholic ", "ACU ")
+          .replace("/ UniSQ", "")
+          .replace("Technology Sydney", "Tech Sydney")
+          .replace("Swinburne ", "Swinburne")
+          .trim();
+}
+
+// ── KPIs ──────────────────────────────────────────────────────────────────────
+const oneEdAgent = agents.find(a => isOneEd(a.name));
+const kpis = [
+  { val: agents.length, lbl: "Agents in Thailand" },
+  { val: universities.length, lbl: "Universities" },
+  { val: DATA.total_links, lbl: "Authorisations" },
+  { val: oneEdAgent ? oneEdAgent.unis.length : 0, lbl: "One Ed Universities", highlight: true },
+  { val: agents[0].unis.length, lbl: "Max (IDP)" },
+  { val: Math.round(DATA.total_links / agents.length * 10) / 10, lbl: "Avg per Agent" },
+];
+document.getElementById("kpiStrip").innerHTML = kpis.map(k =>
+  `<div class="kpi-card">
+    <div class="val" style="${k.highlight ? 'color:var(--one-ed)' : ''}">${k.val}</div>
+    <div class="lbl" style="${k.highlight ? 'color:var(--one-ed)' : ''}">${k.lbl}</div>
+  </div>`
+).join("");
+
+// ── Matrix ────────────────────────────────────────────────────────────────────
+function buildMatrix(unis) {
+  let html = `<table class="matrix"><thead><tr><th class="corner"></th>`;
+  unis.forEach((u, i) => {
+    const cnt = agents.filter(a => a.unis.includes(u)).length;
+    html += `<th class="uni-head" title="${u} (${cnt} agents)" onclick="sortByUni(${i})"><div><span>${shortUni(u)}</span></div></th>`;
+  });
+  html += `</tr></thead><tbody>`;
+
+  agents.forEach(agent => {
+    const oe = isOneEd(agent.name);
+    const cnt = agent.unis.length;
+    const displayName = agent.name.length > 30 ? agent.name.substring(0,28)+'…' : agent.name;
+    html += `<tr class="${oe ? 'row-one-ed' : ''}">`;
+    html += `<td class="agent-name ${oe ? 'one-ed' : ''}" title="${agent.name}">
+      ${displayName}<span class="uni-count-badge">${cnt}</span>
+    </td>`;
+    unis.forEach(u => {
+      const on = agent.unis.includes(u);
+      html += `<td class="cell ${on ? 'on' : 'off'} ${oe && on ? 'one-ed' : ''}"
+        onmouseenter="showTip(event,'${agent.name.replace(/'/g,"\\'")} → ${u}')"
+        onmouseleave="hideTip()"></td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table>`;
+  document.getElementById("matrixWrap").innerHTML = html;
+}
+buildMatrix(universities);
+
+let sortAsc = false;
+function sortByUni(uniIdx) {
+  const u = universities[uniIdx];
+  const sorted = [...agents].sort((a, b) => {
+    const ha = a.unis.includes(u), hb = b.unis.includes(u);
+    if (ha !== hb) return sortAsc ? (ha ? 1 : -1) : (ha ? -1 : 1);
+    return b.unis.length - a.unis.length;
+  });
+  agents.length = 0; sorted.forEach(a => agents.push(a));
+  sortAsc = !sortAsc;
+  buildMatrix(universities);
+}
+
+// ── Agent bar chart ───────────────────────────────────────────────────────────
+const maxUnis = agents[0].unis.length;
+let barHtml = `<h2>Agents Ranked by Number of Authorised Universities</h2>`;
+agents.forEach(a => {
+  const oe = isOneEd(a.name);
+  const pct = (a.unis.length / maxUnis * 100).toFixed(1);
+  const isShort = a.unis.length < 4;
+  barHtml += `<div class="bar-row">
+    <div class="bar-label ${oe ? 'one-ed' : ''}" title="${a.name}">${a.name}</div>
+    <div class="bar-track">
+      <div class="bar-fill ${oe ? 'one-ed' : ''} ${isShort ? 'short' : ''}" style="width:${pct}%">
+        <span class="bar-num">${a.unis.length}</span>
+      </div>
+    </div>
+  </div>`;
+});
+document.getElementById("agentBarChart").innerHTML = barHtml;
+
+// ── University bar chart ──────────────────────────────────────────────────────
+const uniCounts = {};
+universities.forEach(u => {
+  uniCounts[u] = agents.filter(a => a.unis.includes(u)).length;
+});
+const sortedUnis = [...universities].sort((a,b) => uniCounts[b] - uniCounts[a]);
+const maxAgentCount = Math.max(...Object.values(uniCounts));
+
+let uniBarHtml = `<h2 style="font-size:1rem;color:var(--primary);font-weight:700;margin-bottom:1.2rem">Universities Ranked by Number of Authorised Agents in Thailand</h2>`;
+sortedUnis.forEach(u => {
+  const n = uniCounts[u];
+  const oneEdHas = oneEdAgent && oneEdAgent.unis.includes(u);
+  const pct = (n / maxAgentCount * 100).toFixed(1);
+  uniBarHtml += `<div class="uni-bar-row">
+    <div class="uni-bar-label" title="${u}">
+      ${u} ${oneEdHas ? '<span style="color:var(--one-ed);font-size:.7rem;font-weight:700">✓ One Ed</span>' : ''}
+    </div>
+    <div class="uni-bar-track">
+      <div class="uni-bar-fill" style="width:${pct}%">
+        <span class="uni-bar-num">${n}</span>
+      </div>
+    </div>
+  </div>`;
+});
+document.getElementById("uniBarChart").innerHTML = uniBarHtml;
+
+// ── Agent cards ───────────────────────────────────────────────────────────────
+let cardsHtml = "";
+agents.forEach(a => {
+  const oe = isOneEd(a.name);
+  const emailLink = a.email ? `<a href="mailto:${a.email.trim()}">${a.email.trim()}</a>` : "";
+  const webUrl = a.website ? (a.website.startsWith("http") ? a.website : "https://"+a.website) : "";
+  const webLink = webUrl ? `<a href="${webUrl}" target="_blank">🔗 Website</a>` : "";
+  const uniTags = a.unis.map(u => `<span class="uni-tag">${shortUni(u)}</span>`).join("");
+  const parentLabel = a.parent && a.parent !== a.name ? `<div class="card-city" style="color:#64748B;font-size:.72rem">🏢 ${a.parent}</div>` : '';
+  cardsHtml += `<div class="agent-card ${oe ? 'one-ed' : ''}">
+    <div class="card-header">
+      <div>
+        <div class="card-name">${a.name}</div>
+        <div class="card-city">📍 ${a.city || "Thailand"}</div>
+        ${parentLabel}
+      </div>
+      <div class="uni-count">${a.unis.length}</div>
+    </div>
+    <div class="uni-tags">${uniTags}</div>
+    <div class="contact-row">${emailLink}${webLink}</div>
+  </div>`;
+});
+document.getElementById("cardsGrid").innerHTML = cardsHtml;
+
+// ── Tooltip ───────────────────────────────────────────────────────────────────
+const tip = document.getElementById("tooltip");
+function showTip(e, text) {
+  tip.style.display = "block";
+  tip.textContent = text;
+  tip.style.left = (e.clientX + 14) + "px";
+  tip.style.top  = (e.clientY - 28) + "px";
+}
+function hideTip() { tip.style.display = "none"; }
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+function showTab(id) {
+  document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  document.getElementById("panel-" + id).classList.add("active");
+  event.target.classList.add("active");
+}
+</script>
+</body>
+</html>
