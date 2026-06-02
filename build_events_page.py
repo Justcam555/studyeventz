@@ -25,8 +25,19 @@ ROOT = Path(__file__).parent
 DB_PATH = ROOT / "data" / "agents.db"
 JSON_OUT = ROOT / "data" / "events.json"
 HTML_OUT = ROOT / "events.html"
+SITEMAP_OUT = ROOT / "sitemap.xml"
+ROBOTS_OUT = ROOT / "robots.txt"
 CHARACTERS_DIR = ROOT / "assets" / "characters"
 LOGOS_DIR = ROOT / "assets" / "logos"
+
+# ─── Site metadata (edit these to change brand-level details) ──────────────
+SITE_URL       = "https://www.studyeventz.com"
+EVENTS_PAGE    = f"{SITE_URL}/events.html"
+PAGE_TITLE     = "Study Abroad Events in Thailand 2026 | studyeventz"
+META_DESC_EN   = ("Find upcoming university fairs, info days and study abroad events "
+                  "in Bangkok and Thailand. Updated weekly by studyeventz.")
+META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
+LINE_HANDLE    = "@studyeventz"  # change here to update the LINE banner everywhere
 
 # Tokens to skip when extracting initials from agent names
 STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp", "limited"}
@@ -131,6 +142,89 @@ def discover_character_images() -> list[str]:
     pngs = sorted(CHARACTERS_DIR.glob("*.png"), key=lambda p: _natural_key(p.name))
     # Encode spaces / special chars for use in HTML src attributes
     return [f"assets/characters/{quote(p.name)}" for p in pngs]
+
+
+def build_event_json_ld(events: list[dict]) -> str:
+    """Return a JSON array string of schema.org/Event objects, one per event,
+    ready to drop into a <script type="application/ld+json"> block."""
+    docs = []
+    for ev in events:
+        is_online = "online" in (ev.get("location") or "").lower()
+        location_doc: dict
+        if is_online:
+            location_doc = {
+                "@type": "VirtualLocation",
+                "url": EVENTS_PAGE,
+            }
+        else:
+            location_doc = {
+                "@type": "Place",
+                "name": ev.get("location") or "Thailand",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": ev.get("location") or "Bangkok",
+                    "addressCountry": "TH",
+                },
+            }
+        organizer_doc = {"@type": "Organization", "name": ev.get("organizer") or ev.get("agent_name") or "studyeventz"}
+        if ev.get("agent_website"):
+            organizer_doc["url"] = ev["agent_website"]
+
+        doc = {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": ev.get("name") or "",
+            "startDate": ev.get("date") or "",
+            "endDate": ev.get("date") or "",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": (
+                "https://schema.org/OnlineEventAttendanceMode" if is_online
+                else "https://schema.org/OfflineEventAttendanceMode"
+            ),
+            "location": location_doc,
+            "organizer": organizer_doc,
+            "url": f"{EVENTS_PAGE}#event-{ev.get('id', '')}",
+        }
+        if ev.get("registration_url"):
+            doc["offers"] = {
+                "@type": "Offer",
+                "url": ev["registration_url"],
+                "availability": "https://schema.org/InStock",
+            }
+        docs.append(doc)
+    return json.dumps(docs, ensure_ascii=False, indent=2)
+
+
+def write_seo_files() -> None:
+    """Write sitemap.xml and robots.txt at the repo root."""
+    today = datetime.now().date().isoformat()
+    SITEMAP_OUT.write_text(
+        f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{EVENTS_PAGE}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{SITE_URL}/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+""",
+        encoding="utf-8",
+    )
+    ROBOTS_OUT.write_text(
+        f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+""",
+        encoding="utf-8",
+    )
 
 
 def _normalize_event_name(name: str) -> str:
@@ -355,7 +449,30 @@ HTML = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Events — studyeventz</title>
+<title>__PAGE_TITLE__</title>
+<meta name="description" content="__META_DESC_EN__">
+<meta name="description" lang="th" content="__META_DESC_TH__">
+<link rel="canonical" href="__EVENTS_PAGE__">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="__SITE_URL__">
+<meta property="og:title" content="__PAGE_TITLE__">
+<meta property="og:description" content="__META_DESC_EN__">
+<meta property="og:image" content="__OG_IMAGE__">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="th_TH">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="__PAGE_TITLE__">
+<meta name="twitter:description" content="__META_DESC_EN__">
+<meta name="twitter:image" content="__OG_IMAGE__">
+
+<!-- JSON-LD structured data: one Event object per upcoming event -->
+<script type="application/ld+json">
+__JSON_LD__
+</script>
 <style>
   :root {
     --teal: #0d7377;
@@ -495,7 +612,35 @@ HTML = """<!doctype html>
   .empty h3 { color: var(--text); margin-bottom: .5rem; font-size: 1.1rem; }
 
   .footer-meta { color: var(--muted); font-size: .78rem; text-align: center;
-                 padding: 1.5rem 1rem 2.5rem; }
+                 padding: 1.5rem 1rem 1rem; }
+
+  /* About section (above the LINE banner) */
+  .site-about { max-width: 1180px; margin: 0 auto;
+                padding: 1.5rem 1.5rem 2rem; color: var(--muted);
+                font-size: .9rem; line-height: 1.6; text-align: center; }
+  .site-about p { margin: .25rem 0; }
+  .site-about .th { color: var(--text); font-weight: 500; }
+
+  /* LINE OA sticky banner */
+  body { padding-bottom: 70px; }  /* room for the fixed banner */
+  .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
+                 background: var(--teal); color: var(--gold);
+                 padding: .85rem 1rem; z-index: 50;
+                 box-shadow: 0 -2px 8px rgba(13,34,51,.15);
+                 display: flex; align-items: center; justify-content: center; gap: .65rem; }
+  .line-banner a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  .line-banner a:hover { text-decoration: underline; }
+  .line-banner-text { font-size: .95rem; }
+  .line-banner-handle { background: rgba(244, 168, 37, .15);
+                        border: 1px solid rgba(244, 168, 37, .35);
+                        padding: .15rem .55rem; border-radius: 14px;
+                        font-size: .82rem; margin-left: .2rem; }
+  .line-icon { width: 22px; height: 22px; flex-shrink: 0; }
+  @media (max-width: 640px) {
+    .line-banner { padding: .65rem .8rem; gap: .4rem; flex-wrap: wrap; }
+    .line-banner-text { font-size: .85rem; text-align: center; }
+    body { padding-bottom: 95px; }
+  }
 
   /* Mobile */
   @media (max-width: 640px) {
@@ -556,7 +701,34 @@ HTML = """<!doctype html>
 
 <div class="footer-meta" id="footer-meta"></div>
 
+<section class="site-about">
+  <p class="th">studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์</p>
+  <p>studyeventz aggregates study abroad events from consultancies across Thailand. Updated every Monday.</p>
+</section>
+
+<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">
+  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path d="M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"/>
+  </svg>
+  <span class="line-banner-text">รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE</span>
+  <a id="line-link" href="#" target="_blank" rel="noopener">
+    <span class="line-banner-handle" id="line-handle">__LINE_HANDLE__</span>
+  </a>
+</aside>
+
 <script>
+// LINE OA — change LINE_HANDLE here (or in build_events_page.py) to update everywhere
+const LINE_HANDLE = "__LINE_HANDLE__";
+(function setLineBanner() {
+  const el = document.getElementById('line-link');
+  const handleEl = document.getElementById('line-handle');
+  if (el) {
+    const cleanHandle = LINE_HANDLE.replace(/^@/, '');
+    el.href = `https://line.me/R/ti/p/@${cleanHandle}`;
+  }
+  if (handleEl) handleEl.textContent = LINE_HANDLE;
+})();
+
 const CHARACTERS = __CHARACTERS_JSON__;
 
 function characterMarkup(entry) {
@@ -785,12 +957,36 @@ def build_html() -> tuple[int, str]:
     """Render events.html. Returns (count, mode) where mode is 'png' or 'svg-fallback'."""
     images = discover_character_images()
     if images:
-        characters = images  # list of URL-encoded relative paths (strings)
+        characters = images
         mode = "png"
+        # Pick the first character as the absolute og:image URL
+        og_image = f"{SITE_URL}/{images[0]}"
     else:
-        characters = [{"svg": s} for s in CHARACTER_SVGS]  # objects with .svg
+        characters = [{"svg": s} for s in CHARACTER_SVGS]
         mode = "svg-fallback"
-    html = HTML.replace("__CHARACTERS_JSON__", json.dumps(characters))
+        og_image = f"{SITE_URL}/events.html"
+
+    # Load the freshly-written events.json so the JSON-LD reflects this build
+    try:
+        events_data = json.loads(JSON_OUT.read_text(encoding="utf-8")).get("events", [])
+    except Exception:
+        events_data = []
+    json_ld = build_event_json_ld(events_data)
+
+    replacements = {
+        "__PAGE_TITLE__":      PAGE_TITLE,
+        "__META_DESC_EN__":    META_DESC_EN,
+        "__META_DESC_TH__":    META_DESC_TH,
+        "__EVENTS_PAGE__":     EVENTS_PAGE,
+        "__SITE_URL__":        SITE_URL,
+        "__OG_IMAGE__":        og_image,
+        "__LINE_HANDLE__":     LINE_HANDLE,
+        "__JSON_LD__":         json_ld,
+        "__CHARACTERS_JSON__": json.dumps(characters),
+    }
+    html = HTML
+    for placeholder, value in replacements.items():
+        html = html.replace(placeholder, value)
     HTML_OUT.write_text(html, encoding="utf-8")
     return len(characters), mode
 
@@ -908,8 +1104,10 @@ def main() -> int:
 
     n = export_events_json()
     char_count, mode = build_html()
+    write_seo_files()
     print(f"Wrote {JSON_OUT} ({n} events)")
     print(f"Wrote {HTML_OUT} ({char_count} characters, mode={mode})")
+    print(f"Wrote {SITEMAP_OUT} and {ROBOTS_OUT}")
     return 0
 
 
