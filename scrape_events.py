@@ -35,11 +35,15 @@ MODEL = "claude-sonnet-4-6"
 CONCURRENCY = 8
 BATCH_DELAY_RANGE = (1.0, 2.0)  # seconds between batches
 
-# Hints for finding an events page from the homepage
-EVENT_LINK_HINTS = re.compile(
-    r"event|fair|expo|seminar|webinar|workshop|news|activity|กิจกรรม|งาน|สัมมนา",
+# Hints for finding an events page from the homepage.
+# Split into two tiers so /events/ wins over /news/ when both exist on the page
+# (homepages often list "News" before "Events" in nav, so the old first-match
+# logic silently grabbed blog posts instead of the real events page).
+EVENT_LINK_HINTS_PRIMARY = re.compile(
+    r"event|fair|expo|seminar|webinar|workshop|activity|กิจกรรม|งาน|สัมมนา",
     re.IGNORECASE,
 )
+EVENT_LINK_HINTS_FALLBACK = re.compile(r"news", re.IGNORECASE)
 
 EXTRACTION_SYSTEM_PROMPT = """You extract upcoming education event listings from agent websites for Australian universities.
 
@@ -214,7 +218,9 @@ async def fetch_page_text(page, url: str) -> tuple[str, str]:
     except PWTimeout:
         pass
 
-    # Try to find an events-page link on the homepage
+    # Try to find an events-page link on the homepage.
+    # Two-pass scan: prefer "events/fair/seminar/..." over "news" so we don't
+    # land on a blog when the site also has a dedicated events page.
     events_url = None
     try:
         anchors = await page.eval_on_selector_all(
@@ -222,16 +228,28 @@ async def fetch_page_text(page, url: str) -> tuple[str, str]:
             "els => els.map(a => ({href: a.href, text: (a.innerText || '').trim()}))",
         )
         current_host = urlparse(page.url).netloc
+        primary_match = None
+        fallback_match = None
         for a in anchors:
             text = a.get("text", "") or ""
             href = a.get("href", "") or ""
-            if not href or href.startswith(("mailto:", "tel:", "javascript:")):
+            if not href or href.startswith(("mailto:", "tel:", "javascript:", "#")):
+                # Skip non-navigational links (in-page anchors like "#" dropdown
+                # triggers, which otherwise match the regex via their menu text
+                # and short-circuit the search before we reach the real events link).
                 continue
             if urlparse(href).netloc and urlparse(href).netloc != current_host:
                 continue
-            if EVENT_LINK_HINTS.search(text) or EVENT_LINK_HINTS.search(href):
-                events_url = urljoin(page.url, href)
-                break
+            haystack = f"{text} {href}"
+            if primary_match is None and EVENT_LINK_HINTS_PRIMARY.search(haystack):
+                primary_match = href
+            elif fallback_match is None and EVENT_LINK_HINTS_FALLBACK.search(haystack):
+                fallback_match = href
+            if primary_match:
+                break  # stop on first primary hit
+        chosen = primary_match or fallback_match
+        if chosen:
+            events_url = urljoin(page.url, chosen)
     except Exception:
         pass
 
@@ -286,6 +304,38 @@ async def extract_events(
     except json.JSONDecodeError:
         return []
     return data.get("events", [])
+
+
+# Locale-code top-level paths that mirror the root content (different language,
+# same events). These collapse to the site root so /en/ and /th/ aren't
+# scraped as separate canonical URLs.
+LANG_PREFIXES = {"/en", "/th", "/cn", "/jp", "/ja", "/zh", "/de", "/fr", "/es", "/vi", "/ko"}
+
+
+def canonical_url_key(url: str) -> tuple[str, str]:
+    """Return (hostname_without_www, path) for URL deduplication.
+    Treats www.X / https://X/ / http://X / X (no scheme) as the same site,
+    treats /en, /th, etc. as equivalent to root, but keeps real branch paths
+    (/branches/bangkok vs /branches/chiang-mai) separate."""
+    u = (url or "").strip()
+    if not u:
+        return ("", "")
+    if not u.startswith(("http://", "https://")):
+        u = "https://" + u
+    try:
+        parsed = urlparse(u)
+    except Exception:
+        return (u.lower(), "")
+    host = parsed.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = (parsed.path or "").rstrip("/").lower() or "/"
+    # Strip a leading language-code segment so /en, /en/something, /th/... fold to root
+    for lp in LANG_PREFIXES:
+        if path == lp or path.startswith(lp + "/"):
+            path = path[len(lp):] or "/"
+            break
+    return (host, path)
 
 
 def within_next_30_days(date_str: str) -> bool:
@@ -359,18 +409,57 @@ async def scrape_async(limit: int | None, refresh: bool) -> None:
     conn.execute("DELETE FROM scrape_failures")
     conn.commit()
 
-    rows = conn.execute(
-        """SELECT MIN(id) AS id, company_name, website FROM agents
+    # Pull every Thailand agent row, then collapse by canonical URL key
+    # (hostname without www + path). This catches the case where the same
+    # site is listed under multiple URL variants across universities
+    # (e.g. www.X.com vs https://X.com/ vs http://X.com).
+    all_rows = conn.execute(
+        """SELECT id, company_name, website FROM agents
            WHERE country LIKE '%Thailand%'
              AND website IS NOT NULL AND TRIM(website) != ''
-           GROUP BY LOWER(TRIM(website))
            ORDER BY id"""
     ).fetchall()
+    canonical: dict[tuple[str, str], sqlite3.Row] = {}
+    for r in all_rows:
+        key = canonical_url_key(r["website"])
+        if not key[0]:
+            continue  # skip malformed URLs
+        if key not in canonical:
+            canonical[key] = r  # keep the lowest-id row as the representative
+    rows = sorted(canonical.values(), key=lambda r: r["id"])
     if limit:
         rows = rows[:limit]
-    print(f"Scanning {len(rows)} Thailand agent websites (concurrency={CONCURRENCY}) …", flush=True)
+    print(
+        f"Scanning {len(rows)} unique Thailand agent websites "
+        f"(deduped from {len(all_rows)} agent rows, concurrency={CONCURRENCY}) …",
+        flush=True,
+    )
 
-    client = anthropic.AsyncAnthropic()
+    # Purge events from non-canonical Hands On / IDP / etc. agent_ids that were
+    # scraped under different URL variants in earlier runs. Without this, stale
+    # events accumulate as orphans whenever the canonical-URL dedup picks a
+    # different representative across runs. Only delete events tied to TH agents
+    # we considered for scraping — leave non-Thailand data alone.
+    canonical_ids = [r["id"] for r in rows]
+    all_th_ids = [r["id"] for r in all_rows]
+    orphan_ids = [i for i in all_th_ids if i not in set(canonical_ids)]
+    if orphan_ids:
+        placeholders = ",".join("?" for _ in orphan_ids)
+        cur = conn.execute(
+            f"DELETE FROM events WHERE agent_id IN ({placeholders})",
+            orphan_ids,
+        )
+        conn.commit()
+        if cur.rowcount:
+            print(
+                f"Purged {cur.rowcount} stale event(s) from "
+                f"{len(orphan_ids)} non-canonical Thailand agent_ids.",
+                flush=True,
+            )
+
+    # max_retries=5 (default is 2) so transient 529 "overloaded" responses
+    # don't drop sites during Anthropic load spikes. SDK uses exponential backoff.
+    client = anthropic.AsyncAnthropic(max_retries=5)
     total_found = total_kept = sites_with_events = total_failed = 0
 
     async with async_playwright() as p:
@@ -410,13 +499,18 @@ async def scrape_async(limit: int | None, refresh: bool) -> None:
                     print(f"{label}\n    skip [{classify_error(error)}]: {error}", file=sys.stderr, flush=True)
                     continue
                 total_found += len(events)
+                # Filter Claude's output to events we'd actually keep
+                keep = [
+                    ev for ev in events
+                    if within_next_30_days(ev.get("date", ""))
+                    and not is_outside_thailand(ev.get("location", ""))
+                ]
+                # If this site produced any events, replace its stored events
+                # atomically so stale name-variants from previous runs are dropped.
+                if keep:
+                    conn.execute("DELETE FROM events WHERE agent_id = ?", (agent["id"],))
                 kept = 0
-                for ev in events:
-                    if not within_next_30_days(ev.get("date", "")):
-                        continue
-                    if is_outside_thailand(ev.get("location", "")):
-                        # Belt-and-braces: drop anything Claude let through that's clearly outside Thailand.
-                        continue
+                for ev in keep:
                     if upsert_event(conn, agent["id"], ev):
                         kept += 1
                 if kept:

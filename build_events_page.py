@@ -77,6 +77,7 @@ AGENT_LOGO_MAP: list[tuple[str, str | None, str | None]] = [
     ("gouni",              "StudyeventZ logos/GoUni logopng.png",                 None),
     ("go uni",             "StudyeventZ logos/GoUni logopng.png",                 None),
     ("hands on",           "StudyeventZ logos/HandsOn Logo.png",                  None),
+    ("hands-on",           "StudyeventZ logos/HandsOn Logo.png",                  None),
     ("mango",              "StudyeventZ logos/Mango.png",                         None),
 ]
 
