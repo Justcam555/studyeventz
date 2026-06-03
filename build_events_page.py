@@ -505,10 +505,16 @@ __JSON_LD__
 
   .hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
   .hero-inner { max-width: 1180px; margin: 0 auto; }
-  .hero h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: .35rem; }
-  .hero p { opacity: .85; font-size: .95rem; }
-  .hero-th { color: var(--gold); font-size: 1.9rem; font-weight: 500;
-             margin-bottom: .35rem; letter-spacing: .01em; line-height: 1.2; }
+  .hero h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0; line-height: 1.2; }
+  .hero p { opacity: .9; font-size: .95rem; margin: 0; line-height: 1.45; }
+  /* Thai counterparts — same size as the English line they precede, gold colour */
+  .hero-th-title { color: var(--gold); font-size: 1.9rem; font-weight: 500;
+                   margin: 0; line-height: 1.2; letter-spacing: .01em; }
+  .hero-th-sub   { color: var(--gold); font-size: .95rem; font-weight: 400;
+                   margin: 0; line-height: 1.45; }
+  /* Spacing between bilingual pairs */
+  .hero-pair { margin-bottom: 1.1rem; }
+  .hero-pair:last-child { margin-bottom: 0; }
 
   /* ── Filters ── */
   .filters { background: #fff; border-bottom: 1px solid var(--border);
@@ -678,9 +684,18 @@ __JSON_LD__
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-th" lang="th">รวมอีเวนต์เรียนต่อต่างประเทศในไทย</p>
-    <h1>Study Abroad Events in Thailand</h1>
-    <p id="hero-sub">Find university fairs, webinars, and study abroad briefings across Thailand, all in one place.<br><br>Updated every week with events happening in the next 30 days. Follow StudyEventz on LINE for weekly updates.</p>
+    <div class="hero-pair">
+      <p class="hero-th-title" lang="th">รวมอีเวนต์เรียนต่อต่างประเทศในไทย</p>
+      <h1>Study Abroad Events in Thailand</h1>
+    </div>
+    <div class="hero-pair">
+      <p class="hero-th-sub" lang="th">รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว</p>
+      <p>Find university fairs, webinars, and study abroad briefings across Thailand, all in one place.</p>
+    </div>
+    <div class="hero-pair">
+      <p class="hero-th-sub" lang="th">อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า</p>
+      <p>Updated weekly with events happening in the next 30 days.</p>
+    </div>
   </div>
 </section>
 
