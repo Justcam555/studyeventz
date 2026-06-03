@@ -37,7 +37,8 @@ PAGE_TITLE     = "Study Abroad Events in Thailand | Education Fairs & University
 META_DESC_EN   = ("Find study abroad events in Thailand — fairs, webinars and briefings for "
                   "students considering the UK, Australia, USA, Canada and Europe. Updated weekly.")
 META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
-LINE_HANDLE    = "@studyeventz"  # change here to update the LINE banner everywhere
+LINE_HANDLE    = "@studyeventz"  # displayed text in the banner
+LINE_URL       = "https://lin.ee/RdZs9AD"  # where the banner click takes users
 
 # Tokens to skip when extracting initials from agent names
 STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp", "limited"}
@@ -758,15 +759,13 @@ __JSON_LD__
 </aside>
 
 <script>
-// LINE OA — change LINE_HANDLE here (or in build_events_page.py) to update everywhere
+// LINE OA — change LINE_HANDLE / LINE_URL in build_events_page.py to update everywhere
 const LINE_HANDLE = "__LINE_HANDLE__";
+const LINE_URL = "__LINE_URL__";
 (function setLineBanner() {
   const el = document.getElementById('line-link');
   const handleEl = document.getElementById('line-handle');
-  if (el) {
-    const cleanHandle = LINE_HANDLE.replace(/^@/, '');
-    el.href = `https://line.me/R/ti/p/@${cleanHandle}`;
-  }
+  if (el) el.href = LINE_URL;
   if (handleEl) handleEl.textContent = LINE_HANDLE;
 })();
 
@@ -1242,6 +1241,7 @@ def build_html() -> tuple[int, str]:
         "__SITE_URL__":        SITE_URL,
         "__OG_IMAGE__":        og_image,
         "__LINE_HANDLE__":     LINE_HANDLE,
+        "__LINE_URL__":        LINE_URL,
         "__JSON_LD__":         json_ld,
         "__CHARACTERS_JSON__": json.dumps(characters),
     }

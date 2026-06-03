@@ -794,15 +794,13 @@
 </aside>
 
 <script>
-// LINE OA — change LINE_HANDLE here (or in build_events_page.py) to update everywhere
+// LINE OA — change LINE_HANDLE / LINE_URL in build_events_page.py to update everywhere
 const LINE_HANDLE = "@studyeventz";
+const LINE_URL = "https://lin.ee/RdZs9AD";
 (function setLineBanner() {
   const el = document.getElementById('line-link');
   const handleEl = document.getElementById('line-handle');
-  if (el) {
-    const cleanHandle = LINE_HANDLE.replace(/^@/, '');
-    el.href = `https://line.me/R/ti/p/@${cleanHandle}`;
-  }
+  if (el) el.href = LINE_URL;
   if (handleEl) handleEl.textContent = LINE_HANDLE;
 })();
 
