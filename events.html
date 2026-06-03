@@ -951,9 +951,8 @@ function parseTimeRange(timeStr) {
 
 // Escape special chars per RFC 5545 (iCalendar)
 function icsEscape(s) {
-  return (s || '').replace(/\/g, '\\').replace(/[
-]+/g, '\n')
-                  .replace(/,/g, '\,').replace(/;/g, '\;');
+  return (s || '').replace(/\\/g, '\\\\').replace(/[\r\n]+/g, '\\n')
+                  .replace(/,/g, '\\,').replace(/;/g, '\\;');
 }
 
 function buildIcsContent(ev) {
@@ -975,8 +974,7 @@ function buildIcsContent(ev) {
     `Organized by ${ev.organizer || ev.agent_name || 'studyeventz'}`,
     ev.registration_url ? `Register: ${ev.registration_url}` : '',
     `Listed on studyeventz: https://www.studyeventz.com/events.html`,
-  ].filter(Boolean).join('
-');
+  ].filter(Boolean).join('\n');
   return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
@@ -994,8 +992,7 @@ function buildIcsContent(ev) {
     ev.registration_url ? `URL:${ev.registration_url}` : '',
     'END:VEVENT',
     'END:VCALENDAR',
-  ].filter(Boolean).join('
-');
+  ].filter(Boolean).join('\r\n');
 }
 
 function buildCalendarUrl(ev) {

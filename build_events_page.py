@@ -444,7 +444,7 @@ CHARACTER_SVGS = [
 ]
 
 
-HTML = """<!doctype html>
+HTML = r"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
