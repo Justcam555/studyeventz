@@ -568,6 +568,9 @@
   .chip.active { background: var(--teal); color: #fff; border-color: var(--teal); }
   .chip .count { opacity: .7; font-size: .75rem; margin-left: .3rem; font-weight: 400; }
   .chip.active .count { opacity: .9; }
+  /* Wrap the online-toggle count in parentheses for emphasis */
+  #online-toggle .count::before { content: "("; }
+  #online-toggle .count::after  { content: ")"; }
 
   /* Online toggle — separate from the exclusive filter group */
   .chip.toggle { margin-left: auto; border: 1px dashed #b8c2cd;
