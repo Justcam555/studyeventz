@@ -518,7 +518,7 @@ __JSON_LD__
   [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
                               -apple-system, BlinkMacSystemFont, sans-serif; }
   /* Use .hero p.X selectors so these beat the generic '.hero p' rule above */
-  .hero p.hero-th-title { color: var(--gold); font-size: 3.8rem; font-weight: 700;
+  .hero p.hero-th-title { color: var(--gold); font-size: 2.85rem; font-weight: 700;
                           margin: 0; line-height: 1.2; letter-spacing: .01em; opacity: 1; }
   .hero p.hero-th-sub   { color: var(--gold); font-size: 1.15rem; font-weight: 400;
                           margin: 0; line-height: 1.55; opacity: 1; }
