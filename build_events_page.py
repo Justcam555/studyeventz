@@ -691,7 +691,7 @@ __JSON_LD__
     <button class="chip" data-filter="bangkok">Bangkok <span class="count" data-count="bangkok">0</span></button>
     <span class="filter-divider"></span>
     <button class="chip toggle" id="online-toggle" aria-pressed="false">
-      <span class="label">+ Online</span>
+      <span class="label">+ Include online events</span>
       <span class="count" data-count="online">0</span>
     </button>
   </div>
@@ -910,7 +910,7 @@ function setOnlineToggle(on) {
   btn.classList.toggle('active', on);
   btn.setAttribute('aria-pressed', String(on));
   const label = btn.querySelector('.label');
-  if (label) label.textContent = on ? 'Online ✓' : '+ Online';
+  if (label) label.textContent = on ? 'Including online events ✓' : '+ Include online events';
 }
 
 document.getElementById('filters').addEventListener('click', e => {
