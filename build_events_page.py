@@ -40,6 +40,11 @@ META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเ�
 LINE_HANDLE    = "@988jljgk"  # displayed text in the banner
 LINE_URL       = "https://lin.ee/RdZs9AD"  # where the banner click takes users
 
+# Backend ingest. Leave empty to disable backend POSTs (frontend keeps logging
+# to localStorage and console). Set after deploying backend/ — see backend/README.md.
+INGEST_URL     = ""
+SITE_KEY       = "studyeventz-public-2026"  # must match wrangler.toml [vars].SITE_KEY
+
 # Tokens to skip when extracting initials from agent names
 STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp", "limited"}
 
@@ -810,7 +815,100 @@ function track(type, payload) {
 window.studyeventz = {
   dump: () => JSON.parse(localStorage.getItem(ANALYTICS_KEY) || '[]'),
   clear: () => localStorage.removeItem(ANALYTICS_KEY),
+  pending: () => JSON.parse(localStorage.getItem(PENDING_KEY) || '[]'),
+  flush: () => flushPending(),
 };
+
+// ── Backend ingest (sends queued events to the Cloudflare Worker) ──────────
+// Layered ON TOP of the existing track()/localStorage queue — does not replace it.
+// If INGEST_URL is empty, this whole layer is a no-op and the frontend still
+// works exactly as before.
+const INGEST_URL = "__INGEST_URL__";
+const SITE_KEY   = "__SITE_KEY__";
+const PENDING_KEY = 'studyeventz_pending';
+const PENDING_MAX = 500;
+const CLICK_TYPES = new Set([
+  'event_register_click', 'logo_click', 'location_click', 'calendar_click', 'line_click'
+]);
+
+function getPending() {
+  try { return JSON.parse(localStorage.getItem(PENDING_KEY) || '[]'); }
+  catch (e) { return []; }
+}
+function setPending(arr) {
+  try {
+    // Cap to avoid unbounded growth if the backend is down for a long time
+    const capped = arr.length > PENDING_MAX ? arr.slice(-PENDING_MAX) : arr;
+    localStorage.setItem(PENDING_KEY, JSON.stringify(capped));
+  } catch (e) { /* storage full — drop silently */ }
+}
+function addPending(event) {
+  if (!INGEST_URL) return;
+  const arr = getPending();
+  arr.push(event);
+  setPending(arr);
+}
+
+function flushPending() {
+  if (!INGEST_URL) return;
+  const pending = getPending();
+  if (pending.length === 0) return;
+
+  // The Worker expects a JSON body and reads ?k= for the site key (so sendBeacon works too).
+  const url = INGEST_URL + (INGEST_URL.includes('?') ? '&' : '?') + 'k=' + encodeURIComponent(SITE_KEY);
+  const body = JSON.stringify(pending);
+
+  // sendBeacon: fire-and-forget, survives page-unload, no headers control needed
+  if (navigator.sendBeacon) {
+    try {
+      const blob = new Blob([body], { type: 'application/json' });
+      if (navigator.sendBeacon(url, blob)) {
+        // Optimistic — if the backend later 4xx/5xx's this batch, we lose it.
+        // Acceptable for v1; we never block the user's click on a backend round-trip.
+        setPending([]);
+        return;
+      }
+    } catch (e) { /* fall through to fetch */ }
+  }
+
+  // Fallback: fetch with keepalive so the request survives navigation
+  try {
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body,
+      keepalive: true,
+    }).then(r => {
+      // Only clear on confirmed 2xx — keepalive fetches return real responses
+      if (r && r.ok) setPending([]);
+    }).catch(() => { /* leave in queue, retry next pageload */ });
+  } catch (e) { /* leave in queue */ }
+}
+
+// Wrap track() so the existing local behaviour is unchanged and we add backend send
+const _baseTrack = track;
+track = function(type, payload) {
+  _baseTrack(type, payload);
+  if (!INGEST_URL) return;
+  // The event object track() built is the last item in the queue
+  const queue = JSON.parse(localStorage.getItem(ANALYTICS_KEY) || '[]');
+  const justAdded = queue[queue.length - 1];
+  if (!justAdded) return;
+  addPending(justAdded);
+  // Flush click events immediately (user may navigate away); batch impressions
+  if (CLICK_TYPES.has(type)) flushPending();
+};
+
+// Periodic flush so impression batches go out without waiting for unload
+setInterval(flushPending, 5000);
+
+// Flush when user navigates away / hides the tab
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') flushPending();
+});
+
+// On page load, drain any events that piled up from previous sessions
+window.addEventListener('load', flushPending);
 
 // Card impressions — fires once per card per pageload when 50% visible
 const SEEN_IMPRESSIONS = new Set();
@@ -1242,6 +1340,8 @@ def build_html() -> tuple[int, str]:
         "__OG_IMAGE__":        og_image,
         "__LINE_HANDLE__":     LINE_HANDLE,
         "__LINE_URL__":        LINE_URL,
+        "__INGEST_URL__":      INGEST_URL,
+        "__SITE_KEY__":        SITE_KEY,
         "__JSON_LD__":         json_ld,
         "__CHARACTERS_JSON__": json.dumps(characters),
     }

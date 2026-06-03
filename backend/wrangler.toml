@@ -1,0 +1,29 @@
+name = "studyeventz-ingest"
+main = "src/worker.js"
+compatibility_date = "2026-01-01"
+
+# Logs visible at: https://dash.cloudflare.com → Workers → studyeventz-ingest → Logs
+[observability]
+enabled = true
+
+# D1 (SQLite at the edge) binding.
+# database_id is filled in after `wrangler d1 create studyeventz_analytics` — see README.
+[[d1_databases]]
+binding = "DB"
+database_name = "studyeventz_analytics"
+database_id = "REPLACE_WITH_OUTPUT_OF_D1_CREATE"
+
+# Per-IP rate limiting (Workers native binding). 100 requests / 60 s.
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "2026"
+simple = { limit = 100, period = 60 }
+
+# Non-secret public token the frontend sends as ?k=...
+# It's not authentication — just a friction layer against drive-by abuse.
+[vars]
+SITE_KEY = "studyeventz-public-2026"
+
+# IP_HASH_SALT is set as a SECRET (never written here). See README:
+#   wrangler secret put IP_HASH_SALT
