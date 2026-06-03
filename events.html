@@ -619,6 +619,9 @@
               display: flex; align-items: center; justify-content: center;
               padding: .5rem; border-right: 1px solid var(--border); }
   .logo-col img { max-width: 60px; max-height: 60px; object-fit: contain; display: block; }
+  .logo-link { display: inline-flex; align-items: center; justify-content: center;
+               text-decoration: none; color: inherit; transition: opacity .15s; }
+  .logo-link:hover { opacity: .8; }
   /* White-on-transparent logos get a teal circle behind them (same family as initials-avatar) */
   .logo-col img.needs-bg { width: 52px; height: 52px; max-width: 52px; max-height: 52px;
                            background: var(--teal); border-radius: 50%;
@@ -799,6 +802,103 @@ const LINE_HANDLE = "@studyeventz";
   if (handleEl) handleEl.textContent = LINE_HANDLE;
 })();
 
+// ── Front-end analytics (queues to localStorage, no backend yet) ──────────
+const ANALYTICS_KEY = 'studyeventz_analytics';
+const ANALYTICS_MAX = 500;
+
+function getSessionId() {
+  try {
+    let sid = sessionStorage.getItem('studyeventz_sid');
+    if (!sid) {
+      sid = (window.crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        : Date.now().toString(36) + Math.random().toString(36).slice(2);
+      sessionStorage.setItem('studyeventz_sid', sid);
+    }
+    return sid;
+  } catch (e) { return 'no-session'; }
+}
+
+function track(type, payload) {
+  payload = payload || {};
+  const event = Object.assign({
+    type,
+    ts: new Date().toISOString(),
+    session_id: getSessionId(),
+    page: location.pathname,
+  }, payload);
+  console.log('[studyeventz]', type, payload);
+  try {
+    const raw = localStorage.getItem(ANALYTICS_KEY);
+    const queue = raw ? JSON.parse(raw) : [];
+    queue.push(event);
+    while (queue.length > ANALYTICS_MAX) queue.shift();
+    localStorage.setItem(ANALYTICS_KEY, JSON.stringify(queue));
+  } catch (e) {
+    // localStorage may be unavailable (Safari private mode, quota exceeded) — fall back to console only
+  }
+}
+
+// Helper for debugging in console: studyeventz.dump() to see the queue
+window.studyeventz = {
+  dump: () => JSON.parse(localStorage.getItem(ANALYTICS_KEY) || '[]'),
+  clear: () => localStorage.removeItem(ANALYTICS_KEY),
+};
+
+// Card impressions — fires once per card per pageload when 50% visible
+const SEEN_IMPRESSIONS = new Set();
+const impressionObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+      const card = entry.target;
+      const id = card.dataset.eventId;
+      if (id && !SEEN_IMPRESSIONS.has(id)) {
+        SEEN_IMPRESSIONS.add(id);
+        track('event_impression', {
+          event_id: id,
+          event_name: card.dataset.eventName,
+          agent_name: card.dataset.agent,
+          date: card.dataset.date,
+          online: card.dataset.online === 'true',
+        });
+        impressionObserver.unobserve(card);
+      }
+    }
+  }
+}, { threshold: 0.5 }) : null;
+
+function attachCardTracking() {
+  if (!impressionObserver) return;
+  document.querySelectorAll('.card').forEach(c => {
+    if (!SEEN_IMPRESSIONS.has(c.dataset.eventId)) impressionObserver.observe(c);
+  });
+}
+
+// Click delegation — register button, logo, and LINE banner
+document.addEventListener('click', (e) => {
+  // LINE banner click (outside any card)
+  if (e.target.closest('#line-link')) {
+    track('line_click', { handle: LINE_HANDLE });
+    return;
+  }
+  const card = e.target.closest('.card');
+  if (!card) return;
+  const meta = {
+    event_id: card.dataset.eventId,
+    event_name: card.dataset.eventName,
+    agent_name: card.dataset.agent,
+    date: card.dataset.date,
+  };
+  if (e.target.closest('.btn-register:not(.disabled)')) {
+    const link = e.target.closest('a');
+    track('event_register_click', Object.assign({}, meta, {
+      registration_url: link ? link.href : null,
+    }));
+  } else if (e.target.closest('.logo-col, .logo-inline')) {
+    track('logo_click', meta);
+  }
+});
+
 const CHARACTERS = ["assets/characters/studyeventz7.png", "assets/characters/studyeventz%201.png", "assets/characters/studyeventz%202.png", "assets/characters/studyeventz%203.png", "assets/characters/studyeventz%204.png", "assets/characters/studyeventz%205.png", "assets/characters/studyeventz%206.png", "assets/characters/studyeventz%208.png", "assets/characters/studyeventz%209.png", "assets/characters/studyeventz%2010.png", "assets/characters/studyeventz%2011.png"];
 
 function characterMarkup(entry) {
@@ -809,13 +909,21 @@ function characterMarkup(entry) {
   return entry.svg;
 }
 
-function logoMarkup(ev) {
+function logoInner(ev) {
   if (ev.logo_url) {
     const cls = ev.logo_needs_bg ? ' class="needs-bg"' : '';
     const style = ev.logo_bg_color ? ` style="background: ${ev.logo_bg_color}"` : '';
     return `<img${cls}${style} src="${ev.logo_url}" alt="${escapeHTML(ev.agent_name)} logo" loading="lazy">`;
   }
   return `<span class="initials-avatar" aria-hidden="true">${escapeHTML(ev.initials || '?')}</span>`;
+}
+
+function logoMarkup(ev) {
+  const inner = logoInner(ev);
+  const url = ev.agent_website || '';
+  if (!url) return inner;
+  const safeUrl = url.startsWith('http') ? url : ('https://' + url);
+  return `<a class="logo-link" href="${escapeHTML(safeUrl)}" target="_blank" rel="noopener" aria-label="${escapeHTML(ev.agent_name)} website">${inner}</a>`;
 }
 
 // SVG icons for meta pills
@@ -905,7 +1013,12 @@ function renderCard(ev, idx) {
   const timePill = ev.time ? `<span class="pill">${ICONS.time}${escapeHTML(ev.time)}</span>` : '';
   const locPill = ev.location ? `<span class="pill">${ICONS.location}${escapeHTML(ev.location)}</span>` : '';
   return `
-    <article class="card">
+    <article class="card"
+             data-event-id="${escapeHTML(String(ev.id))}"
+             data-event-name="${escapeHTML(ev.name)}"
+             data-agent="${escapeHTML(ev.agent_name)}"
+             data-date="${escapeHTML(ev.date)}"
+             data-online="${isOnline(ev)}">
       <div class="logo-col">${logo}</div>
       <div class="body-col">
         <div class="logo-inline">${logo}</div>
@@ -952,6 +1065,7 @@ function render(events, filter, showOnline) {
       ${g.events.map(ev => renderCard(ev, idx++)).join('')}
     </section>
   `).join('');
+  attachCardTracking();
 }
 
 function updateCounts(events) {
