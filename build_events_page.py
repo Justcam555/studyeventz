@@ -676,7 +676,7 @@ __JSON_LD__
 <section class="hero">
   <div class="hero-inner">
     <h1>Study Abroad Events in Thailand</h1>
-    <p id="hero-sub">Education fairs, info sessions and webinars from agents across the network — next 30 days.</p>
+    <p id="hero-sub">Find upcoming university events, education fairs, webinars, and study abroad briefings across Thailand, all in one place.<br><br>Updated weekly with events happening in the next 30 days. Follow StudyEventz on LINE to get weekly event updates.</p>
   </div>
 </section>
 
