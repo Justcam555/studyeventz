@@ -517,8 +517,8 @@ __JSON_LD__
      to appear visually equivalent in weight. */
   [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
                               -apple-system, BlinkMacSystemFont, sans-serif; }
-  .hero-th-title { color: var(--gold); font-size: 2.85rem; font-weight: 700;
-                   margin: 0; line-height: 1.25; letter-spacing: .01em; }
+  .hero-th-title { color: var(--gold); font-size: 3.8rem; font-weight: 700;
+                   margin: 0; line-height: 1.2; letter-spacing: .01em; }
   .hero-th-sub   { color: var(--gold); font-size: 1.15rem; font-weight: 400;
                    margin: 0; line-height: 1.55; }
   /* Spacing between bilingual pairs */
