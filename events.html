@@ -658,6 +658,9 @@
           background: #f0f2f5; padding: .3rem .65rem; border-radius: 14px;
           font-size: .78rem; color: var(--muted); }
   .pill svg { width: 12px; height: 12px; flex-shrink: 0; }
+  a.pill.pill-link { text-decoration: none; cursor: pointer;
+                     transition: background .15s, color .15s; }
+  a.pill.pill-link:hover { background: var(--teal); color: #fff; }
 
   .card-actions { display: flex; gap: .6rem; align-items: center; }
   .btn-register { background: var(--teal); color: #fff; text-decoration: none;
@@ -896,6 +899,12 @@ document.addEventListener('click', (e) => {
     }));
   } else if (e.target.closest('.logo-col, .logo-inline')) {
     track('logo_click', meta);
+  } else if (e.target.closest('.pill-link')) {
+    const link = e.target.closest('a');
+    track('location_click', Object.assign({}, meta, {
+      location: card.dataset.eventName ? (card.querySelector('.pill-link') ? card.querySelector('.pill-link').textContent.trim() : null) : null,
+      maps_url: link ? link.href : null,
+    }));
   }
 });
 
@@ -907,6 +916,18 @@ function characterMarkup(entry) {
     return `<img src="${entry}" alt="" loading="lazy">`;
   }
   return entry.svg;
+}
+
+function locationPill(ev) {
+  if (!ev.location) return '';
+  const content = `${ICONS.location}${escapeHTML(ev.location)}`;
+  // Online events have no physical pin — keep as a plain span
+  if (isOnline(ev)) return `<span class="pill">${content}</span>`;
+  // Strip trailing "/ Online" so Maps doesn't get confused on hybrid events
+  let query = ev.location.replace(/\s*\/\s*online\s*$/i, '').trim();
+  if (!/thailand/i.test(query)) query += ', Thailand';
+  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  return `<a class="pill pill-link" href="${url}" target="_blank" rel="noopener">${content}</a>`;
 }
 
 function logoInner(ev) {
@@ -1011,7 +1032,7 @@ function renderCard(ev, idx) {
     : `<span class="btn-register disabled">No link</span>`;
   const datePill = `<span class="pill">${ICONS.date}${escapeHTML(fmtEventDate(ev.date))}</span>`;
   const timePill = ev.time ? `<span class="pill">${ICONS.time}${escapeHTML(ev.time)}</span>` : '';
-  const locPill = ev.location ? `<span class="pill">${ICONS.location}${escapeHTML(ev.location)}</span>` : '';
+  const locPill = locationPill(ev);
   return `
     <article class="card"
              data-event-id="${escapeHTML(String(ev.id))}"
