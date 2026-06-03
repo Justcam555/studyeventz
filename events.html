@@ -900,10 +900,14 @@ document.addEventListener('click', (e) => {
     }));
   } else if (e.target.closest('.logo-col, .logo-inline')) {
     track('logo_click', meta);
+  } else if (e.target.closest('.pill-calendar')) {
+    const link = e.target.closest('a');
+    track('calendar_click', Object.assign({}, meta, {
+      calendar_url: link ? link.href : null,
+    }));
   } else if (e.target.closest('.pill-link')) {
     const link = e.target.closest('a');
     track('location_click', Object.assign({}, meta, {
-      location: card.dataset.eventName ? (card.querySelector('.pill-link') ? card.querySelector('.pill-link').textContent.trim() : null) : null,
       maps_url: link ? link.href : null,
     }));
   }
@@ -917,6 +921,94 @@ function characterMarkup(entry) {
     return `<img src="${entry}" alt="" loading="lazy">`;
   }
   return entry.svg;
+}
+
+function pad2(n) { return String(n).padStart(2, '0'); }
+
+// Parse a free-form time field like "1:00 PM - 3:00 PM", "14:00", "10am - 12pm".
+// Returns {startH, startM, endH, endM} in 24h, or null if unparseable.
+function parseTimeRange(timeStr) {
+  if (!timeStr) return null;
+  const s = timeStr.replace(/[–—−]/g, '-');
+  const re = /(\d{1,2})(?::(\d{2}))?\s*(AM|PM|am|pm)?(?:\s*-\s*(\d{1,2})(?::(\d{2}))?\s*(AM|PM|am|pm)?)?/;
+  const m = s.match(re);
+  if (!m) return null;
+  function to24(h, ap) {
+    h = parseInt(h, 10);
+    if (!ap) return h;
+    const a = ap.toLowerCase();
+    if (a === 'am' && h === 12) return 0;
+    if (a === 'pm' && h !== 12) return h + 12;
+    return h;
+  }
+  const startH = to24(m[1], m[3]);
+  const startM = m[2] ? parseInt(m[2], 10) : 0;
+  // If end AP missing, inherit start AP; if end hour missing, default to start + 2h
+  const endH = m[4] ? to24(m[4], m[6] || m[3]) : (startH + 2) % 24;
+  const endM = m[5] ? parseInt(m[5], 10) : startM;
+  return { startH, startM, endH, endM };
+}
+
+// Escape special chars per RFC 5545 (iCalendar)
+function icsEscape(s) {
+  return (s || '').replace(/\/g, '\\').replace(/[
+]+/g, '\n')
+                  .replace(/,/g, '\,').replace(/;/g, '\;');
+}
+
+function buildIcsContent(ev) {
+  const dateCompact = (ev.date || '').replace(/-/g, '');
+  const range = parseTimeRange(ev.time);
+  let dtstart, dtend;
+  if (range) {
+    dtstart = `DTSTART;TZID=Asia/Bangkok:${dateCompact}T${pad2(range.startH)}${pad2(range.startM)}00`;
+    dtend   = `DTEND;TZID=Asia/Bangkok:${dateCompact}T${pad2(range.endH)}${pad2(range.endM)}00`;
+  } else {
+    const d = new Date(ev.date + 'T00:00:00');
+    d.setDate(d.getDate() + 1);
+    const nextCompact = d.toISOString().slice(0, 10).replace(/-/g, '');
+    dtstart = `DTSTART;VALUE=DATE:${dateCompact}`;
+    dtend   = `DTEND;VALUE=DATE:${nextCompact}`;
+  }
+  const now = new Date().toISOString().replace(/[-:.]/g, '').slice(0, 15) + 'Z';
+  const description = [
+    `Organized by ${ev.organizer || ev.agent_name || 'studyeventz'}`,
+    ev.registration_url ? `Register: ${ev.registration_url}` : '',
+    `Listed on studyeventz: https://www.studyeventz.com/events.html`,
+  ].filter(Boolean).join('
+');
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//studyeventz//Thailand Events//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `UID:studyeventz-${ev.id}-${ev.date}@studyeventz.com`,
+    `DTSTAMP:${now}`,
+    dtstart,
+    dtend,
+    `SUMMARY:${icsEscape(ev.name)}`,
+    `DESCRIPTION:${icsEscape(description)}`,
+    `LOCATION:${icsEscape(ev.location)}`,
+    ev.registration_url ? `URL:${ev.registration_url}` : '',
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ].filter(Boolean).join('
+');
+}
+
+function buildCalendarUrl(ev) {
+  // Data URL with text/calendar mime type triggers each OS's native
+  // "Add to Calendar" handler: Apple Calendar on iOS, Google/Samsung
+  // Calendar on Android, default app on desktop.
+  return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(buildIcsContent(ev));
+}
+
+function calendarFilename(ev) {
+  const slug = (ev.name || 'event').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+  return `${slug || 'event'}-${ev.date}.ics`;
 }
 
 function locationPill(ev) {
@@ -1031,7 +1123,9 @@ function renderCard(ev, idx) {
   const btn = regUrl
     ? `<a class="btn-register" href="${escapeHTML(regUrl)}" target="_blank" rel="noopener">Register →</a>`
     : `<span class="btn-register disabled">No link</span>`;
-  const datePill = `<span class="pill">${ICONS.date}${escapeHTML(fmtEventDate(ev.date))}</span>`;
+  const calendarUrl = buildCalendarUrl(ev);
+  const calendarFile = calendarFilename(ev);
+  const datePill = `<a class="pill pill-link pill-calendar" href="${calendarUrl}" download="${calendarFile}" title="Add to calendar">${ICONS.date}${escapeHTML(fmtEventDate(ev.date))}</a>`;
   const timePill = ev.time ? `<span class="pill">${ICONS.time}${escapeHTML(ev.time)}</span>` : '';
   const locPill = locationPill(ev);
   return `
