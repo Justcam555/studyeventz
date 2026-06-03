@@ -34,8 +34,9 @@ LOGOS_DIR = ROOT / "assets" / "logos"
 SITE_URL       = "https://www.studyeventz.com"
 EVENTS_PAGE    = f"{SITE_URL}/events.html"
 PAGE_TITLE     = "Study Abroad Events in Thailand | Education Fairs & University Webinars | StudyEventz"
-META_DESC_EN   = ("Find upcoming university fairs, info days and study abroad events "
-                  "in Bangkok and Thailand. Updated weekly by studyeventz.")
+META_DESC_EN   = ("Find upcoming study abroad events in Thailand, including university fairs, "
+                  "education agent events, webinars, and briefings for students interested in "
+                  "the UK, Australia, Canada, the USA, Europe and more.")
 META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
 LINE_HANDLE    = "@studyeventz"  # change here to update the LINE banner everywhere
 
