@@ -582,7 +582,8 @@ __JSON_LD__
   .logo-col { width: 80px; min-width: 80px; background: #f7f9fa;
               display: flex; align-items: center; justify-content: center;
               padding: .5rem; border-right: 1px solid var(--border); }
-  .logo-col img { max-width: 60px; max-height: 60px; object-fit: contain; display: block; }
+  .logo-col img { width: 60px; height: 60px; max-width: 60px; max-height: 60px;
+                  object-fit: contain; display: block; }
   .logo-link { display: inline-flex; align-items: center; justify-content: center;
                text-decoration: none; color: inherit; transition: opacity .15s; }
   .logo-link:hover { opacity: .8; }
