@@ -33,7 +33,7 @@ LOGOS_DIR = ROOT / "assets" / "logos"
 # ─── Site metadata (edit these to change brand-level details) ──────────────
 SITE_URL       = "https://www.studyeventz.com"
 EVENTS_PAGE    = f"{SITE_URL}/events.html"
-PAGE_TITLE     = "Study Abroad Events in Thailand 2026 | studyeventz"
+PAGE_TITLE     = "Study Abroad Events in Thailand | Education Fairs & University Webinars | StudyEventz"
 META_DESC_EN   = ("Find upcoming university fairs, info days and study abroad events "
                   "in Bangkok and Thailand. Updated weekly by studyeventz.")
 META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
