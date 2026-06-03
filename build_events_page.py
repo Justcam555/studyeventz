@@ -675,7 +675,7 @@ __JSON_LD__
 
 <section class="hero">
   <div class="hero-inner">
-    <h1>Upcoming Events</h1>
+    <h1>Study Abroad Events in Thailand</h1>
     <p id="hero-sub">Education fairs, info sessions and webinars from agents across the network — next 30 days.</p>
   </div>
 </section>

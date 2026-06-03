@@ -1,42 +1,10 @@
 {
-  "generated_at": "2026-06-02T17:03:33",
+  "generated_at": "2026-06-03T15:24:53",
   "window": {
-    "from": "2026-06-02",
-    "to": "2026-07-02"
+    "from": "2026-06-03",
+    "to": "2026-07-03"
   },
   "events": [
-    {
-      "id": 173,
-      "name": "Pre-departure briefings – ปฐมนิเทศก่อนเดินทางไปศึกษาต่อออสเตรเลีย",
-      "date": "2026-06-02",
-      "time": "16:00 - 17:00",
-      "location": "Hands On Silom, Bangkok",
-      "organizer": "Hands On Education Consultants",
-      "agent_name": "Hands On Education Consultants",
-      "agent_country": "Thailand",
-      "agent_website": "www.hands-on.co.th",
-      "registration_url": "https://www.hands-on.co.th/events/",
-      "logo_url": "assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HO"
-    },
-    {
-      "id": 15,
-      "name": "Work Experience for UK Veterinary Med...",
-      "date": "2026-06-02",
-      "time": "17:00 - 18:00",
-      "location": "Online",
-      "organizer": "StudyIn Bangkok",
-      "agent_name": "StudyIn Bangkok",
-      "agent_country": "Thailand",
-      "agent_website": "https://gostudyin.com/branches/bangkok/",
-      "registration_url": "https://gostudyin.com/events/",
-      "logo_url": "assets/logos/StudyeventZ%20logos/studyin-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SB"
-    },
     {
       "id": 194,
       "name": "SOP Workshop เขียน SOP ยังไง! ให้มหาลัยตอบรับ",
