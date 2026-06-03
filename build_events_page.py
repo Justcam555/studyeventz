@@ -515,6 +515,7 @@ __JSON_LD__
                    display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
   .filter-label { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
                   color: var(--muted); margin-right: .5rem; font-weight: 600; }
+  .filter-context { font-size: .85rem; color: var(--muted); margin-right: .5rem; }
   .chip { background: #f0f2f5; color: var(--text); border: 1px solid transparent;
           padding: .45rem .95rem; border-radius: 20px; font-size: .85rem;
           font-weight: 500; cursor: pointer; transition: all .15s;
@@ -683,6 +684,7 @@ __JSON_LD__
 <div class="filters" id="filters">
   <div class="filters-inner">
     <span class="filter-label">Filter</span>
+    <span class="filter-context">Events in the next 30 days</span>
     <button class="chip active" data-filter="all">All <span class="count" data-count="all">0</span></button>
     <button class="chip" data-filter="australia">Australia <span class="count" data-count="australia">0</span></button>
     <button class="chip" data-filter="uk">UK <span class="count" data-count="uk">0</span></button>
