@@ -27,3 +27,33 @@ CREATE INDEX IF NOT EXISTS idx_events_agent_name  ON events(agent_name);
 CREATE INDEX IF NOT EXISTS idx_events_session_id  ON events(session_id);
 CREATE INDEX IF NOT EXISTS idx_events_received_at ON events(received_at);
 CREATE INDEX IF NOT EXISTS idx_events_event_date  ON events(event_date);
+
+
+-- Event submissions from agents/organizers via the public form.
+-- Nothing here is auto-published — review with submissions_report.py and
+-- approve manually via SQL or approve_submission.py before it lands in
+-- agents.db events table.
+
+CREATE TABLE IF NOT EXISTS submissions (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    organizer         TEXT NOT NULL,        -- agent / company / university name
+    event_name        TEXT NOT NULL,
+    event_date        TEXT NOT NULL,        -- ISO YYYY-MM-DD
+    event_time        TEXT,                 -- free text e.g. "14:00 - 16:00"
+    location          TEXT,                 -- city / venue / "Online"
+    registration_url  TEXT NOT NULL,        -- landing page URL
+    submitter_name    TEXT,
+    submitter_email   TEXT,
+    notes             TEXT,                 -- extra context from the submitter
+    user_agent        TEXT,
+    referrer          TEXT,
+    ip_hash           TEXT,
+    status            TEXT NOT NULL DEFAULT 'pending',   -- pending | approved | rejected
+    received_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
+    reviewed_at       DATETIME,
+    reviewer_notes    TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_submissions_status      ON submissions(status);
+CREATE INDEX IF NOT EXISTS idx_submissions_received_at ON submissions(received_at);
+CREATE INDEX IF NOT EXISTS idx_submissions_event_date  ON submissions(event_date);

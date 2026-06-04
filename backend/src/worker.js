@@ -85,6 +85,111 @@ function validEvent(ev) {
   return true;
 }
 
+// ─── /submit (event-submission form) ──────────────────────────────────────
+// Smaller body cap than /track (single submission, not a batch).
+const SUBMIT_MAX_BODY_BYTES = 5 * 1024;
+
+const SUBMIT_FIELD_CAPS = {
+  organizer:        300,
+  event_name:       500,
+  event_date:       20,
+  event_time:       50,
+  location:         300,
+  registration_url: 1000,
+  submitter_name:   200,
+  submitter_email:  300,
+  notes:            2000,
+};
+
+const URL_RE   = /^https?:\/\/[^\s]+$/i;
+const DATE_RE  = /^\d{4}-\d{2}-\d{2}$/;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+async function handleSubmit(request, env, origin) {
+  const contentLength = parseInt(request.headers.get("content-length") || "0", 10);
+  if (contentLength > SUBMIT_MAX_BODY_BYTES) {
+    return json(413, { error: "payload_too_large" }, origin);
+  }
+  let body;
+  try {
+    const text = await request.text();
+    if (text.length > SUBMIT_MAX_BODY_BYTES) {
+      return json(413, { error: "payload_too_large" }, origin);
+    }
+    body = JSON.parse(text);
+  } catch {
+    return json(400, { error: "invalid_json" }, origin);
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body)) {
+    return json(400, { error: "expected_object" }, origin);
+  }
+
+  // Per-field validation
+  const errors = {};
+  const get = (k) => (typeof body[k] === "string" ? body[k].trim() : "");
+
+  const organizer        = get("organizer");
+  const eventName        = get("event_name");
+  const eventDate        = get("event_date");
+  const eventTime        = get("event_time");
+  const location         = get("location");
+  const registrationUrl  = get("registration_url");
+  const submitterName    = get("submitter_name");
+  const submitterEmail   = get("submitter_email");
+  const notes            = get("notes");
+
+  if (!organizer)       errors.organizer = "required";
+  if (!eventName)       errors.event_name = "required";
+  if (!eventDate)       errors.event_date = "required";
+  else if (!DATE_RE.test(eventDate)) errors.event_date = "must be YYYY-MM-DD";
+  if (!registrationUrl) errors.registration_url = "required";
+  else if (!URL_RE.test(registrationUrl)) errors.registration_url = "must start with http:// or https://";
+  if (submitterEmail && !EMAIL_RE.test(submitterEmail)) errors.submitter_email = "invalid email";
+
+  // Length caps (string already trimmed)
+  for (const [k, max] of Object.entries(SUBMIT_FIELD_CAPS)) {
+    const v = get(k);
+    if (v && v.length > max) errors[k] = `too long (>${max} chars)`;
+  }
+
+  if (Object.keys(errors).length) {
+    return json(400, { error: "validation_failed", fields: errors }, origin);
+  }
+
+  const ipHash    = await hashIp(request.headers.get("CF-Connecting-IP"), env.IP_HASH_SALT);
+  const userAgent = cap(request.headers.get("User-Agent"), 500);
+  const referrer  = cap(request.headers.get("Referer"), 500);
+
+  try {
+    const result = await env.DB.prepare(`
+      INSERT INTO submissions (
+        organizer, event_name, event_date, event_time, location,
+        registration_url, submitter_name, submitter_email, notes,
+        user_agent, referrer, ip_hash
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      cap(organizer,        SUBMIT_FIELD_CAPS.organizer),
+      cap(eventName,        SUBMIT_FIELD_CAPS.event_name),
+      cap(eventDate,        SUBMIT_FIELD_CAPS.event_date),
+      eventTime       ? cap(eventTime,       SUBMIT_FIELD_CAPS.event_time)       : null,
+      location        ? cap(location,        SUBMIT_FIELD_CAPS.location)        : null,
+      cap(registrationUrl,  SUBMIT_FIELD_CAPS.registration_url),
+      submitterName   ? cap(submitterName,   SUBMIT_FIELD_CAPS.submitter_name)   : null,
+      submitterEmail  ? cap(submitterEmail,  SUBMIT_FIELD_CAPS.submitter_email)  : null,
+      notes           ? cap(notes,           SUBMIT_FIELD_CAPS.notes)           : null,
+      userAgent,
+      referrer,
+      ipHash
+    ).run();
+    const newId = result?.meta?.last_row_id ?? null;
+    return json(200, { ok: true, id: newId, status: "pending" }, origin);
+  } catch (e) {
+    console.error("submission insert failed:", String(e).slice(0, 200));
+    return json(500, { error: "insert_failed" }, origin);
+  }
+}
+
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
@@ -95,22 +200,24 @@ export default {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
-    // Routing
-    if (url.pathname !== "/track" || request.method !== "POST") {
+    // 1b. Routing — only POST to /track or /submit
+    const isTrack  = url.pathname === "/track"  && request.method === "POST";
+    const isSubmit = url.pathname === "/submit" && request.method === "POST";
+    if (!isTrack && !isSubmit) {
       return json(404, { error: "not_found" }, origin);
     }
 
-    // 1b. CORS allow-list
+    // 2. CORS allow-list (both endpoints)
     if (!ALLOWED_ORIGINS.has(origin)) {
       return json(403, { error: "origin_not_allowed" }, origin);
     }
 
-    // 2. Site key (read from ?k= so sendBeacon and fetch both work)
+    // 3. Site key
     if (url.searchParams.get("k") !== env.SITE_KEY) {
       return json(403, { error: "bad_site_key" }, origin);
     }
 
-    // 3. Rate limit per IP
+    // 4. Rate limit per IP (both endpoints share the same bucket)
     const ip = request.headers.get("CF-Connecting-IP") || "0.0.0.0";
     if (env.RATE_LIMITER && typeof env.RATE_LIMITER.limit === "function") {
       try {
@@ -119,13 +226,15 @@ export default {
       } catch (_) { /* limiter unavailable — fail open, not closed */ }
     }
 
-    // 4. Body size cap (relies on Content-Length when present)
+    // Dispatch
+    if (isSubmit) return handleSubmit(request, env, origin);
+
+    // /track from here on
     const contentLength = parseInt(request.headers.get("content-length") || "0", 10);
     if (contentLength > MAX_BODY_BYTES) {
       return json(413, { error: "payload_too_large" }, origin);
     }
 
-    // Parse JSON
     let body;
     try {
       const text = await request.text();
@@ -137,13 +246,11 @@ export default {
       return json(400, { error: "invalid_json" }, origin);
     }
 
-    // 5. Batch size cap
     const events = Array.isArray(body) ? body : [body];
     if (events.length === 0 || events.length > MAX_BATCH) {
       return json(400, { error: "bad_batch_size" }, origin);
     }
 
-    // Common per-request metadata
     const ipHash = await hashIp(ip, env.IP_HASH_SALT);
     const userAgent = cap(request.headers.get("User-Agent"), 500);
     const referrer = cap(request.headers.get("Referer"), 500);
@@ -152,11 +259,8 @@ export default {
     let skipped = 0;
 
     for (const ev of events) {
-      // 6. Per-event validation
       if (!validEvent(ev)) { skipped++; continue; }
-
       const clickedUrl = ev.registration_url || ev.maps_url || ev.calendar_url || null;
-
       try {
         await env.DB.prepare(`
           INSERT INTO events (
@@ -181,7 +285,6 @@ export default {
         ).run();
         saved++;
       } catch (e) {
-        // Don't let one bad row fail the request — log and move on
         console.error("insert failed:", String(e).slice(0, 200));
         skipped++;
       }

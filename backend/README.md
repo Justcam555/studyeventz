@@ -126,6 +126,54 @@ wrangler d1 execute studyeventz_analytics --remote \
   --command "DELETE FROM events WHERE session_id='smoke-test'"
 ```
 
+## Event submissions
+
+The same worker also exposes **POST /submit** for organizers to submit events via `submit.html`.
+
+- Same CORS allow-list, site key, rate limit and IP-hashing as `/track`
+- Stricter validation: `organizer`, `event_name`, `event_date` (YYYY-MM-DD), `registration_url` (http/https) are all required; optional fields are length-capped
+- Writes to a separate `submissions` table with `status='pending'`
+- **Nothing publishes automatically.** Review with `submissions_report.py`, approve, then manually add to `agents.db` so it lands in the public listing on the next build
+
+Smoke test:
+
+```bash
+curl -i -X POST "$WORKER_URL/submit?k=studyeventz-public-2026" \
+  -H "Content-Type: application/json" \
+  -H "Origin: https://www.studyeventz.com" \
+  -d '{
+    "organizer": "Test Agent",
+    "event_name": "Test Submission",
+    "event_date": "2026-12-01",
+    "event_time": "10:00 - 12:00",
+    "location": "Bangkok",
+    "registration_url": "https://example.com/event"
+  }'
+
+# Confirm row landed (status=pending)
+wrangler d1 execute studyeventz_analytics --remote \
+  --command "SELECT id, organizer, event_name, status FROM submissions ORDER BY id DESC LIMIT 5"
+
+# Clean up
+wrangler d1 execute studyeventz_analytics --remote \
+  --command "DELETE FROM submissions WHERE organizer='Test Agent'"
+```
+
+Review pending locally:
+
+```bash
+python3 submissions_report.py                       # show pending
+python3 submissions_report.py --approve 42 --note "manually added to agents.db"
+python3 submissions_report.py --reject 43 --note "duplicate of #41"
+```
+
+Approval flow (for now, manual):
+
+1. `python3 submissions_report.py` → review pending rows
+2. For each approved submission, INSERT a row into `data/agents.db` events table (or the agent rows it depends on). Future improvement: `approve_submission.py` to automate.
+3. `python3 submissions_report.py --approve <id>` to mark it as handled
+4. Next Sunday build → public `events.json` updates
+
 ## Updating the analytics report
 
 The report runs **locally** — it queries D1 via `wrangler` and prints to your terminal. Nothing is sent off-machine.
