@@ -17,6 +17,10 @@ data/monash_debug.png
 # --- Local tool config ---
 .claude/
 
+# --- Cloudflare wrangler local cache ---
+backend/.wrangler/
+.wrangler/
+
 # --- Logs ---
 logs/
 *.log
