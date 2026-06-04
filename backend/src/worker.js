@@ -34,6 +34,7 @@ const FIELD_CAPS = {
   ts:           50,
   session_id:   100,
   page:         200,
+  country:      30,
   event_id:     50,
   event_name:   500,
   agent_name:   300,
@@ -90,6 +91,7 @@ function validEvent(ev) {
 const SUBMIT_MAX_BODY_BYTES = 5 * 1024;
 
 const SUBMIT_FIELD_CAPS = {
+  country:          30,
   organizer:        300,
   event_name:       500,
   event_date:       20,
@@ -128,6 +130,7 @@ async function handleSubmit(request, env, origin) {
   const errors = {};
   const get = (k) => (typeof body[k] === "string" ? body[k].trim() : "");
 
+  const country          = get("country");
   const organizer        = get("organizer");
   const eventName        = get("event_name");
   const eventDate        = get("event_date");
@@ -163,11 +166,12 @@ async function handleSubmit(request, env, origin) {
   try {
     const result = await env.DB.prepare(`
       INSERT INTO submissions (
-        organizer, event_name, event_date, event_time, location,
+        country, organizer, event_name, event_date, event_time, location,
         registration_url, submitter_name, submitter_email, notes,
         user_agent, referrer, ip_hash
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `).bind(
+      country         ? cap(country,         SUBMIT_FIELD_CAPS.country)         : null,
       cap(organizer,        SUBMIT_FIELD_CAPS.organizer),
       cap(eventName,        SUBMIT_FIELD_CAPS.event_name),
       cap(eventDate,        SUBMIT_FIELD_CAPS.event_date),
@@ -264,15 +268,16 @@ export default {
       try {
         await env.DB.prepare(`
           INSERT INTO events (
-            type, ts, session_id, page, event_id, event_name,
+            type, ts, session_id, page, country, event_id, event_name,
             agent_name, agent_id, event_date, clicked_url,
             user_agent, referrer, ip_hash
-          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `).bind(
           cap(ev.type,         FIELD_CAPS.type),
           cap(ev.ts,           FIELD_CAPS.ts),
           cap(ev.session_id,   FIELD_CAPS.session_id),
           cap(ev.page,         FIELD_CAPS.page),
+          cap(ev.country,      FIELD_CAPS.country),
           cap(ev.event_id,     FIELD_CAPS.event_id),
           cap(ev.event_name,   FIELD_CAPS.event_name),
           cap(ev.agent_name,   FIELD_CAPS.agent_name),

@@ -17,37 +17,92 @@ import shutil
 import sqlite3
 import subprocess
 import sys
+from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote
 
 ROOT = Path(__file__).parent
 DB_PATH = ROOT / "data" / "agents.db"
-JSON_OUT = ROOT / "data" / "events.json"
-HTML_OUT = ROOT / "events.html"
-ABOUT_OUT = ROOT / "about.html"
-CONTACT_OUT = ROOT / "contact.html"
-SUBMIT_OUT = ROOT / "submit.html"
 SITEMAP_OUT = ROOT / "sitemap.xml"
 ROBOTS_OUT = ROOT / "robots.txt"
+INDEX_OUT = ROOT / "index.html"
 CHARACTERS_DIR = ROOT / "assets" / "characters"
 LOGOS_DIR = ROOT / "assets" / "logos"
 
-# ─── Site metadata (edit these to change brand-level details) ──────────────
-SITE_URL       = "https://www.studyeventz.com"
-EVENTS_PAGE    = f"{SITE_URL}/events.html"
-CONTACT_EMAIL  = "info@studyeventz.com"
-PAGE_TITLE     = "Study Abroad Events in Thailand | Education Fairs & University Webinars | StudyEventz"
-META_DESC_EN   = ("Find study abroad events in Thailand — fairs, webinars and briefings for "
-                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly.")
-META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
-LINE_HANDLE    = "@studyeventz"  # displayed text in the banner (vanity label)
-LINE_URL       = "https://lin.ee/RdZs9AD"  # actual add-friend URL the click opens
+# ─── Brand-level (cross-country) site metadata ─────────────────────────────
+SITE_URL  = "https://www.studyeventz.com"
+SITE_KEY  = "studyeventz-public-2026"  # must match wrangler.toml [vars].SITE_KEY
+INGEST_URL = ""                        # set after deploying backend/ — see README
 
-# Backend ingest. Leave empty to disable backend POSTs (frontend keeps logging
-# to localStorage and console). Set after deploying backend/ — see backend/README.md.
-INGEST_URL     = ""
-SITE_KEY       = "studyeventz-public-2026"  # must match wrangler.toml [vars].SITE_KEY
+# Old-path redirect shims (kept so inbound links to /events.html etc. still work)
+LEGACY_PAGES = ("events.html", "about.html", "contact.html", "submit.html")
+
+
+# ─── Multi-country config ──────────────────────────────────────────────────
+# Adding a new country = appending a Country() to COUNTRIES. The build loop
+# emits a complete page tree at /<country.code>/ for each one. The root /
+# becomes a country picker.
+
+@dataclass(frozen=True)
+class Country:
+    code: str               # URL slug + output dir, e.g. "thailand"
+    name_en: str            # "Thailand"
+    name_native: str        # "ไทย" — short native name for hero / picker
+    flag: str               # "🇹🇭"
+    primary_lang: str       # BCP-47 code for the native language pair, e.g. "th"
+    iso2: str               # ISO 3166-1 alpha-2 for JSON-LD addressCountry, e.g. "TH"
+    agent_db_match: str     # SQL LIKE pattern for agents.country, e.g. "%Thailand%"
+    timezone: str           # IANA tz for ICS calendar exports
+    title: str              # browser <title> for events.html
+    meta_desc_en: str       # English meta description (<160 chars for SERP)
+    meta_desc_native: str   # Native-language meta description
+    line_handle: str        # @studyeventz — vanity label shown in banner
+    line_url: str           # actual add-friend URL behind the banner click
+    contact_email: str      # contact us email
+
+    # Per-country output paths
+    @property
+    def root(self) -> Path:           return ROOT / self.code
+    @property
+    def html_out(self) -> Path:       return self.root / "events.html"
+    @property
+    def about_out(self) -> Path:      return self.root / "about.html"
+    @property
+    def contact_out(self) -> Path:    return self.root / "contact.html"
+    @property
+    def submit_out(self) -> Path:     return self.root / "submit.html"
+    @property
+    def json_out(self) -> Path:       return self.root / "data" / "events.json"
+    # Per-country public URLs
+    @property
+    def site_path(self) -> str:       return f"/{self.code}"
+    @property
+    def site_url(self) -> str:        return f"{SITE_URL}{self.site_path}"
+    @property
+    def events_url(self) -> str:      return f"{self.site_url}/events.html"
+
+
+THAILAND = Country(
+    code="thailand",
+    name_en="Thailand",
+    name_native="ไทย",
+    flag="🇹🇭",
+    primary_lang="th",
+    iso2="TH",
+    agent_db_match="%Thailand%",
+    timezone="Asia/Bangkok",
+    title="Study Abroad Events in Thailand | Education Fairs & University Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Thailand — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์",
+    line_handle="@studyeventz",
+    line_url="https://lin.ee/RdZs9AD",
+    contact_email="info@studyeventz.com",
+)
+
+# Future-ready: appending another Country() launches that market with one build run.
+COUNTRIES: list[Country] = [THAILAND]
 
 # Tokens to skip when extracting initials from agent names
 STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp", "limited"}
@@ -69,7 +124,8 @@ def extract_initials(name: str) -> str:
 
 
 def find_logo(agent_name: str) -> str | None:
-    """Look for assets/logos/{agent_name}.png (literal + slug variants). Returns URL or None."""
+    """Look for assets/logos/{agent_name}.png (literal + slug variants).
+    Returns an absolute URL (leading /) so it works from any country subdir."""
     if not LOGOS_DIR.exists() or not agent_name:
         return None
     slug = re.sub(r"[^A-Za-z0-9]+", "_", agent_name).strip("_")
@@ -80,7 +136,7 @@ def find_logo(agent_name: str) -> str | None:
             continue
         seen.add(cand)
         if (LOGOS_DIR / cand).exists():
-            return f"assets/logos/{quote(cand)}"
+            return f"/assets/logos/{quote(cand)}"
     return None
 
 
@@ -130,7 +186,7 @@ def find_logo_for_agent(agent_name: str) -> tuple[str | None, str | None, bool, 
             if full.exists():
                 needs_bg = logo_rel in LOGOS_NEEDING_BG
                 bg_color = LOGOS_NEEDING_BG.get(logo_rel) or "" if needs_bg else ""
-                return f"assets/logos/{quote(logo_rel)}", initials, needs_bg, bg_color
+                return f"/assets/logos/{quote(logo_rel)}", initials, needs_bg, bg_color
             print(
                 f"  WARN: mapped logo missing for '{agent_name}': {full}",
                 file=sys.stderr,
@@ -146,15 +202,15 @@ def _natural_key(name: str):
 
 
 def discover_character_images() -> list[str]:
-    """Return URL-safe relative paths to each character PNG, in natural order."""
+    """Return absolute URLs for each character PNG, in natural order.
+    Absolute (leading /) so paths work from any country subdir."""
     if not CHARACTERS_DIR.exists():
         return []
     pngs = sorted(CHARACTERS_DIR.glob("*.png"), key=lambda p: _natural_key(p.name))
-    # Encode spaces / special chars for use in HTML src attributes
-    return [f"assets/characters/{quote(p.name)}" for p in pngs]
+    return [f"/assets/characters/{quote(p.name)}" for p in pngs]
 
 
-def build_event_json_ld(events: list[dict]) -> str:
+def build_event_json_ld(events: list[dict], country: "Country") -> str:
     """Return a JSON array string of schema.org/Event objects, one per event,
     ready to drop into a <script type="application/ld+json"> block."""
     docs = []
@@ -164,16 +220,16 @@ def build_event_json_ld(events: list[dict]) -> str:
         if is_online:
             location_doc = {
                 "@type": "VirtualLocation",
-                "url": EVENTS_PAGE,
+                "url": country.events_url,
             }
         else:
             location_doc = {
                 "@type": "Place",
-                "name": ev.get("location") or "Thailand",
+                "name": ev.get("location") or country.name_en,
                 "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": ev.get("location") or "Bangkok",
-                    "addressCountry": "TH",
+                    "addressLocality": ev.get("location") or country.name_en,
+                    "addressCountry": country.iso2,
                 },
             }
         organizer_doc = {"@type": "Organization", "name": ev.get("organizer") or ev.get("agent_name") or "studyeventz"}
@@ -193,7 +249,7 @@ def build_event_json_ld(events: list[dict]) -> str:
             ),
             "location": location_doc,
             "organizer": organizer_doc,
-            "url": f"{EVENTS_PAGE}#event-{ev.get('id', '')}",
+            "url": f"{country.events_url}#event-{ev.get('id', '')}",
         }
         if ev.get("registration_url"):
             doc["offers"] = {
@@ -206,43 +262,37 @@ def build_event_json_ld(events: list[dict]) -> str:
 
 
 def write_seo_files() -> None:
-    """Write sitemap.xml and robots.txt at the repo root."""
+    """Write sitemap.xml and robots.txt at the repo root. Enumerates every
+    country in COUNTRIES so adding a new market is a one-line change."""
     today = datetime.now().date().isoformat()
+    urls: list[str] = []
+    # Root (country picker)
+    urls.append(
+        f"  <url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod>"
+        f"<changefreq>monthly</changefreq><priority>0.8</priority></url>"
+    )
+    # Per-country pages
+    for c in COUNTRIES:
+        urls.append(
+            f"  <url><loc>{c.events_url}</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>weekly</changefreq><priority>1.0</priority></url>"
+        )
+        urls.append(
+            f"  <url><loc>{c.site_url}/about.html</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>monthly</changefreq><priority>0.6</priority></url>"
+        )
+        urls.append(
+            f"  <url><loc>{c.site_url}/contact.html</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>monthly</changefreq><priority>0.6</priority></url>"
+        )
+        urls.append(
+            f"  <url><loc>{c.site_url}/submit.html</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
+        )
     SITEMAP_OUT.write_text(
-        f"""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>{EVENTS_PAGE}</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{SITE_URL}/about.html</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>{SITE_URL}/contact.html</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>{SITE_URL}/submit.html</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>{SITE_URL}/</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
-""",
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(urls) + "\n</urlset>\n",
         encoding="utf-8",
     )
     ROBOTS_OUT.write_text(
@@ -303,7 +353,7 @@ def deduplicate_rows(rows: list) -> list:
     return kept
 
 
-def export_events_json() -> int:
+def export_events_json(country: "Country") -> int:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     today = datetime.now().date()
@@ -315,8 +365,9 @@ def export_events_json() -> int:
                   a.website AS agent_website, a.country AS agent_country
            FROM events e JOIN agents a ON e.agent_id = a.id
            WHERE e.date BETWEEN ? AND ?
+             AND a.country LIKE ?
            ORDER BY e.date, e.time""",
-        (today.isoformat(), cutoff.isoformat()),
+        (today.isoformat(), cutoff.isoformat(), country.agent_db_match),
     ).fetchall()
 
     rows = deduplicate_rows(rows)
@@ -342,13 +393,15 @@ def export_events_json() -> int:
         })
 
     data = {
+        "country":      country.code,
+        "country_name": country.name_en,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "window": {"from": today.isoformat(), "to": cutoff.isoformat()},
-        "events": events_out,
+        "window":       {"from": today.isoformat(), "to": cutoff.isoformat()},
+        "events":       events_out,
     }
 
-    JSON_OUT.parent.mkdir(exist_ok=True)
-    JSON_OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    country.json_out.parent.mkdir(parents=True, exist_ok=True)
+    country.json_out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     return len(rows)
 
 
@@ -529,6 +582,11 @@ __JSON_LD__
                 gap: 1.5rem; flex-wrap: wrap; }
   .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
   .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
   .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,.85); text-decoration: none;
            padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
@@ -722,7 +780,7 @@ __JSON_LD__
 
 <header class="site-header">
   <div class="header-bar">
-    <div class="brand">studyevent<span class="gold">z</span></div>
+    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html" class="active">Events</a>
       <a href="about.html">About Us</a>
@@ -820,6 +878,7 @@ function track(type, payload) {
     ts: new Date().toISOString(),
     session_id: getSessionId(),
     page: location.pathname,
+    country: "__COUNTRY_CODE__",
   }, payload);
   console.log('[studyeventz]', type, payload);
   try {
@@ -1043,8 +1102,8 @@ function buildIcsContent(ev) {
   const range = parseTimeRange(ev.time);
   let dtstart, dtend;
   if (range) {
-    dtstart = `DTSTART;TZID=Asia/Bangkok:${dateCompact}T${pad2(range.startH)}${pad2(range.startM)}00`;
-    dtend   = `DTEND;TZID=Asia/Bangkok:${dateCompact}T${pad2(range.endH)}${pad2(range.endM)}00`;
+    dtstart = `DTSTART;TZID=__TIMEZONE__:${dateCompact}T${pad2(range.startH)}${pad2(range.startM)}00`;
+    dtend   = `DTEND;TZID=__TIMEZONE__:${dateCompact}T${pad2(range.endH)}${pad2(range.endM)}00`;
   } else {
     const d = new Date(ev.date + 'T00:00:00');
     d.setDate(d.getDate() + 1);
@@ -1098,7 +1157,7 @@ function locationPill(ev) {
   if (isOnline(ev)) return `<span class="pill">${content}</span>`;
   // Strip trailing "/ Online" so Maps doesn't get confused on hybrid events
   let query = ev.location.replace(/\s*\/\s*online\s*$/i, '').trim();
-  if (!/thailand/i.test(query)) query += ', Thailand';
+  if (!/__COUNTRY_NAME__/i.test(query)) query += ', __COUNTRY_NAME__';
   const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
   return `<a class="pill pill-link" href="${url}" target="_blank" rel="noopener">${content}</a>`;
 }
@@ -1367,6 +1426,11 @@ ABOUT_HTML = r"""<!doctype html>
                 gap: 1.5rem; flex-wrap: wrap; }
   .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
   .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
   .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,.85); text-decoration: none;
            padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
@@ -1426,7 +1490,7 @@ ABOUT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <div class="brand">studyevent<span class="gold">z</span></div>
+    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html" class="active">About Us</a>
@@ -1479,16 +1543,19 @@ ABOUT_HTML = r"""<!doctype html>
 """
 
 
-def build_about_html() -> None:
-    """Write about.html — a static bilingual About page."""
+def build_about_html(country: "Country") -> None:
+    """Write <country.code>/about.html — a static bilingual About page."""
     html = ABOUT_HTML
     for ph, val in {
-        "__SITE_URL__":    SITE_URL,
-        "__LINE_HANDLE__": LINE_HANDLE,
-        "__LINE_URL__":    LINE_URL,
+        "__SITE_URL__":       SITE_URL,
+        "__COUNTRY_SITE__":   country.site_url,
+        "__COUNTRY_CODE__":   country.code,
+        "__LINE_HANDLE__":    country.line_handle,
+        "__LINE_URL__":       country.line_url,
     }.items():
         html = html.replace(ph, val)
-    ABOUT_OUT.write_text(html, encoding="utf-8")
+    country.root.mkdir(parents=True, exist_ok=True)
+    country.about_out.write_text(html, encoding="utf-8")
 
 
 CONTACT_HTML = r"""<!doctype html>
@@ -1525,6 +1592,11 @@ CONTACT_HTML = r"""<!doctype html>
                 gap: 1.5rem; flex-wrap: wrap; }
   .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
   .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
   .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,.85); text-decoration: none;
            padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
@@ -1602,7 +1674,7 @@ CONTACT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <div class="brand">studyevent<span class="gold">z</span></div>
+    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
@@ -1665,17 +1737,20 @@ CONTACT_HTML = r"""<!doctype html>
 """
 
 
-def build_contact_html() -> None:
-    """Write contact.html — a static bilingual Contact page."""
+def build_contact_html(country: "Country") -> None:
+    """Write <country.code>/contact.html — a static bilingual Contact page."""
     html = CONTACT_HTML
     for ph, val in {
-        "__SITE_URL__":    SITE_URL,
-        "__LINE_HANDLE__": LINE_HANDLE,
-        "__LINE_URL__":    LINE_URL,
-        "__EMAIL__":       CONTACT_EMAIL,
+        "__SITE_URL__":       SITE_URL,
+        "__COUNTRY_SITE__":   country.site_url,
+        "__COUNTRY_CODE__":   country.code,
+        "__LINE_HANDLE__":    country.line_handle,
+        "__LINE_URL__":       country.line_url,
+        "__EMAIL__":          country.contact_email,
     }.items():
         html = html.replace(ph, val)
-    CONTACT_OUT.write_text(html, encoding="utf-8")
+    country.root.mkdir(parents=True, exist_ok=True)
+    country.contact_out.write_text(html, encoding="utf-8")
 
 
 SUBMIT_HTML = r"""<!doctype html>
@@ -1712,6 +1787,11 @@ SUBMIT_HTML = r"""<!doctype html>
                 gap: 1.5rem; flex-wrap: wrap; }
   .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
   .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
   .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
   .nav a { color: rgba(255,255,255,.85); text-decoration: none;
            padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
@@ -1806,7 +1886,7 @@ SUBMIT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <div class="brand">studyevent<span class="gold">z</span></div>
+    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
@@ -1951,6 +2031,7 @@ form.addEventListener('submit', async (e) => {
   }
 
   const body = {
+    country:          "__COUNTRY_CODE__",
     organizer:        form.organizer.value.trim(),
     event_name:       form.event_name.value.trim(),
     event_date:       form.event_date.value.trim(),
@@ -1999,50 +2080,61 @@ form.addEventListener('submit', async (e) => {
 """
 
 
-def build_submit_html() -> None:
-    """Write submit.html — bilingual event-submission form."""
+def build_submit_html(country: "Country") -> None:
+    """Write <country.code>/submit.html — bilingual event-submission form."""
     html = SUBMIT_HTML
     submit_url = INGEST_URL.replace("/track", "/submit") if INGEST_URL else ""
     for ph, val in {
-        "__SITE_URL__":    SITE_URL,
-        "__LINE_HANDLE__": LINE_HANDLE,
-        "__LINE_URL__":    LINE_URL,
-        "__SUBMIT_URL__":  submit_url,
-        "__SITE_KEY__":    SITE_KEY,
+        "__SITE_URL__":       SITE_URL,
+        "__COUNTRY_SITE__":   country.site_url,
+        "__COUNTRY_CODE__":   country.code,
+        "__COUNTRY_NAME__":   country.name_en,
+        "__LINE_HANDLE__":    country.line_handle,
+        "__LINE_URL__":       country.line_url,
+        "__SUBMIT_URL__":     submit_url,
+        "__SITE_KEY__":       SITE_KEY,
+        "__EMAIL__":          country.contact_email,
     }.items():
         html = html.replace(ph, val)
-    SUBMIT_OUT.write_text(html, encoding="utf-8")
+    country.root.mkdir(parents=True, exist_ok=True)
+    country.submit_out.write_text(html, encoding="utf-8")
 
 
-def build_html() -> tuple[int, str]:
-    """Render events.html. Returns (count, mode) where mode is 'png' or 'svg-fallback'."""
+def build_html(country: "Country") -> tuple[int, str]:
+    """Render <country.code>/events.html. Returns (count, mode)."""
     images = discover_character_images()
     if images:
         characters = images
         mode = "png"
-        # Pick the first character as the absolute og:image URL
-        og_image = f"{SITE_URL}/{images[0]}"
+        # og:image is an absolute URL; images[] are absolute paths beginning with /
+        og_image = f"{SITE_URL}{images[0]}"
     else:
         characters = [{"svg": s} for s in CHARACTER_SVGS]
         mode = "svg-fallback"
-        og_image = f"{SITE_URL}/events.html"
+        og_image = country.events_url
 
-    # Load the freshly-written events.json so the JSON-LD reflects this build
+    # Load freshly-written country events.json so the JSON-LD reflects this build
     try:
-        events_data = json.loads(JSON_OUT.read_text(encoding="utf-8")).get("events", [])
+        events_data = json.loads(country.json_out.read_text(encoding="utf-8")).get("events", [])
     except Exception:
         events_data = []
-    json_ld = build_event_json_ld(events_data)
+    json_ld = build_event_json_ld(events_data, country)
 
     replacements = {
-        "__PAGE_TITLE__":      PAGE_TITLE,
-        "__META_DESC_EN__":    META_DESC_EN,
-        "__META_DESC_TH__":    META_DESC_TH,
-        "__EVENTS_PAGE__":     EVENTS_PAGE,
+        "__PAGE_TITLE__":      country.title,
+        "__META_DESC_EN__":    country.meta_desc_en,
+        "__META_DESC_TH__":    country.meta_desc_native,
+        "__EVENTS_PAGE__":     country.events_url,
         "__SITE_URL__":        SITE_URL,
+        "__COUNTRY_CODE__":    country.code,
+        "__COUNTRY_NAME__":    country.name_en,
+        "__COUNTRY_NATIVE__":  country.name_native,
+        "__COUNTRY_FLAG__":    country.flag,
+        "__COUNTRY_LANG__":    country.primary_lang,
+        "__TIMEZONE__":        country.timezone,
         "__OG_IMAGE__":        og_image,
-        "__LINE_HANDLE__":     LINE_HANDLE,
-        "__LINE_URL__":        LINE_URL,
+        "__LINE_HANDLE__":     country.line_handle,
+        "__LINE_URL__":        country.line_url,
         "__INGEST_URL__":      INGEST_URL,
         "__SITE_KEY__":        SITE_KEY,
         "__JSON_LD__":         json_ld,
@@ -2051,8 +2143,199 @@ def build_html() -> tuple[int, str]:
     html = HTML
     for placeholder, value in replacements.items():
         html = html.replace(placeholder, value)
-    HTML_OUT.write_text(html, encoding="utf-8")
+    country.root.mkdir(parents=True, exist_ok=True)
+    country.html_out.write_text(html, encoding="utf-8")
     return len(characters), mode
+
+
+INDEX_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>studyeventz — Study Abroad Events</title>
+<meta name="description" content="studyeventz aggregates study abroad events — fairs, webinars and information sessions. Pick your market.">
+<link rel="canonical" href="__SITE_URL__/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --teal: #0d7377; --teal-dark: #095a5d; --gold: #f4a825;
+    --ink: #0d2233; --bg: #f5f7f9; --text: #1a2530;
+    --muted: #5d6b78; --border: #e2e8ed;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         background: var(--teal-dark); color: #fff; min-height: 100vh;
+         display: flex; flex-direction: column; align-items: center; justify-content: center;
+         padding: 2rem 1.5rem; }
+  [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
+                              -apple-system, BlinkMacSystemFont, sans-serif; }
+
+  .picker { max-width: 540px; width: 100%; text-align: center; }
+  .brand { font-size: 2.2rem; font-weight: 800; letter-spacing: -.02em;
+           color: #fff; margin-bottom: .5rem; }
+  .brand .gold { color: var(--gold); }
+  .tagline { color: rgba(255,255,255,.85); font-size: 1.05rem; margin-bottom: 2.5rem; }
+  .tagline-th { color: var(--gold); font-size: 1.15rem; margin-top: .35rem;
+                font-weight: 500; }
+
+  .picker-prompt { font-size: .78rem; font-weight: 600; text-transform: uppercase;
+                   letter-spacing: .12em; color: rgba(255,255,255,.7);
+                   margin-bottom: 1rem; }
+
+  .country-grid { display: grid; gap: .8rem; }
+  .country-tile { background: rgba(255,255,255,.08);
+                  border: 1px solid rgba(255,255,255,.15);
+                  border-radius: 12px;
+                  padding: 1.3rem 1.5rem;
+                  display: flex; align-items: center; gap: 1.1rem;
+                  color: #fff; text-decoration: none;
+                  transition: background .15s, transform .15s, border-color .15s; }
+  .country-tile:hover { background: rgba(255,255,255,.13);
+                        border-color: rgba(244, 168, 37, .5);
+                        transform: translateY(-1px); }
+  .tile-flag { font-size: 2.4rem; line-height: 1; flex-shrink: 0; }
+  .tile-text { text-align: left; flex: 1; }
+  .tile-name { font-size: 1.15rem; font-weight: 700; }
+  .tile-native { color: var(--gold); font-size: .95rem; font-weight: 500; margin-top: .1rem; }
+  .tile-arrow { font-size: 1.4rem; color: var(--gold); opacity: .8; }
+
+  .coming-soon { background: transparent;
+                 border: 1px dashed rgba(255,255,255,.2);
+                 color: rgba(255,255,255,.55);
+                 cursor: default; }
+  .coming-soon:hover { background: transparent; transform: none;
+                       border-color: rgba(255,255,255,.2); }
+  .coming-soon .tile-arrow { display: none; }
+
+  .meta { color: rgba(255,255,255,.5); font-size: .78rem;
+          text-align: center; margin-top: 2.5rem; }
+
+  @media (max-width: 540px) {
+    .brand { font-size: 1.85rem; }
+    .tile-flag { font-size: 2rem; }
+    .tile-name { font-size: 1.05rem; }
+  }
+</style>
+</head>
+<body>
+
+<main class="picker">
+  <div class="brand">studyevent<span class="gold">z</span></div>
+  <p class="tagline">An independent guide to study abroad events.</p>
+  <p class="tagline-th" lang="th">คู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ</p>
+
+  <p class="picker-prompt">เลือกตลาด / Choose your market</p>
+  <div class="country-grid" id="country-grid">
+__COUNTRY_TILES__
+  </div>
+
+  <p class="meta">More markets coming soon.</p>
+</main>
+
+<script>
+  // Auto-redirect returning visitors to their last-chosen country.
+  // First-time visitors see the picker.
+  try {
+    const saved = localStorage.getItem('studyeventz_country');
+    if (saved && /^[a-z\-]+$/.test(saved)) {
+      // Confirm we actually built that country (anti-stale-cache check)
+      const tile = document.querySelector(`[data-country="${saved}"]`);
+      if (tile) location.replace(`/${saved}/events.html`);
+    }
+  } catch (e) {}
+
+  document.querySelectorAll('.country-tile[data-country]').forEach(el => {
+    el.addEventListener('click', () => {
+      try { localStorage.setItem('studyeventz_country', el.dataset.country); } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>
+"""
+
+
+def build_index_html() -> None:
+    """Write the root index.html country picker."""
+    tiles: list[str] = []
+    for c in COUNTRIES:
+        tiles.append(
+            f"""    <a class="country-tile" data-country="{c.code}" href="/{c.code}/events.html">
+      <span class="tile-flag" aria-hidden="true">{c.flag}</span>
+      <span class="tile-text">
+        <span class="tile-name">{c.name_en}</span>
+        <span class="tile-native" lang="{c.primary_lang}">{c.name_native}</span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>"""
+        )
+    # A placeholder "more soon" tile so the grid feels less empty with 1 market
+    if len(COUNTRIES) == 1:
+        tiles.append(
+            """    <div class="country-tile coming-soon" aria-disabled="true">
+      <span class="tile-flag" aria-hidden="true">🌏</span>
+      <span class="tile-text">
+        <span class="tile-name">Vietnam, India and more</span>
+        <span class="tile-native">coming soon</span>
+      </span>
+    </div>"""
+        )
+    html = INDEX_HTML.replace("__COUNTRY_TILES__", "\n".join(tiles))
+    html = html.replace("__SITE_URL__", SITE_URL)
+    INDEX_OUT.write_text(html, encoding="utf-8")
+
+
+# Legacy redirect shims at the old root paths so inbound links don't 404.
+LEGACY_REDIRECT_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<meta http-equiv="refresh" content="0; url=/__DEFAULT_COUNTRY__/__PAGE__">
+<link rel="canonical" href="__SITE_URL__/__DEFAULT_COUNTRY__/__PAGE__">
+<meta name="robots" content="noindex">
+<script>
+  try {
+    const saved = localStorage.getItem('studyeventz_country');
+    const country = (saved && /^[a-z\-]+$/.test(saved)) ? saved : '__DEFAULT_COUNTRY__';
+    location.replace('/' + country + '/__PAGE__');
+  } catch (e) {
+    location.replace('/__DEFAULT_COUNTRY__/__PAGE__');
+  }
+</script>
+</head>
+<body>
+<p>Redirecting to <a href="/__DEFAULT_COUNTRY__/__PAGE__">studyeventz</a>…</p>
+</body>
+</html>
+"""
+
+
+def build_legacy_redirects() -> None:
+    """Write root-level redirect shims for the old single-country URLs.
+    Default to the first COUNTRIES entry; JS swaps to the user's saved choice."""
+    default = COUNTRIES[0].code
+    for page in LEGACY_PAGES:
+        html = (LEGACY_REDIRECT_HTML
+                .replace("__DEFAULT_COUNTRY__", default)
+                .replace("__PAGE__", page)
+                .replace("__SITE_URL__", SITE_URL))
+        (ROOT / page).write_text(html, encoding="utf-8")
+    # Also stale data/events.json — replace with a small note
+    legacy_data = ROOT / "data" / "events.json"
+    if legacy_data.exists():
+        legacy_data.write_text(
+            json.dumps({
+                "note": "This file has moved to /<country>/data/events.json — see /index.html",
+                "countries": [c.code for c in COUNTRIES],
+            }, indent=2),
+            encoding="utf-8",
+        )
 
 
 def ensure_pngquant() -> bool:
@@ -2166,18 +2449,23 @@ def main() -> int:
     if args.optimize:
         optimize_images()
 
-    n = export_events_json()
-    char_count, mode = build_html()
-    build_about_html()
-    build_contact_html()
-    build_submit_html()
+    grand_total_events = 0
+    for c in COUNTRIES:
+        n = export_events_json(c)
+        char_count, mode = build_html(c)
+        build_about_html(c)
+        build_contact_html(c)
+        build_submit_html(c)
+        grand_total_events += n
+        print(f"[{c.code}] {n} events, {char_count} characters ({mode})")
+
+    build_index_html()
+    build_legacy_redirects()
     write_seo_files()
-    print(f"Wrote {JSON_OUT} ({n} events)")
-    print(f"Wrote {HTML_OUT} ({char_count} characters, mode={mode})")
-    print(f"Wrote {ABOUT_OUT}")
-    print(f"Wrote {CONTACT_OUT}")
-    print(f"Wrote {SUBMIT_OUT}")
+    print(f"Wrote {INDEX_OUT}")
+    print(f"Wrote legacy redirect shims for: {', '.join(LEGACY_PAGES)}")
     print(f"Wrote {SITEMAP_OUT} and {ROBOTS_OUT}")
+    print(f"\nTotal events across {len(COUNTRIES)} country(ies): {grand_total_events}")
     return 0
 
 
