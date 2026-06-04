@@ -37,8 +37,8 @@ PAGE_TITLE     = "Study Abroad Events in Thailand | Education Fairs & University
 META_DESC_EN   = ("Find study abroad events in Thailand — fairs, webinars and briefings for "
                   "students considering the UK, Australia, USA, Canada and Europe. Updated weekly.")
 META_DESC_TH   = "รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์"
-LINE_HANDLE    = "@988jljgk"  # displayed text in the banner
-LINE_URL       = "https://lin.ee/RdZs9AD"  # where the banner click takes users
+LINE_HANDLE    = "@studyeventz"  # displayed text in the banner (vanity label)
+LINE_URL       = "https://lin.ee/RdZs9AD"  # actual add-friend URL the click opens
 
 # Backend ingest. Leave empty to disable backend POSTs (frontend keeps logging
 # to localStorage and console). Set after deploying backend/ — see backend/README.md.
