@@ -46,9 +46,13 @@ const FIELD_CAPS = {
 function corsHeaders(origin) {
   // Echo the requesting origin if allowed, else default to www (so the browser
   // sees something deterministic). Vary tells caches the response is origin-dependent.
+  // Allow-Credentials: true is needed for fetch(keepalive) + sendBeacon
+  // because those modes can make the browser treat the request as credentialed.
+  // Safe here because the endpoint never reads cookies — see Worker code.
   const allowed = ALLOWED_ORIGINS.has(origin) ? origin : "https://www.studyeventz.com";
   return {
     "Access-Control-Allow-Origin": allowed,
+    "Access-Control-Allow-Credentials": "true",
     "Vary": "Origin",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
