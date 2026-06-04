@@ -33,7 +33,7 @@ LOGOS_DIR = ROOT / "assets" / "logos"
 # ─── Brand-level (cross-country) site metadata ─────────────────────────────
 SITE_URL  = "https://www.studyeventz.com"
 SITE_KEY  = "studyeventz-public-2026"  # must match wrangler.toml [vars].SITE_KEY
-INGEST_URL = "https://studyeventz-ingest.mylogins555.workers.dev/track"
+INGEST_URL = "https://studyeventz-ingest.mylogins555.workers.dev/i"
 
 # Old-path redirect shims (kept so inbound links to /events.html etc. still work)
 LEGACY_PAGES = ("events.html", "about.html", "contact.html", "submit.html")
@@ -2083,7 +2083,14 @@ form.addEventListener('submit', async (e) => {
 def build_submit_html(country: "Country") -> None:
     """Write <country.code>/submit.html — bilingual event-submission form."""
     html = SUBMIT_HTML
-    submit_url = INGEST_URL.replace("/track", "/submit") if INGEST_URL else ""
+    # Both old (/track) and new (/i) path names are supported on the Worker;
+    # derive the matching submit endpoint by swapping the last segment.
+    if not INGEST_URL:
+        submit_url = ""
+    elif INGEST_URL.endswith("/i"):
+        submit_url = INGEST_URL[:-2] + "/s"
+    else:
+        submit_url = INGEST_URL.replace("/track", "/submit")
     for ph, val in {
         "__SITE_URL__":       SITE_URL,
         "__COUNTRY_SITE__":   country.site_url,

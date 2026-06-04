@@ -204,9 +204,13 @@ export default {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
-    // 1b. Routing — only POST to /track or /submit
-    const isTrack  = url.pathname === "/track"  && request.method === "POST";
-    const isSubmit = url.pathname === "/submit" && request.method === "POST";
+    // 1b. Routing — only POST to /i (ingest) or /s (submit).
+    // Paths use single letters to avoid being blocked by adblocker pattern
+    // matchers that target /track, /collect, /event etc.
+    // /track and /submit kept as aliases so existing curls + earlier
+    // documentation continue to work.
+    const isTrack  = (url.pathname === "/i" || url.pathname === "/track")  && request.method === "POST";
+    const isSubmit = (url.pathname === "/s" || url.pathname === "/submit") && request.method === "POST";
     if (!isTrack && !isSubmit) {
       return json(404, { error: "not_found" }, origin);
     }
