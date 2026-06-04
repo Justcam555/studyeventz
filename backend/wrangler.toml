@@ -1,4 +1,4 @@
-name = "studyeventz-ingest"
+name = "studyeventz-app"
 main = "src/worker.js"
 compatibility_date = "2026-01-01"
 
