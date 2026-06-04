@@ -11,7 +11,7 @@ enabled = true
 [[d1_databases]]
 binding = "DB"
 database_name = "studyeventz_analytics"
-database_id = "REPLACE_WITH_OUTPUT_OF_D1_CREATE"
+database_id = "c6c2623a-4eb9-4bdd-b89a-b52cee66a421"
 
 # Per-IP rate limiting (Workers native binding). 100 requests / 60 s.
 [[unsafe.bindings]]

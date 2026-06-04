@@ -33,7 +33,7 @@ LOGOS_DIR = ROOT / "assets" / "logos"
 # ─── Brand-level (cross-country) site metadata ─────────────────────────────
 SITE_URL  = "https://www.studyeventz.com"
 SITE_KEY  = "studyeventz-public-2026"  # must match wrangler.toml [vars].SITE_KEY
-INGEST_URL = ""                        # set after deploying backend/ — see README
+INGEST_URL = "https://studyeventz-ingest.mylogins555.workers.dev/track"
 
 # Old-path redirect shims (kept so inbound links to /events.html etc. still work)
 LEGACY_PAGES = ("events.html", "about.html", "contact.html", "submit.html")
