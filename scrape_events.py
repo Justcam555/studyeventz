@@ -534,14 +534,16 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
 
         await browser.close()
 
-    # Collapse the same event saved under multiple branch agent_ids of one
-    # company (e.g. StudyIn Bangkok / Chiang Mai listing the same webinar) to a
-    # single row, so multi-branch agents don't inflate the events page.
+    # Collapse duplicate events for the same company on the same date down to a
+    # single row (keeping the earliest-scraped). Catches both multi-branch
+    # listings (StudyIn Bangkok / Chiang Mai) and language variants of one event
+    # scraped from a Thai + /en/ site (e.g. Hands On listing an open day twice,
+    # once with a Thai subtitle, once English-only).
     deduped = conn.execute("""
         DELETE FROM events
         WHERE id NOT IN (
             SELECT MIN(e.id) FROM events e JOIN agents a ON e.agent_id = a.id
-            GROUP BY a.canonical_name, e.name, e.date
+            GROUP BY a.canonical_name, e.date
         )""").rowcount
     conn.commit()
     if deduped:
