@@ -1,0 +1,1104 @@
+{
+  "generated": "2026-06-05T05:07:21+00:00",
+  "search_backend": "duckduckgo",
+  "total": 156,
+  "counts": {
+    "pattern": 38,
+    "search": 102,
+    "not_found": 16
+  },
+  "results": [
+    {
+      "hesa_id": "10007856",
+      "university_name": "Aberystwyth University",
+      "university_domain": "aber.ac.uk",
+      "agent_page_url": "https://www.aber.ac.uk/en/study-with-us/international/agent-quality-framework/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10000291",
+      "university_name": "Anglia Ruskin University",
+      "university_domain": "aru.ac.uk",
+      "agent_page_url": "https://www.aru.ac.uk/international/agent-toolkit",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005127",
+      "university_name": "Arts University Plymouth",
+      "university_domain": "plymouthart.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007759",
+      "university_name": "Aston University",
+      "university_domain": "aston.ac.uk",
+      "agent_page_url": "https://www.aston.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007857",
+      "university_name": "Bangor University",
+      "university_domain": "bangor.ac.uk",
+      "agent_page_url": "https://www.bangor.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10000571",
+      "university_name": "Bath Spa University",
+      "university_domain": "bathspa.ac.uk",
+      "agent_page_url": "https://www.bathspa.ac.uk/students/international/regional-recruitment-offices/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10037544",
+      "university_name": "BIMM University",
+      "university_domain": "bimm.ac.uk",
+      "agent_page_url": "https://www.bimm.ac.uk/international/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007760",
+      "university_name": "Birkbeck, University of London",
+      "university_domain": "bbk.ac.uk",
+      "agent_page_url": "https://www.bbk.ac.uk/international/contact-us",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007140",
+      "university_name": "Birmingham City University",
+      "university_domain": "bcu.ac.uk",
+      "agent_page_url": "https://www.bcu.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10000754",
+      "university_name": "Blackpool and The Fylde College",
+      "university_domain": "blackpool.ac.uk",
+      "agent_page_url": "https://www.blackpool.ac.uk/International-Students",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10000824",
+      "university_name": "Bournemouth University",
+      "university_domain": "bournemouth.ac.uk",
+      "agent_page_url": "https://www.bournemouth.ac.uk/study/international/meet-us/international-representatives",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10031982",
+      "university_name": "BPP University",
+      "university_domain": "bpp.com",
+      "agent_page_url": "https://www.bpp.com/study/international-students/agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10000961",
+      "university_name": "Brunel University London",
+      "university_domain": "brunel.ac.uk",
+      "agent_page_url": "https://www.brunel.ac.uk/international/Applying-to-Brunel-University-of-London-through-an-Agent",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10000975",
+      "university_name": "Buckinghamshire New University",
+      "university_domain": "bcuc.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10001143",
+      "university_name": "Canterbury Christ Church University",
+      "university_domain": "canterbury.ac.uk",
+      "agent_page_url": "https://www.canterbury.ac.uk/study-here/international/find-your-country",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007854",
+      "university_name": "Cardiff Metropolitan University",
+      "university_domain": "cardiffmet.ac.uk",
+      "agent_page_url": "https://www.cardiffmet.ac.uk/international/recruitment-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007814",
+      "university_name": "Cardiff University",
+      "university_domain": "cardiff.ac.uk",
+      "agent_page_url": "https://www.cardiff.ac.uk/study/international/your-country/united-kingdom/advisors",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10001478",
+      "university_name": "City, University of London",
+      "university_domain": "web.city.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007761",
+      "university_name": "Courtauld Institute of Art",
+      "university_domain": "courtauld.ac.uk",
+      "agent_page_url": "https://courtauld.ac.uk/whats-on/agents-of-change-women-artists-in-german-and-austrian-modernism/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10001726",
+      "university_name": "Coventry University",
+      "university_domain": "coventry.ac.uk",
+      "agent_page_url": "https://www.coventry.ac.uk/international-students-hub/find-your-region/about-agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007822",
+      "university_name": "Cranfield University",
+      "university_domain": "cranfield.ac.uk",
+      "agent_page_url": "https://www.cranfield.ac.uk/international/international-agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10001883",
+      "university_name": "De Montfort University",
+      "university_domain": "dmu.ac.uk",
+      "agent_page_url": "https://www.dmu.ac.uk/international/en/agents.aspx",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007143",
+      "university_name": "Durham University",
+      "university_domain": "durham.ac.uk",
+      "agent_page_url": "https://www.durham.ac.uk/study/international/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007823",
+      "university_name": "Edge Hill University",
+      "university_domain": "edgehill.ac.uk",
+      "agent_page_url": "https://www.edgehill.ac.uk/event/agents-of-change-international-womens-day-2023/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007772",
+      "university_name": "Edinburgh Napier University",
+      "university_domain": "napier.ac.uk",
+      "agent_page_url": "https://www.napier.ac.uk/study-with-us/international-students/agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10008640",
+      "university_name": "Falmouth University",
+      "university_domain": "falmouth.ac.uk",
+      "agent_page_url": "https://www.falmouth.ac.uk/study/international/international-eu-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007762",
+      "university_name": "Glasgow Caledonian University",
+      "university_domain": "gcu.ac.uk",
+      "agent_page_url": "https://www.gcu.ac.uk/internationalstudy/applying-to-gcu-through-an-education-agent",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10002681",
+      "university_name": "Glasgow School of Art",
+      "university_domain": "gsa.ac.uk",
+      "agent_page_url": "https://www.gsa.ac.uk/study-at-the-gsa/international-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10002718",
+      "university_name": "Goldsmiths, University of London",
+      "university_domain": "gold.ac.uk",
+      "agent_page_url": "https://www.gold.ac.uk/international/representatives/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007825",
+      "university_name": "Guildhall School of Music and Drama",
+      "university_domain": "gsmd.ac.uk",
+      "agent_page_url": "https://www.gsmd.ac.uk/study-with-guildhall/apply-to-guildhall/international-admissions",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10040812",
+      "university_name": "Harper Adams University",
+      "university_domain": "haac.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10080810",
+      "university_name": "Hartpury University and College",
+      "university_domain": "hartpury.ac.uk",
+      "agent_page_url": "https://www.hartpury.ac.uk/university/international/agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10000163",
+      "university_name": "Health Sciences University",
+      "university_domain": "aecc.ac.uk",
+      "agent_page_url": "https://www.hsu.ac.uk/about/our-purpose/partners/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007764",
+      "university_name": "Heriot-Watt University",
+      "university_domain": "hw.ac.uk",
+      "agent_page_url": "https://www.hw.ac.uk/study/international-students/study-in-the-uk/international-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007765",
+      "university_name": "Heythrop College, University of London",
+      "university_domain": "web.archive.org",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10003270",
+      "university_name": "Imperial College London",
+      "university_domain": "imperial.ac.uk",
+      "agent_page_url": "https://www.imperial.ac.uk/study/international-students/agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003645",
+      "university_name": "King's College London",
+      "university_domain": "kcl.ac.uk",
+      "agent_page_url": "https://www.kcl.ac.uk/abroad/applying/overseas-partners-advisors",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003678",
+      "university_name": "Kingston University",
+      "university_domain": "kingston.ac.uk",
+      "agent_page_url": "https://www.kingston.ac.uk/study/international-students",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10003861",
+      "university_name": "Leeds Beckett University",
+      "university_domain": "leedsbeckett.ac.uk",
+      "agent_page_url": "https://www.leedsbeckett.ac.uk/international-students/international-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003863",
+      "university_name": "Leeds Trinity University",
+      "university_domain": "leedstrinity.ac.uk",
+      "agent_page_url": "https://www.leedstrinity.ac.uk/international/your-country-or-region/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007811",
+      "university_name": "Lincoln Bishop University",
+      "university_domain": "lincolnbishop.ac.uk",
+      "agent_page_url": "https://www.lincolnbishop.ac.uk/international/internationalrecruitmentpartners",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003956",
+      "university_name": "Liverpool Hope University",
+      "university_domain": "hope.ac.uk",
+      "agent_page_url": "https://www.hope.ac.uk/international/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003945",
+      "university_name": "Liverpool Institute for Performing Arts",
+      "university_domain": "lipa.ac.uk",
+      "agent_page_url": "https://lipa.ac.uk/apply/international-students/agents-and-overseas-representatives/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003957",
+      "university_name": "Liverpool John Moores University",
+      "university_domain": "ljmu.ac.uk",
+      "agent_page_url": "https://www.ljmu.ac.uk/international/working-with-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10004048",
+      "university_name": "London Metropolitan University",
+      "university_domain": "londonmet.ac.uk",
+      "agent_page_url": "https://www.londonmet.ac.uk/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10004063",
+      "university_name": "London School of Economics and Political Science",
+      "university_domain": "lse.ac.uk",
+      "agent_page_url": "https://www.lse.ac.uk/international-relations/contact-us",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007771",
+      "university_name": "London School of Hygiene and Tropical Medicine",
+      "university_domain": "lshtm.ac.uk",
+      "agent_page_url": "https://www.lshtm.ac.uk/study/international/education-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10004078",
+      "university_name": "London South Bank University",
+      "university_domain": "southbank-university.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10004113",
+      "university_name": "Loughborough University",
+      "university_domain": "lboro.ac.uk",
+      "agent_page_url": "https://www.lboro.ac.uk/international/country/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10004180",
+      "university_name": "Manchester Metropolitan University",
+      "university_domain": "mmu.ac.uk",
+      "agent_page_url": "https://www.mmu.ac.uk/international/partnerships/partners",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10004351",
+      "university_name": "Middlesex University",
+      "university_domain": "mdx.ac.uk",
+      "agent_page_url": "https://www.mdx.ac.uk/international/agent-and-advisor-toolkit/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007799",
+      "university_name": "Newcastle University",
+      "university_domain": "ncl.ac.uk",
+      "agent_page_url": "https://www.ncl.ac.uk/international/agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007832",
+      "university_name": "Newman University",
+      "university_domain": "newman.ac.uk",
+      "agent_page_url": "https://www.newman.ac.uk/international-students/uk-agent-quality-framework-aqf/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10001282",
+      "university_name": "Northumbria University",
+      "university_domain": "unn.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10004775",
+      "university_name": "Norwich University of the Arts",
+      "university_domain": "nua.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10004797",
+      "university_name": "Nottingham Trent University",
+      "university_domain": "ntu.ac.uk",
+      "agent_page_url": "https://www.ntu.ac.uk/international/your-application/ntu-representatives-and-education-agents?utm_campaign=representatives&utm_medium=ShortURL&utm_source=ShortURL&utm_term=IDO",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10004930",
+      "university_name": "Oxford Brookes University",
+      "university_domain": "brookes.ac.uk",
+      "agent_page_url": "https://www.brookes.ac.uk/international-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005337",
+      "university_name": "Queen Margaret University",
+      "university_domain": "qmu.ac.uk",
+      "agent_page_url": "https://www.qmu.ac.uk/study-here/international-students/agent-representatives-guide",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007775",
+      "university_name": "Queen Mary University of London",
+      "university_domain": "qmul.ac.uk",
+      "agent_page_url": "https://www.qmul.ac.uk/international-students/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10005343",
+      "university_name": "Queen's University Belfast",
+      "university_domain": "qub.ac.uk",
+      "agent_page_url": "https://www.qub.ac.uk/Study/international-students/applying/agents-partners/agents-by-country/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005389",
+      "university_name": "Ravensbourne University London",
+      "university_domain": "ravensbourne.ac.uk",
+      "agent_page_url": "https://www.ravensbourne.ac.uk/international-students/education-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10086591",
+      "university_name": "Regent's University London",
+      "university_domain": "regents.ac.uk",
+      "agent_page_url": "https://www.regents.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10005470",
+      "university_name": "Richmond, The American International University in London",
+      "university_domain": "richmond.ac.uk",
+      "agent_page_url": "https://www.richmond.ac.uk/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007835",
+      "university_name": "Royal Academy of Music",
+      "university_domain": "ram.ac.uk",
+      "agent_page_url": "https://www.ram.ac.uk/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005545",
+      "university_name": "Royal Agricultural University",
+      "university_domain": "rau.ac.uk",
+      "agent_page_url": "https://www.rau.ac.uk/student-life/international-students/educational-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007816",
+      "university_name": "Royal Central School of Speech and Drama",
+      "university_domain": "cssd.ac.uk",
+      "agent_page_url": "https://www.cssd.ac.uk/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007777",
+      "university_name": "Royal College of Art",
+      "university_domain": "rca.ac.uk",
+      "agent_page_url": "https://www.rca.ac.uk/study/international-students/the-rca-and-international-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007778",
+      "university_name": "Royal College of Music",
+      "university_domain": "rcm.ac.uk",
+      "agent_page_url": "https://www.rcm.ac.uk/international/contact/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005553",
+      "university_name": "Royal Holloway, University of London",
+      "university_domain": "royalholloway.ac.uk",
+      "agent_page_url": "https://www.royalholloway.ac.uk/international-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005575",
+      "university_name": "Runshaw College",
+      "university_domain": "runshaw.ac.uk",
+      "agent_page_url": "https://runshaw.ac.uk/partners-and-guests-attend-first-showcase-event-of-the-year/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10005790",
+      "university_name": "Sheffield Hallam University",
+      "university_domain": "shu.ac.uk",
+      "agent_page_url": "https://www.shu.ac.uk/study-here/international/find-your-overseas-team",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007780",
+      "university_name": "SOAS, University of London",
+      "university_domain": "soas.ac.uk",
+      "agent_page_url": "https://www.soas.ac.uk/international/global-educational-agent-representatives",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10006022",
+      "university_name": "Southampton Solent University",
+      "university_domain": "solent.ac.uk",
+      "agent_page_url": "https://www.solent.ac.uk/international/your-country?utm_source=International%20prospectus&tm_medium=prospectus&utm_term=representatives&utm_campaign=2017%25recruitment",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007843",
+      "university_name": "St Mary's University, Twickenham",
+      "university_domain": "stmarys.ac.uk",
+      "agent_page_url": "https://www.stmarys.ac.uk/international/agent-directory.aspx",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10016977",
+      "university_name": "St. Edmund's College, Ware",
+      "university_domain": "stedmundscollege.org",
+      "agent_page_url": "https://www.stedmundscollege.org/how-to-apply/international-admissions/international-educational-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007855",
+      "university_name": "Swansea University",
+      "university_domain": "swansea.ac.uk",
+      "agent_page_url": "https://www.swansea.ac.uk/international-students/our-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007161",
+      "university_name": "Teesside University",
+      "university_domain": "tees.ac.uk",
+      "agent_page_url": "https://www.tees.ac.uk/sections/international/country_details.cfm?country_id=23",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007773",
+      "university_name": "The Open University",
+      "university_domain": "open.ac.uk",
+      "agent_page_url": "https://ucu.open.ac.uk/z/reps-and-contacts",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10005500",
+      "university_name": "The Robert Gordon University",
+      "university_domain": "rgu.ac.uk",
+      "agent_page_url": "https://www.rgu.ac.uk/study/international-students/contact-the-international-team",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007807",
+      "university_name": "Ulster University",
+      "university_domain": "ulster.ac.uk",
+      "agent_page_url": "https://www.ulster.ac.uk/global/apply/agent-quality-framework/agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10034999",
+      "university_name": "University Academy Holbeach",
+      "university_domain": "universityacademyholbeach.org",
+      "agent_page_url": "https://www.universityacademyholbeach.org/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10000712",
+      "university_name": "University College Birmingham",
+      "university_domain": "bcftcs.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10006427",
+      "university_name": "University for the Creative Arts",
+      "university_domain": "uca.ac.uk",
+      "agent_page_url": "https://www.uca.ac.uk/international/agent-toolkit/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007783",
+      "university_name": "University of Aberdeen",
+      "university_domain": "abdn.ac.uk",
+      "agent_page_url": "https://www.abdn.ac.uk/pgap/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007849",
+      "university_name": "University of Abertay Dundee",
+      "university_domain": "abertay.ac.uk",
+      "agent_page_url": "https://www.abertay.ac.uk/international/our-accredited-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007850",
+      "university_name": "University of Bath",
+      "university_domain": "bath.ac.uk",
+      "agent_page_url": "https://www.bath.ac.uk/corporate-information/international-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007152",
+      "university_name": "University of Bedfordshire",
+      "university_domain": "beds.ac.uk",
+      "agent_page_url": "https://www.beds.ac.uk/international/how-to-apply/agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10006840",
+      "university_name": "University of Birmingham",
+      "university_domain": "birmingham.ac.uk",
+      "agent_page_url": "https://www.birmingham.ac.uk/study/international/working-with-our-representatives",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007785",
+      "university_name": "University of Bradford",
+      "university_domain": "brad.ac.uk",
+      "agent_page_url": "https://www.bradford.ac.uk/international/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10000886",
+      "university_name": "University of Brighton",
+      "university_domain": "bton.ac.uk",
+      "agent_page_url": "https://www.brighton.ac.uk/index.aspx",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007786",
+      "university_name": "University of Bristol",
+      "university_domain": "bristol.ac.uk",
+      "agent_page_url": "https://www.bristol.ac.uk/international/guidance-for-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007787",
+      "university_name": "University of Buckingham",
+      "university_domain": "buckingham.ac.uk",
+      "agent_page_url": "https://www.buckingham.ac.uk/international/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007788",
+      "university_name": "University of Cambridge",
+      "university_domain": "cam.ac.uk",
+      "agent_page_url": "https://www.undergraduate.study.cam.ac.uk/international-students/get-in-touch",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007848",
+      "university_name": "University of Chester",
+      "university_domain": "chester.ac.uk",
+      "agent_page_url": "https://www.chester.ac.uk/international/working-with-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007137",
+      "university_name": "University of Chichester",
+      "university_domain": "chi.ac.uk",
+      "agent_page_url": "https://www.chi.ac.uk/study/international/your-country-representatives/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007842",
+      "university_name": "University of Cumbria",
+      "university_domain": "cumbria.ac.uk",
+      "agent_page_url": "https://www.cumbria.ac.uk/study/international-students/international-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007851",
+      "university_name": "University of Derby",
+      "university_domain": "derby.ac.uk",
+      "agent_page_url": "https://www.derby.ac.uk/life/international-students/meet-us-in-your-country/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007852",
+      "university_name": "University of Dundee",
+      "university_domain": "dundee.ac.uk",
+      "agent_page_url": "https://www.dundee.ac.uk/study",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007789",
+      "university_name": "University of East Anglia",
+      "university_domain": "uea.ac.uk",
+      "agent_page_url": "https://assets.uea.ac.uk/f/185167/x/12f6f08c5b/uea-agents-2025.pdf",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007144",
+      "university_name": "University of East London",
+      "university_domain": "uel.ac.uk",
+      "agent_page_url": "https://www.uel.ac.uk/international/our-agent-partners",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007790",
+      "university_name": "University of Edinburgh",
+      "university_domain": "ed.ac.uk",
+      "agent_page_url": "https://www.ed.ac.uk/studying/international/agents/list",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007791",
+      "university_name": "University of Essex",
+      "university_domain": "essex.ac.uk",
+      "agent_page_url": "https://www.essex.ac.uk/international/educational-representatives",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007792",
+      "university_name": "University of Exeter",
+      "university_domain": "info.ex.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007794",
+      "university_name": "University of Glasgow",
+      "university_domain": "gla.ac.uk",
+      "agent_page_url": "https://www.gla.ac.uk/international/inyourcountry/representatives/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007145",
+      "university_name": "University of Gloucestershire",
+      "university_domain": "glos.ac.uk",
+      "agent_page_url": "https://www.glos.ac.uk/international/information-for-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10006841",
+      "university_name": "University of Greater Manchester",
+      "university_domain": "bolton.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007146",
+      "university_name": "University of Greenwich",
+      "university_domain": "gre.ac.uk",
+      "agent_page_url": "https://www.gre.ac.uk/international/aqf",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007147",
+      "university_name": "University of Hertfordshire",
+      "university_domain": "herts.ac.uk",
+      "agent_page_url": "https://www.herts.ac.uk/international/contact-us/in-country-representatives",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007148",
+      "university_name": "University of Huddersfield",
+      "university_domain": "hud.ac.uk",
+      "agent_page_url": "https://www.hud.ac.uk/international/agent-information/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007149",
+      "university_name": "University of Hull",
+      "university_domain": "hull.ac.uk",
+      "agent_page_url": "https://www.hull.ac.uk/help-centre/international-students/how-do-i-apply-with-an-agent",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007767",
+      "university_name": "University of Keele",
+      "university_domain": "keele.ac.uk",
+      "agent_page_url": "https://www.keele.ac.uk:443/study/internationalstudents/agents/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007150",
+      "university_name": "University of Kent",
+      "university_domain": "kent.ac.uk",
+      "agent_page_url": "https://www.kent.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007141",
+      "university_name": "University of Lancashire",
+      "university_domain": "uclan.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007768",
+      "university_name": "University of Lancaster",
+      "university_domain": "lancaster.ac.uk",
+      "agent_page_url": "https://www.lancaster.ac.uk/study/international-students/find-an-agent/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10039956",
+      "university_name": "University of Law",
+      "university_domain": "college-of-law.co.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007795",
+      "university_name": "University of Leeds",
+      "university_domain": "leeds.ac.uk",
+      "agent_page_url": "https://www.leeds.ac.uk/international-meet-us/doc/representatives-country-region",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007796",
+      "university_name": "University of Leicester",
+      "university_domain": "le.ac.uk",
+      "agent_page_url": "https://le.ac.uk/study/international-students/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007151",
+      "university_name": "University of Lincoln",
+      "university_domain": "lincoln.ac.uk",
+      "agent_page_url": "https://www.lincoln.ac.uk/studywithus/internationalstudents/entryrequirementsandyourcountry/agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10006842",
+      "university_name": "University of Liverpool",
+      "university_domain": "liverpool.ac.uk",
+      "agent_page_url": "https://www.liverpool.ac.uk/international/applying/how-to-apply/applying-through-an-agent/approved-agents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007797",
+      "university_name": "University of London",
+      "university_domain": "london.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007798",
+      "university_name": "University of Manchester",
+      "university_domain": "manchester.ac.uk",
+      "agent_page_url": "https://www.manchester.ac.uk/study/international/contact-international-team/educational-advisers/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007138",
+      "university_name": "University of Northampton",
+      "university_domain": "nene.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10007154",
+      "university_name": "University of Nottingham",
+      "university_domain": "nottingham.ac.uk",
+      "agent_page_url": "https://www.nottingham.ac.uk/studywithus/international-applicants/index.aspx",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007774",
+      "university_name": "University of Oxford",
+      "university_domain": "ox.ac.uk",
+      "agent_page_url": "https://www.ox.ac.uk/admissions/undergraduate/applying/for-international-students/international-counsellors-and-teachers",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007801",
+      "university_name": "University of Plymouth",
+      "university_domain": "plymouth.ac.uk",
+      "agent_page_url": "https://www.plymouth.ac.uk/international/international-agent-toolkit/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007155",
+      "university_name": "University of Portsmouth",
+      "university_domain": "port.ac.uk",
+      "agent_page_url": "https://www.port.ac.uk/study/international-students/contact-us",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007802",
+      "university_name": "University of Reading",
+      "university_domain": "reading.ac.uk",
+      "agent_page_url": "https://www.reading.ac.uk/ready-to-study/international-and-eu",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007776",
+      "university_name": "University of Roehampton",
+      "university_domain": "roehampton.ac.uk",
+      "agent_page_url": "https://www.roehampton.ac.uk/student-support/international-students/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007156",
+      "university_name": "University of Salford",
+      "university_domain": "salford.ac.uk",
+      "agent_page_url": "https://www.salford.ac.uk/international/agent-partner-resources",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007157",
+      "university_name": "University of Sheffield",
+      "university_domain": "sheffield.ac.uk",
+      "agent_page_url": "https://sheffield.ac.uk/international/representatives",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007793",
+      "university_name": "University of South Wales",
+      "university_domain": "southwales.ac.uk",
+      "agent_page_url": "https://www.southwales.ac.uk/international/",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007158",
+      "university_name": "University of Southampton",
+      "university_domain": "southampton.ac.uk",
+      "agent_page_url": "https://www.southampton.ac.uk/uni-life/international/our-representatives.page",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007803",
+      "university_name": "University of St Andrews",
+      "university_domain": "st-andrews.ac.uk",
+      "agent_page_url": "https://www.st-andrews.ac.uk/subjects/entry/local-representatives/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10037449",
+      "university_name": "University of St Mark & St John",
+      "university_domain": "marjon.ac.uk",
+      "agent_page_url": null,
+      "url_source": "not_found"
+    },
+    {
+      "hesa_id": "10006299",
+      "university_name": "University of Staffordshire",
+      "university_domain": "staffs.ac.uk",
+      "agent_page_url": "https://www.staffs.ac.uk/international/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007804",
+      "university_name": "University of Stirling",
+      "university_domain": "stir.ac.uk",
+      "agent_page_url": "https://www.stir.ac.uk/international/international-students/agents-and-international-representatives/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007805",
+      "university_name": "University of Strathclyde",
+      "university_domain": "strath.ac.uk",
+      "agent_page_url": "https://www.strath.ac.uk/studywithus/internationalstudents/strathclydeagents/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10014001",
+      "university_name": "University of Suffolk",
+      "university_domain": "uos.ac.uk",
+      "agent_page_url": "https://www.uos.ac.uk/agent-hub/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007159",
+      "university_name": "University of Sunderland",
+      "university_domain": "sunderland.ac.uk",
+      "agent_page_url": "https://www.sunderland.ac.uk/agents",
+      "url_source": "pattern"
+    },
+    {
+      "hesa_id": "10007160",
+      "university_name": "University of Surrey",
+      "university_domain": "surrey.ac.uk",
+      "agent_page_url": "https://www.surrey.ac.uk/international-students-united-kingdom/contact-us",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007806",
+      "university_name": "University of Sussex",
+      "university_domain": "sussex.ac.uk",
+      "agent_page_url": "https://www.sussex.ac.uk/study/international-students/meet-us",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007162",
+      "university_name": "University of the Arts London",
+      "university_domain": "arts.ac.uk",
+      "agent_page_url": "https://www.arts.ac.uk/study-at-ual/international/contact-your-ual-representative/choosing-a-ual-representative",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007114",
+      "university_name": "University of the Highlands and Islands",
+      "university_domain": "uhi.ac.uk",
+      "agent_page_url": "https://www.uhi.ac.uk/en/studying-at-uhi/international/representatives-in-your-country/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007164",
+      "university_name": "University of the West of England",
+      "university_domain": "uwe.ac.uk",
+      "agent_page_url": "https://www.uwe.ac.uk/courses/applying/international-applications/education-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007800",
+      "university_name": "University of the West of Scotland",
+      "university_domain": "uws.ac.uk",
+      "agent_page_url": "https://www.uws.ac.uk/international/country-information/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10008574",
+      "university_name": "University of Wales",
+      "university_domain": "wales.ac.uk",
+      "agent_page_url": "https://www.southwales.ac.uk/international/your-country/our-agent-network/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007858",
+      "university_name": "University of Wales Trinity Saint David",
+      "university_domain": "uwtsd.ac.uk",
+      "agent_page_url": "https://www.uwtsd.ac.uk/study/how-apply/international-applications/applying-agent",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007163",
+      "university_name": "University of Warwick",
+      "university_domain": "warwick.ac.uk",
+      "agent_page_url": "https://warwick.ac.uk/study/international/contact-us/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10006566",
+      "university_name": "University of West London",
+      "university_domain": "uwl.ac.uk",
+      "agent_page_url": "https://www.uwl.ac.uk/international",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007165",
+      "university_name": "University of Westminster",
+      "university_domain": "westminster.ac.uk",
+      "agent_page_url": "https://www.westminster.ac.uk/international/information-for-westminsters-agents",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10003614",
+      "university_name": "University of Winchester",
+      "university_domain": "winchester.ac.uk",
+      "agent_page_url": "https://winchester.ac.uk/international/international-agent/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007166",
+      "university_name": "University of Wolverhampton",
+      "university_domain": "wlv.ac.uk",
+      "agent_page_url": "https://www.wlv.ac.uk/international/education-agents-/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007139",
+      "university_name": "University of Worcester",
+      "university_domain": "worcester.ac.uk",
+      "agent_page_url": "https://www.worcester.ac.uk/study/International/local-representatives-near-you.aspx",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007167",
+      "university_name": "University of York",
+      "university_domain": "york.ac.uk",
+      "agent_page_url": "https://www.york.ac.uk/study/international/agents-students/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007833",
+      "university_name": "Wrexham University",
+      "university_domain": "wrexham.ac.uk",
+      "agent_page_url": "https://wrexham.ac.uk/international-students/international-recruitment-offices/",
+      "url_source": "search"
+    },
+    {
+      "hesa_id": "10007713",
+      "university_name": "York St John University",
+      "university_domain": "yorksj.ac.uk",
+      "agent_page_url": "https://www.yorksj.ac.uk/international/how-to-apply/agent-quality-framework/",
+      "url_source": "search"
+    }
+  ]
+}

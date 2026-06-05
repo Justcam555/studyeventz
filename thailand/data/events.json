@@ -1,17 +1,17 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-06-04T15:06:20",
+  "generated_at": "2026-06-05T16:33:10",
   "window": {
-    "from": "2026-06-04",
-    "to": "2026-07-04"
+    "from": "2026-06-05",
+    "to": "2026-07-05"
   },
   "events": [
     {
-      "id": 194,
+      "id": 231,
       "name": "SOP Workshop เขียน SOP ยังไง! ให้มหาลัยตอบรับ",
       "date": "2026-06-06",
-      "time": "11:00 – 12:00",
+      "time": "11:00 - 12:00",
       "location": "BRIT-Education UK Office, Trendy Building ชั้น 2, สุขุมวิท 13, Bangkok / Online via Zoom",
       "organizer": "BRIT-Education UK",
       "agent_name": "BRIT-Education UK",
@@ -24,7 +24,7 @@
       "initials": "BE"
     },
     {
-      "id": 186,
+      "id": 216,
       "name": "GoUni Pre-Departure Day เตรียมตัวเรียนต่ออังกฤษ พบเพื่อนๆ ก่อนบินไปเรียนที่ UK!",
       "date": "2026-06-06",
       "time": "1:00 PM - 4:00 PM",
@@ -38,22 +38,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "G"
-    },
-    {
-      "id": 188,
-      "name": "Rethinking student health, wellbeing and success in a high-cost world",
-      "date": "2026-06-08",
-      "time": "",
-      "location": "Online",
-      "organizer": "QS Apply",
-      "agent_name": "QS Apply",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.qs.com/solutions/qs-apply",
-      "registration_url": "https://www.qs.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "QA"
     },
     {
       "id": 19,
@@ -72,7 +56,7 @@
       "initials": "SB"
     },
     {
-      "id": 174,
+      "id": 196,
       "name": "Beyond the Prompt: Human Creativity, AI Partnership and the Future of Innovation",
       "date": "2026-06-10",
       "time": "17:00 - 18:30",
@@ -104,38 +88,6 @@
       "initials": "SB"
     },
     {
-      "id": 189,
-      "name": "QS World University Rankings 2027 - Exploration of excellence (First session)",
-      "date": "2026-06-11",
-      "time": "",
-      "location": "Online",
-      "organizer": "QS Apply",
-      "agent_name": "QS Apply",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.qs.com/solutions/qs-apply",
-      "registration_url": "https://www.qs.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "QA"
-    },
-    {
-      "id": 190,
-      "name": "QS World University Rankings 2027 - Exploration of excellence (Second session)",
-      "date": "2026-06-11",
-      "time": "",
-      "location": "Online",
-      "organizer": "QS Apply",
-      "agent_name": "QS Apply",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.qs.com/solutions/qs-apply",
-      "registration_url": "https://www.qs.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "QA"
-    },
-    {
       "id": 21,
       "name": "Law Webinar Series - University of Le...",
       "date": "2026-06-11",
@@ -152,10 +104,26 @@
       "initials": "SB"
     },
     {
-      "id": 193,
+      "id": 212,
+      "name": "UK Jobs & Career Pathways 2026",
+      "date": "2026-06-12",
+      "time": "16:00 - 17:00",
+      "location": "Online",
+      "organizer": "StudyIn Chiang Mai",
+      "agent_name": "StudyIn Chiang Mai",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/branches/chiang-mai/",
+      "registration_url": "https://gostudyin.com/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
+    {
+      "id": 230,
       "name": "Pre-Departure เตรียมตัวให้พร้อมก่อนไปเรียนต่ออังกฤษ",
       "date": "2026-06-13",
-      "time": "11:00 AM – 13:00 PM",
+      "time": "11:00 AM - 13:00 PM",
       "location": "BRIT-Education UK Office, Trendy Building ชั้น 2, สุขุมวิท 13, Bangkok / Online via Zoom",
       "organizer": "BRIT-Education UK",
       "agent_name": "BRIT-Education UK",
@@ -168,7 +136,23 @@
       "initials": "BE"
     },
     {
-      "id": 175,
+      "id": 213,
+      "name": "UCAT Training - June 2026",
+      "date": "2026-06-13",
+      "time": "12:00 - 18:00",
+      "location": "Online",
+      "organizer": "StudyIn Chiang Mai",
+      "agent_name": "StudyIn Chiang Mai",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/branches/chiang-mai/",
+      "registration_url": "https://gostudyin.com/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
+    {
+      "id": 197,
       "name": "UK Study Day: Last Ticket to UK! ตั๋วใบสุดท้ายรอบ September 2026",
       "date": "2026-06-13",
       "time": "13:00 - 15:00",
@@ -184,7 +168,23 @@
       "initials": "HO"
     },
     {
-      "id": 172,
+      "id": 235,
+      "name": "UK Study Day: Last Ticket to UK! – How to apply to UK Universities for September 2026",
+      "date": "2026-06-13",
+      "time": "13:00 - 15:00",
+      "location": "Online",
+      "organizer": "Hands OnLink opens in a new window",
+      "agent_name": "Hands OnLink opens in a new window",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.hands-on.co.th/en/",
+      "registration_url": "https://www.hands-on.co.th/en/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
+    },
+    {
+      "id": 195,
       "name": "สัมมนาเรียนต่อออสเตรเลีย Sydney Calling เรียนสาย High-Demand พร้อมทุนอัตโนมัติหลักแสน กับ Macquarie University",
       "date": "2026-06-13",
       "time": "1:00 PM - 3:00 PM",
@@ -200,27 +200,27 @@
       "initials": "IE"
     },
     {
-      "id": 191,
-      "name": "2027QS世界大学排名——探寻卓越",
+      "id": 214,
+      "name": "Returning to Canada with a UK Medical...",
       "date": "2026-06-16",
-      "time": "",
+      "time": "17:00 - 18:00",
       "location": "Online",
-      "organizer": "QS Apply",
-      "agent_name": "QS Apply",
+      "organizer": "StudyIn Chiang Mai",
+      "agent_name": "StudyIn Chiang Mai",
       "agent_country": "Thailand",
-      "agent_website": "https://www.qs.com/solutions/qs-apply",
-      "registration_url": "https://www.qs.com/webinars",
-      "logo_url": "",
+      "agent_website": "https://gostudyin.com/branches/chiang-mai/",
+      "registration_url": "https://gostudyin.com/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "QA"
+      "initials": "SC"
     },
     {
-      "id": 176,
+      "id": 198,
       "name": "พูดคุย 1-on-1 เรียนต่อบริหารที่อังกฤษกับ Nottingham University Business School",
       "date": "2026-06-18",
       "time": "16:00 - 17:00",
-      "location": "Hands On Silom, Bangkok / Online",
+      "location": "Hands On Silom, Bangkok",
       "organizer": "Hands On Education Consultants",
       "agent_name": "Hands On Education Consultants",
       "agent_country": "Thailand",
@@ -232,7 +232,39 @@
       "initials": "HO"
     },
     {
-      "id": 177,
+      "id": 236,
+      "name": "Discover your future with Nottingham University Business School – 1:1 Student Interview",
+      "date": "2026-06-18",
+      "time": "16:00 - 17:00",
+      "location": "Hands On Silom, Bangkok / Online",
+      "organizer": "Hands OnLink opens in a new window",
+      "agent_name": "Hands OnLink opens in a new window",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.hands-on.co.th/en/",
+      "registration_url": "https://www.hands-on.co.th/en/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
+    },
+    {
+      "id": 215,
+      "name": "Study in Asia Virtual Fair",
+      "date": "2026-06-19",
+      "time": "13:00 - 17:00",
+      "location": "Online",
+      "organizer": "StudyIn Chiang Mai",
+      "agent_name": "StudyIn Chiang Mai",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/branches/chiang-mai/",
+      "registration_url": "https://gostudyin.com/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
+    {
+      "id": 199,
       "name": "เรียนพร้อมลงมือทำจริงกับหลักสูตรการสอนของ Adelaide ท็อปยู Group of Eight",
       "date": "2026-06-20",
       "time": "13:00 - 14:30",
@@ -248,7 +280,55 @@
       "initials": "HO"
     },
     {
-      "id": 187,
+      "id": 237,
+      "name": "Adelaide University Future-Ready Degrees: Learn in Class, Gain Experience in Industry",
+      "date": "2026-06-20",
+      "time": "13:00 - 14:30",
+      "location": "Online",
+      "organizer": "Hands OnLink opens in a new window",
+      "agent_name": "Hands OnLink opens in a new window",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.hands-on.co.th/en/",
+      "registration_url": "https://www.hands-on.co.th/en/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
+    },
+    {
+      "id": 232,
+      "name": "Meet IEC Work & Study Abroad Fair 2026 @IEC Office BTS Chidlom",
+      "date": "2026-06-20",
+      "time": "13:00 - 16:00",
+      "location": "IEC Office BTS Chidlom, Bangkok",
+      "organizer": "IEC Abroad Thailand",
+      "agent_name": "IEC Abroad Thailand",
+      "agent_country": "Thailand",
+      "agent_website": "iecabroad.co.th",
+      "registration_url": "https://iecabroad.co.th/events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/IEC_Logo-removebg-preview.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IA"
+    },
+    {
+      "id": 233,
+      "name": "NextGen Marketers Masterclass: เจาะลึกทิศทางอนา...",
+      "date": "2026-06-20",
+      "time": "14:00 - 15:30",
+      "location": "StudyIn Office ซอยสุขุมวิท 25 ชั้น G (BTS อโศก / MRT สุขุมวิท), Bangkok",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/thailand/",
+      "registration_url": "https://gostudyin.com/thailand/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "S"
+    },
+    {
+      "id": 217,
       "name": "เรียนต่อปี 2026 โค้งสุดท้าย! IELTS WAIVER & JAN INTAKE เรียนต่อ ป.โท UK หลักสูตรรอบ SEP 2026 และ JAN 2027",
       "date": "2026-06-20",
       "time": "1:00 PM - 5:00 PM",
@@ -264,11 +344,11 @@
       "initials": "G"
     },
     {
-      "id": 179,
+      "id": 201,
       "name": "Go UK: PG Information Day สัมมนาเจาะลึกการเรียนต่อ ป.โท ที่ประเทศอังกฤษ",
       "date": "2026-06-20",
       "time": "1:00 pm - 3:00 pm",
-      "location": "ออฟฟิศ One Education อาคารมณียาเซ็นเตอร์ ชั้น 4, Bangkok",
+      "location": "One Education Office, อาคารมณียาเซ็นเตอร์ ชั้น 4, Bangkok",
       "organizer": "One Education Consulting Co., Ltd",
       "agent_name": "One Education Consulting Co., Ltd",
       "agent_country": "Thailand",
@@ -280,7 +360,7 @@
       "initials": "OE"
     },
     {
-      "id": 178,
+      "id": 200,
       "name": "SIM Global Education – University of Birmingham Open Day เรียนต่อ University of Birmingham ที่สิงคโปร์",
       "date": "2026-06-27",
       "time": "12:30 - 15:30",
@@ -296,20 +376,20 @@
       "initials": "HO"
     },
     {
-      "id": 192,
-      "name": "EdTech innovations powering college-to-career pathways",
-      "date": "2026-06-30",
-      "time": "",
-      "location": "Online",
-      "organizer": "QS Apply",
-      "agent_name": "QS Apply",
+      "id": 238,
+      "name": "SIM Global Education – University of Birmingham Open Day",
+      "date": "2026-06-27",
+      "time": "12:30 - 15:30",
+      "location": "Hands On Silom, Bangkok",
+      "organizer": "Hands OnLink opens in a new window",
+      "agent_name": "Hands OnLink opens in a new window",
       "agent_country": "Thailand",
-      "agent_website": "https://www.qs.com/solutions/qs-apply",
-      "registration_url": "https://www.qs.com/webinars",
-      "logo_url": "",
+      "agent_website": "https://www.hands-on.co.th/en/",
+      "registration_url": "https://www.hands-on.co.th/en/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "QA"
+      "initials": "HO"
     }
   ]
 }

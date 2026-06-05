@@ -7,6 +7,8 @@
 # agents.db is the working scraper database (~15 MB, contains scraped agent
 # contact info). Excluded from the repo; events.json is the published artifact.
 data/agents.db
+data/agents.db.bak*
+data/*.bak
 data/agents.db-journal
 data/agents.db-wal
 data/agents.db-shm
@@ -40,3 +42,5 @@ venv/
 *.swo
 .idea/
 .vscode/
+.env.local
+backend/.env.local

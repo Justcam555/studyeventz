@@ -393,7 +393,7 @@ async def process_agent(ctx, client: anthropic.AsyncAnthropic, agent: sqlite3.Ro
             pass
 
 
-async def scrape_async(limit: int | None, refresh: bool) -> None:
+async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | None = None) -> None:
     from playwright.async_api import async_playwright
 
     conn = sqlite3.connect(DB_PATH)
@@ -413,11 +413,18 @@ async def scrape_async(limit: int | None, refresh: bool) -> None:
     # (hostname without www + path). This catches the case where the same
     # site is listed under multiple URL variants across universities
     # (e.g. www.X.com vs https://X.com/ vs http://X.com).
+    company_clause, params = "", []
+    if companies:
+        ors = " OR ".join(["company_name LIKE ? OR canonical_name LIKE ?"] * len(companies))
+        company_clause = f" AND ({ors})"
+        for c in companies:
+            params += [f"%{c}%", f"%{c}%"]
     all_rows = conn.execute(
-        """SELECT id, company_name, website FROM agents
+        f"""SELECT id, company_name, website FROM agents
            WHERE country LIKE '%Thailand%'
              AND website IS NOT NULL AND TRIM(website) != ''
-           ORDER BY id"""
+             {company_clause}
+           ORDER BY id""", params
     ).fetchall()
     canonical: dict[tuple[str, str], sqlite3.Row] = {}
     for r in all_rows:
@@ -527,6 +534,19 @@ async def scrape_async(limit: int | None, refresh: bool) -> None:
 
         await browser.close()
 
+    # Collapse the same event saved under multiple branch agent_ids of one
+    # company (e.g. StudyIn Bangkok / Chiang Mai listing the same webinar) to a
+    # single row, so multi-branch agents don't inflate the events page.
+    deduped = conn.execute("""
+        DELETE FROM events
+        WHERE id NOT IN (
+            SELECT MIN(e.id) FROM events e JOIN agents a ON e.agent_id = a.id
+            GROUP BY a.canonical_name, e.name, e.date
+        )""").rowcount
+    conn.commit()
+    if deduped:
+        print(f"  deduped {deduped} cross-branch duplicate event(s)", flush=True)
+
     print(
         f"\nDone. Sites with events: {sites_with_events}. "
         f"Events found: {total_found}, kept (≤30 days): {total_kept}. "
@@ -623,6 +643,7 @@ def main() -> int:
     ap.add_argument("--limit", type=int, help="Limit number of agents to scan")
     ap.add_argument("--refresh", action="store_true", help="Clear stale (past) events first")
     ap.add_argument("--report", action="store_true", help="Generate HTML report and exit")
+    ap.add_argument("--company", nargs="+", help="Only scan agents matching these names (e.g. --company WIN StudyIn)")
     args = ap.parse_args()
 
     if args.report:
@@ -630,7 +651,7 @@ def main() -> int:
         print(f"Report written to {path}")
         return 0
 
-    asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh))
+    asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh, companies=args.company))
     return 0
 
 

@@ -1,0 +1,1100 @@
+{
+  "source": "Wikidata SPARQL (query.wikidata.org); UKPRN (P4971) == HESA provider ID",
+  "note": "HESA register itself is Cloudflare-protected; UKPRN is the same ID HESA uses on its provider pages.",
+  "definition": "UK items that are (subclasses of) university with a UKPRN — i.e. registered degree-awarding providers.",
+  "count": 156,
+  "universities": [
+    {
+      "name": "Aberystwyth University",
+      "city": "Aberystwyth",
+      "website": "https://www.aber.ac.uk/en/",
+      "hesa_provider_id": "10007856",
+      "wikidata_id": "Q319761"
+    },
+    {
+      "name": "Anglia Ruskin University",
+      "city": "Cambridge",
+      "website": "https://aru.ac.uk/",
+      "hesa_provider_id": "10000291",
+      "wikidata_id": "Q540751"
+    },
+    {
+      "name": "Arts University Plymouth",
+      "city": "Plymouth",
+      "website": "http://www.plymouthart.ac.uk",
+      "hesa_provider_id": "10005127",
+      "wikidata_id": "Q7205783"
+    },
+    {
+      "name": "Aston University",
+      "city": "Birmingham",
+      "website": "http://www.aston.ac.uk/",
+      "hesa_provider_id": "10007759",
+      "wikidata_id": "Q750066"
+    },
+    {
+      "name": "Bangor University",
+      "city": "Gwynedd",
+      "website": "https://www.bangor.ac.uk/",
+      "hesa_provider_id": "10007857",
+      "wikidata_id": "Q790029"
+    },
+    {
+      "name": "Bath Spa University",
+      "city": "Bath",
+      "website": "https://bathspa.ac.uk/",
+      "hesa_provider_id": "10000571",
+      "wikidata_id": "Q3091754"
+    },
+    {
+      "name": "BIMM University",
+      "city": "London",
+      "website": "https://www.bimm.ac.uk/",
+      "hesa_provider_id": "10037544",
+      "wikidata_id": "Q4967681"
+    },
+    {
+      "name": "Birkbeck, University of London",
+      "city": "London",
+      "website": "https://bbk.ac.uk",
+      "hesa_provider_id": "10007760",
+      "wikidata_id": "Q375606"
+    },
+    {
+      "name": "Birmingham City University",
+      "city": "Birmingham",
+      "website": "http://www.bcu.ac.uk",
+      "hesa_provider_id": "10007140",
+      "wikidata_id": "Q3547145"
+    },
+    {
+      "name": "Blackpool and The Fylde College",
+      "city": "Blackpool",
+      "website": "http://www.blackpool.ac.uk",
+      "hesa_provider_id": "10000754",
+      "wikidata_id": "Q16984484"
+    },
+    {
+      "name": "Bournemouth University",
+      "city": "Bournemouth, Christchurch and Poole",
+      "website": "http://www.bournemouth.ac.uk",
+      "hesa_provider_id": "10000824",
+      "wikidata_id": "Q3182943"
+    },
+    {
+      "name": "BPP University",
+      "city": "London",
+      "website": "http://www.bpp.com/university",
+      "hesa_provider_id": "10031982",
+      "wikidata_id": "Q4836273"
+    },
+    {
+      "name": "Brunel University London",
+      "city": "London",
+      "website": "https://www.brunel.ac.uk/",
+      "hesa_provider_id": "10000961",
+      "wikidata_id": "Q932411"
+    },
+    {
+      "name": "Buckinghamshire New University",
+      "city": "High Wycombe",
+      "website": "http://www.bcuc.ac.uk",
+      "hesa_provider_id": "10000975",
+      "wikidata_id": "Q448403"
+    },
+    {
+      "name": "Canterbury Christ Church University",
+      "city": "Canterbury",
+      "website": "https://www.canterbury.ac.uk",
+      "hesa_provider_id": "10001143",
+      "wikidata_id": "Q3182956"
+    },
+    {
+      "name": "Cardiff Metropolitan University",
+      "city": "Cardiff",
+      "website": "http://www.cardiffmet.ac.uk",
+      "hesa_provider_id": "10007854",
+      "wikidata_id": "Q5038449"
+    },
+    {
+      "name": "Cardiff University",
+      "city": "Cardiff",
+      "website": "https://cardiff.ac.uk/",
+      "hesa_provider_id": "10007814",
+      "wikidata_id": "Q1035745"
+    },
+    {
+      "name": "City, University of London",
+      "city": "London",
+      "website": "http://web.city.ac.uk/",
+      "hesa_provider_id": "10001478",
+      "wikidata_id": "Q1094046"
+    },
+    {
+      "name": "Courtauld Institute of Art",
+      "city": "London",
+      "website": "https://courtauld.ac.uk/gallery/",
+      "hesa_provider_id": "10007761",
+      "wikidata_id": "Q734266"
+    },
+    {
+      "name": "Coventry University",
+      "city": "Coventry",
+      "website": "https://www.coventry.ac.uk/",
+      "hesa_provider_id": "10001726",
+      "wikidata_id": "Q1138080"
+    },
+    {
+      "name": "Cranfield University",
+      "city": "Cranfield",
+      "website": "https://www.cranfield.ac.uk/",
+      "hesa_provider_id": "10007822",
+      "wikidata_id": "Q181177"
+    },
+    {
+      "name": "De Montfort University",
+      "city": "Leicester",
+      "website": "https://dmu.ac.uk/home.aspx",
+      "hesa_provider_id": "10001883",
+      "wikidata_id": "Q3551402"
+    },
+    {
+      "name": "Durham University",
+      "city": "Durham",
+      "website": "https://durham.ac.uk",
+      "hesa_provider_id": "10007143",
+      "wikidata_id": "Q458393"
+    },
+    {
+      "name": "Edge Hill University",
+      "city": "Ormskirk",
+      "website": "https://edgehill.ac.uk/",
+      "hesa_provider_id": "10007823",
+      "wikidata_id": "Q937482"
+    },
+    {
+      "name": "Edinburgh Napier University",
+      "city": "Edinburgh",
+      "website": "https://www.napier.ac.uk/",
+      "hesa_provider_id": "10007772",
+      "wikidata_id": "Q1277357"
+    },
+    {
+      "name": "Falmouth University",
+      "city": "Falmouth",
+      "website": "http://www.falmouth.ac.uk/",
+      "hesa_provider_id": "10008640",
+      "wikidata_id": "Q5432602"
+    },
+    {
+      "name": "Glasgow Caledonian University",
+      "city": "Glasgow",
+      "website": "https://www.gcu.ac.uk/",
+      "hesa_provider_id": "10007762",
+      "wikidata_id": "Q1353139"
+    },
+    {
+      "name": "Glasgow School of Art",
+      "city": "Glasgow",
+      "website": "https://www.gsa.ac.uk/",
+      "hesa_provider_id": "10002681",
+      "wikidata_id": "Q748106"
+    },
+    {
+      "name": "Goldsmiths, University of London",
+      "city": "London",
+      "website": "https://gold.ac.uk",
+      "hesa_provider_id": "10002718",
+      "wikidata_id": "Q528231"
+    },
+    {
+      "name": "Guildhall School of Music and Drama",
+      "city": "London",
+      "website": "http://www.gsmd.ac.uk",
+      "hesa_provider_id": "10007825",
+      "wikidata_id": "Q1419737"
+    },
+    {
+      "name": "Harper Adams University",
+      "city": "Newport",
+      "website": "http://www.haac.ac.uk/",
+      "hesa_provider_id": "10040812",
+      "wikidata_id": "Q5663364"
+    },
+    {
+      "name": "Hartpury University and College",
+      "city": "Gloucestershire",
+      "website": "https://www.hartpury.ac.uk/",
+      "hesa_provider_id": "10080810",
+      "wikidata_id": "Q5675151"
+    },
+    {
+      "name": "Health Sciences University",
+      "city": "Bournemouth",
+      "website": "http://www.aecc.ac.uk",
+      "hesa_provider_id": "10000163",
+      "wikidata_id": "Q4763618"
+    },
+    {
+      "name": "Heriot-Watt University",
+      "city": "Edinburgh",
+      "website": "https://www.hw.ac.uk/",
+      "hesa_provider_id": "10007764",
+      "wikidata_id": "Q1610024"
+    },
+    {
+      "name": "Heythrop College, University of London",
+      "city": "London",
+      "website": "https://web.archive.org/web/20180827222647/http://heythrop.ac.uk/",
+      "hesa_provider_id": "10007765",
+      "wikidata_id": "Q641609"
+    },
+    {
+      "name": "Imperial College London",
+      "city": "London",
+      "website": "https://www.imperial.ac.uk/",
+      "hesa_provider_id": "10003270",
+      "wikidata_id": "Q189022"
+    },
+    {
+      "name": "King's College London",
+      "city": "London",
+      "website": "https://kcl.ac.uk/",
+      "hesa_provider_id": "10003645",
+      "wikidata_id": "Q245247"
+    },
+    {
+      "name": "Kingston University",
+      "city": "London",
+      "website": "https://www.kingston.ac.uk/",
+      "hesa_provider_id": "10003678",
+      "wikidata_id": "Q2503809"
+    },
+    {
+      "name": "Leeds Beckett University",
+      "city": "Leeds",
+      "website": "http://www.leedsbeckett.ac.uk/",
+      "hesa_provider_id": "10003861",
+      "wikidata_id": "Q2392351"
+    },
+    {
+      "name": "Leeds Trinity University",
+      "city": "Leeds",
+      "website": "http://www.leedstrinity.ac.uk/",
+      "hesa_provider_id": "10003863",
+      "wikidata_id": "Q1849271"
+    },
+    {
+      "name": "Lincoln Bishop University",
+      "city": "Lincoln",
+      "website": "http://www.lincolnbishop.ac.uk",
+      "hesa_provider_id": "10007811",
+      "wikidata_id": "Q4917580"
+    },
+    {
+      "name": "Liverpool Hope University",
+      "city": "Liverpool",
+      "website": "http://www.hope.ac.uk/",
+      "hesa_provider_id": "10003956",
+      "wikidata_id": "Q1818020"
+    },
+    {
+      "name": "Liverpool Institute for Performing Arts",
+      "city": "Liverpool",
+      "website": "http://www.lipa.ac.uk/",
+      "hesa_provider_id": "10003945",
+      "wikidata_id": "Q1668871"
+    },
+    {
+      "name": "Liverpool John Moores University",
+      "city": "Liverpool",
+      "website": "http://www.ljmu.ac.uk/",
+      "hesa_provider_id": "10003957",
+      "wikidata_id": "Q1627967"
+    },
+    {
+      "name": "London Metropolitan University",
+      "city": "London",
+      "website": "http://www.londonmet.ac.uk",
+      "hesa_provider_id": "10004048",
+      "wikidata_id": "Q1869028"
+    },
+    {
+      "name": "London School of Economics and Political Science",
+      "city": "London",
+      "website": "https://lse.ac.uk",
+      "hesa_provider_id": "10004063",
+      "wikidata_id": "Q174570"
+    },
+    {
+      "name": "London School of Hygiene and Tropical Medicine",
+      "city": "London",
+      "website": "https://lshtm.ac.uk/",
+      "hesa_provider_id": "10007771",
+      "wikidata_id": "Q1126189"
+    },
+    {
+      "name": "London South Bank University",
+      "city": "London",
+      "website": "http://www.southbank-university.ac.uk",
+      "hesa_provider_id": "10004078",
+      "wikidata_id": "Q289348"
+    },
+    {
+      "name": "Loughborough University",
+      "city": "Loughborough",
+      "website": "https://www.lboro.ac.uk/",
+      "hesa_provider_id": "10004113",
+      "wikidata_id": "Q1434547"
+    },
+    {
+      "name": "Manchester Metropolitan University",
+      "city": "Manchester",
+      "website": "https://www.mmu.ac.uk/",
+      "hesa_provider_id": "10004180",
+      "wikidata_id": "Q1888771"
+    },
+    {
+      "name": "Middlesex University",
+      "city": "London",
+      "website": "https://www.mdx.ac.uk",
+      "hesa_provider_id": "10004351",
+      "wikidata_id": "Q1760791"
+    },
+    {
+      "name": "Newcastle University",
+      "city": "Newcastle upon Tyne",
+      "website": "https://www.ncl.ac.uk/",
+      "hesa_provider_id": "10007799",
+      "wikidata_id": "Q837164"
+    },
+    {
+      "name": "Newman University",
+      "city": "Birmingham",
+      "website": "http://www.newman.ac.uk/",
+      "hesa_provider_id": "10007832",
+      "wikidata_id": "Q4710828"
+    },
+    {
+      "name": "Northumbria University",
+      "city": "Newcastle upon Tyne",
+      "website": "http://www.unn.ac.uk/",
+      "hesa_provider_id": "10001282",
+      "wikidata_id": "Q2503794"
+    },
+    {
+      "name": "Norwich University of the Arts",
+      "city": "Norfolk",
+      "website": "https://www.nua.ac.uk/",
+      "hesa_provider_id": "10004775",
+      "wikidata_id": "Q3695681"
+    },
+    {
+      "name": "Nottingham Trent University",
+      "city": "Nottinghamshire",
+      "website": "http://www.ntu.ac.uk/",
+      "hesa_provider_id": "10004797",
+      "wikidata_id": "Q2002619"
+    },
+    {
+      "name": "Oxford Brookes University",
+      "city": "Oxford",
+      "website": "https://www.brookes.ac.uk/",
+      "hesa_provider_id": "10004930",
+      "wikidata_id": "Q132478"
+    },
+    {
+      "name": "Queen Margaret University",
+      "city": "East Lothian",
+      "website": "http://www.qmu.ac.uk",
+      "hesa_provider_id": "10005337",
+      "wikidata_id": "Q915989"
+    },
+    {
+      "name": "Queen Mary University of London",
+      "city": "London",
+      "website": "https://qmul.ac.uk",
+      "hesa_provider_id": "10007775",
+      "wikidata_id": "Q195668"
+    },
+    {
+      "name": "Queen's University Belfast",
+      "city": "Belfast",
+      "website": "https://qub.ac.uk/",
+      "hesa_provider_id": "10005343",
+      "wikidata_id": "Q877925"
+    },
+    {
+      "name": "Ravensbourne University London",
+      "city": "London",
+      "website": "https://www.ravensbourne.ac.uk/",
+      "hesa_provider_id": "10005389",
+      "wikidata_id": "Q7296496"
+    },
+    {
+      "name": "Regent's University London",
+      "city": "London",
+      "website": "http://www.regents.ac.uk/",
+      "hesa_provider_id": "10086591",
+      "wikidata_id": "Q7308066"
+    },
+    {
+      "name": "Richmond, The American International University in London",
+      "city": "London",
+      "website": "http://www.richmond.ac.uk",
+      "hesa_provider_id": "10005470",
+      "wikidata_id": "Q7330738"
+    },
+    {
+      "name": "Royal Academy of Music",
+      "city": "London",
+      "website": "https://ram.ac.uk",
+      "hesa_provider_id": "10007835",
+      "wikidata_id": "Q1144673"
+    },
+    {
+      "name": "Royal Agricultural University",
+      "city": "Cirencester",
+      "website": "http://www.rau.ac.uk",
+      "hesa_provider_id": "10005545",
+      "wikidata_id": "Q3445856"
+    },
+    {
+      "name": "Royal Central School of Speech and Drama",
+      "city": "London",
+      "website": "https://www.cssd.ac.uk/",
+      "hesa_provider_id": "10007816",
+      "wikidata_id": "Q981195"
+    },
+    {
+      "name": "Royal College of Art",
+      "city": "London",
+      "website": "http://www.rca.ac.uk/",
+      "hesa_provider_id": "10007777",
+      "wikidata_id": "Q1753535"
+    },
+    {
+      "name": "Royal College of Music",
+      "city": "London",
+      "website": "http://www.rcm.ac.uk/",
+      "hesa_provider_id": "10007778",
+      "wikidata_id": "Q304985"
+    },
+    {
+      "name": "Royal Holloway, University of London",
+      "city": "Surrey",
+      "website": "https://royalholloway.ac.uk/",
+      "hesa_provider_id": "10005553",
+      "wikidata_id": "Q1202039"
+    },
+    {
+      "name": "Runshaw College",
+      "city": "Leyland",
+      "website": "http://www.runshaw.ac.uk",
+      "hesa_provider_id": "10005575",
+      "wikidata_id": "Q7380113"
+    },
+    {
+      "name": "Sheffield Hallam University",
+      "city": "Sheffield",
+      "website": "http://www.shu.ac.uk/",
+      "hesa_provider_id": "10005790",
+      "wikidata_id": "Q1752117"
+    },
+    {
+      "name": "SOAS, University of London",
+      "city": "London",
+      "website": "https://soas.ac.uk",
+      "hesa_provider_id": "10007780",
+      "wikidata_id": "Q220144"
+    },
+    {
+      "name": "Southampton Solent University",
+      "city": "Southampton",
+      "website": "http://www.solent.ac.uk",
+      "hesa_provider_id": "10006022",
+      "wikidata_id": "Q2065695"
+    },
+    {
+      "name": "St Mary's University, Twickenham",
+      "city": "London",
+      "website": "https://www.stmarys.ac.uk/",
+      "hesa_provider_id": "10007843",
+      "wikidata_id": "Q2321391"
+    },
+    {
+      "name": "St. Edmund's College, Ware",
+      "city": "Hertfordshire",
+      "website": "http://www.stedmundscollege.org/",
+      "hesa_provider_id": "10016977",
+      "wikidata_id": "Q7587793"
+    },
+    {
+      "name": "Swansea University",
+      "city": "Swansea",
+      "website": "http://www.swansea.ac.uk/",
+      "hesa_provider_id": "10007855",
+      "wikidata_id": "Q1420500"
+    },
+    {
+      "name": "Teesside University",
+      "city": "Middlesbrough",
+      "website": "http://www.tees.ac.uk/",
+      "hesa_provider_id": "10007161",
+      "wikidata_id": "Q3695910"
+    },
+    {
+      "name": "The Open University",
+      "city": "Milton Keynes",
+      "website": "http://www.open.ac.uk/",
+      "hesa_provider_id": "10007773",
+      "wikidata_id": "Q2413375"
+    },
+    {
+      "name": "The Robert Gordon University",
+      "city": "Aberdeen City",
+      "website": "http://www.rgu.ac.uk/",
+      "hesa_provider_id": "10005500",
+      "wikidata_id": "Q1788342"
+    },
+    {
+      "name": "Ulster University",
+      "city": "Coleraine",
+      "website": "https://www.ulster.ac.uk/",
+      "hesa_provider_id": "10007807",
+      "wikidata_id": "Q2096524"
+    },
+    {
+      "name": "University Academy Holbeach",
+      "city": "Holbeach",
+      "website": "http://www.universityacademyholbeach.org/",
+      "hesa_provider_id": "10034999",
+      "wikidata_id": "Q7894499"
+    },
+    {
+      "name": "University College Birmingham",
+      "city": "Birmingham",
+      "website": "http://www.bcftcs.ac.uk",
+      "hesa_provider_id": "10000712",
+      "wikidata_id": "Q7894613"
+    },
+    {
+      "name": "University for the Creative Arts",
+      "city": "Surrey",
+      "website": "http://www.uca.ac.uk",
+      "hesa_provider_id": "10006427",
+      "wikidata_id": "Q2598272"
+    },
+    {
+      "name": "University of Aberdeen",
+      "city": "Aberdeen",
+      "website": "https://abdn.ac.uk/",
+      "hesa_provider_id": "10007783",
+      "wikidata_id": "Q270532"
+    },
+    {
+      "name": "University of Abertay Dundee",
+      "city": "Dundee City",
+      "website": "http://www.abertay.ac.uk/",
+      "hesa_provider_id": "10007849",
+      "wikidata_id": "Q1505925"
+    },
+    {
+      "name": "University of Bath",
+      "city": "Bath",
+      "website": "https://www.bath.ac.uk/",
+      "hesa_provider_id": "10007850",
+      "wikidata_id": "Q1422458"
+    },
+    {
+      "name": "University of Bedfordshire",
+      "city": "Luton",
+      "website": "https://beds.ac.uk/",
+      "hesa_provider_id": "10007152",
+      "wikidata_id": "Q3047150"
+    },
+    {
+      "name": "University of Birmingham",
+      "city": "Birmingham",
+      "website": "https://birmingham.ac.uk/",
+      "hesa_provider_id": "10006840",
+      "wikidata_id": "Q223429"
+    },
+    {
+      "name": "University of Bradford",
+      "city": "Bradford",
+      "website": "http://www.brad.ac.uk/",
+      "hesa_provider_id": "10007785",
+      "wikidata_id": "Q954035"
+    },
+    {
+      "name": "University of Brighton",
+      "city": "Brighton",
+      "website": "http://www.bton.ac.uk",
+      "hesa_provider_id": "10000886",
+      "wikidata_id": "Q3056813"
+    },
+    {
+      "name": "University of Bristol",
+      "city": "Bristol",
+      "website": "https://bristol.ac.uk",
+      "hesa_provider_id": "10007786",
+      "wikidata_id": "Q459506"
+    },
+    {
+      "name": "University of Buckingham",
+      "city": "Buckingham",
+      "website": "https://www.buckingham.ac.uk/",
+      "hesa_provider_id": "10007787",
+      "wikidata_id": "Q2010561"
+    },
+    {
+      "name": "University of Cambridge",
+      "city": "Cambridge",
+      "website": "https://www.cam.ac.uk/",
+      "hesa_provider_id": "10007788",
+      "wikidata_id": "Q35794"
+    },
+    {
+      "name": "University of Chester",
+      "city": "Chester",
+      "website": "https://www.chester.ac.uk/",
+      "hesa_provider_id": "10007848",
+      "wikidata_id": "Q762243"
+    },
+    {
+      "name": "University of Chichester",
+      "city": "West Sussex",
+      "website": "https://www.chi.ac.uk/",
+      "hesa_provider_id": "10007137",
+      "wikidata_id": "Q3551577"
+    },
+    {
+      "name": "University of Cumbria",
+      "city": "Cumbria",
+      "website": "http://www.cumbria.ac.uk",
+      "hesa_provider_id": "10007842",
+      "wikidata_id": "Q1861974"
+    },
+    {
+      "name": "University of Derby",
+      "city": "Derby",
+      "website": "https://www.derby.ac.uk",
+      "hesa_provider_id": "10007851",
+      "wikidata_id": "Q3183295"
+    },
+    {
+      "name": "University of Dundee",
+      "city": "Dundee City",
+      "website": "http://www.dundee.ac.uk/",
+      "hesa_provider_id": "10007852",
+      "wikidata_id": "Q1249005"
+    },
+    {
+      "name": "University of East Anglia",
+      "city": "Norfolk",
+      "website": "https://www.uea.ac.uk/",
+      "hesa_provider_id": "10007789",
+      "wikidata_id": "Q1045828"
+    },
+    {
+      "name": "University of East London",
+      "city": "London",
+      "website": "https://www.uel.ac.uk/",
+      "hesa_provider_id": "10007144",
+      "wikidata_id": "Q1345942"
+    },
+    {
+      "name": "University of Edinburgh",
+      "city": "Edinburgh",
+      "website": "https://www.ed.ac.uk",
+      "hesa_provider_id": "10007790",
+      "wikidata_id": "Q160302"
+    },
+    {
+      "name": "University of Essex",
+      "city": "Essex",
+      "website": "http://www.essex.ac.uk",
+      "hesa_provider_id": "10007791",
+      "wikidata_id": "Q1075104"
+    },
+    {
+      "name": "University of Exeter",
+      "city": "Exeter",
+      "website": "http://info.ex.ac.uk/",
+      "hesa_provider_id": "10007792",
+      "wikidata_id": "Q1414861"
+    },
+    {
+      "name": "University of Glasgow",
+      "city": "Glasgow",
+      "website": "https://gla.ac.uk/",
+      "hesa_provider_id": "10007794",
+      "wikidata_id": "Q192775"
+    },
+    {
+      "name": "University of Gloucestershire",
+      "city": "Cheltenham",
+      "website": "https://www.glos.ac.uk/",
+      "hesa_provider_id": "10007145",
+      "wikidata_id": "Q1816872"
+    },
+    {
+      "name": "University of Greater Manchester",
+      "city": "Bolton",
+      "website": "https://www.bolton.ac.uk/",
+      "hesa_provider_id": "10006841",
+      "wikidata_id": "Q1683230"
+    },
+    {
+      "name": "University of Greenwich",
+      "city": "London",
+      "website": "https://www.gre.ac.uk/",
+      "hesa_provider_id": "10007146",
+      "wikidata_id": "Q1896148"
+    },
+    {
+      "name": "University of Hertfordshire",
+      "city": "Hatfield",
+      "website": "https://www.herts.ac.uk/",
+      "hesa_provider_id": "10007147",
+      "wikidata_id": "Q1745633"
+    },
+    {
+      "name": "University of Huddersfield",
+      "city": "Huddersfield",
+      "website": "http://hud.ac.uk/",
+      "hesa_provider_id": "10007148",
+      "wikidata_id": "Q3056815"
+    },
+    {
+      "name": "University of Hull",
+      "city": "Hull",
+      "website": "https://www.hull.ac.uk/",
+      "hesa_provider_id": "10007149",
+      "wikidata_id": "Q1474019"
+    },
+    {
+      "name": "University of Keele",
+      "city": "Newcastle-under-Lyme",
+      "website": "https://www.keele.ac.uk/",
+      "hesa_provider_id": "10007767",
+      "wikidata_id": "Q1737734"
+    },
+    {
+      "name": "University of Kent",
+      "city": "Kent",
+      "website": "https://www.kent.ac.uk",
+      "hesa_provider_id": "10007150",
+      "wikidata_id": "Q1516684"
+    },
+    {
+      "name": "University of Lancashire",
+      "city": "Lancashire",
+      "website": "http://www.uclan.ac.uk/",
+      "hesa_provider_id": "10007141",
+      "wikidata_id": "Q1857773"
+    },
+    {
+      "name": "University of Lancaster",
+      "city": "Lancaster",
+      "website": "https://www.lancaster.ac.uk/",
+      "hesa_provider_id": "10007768",
+      "wikidata_id": "Q262854"
+    },
+    {
+      "name": "University of Law",
+      "city": "Birmingham",
+      "website": "http://www.college-of-law.co.uk",
+      "hesa_provider_id": "10039956",
+      "wikidata_id": "Q9357897"
+    },
+    {
+      "name": "University of Leeds",
+      "city": "Leeds",
+      "website": "https://leeds.ac.uk/",
+      "hesa_provider_id": "10007795",
+      "wikidata_id": "Q503424"
+    },
+    {
+      "name": "University of Leicester",
+      "city": "Leicester",
+      "website": "https://le.ac.uk",
+      "hesa_provider_id": "10007796",
+      "wikidata_id": "Q1333399"
+    },
+    {
+      "name": "University of Lincoln",
+      "city": "Lincoln",
+      "website": "http://www.lincoln.ac.uk/",
+      "hesa_provider_id": "10007151",
+      "wikidata_id": "Q2738646"
+    },
+    {
+      "name": "University of Liverpool",
+      "city": "Liverpool",
+      "website": "https://liverpool.ac.uk/",
+      "hesa_provider_id": "10006842",
+      "wikidata_id": "Q499510"
+    },
+    {
+      "name": "University of London",
+      "city": "London",
+      "website": "https://www.london.ac.uk/",
+      "hesa_provider_id": "10007797",
+      "wikidata_id": "Q170027"
+    },
+    {
+      "name": "University of Manchester",
+      "city": "Manchester",
+      "website": "https://manchester.ac.uk",
+      "hesa_provider_id": "10007798",
+      "wikidata_id": "Q230899"
+    },
+    {
+      "name": "University of Northampton",
+      "city": "Northampton",
+      "website": "http://www.nene.ac.uk/",
+      "hesa_provider_id": "10007138",
+      "wikidata_id": "Q3123462"
+    },
+    {
+      "name": "University of Nottingham",
+      "city": "Nottingham",
+      "website": "https://www.nottingham.ac.uk/",
+      "hesa_provider_id": "10007154",
+      "wikidata_id": "Q472316"
+    },
+    {
+      "name": "University of Oxford",
+      "city": "Oxford",
+      "website": "https://ox.ac.uk/",
+      "hesa_provider_id": "10007774",
+      "wikidata_id": "Q34433"
+    },
+    {
+      "name": "University of Plymouth",
+      "city": "Plymouth",
+      "website": "https://www.plymouth.ac.uk",
+      "hesa_provider_id": "10007801",
+      "wikidata_id": "Q1711558"
+    },
+    {
+      "name": "University of Portsmouth",
+      "city": "Portsmouth",
+      "website": "https://www.port.ac.uk/",
+      "hesa_provider_id": "10007155",
+      "wikidata_id": "Q2744209"
+    },
+    {
+      "name": "University of Reading",
+      "city": "Reading",
+      "website": "https://www.reading.ac.uk/",
+      "hesa_provider_id": "10007802",
+      "wikidata_id": "Q1432632"
+    },
+    {
+      "name": "University of Roehampton",
+      "city": "London",
+      "website": "http://www.roehampton.ac.uk/",
+      "hesa_provider_id": "10007776",
+      "wikidata_id": "Q939607"
+    },
+    {
+      "name": "University of Salford",
+      "city": "Salford",
+      "website": "http://www.salford.ac.uk/homepage.html",
+      "hesa_provider_id": "10007156",
+      "wikidata_id": "Q2738622"
+    },
+    {
+      "name": "University of Sheffield",
+      "city": "Sheffield",
+      "website": "https://www.sheffield.ac.uk/",
+      "hesa_provider_id": "10007157",
+      "wikidata_id": "Q823917"
+    },
+    {
+      "name": "University of South Wales",
+      "city": "Wales",
+      "website": "http://www.southwales.ac.uk/",
+      "hesa_provider_id": "10007793",
+      "wikidata_id": "Q1971174"
+    },
+    {
+      "name": "University of Southampton",
+      "city": "Southampton",
+      "website": "https://southampton.ac.uk/",
+      "hesa_provider_id": "10007158",
+      "wikidata_id": "Q76473"
+    },
+    {
+      "name": "University of St Andrews",
+      "city": "Fife",
+      "website": "https://st-andrews.ac.uk",
+      "hesa_provider_id": "10007803",
+      "wikidata_id": "Q216273"
+    },
+    {
+      "name": "University of St Mark & St John",
+      "city": "Plymouth",
+      "website": "http://www.marjon.ac.uk/",
+      "hesa_provider_id": "10037449",
+      "wikidata_id": "Q7894637"
+    },
+    {
+      "name": "University of Staffordshire",
+      "city": "Stoke-on-Trent",
+      "website": "http://www.staffs.ac.uk/",
+      "hesa_provider_id": "10006299",
+      "wikidata_id": "Q1534573"
+    },
+    {
+      "name": "University of Stirling",
+      "city": "Stirling",
+      "website": "http://www.stir.ac.uk",
+      "hesa_provider_id": "10007804",
+      "wikidata_id": "Q963530"
+    },
+    {
+      "name": "University of Strathclyde",
+      "city": "Glasgow City",
+      "website": "https://www.strath.ac.uk/",
+      "hesa_provider_id": "10007805",
+      "wikidata_id": "Q1859178"
+    },
+    {
+      "name": "University of Suffolk",
+      "city": "Ipswich",
+      "website": "https://uos.ac.uk/",
+      "hesa_provider_id": "10014001",
+      "wikidata_id": "Q24661246"
+    },
+    {
+      "name": "University of Sunderland",
+      "city": "Sunderland",
+      "website": "http://www.sunderland.ac.uk/",
+      "hesa_provider_id": "10007159",
+      "wikidata_id": "Q1094742"
+    },
+    {
+      "name": "University of Surrey",
+      "city": "Guildford",
+      "website": "https://www.surrey.ac.uk/",
+      "hesa_provider_id": "10007160",
+      "wikidata_id": "Q546976"
+    },
+    {
+      "name": "University of Sussex",
+      "city": "Sussex House",
+      "website": "https://www.sussex.ac.uk/",
+      "hesa_provider_id": "10007806",
+      "wikidata_id": "Q1161297"
+    },
+    {
+      "name": "University of the Arts London",
+      "city": "London",
+      "website": "https://www.arts.ac.uk/",
+      "hesa_provider_id": "10007162",
+      "wikidata_id": "Q2065666"
+    },
+    {
+      "name": "University of the Highlands and Islands",
+      "city": "Highland",
+      "website": "http://www.uhi.ac.uk",
+      "hesa_provider_id": "10007114",
+      "wikidata_id": "Q1470817"
+    },
+    {
+      "name": "University of the West of England",
+      "city": "South Gloucestershire",
+      "website": "https://www.uwe.ac.uk/",
+      "hesa_provider_id": "10007164",
+      "wikidata_id": "Q2002520"
+    },
+    {
+      "name": "University of the West of Scotland",
+      "city": "Renfrewshire",
+      "website": "http://www.uws.ac.uk/",
+      "hesa_provider_id": "10007800",
+      "wikidata_id": "Q1296153"
+    },
+    {
+      "name": "University of Wales",
+      "city": "Cardiff",
+      "website": "https://www.wales.ac.uk/en/Home.aspx",
+      "hesa_provider_id": "10008574",
+      "wikidata_id": "Q1072029"
+    },
+    {
+      "name": "University of Wales Trinity Saint David",
+      "city": "Carmarthen",
+      "website": "http://www.uwtsd.ac.uk/",
+      "hesa_provider_id": "10007858",
+      "wikidata_id": "Q3551774"
+    },
+    {
+      "name": "University of Warwick",
+      "city": "Coventry",
+      "website": "https://warwick.ac.uk/",
+      "hesa_provider_id": "10007163",
+      "wikidata_id": "Q865528"
+    },
+    {
+      "name": "University of West London",
+      "city": "London",
+      "website": "http://www.uwl.ac.uk/",
+      "hesa_provider_id": "10006566",
+      "wikidata_id": "Q2007778"
+    },
+    {
+      "name": "University of Westminster",
+      "city": "London",
+      "website": "http://www.westminster.ac.uk",
+      "hesa_provider_id": "10007165",
+      "wikidata_id": "Q1247544"
+    },
+    {
+      "name": "University of Winchester",
+      "city": "Winchester",
+      "website": "https://www.winchester.ac.uk/",
+      "hesa_provider_id": "10003614",
+      "wikidata_id": "Q3551690"
+    },
+    {
+      "name": "University of Wolverhampton",
+      "city": "Wolverhampton",
+      "website": "https://www.wlv.ac.uk/",
+      "hesa_provider_id": "10007166",
+      "wikidata_id": "Q1816202"
+    },
+    {
+      "name": "University of Worcester",
+      "city": "Worcester",
+      "website": "https://worcester.ac.uk/",
+      "hesa_provider_id": "10007139",
+      "wikidata_id": "Q3036648"
+    },
+    {
+      "name": "University of York",
+      "city": "York",
+      "website": "https://york.ac.uk/",
+      "hesa_provider_id": "10007167",
+      "wikidata_id": "Q967165"
+    },
+    {
+      "name": "Wrexham University",
+      "city": "Wales",
+      "website": "http://www.wrexham.ac.uk/",
+      "hesa_provider_id": "10007833",
+      "wikidata_id": "Q3400501"
+    },
+    {
+      "name": "York St John University",
+      "city": "York",
+      "website": "http://www.yorksj.ac.uk/",
+      "hesa_provider_id": "10007713",
+      "wikidata_id": "Q8055565"
+    }
+  ]
+}

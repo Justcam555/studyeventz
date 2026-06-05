@@ -55,9 +55,9 @@ BRAND_RULES = [
     # Global Reach
     (r"^Global Reach\b",
         "Global Reach",                         "Global Reach"),
-    # SI-UK
-    (r"\bSI-UK\b|\bSIUK\b",
-        "SI-UK",                                "SI-UK"),
+    # SI-UK — rebranded to StudyIn (gostudyin.com); merge into StudyIn
+    (r"\bSI-UK\b|\bSIUK\b|\bSI\s+UK\b",
+        "StudyIn",                              "StudyIn"),
     # Edwise
     (r"\bEdwise\b",
         "Edwise International",                 "Edwise International"),
@@ -192,6 +192,18 @@ BRAND_RULES = [
     # IBEC — Indonesia-Britain Education Centre, various punctuation
     (r"\bIBEC\b",
         "IBEC",                                 "IBEC"),
+    # LinkedU — "LinkedU" / "Linkedu" (case-only variants)
+    (r"\bLinkedU\b",
+        "LinkedU",                              "LinkedU"),
+    # QS Apply / QS Student Apply — QS recruitment arm
+    (r"\bQS\s+(Student\s+)?Apply\b",
+        "QS Apply",                             "QS Quacquarelli Symonds"),
+    # PDVL — "PDVL" / "PDVL Overseas Advisory"
+    (r"\bPDVL\b",
+        "PDVL",                                 "PDVL Overseas Advisory"),
+    # Superior Education — "Superior Education" / "Superior Education Agency"
+    (r"\bSuperior\s+Education\b",
+        "Superior Education",                   "Superior Education"),
 ]
 
 # ─── Legal-suffix patterns to strip for generic cleaning ─────────────────────
