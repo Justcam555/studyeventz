@@ -45,12 +45,40 @@ EVENT_LINK_HINTS_PRIMARY = re.compile(
 )
 EVENT_LINK_HINTS_FALLBACK = re.compile(r"news", re.IGNORECASE)
 
-EXTRACTION_SYSTEM_PROMPT = """You extract upcoming education event listings from agent websites for Australian universities.
+# ─── Per-country config ────────────────────────────────────────────────────
+# Adding a market = one entry here. `home_cities` are the in-country cities we
+# KEEP; they are subtracted from the shared FOREIGN_CITIES master so the same
+# master correctly excludes other markets' hubs for each country.
+COUNTRY_CONFIG = {
+    "thailand": {
+        "db_match": "%Thailand%",
+        "name": "Thailand",
+        "adjective": "Thai",
+        "prompt_cities": "Bangkok, Chiang Mai, Phuket, or other Thai cities",
+        "home_cities": {
+            "bangkok", "chiang mai", "phuket", "pattaya", "hat yai",
+            "khon kaen", "nonthaburi", "krabi", "ayutthaya",
+        },
+    },
+    "vietnam": {
+        "db_match": "%Vietnam%",
+        "name": "Vietnam",
+        "adjective": "Vietnamese",
+        "prompt_cities": "Hanoi, Ho Chi Minh City, Da Nang, or other Vietnamese cities",
+        "home_cities": {
+            "hanoi", "ha noi", "ho chi minh", "ho chi minh city", "hcmc",
+            "saigon", "da nang", "hai phong", "can tho", "nha trang",
+            "hue", "bien hoa",
+        },
+    },
+}
+
+EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
 
 Given the visible text of a page (and the organizer's company name), identify any UPCOMING events — education fairs, expos, seminars, webinars, workshops, info sessions. Skip generic services, blog posts, or past events.
 
 Rules:
-- Only extract events that are physically taking place in Thailand (Bangkok, Chiang Mai, Phuket, or other Thai cities) OR online events hosted by Thai agents. Discard any events located outside Thailand.
+- Only extract events that are physically taking place in {country_name} ({prompt_cities}) OR online events hosted by {adjective} agents. Discard any events located outside {country_name}.
 - Return events ONLY if there is an explicit date that you can normalise to ISO 8601 (YYYY-MM-DD).
 - If only a year is given, skip the event.
 - Times should be local time strings like "14:00" or "2:00 PM - 4:00 PM". Leave empty if unknown.
@@ -61,9 +89,25 @@ Rules:
 
 Be precise. Do not fabricate dates."""
 
-# Known non-Thai cities — events with any of these in the location field are dropped.
+
+def build_extraction_prompt(country: str) -> str:
+    cfg = COUNTRY_CONFIG[country]
+    return EXTRACTION_SYSTEM_PROMPT_TEMPLATE.format(
+        country_name=cfg["name"],
+        prompt_cities=cfg["prompt_cities"],
+        adjective=cfg["adjective"],
+    )
+
+
+# Master set of foreign event locations: study-abroad destinations + every
+# regional hub (including the home markets' own cities). For a given market we
+# exclude this whole set MINUS that market's home_cities, so an event in
+# another country's hub is dropped while the home country's cities are kept.
 # Matched case-insensitively as whole-ish substrings (word-boundary on each side).
-NON_THAI_CITIES = {
+FOREIGN_CITIES = {
+    # Home-market hubs (kept for their own market via home_cities subtraction,
+    # excluded for every other market)
+    "bangkok", "chiang mai", "phuket", "pattaya", "hat yai", "khon kaen",
     # Australia
     "sydney", "melbourne", "brisbane", "perth", "adelaide", "canberra",
     "gold coast", "darwin", "hobart", "newcastle", "wollongong",
@@ -102,17 +146,28 @@ NON_THAI_CITIES = {
     "vienna", "zurich", "geneva", "stockholm", "copenhagen", "oslo", "helsinki",
 }
 
-_NON_THAI_RE = re.compile(
-    r"\b(" + "|".join(re.escape(c) for c in NON_THAI_CITIES) + r")\b",
-    re.IGNORECASE,
-)
+# Compiled exclusion regex per country, cached. Built from FOREIGN_CITIES minus
+# the country's own home_cities.
+_EXCLUSION_RE: dict[str, "re.Pattern"] = {}
 
 
-def is_outside_thailand(location: str) -> bool:
-    """Return True if the location explicitly names a non-Thai city."""
+def _exclusion_re(country: str) -> "re.Pattern":
+    rx = _EXCLUSION_RE.get(country)
+    if rx is None:
+        cities = FOREIGN_CITIES - COUNTRY_CONFIG[country]["home_cities"]
+        rx = re.compile(
+            r"\b(" + "|".join(re.escape(c) for c in sorted(cities, key=len, reverse=True)) + r")\b",
+            re.IGNORECASE,
+        )
+        _EXCLUSION_RE[country] = rx
+    return rx
+
+
+def is_outside_country(location: str, country: str) -> bool:
+    """Return True if the location explicitly names a city outside `country`."""
     if not location:
         return False
-    return bool(_NON_THAI_RE.search(location))
+    return bool(_exclusion_re(country).search(location))
 
 EVENT_SCHEMA = {
     "type": "object",
@@ -270,7 +325,8 @@ async def fetch_page_text(page, url: str) -> tuple[str, str]:
 
 
 async def extract_events(
-    client: anthropic.AsyncAnthropic, company_name: str, source_url: str, text: str
+    client: anthropic.AsyncAnthropic, company_name: str, source_url: str, text: str,
+    system_prompt: str = EXTRACTION_SYSTEM_PROMPT_TEMPLATE,
 ) -> list[dict]:
     """Call Claude to extract structured event records from the page text."""
     if not text or len(text) < 80:
@@ -290,7 +346,7 @@ async def extract_events(
         system=[
             {
                 "type": "text",
-                "text": EXTRACTION_SYSTEM_PROMPT,
+                "text": system_prompt,
                 "cache_control": {"type": "ephemeral"},
             }
         ],
@@ -375,12 +431,13 @@ def upsert_event(conn: sqlite3.Connection, agent_id: int, ev: dict) -> bool:
         return False
 
 
-async def process_agent(ctx, client: anthropic.AsyncAnthropic, agent: sqlite3.Row) -> tuple[sqlite3.Row, list[dict], str | None]:
+async def process_agent(ctx, client: anthropic.AsyncAnthropic, agent: sqlite3.Row,
+                        system_prompt: str) -> tuple[sqlite3.Row, list[dict], str | None]:
     """Scrape one site and extract events. Returns (agent, events, error)."""
     page = await ctx.new_page()
     try:
         final_url, text = await fetch_page_text(page, agent["website"])
-        events = await extract_events(client, agent["company_name"], final_url, text)
+        events = await extract_events(client, agent["company_name"], final_url, text, system_prompt)
         return agent, events, None
     except anthropic.APIStatusError as e:
         return agent, [], f"Anthropic {e.status_code}: {e.message}"
@@ -393,8 +450,12 @@ async def process_agent(ctx, client: anthropic.AsyncAnthropic, agent: sqlite3.Ro
             pass
 
 
-async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | None = None) -> None:
+async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | None = None,
+                       country: str = "thailand") -> None:
     from playwright.async_api import async_playwright
+
+    cfg = COUNTRY_CONFIG[country]
+    system_prompt = build_extraction_prompt(country)
 
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -409,11 +470,11 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
     conn.execute("DELETE FROM scrape_failures")
     conn.commit()
 
-    # Pull every Thailand agent row, then collapse by canonical URL key
+    # Pull every in-country agent row, then collapse by canonical URL key
     # (hostname without www + path). This catches the case where the same
     # site is listed under multiple URL variants across universities
     # (e.g. www.X.com vs https://X.com/ vs http://X.com).
-    company_clause, params = "", []
+    company_clause, params = "", [cfg["db_match"]]
     if companies:
         ors = " OR ".join(["company_name LIKE ? OR canonical_name LIKE ?"] * len(companies))
         company_clause = f" AND ({ors})"
@@ -421,7 +482,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
             params += [f"%{c}%", f"%{c}%"]
     all_rows = conn.execute(
         f"""SELECT id, company_name, website FROM agents
-           WHERE country LIKE '%Thailand%'
+           WHERE country LIKE ?
              AND website IS NOT NULL AND TRIM(website) != ''
              {company_clause}
            ORDER BY id""", params
@@ -437,7 +498,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
     if limit:
         rows = rows[:limit]
     print(
-        f"Scanning {len(rows)} unique Thailand agent websites "
+        f"Scanning {len(rows)} unique {cfg['name']} agent websites "
         f"(deduped from {len(all_rows)} agent rows, concurrency={CONCURRENCY}) …",
         flush=True,
     )
@@ -445,11 +506,11 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
     # Purge events from non-canonical Hands On / IDP / etc. agent_ids that were
     # scraped under different URL variants in earlier runs. Without this, stale
     # events accumulate as orphans whenever the canonical-URL dedup picks a
-    # different representative across runs. Only delete events tied to TH agents
-    # we considered for scraping — leave non-Thailand data alone.
+    # different representative across runs. Only delete events tied to this
+    # country's agents we considered for scraping — leave other markets alone.
     canonical_ids = [r["id"] for r in rows]
-    all_th_ids = [r["id"] for r in all_rows]
-    orphan_ids = [i for i in all_th_ids if i not in set(canonical_ids)]
+    all_country_ids = [r["id"] for r in all_rows]
+    orphan_ids = [i for i in all_country_ids if i not in set(canonical_ids)]
     if orphan_ids:
         placeholders = ",".join("?" for _ in orphan_ids)
         cur = conn.execute(
@@ -460,7 +521,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
         if cur.rowcount:
             print(
                 f"Purged {cur.rowcount} stale event(s) from "
-                f"{len(orphan_ids)} non-canonical Thailand agent_ids.",
+                f"{len(orphan_ids)} non-canonical {cfg['name']} agent_ids.",
                 flush=True,
             )
 
@@ -495,7 +556,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
             )
 
             results = await asyncio.gather(
-                *(process_agent(ctx, client, a) for a in batch)
+                *(process_agent(ctx, client, a, system_prompt) for a in batch)
             )
 
             for agent, events, error in results:
@@ -510,7 +571,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
                 keep = [
                     ev for ev in events
                     if within_next_30_days(ev.get("date", ""))
-                    and not is_outside_thailand(ev.get("location", ""))
+                    and not is_outside_country(ev.get("location", ""), country)
                 ]
                 # If this site produced any events, replace its stored events
                 # atomically so stale name-variants from previous runs are dropped.
@@ -539,11 +600,14 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
     # listings (StudyIn Bangkok / Chiang Mai) and language variants of one event
     # scraped from a Thai + /en/ site (e.g. Hands On listing an open day twice,
     # once with a Thai subtitle, once English-only).
+    # Group also by a.country so the same brand running an event on the same
+    # date in two markets (e.g. an IDP info day in Bangkok and Hanoi) is not
+    # collapsed across countries.
     deduped = conn.execute("""
         DELETE FROM events
         WHERE id NOT IN (
             SELECT MIN(e.id) FROM events e JOIN agents a ON e.agent_id = a.id
-            GROUP BY a.canonical_name, e.date
+            GROUP BY a.canonical_name, e.date, a.country
         )""").rowcount
     conn.commit()
     if deduped:
@@ -563,7 +627,8 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
         print("  Failure breakdown:", ", ".join(f"{r['error_kind']}={r['n']}" for r in breakdown), flush=True)
 
 
-def generate_report() -> Path:
+def generate_report(country: str = "thailand") -> Path:
+    cfg = COUNTRY_CONFIG[country]
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     init_events_table(conn)
@@ -574,12 +639,13 @@ def generate_report() -> Path:
         """SELECT e.*, a.company_name AS agent_name, a.website AS agent_website
            FROM events e JOIN agents a ON e.agent_id = a.id
            WHERE e.date BETWEEN ? AND ?
+             AND a.country LIKE ?
            ORDER BY e.date, e.time""",
-        (today.isoformat(), cutoff.isoformat()),
+        (today.isoformat(), cutoff.isoformat(), cfg["db_match"]),
     ).fetchall()
 
     REPORTS_DIR.mkdir(exist_ok=True)
-    out = REPORTS_DIR / f"events_thailand_{today.isoformat()}.html"
+    out = REPORTS_DIR / f"events_{country}_{today.isoformat()}.html"
 
     def esc(s: str) -> str:
         return (
@@ -646,14 +712,17 @@ def main() -> int:
     ap.add_argument("--refresh", action="store_true", help="Clear stale (past) events first")
     ap.add_argument("--report", action="store_true", help="Generate HTML report and exit")
     ap.add_argument("--company", nargs="+", help="Only scan agents matching these names (e.g. --company WIN StudyIn)")
+    ap.add_argument("--country", default="thailand", choices=sorted(COUNTRY_CONFIG),
+                    help="Market to scrape (default: thailand)")
     args = ap.parse_args()
 
     if args.report:
-        path = generate_report()
+        path = generate_report(args.country)
         print(f"Report written to {path}")
         return 0
 
-    asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh, companies=args.company))
+    asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh,
+                             companies=args.company, country=args.country))
     return 0
 
 
