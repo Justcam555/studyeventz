@@ -34,6 +34,7 @@ REPORTS_DIR = Path(__file__).parent / "reports"
 MODEL = "claude-sonnet-4-6"
 CONCURRENCY = 8
 BATCH_DELAY_RANGE = (1.0, 2.0)  # seconds between batches
+ARCHIVE_RETENTION_YEARS = 2  # keep past events this long for the searchable archive
 
 # Hints for finding an events page from the homepage.
 # Split into two tiers so /events/ wins over /news/ when both exist on the page
@@ -462,8 +463,14 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
     init_events_table(conn)
 
     if refresh:
-        cutoff = (datetime.now() - timedelta(days=30)).date().isoformat()
-        conn.execute("DELETE FROM events WHERE date < ?", (cutoff,))
+        # Retain past events for ARCHIVE_RETENTION_YEARS so they populate the
+        # searchable past-events archive; only prune what's older than that.
+        today = datetime.now().date()
+        try:
+            cutoff = today.replace(year=today.year - ARCHIVE_RETENTION_YEARS)
+        except ValueError:  # Feb 29 in a leap year → clamp to 28th
+            cutoff = today.replace(year=today.year - ARCHIVE_RETENTION_YEARS, day=28)
+        conn.execute("DELETE FROM events WHERE date < ?", (cutoff.isoformat(),))
         conn.commit()
 
     # Fresh failure log each run so the table reflects current state

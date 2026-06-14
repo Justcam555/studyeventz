@@ -17,7 +17,7 @@ import shutil
 import sqlite3
 import subprocess
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote
@@ -57,9 +57,21 @@ class Country:
     title: str              # browser <title> for events.html
     meta_desc_en: str       # English meta description (<160 chars for SERP)
     meta_desc_native: str   # Native-language meta description
-    line_handle: str        # @studyeventz — vanity label shown in banner
-    line_url: str           # actual add-friend URL behind the banner click
     contact_email: str      # contact us email
+
+    # Notify banner: "line" markets show a LINE OA add-friend chip; every other
+    # market shows an email chip (mailto). Set notify_channel per market.
+    notify_channel: str = "email"   # "line" | "email"
+    notify_text_native: str = ""    # native-language banner CTA sentence
+    line_handle: str = ""           # @handle — only used when notify_channel == "line"
+    line_url: str = ""              # add-friend URL — only used when notify_channel == "line"
+
+    # Native-language localisation. Maps a source substring found verbatim in
+    # the page templates (Thai, the original build language) to its translation
+    # for this market. Thailand leaves this empty (templates are already Thai),
+    # so its output is unchanged. Applied longest-key-first to avoid a short
+    # key clobbering a longer one it is a substring of.
+    translations: dict = field(default_factory=dict)
 
     # Per-country output paths
     @property
@@ -96,13 +108,159 @@ THAILAND = Country(
     meta_desc_en=("Find study abroad events in Thailand — fairs, webinars and briefings for "
                   "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
     meta_desc_native="รวมงาน Study Abroad ในไทย อัปเดตทุกสัปดาห์",
+    contact_email="info@studyeventz.com",
+    notify_channel="line",
+    notify_text_native="รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE",
     line_handle="@studyeventz",
     line_url="https://lin.ee/RdZs9AD",
+    # translations left empty: the templates are already in Thai, so Thailand's
+    # output is byte-for-byte unchanged by the localisation pass.
+)
+
+# ─── Vietnam ────────────────────────────────────────────────────────────────
+# Email-only market (no LINE OA). The `translations` map carries the Vietnamese
+# for every native (Thai) string baked into the page templates. AI-DRAFTED —
+# flag for native-speaker review before this market is published.
+VIETNAM = Country(
+    code="vietnam",
+    name_en="Vietnam",
+    name_native="Việt Nam",
+    flag="🇻🇳",
+    primary_lang="vi",
+    iso2="VN",
+    agent_db_match="%Vietnam%",
+    timezone="Asia/Ho_Chi_Minh",
+    title="Sự kiện Du học tại Việt Nam | Hội thảo & Triển lãm Giáo dục Đại học | StudyEventz",
+    meta_desc_en=("Find study abroad events in Vietnam — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="Tổng hợp sự kiện du học tại Việt Nam, cập nhật hằng tuần.",
     contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Nhận thông báo sự kiện mới hằng tuần → email cho chúng tôi",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "Tổng hợp sự kiện du học tại Việt Nam",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Hội chợ đại học, hội thảo trực tuyến và sự kiện du học, tất cả ở một nơi.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Cập nhật hằng tuần với các sự kiện trong 30 ngày tới.",
+        "ตัวกรอง": "Bộ lọc",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz tổng hợp các sự kiện du học từ các công ty tư vấn trên khắp Việt Nam. Cập nhật mỗi thứ Hai.",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz là cẩm nang độc lập giúp tìm các sự kiện du học tại Việt Nam",
+        "เกี่ยวกับเรา": "Về chúng tôi",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz là cẩm nang độc lập giúp tìm các sự kiện du học — hội chợ đại học, ngày thông tin, open day và hạn nộp học bổng — tất cả ở một nơi và được cập nhật hằng tuần.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Thông thường, việc tìm các sự kiện này đồng nghĩa với việc lùng sục hàng chục trang Facebook, website của các công ty tư vấn và lịch sự kiện của các trường đại học. Chúng tôi làm việc đó một cách tự động: mỗi tuần, chúng tôi thu thập sự kiện từ các công ty tư vấn giáo dục và đối tác đại học trên toàn thị trường, loại bỏ các mục trùng lặp, và công bố một danh sách gọn gàng mà bạn thực sự có thể tin cậy.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Chúng tôi khởi đầu tại Thái Lan, nơi mỗi năm có hàng trăm sự kiện du học nhưng không có một nơi tập trung nào để tìm chúng. Chúng tôi độc lập — không đại diện cho bất kỳ trường đại học hay công ty tư vấn nào, nên những gì bạn thấy là toàn cảnh các lựa chọn, chứ không phải lời chào mời của riêng một công ty.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "Bạn muốn đưa studyeventz đến thị trường của mình? Chúng tôi rất mong được trò chuyện với bạn.",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Liên hệ studyeventz để thêm sự kiện, báo lỗi thông tin, hoặc hợp tác cùng chúng tôi",
+        "ติดต่อเรา": "Liên hệ",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "Bạn có sự kiện nên được đưa vào danh sách, phát hiện thông tin lỗi thời, hoặc muốn hợp tác với chúng tôi? Hãy email cho chúng tôi tại ",
+        " แล้วเราจะติดต่อกลับไป": " và chúng tôi sẽ phản hồi.",
+        "แจ้งเพิ่มกิจกรรม": "Thêm một sự kiện",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Bạn đang tổ chức hội chợ du học, open day hay buổi thông tin? Gửi cho chúng tôi thông tin chi tiết và chúng tôi sẽ thêm vào danh sách.",
+        "ส่งงานเข้ามา": "Gửi sự kiện",
+        "แจ้งแก้ไขข้อมูล": "Báo lỗi thông tin",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "Phát hiện sai ngày hoặc liên kết hỏng? Hãy báo cho chúng tôi và chúng tôi sẽ sửa ngay.",
+        "ความร่วมมือ": "Hợp tác",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "Nếu bạn muốn đưa studyeventz đến một thị trường mới, hoặc hợp tác với chúng tôi tại thị trường chúng tôi đã có mặt, hãy liên hệ.",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "Gửi sự kiện du học tới studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Điền thông tin bên dưới. Chúng tôi sẽ kiểm tra và thêm vào danh sách. Miễn phí cho đơn vị tổ chức.",
+        "รายละเอียดกิจกรรม": "Thông tin sự kiện",
+        "ผู้จัด": "Đơn vị tổ chức",
+        "ชื่อกิจกรรม": "Tên sự kiện",
+        "วันที่": "Ngày",
+        "เวลา": "Giờ",
+        "สถานที่": "Địa điểm",
+        "ลิงก์ลงทะเบียน": "Liên kết đăng ký",
+        "ข้อมูลผู้แจ้ง": "Thông tin người gửi",
+        "ชื่อ": "Tên của bạn",
+        "อีเมล": "Email",
+        "หมายเหตุเพิ่มเติม": "Ghi chú thêm",
+        "ส่ง": "Gửi",
+        "ขอบคุณค่ะ": "Xin cảm ơn!",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Vietnam — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Vietnam.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Hanoi, Vietnam" or "Online"\'',
+    },
 )
 
 # Future-ready: appending another Country() launches that market with one build run.
-COUNTRIES: list[Country] = [THAILAND]
+COUNTRIES: list[Country] = [THAILAND, VIETNAM]
+
+
+# SVG icon paths for the sticky notify banner (24×24 viewBox).
+_LINE_ICON_PATH = (
+    "M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"
+)
+_EMAIL_ICON_PATH = (
+    "M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+)
+
+
+def render_notify_banner(country: "Country") -> str:
+    """Build the sticky bottom banner. LINE markets get a LINE add-friend chip;
+    every other market gets an email (mailto) chip. The native CTA text comes
+    from country.notify_text_native. For the LINE channel this reproduces the
+    original markup byte-for-byte (Thailand's pages are unchanged)."""
+    if country.notify_channel == "line":
+        return (
+            '<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">\n'
+            '  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">\n'
+            f'    <path d="{_LINE_ICON_PATH}"/>\n'
+            '  </svg>\n'
+            f'  <span class="line-banner-text">{country.notify_text_native}</span>\n'
+            f'  <a href="{country.line_url}" target="_blank" rel="noopener">\n'
+            f'    <span class="line-banner-handle">{country.line_handle}</span>\n'
+            '  </a>\n'
+            '</aside>'
+        )
+    # Email channel (default for non-LINE markets)
+    return (
+        '<aside class="line-banner" role="contentinfo" aria-label="Email updates">\n'
+        '  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">\n'
+        f'    <path d="{_EMAIL_ICON_PATH}"/>\n'
+        '  </svg>\n'
+        f'  <span class="line-banner-text" lang="{country.primary_lang}">{country.notify_text_native}</span>\n'
+        f'  <a href="mailto:{country.contact_email}">\n'
+        f'    <span class="line-banner-handle">{country.contact_email}</span>\n'
+        '  </a>\n'
+        '</aside>'
+    )
+
+
+def localize(html: str, country: "Country") -> str:
+    """Apply a market's native-language translations and language tags to a
+    rendered template. Longest keys first so a short source string can't clobber
+    a longer one it is a substring of. Thailand (empty map, lang 'th') is a
+    no-op and its output is unchanged."""
+    for src in sorted(country.translations, key=len, reverse=True):
+        html = html.replace(src, country.translations[src])
+    if country.primary_lang != "th":
+        # Swap content/meta language attributes only — the bracketed CSS
+        # selector [lang="th"] (Thai webfont rule) is left untouched, so native
+        # text in other scripts simply falls back to the system font stack.
+        html = html.replace(' lang="th"', f' lang="{country.primary_lang}"')
+    return html
 
 # Tokens to skip when extracting initials from agent names
 STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp", "limited"}
@@ -793,11 +951,11 @@ __JSON_LD__
   <div class="hero-inner">
     <div class="hero-pair">
       <p class="hero-th-title" lang="th">รวมอีเวนต์เรียนต่อต่างประเทศในไทย</p>
-      <h1>Study Abroad Events in Thailand</h1>
+      <h1>Study Abroad Events in __COUNTRY_NAME__</h1>
     </div>
     <div class="hero-pair">
       <p class="hero-th-sub" lang="th">รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว</p>
-      <p>Find university fairs, webinars, and study abroad briefings across Thailand, all in one place.</p>
+      <p>Find university fairs, webinars, and study abroad briefings across __COUNTRY_NAME__, all in one place.</p>
     </div>
     <div class="hero-pair">
       <p class="hero-th-sub" lang="th">อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า</p>
@@ -830,30 +988,12 @@ __JSON_LD__
 
 <section class="site-about">
   <p class="th">studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์</p>
-  <p>studyeventz aggregates study abroad events from consultancies across Thailand. Updated every Monday.</p>
+  <p>studyeventz aggregates study abroad events from consultancies across __COUNTRY_NAME__. Updated every Monday.</p>
 </section>
 
-<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">
-  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-    <path d="M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"/>
-  </svg>
-  <span class="line-banner-text">รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE</span>
-  <a id="line-link" href="#" target="_blank" rel="noopener">
-    <span class="line-banner-handle" id="line-handle">__LINE_HANDLE__</span>
-  </a>
-</aside>
+__NOTIFY_BANNER__
 
 <script>
-// LINE OA — change LINE_HANDLE / LINE_URL in build_events_page.py to update everywhere
-const LINE_HANDLE = "__LINE_HANDLE__";
-const LINE_URL = "__LINE_URL__";
-(function setLineBanner() {
-  const el = document.getElementById('line-link');
-  const handleEl = document.getElementById('line-handle');
-  if (el) el.href = LINE_URL;
-  if (handleEl) handleEl.textContent = LINE_HANDLE;
-})();
-
 // ── Front-end analytics (queues to localStorage, no backend yet) ──────────
 const ANALYTICS_KEY = 'studyeventz_analytics';
 const ANALYTICS_MAX = 500;
@@ -1120,7 +1260,7 @@ function buildIcsContent(ev) {
   return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//studyeventz//Thailand Events//EN',
+    'PRODID:-//studyeventz//__COUNTRY_NAME__ Events//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
@@ -1528,15 +1668,7 @@ ABOUT_HTML = r"""<!doctype html>
   </section>
 </main>
 
-<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">
-  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-    <path d="M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"/>
-  </svg>
-  <span class="line-banner-text">รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE</span>
-  <a href="__LINE_URL__" target="_blank" rel="noopener">
-    <span class="line-banner-handle">__LINE_HANDLE__</span>
-  </a>
-</aside>
+__NOTIFY_BANNER__
 
 </body>
 </html>
@@ -1544,14 +1676,15 @@ ABOUT_HTML = r"""<!doctype html>
 
 
 def build_about_html(country: "Country") -> None:
-    """Write <country.code>/about.html — a static bilingual About page."""
-    html = ABOUT_HTML
+    """Write <country.code>/about.html — a static localised About page."""
+    html = localize(ABOUT_HTML, country)
     for ph, val in {
         "__SITE_URL__":       SITE_URL,
         "__COUNTRY_SITE__":   country.site_url,
         "__COUNTRY_CODE__":   country.code,
-        "__LINE_HANDLE__":    country.line_handle,
-        "__LINE_URL__":       country.line_url,
+        "__COUNTRY_NAME__":   country.name_en,
+        "__COUNTRY_FLAG__":   country.flag,
+        "__NOTIFY_BANNER__":  render_notify_banner(country),
     }.items():
         html = html.replace(ph, val)
     country.root.mkdir(parents=True, exist_ok=True)
@@ -1722,15 +1855,7 @@ CONTACT_HTML = r"""<!doctype html>
 
 </main>
 
-<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">
-  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-    <path d="M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"/>
-  </svg>
-  <span class="line-banner-text">รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE</span>
-  <a href="__LINE_URL__" target="_blank" rel="noopener">
-    <span class="line-banner-handle">__LINE_HANDLE__</span>
-  </a>
-</aside>
+__NOTIFY_BANNER__
 
 </body>
 </html>
@@ -1738,14 +1863,15 @@ CONTACT_HTML = r"""<!doctype html>
 
 
 def build_contact_html(country: "Country") -> None:
-    """Write <country.code>/contact.html — a static bilingual Contact page."""
-    html = CONTACT_HTML
+    """Write <country.code>/contact.html — a static localised Contact page."""
+    html = localize(CONTACT_HTML, country)
     for ph, val in {
         "__SITE_URL__":       SITE_URL,
         "__COUNTRY_SITE__":   country.site_url,
         "__COUNTRY_CODE__":   country.code,
-        "__LINE_HANDLE__":    country.line_handle,
-        "__LINE_URL__":       country.line_url,
+        "__COUNTRY_NAME__":   country.name_en,
+        "__COUNTRY_FLAG__":   country.flag,
+        "__NOTIFY_BANNER__":  render_notify_banner(country),
         "__EMAIL__":          country.contact_email,
     }.items():
         html = html.replace(ph, val)
@@ -1992,15 +2118,7 @@ SUBMIT_HTML = r"""<!doctype html>
   </form>
 </main>
 
-<aside class="line-banner" role="contentinfo" aria-label="LINE Official Account">
-  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-    <path d="M12 3C6.48 3 2 6.62 2 11.07c0 4 3.66 7.34 8.6 7.96.33.07.78.22.9.51.1.26.06.66.03.93 0 0-.12.71-.14.86-.04.26-.2 1.01.88.55 1.09-.46 5.86-3.45 7.99-5.91h.01C21.42 14.31 22 12.77 22 11.07 22 6.62 17.52 3 12 3zM7.92 13.5H6.04a.4.4 0 01-.4-.4V9.34a.4.4 0 11.8 0v3.36h1.48a.4.4 0 110 .8zm1.66-.4a.4.4 0 11-.8 0V9.34a.4.4 0 11.8 0v3.76zm4.4 0a.4.4 0 01-.32.39c-.04.01-.07.01-.11.01a.4.4 0 01-.32-.16l-1.76-2.4v2.16a.4.4 0 11-.8 0V9.34a.4.4 0 01.32-.39c.04-.01.07-.01.11-.01a.4.4 0 01.32.16l1.76 2.4V9.34a.4.4 0 11.8 0v3.76zm2.74-2.28a.4.4 0 110 .8h-1.04v.68h1.04a.4.4 0 110 .8h-1.44a.4.4 0 01-.4-.4V9.34a.4.4 0 01.4-.4h1.44a.4.4 0 110 .8h-1.04v.68h1.04z"/>
-  </svg>
-  <span class="line-banner-text">รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE</span>
-  <a href="__LINE_URL__" target="_blank" rel="noopener">
-    <span class="line-banner-handle">__LINE_HANDLE__</span>
-  </a>
-</aside>
+__NOTIFY_BANNER__
 
 <script>
 const SUBMIT_URL = "__SUBMIT_URL__";
@@ -2081,8 +2199,8 @@ form.addEventListener('submit', async (e) => {
 
 
 def build_submit_html(country: "Country") -> None:
-    """Write <country.code>/submit.html — bilingual event-submission form."""
-    html = SUBMIT_HTML
+    """Write <country.code>/submit.html — a localised event-submission form."""
+    html = localize(SUBMIT_HTML, country)
     # Both old (/track) and new (/i) path names are supported on the Worker;
     # derive the matching submit endpoint by swapping the last segment.
     if not INGEST_URL:
@@ -2096,8 +2214,8 @@ def build_submit_html(country: "Country") -> None:
         "__COUNTRY_SITE__":   country.site_url,
         "__COUNTRY_CODE__":   country.code,
         "__COUNTRY_NAME__":   country.name_en,
-        "__LINE_HANDLE__":    country.line_handle,
-        "__LINE_URL__":       country.line_url,
+        "__COUNTRY_FLAG__":   country.flag,
+        "__NOTIFY_BANNER__":  render_notify_banner(country),
         "__SUBMIT_URL__":     submit_url,
         "__SITE_KEY__":       SITE_KEY,
         "__EMAIL__":          country.contact_email,
@@ -2140,14 +2258,15 @@ def build_html(country: "Country") -> tuple[int, str]:
         "__COUNTRY_LANG__":    country.primary_lang,
         "__TIMEZONE__":        country.timezone,
         "__OG_IMAGE__":        og_image,
-        "__LINE_HANDLE__":     country.line_handle,
-        "__LINE_URL__":        country.line_url,
+        "__NOTIFY_BANNER__":   render_notify_banner(country),
         "__INGEST_URL__":      INGEST_URL,
         "__SITE_KEY__":        SITE_KEY,
         "__JSON_LD__":         json_ld,
         "__CHARACTERS_JSON__": json.dumps(characters),
     }
-    html = HTML
+    # Localise native (Thai) copy first, then substitute placeholders so the
+    # injected banner and event data are not re-processed by the translator.
+    html = localize(HTML, country)
     for placeholder, value in replacements.items():
         html = html.replace(placeholder, value)
     country.root.mkdir(parents=True, exist_ok=True)
