@@ -2,6 +2,8 @@
   "note": "This file has moved to /<country>/data/events.json \u2014 see /index.html",
   "countries": [
     "thailand",
-    "vietnam"
+    "vietnam",
+    "taiwan",
+    "hongkong"
   ]
 }

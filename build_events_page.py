@@ -66,6 +66,11 @@ class Country:
     line_handle: str = ""           # @handle — only used when notify_channel == "line"
     line_url: str = ""              # add-friend URL — only used when notify_channel == "line"
 
+    # Optional local-city quick-filter chip on the events page. Empty label =
+    # no chip (markets with a single city, or several hubs, omit it).
+    local_filter_label: str = ""    # chip label, e.g. "Bangkok"
+    local_filter_match: str = ""    # lowercase substring matched against event location
+
     # Native-language localisation. Maps a source substring found verbatim in
     # the page templates (Thai, the original build language) to its translation
     # for this market. Thailand leaves this empty (templates are already Thai),
@@ -113,6 +118,8 @@ THAILAND = Country(
     notify_text_native="รับการแจ้งเตือนงานใหม่ทุกสัปดาห์ → ติดตามเราบน LINE",
     line_handle="@studyeventz",
     line_url="https://lin.ee/RdZs9AD",
+    local_filter_label="Bangkok",
+    local_filter_match="bangkok",
     # translations left empty: the templates are already in Thai, so Thailand's
     # output is byte-for-byte unchanged by the localisation pass.
 )
@@ -204,8 +211,182 @@ VIETNAM = Country(
     },
 )
 
+# ─── Taiwan ─────────────────────────────────────────────────────────────────
+# Traditional Chinese (zh-Hant, Taiwan wording). AI-DRAFTED demo/placeholder
+# pages for in-market contacts — flag for native-speaker review before launch.
+TAIWAN = Country(
+    code="taiwan",
+    name_en="Taiwan",
+    name_native="台灣",
+    flag="🇹🇼",
+    primary_lang="zh-Hant",
+    iso2="TW",
+    agent_db_match="%Taiwan%",
+    timezone="Asia/Taipei",
+    title="台灣留學活動總覽 | 大學展、線上講座與升學說明會 | StudyEventz",
+    meta_desc_en=("Find study abroad events in Taiwan — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="彙整台灣的留學活動——大學展、線上講座與升學說明會，每週更新。",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="每週掌握最新留學活動 → 來信通知我們",
+    local_filter_label="Taipei",
+    local_filter_match="taipei",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "台灣留學活動總覽",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "大學展、線上講座與留學活動，一站盡覽。",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "每週更新，涵蓋未來 30 天的活動。",
+        "ตัวกรอง": "篩選",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz 彙整全台灣升學顧問公司的留學活動，每週一更新。",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz 是協助你尋找台灣留學活動的獨立指南",
+        "เกี่ยวกับเรา": "關於我們",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz 是協助你尋找留學活動的獨立指南——不論是大學展、開放日（Open Day）還是獎學金截止日期——全部彙整於一處，並每週更新。",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "一般而言，要找到這些活動，你得翻遍數十個 Facebook 專頁、各家顧問公司的網站，以及不同大學的活動行事曆。我們將這項工作自動化：每週彙整全市場升學顧問公司與大學夥伴的活動，核實並去除重複，再發佈成一份乾淨、清晰、值得信賴的活動清單。",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "我們始於泰國——當地每年有數百場留學活動，卻沒有一個集中查詢的平台。我們是獨立平台，不代表任何特定大學或顧問公司，因此你看到的是多元選擇的全貌，而非單一公司的推銷。",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "想把 studyeventz 帶到你的市場嗎？我們很樂意與你聊聊。",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "聯絡 studyeventz：新增活動、回報資料更正，或與我們合作",
+        "ติดต่อเรา": "聯絡我們",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "有想讓我們收錄的活動、發現過時的資訊，或想與我們合作嗎？歡迎來信：",
+        " แล้วเราจะติดต่อกลับไป": "，我們會盡快回覆你。",
+        "แจ้งเพิ่มกิจกรรม": "新增活動",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "如果你正在籌辦留學展、開放日或說明會，把詳情寄給我們，我們就會加入清單。",
+        "ส่งงานเข้ามา": "提交活動",
+        "แจ้งแก้ไขข้อมูล": "回報資料更正",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "發現日期有誤或連結失效？告訴我們，我們會盡快修正。",
+        "ความร่วมมือ": "合作",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "如果你有意把 studyeventz 帶入新市場，或想在我們已涵蓋的市場與我們合作，歡迎聯絡我們。",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "向 studyeventz 提交留學活動",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "填寫以下資料，我們會審核並加入清單。完全免費。",
+        "รายละเอียดกิจกรรม": "活動詳情",
+        "ผู้จัด": "主辦單位",
+        "ชื่อกิจกรรม": "活動名稱",
+        "วันที่": "日期",
+        "เวลา": "時間",
+        "สถานที่": "地點",
+        "ลิงก์ลงทะเบียน": "報名連結",
+        "ข้อมูลผู้แจ้ง": "提交者資料",
+        "ชื่อ": "姓名",
+        "อีเมล": "電子郵件",
+        "หมายเหตุเพิ่มเติม": "其他備註",
+        "ส่ง": "送出",
+        "ขอบคุณค่ะ": "感謝你！",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Taiwan — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Taiwan.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Taipei, Taiwan" or "Online"\'',
+    },
+)
+
+# ─── Hong Kong ───────────────────────────────────────────────────────────────
+# Traditional Chinese (zh-Hant, Hong Kong wording — 網上/電郵/逢星期一).
+# AI-DRAFTED demo/placeholder pages — flag for native-speaker review before launch.
+HONGKONG = Country(
+    code="hongkong",
+    name_en="Hong Kong",
+    name_native="香港",
+    flag="🇭🇰",
+    primary_lang="zh-Hant",
+    iso2="HK",
+    agent_db_match="%Hong Kong%",
+    timezone="Asia/Hong_Kong",
+    title="香港升學及留學活動總覽 | 大學展、網上講座與升學講座 | StudyEventz",
+    meta_desc_en=("Find study abroad events in Hong Kong — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="彙整香港的升學及留學活動——大學展、網上講座與升學講座，每週更新。",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="每週掌握最新升學活動 → 電郵通知我們",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "香港留學活動總覽",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "大學展、網上講座與留學活動，一站盡覽。",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "每週更新，涵蓋未來 30 天的活動。",
+        "ตัวกรอง": "篩選",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz 彙整全香港升學顧問公司的留學活動，逢星期一更新。",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz 是協助你尋找香港留學活動的獨立指南",
+        "เกี่ยวกับเรา": "關於我們",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz 是協助你尋找留學活動的獨立指南——不論是大學展、開放日（Open Day）還是獎學金截止日期——全部彙整於一處，並每週更新。",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "一般而言，要找到這些活動，你得翻遍數十個 Facebook 專頁、各家顧問公司的網站，以及不同大學的活動行事曆。我們將這項工作自動化：每週彙整全市場升學顧問公司與大學夥伴的活動，核實並去除重複，再發佈成一份乾淨、清晰、值得信賴的活動清單。",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "我們始於泰國——當地每年有數百場留學活動，卻沒有一個集中查詢的平台。我們是獨立平台，不代表任何特定大學或顧問公司，因此你看到的是多元選擇的全貌，而非單一公司的推銷。",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "想把 studyeventz 帶到你的市場嗎？我們很樂意與你聊聊。",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "聯絡 studyeventz：新增活動、回報資料更正，或與我們合作",
+        "ติดต่อเรา": "聯絡我們",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "有想讓我們收錄的活動、發現過時的資訊，或想與我們合作嗎？歡迎電郵：",
+        " แล้วเราจะติดต่อกลับไป": "，我們會盡快回覆你。",
+        "แจ้งเพิ่มกิจกรรม": "新增活動",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "如果你正在籌辦留學展、開放日或說明會，把詳情寄給我們，我們就會加入清單。",
+        "ส่งงานเข้ามา": "提交活動",
+        "แจ้งแก้ไขข้อมูล": "回報資料更正",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "發現日期有誤或連結失效？告訴我們，我們會盡快修正。",
+        "ความร่วมมือ": "合作",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "如果你有意把 studyeventz 帶入新市場，或想在我們已涵蓋的市場與我們合作，歡迎聯絡我們。",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "向 studyeventz 提交留學活動",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "填寫以下資料，我們會審核並加入清單。完全免費。",
+        "รายละเอียดกิจกรรม": "活動詳情",
+        "ผู้จัด": "主辦機構",
+        "ชื่อกิจกรรม": "活動名稱",
+        "วันที่": "日期",
+        "เวลา": "時間",
+        "สถานที่": "地點",
+        "ลิงก์ลงทะเบียน": "報名連結",
+        "ข้อมูลผู้แจ้ง": "提交者資料",
+        "ชื่อ": "姓名",
+        "อีเมล": "電郵",
+        "หมายเหตุเพิ่มเติม": "其他備註",
+        "ส่ง": "提交",
+        "ขอบคุณค่ะ": "多謝！",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Hong Kong — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Hong Kong.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Causeway Bay, Hong Kong" or "Online"\'',
+    },
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
-COUNTRIES: list[Country] = [THAILAND, VIETNAM]
+COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).
@@ -229,7 +410,7 @@ def render_notify_banner(country: "Country") -> str:
             f'    <path d="{_LINE_ICON_PATH}"/>\n'
             '  </svg>\n'
             f'  <span class="line-banner-text">{country.notify_text_native}</span>\n'
-            f'  <a href="{country.line_url}" target="_blank" rel="noopener">\n'
+            f'  <a id="line-link" href="{country.line_url}" target="_blank" rel="noopener">\n'
             f'    <span class="line-banner-handle">{country.line_handle}</span>\n'
             '  </a>\n'
             '</aside>'
@@ -987,7 +1168,7 @@ __JSON_LD__
 
 <header class="site-header">
   <div class="header-bar">
-    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html" class="active">Events</a>
       <a href="about.html">About Us</a>
@@ -1020,7 +1201,7 @@ __JSON_LD__
     <button class="chip active" data-filter="all">All <span class="count" data-count="all">0</span></button>
     <button class="chip" data-filter="australia">Australia <span class="count" data-count="australia">0</span></button>
     <button class="chip" data-filter="uk">UK <span class="count" data-count="uk">0</span></button>
-    <button class="chip" data-filter="bangkok">Bangkok <span class="count" data-count="bangkok">0</span></button>
+    __LOCAL_FILTER_CHIP__
     <span class="filter-divider"></span>
     <button class="chip toggle" id="online-toggle" aria-pressed="false">
       <span class="label">+ Include online events</span>
@@ -1106,8 +1287,10 @@ window.studyeventz = {
 // Layered ON TOP of the existing track()/localStorage queue — does not replace it.
 // If INGEST_URL is empty, this whole layer is a no-op and the frontend still
 // works exactly as before.
-const INGEST_URL = "__INGEST_URL__";
-const SITE_KEY   = "__SITE_KEY__";
+const INGEST_URL  = "__INGEST_URL__";
+const SITE_KEY    = "__SITE_KEY__";
+const LINE_HANDLE = "__LINE_HANDLE__";
+const LOCAL_MATCH = "__LOCAL_MATCH__";
 const PENDING_KEY = 'studyeventz_pending';
 const PENDING_MAX = 500;
 const CLICK_TYPES = new Set([
@@ -1448,7 +1631,7 @@ function matchesInPerson(ev, filter) {
   if (isOnline(ev)) return false;
   if (filter === 'all') return true;
   if (filter === 'australia' || filter === 'uk') return destinationCountry(ev) === filter;
-  if (filter === 'bangkok') return (ev.location || '').toLowerCase().includes('bangkok');
+  if (filter === 'local') return LOCAL_MATCH && (ev.location || '').toLowerCase().includes(LOCAL_MATCH);
   return false;
 }
 
@@ -1527,7 +1710,7 @@ function render(events, filter, showOnline) {
 
 function updateCounts(events) {
   // In-person counts ignore online events (online has its own additive toggle)
-  const inPersonFilters = ['all', 'australia', 'uk', 'bangkok'];
+  const inPersonFilters = ['all', 'australia', 'uk', 'local'];
   for (const f of inPersonFilters) {
     const n = events.filter(e => matchesInPerson(e, f)).length;
     const el = document.querySelector(`[data-count="${f}"]`);
@@ -1756,7 +1939,7 @@ ABOUT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html" class="active">About Us</a>
@@ -1933,7 +2116,7 @@ CONTACT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
@@ -2138,7 +2321,7 @@ SUBMIT_HTML = r"""<!doctype html>
 
 <header class="site-header">
   <div class="header-bar">
-    <a class="brand-link" href="/" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
@@ -2371,6 +2554,11 @@ def build_html(country: "Country") -> tuple[int, str]:
         events_data = []
     json_ld = build_event_json_ld(events_data, country)
 
+    local_chip = (
+        f'<button class="chip" data-filter="local">{country.local_filter_label} '
+        f'<span class="count" data-count="local">0</span></button>'
+    ) if country.local_filter_label else ""
+
     replacements = {
         "__PAGE_TITLE__":      country.title,
         "__META_DESC_EN__":    country.meta_desc_en,
@@ -2387,6 +2575,9 @@ def build_html(country: "Country") -> tuple[int, str]:
         "__NOTIFY_BANNER__":   render_notify_banner(country),
         "__INGEST_URL__":      INGEST_URL,
         "__SITE_KEY__":        SITE_KEY,
+        "__LINE_HANDLE__":     country.line_handle,
+        "__LOCAL_FILTER_CHIP__": local_chip,
+        "__LOCAL_MATCH__":     country.local_filter_match,
         "__JSON_LD__":         json_ld,
         "__CHARACTERS_JSON__": json.dumps(characters),
     }
@@ -2491,10 +2682,11 @@ __COUNTRY_TILES__
 
 <script>
   // Auto-redirect returning visitors to their last-chosen country.
-  // First-time visitors see the picker.
+  // First-time visitors see the picker. The "Change country" link points to
+  // /?pick — any query string forces the picker so it stays reachable.
   try {
     const saved = localStorage.getItem('studyeventz_country');
-    if (saved && /^[a-z\-]+$/.test(saved)) {
+    if (!location.search && saved && /^[a-z\-]+$/.test(saved)) {
       // Confirm we actually built that country (anti-stale-cache check)
       const tile = document.querySelector(`[data-country="${saved}"]`);
       if (tile) location.replace(`/${saved}/events.html`);

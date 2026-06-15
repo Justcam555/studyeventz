@@ -72,6 +72,26 @@ COUNTRY_CONFIG = {
             "hue", "bien hoa",
         },
     },
+    "taiwan": {
+        "db_match": "%Taiwan%",
+        "name": "Taiwan",
+        "adjective": "Taiwanese",
+        "prompt_cities": "Taipei, Kaohsiung, Taichung, Tainan, or other Taiwanese cities",
+        "home_cities": {
+            "taipei", "new taipei", "kaohsiung", "taichung", "tainan",
+            "hsinchu", "taoyuan", "keelung", "chiayi", "changhua",
+        },
+    },
+    "hongkong": {
+        "db_match": "%Hong Kong%",
+        "name": "Hong Kong",
+        "adjective": "Hong Kong",
+        "prompt_cities": "Hong Kong Island, Kowloon, the New Territories, or other Hong Kong districts",
+        "home_cities": {
+            "hong kong", "kowloon", "new territories", "tsim sha tsui",
+            "mong kok", "causeway bay", "sha tin", "kwun tong", "wan chai",
+        },
+    },
 }
 
 EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
@@ -125,12 +145,13 @@ FOREIGN_CITIES = {
     "hyderabad", "pune", "ahmedabad", "jaipur", "chandigarh", "lucknow",
     "kochi", "nagpur", "indore", "surat",
     # Other Asia
-    "singapore", "hong kong", "kuala lumpur", "penang", "johor",
+    "singapore", "hong kong", "kowloon", "kuala lumpur", "penang", "johor",
     "jakarta", "bali", "surabaya", "manila", "cebu",
     "ho chi minh", "hanoi", "da nang", "saigon",
     "phnom penh", "siem reap", "vientiane", "yangon",
     "tokyo", "osaka", "kyoto", "seoul", "busan",
     "beijing", "shanghai", "shenzhen", "guangzhou", "taipei", "kaohsiung",
+    "taichung", "tainan", "hsinchu", "taoyuan",
     "colombo", "kathmandu", "dhaka", "karachi", "lahore", "islamabad",
     # Middle East
     "dubai", "abu dhabi", "doha", "riyadh", "jeddah", "kuwait city", "muscat",

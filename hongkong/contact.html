@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — studyeventz</title>
-<meta name="description" content="studyeventz is an independent guide to study abroad events in Vietnam — fairs, webinars and briefings gathered weekly.">
-<meta name="description" lang="vi" content="studyeventz là cẩm nang độc lập giúp tìm các sự kiện du học tại Việt Nam">
-<link rel="canonical" href="https://www.studyeventz.com/about.html">
+<title>Contact — studyeventz</title>
+<meta name="description" content="Contact studyeventz to list a study abroad event, report a correction, or explore a partnership. Email info@studyeventz.com.">
+<meta name="description" lang="zh-Hant" content="聯絡 studyeventz：新增活動、回報資料更正，或與我們合作">
+<link rel="canonical" href="https://www.studyeventz.com/contact.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,25 +44,42 @@
   .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
   .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
 
-  /* Hero strip */
+  /* Hero */
   .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
   .about-hero-inner { max-width: 760px; margin: 0 auto; }
   .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
   .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
                                line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
 
-  /* Body content */
+  /* Body */
   .about-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
-  .about-pair { margin-bottom: 2rem; }
-  .about-pair p { font-size: 1.05rem; margin: 0; }
-  .about-pair p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
-  .about-pair p:not(.th) { color: var(--muted); }
-  .about-pair.about-cta { border-top: 1px solid var(--border); padding-top: 2rem;
-                          margin-top: 2.5rem; margin-bottom: 0; }
-  .about-pair.about-cta p.th { color: var(--teal); font-weight: 600; }
-  .about-pair.about-cta p:not(.th) { color: var(--text); font-weight: 500; }
 
-  /* LINE OA sticky banner (same as events page) */
+  /* Intro (with prominent email CTA) */
+  .contact-intro { margin-bottom: 2.5rem; padding-bottom: 2.5rem;
+                   border-bottom: 1px solid var(--border); }
+  .contact-intro p { font-size: 1.05rem; margin: 0; }
+  .contact-intro p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
+  .contact-intro p:not(.th) { color: var(--muted); margin-bottom: 1.5rem; }
+  .email-btn { display: inline-block; background: var(--teal); color: #fff;
+               padding: .85rem 1.4rem; border-radius: 8px;
+               font-size: 1.05rem; font-weight: 600; text-decoration: none;
+               transition: background .15s; }
+  .email-btn:hover { background: var(--teal-dark); }
+
+  /* Sub-categories */
+  .contact-category { margin-bottom: 2rem; }
+  .contact-category .th-title { color: var(--gold); font-size: 1.2rem;
+                                font-weight: 700; margin: 0 0 .1rem 0;
+                                line-height: 1.3; }
+  .contact-category .en-title { color: var(--teal); font-size: 1rem;
+                                font-weight: 700; text-transform: uppercase;
+                                letter-spacing: .04em; margin: 0 0 .65rem 0;
+                                line-height: 1.3; }
+  .contact-category p { font-size: 1rem; margin: 0; }
+  .contact-category p.th { color: var(--text); margin-bottom: .35rem; }
+  .contact-category p:not(.th) { color: var(--muted); }
+
+  /* LINE banner */
   .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
                  background: var(--teal); color: var(--gold);
                  padding: 1.25rem 1rem; z-index: 50;
@@ -84,7 +101,8 @@
     .about-hero h1 { font-size: 1.5rem; }
     .about-hero .hero-th-title { font-size: 1.95rem; }
     .about-content { padding: 2rem 1.1rem 2.5rem; }
-    .about-pair p { font-size: .98rem; }
+    .contact-intro p, .contact-category p { font-size: .98rem; }
+    .email-btn { font-size: 1rem; padding: .75rem 1.2rem; }
     .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
     .line-banner-text { font-size: .92rem; text-align: center; }
     .line-icon { width: 26px; height: 26px; }
@@ -96,49 +114,59 @@
 
 <header class="site-header">
   <div class="header-bar">
-    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">🇻🇳</span></a>
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">🇭🇰</span></a>
     <nav class="nav">
       <a href="events.html">Events</a>
-      <a href="about.html" class="active">About Us</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
     </nav>
   </div>
 </header>
 
 <section class="about-hero">
   <div class="about-hero-inner">
-    <p class="hero-th-title" lang="vi">Về chúng tôi</p>
-    <h1>About Us</h1>
+    <p class="hero-th-title" lang="zh-Hant">聯絡我們</p>
+    <h1>Contact Us</h1>
   </div>
 </section>
 
 <main class="about-content">
-  <section class="about-pair">
-    <p class="th" lang="vi">studyeventz là cẩm nang độc lập giúp tìm các sự kiện du học — hội chợ đại học, ngày thông tin, open day và hạn nộp học bổng — tất cả ở một nơi và được cập nhật hằng tuần.</p>
-    <p>studyeventz is an independent guide to study abroad events — university fairs, information days, open days and scholarship deadlines — gathered in one place and updated every week.</p>
+
+  <section class="contact-intro">
+    <p class="th" lang="zh-Hant">有想讓我們收錄的活動、發現過時的資訊，或想與我們合作嗎？歡迎電郵：<a href="mailto:info@studyeventz.com" style="color:inherit;font-weight:600">info@studyeventz.com</a>，我們會盡快回覆你。</p>
+    <p>Have an event we should list, spotted something out of date, or want to work with us? Email us at <a href="mailto:info@studyeventz.com" style="color:inherit;font-weight:600">info@studyeventz.com</a> and we'll get back to you.</p>
+    <a class="email-btn" href="mailto:info@studyeventz.com">✉  info@studyeventz.com</a>
   </section>
 
-  <section class="about-pair">
-    <p class="th" lang="vi">Thông thường, việc tìm các sự kiện này đồng nghĩa với việc lùng sục hàng chục trang Facebook, website của các công ty tư vấn và lịch sự kiện của các trường đại học. Chúng tôi làm việc đó một cách tự động: mỗi tuần, chúng tôi thu thập sự kiện từ các công ty tư vấn giáo dục và đối tác đại học trên toàn thị trường, loại bỏ các mục trùng lặp, và công bố một danh sách gọn gàng mà bạn thực sự có thể tin cậy.</p>
-    <p>Finding these events normally means trawling dozens of Facebook pages, agency websites and university calendars. We do that work automatically: every week we collect events from education consultancies and university partners across the market, remove the duplicates, and publish a single clean list you can actually rely on.</p>
+  <section class="contact-category">
+    <h2 class="th-title" lang="zh-Hant">新增活動</h2>
+    <h2 class="en-title">List an event</h2>
+    <p class="th" lang="zh-Hant">如果你正在籌辦留學展、開放日或說明會，把詳情寄給我們，我們就會加入清單。</p>
+    <p>Running a study abroad fair, open day or info session? Send us the details and we'll add it.</p>
+    <p style="margin-top:.65rem"><a href="submit.html" style="color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor">→ 提交活動 / Submit your event</a></p>
   </section>
 
-  <section class="about-pair">
-    <p class="th" lang="vi">Chúng tôi khởi đầu tại Thái Lan, nơi mỗi năm có hàng trăm sự kiện du học nhưng không có một nơi tập trung nào để tìm chúng. Chúng tôi độc lập — không đại diện cho bất kỳ trường đại học hay công ty tư vấn nào, nên những gì bạn thấy là toàn cảnh các lựa chọn, chứ không phải lời chào mời của riêng một công ty.</p>
-    <p>We started in Thailand, where hundreds of study abroad events run every year with no single place to find them. We're independent — we don't represent any one university or agency, so what you see is the full range of options, not one company's pitch.</p>
+  <section class="contact-category">
+    <h2 class="th-title" lang="zh-Hant">回報資料更正</h2>
+    <h2 class="en-title">Report a correction</h2>
+    <p class="th" lang="zh-Hant">發現日期有誤或連結失效？告訴我們，我們會盡快修正。</p>
+    <p>Found a wrong date or a dead link? Let us know and we'll fix it.</p>
   </section>
 
-  <section class="about-pair about-cta">
-    <p class="th" lang="vi">Bạn muốn đưa studyeventz đến thị trường của mình? Chúng tôi rất mong được trò chuyện với bạn.</p>
-    <p>Interested in bringing studyeventz to your market? We'd like to hear from you.</p>
+  <section class="contact-category">
+    <h2 class="th-title" lang="zh-Hant">合作</h2>
+    <h2 class="en-title">Partnerships</h2>
+    <p class="th" lang="zh-Hant">如果你有意把 studyeventz 帶入新市場，或想在我們已涵蓋的市場與我們合作，歡迎聯絡我們。</p>
+    <p>If you'd like to bring studyeventz to a new market, or partner with us in one we already cover, get in touch.</p>
   </section>
+
 </main>
 
 <aside class="line-banner" role="contentinfo" aria-label="Email updates">
   <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
   </svg>
-  <span class="line-banner-text" lang="vi">Nhận thông báo sự kiện mới hằng tuần → email cho chúng tôi</span>
+  <span class="line-banner-text" lang="zh-Hant">每週掌握最新升學活動 → 電郵通知我們</span>
   <a href="mailto:info@studyeventz.com">
     <span class="line-banner-handle">info@studyeventz.com</span>
   </a>

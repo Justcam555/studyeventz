@@ -97,6 +97,22 @@
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
+    <a class="country-tile" data-country="taiwan" href="/taiwan/events.html">
+      <span class="tile-flag" aria-hidden="true">🇹🇼</span>
+      <span class="tile-text">
+        <span class="tile-name">Taiwan</span>
+        <span class="tile-native" lang="zh-Hant">台灣</span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="country-tile" data-country="hongkong" href="/hongkong/events.html">
+      <span class="tile-flag" aria-hidden="true">🇭🇰</span>
+      <span class="tile-text">
+        <span class="tile-name">Hong Kong</span>
+        <span class="tile-native" lang="zh-Hant">香港</span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>
   </div>
 
   <p class="meta">More markets coming soon.</p>
@@ -104,10 +120,11 @@
 
 <script>
   // Auto-redirect returning visitors to their last-chosen country.
-  // First-time visitors see the picker.
+  // First-time visitors see the picker. The "Change country" link points to
+  // /?pick — any query string forces the picker so it stays reachable.
   try {
     const saved = localStorage.getItem('studyeventz_country');
-    if (saved && /^[a-z\-]+$/.test(saved)) {
+    if (!location.search && saved && /^[a-z\-]+$/.test(saved)) {
       // Confirm we actually built that country (anti-stale-cache check)
       const tile = document.querySelector(`[data-country="${saved}"]`);
       if (tile) location.replace(`/${saved}/events.html`);
