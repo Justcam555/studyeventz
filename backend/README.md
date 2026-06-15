@@ -194,6 +194,29 @@ wrangler dev --local                      # http://localhost:8787/track
 
 Set `INGEST_URL = "http://localhost:8787/track"` temporarily in `build_events_page.py` to test against your local Worker.
 
+## Private analytics dashboard (GET /dash)
+
+A self-contained HTML dashboard rendered straight from D1 — totals, click-rate,
+activity-by-day, top events (grouped by name, so duplicate event ids don't split
+counts), top agents, breakdown by type/market, and submission counts.
+
+- **Auth**: gated by `env.DASH_KEY`, a Cloudflare **secret** distinct from the
+  public `SITE_KEY`. It's a browser navigation (no CORS), so the only gate is the
+  secret in `?k=`. Fails closed (503) if `DASH_KEY` is unset, 403 on a bad key.
+- **Window**: `?days=N` (default 30, clamps 1–365); the page has 7d/30d/90d/1y chips.
+- `noindex` + `no-store` so it never gets cached or indexed.
+
+```bash
+# Set the dashboard secret (any strong random string):
+openssl rand -hex 24 | wrangler secret put DASH_KEY
+wrangler deploy
+
+# Then open (bookmark with the key — it IS the password):
+#   https://studyeventz-app.<handle>.workers.dev/dash?k=<DASH_KEY>
+```
+
+Rotate it the same way: re-run `wrangler secret put DASH_KEY` and `wrangler deploy`.
+
 ## Rotating the salt
 
 If the salt is compromised, rotate:

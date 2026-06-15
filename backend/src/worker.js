@@ -198,6 +198,244 @@ async function handleSubmit(request, env, origin) {
 }
 
 
+// ─── GET /dash (private analytics dashboard) ───────────────────────────────
+// A self-contained HTML view of the ingested analytics, gated by env.DASH_KEY
+// (a Cloudflare SECRET — distinct from the public SITE_KEY). This is a browser
+// navigation, not a CORS fetch, so it bypasses the Origin allow-list and is
+// protected purely by the secret in ?k=. Fails closed if DASH_KEY is unset.
+
+function escapeHtml(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+}
+
+// Constant-time-ish string compare to avoid leaking the key via timing.
+function safeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string" || a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
+
+function bar(value, max, label, sub) {
+  const pct = max > 0 ? Math.max(2, Math.round((value / max) * 100)) : 0;
+  return `<div class="row">
+    <div class="row-label">${escapeHtml(label)}${sub ? `<span class="row-sub">${escapeHtml(sub)}</span>` : ""}</div>
+    <div class="row-track"><div class="row-fill" style="width:${pct}%"></div></div>
+    <div class="row-val">${value}</div>
+  </div>`;
+}
+
+async function handleDash(request, env, url) {
+  if (!env.DASH_KEY) {
+    return new Response("Dashboard disabled: DASH_KEY secret is not set.", {
+      status: 503, headers: { "Content-Type": "text/plain" },
+    });
+  }
+  if (!safeEqual(url.searchParams.get("k") || "", env.DASH_KEY)) {
+    return new Response("Forbidden", { status: 403, headers: { "Content-Type": "text/plain" } });
+  }
+
+  let days = parseInt(url.searchParams.get("days") || "30", 10);
+  if (!Number.isFinite(days) || days < 1) days = 30;
+  if (days > 365) days = 365;
+  const window = `-${days} days`;
+
+  const q = async (sql, ...binds) => {
+    const r = await env.DB.prepare(sql).bind(...binds).all();
+    return r.results || [];
+  };
+
+  let summary, byType, byDay, topEvents, topAgents, byCountry, subs;
+  try {
+    [summary] = await q(
+      `SELECT
+         SUM(type='event_impression') AS impressions,
+         SUM(type='event_register_click') AS reg_clicks,
+         SUM(type LIKE '%click' AND type<>'event_register_click') AS other_clicks,
+         COUNT(*) AS total,
+         COUNT(DISTINCT session_id) AS sessions,
+         COUNT(DISTINCT ip_hash) AS visitors
+       FROM events WHERE received_at >= datetime('now', ?)`, window);
+    byType = await q(
+      `SELECT type, COUNT(*) n FROM events
+       WHERE received_at >= datetime('now', ?) GROUP BY type ORDER BY n DESC`, window);
+    byDay = await q(
+      `SELECT substr(received_at,1,10) day,
+         SUM(type='event_impression') imps,
+         SUM(type LIKE '%click') clicks
+       FROM events WHERE received_at >= datetime('now', ?)
+       GROUP BY day ORDER BY day`, window);
+    // Group top events by NAME (not raw event_id) so duplicate ids for the
+    // same logical event don't fragment the counts.
+    topEvents = await q(
+      `SELECT event_name, MAX(agent_name) agent_name,
+         SUM(type='event_impression') imps,
+         SUM(type LIKE '%click') clicks
+       FROM events WHERE received_at >= datetime('now', ?)
+         AND event_name IS NOT NULL AND event_name<>''
+       GROUP BY event_name ORDER BY imps DESC, clicks DESC LIMIT 20`, window);
+    topAgents = await q(
+      `SELECT agent_name,
+         SUM(type='event_impression') imps,
+         SUM(type LIKE '%click') clicks
+       FROM events WHERE received_at >= datetime('now', ?)
+         AND agent_name IS NOT NULL AND agent_name<>''
+       GROUP BY agent_name ORDER BY imps DESC LIMIT 20`, window);
+    byCountry = await q(
+      `SELECT COALESCE(NULLIF(country,''),'(unknown)') country, COUNT(*) n
+       FROM events WHERE received_at >= datetime('now', ?)
+       GROUP BY country ORDER BY n DESC`, window);
+    [subs] = await q(
+      `SELECT COUNT(*) total, SUM(status='pending') pending FROM submissions`);
+  } catch (e) {
+    return new Response("Query failed: " + escapeHtml(String(e).slice(0, 300)), {
+      status: 500, headers: { "Content-Type": "text/plain" },
+    });
+  }
+
+  const s = summary || {};
+  const imps = s.impressions || 0;
+  const regClicks = s.reg_clicks || 0;
+  const ctr = imps > 0 ? ((regClicks / imps) * 100).toFixed(1) : "0.0";
+
+  const k = encodeURIComponent(url.searchParams.get("k") || "");
+  const dayChip = (d, lbl) =>
+    `<a class="chip ${days === d ? "active" : ""}" href="?k=${k}&days=${d}">${lbl}</a>`;
+
+  const maxDay = Math.max(1, ...byDay.map(d => (d.imps || 0)));
+  const dayBars = byDay.length
+    ? byDay.map(d => {
+        const h = Math.max(3, Math.round(((d.imps || 0) / maxDay) * 100));
+        return `<div class="spark-col" title="${escapeHtml(d.day)}: ${d.imps || 0} impressions, ${d.clicks || 0} clicks">
+          <div class="spark-bar" style="height:${h}%"></div>
+          <div class="spark-x">${escapeHtml(d.day.slice(5))}</div>
+        </div>`;
+      }).join("")
+    : `<div class="muted">No activity in this window.</div>`;
+
+  const maxEvent = Math.max(1, ...topEvents.map(e => e.imps || 0));
+  const eventRows = topEvents.length
+    ? topEvents.map(e => bar(e.imps || 0, maxEvent, e.event_name, e.agent_name)).join("")
+    : `<div class="muted">No events tracked yet.</div>`;
+
+  const maxAgent = Math.max(1, ...topAgents.map(a => a.imps || 0));
+  const agentRows = topAgents.length
+    ? topAgents.map(a => bar(a.imps || 0, maxAgent, a.agent_name,
+        (a.clicks || 0) + " click" + ((a.clicks || 0) === 1 ? "" : "s"))).join("")
+    : `<div class="muted">No agents tracked yet.</div>`;
+
+  const typeRows = byType.map(t => `<tr><td>${escapeHtml(t.type)}</td><td class="num">${t.n}</td></tr>`).join("");
+  const countryRows = byCountry.map(c => `<tr><td>${escapeHtml(c.country)}</td><td class="num">${c.n}</td></tr>`).join("");
+
+  const html = `<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>StudyEventz Analytics</title>
+<style>
+  :root { --bg:#0f1419; --card:#1a212b; --line:#2a3340; --text:#e6edf3;
+          --muted:#8b98a8; --teal:#2dd4bf; --accent:#38bdf8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         padding:1.2rem; max-width:1000px; margin:0 auto; }
+  h1 { font-size:1.3rem; margin:0 0 .2rem; }
+  .sub { color:var(--muted); font-size:.85rem; margin-bottom:1rem; }
+  .chips { display:flex; gap:.5rem; margin-bottom:1.2rem; flex-wrap:wrap; }
+  .chip { padding:.35rem .8rem; border-radius:20px; background:var(--card);
+          color:var(--muted); text-decoration:none; border:1px solid var(--line);
+          font-size:.85rem; }
+  .chip.active { background:var(--teal); color:#06251f; border-color:var(--teal); font-weight:600; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+           gap:.8rem; margin-bottom:1.4rem; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:.9rem 1rem; }
+  .stat .n { font-size:1.7rem; font-weight:700; }
+  .stat .l { color:var(--muted); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; }
+  .stat .n.accent { color:var(--teal); }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:1rem 1.1rem; margin-bottom:1.2rem; }
+  section h2 { font-size:.95rem; margin:0 0 .9rem; }
+  .row { display:flex; align-items:center; gap:.7rem; margin:.45rem 0; }
+  .row-label { flex:0 0 42%; font-size:.85rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .row-sub { color:var(--muted); font-size:.75rem; margin-left:.4rem; }
+  .row-track { flex:1; background:#0d1117; border-radius:6px; height:14px; overflow:hidden; }
+  .row-fill { height:100%; background:linear-gradient(90deg,var(--accent),var(--teal)); border-radius:6px; }
+  .row-val { flex:0 0 38px; text-align:right; font-variant-numeric:tabular-nums; font-size:.85rem; }
+  .spark { display:flex; align-items:flex-end; gap:3px; height:120px; overflow-x:auto; padding-bottom:1.2rem; }
+  .spark-col { flex:1; min-width:14px; display:flex; flex-direction:column; align-items:center;
+               justify-content:flex-end; height:100%; position:relative; }
+  .spark-bar { width:70%; background:linear-gradient(180deg,var(--teal),var(--accent)); border-radius:3px 3px 0 0; }
+  .spark-x { position:absolute; bottom:-1.1rem; font-size:.6rem; color:var(--muted);
+             transform:rotate(-45deg); transform-origin:center; white-space:nowrap; }
+  table { width:100%; border-collapse:collapse; font-size:.85rem; }
+  td { padding:.3rem .2rem; border-bottom:1px solid var(--line); }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; color:var(--teal); }
+  .muted { color:var(--muted); font-size:.85rem; padding:.5rem 0; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+  @media(max-width:640px){ .two{ grid-template-columns:1fr; } .row-label{ flex-basis:50%; } }
+  footer { color:var(--muted); font-size:.75rem; text-align:center; margin-top:1rem; }
+</style></head><body>
+  <h1>StudyEventz Analytics</h1>
+  <div class="sub">Last ${days} day${days === 1 ? "" : "s"} · live from D1</div>
+  <div class="chips">
+    ${dayChip(7, "7d")}${dayChip(30, "30d")}${dayChip(90, "90d")}${dayChip(365, "1y")}
+  </div>
+  <div class="cards">
+    <div class="stat"><div class="n">${imps}</div><div class="l">Impressions</div></div>
+    <div class="stat"><div class="n accent">${regClicks}</div><div class="l">Register clicks</div></div>
+    <div class="stat"><div class="n">${ctr}%</div><div class="l">Click rate</div></div>
+    <div class="stat"><div class="n">${s.other_clicks || 0}</div><div class="l">Other clicks</div></div>
+    <div class="stat"><div class="n">${s.sessions || 0}</div><div class="l">Sessions</div></div>
+    <div class="stat"><div class="n">${s.visitors || 0}</div><div class="l">Visitors</div></div>
+  </div>
+
+  <section>
+    <h2>Activity by day (impressions)</h2>
+    <div class="spark">${dayBars}</div>
+  </section>
+
+  <section>
+    <h2>Top events — by impressions</h2>
+    ${eventRows}
+  </section>
+
+  <section>
+    <h2>Top agents — by impressions</h2>
+    ${agentRows}
+  </section>
+
+  <div class="two">
+    <section>
+      <h2>Interactions by type</h2>
+      <table>${typeRows || '<tr><td class="muted">none</td></tr>'}</table>
+    </section>
+    <section>
+      <h2>By market &amp; submissions</h2>
+      <table>${countryRows || '<tr><td class="muted">none</td></tr>'}</table>
+      <table style="margin-top:.8rem">
+        <tr><td>Submissions (all time)</td><td class="num">${(subs && subs.total) || 0}</td></tr>
+        <tr><td>Pending review</td><td class="num">${(subs && subs.pending) || 0}</td></tr>
+      </table>
+    </section>
+  </div>
+
+  <footer>StudyEventz · private dashboard · noindex</footer>
+</body></html>`;
+
+  return new Response(html, {
+    status: 200,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+      "X-Robots-Tag": "noindex, nofollow",
+    },
+  });
+}
+
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
@@ -206,6 +444,11 @@ export default {
     // 1a. Preflight
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
+    }
+
+    // Private analytics dashboard (GET, secret-gated, no CORS — browser nav).
+    if (url.pathname === "/dash" && request.method === "GET") {
+      return handleDash(request, env, url);
     }
 
     // 1b. Routing — only POST to /i (ingest) or /s (submit).
