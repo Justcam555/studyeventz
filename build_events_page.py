@@ -511,56 +511,80 @@ def deduplicate_rows(rows: list) -> list:
     return kept
 
 
+# How far back the past-events archive reaches. Mirrors ARCHIVE_RETENTION_YEARS
+# in scrape_events.py, which is what keeps these rows from being pruned.
+ARCHIVE_RETENTION_YEARS = 2
+
+
+def _row_to_event(r) -> dict:
+    """Map a joined events↔agents row to the JSON shape the frontend renders."""
+    logo_url, initials_override, needs_bg, bg_color = find_logo_for_agent(r["agent_name"])
+    return {
+        "id": r["id"],
+        "name": r["name"],
+        "date": r["date"],
+        "time": r["time"] or "",
+        "location": r["location"] or "",
+        "organizer": r["organizer"] or r["agent_name"],
+        "agent_name": r["agent_name"],
+        "agent_country": r["agent_country"] or "",
+        "agent_website": r["agent_website"] or "",
+        "registration_url": r["registration_url"] or "",
+        "logo_url": logo_url or "",
+        "logo_needs_bg": needs_bg,
+        "logo_bg_color": bg_color,
+        "initials": initials_override or extract_initials(r["agent_name"]),
+    }
+
+
 def export_events_json(country: "Country") -> int:
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     today = datetime.now().date()
     cutoff = today + timedelta(days=30)
+    # Past archive reaches back ARCHIVE_RETENTION_YEARS (day=28 guards Feb 29).
+    try:
+        archive_from = today.replace(year=today.year - ARCHIVE_RETENTION_YEARS)
+    except ValueError:
+        archive_from = today.replace(year=today.year - ARCHIVE_RETENTION_YEARS, day=28)
+    yesterday = today - timedelta(days=1)
 
-    rows = conn.execute(
+    _SELECT = (
         """SELECT e.id, e.name, e.date, e.time, e.location, e.organizer,
                   e.registration_url, a.company_name AS agent_name,
                   a.website AS agent_website, a.country AS agent_country
            FROM events e JOIN agents a ON e.agent_id = a.id
            WHERE e.date BETWEEN ? AND ?
              AND a.country LIKE ?
-           ORDER BY e.date, e.time""",
-        (today.isoformat(), cutoff.isoformat(), country.agent_db_match),
-    ).fetchall()
+           ORDER BY e.date, e.time"""
+    )
 
-    rows = deduplicate_rows(rows)
+    upcoming_rows = deduplicate_rows(conn.execute(
+        _SELECT, (today.isoformat(), cutoff.isoformat(), country.agent_db_match),
+    ).fetchall())
 
-    events_out = []
-    for r in rows:
-        logo_url, initials_override, needs_bg, bg_color = find_logo_for_agent(r["agent_name"])
-        events_out.append({
-            "id": r["id"],
-            "name": r["name"],
-            "date": r["date"],
-            "time": r["time"] or "",
-            "location": r["location"] or "",
-            "organizer": r["organizer"] or r["agent_name"],
-            "agent_name": r["agent_name"],
-            "agent_country": r["agent_country"] or "",
-            "agent_website": r["agent_website"] or "",
-            "registration_url": r["registration_url"] or "",
-            "logo_url": logo_url or "",
-            "logo_needs_bg": needs_bg,
-            "logo_bg_color": bg_color,
-            "initials": initials_override or extract_initials(r["agent_name"]),
-        })
+    # Past events bounded by the archive retention window. deduplicate_rows
+    # returns ascending (date, time); reverse for most-recent-first archive.
+    past_rows = deduplicate_rows(conn.execute(
+        _SELECT, (archive_from.isoformat(), yesterday.isoformat(), country.agent_db_match),
+    ).fetchall())
+
+    events_out = [_row_to_event(r) for r in upcoming_rows]
+    past_out = [_row_to_event(r) for r in reversed(past_rows)]
 
     data = {
         "country":      country.code,
         "country_name": country.name_en,
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "window":       {"from": today.isoformat(), "to": cutoff.isoformat()},
+        "archive":      {"from": archive_from.isoformat(), "to": yesterday.isoformat()},
         "events":       events_out,
+        "past":         past_out,
     }
 
     country.json_out.parent.mkdir(parents=True, exist_ok=True)
     country.json_out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    return len(rows)
+    return len(events_out)
 
 
 # Legacy fallback SVG silhouettes — only used if no PNGs exist in assets/characters/.
@@ -887,6 +911,31 @@ __JSON_LD__
   .footer-meta { color: var(--muted); font-size: .78rem; text-align: center;
                  padding: 1.5rem 1rem 1rem; }
 
+  /* Past-events archive (collapsible, below the live listings) */
+  .archive { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+  .archive-toggle { width: 100%; display: flex; align-items: center;
+                    justify-content: center; gap: .5rem; background: #fff;
+                    border: 1px solid var(--border); border-radius: 10px;
+                    padding: .8rem 1rem; cursor: pointer; color: var(--text);
+                    font-size: .9rem; font-weight: 600;
+                    transition: background .15s, border-color .15s; }
+  .archive-toggle:hover { background: #f7f9fb; border-color: var(--teal); }
+  .archive-toggle .count { background: #f0f2f5; color: var(--muted);
+                           border-radius: 12px; padding: .05rem .5rem;
+                           font-size: .78rem; font-weight: 700; }
+  .archive-chevron { transition: transform .2s; font-size: .8rem; color: var(--muted); }
+  .archive-toggle[aria-expanded="true"] .archive-chevron { transform: rotate(180deg); }
+  .archive-body { padding-top: 1rem; }
+  .archive-search { width: 100%; box-sizing: border-box; padding: .7rem .9rem;
+                    border: 1px solid var(--border); border-radius: 10px;
+                    font-size: .9rem; margin-bottom: 1rem; }
+  .archive-search:focus { outline: none; border-color: var(--teal); }
+  .archive .card { opacity: .82; }
+  .archive .month-header { font-size: .8rem; font-weight: 700;
+                           text-transform: uppercase; letter-spacing: .06em;
+                           color: var(--muted); margin: 1.2rem 0 .6rem; }
+  .archive .empty { padding: 2rem 1rem; }
+
   /* About section (above the LINE banner) */
   .site-about { max-width: 1180px; margin: 0 auto;
                 padding: 1.5rem 1.5rem 2rem; color: var(--muted);
@@ -985,6 +1034,19 @@ __JSON_LD__
 </main>
 
 <div class="footer-meta" id="footer-meta"></div>
+
+<section class="archive" id="archive" hidden>
+  <button class="archive-toggle" id="archive-toggle" aria-expanded="false" aria-controls="archive-body">
+    <span class="archive-toggle-label">Past events <span class="count" id="archive-count">0</span></span>
+    <span class="archive-chevron" aria-hidden="true">▾</span>
+  </button>
+  <div class="archive-body" id="archive-body" hidden>
+    <input type="search" class="archive-search" id="archive-search"
+           placeholder="Search past events by name, organizer or place…"
+           aria-label="Search past events" autocomplete="off">
+    <div id="archive-root"></div>
+  </div>
+</section>
 
 <section class="site-about">
   <p class="th">studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์</p>
@@ -1479,6 +1541,8 @@ function updateCounts(events) {
 let CURRENT_FILTER = 'all';
 let SHOW_ONLINE = false;
 let EVENTS = [];
+let PAST = [];
+let ARCHIVE_RENDERED = false;
 
 function setOnlineToggle(on) {
   SHOW_ONLINE = on;
@@ -1503,6 +1567,66 @@ document.getElementById('filters').addEventListener('click', e => {
   render(EVENTS, CURRENT_FILTER, SHOW_ONLINE);
 });
 
+function monthLabel(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+}
+
+function groupByMonth(events) {
+  // events arrive most-recent-first; preserve that order across and within months.
+  const groups = new Map();
+  for (const ev of events) {
+    const key = ev.date.slice(0, 7); // YYYY-MM
+    if (!groups.has(key)) groups.set(key, { label: monthLabel(ev.date), events: [] });
+    groups.get(key).events.push(ev);
+  }
+  return [...groups.values()];
+}
+
+function renderArchive(query) {
+  const root = document.getElementById('archive-root');
+  const q = (query || '').trim().toLowerCase();
+  const filtered = q
+    ? PAST.filter(ev => (
+        (ev.name + ' ' + ev.organizer + ' ' + ev.agent_name + ' ' + ev.location)
+          .toLowerCase().includes(q)))
+    : PAST;
+  if (filtered.length === 0) {
+    root.innerHTML = `<div class="empty"><p>${q ? 'No past events match your search.' : 'No past events yet.'}</p></div>`;
+    return;
+  }
+  let idx = 0;
+  root.innerHTML = groupByMonth(filtered).map(g => `
+    <section class="month-section">
+      <h3 class="month-header">${escapeHTML(g.label)}</h3>
+      ${g.events.map(ev => renderCard(ev, idx++)).join('')}
+    </section>
+  `).join('');
+}
+
+function initArchive() {
+  const section = document.getElementById('archive');
+  if (!PAST.length) return;               // nothing to show — leave it hidden
+  section.hidden = false;
+  document.getElementById('archive-count').textContent = PAST.length;
+
+  const toggle = document.getElementById('archive-toggle');
+  const body = document.getElementById('archive-body');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    body.hidden = open;
+    if (!open && !ARCHIVE_RENDERED) { renderArchive(''); ARCHIVE_RENDERED = true; }
+  });
+
+  const search = document.getElementById('archive-search');
+  let t;
+  search.addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(() => renderArchive(search.value), 120);
+  });
+}
+
 fetch('data/events.json', { cache: 'no-store' })
   .then(r => {
     if (!r.ok) throw new Error('Failed to load events data');
@@ -1510,8 +1634,10 @@ fetch('data/events.json', { cache: 'no-store' })
   })
   .then(data => {
     EVENTS = data.events || [];
+    PAST = data.past || [];
     updateCounts(EVENTS);
     render(EVENTS, CURRENT_FILTER, SHOW_ONLINE);
+    initArchive();
     const meta = document.getElementById('footer-meta');
     if (data.generated_at) {
       meta.textContent = `${EVENTS.length} event${EVENTS.length === 1 ? '' : 's'} · Updated ${new Date(data.generated_at).toLocaleString('en-GB')}`;
