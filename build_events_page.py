@@ -221,8 +221,8 @@ VIETNAM = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "Nếu bạn có thắc mắc về quyền riêng tư hoặc muốn xóa dữ liệu của mình, hãy liên hệ chúng tôi tại info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Vietnam — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Vietnam — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Vietnam.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -321,8 +321,8 @@ TAIWAN = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "如果你對隱私有任何疑問，或希望刪除你的資料，請來信 info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Taiwan — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Taiwan — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Taiwan.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -419,8 +419,8 @@ HONGKONG = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "如果你對私隱有任何疑問，或希望刪除你的資料，請電郵 info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Hong Kong — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Hong Kong — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Hong Kong.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -519,8 +519,8 @@ INDONESIA = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "Jika Anda memiliki pertanyaan tentang privasi atau ingin data Anda dihapus, hubungi kami di info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Indonesia — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Indonesia — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Indonesia.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -618,8 +618,8 @@ MALAYSIA = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "Jika anda mempunyai sebarang pertanyaan tentang privasi atau ingin data anda dipadam, hubungi kami di info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Malaysia — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Malaysia — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Malaysia.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -785,8 +785,8 @@ CAMBODIA = Country(
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "ប្រសិនបើអ្នកមានសំណួរអំពីឯកជនភាព ឬចង់ឱ្យលុបទិន្នន័យរបស់អ្នក សូមទាក់ទងមកយើងតាម info@studyeventz.com",
         # ── Country-specific English copy ──
-        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
-            "studyeventz is an independent guide to study abroad events in Cambodia — fairs, webinars and briefings gathered weekly.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Cambodia — fairs, webinars and briefings gathered weekly.",
         "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
             "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Cambodia.",
         'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
@@ -904,7 +904,7 @@ def render_notify_banner(country: "Country") -> str:
     )
 
 
-def _english_only(html: str) -> str:
+def _english_only(html: str, country: "Country") -> str:
     """Render an English-native market (Ghana, Nigeria, …): strip the bilingual
     native-language (Thai) counterparts, leaving only the English text. The base
     template mixes several bilingual patterns, each handled in order below."""
@@ -923,6 +923,16 @@ def _english_only(html: str) -> str:
     html = re.sub(TH + r'[^<>/\n\'"]*?\s*/\s*', '', html)
     # 6. Any remaining standalone Thai run (e.g. a trailing JS string) -> drop.
     html = re.sub(r'\s*' + TH + r'+', '', html)
+    # 7. Country-specific English copy is swapped per-market via the translation
+    #    maps for localised markets; english_only has no map, so apply the same
+    #    Thailand → this-market substitutions directly.
+    name = country.name_en
+    html = html.replace(
+        "study abroad events in Thailand — fairs, webinars and briefings gathered weekly.",
+        f"study abroad events in {name} — fairs, webinars and briefings gathered weekly.")
+    html = html.replace("Free for organizers in Thailand.", f"Free for organizers in {name}.")
+    placeholder_city = f"{country.local_filter_label}, {name}" if country.local_filter_label else name
+    html = html.replace('e.g. "Bangkok, Thailand" or "Online"', f'e.g. "{placeholder_city}" or "Online"')
     return html
 
 
@@ -933,7 +943,7 @@ def localize(html: str, country: "Country") -> str:
     no-op and its output is unchanged. English-only markets strip the native
     counterparts instead of translating."""
     if country.english_only:
-        return _english_only(html)
+        return _english_only(html, country)
     for src in sorted(country.translations, key=len, reverse=True):
         html = html.replace(src, country.translations[src])
     if country.primary_lang != "th":
@@ -2379,7 +2389,7 @@ ABOUT_HTML = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About — studyeventz</title>
-<meta name="description" content="studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.">
+<meta name="description" content="studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.">
 <meta name="description" lang="th" content="studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย">
 <link rel="canonical" href="__SITE_URL__/about.html">
 
@@ -2489,7 +2499,7 @@ ABOUT_HTML = r"""<!doctype html>
 <main class="about-content">
   <section class="about-pair">
     <p class="th" lang="th">studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์</p>
-    <p>studyeventz is an independent guide to study abroad events — university fairs, information days, open days and scholarship deadlines — gathered in one place and updated every week.</p>
+    <p>studyeventz is an independent listing of study abroad events — university fairs, information days, open days and scholarship deadlines — gathered in one place and updated every week.</p>
   </section>
 
   <section class="about-pair">
@@ -3372,7 +3382,7 @@ INDEX_HTML = r"""<!doctype html>
 
 <main class="picker">
   <div class="brand">studyevent<span class="gold">z</span></div>
-  <p class="tagline">An independent guide to study abroad events.</p>
+  <p class="tagline">An independent listing of study abroad events.</p>
 
   <p class="picker-prompt">Choose your market</p>
   <div class="country-grid" id="country-grid">
