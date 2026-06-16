@@ -90,6 +90,8 @@ class Country:
     @property
     def submit_out(self) -> Path:     return self.root / "submit.html"
     @property
+    def privacy_out(self) -> Path:    return self.root / "privacy.html"
+    @property
     def json_out(self) -> Path:       return self.root / "data" / "events.json"
     # Per-country public URLs
     @property
@@ -201,6 +203,18 @@ VIETNAM = Country(
         "หมายเหตุเพิ่มเติม": "Ghi chú thêm",
         "ส่ง": "Gửi",
         "ขอบคุณค่ะ": "Xin cảm ơn!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "Chính sách quyền riêng tư",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz tôn trọng quyền riêng tư của bạn. Chúng tôi không dùng cookie, không dùng công cụ theo dõi quảng cáo, và không bao giờ bán dữ liệu của bạn.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Chúng tôi lưu một lượng nhỏ dữ liệu trong trình duyệt của bạn để ghi nhớ thị trường bạn đã chọn và để tạm giữ số liệu sử dụng ẩn danh trước khi gửi đi. Dữ liệu này nằm trên thiết bị của bạn và bạn có thể xóa bất cứ lúc nào qua cài đặt trình duyệt.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Chúng tôi thu thập số liệu sử dụng ẩn danh — chẳng hạn những trang được xem và sự kiện được nhấp — để cải thiện danh sách. Máy chủ của chúng tôi ghi lại loại trình duyệt, trang giới thiệu, và địa chỉ IP của bạn ở dạng băm một chiều. Chúng tôi không bao giờ lưu địa chỉ IP thật và không nhận dạng bạn theo cá nhân.",
+        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Chúng tôi tải phông chữ từ Google Fonts, nghĩa là Google có thể nhận địa chỉ IP của bạn, và trang web này chạy trên hạ tầng Cloudflare — đơn vị xử lý dữ liệu cho chúng tôi. Chúng tôi không dùng Google Analytics, Meta Pixel, hay bất kỳ mạng quảng cáo nào.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Nếu bạn có thắc mắc về quyền riêng tư hoặc muốn xóa dữ liệu của mình, hãy liên hệ chúng tôi tại info@studyeventz.com",
         # ── Country-specific English copy ──
         "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
             "studyeventz is an independent guide to study abroad events in Vietnam — fairs, webinars and briefings gathered weekly.",
@@ -289,6 +303,18 @@ TAIWAN = Country(
         "หมายเหตุเพิ่มเติม": "其他備註",
         "ส่ง": "送出",
         "ขอบคุณค่ะ": "感謝你！",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "隱私權政策",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz 重視你的隱私。我們不使用 Cookie、不使用廣告追蹤工具，也絕不販售你的資料。",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "我們會在你的瀏覽器中儲存少量資料，用來記住你選擇的市場，並在傳送前暫存匿名的使用統計。這些資料存放在你的裝置上，你可以隨時透過瀏覽器設定清除。",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "我們收集匿名的使用統計——例如哪些頁面被瀏覽、哪些活動被點擊——以改善清單內容。我們的伺服器會記錄瀏覽器類型、來源頁面，以及經單向雜湊處理的 IP 位址。我們絕不儲存你真實的 IP 位址，也不會辨識你的個人身分。",
+        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "我們透過 Google Fonts 載入字型，因此 Google 可能會取得你的 IP 位址；本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "如果你對隱私有任何疑問，或希望刪除你的資料，請來信 info@studyeventz.com",
         # ── Country-specific English copy ──
         "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
             "studyeventz is an independent guide to study abroad events in Taiwan — fairs, webinars and briefings gathered weekly.",
@@ -375,6 +401,18 @@ HONGKONG = Country(
         "หมายเหตุเพิ่มเติม": "其他備註",
         "ส่ง": "提交",
         "ขอบคุณค่ะ": "多謝！",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "私隱政策",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz 重視你的私隱。我們不使用 Cookie、不使用廣告追蹤工具，亦絕不出售你的資料。",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "我們會在你的瀏覽器中儲存少量資料，用以記住你所選的市場，並在傳送前暫存匿名的使用統計。這些資料存放於你的裝置上，你可隨時透過瀏覽器設定清除。",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "我們收集匿名的使用統計——例如哪些頁面被瀏覽、哪些活動被點擊——以改善清單內容。我們的伺服器會記錄瀏覽器類型、來源頁面，以及經單向雜湊處理的 IP 位址。我們絕不儲存你真實的 IP 位址，亦不會識別你的個人身分。",
+        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "我們透過 Google Fonts 載入字型，因此 Google 可能會取得你的 IP 位址；本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "如果你對私隱有任何疑問，或希望刪除你的資料，請電郵 info@studyeventz.com",
         # ── Country-specific English copy ──
         "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
             "studyeventz is an independent guide to study abroad events in Hong Kong — fairs, webinars and briefings gathered weekly.",
@@ -627,6 +665,10 @@ def write_seo_files() -> None:
         urls.append(
             f"  <url><loc>{c.site_url}/submit.html</loc><lastmod>{today}</lastmod>"
             f"<changefreq>monthly</changefreq><priority>0.4</priority></url>"
+        )
+        urls.append(
+            f"  <url><loc>{c.site_url}/privacy.html</loc><lastmod>{today}</lastmod>"
+            f"<changefreq>yearly</changefreq><priority>0.3</priority></url>"
         )
     SITEMAP_OUT.write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1178,6 +1220,7 @@ __JSON_LD__
       <a href="events.html" class="active">Events</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
@@ -1969,6 +2012,7 @@ ABOUT_HTML = r"""<!doctype html>
       <a href="events.html">Events</a>
       <a href="about.html" class="active">About Us</a>
       <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
@@ -2023,6 +2067,165 @@ def build_about_html(country: "Country") -> None:
         html = html.replace(ph, val)
     country.root.mkdir(parents=True, exist_ok=True)
     country.about_out.write_text(html, encoding="utf-8")
+
+
+PRIVACY_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — studyeventz</title>
+<meta name="description" content="How studyeventz handles your data — no cookies, no advertising trackers, anonymous analytics only.">
+<link rel="canonical" href="__SITE_URL__/privacy.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+
+<style>
+  :root {
+    --teal: #0d7377; --teal-dark: #095a5d; --gold: #f4a825;
+    --ink: #0d2233; --bg: #f5f7f9; --text: #1a2530;
+    --muted: #5d6b78; --border: #e2e8ed;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6;
+         padding-bottom: 92px; }
+  [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
+                              -apple-system, BlinkMacSystemFont, sans-serif; }
+
+  .site-header { background: var(--teal); color: #fff; }
+  .header-bar { max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem;
+                display: flex; align-items: center; justify-content: space-between;
+                gap: 1.5rem; flex-wrap: wrap; }
+  .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
+  .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit; transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
+  .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,.85); text-decoration: none;
+           padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
+           transition: background .15s, color .15s; }
+  .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
+  .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
+
+  .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
+  .about-hero-inner { max-width: 760px; margin: 0 auto; }
+  .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
+  .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
+                               line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
+
+  .about-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+  .about-pair { margin-bottom: 2rem; }
+  .about-pair p { font-size: 1.05rem; margin: 0; }
+  .about-pair p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
+  .about-pair p:not(.th) { color: var(--muted); }
+  .privacy-updated { color: var(--muted); font-size: .9rem; margin-top: 2.5rem;
+                     border-top: 1px solid var(--border); padding-top: 1.5rem; }
+
+  .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
+                 background: var(--teal); color: var(--gold);
+                 padding: 1.25rem 1rem; z-index: 50;
+                 box-shadow: 0 -2px 8px rgba(13,34,51,.15);
+                 display: flex; align-items: center; justify-content: center; gap: .8rem; }
+  .line-banner a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  .line-banner a:hover { text-decoration: underline; }
+  .line-banner-text { font-size: 1.02rem; }
+  .line-banner-handle { background: rgba(244, 168, 37, .15);
+                        border: 1px solid rgba(244, 168, 37, .35);
+                        padding: .2rem .65rem; border-radius: 14px;
+                        font-size: .9rem; margin-left: .25rem; }
+  .line-icon { width: 30px; height: 30px; flex-shrink: 0; }
+
+  @media (max-width: 640px) {
+    .header-bar { padding: .8rem 1rem; }
+    .brand { font-size: 1.4rem; }
+    .about-hero { padding: 1.5rem 1rem 1.7rem; }
+    .about-hero h1 { font-size: 1.5rem; }
+    .about-hero .hero-th-title { font-size: 1.95rem; }
+    .about-content { padding: 2rem 1.1rem 2.5rem; }
+    .about-pair p { font-size: .98rem; }
+    .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
+    .line-banner-text { font-size: .92rem; text-align: center; }
+    .line-icon { width: 26px; height: 26px; }
+    body { padding-bottom: 115px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">__COUNTRY_FLAG__</span></a>
+    <nav class="nav">
+      <a href="events.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html" class="active">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <p class="hero-th-title" lang="th">นโยบายความเป็นส่วนตัว</p>
+    <h1>Privacy</h1>
+  </div>
+</section>
+
+<main class="about-content">
+  <section class="about-pair">
+    <p class="th" lang="th">studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ</p>
+    <p>studyeventz respects your privacy. We don't use cookies, we don't use advertising trackers, and we never sell your data.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="th">เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์</p>
+    <p>We store a small amount of data in your browser to remember the market you chose and to hold anonymous usage statistics before they are sent. This data stays on your device and you can clear it at any time through your browser settings.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="th">เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล</p>
+    <p>We collect anonymous usage statistics — such as which pages are viewed and which events are clicked — to improve the listings. Our servers log your browser type, the referring page, and your IP address in a one-way hashed form. We never store your real IP address and we do not identify you personally.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="th">เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ</p>
+    <p>We load fonts from Google Fonts, which means Google may receive your IP address, and this site runs on Cloudflare infrastructure, which acts as our data processor. We do not use Google Analytics, the Meta Pixel, or any advertising networks.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="th">หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com</p>
+    <p>If you have any questions about privacy or would like your data removed, contact us at <a href="mailto:info@studyeventz.com" style="color:var(--teal);font-weight:600">info@studyeventz.com</a>.</p>
+  </section>
+
+  <p class="privacy-updated">Last updated: June 2026.</p>
+</main>
+
+__NOTIFY_BANNER__
+
+</body>
+</html>
+"""
+
+
+def build_privacy_html(country: "Country") -> None:
+    """Write <country.code>/privacy.html — a static localised Privacy page."""
+    html = localize(PRIVACY_HTML, country)
+    for ph, val in {
+        "__SITE_URL__":       country.site_url,
+        "__COUNTRY_SITE__":   country.site_url,
+        "__COUNTRY_CODE__":   country.code,
+        "__COUNTRY_NAME__":   country.name_en,
+        "__COUNTRY_FLAG__":   country.flag,
+        "__NOTIFY_BANNER__":  render_notify_banner(country),
+    }.items():
+        html = html.replace(ph, val)
+    country.root.mkdir(parents=True, exist_ok=True)
+    country.privacy_out.write_text(html, encoding="utf-8")
 
 
 CONTACT_HTML = r"""<!doctype html>
@@ -2146,6 +2349,7 @@ CONTACT_HTML = r"""<!doctype html>
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
       <a href="contact.html" class="active">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
@@ -2351,6 +2555,7 @@ SUBMIT_HTML = r"""<!doctype html>
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
@@ -2925,6 +3130,7 @@ def main() -> int:
         build_about_html(c)
         build_contact_html(c)
         build_submit_html(c)
+        build_privacy_html(c)
         grand_total_events += n
         print(f"[{c.code}] {n} events, {char_count} characters ({mode})")
 

@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — studyeventz</title>
-<meta name="description" content="Contact studyeventz to list a study abroad event, report a correction, or explore a partnership. Email info@studyeventz.com.">
-<meta name="description" lang="zh-Hant" content="聯絡 studyeventz：新增活動、回報資料更正，或與我們合作">
-<link rel="canonical" href="https://www.studyeventz.com/contact.html">
+<title>Privacy — studyeventz</title>
+<meta name="description" content="How studyeventz handles your data — no cookies, no advertising trackers, anonymous analytics only.">
+<link rel="canonical" href="https://www.studyeventz.com/hongkong/privacy.html">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +24,6 @@
   [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
                               -apple-system, BlinkMacSystemFont, sans-serif; }
 
-  /* Header */
   .site-header { background: var(--teal); color: #fff; }
   .header-bar { max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem;
                 display: flex; align-items: center; justify-content: space-between;
@@ -33,8 +31,7 @@
   .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
   .brand .gold { color: var(--gold); }
   .brand-link { display: inline-flex; align-items: center; gap: .55rem;
-                text-decoration: none; color: inherit;
-                transition: opacity .15s; }
+                text-decoration: none; color: inherit; transition: opacity .15s; }
   .brand-link:hover { opacity: .85; }
   .brand-flag { font-size: 1.3rem; line-height: 1; }
   .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
@@ -44,42 +41,20 @@
   .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
   .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
 
-  /* Hero */
   .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
   .about-hero-inner { max-width: 760px; margin: 0 auto; }
   .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
   .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
                                line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
 
-  /* Body */
   .about-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+  .about-pair { margin-bottom: 2rem; }
+  .about-pair p { font-size: 1.05rem; margin: 0; }
+  .about-pair p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
+  .about-pair p:not(.th) { color: var(--muted); }
+  .privacy-updated { color: var(--muted); font-size: .9rem; margin-top: 2.5rem;
+                     border-top: 1px solid var(--border); padding-top: 1.5rem; }
 
-  /* Intro (with prominent email CTA) */
-  .contact-intro { margin-bottom: 2.5rem; padding-bottom: 2.5rem;
-                   border-bottom: 1px solid var(--border); }
-  .contact-intro p { font-size: 1.05rem; margin: 0; }
-  .contact-intro p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
-  .contact-intro p:not(.th) { color: var(--muted); margin-bottom: 1.5rem; }
-  .email-btn { display: inline-block; background: var(--teal); color: #fff;
-               padding: .85rem 1.4rem; border-radius: 8px;
-               font-size: 1.05rem; font-weight: 600; text-decoration: none;
-               transition: background .15s; }
-  .email-btn:hover { background: var(--teal-dark); }
-
-  /* Sub-categories */
-  .contact-category { margin-bottom: 2rem; }
-  .contact-category .th-title { color: var(--gold); font-size: 1.2rem;
-                                font-weight: 700; margin: 0 0 .1rem 0;
-                                line-height: 1.3; }
-  .contact-category .en-title { color: var(--teal); font-size: 1rem;
-                                font-weight: 700; text-transform: uppercase;
-                                letter-spacing: .04em; margin: 0 0 .65rem 0;
-                                line-height: 1.3; }
-  .contact-category p { font-size: 1rem; margin: 0; }
-  .contact-category p.th { color: var(--text); margin-bottom: .35rem; }
-  .contact-category p:not(.th) { color: var(--muted); }
-
-  /* LINE banner */
   .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
                  background: var(--teal); color: var(--gold);
                  padding: 1.25rem 1rem; z-index: 50;
@@ -101,8 +76,7 @@
     .about-hero h1 { font-size: 1.5rem; }
     .about-hero .hero-th-title { font-size: 1.95rem; }
     .about-content { padding: 2rem 1.1rem 2.5rem; }
-    .contact-intro p, .contact-category p { font-size: .98rem; }
-    .email-btn { font-size: 1rem; padding: .75rem 1.2rem; }
+    .about-pair p { font-size: .98rem; }
     .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
     .line-banner-text { font-size: .92rem; text-align: center; }
     .line-icon { width: 26px; height: 26px; }
@@ -118,49 +92,46 @@
     <nav class="nav">
       <a href="events.html">Events</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html" class="active">Contact Us</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html" class="active">Privacy</a>
     </nav>
   </div>
 </header>
 
 <section class="about-hero">
   <div class="about-hero-inner">
-    <p class="hero-th-title" lang="zh-Hant">聯絡我們</p>
-    <h1>Contact Us</h1>
+    <p class="hero-th-title" lang="zh-Hant">私隱政策</p>
+    <h1>Privacy</h1>
   </div>
 </section>
 
 <main class="about-content">
-
-  <section class="contact-intro">
-    <p class="th" lang="zh-Hant">有想讓我們收錄的活動、發現過時的資訊，或想與我們合作嗎？歡迎電郵：<a href="mailto:info@studyeventz.com" style="color:inherit;font-weight:600">info@studyeventz.com</a>，我們會盡快回覆你。</p>
-    <p>Have an event we should list, spotted something out of date, or want to work with us? Email us at <a href="mailto:info@studyeventz.com" style="color:inherit;font-weight:600">info@studyeventz.com</a> and we'll get back to you.</p>
-    <a class="email-btn" href="mailto:info@studyeventz.com">✉  info@studyeventz.com</a>
+  <section class="about-pair">
+    <p class="th" lang="zh-Hant">studyeventz 重視你的私隱。我們不使用 Cookie、不使用廣告追蹤工具，亦絕不出售你的資料。</p>
+    <p>studyeventz respects your privacy. We don't use cookies, we don't use advertising trackers, and we never sell your data.</p>
   </section>
 
-  <section class="contact-category">
-    <h2 class="th-title" lang="zh-Hant">新增活動</h2>
-    <h2 class="en-title">List an event</h2>
-    <p class="th" lang="zh-Hant">如果你正在籌辦留學展、開放日或說明會，把詳情寄給我們，我們就會加入清單。</p>
-    <p>Running a study abroad fair, open day or info session? Send us the details and we'll add it.</p>
-    <p style="margin-top:.65rem"><a href="submit.html" style="color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor">→ 提交活動 / Submit your event</a></p>
+  <section class="about-pair">
+    <p class="th" lang="zh-Hant">我們會在你的瀏覽器中儲存少量資料，用以記住你所選的市場，並在傳送前暫存匿名的使用統計。這些資料存放於你的裝置上，你可隨時透過瀏覽器設定清除。</p>
+    <p>We store a small amount of data in your browser to remember the market you chose and to hold anonymous usage statistics before they are sent. This data stays on your device and you can clear it at any time through your browser settings.</p>
   </section>
 
-  <section class="contact-category">
-    <h2 class="th-title" lang="zh-Hant">回報資料更正</h2>
-    <h2 class="en-title">Report a correction</h2>
-    <p class="th" lang="zh-Hant">發現日期有誤或連結失效？告訴我們，我們會盡快修正。</p>
-    <p>Found a wrong date or a dead link? Let us know and we'll fix it.</p>
+  <section class="about-pair">
+    <p class="th" lang="zh-Hant">我們收集匿名的使用統計——例如哪些頁面被瀏覽、哪些活動被點擊——以改善清單內容。我們的伺服器會記錄瀏覽器類型、來源頁面，以及經單向雜湊處理的 IP 位址。我們絕不儲存你真實的 IP 位址，亦不會識別你的個人身分。</p>
+    <p>We collect anonymous usage statistics — such as which pages are viewed and which events are clicked — to improve the listings. Our servers log your browser type, the referring page, and your IP address in a one-way hashed form. We never store your real IP address and we do not identify you personally.</p>
   </section>
 
-  <section class="contact-category">
-    <h2 class="th-title" lang="zh-Hant">合作</h2>
-    <h2 class="en-title">Partnerships</h2>
-    <p class="th" lang="zh-Hant">如果你有意把 studyeventz 帶入新市場，或想在我們已涵蓋的市場與我們合作，歡迎聯絡我們。</p>
-    <p>If you'd like to bring studyeventz to a new market, or partner with us in one we already cover, get in touch.</p>
+  <section class="about-pair">
+    <p class="th" lang="zh-Hant">我們透過 Google Fonts 載入字型，因此 Google 可能會取得你的 IP 位址；本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。</p>
+    <p>We load fonts from Google Fonts, which means Google may receive your IP address, and this site runs on Cloudflare infrastructure, which acts as our data processor. We do not use Google Analytics, the Meta Pixel, or any advertising networks.</p>
   </section>
 
+  <section class="about-pair">
+    <p class="th" lang="zh-Hant">如果你對私隱有任何疑問，或希望刪除你的資料，請電郵 info@studyeventz.com</p>
+    <p>If you have any questions about privacy or would like your data removed, contact us at <a href="mailto:info@studyeventz.com" style="color:var(--teal);font-weight:600">info@studyeventz.com</a>.</p>
+  </section>
+
+  <p class="privacy-updated">Last updated: June 2026.</p>
 </main>
 
 <aside class="line-banner" role="contentinfo" aria-label="Email updates">
