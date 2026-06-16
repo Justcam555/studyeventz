@@ -1,7 +1,7 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-06-16T10:07:00",
+  "generated_at": "2026-06-16T11:09:36",
   "window": {
     "from": "2026-06-16",
     "to": "2026-07-16"
@@ -12,7 +12,7 @@
   },
   "events": [
     {
-      "id": 708,
+      "id": 716,
       "name": "UK Sep Intake Webinar – South Asia (India, Nepal, Sri Lanka, Pakistan)",
       "date": "2026-06-16",
       "time": "",
@@ -28,7 +28,23 @@
       "initials": "GS"
     },
     {
-      "id": 710,
+      "id": 718,
+      "name": "The University of Law: More Than Law, Built for Career Success",
+      "date": "2026-06-16",
+      "time": "7:00 AM EDT / 4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
+    {
+      "id": 723,
       "name": "Curtin University Open Day 2026",
       "date": "2026-06-18",
       "time": "3:00 PM",
@@ -36,7 +52,7 @@
       "organizer": "Australian Business Education Centre (Pvt) Ltd",
       "agent_name": "Australian Business Education Centre (Pvt) Ltd",
       "agent_country": "Sri Lanka",
-      "agent_website": "http://www.abec.lk/index.php",
+      "agent_website": "www.abec.lk",
       "registration_url": "https://abec.lk/event/curtin-university-open-day-2026/",
       "logo_url": "",
       "logo_needs_bg": false,
@@ -44,7 +60,23 @@
       "initials": "AB"
     },
     {
-      "id": 711,
+      "id": 714,
+      "name": "JCU Singapore University Visit",
+      "date": "2026-06-19",
+      "time": "04:00 PM to 05:00 PM",
+      "location": "VIEC-Goa (Office)",
+      "organizer": "VIEC",
+      "agent_name": "VIEC",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.vieceducation.com/sri-lanka-kandy",
+      "registration_url": "https://www.vieceducation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "VI"
+    },
+    {
+      "id": 726,
       "name": "Spot Admissions Day",
       "date": "2026-06-19",
       "time": "3:30 PM - 7:30 PM",
@@ -60,7 +92,23 @@
       "initials": "OE"
     },
     {
-      "id": 706,
+      "id": 719,
+      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
+      "date": "2026-06-19",
+      "time": "8:00 AM EDT / 5:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
+    {
+      "id": 713,
       "name": "World Education Fair – Mid Year Edition (Kurunegala)",
       "date": "2026-06-20",
       "time": "11:00 AM – 4:00 PM",
@@ -76,7 +124,39 @@
       "initials": "CD"
     },
     {
-      "id": 705,
+      "id": 717,
+      "name": "Manipal University Malaysia - Medicine - Open Day",
+      "date": "2026-06-23",
+      "time": "2 pm to 5 pm",
+      "location": "Rivil Office - Mount Lavinia, Sri Lanka",
+      "organizer": "Rivil International (Pvt) Ltd",
+      "agent_name": "Rivil International (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.riviledu.com",
+      "registration_url": "https://www.riviledu.com/events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "RI"
+    },
+    {
+      "id": 721,
+      "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
+      "date": "2026-06-23",
+      "time": "7:00 AM EDT / 4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
+    {
+      "id": 712,
       "name": "Virtual France Application Day",
       "date": "2026-06-24",
       "time": "3 PM - 5 PM",
@@ -90,6 +170,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GR"
+    },
+    {
+      "id": 722,
+      "name": "University of Canada West and University of North Florida: Refresher course for ApplyBoard India Partners",
+      "date": "2026-06-25",
+      "time": "4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
     }
   ],
   "past": []

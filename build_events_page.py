@@ -3296,13 +3296,21 @@ INDEX_HTML = r"""<!doctype html>
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-         background: var(--teal-dark); color: #fff; min-height: 100vh;
+         color: #fff; min-height: 100vh;
          display: flex; flex-direction: column; align-items: center; justify-content: center;
-         padding: 2rem 1.5rem; }
+         padding: 2.5rem 1.5rem; position: relative; overflow-x: hidden;
+         background: radial-gradient(1200px 620px at 50% -8%, #11999e 0%, var(--teal-dark) 52%, #06343a 100%); }
   [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
                               -apple-system, BlinkMacSystemFont, sans-serif; }
 
-  .picker { max-width: 540px; width: 100%; text-align: center; }
+  /* Brand character illustrations as a faint backdrop (own assets, no third party) */
+  .bg-char { position: fixed; bottom: 0; z-index: 0; pointer-events: none;
+             opacity: .12; height: min(46vh, 430px); filter: saturate(.85); user-select: none; }
+  .bg-char.left  { left: -2.5vw; }
+  .bg-char.right { right: -2.5vw; transform: scaleX(-1); }
+  @media (max-width: 860px) { .bg-char { display: none; } }
+
+  .picker { max-width: 960px; width: 100%; text-align: center; position: relative; z-index: 1; }
   .brand { font-size: 2.2rem; font-weight: 800; letter-spacing: -.02em;
            color: #fff; margin-bottom: .5rem; }
   .brand .gold { color: var(--gold); }
@@ -3314,12 +3322,14 @@ INDEX_HTML = r"""<!doctype html>
                    letter-spacing: .12em; color: rgba(255,255,255,.7);
                    margin-bottom: 1rem; }
 
-  .country-grid { display: grid; gap: .8rem; }
-  .country-tile { background: rgba(255,255,255,.08);
+  .country-grid { display: grid; gap: .8rem;
+                  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr)); }
+  .country-tile { background: rgba(255,255,255,.07);
+                  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
                   border: 1px solid rgba(255,255,255,.15);
                   border-radius: 12px;
-                  padding: 1.3rem 1.5rem;
-                  display: flex; align-items: center; gap: 1.1rem;
+                  padding: 1.1rem 1.3rem;
+                  display: flex; align-items: center; gap: 1rem;
                   color: #fff; text-decoration: none;
                   transition: background .15s, transform .15s, border-color .15s; }
   .country-tile:hover { background: rgba(255,255,255,.13);
@@ -3356,6 +3366,9 @@ INDEX_HTML = r"""<!doctype html>
 </style>
 </head>
 <body>
+
+<img class="bg-char left" src="/assets/characters/studyeventz%202.png" alt="" aria-hidden="true" loading="lazy">
+<img class="bg-char right" src="/assets/characters/studyeventz%209.png" alt="" aria-hidden="true" loading="lazy">
 
 <main class="picker">
   <div class="brand">studyevent<span class="gold">z</span></div>
@@ -3399,7 +3412,8 @@ def build_index_html(counts: dict | None = None) -> None:
     number of upcoming events, shown as a badge on each tile."""
     counts = counts or {}
     tiles: list[str] = []
-    for c in COUNTRIES:
+    # Alphabetical by English name — predictable scanning across many markets.
+    for c in sorted(COUNTRIES, key=lambda c: c.name_en):
         n = counts.get(c.code, 0)
         # Gold sub-line: native name only when it differs from the English name
         # (so English-native markets don't show "India / India"), plus a live
