@@ -28,14 +28,8 @@
      (gradient mask on the right + top so there are no hard image-box edges). */
   .bg-char { position: fixed; bottom: 0; left: 0; z-index: 0; pointer-events: none;
              height: min(91vh, 850px); opacity: .2; user-select: none;
-             -webkit-mask-image:
-               linear-gradient(to right, #000 0%, #000 35%, transparent 100%),
-               linear-gradient(to top, #000 50%, transparent 100%);
-             -webkit-mask-composite: source-in;
-             mask-image:
-               linear-gradient(to right, #000 0%, #000 35%, transparent 100%),
-               linear-gradient(to top, #000 50%, transparent 100%);
-             mask-composite: intersect; }
+             -webkit-mask-image: linear-gradient(to right, #000 0%, #000 35%, transparent 100%);
+             mask-image: linear-gradient(to right, #000 0%, #000 35%, transparent 100%); }
   @media (max-width: 860px) { .bg-char { display: none; } }
 
   .picker { max-width: 960px; width: 100%; text-align: center; position: relative; z-index: 1; }
