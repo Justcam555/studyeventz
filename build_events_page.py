@@ -423,8 +423,207 @@ HONGKONG = Country(
     },
 )
 
+# ─── Indonesia ───────────────────────────────────────────────────────────────
+# Bahasa Indonesia (id). AI-DRAFTED demo/placeholder copy — flag for native
+# review before launch.
+INDONESIA = Country(
+    code="indonesia",
+    name_en="Indonesia",
+    name_native="Indonesia",
+    flag="🇮🇩",
+    primary_lang="id",
+    iso2="ID",
+    agent_db_match="%Indonesia%",
+    timezone="Asia/Jakarta",
+    title="Acara Studi ke Luar Negeri di Indonesia | Pameran Universitas & Webinar | StudyEventz",
+    meta_desc_en=("Find study abroad events in Indonesia — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="Temukan acara studi ke luar negeri di Indonesia — pameran, webinar, dan sesi informasi. Diperbarui setiap minggu.",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Dapatkan info acara terbaru setiap minggu → email kami",
+    local_filter_label="Jakarta",
+    local_filter_match="jakarta",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "Kumpulan acara studi ke luar negeri di Indonesia",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Pameran universitas, webinar, dan acara studi ke luar negeri — semua dalam satu tempat.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Diperbarui setiap minggu dengan acara dalam 30 hari ke depan.",
+        "ตัวกรอง": "Filter",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz mengumpulkan acara studi ke luar negeri dari konsultan pendidikan di seluruh Indonesia. Diperbarui setiap Senin.",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz adalah panduan independen untuk menemukan acara studi ke luar negeri di Indonesia",
+        "เกี่ยวกับเรา": "Tentang Kami",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz adalah panduan independen untuk menemukan acara studi ke luar negeri — pameran universitas, hari informasi, open day, dan tenggat beasiswa — dikumpulkan dalam satu tempat dan diperbarui setiap minggu.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Biasanya, menemukan acara seperti ini berarti menyisir puluhan halaman Facebook, situs konsultan, dan kalender acara berbagai universitas. Kami melakukannya secara otomatis: setiap minggu kami mengumpulkan acara dari konsultan pendidikan dan mitra universitas di seluruh pasar, memeriksa dan menghapus duplikat, lalu menerbitkan daftar yang bersih, jelas, dan dapat diandalkan.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Kami memulai di Thailand, tempat ratusan acara studi ke luar negeri berlangsung setiap tahun tanpa satu pun tempat terpusat untuk menemukannya. Kami independen — tidak mewakili universitas atau konsultan tertentu, jadi yang Anda lihat adalah gambaran lengkap dari berbagai pilihan, bukan promosi satu perusahaan saja.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "Tertarik membawa studyeventz ke pasar Anda? Kami senang berbincang dengan Anda.",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Hubungi studyeventz untuk menambahkan acara, melaporkan koreksi, atau bekerja sama dengan kami",
+        "ติดต่อเรา": "Hubungi Kami",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "Punya acara yang sebaiknya kami tambahkan, menemukan informasi yang sudah usang, atau ingin bekerja sama? Kirim email ke ",
+        " แล้วเราจะติดต่อกลับไป": " dan kami akan menghubungi Anda kembali.",
+        "แจ้งเพิ่มกิจกรรม": "Tambahkan Acara",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Jika Anda menyelenggarakan pameran studi ke luar negeri, open day, atau sesi informasi, kirimkan detailnya dan kami akan menambahkannya ke daftar.",
+        "ส่งงานเข้ามา": "Kirim Acara",
+        "แจ้งแก้ไขข้อมูล": "Laporkan Koreksi",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "Menemukan tanggal yang salah atau tautan rusak? Beri tahu kami dan kami akan segera memperbaikinya.",
+        "ความร่วมมือ": "Kemitraan",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "Jika Anda tertarik membawa studyeventz ke pasar baru, atau bermitra dengan kami di pasar yang sudah kami liput, silakan hubungi kami.",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "Kirim acara studi ke luar negeri ke studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Isi detail di bawah ini. Kami akan meninjau dan menambahkannya ke daftar. Gratis untuk penyelenggara.",
+        "รายละเอียดกิจกรรม": "Detail Acara",
+        "ผู้จัด": "Penyelenggara",
+        "ชื่อกิจกรรม": "Nama Acara",
+        "วันที่": "Tanggal",
+        "เวลา": "Waktu",
+        "สถานที่": "Lokasi",
+        "ลิงก์ลงทะเบียน": "Tautan Pendaftaran",
+        "ข้อมูลผู้แจ้ง": "Informasi Pengirim",
+        "ชื่อ": "Nama",
+        "อีเมล": "Email",
+        "หมายเหตุเพิ่มเติม": "Catatan Tambahan",
+        "ส่ง": "Kirim",
+        "ขอบคุณค่ะ": "Terima kasih!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "Kebijakan Privasi",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz menghormati privasi Anda. Kami tidak menggunakan cookie, tidak menggunakan pelacak iklan, dan tidak pernah menjual data Anda.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Kami menyimpan sedikit data di browser Anda untuk mengingat pasar yang Anda pilih dan untuk menampung statistik penggunaan anonim sebelum dikirim. Data ini tetap di perangkat Anda dan dapat Anda hapus kapan saja melalui pengaturan browser.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Kami mengumpulkan statistik penggunaan anonim — seperti halaman yang dilihat dan acara yang diklik — untuk menyempurnakan daftar. Server kami mencatat jenis browser, halaman perujuk, dan alamat IP Anda dalam bentuk hash satu arah. Kami tidak pernah menyimpan alamat IP asli Anda dan tidak mengidentifikasi Anda secara pribadi.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Situs ini berjalan di infrastruktur Cloudflare, yang bertindak sebagai pemroses data kami. Kami meng-host font kami sendiri, dan tidak menggunakan Google Analytics, Meta Pixel, atau jaringan iklan apa pun.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Jika Anda memiliki pertanyaan tentang privasi atau ingin data Anda dihapus, hubungi kami di info@studyeventz.com",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Indonesia — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Indonesia.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Jakarta, Indonesia" or "Online"\'',
+    },
+)
+
+# ─── Malaysia ────────────────────────────────────────────────────────────────
+# Bahasa Melayu (ms). AI-DRAFTED demo/placeholder copy — flag for native review.
+MALAYSIA = Country(
+    code="malaysia",
+    name_en="Malaysia",
+    name_native="Malaysia",
+    flag="🇲🇾",
+    primary_lang="ms",
+    iso2="MY",
+    agent_db_match="%Malaysia%",
+    timezone="Asia/Kuala_Lumpur",
+    title="Acara Pengajian ke Luar Negara di Malaysia | Pameran Universiti & Webinar | StudyEventz",
+    meta_desc_en=("Find study abroad events in Malaysia — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="Cari acara pengajian ke luar negara di Malaysia — pameran, webinar dan sesi maklumat. Dikemas kini setiap minggu.",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Dapatkan info acara terbaru setiap minggu → e-mel kami",
+    local_filter_label="Kuala Lumpur",
+    local_filter_match="kuala lumpur",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "Himpunan acara pengajian ke luar negara di Malaysia",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Pameran universiti, webinar dan acara pengajian ke luar negara — semua di satu tempat.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Dikemas kini setiap minggu dengan acara dalam 30 hari akan datang.",
+        "ตัวกรอง": "Tapis",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz menghimpunkan acara pengajian ke luar negara daripada perunding pendidikan di seluruh Malaysia. Dikemas kini setiap Isnin.",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz ialah panduan bebas untuk mencari acara pengajian ke luar negara di Malaysia",
+        "เกี่ยวกับเรา": "Tentang Kami",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz ialah panduan bebas untuk mencari acara pengajian ke luar negara — pameran universiti, hari maklumat, open day dan tarikh tutup biasiswa — dihimpunkan di satu tempat dan dikemas kini setiap minggu.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Lazimnya, mencari acara seperti ini bermakna menyelongkar berpuluh halaman Facebook, laman web perunding dan kalendar acara pelbagai universiti. Kami melakukannya secara automatik: setiap minggu kami mengumpulkan acara daripada perunding pendidikan dan rakan universiti di seluruh pasaran, menyemak dan membuang pertindihan, lalu menerbitkan senarai yang kemas, jelas dan boleh dipercayai.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Kami bermula di Thailand, tempat ratusan acara pengajian ke luar negara berlangsung setiap tahun tanpa satu pusat tunggal untuk mencarinya. Kami bebas — tidak mewakili mana-mana universiti atau perunding tertentu, jadi apa yang anda lihat ialah gambaran penuh pelbagai pilihan, bukan promosi satu syarikat sahaja.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "Berminat membawa studyeventz ke pasaran anda? Kami ingin mendengar daripada anda.",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Hubungi studyeventz untuk menambah acara, melaporkan pembetulan, atau bekerjasama dengan kami",
+        "ติดต่อเรา": "Hubungi Kami",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "Ada acara yang patut kami tambah, menemui maklumat lapuk, atau ingin bekerjasama dengan kami? E-mel kami di ",
+        " แล้วเราจะติดต่อกลับไป": " dan kami akan menghubungi anda semula.",
+        "แจ้งเพิ่มกิจกรรม": "Tambah Acara",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Jika anda menganjurkan pameran pengajian ke luar negara, open day atau sesi maklumat, hantarkan butirannya dan kami akan menambahnya ke senarai.",
+        "ส่งงานเข้ามา": "Hantar Acara",
+        "แจ้งแก้ไขข้อมูล": "Laporkan Pembetulan",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "Menemui tarikh yang salah atau pautan rosak? Beritahu kami dan kami akan membaikinya dengan segera.",
+        "ความร่วมมือ": "Kerjasama",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "Jika anda berminat membawa studyeventz ke pasaran baharu, atau bekerjasama dengan kami di pasaran yang telah kami liputi, hubungi kami.",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "Hantar acara pengajian ke luar negara ke studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Isi butiran di bawah. Kami akan menyemak dan menambahnya ke senarai. Percuma untuk penganjur.",
+        "รายละเอียดกิจกรรม": "Butiran Acara",
+        "ผู้จัด": "Penganjur",
+        "ชื่อกิจกรรม": "Nama Acara",
+        "วันที่": "Tarikh",
+        "เวลา": "Masa",
+        "สถานที่": "Lokasi",
+        "ลิงก์ลงทะเบียน": "Pautan Pendaftaran",
+        "ข้อมูลผู้แจ้ง": "Maklumat Penghantar",
+        "ชื่อ": "Nama",
+        "อีเมล": "E-mel",
+        "หมายเหตุเพิ่มเติม": "Catatan Tambahan",
+        "ส่ง": "Hantar",
+        "ขอบคุณค่ะ": "Terima kasih!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "Dasar Privasi",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz menghormati privasi anda. Kami tidak menggunakan cookie, tidak menggunakan penjejak iklan, dan tidak sekali-kali menjual data anda.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Kami menyimpan sedikit data dalam pelayar anda untuk mengingati pasaran yang anda pilih dan untuk menyimpan sementara statistik penggunaan tanpa nama sebelum dihantar. Data ini kekal pada peranti anda dan boleh anda padam pada bila-bila masa melalui tetapan pelayar.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Kami mengumpulkan statistik penggunaan tanpa nama — seperti halaman yang dilihat dan acara yang diklik — untuk menambah baik senarai. Pelayan kami merekod jenis pelayar, halaman perujuk, dan alamat IP anda dalam bentuk hash sehala. Kami tidak sekali-kali menyimpan alamat IP sebenar anda dan tidak mengenal pasti anda secara peribadi.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Laman ini beroperasi di atas infrastruktur Cloudflare, yang bertindak sebagai pemproses data kami. Kami menghoskan fon kami sendiri, dan tidak menggunakan Google Analytics, Meta Pixel, atau mana-mana rangkaian pengiklanan.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Jika anda mempunyai sebarang pertanyaan tentang privasi atau ingin data anda dipadam, hubungi kami di info@studyeventz.com",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Malaysia — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Malaysia.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Kuala Lumpur, Malaysia" or "Online"\'',
+    },
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
-COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG]
+COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).

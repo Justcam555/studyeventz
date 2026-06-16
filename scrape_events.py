@@ -92,6 +92,28 @@ COUNTRY_CONFIG = {
             "mong kok", "causeway bay", "sha tin", "kwun tong", "wan chai",
         },
     },
+    "indonesia": {
+        "db_match": "%Indonesia%",
+        "name": "Indonesia",
+        "adjective": "Indonesian",
+        "prompt_cities": "Jakarta, Surabaya, Bandung, Medan, or other Indonesian cities",
+        "home_cities": {
+            "jakarta", "surabaya", "bandung", "medan", "semarang", "bekasi",
+            "depok", "tangerang", "yogyakarta", "jogja", "makassar", "bali",
+            "denpasar", "palembang", "bsd",
+        },
+    },
+    "malaysia": {
+        "db_match": "%Malaysia%",
+        "name": "Malaysia",
+        "adjective": "Malaysian",
+        "prompt_cities": "Kuala Lumpur, Penang, Johor Bahru, Petaling Jaya, or other Malaysian cities",
+        "home_cities": {
+            "kuala lumpur", "petaling jaya", "johor bahru", "johor", "penang",
+            "george town", "georgetown", "ipoh", "shah alam", "subang jaya",
+            "kuching", "kota kinabalu", "malacca", "melaka", "putrajaya", "cyberjaya",
+        },
+    },
 }
 
 EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
@@ -146,7 +168,10 @@ FOREIGN_CITIES = {
     "kochi", "nagpur", "indore", "surat",
     # Other Asia
     "singapore", "hong kong", "kowloon", "kuala lumpur", "penang", "johor",
-    "jakarta", "bali", "surabaya", "manila", "cebu",
+    "petaling jaya", "johor bahru", "george town", "ipoh", "shah alam",
+    "kuching", "kota kinabalu", "malacca", "melaka", "putrajaya", "cyberjaya",
+    "jakarta", "bali", "surabaya", "bandung", "medan", "semarang", "yogyakarta",
+    "makassar", "denpasar", "palembang", "manila", "cebu",
     "ho chi minh", "hanoi", "da nang", "saigon",
     "phnom penh", "siem reap", "vientiane", "yangon",
     "tokyo", "osaka", "kyoto", "seoul", "busan",
