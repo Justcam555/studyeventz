@@ -1093,7 +1093,12 @@ __JSON_LD__
                  padding: 1.5rem 1rem 1rem; }
 
   /* Past-events archive (collapsible, below the live listings) */
-  .archive { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+  .archive-jump { margin-left: auto; text-decoration: none;
+                  border: 1px solid var(--border); color: var(--muted); }
+  .archive-jump::before { content: "↺"; margin-right: .35rem; font-weight: 700; }
+  .archive-jump:hover { border-color: var(--teal); color: var(--teal); }
+  @media (max-width: 640px) { .archive-jump { margin-left: 0; } }
+  .archive { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; scroll-margin-top: 70px; }
   .archive-toggle { width: 100%; display: flex; align-items: center;
                     justify-content: center; gap: .5rem; background: #fff;
                     border: 1px solid var(--border); border-radius: 10px;
@@ -1207,6 +1212,9 @@ __JSON_LD__
       <span class="label">+ Include online events</span>
       <span class="count" data-count="online">0</span>
     </button>
+    <a class="chip archive-jump" id="archive-jump" href="#archive" hidden>
+      Past events <span class="count" id="archive-jump-count">0</span>
+    </a>
   </div>
 </div>
 
@@ -1795,12 +1803,29 @@ function initArchive() {
 
   const toggle = document.getElementById('archive-toggle');
   const body = document.getElementById('archive-body');
+
+  function setOpen(open) {
+    toggle.setAttribute('aria-expanded', String(open));
+    body.hidden = !open;
+    if (open && !ARCHIVE_RENDERED) { renderArchive(''); ARCHIVE_RENDERED = true; }
+  }
+
   toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    body.hidden = open;
-    if (!open && !ARCHIVE_RENDERED) { renderArchive(''); ARCHIVE_RENDERED = true; }
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
   });
+
+  // Discoverable jump link in the filter bar — reveal it and wire it to open
+  // the archive and scroll down to it (otherwise it's buried below the list).
+  const jump = document.getElementById('archive-jump');
+  if (jump) {
+    document.getElementById('archive-jump-count').textContent = PAST.length;
+    jump.hidden = false;
+    jump.addEventListener('click', (e) => {
+      e.preventDefault();
+      setOpen(true);
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 
   const search = document.getElementById('archive-search');
   let t;
