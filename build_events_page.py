@@ -3306,9 +3306,9 @@ INDEX_HTML = r"""<!doctype html>
   /* Brand character as a full-height backdrop, dissolving in from the left edge
      (gradient mask on the right + top so there are no hard image-box edges). */
   .bg-char { position: fixed; bottom: 0; left: 0; z-index: 0; pointer-events: none;
-             height: min(91vh, 850px); opacity: .2; user-select: none;
-             -webkit-mask-image: linear-gradient(to right, #000 0%, #000 35%, transparent 100%);
-             mask-image: linear-gradient(to right, #000 0%, #000 35%, transparent 100%); }
+             height: min(91vh, 850px); opacity: .5; user-select: none;
+             -webkit-mask-image: linear-gradient(to right, #000 0%, #000 58%, transparent 100%);
+             mask-image: linear-gradient(to right, #000 0%, #000 58%, transparent 100%); }
   @media (max-width: 860px) { .bg-char { display: none; } }
 
   .picker { max-width: 960px; width: 100%; text-align: center; position: relative; z-index: 1; }
@@ -3368,14 +3368,13 @@ INDEX_HTML = r"""<!doctype html>
 </head>
 <body>
 
-<img class="bg-char" src="/assets/characters/studyeventz%202.png" alt="" aria-hidden="true" loading="lazy">
+<img class="bg-char" src="/assets/characters/studyeventz-6-cutout.png" alt="" aria-hidden="true" loading="lazy">
 
 <main class="picker">
   <div class="brand">studyevent<span class="gold">z</span></div>
   <p class="tagline">An independent guide to study abroad events.</p>
-  <p class="tagline-th" lang="th">คู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ</p>
 
-  <p class="picker-prompt">เลือกตลาด / Choose your market</p>
+  <p class="picker-prompt">Choose your market</p>
   <div class="country-grid" id="country-grid">
 __COUNTRY_TILES__
   </div>
