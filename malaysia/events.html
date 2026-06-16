@@ -941,6 +941,10 @@ document.addEventListener('visibilitychange', () => {
 // On page load, drain any events that piled up from previous sessions
 window.addEventListener('load', flushPending);
 
+// One pageview per load — gives visit/visitor counts (and, via the Worker's
+// edge geo-IP, visitor country) independent of whether any card is seen.
+track('page_view', { referrer: document.referrer || '' });
+
 // Card impressions — fires once per card per pageload when 50% visible
 const SEEN_IMPRESSIONS = new Set();
 const impressionObserver = ('IntersectionObserver' in window) ? new IntersectionObserver((entries) => {

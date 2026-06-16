@@ -1,0 +1,96 @@
+{
+  "country": "srilanka",
+  "country_name": "Sri Lanka",
+  "generated_at": "2026-06-16T10:07:00",
+  "window": {
+    "from": "2026-06-16",
+    "to": "2026-07-16"
+  },
+  "archive": {
+    "from": "2024-06-16",
+    "to": "2026-06-15"
+  },
+  "events": [
+    {
+      "id": 708,
+      "name": "UK Sep Intake Webinar – South Asia (India, Nepal, Sri Lanka, Pakistan)",
+      "date": "2026-06-16",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners",
+      "agent_name": "Global Study Partners",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 710,
+      "name": "Curtin University Open Day 2026",
+      "date": "2026-06-18",
+      "time": "3:00 PM",
+      "location": "Head Office Colombo",
+      "organizer": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "http://www.abec.lk/index.php",
+      "registration_url": "https://abec.lk/event/curtin-university-open-day-2026/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AB"
+    },
+    {
+      "id": 711,
+      "name": "Spot Admissions Day",
+      "date": "2026-06-19",
+      "time": "3:30 PM - 7:30 PM",
+      "location": "Shangri-La Colombo (City Hotel), Colombo, Sri Lanka",
+      "organizer": "Overseas Education Centre",
+      "agent_name": "Overseas Education Centre",
+      "agent_country": "Sri Lanka",
+      "agent_website": "http://www.oecindia.com",
+      "registration_url": "https://www.oecindia.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OE"
+    },
+    {
+      "id": 706,
+      "name": "World Education Fair – Mid Year Edition (Kurunegala)",
+      "date": "2026-06-20",
+      "time": "11:00 AM – 4:00 PM",
+      "location": "Kandyan Reach Hotel, Kurunegala",
+      "organizer": "Campus Direct",
+      "agent_name": "Campus Direct",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.campusdirect.io",
+      "registration_url": "https://www.campusdirect.io/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CD"
+    },
+    {
+      "id": 705,
+      "name": "Virtual France Application Day",
+      "date": "2026-06-24",
+      "time": "3 PM - 5 PM",
+      "location": "Online",
+      "organizer": "Global Reach - Sri Lanka",
+      "agent_name": "Global Reach - Sri Lanka",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://globalreachonline.com/",
+      "registration_url": "https://www.globalreach.in/upcoming-events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GR"
+    }
+  ],
+  "past": []
+}

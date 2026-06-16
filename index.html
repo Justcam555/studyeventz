@@ -49,7 +49,13 @@
   .tile-flag { font-size: 2.4rem; line-height: 1; flex-shrink: 0; }
   .tile-text { text-align: left; flex: 1; }
   .tile-name { font-size: 1.15rem; font-weight: 700; }
-  .tile-native { color: var(--gold); font-size: .95rem; font-weight: 500; margin-top: .1rem; }
+  .tile-sub { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; margin-top: .25rem; }
+  .tile-native { color: var(--gold); font-size: .95rem; font-weight: 500; }
+  .tile-count { background: rgba(255,255,255,.13); color: rgba(255,255,255,.9);
+                font-size: .76rem; font-weight: 600; padding: .12rem .55rem;
+                border-radius: 11px; white-space: nowrap; }
+  .tile-count-quiet { background: transparent; color: rgba(255,255,255,.45);
+                      font-weight: 500; padding-left: 0; }
   .tile-arrow { font-size: 1.4rem; color: var(--gold); opacity: .8; }
 
   .coming-soon { background: transparent;
@@ -83,7 +89,7 @@
       <span class="tile-flag" aria-hidden="true">🇹🇭</span>
       <span class="tile-text">
         <span class="tile-name">Thailand</span>
-        <span class="tile-native" lang="th">ไทย</span>
+        <span class="tile-sub"><span class="tile-native" lang="th">ไทย</span><span class="tile-count">22 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -91,7 +97,7 @@
       <span class="tile-flag" aria-hidden="true">🇻🇳</span>
       <span class="tile-text">
         <span class="tile-name">Vietnam</span>
-        <span class="tile-native" lang="vi">Việt Nam</span>
+        <span class="tile-sub"><span class="tile-native" lang="vi">Việt Nam</span><span class="tile-count">6 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -99,7 +105,7 @@
       <span class="tile-flag" aria-hidden="true">🇹🇼</span>
       <span class="tile-text">
         <span class="tile-name">Taiwan</span>
-        <span class="tile-native" lang="zh-Hant">台灣</span>
+        <span class="tile-sub"><span class="tile-native" lang="zh-Hant">台灣</span><span class="tile-count">20 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -107,7 +113,7 @@
       <span class="tile-flag" aria-hidden="true">🇭🇰</span>
       <span class="tile-text">
         <span class="tile-name">Hong Kong</span>
-        <span class="tile-native" lang="zh-Hant">香港</span>
+        <span class="tile-sub"><span class="tile-native" lang="zh-Hant">香港</span><span class="tile-count">19 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -115,7 +121,7 @@
       <span class="tile-flag" aria-hidden="true">🇮🇩</span>
       <span class="tile-text">
         <span class="tile-name">Indonesia</span>
-        <span class="tile-native" lang="id">Indonesia</span>
+        <span class="tile-sub"><span class="tile-count">10 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -123,7 +129,7 @@
       <span class="tile-flag" aria-hidden="true">🇲🇾</span>
       <span class="tile-text">
         <span class="tile-name">Malaysia</span>
-        <span class="tile-native" lang="ms">Malaysia</span>
+        <span class="tile-sub"><span class="tile-count">16 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -131,7 +137,7 @@
       <span class="tile-flag" aria-hidden="true">🇬🇭</span>
       <span class="tile-text">
         <span class="tile-name">Ghana</span>
-        <span class="tile-native" lang="en">Ghana</span>
+        <span class="tile-sub"><span class="tile-count">6 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -139,7 +145,7 @@
       <span class="tile-flag" aria-hidden="true">🇳🇬</span>
       <span class="tile-text">
         <span class="tile-name">Nigeria</span>
-        <span class="tile-native" lang="en">Nigeria</span>
+        <span class="tile-sub"><span class="tile-count">8 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -147,7 +153,7 @@
       <span class="tile-flag" aria-hidden="true">🇸🇬</span>
       <span class="tile-text">
         <span class="tile-name">Singapore</span>
-        <span class="tile-native" lang="en">Singapore</span>
+        <span class="tile-sub"><span class="tile-count">7 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>
@@ -155,7 +161,31 @@
       <span class="tile-flag" aria-hidden="true">🇰🇭</span>
       <span class="tile-text">
         <span class="tile-name">Cambodia</span>
-        <span class="tile-native" lang="km">កម្ពុជា</span>
+        <span class="tile-sub"><span class="tile-native" lang="km">កម្ពុជា</span><span class="tile-count">4 events</span></span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="country-tile" data-country="india" href="/india/events.html">
+      <span class="tile-flag" aria-hidden="true">🇮🇳</span>
+      <span class="tile-text">
+        <span class="tile-name">India</span>
+        <span class="tile-sub"><span class="tile-count">72 events</span></span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="country-tile" data-country="nepal" href="/nepal/events.html">
+      <span class="tile-flag" aria-hidden="true">🇳🇵</span>
+      <span class="tile-text">
+        <span class="tile-name">Nepal</span>
+        <span class="tile-sub"><span class="tile-count">4 events</span></span>
+      </span>
+      <span class="tile-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="country-tile" data-country="srilanka" href="/srilanka/events.html">
+      <span class="tile-flag" aria-hidden="true">🇱🇰</span>
+      <span class="tile-text">
+        <span class="tile-name">Sri Lanka</span>
+        <span class="tile-sub"><span class="tile-count">5 events</span></span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>

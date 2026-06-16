@@ -1,0 +1,80 @@
+{
+  "country": "nepal",
+  "country_name": "Nepal",
+  "generated_at": "2026-06-16T10:07:00",
+  "window": {
+    "from": "2026-06-16",
+    "to": "2026-07-16"
+  },
+  "archive": {
+    "from": "2024-06-16",
+    "to": "2026-06-15"
+  },
+  "events": [
+    {
+      "id": 702,
+      "name": "UK Sep Intake Webinar – South Asia (India, Nepal, Sri Lanka, Pakistan)",
+      "date": "2026-06-16",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners - Nepal",
+      "agent_name": "Global Study Partners - Nepal",
+      "agent_country": "Nepal",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 703,
+      "name": "UK Application Day 2026 in Baneshwor",
+      "date": "2026-06-19",
+      "time": "11:00 - 16:00",
+      "location": "StudyIn Office, Baneshwor",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.studyin-uk.com/",
+      "registration_url": "https://gostudyin.com/study-in-uk/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
+    },
+    {
+      "id": 699,
+      "name": "Virtual France Application Day",
+      "date": "2026-06-24",
+      "time": "3 PM - 5 PM",
+      "location": "Online",
+      "organizer": "Global Reach - Kathmandu",
+      "agent_name": "Global Reach - Kathmandu",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.globalreach.in/",
+      "registration_url": "https://www.globalreach.in/upcoming-events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GR"
+    },
+    {
+      "id": 700,
+      "name": "UK Virtual Admission Day",
+      "date": "2026-07-06",
+      "time": "12:15 PM",
+      "location": "Online",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Nepal",
+      "agent_website": "www.aeccglobal.com.np",
+      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    }
+  ],
+  "past": []
+}

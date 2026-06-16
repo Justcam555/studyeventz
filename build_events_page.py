@@ -794,9 +794,74 @@ CAMBODIA = Country(
     },
 )
 
+# ─── India ───────────────────────────────────────────────────────────────────
+# English-native market. Many major hubs, so no single local-city chip.
+INDIA = Country(
+    code="india",
+    name_en="India",
+    name_native="India",
+    flag="🇮🇳",
+    primary_lang="en",
+    iso2="IN",
+    agent_db_match="%India%",
+    timezone="Asia/Kolkata",
+    title="Study Abroad Events in India | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in India — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    english_only=True,
+)
+
+# ─── Nepal ───────────────────────────────────────────────────────────────────
+NEPAL = Country(
+    code="nepal",
+    name_en="Nepal",
+    name_native="Nepal",
+    flag="🇳🇵",
+    primary_lang="en",
+    iso2="NP",
+    agent_db_match="%Nepal%",
+    timezone="Asia/Kathmandu",
+    title="Study Abroad Events in Nepal | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Nepal — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    local_filter_label="Kathmandu",
+    local_filter_match="kathmandu",
+    english_only=True,
+)
+
+# ─── Sri Lanka ───────────────────────────────────────────────────────────────
+SRILANKA = Country(
+    code="srilanka",
+    name_en="Sri Lanka",
+    name_native="Sri Lanka",
+    flag="🇱🇰",
+    primary_lang="en",
+    iso2="LK",
+    agent_db_match="%Sri Lanka%",
+    timezone="Asia/Colombo",
+    title="Study Abroad Events in Sri Lanka | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Sri Lanka — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    local_filter_label="Colombo",
+    local_filter_match="colombo",
+    english_only=True,
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
 COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA,
-                            GHANA, NIGERIA, SINGAPORE, CAMBODIA]
+                            GHANA, NIGERIA, SINGAPORE, CAMBODIA, INDIA, NEPAL, SRILANKA]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).
@@ -1821,6 +1886,10 @@ document.addEventListener('visibilitychange', () => {
 
 // On page load, drain any events that piled up from previous sessions
 window.addEventListener('load', flushPending);
+
+// One pageview per load — gives visit/visitor counts (and, via the Worker's
+// edge geo-IP, visitor country) independent of whether any card is seen.
+track('page_view', { referrer: document.referrer || '' });
 
 // Card impressions — fires once per card per pageload when 50% visible
 const SEEN_IMPRESSIONS = new Set();
@@ -3259,7 +3328,13 @@ INDEX_HTML = r"""<!doctype html>
   .tile-flag { font-size: 2.4rem; line-height: 1; flex-shrink: 0; }
   .tile-text { text-align: left; flex: 1; }
   .tile-name { font-size: 1.15rem; font-weight: 700; }
-  .tile-native { color: var(--gold); font-size: .95rem; font-weight: 500; margin-top: .1rem; }
+  .tile-sub { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; margin-top: .25rem; }
+  .tile-native { color: var(--gold); font-size: .95rem; font-weight: 500; }
+  .tile-count { background: rgba(255,255,255,.13); color: rgba(255,255,255,.9);
+                font-size: .76rem; font-weight: 600; padding: .12rem .55rem;
+                border-radius: 11px; white-space: nowrap; }
+  .tile-count-quiet { background: transparent; color: rgba(255,255,255,.45);
+                      font-weight: 500; padding-left: 0; }
   .tile-arrow { font-size: 1.4rem; color: var(--gold); opacity: .8; }
 
   .coming-soon { background: transparent;
@@ -3319,16 +3394,30 @@ __COUNTRY_TILES__
 """
 
 
-def build_index_html() -> None:
-    """Write the root index.html country picker."""
+def build_index_html(counts: dict | None = None) -> None:
+    """Write the root index.html country picker. `counts` maps country code →
+    number of upcoming events, shown as a badge on each tile."""
+    counts = counts or {}
     tiles: list[str] = []
     for c in COUNTRIES:
+        n = counts.get(c.code, 0)
+        # Gold sub-line: native name only when it differs from the English name
+        # (so English-native markets don't show "India / India"), plus a live
+        # event-count badge.
+        sub_parts = []
+        if c.name_native and c.name_native != c.name_en:
+            sub_parts.append(f'<span class="tile-native" lang="{c.primary_lang}">{c.name_native}</span>')
+        if n > 0:
+            sub_parts.append(f'<span class="tile-count">{n} event{"" if n == 1 else "s"}</span>')
+        if not sub_parts:
+            sub_parts.append('<span class="tile-count tile-count-quiet">Updated weekly</span>')
+        sub_html = "".join(sub_parts)
         tiles.append(
             f"""    <a class="country-tile" data-country="{c.code}" href="/{c.code}/events.html">
       <span class="tile-flag" aria-hidden="true">{c.flag}</span>
       <span class="tile-text">
         <span class="tile-name">{c.name_en}</span>
-        <span class="tile-native" lang="{c.primary_lang}">{c.name_native}</span>
+        <span class="tile-sub">{sub_html}</span>
       </span>
       <span class="tile-arrow" aria-hidden="true">→</span>
     </a>"""
@@ -3509,6 +3598,7 @@ def main() -> int:
         optimize_images()
 
     grand_total_events = 0
+    counts: dict[str, int] = {}
     for c in COUNTRIES:
         n = export_events_json(c)
         char_count, mode = build_html(c)
@@ -3516,10 +3606,11 @@ def main() -> int:
         build_contact_html(c)
         build_submit_html(c)
         build_privacy_html(c)
+        counts[c.code] = n
         grand_total_events += n
         print(f"[{c.code}] {n} events, {char_count} characters ({mode})")
 
-    build_index_html()
+    build_index_html(counts)
     build_legacy_redirects()
     write_seo_files()
     print(f"Wrote {INDEX_OUT}")
