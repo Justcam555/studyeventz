@@ -1057,10 +1057,236 @@ KOREA = Country(
     },
 )
 
+# ─── Brazil ──────────────────────────────────────────────────────────────────
+# Brazilian Portuguese (pt). AI-DRAFTED demo/placeholder copy — native review.
+BRAZIL = Country(
+    code="brazil",
+    name_en="Brazil",
+    name_native="Brasil",
+    flag="🇧🇷",
+    primary_lang="pt",
+    iso2="BR",
+    agent_db_match="%Brazil%",
+    timezone="America/Sao_Paulo",
+    title="Eventos de Estudo no Exterior no Brasil | Feiras Universitárias e Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Brazil — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="Encontre eventos de estudo no exterior no Brasil — feiras, webinars e sessões informativas. Atualizado semanalmente.",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Receba novos eventos toda semana → envie-nos um e-mail",
+    local_filter_label="São Paulo",
+    local_filter_match="paulo",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "Eventos de estudo no exterior no Brasil",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Feiras universitárias, webinars e eventos de estudo no exterior, tudo em um só lugar.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Atualizado toda semana com eventos dos próximos 30 dias.",
+        "ตัวกรอง": "Filtrar",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "O studyeventz reúne eventos de estudo no exterior de agências de todo o Brasil. Atualizado toda segunda-feira.",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "O studyeventz é um diretório independente de eventos de estudo no exterior no Brasil",
+        "เกี่ยวกับเรา": "Sobre nós",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "O studyeventz é um diretório independente para encontrar eventos de estudo no exterior — feiras universitárias, dias informativos, open days e prazos de bolsas — reunidos em um só lugar e atualizados toda semana.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Normalmente, encontrar esses eventos significa vasculhar dezenas de páginas do Facebook, sites de agências e os calendários de várias universidades. Nós fazemos esse trabalho automaticamente: toda semana reunimos eventos de agências educacionais e universidades parceiras de todo o mercado, verificamos, removemos duplicatas e publicamos uma lista limpa e confiável.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Começamos na Tailândia, onde acontecem centenas de eventos de estudo no exterior por ano, mas não havia um lugar único para encontrá-los. Somos uma plataforma independente — não representamos nenhuma universidade ou agência em particular, então o que você vê é um panorama de opções variadas, não a divulgação de uma única empresa.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "Tem interesse em levar o studyeventz para o seu mercado? Teremos prazer em conversar com você.",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Entre em contato com o studyeventz para adicionar um evento, relatar uma correção ou fazer parceria conosco",
+        "ติดต่อเรา": "Contato",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "Tem um evento que deveríamos adicionar, encontrou informações desatualizadas ou quer fazer parceria conosco? Envie um e-mail para ",
+        " แล้วเราจะติดต่อกลับไป": " e retornaremos o contato.",
+        "แจ้งเพิ่มกิจกรรม": "Adicionar um evento",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Se você organiza uma feira de estudo no exterior, um open day ou uma sessão informativa, envie os detalhes e nós o adicionaremos à lista.",
+        "ส่งงานเข้ามา": "Enviar evento",
+        "แจ้งแก้ไขข้อมูล": "Relatar uma correção",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "Encontrou uma data errada ou um link quebrado? Avise-nos e corrigiremos rapidamente.",
+        "ความร่วมมือ": "Parceria",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "Se tiver interesse em levar o studyeventz para um novo mercado, ou em fazer parceria conosco em um mercado onde já atuamos, entre em contato.",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "Envie um evento de estudo no exterior para o studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Preencha os detalhes abaixo. Vamos revisar e adicionar à lista. Gratuito para organizadores.",
+        "รายละเอียดกิจกรรม": "Detalhes do evento",
+        "ผู้จัด": "Organizador",
+        "ชื่อกิจกรรม": "Nome do evento",
+        "วันที่": "Data",
+        "เวลา": "Horário",
+        "สถานที่": "Local",
+        "ลิงก์ลงทะเบียน": "Link de inscrição",
+        "ข้อมูลผู้แจ้ง": "Dados de quem envia",
+        "ชื่อ": "Nome",
+        "อีเมล": "E-mail",
+        "หมายเหตุเพิ่มเติม": "Observações adicionais",
+        "ส่ง": "Enviar",
+        "ขอบคุณค่ะ": "Obrigado!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "Política de privacidade",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "O studyeventz respeita a sua privacidade. Não usamos cookies nem rastreadores de publicidade, e nunca vendemos os seus dados.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Guardamos uma pequena quantidade de dados no seu navegador para lembrar o mercado que você escolheu e para armazenar temporariamente estatísticas de uso anônimas antes de enviá-las. Esses dados permanecem no seu dispositivo e você pode apagá-los a qualquer momento nas configurações do navegador.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Coletamos estatísticas de uso anônimas — como quais páginas são vistas e quais eventos recebem cliques — para melhorar a lista. Nossos servidores registram o tipo de navegador, a página de origem e o seu endereço IP em formato de hash unidirecional. Nunca armazenamos o seu endereço IP real e não identificamos você pessoalmente.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Este site funciona na infraestrutura da Cloudflare, que atua como nosso processador de dados. Hospedamos nossas próprias fontes e não usamos Google Analytics, Meta Pixel ou qualquer rede de publicidade.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Se tiver dúvidas sobre privacidade ou quiser que apaguemos os seus dados, entre em contato pelo info@studyeventz.com",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Brazil — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Brazil.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "São Paulo, Brazil" or "Online"\'',
+    },
+)
+
+
+def _es_translations(pais_es: str, pais_en: str, placeholder_city: str) -> dict:
+    """Spanish (es) translation map, shared by Colombia and Mexico. Only the
+    country name (and the English country-specific copy) differs between them."""
+    return {
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": f"Eventos de estudios en el extranjero en {pais_es}",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Ferias universitarias, webinars y eventos de estudios en el extranjero, todo en un solo lugar.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Actualizado cada semana con eventos de los próximos 30 días.",
+        "ตัวกรอง": "Filtrar",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz reúne eventos de estudios en el extranjero de agencias educativas de todo el país. Actualizado cada lunes.",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            f"studyeventz es un directorio independiente de eventos de estudios en el extranjero en {pais_es}",
+        "เกี่ยวกับเรา": "Sobre nosotros",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz es un directorio independiente para encontrar eventos de estudios en el extranjero: ferias universitarias, jornadas informativas, open days y fechas límite de becas, reunidos en un solo lugar y actualizados cada semana.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Normalmente, encontrar estos eventos implica rastrear decenas de páginas de Facebook, sitios web de agencias y los calendarios de distintas universidades. Nosotros hacemos ese trabajo de forma automática: cada semana recopilamos eventos de agencias educativas y universidades asociadas de todo el mercado, los verificamos, eliminamos los duplicados y publicamos una lista clara y confiable.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Comenzamos en Tailandia, donde cada año se realizan cientos de eventos de estudios en el extranjero sin un lugar único para encontrarlos. Somos una plataforma independiente: no representamos a ninguna universidad ni agencia en particular, así que lo que ves es un panorama de opciones diversas, no la promoción de una sola empresa.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "¿Te interesa llevar studyeventz a tu mercado? Nos encantaría conversar contigo.",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Contacta a studyeventz para agregar un evento, reportar una corrección o colaborar con nosotros",
+        "ติดต่อเรา": "Contacto",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "¿Tienes un evento que deberíamos agregar, encontraste información desactualizada o quieres colaborar con nosotros? Escríbenos a ",
+        " แล้วเราจะติดต่อกลับไป": " y te responderemos.",
+        "แจ้งเพิ่มกิจกรรม": "Agregar un evento",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Si organizas una feria de estudios en el extranjero, un open day o una sesión informativa, envíanos los detalles y lo agregaremos a la lista.",
+        "ส่งงานเข้ามา": "Enviar evento",
+        "แจ้งแก้ไขข้อมูล": "Reportar una corrección",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "¿Encontraste una fecha incorrecta o un enlace roto? Avísanos y lo corregiremos de inmediato.",
+        "ความร่วมมือ": "Colaboración",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "Si te interesa llevar studyeventz a un nuevo mercado, o colaborar con nosotros en un mercado donde ya estamos presentes, contáctanos.",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "Envía un evento de estudios en el extranjero a studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Completa los datos a continuación. Los revisaremos y los agregaremos a la lista. Gratis para los organizadores.",
+        "รายละเอียดกิจกรรม": "Detalles del evento",
+        "ผู้จัด": "Organizador",
+        "ชื่อกิจกรรม": "Nombre del evento",
+        "วันที่": "Fecha",
+        "เวลา": "Hora",
+        "สถานที่": "Lugar",
+        "ลิงก์ลงทะเบียน": "Enlace de registro",
+        "ข้อมูลผู้แจ้ง": "Datos de quien envía",
+        "ชื่อ": "Nombre",
+        "อีเมล": "Correo electrónico",
+        "หมายเหตุเพิ่มเติม": "Notas adicionales",
+        "ส่ง": "Enviar",
+        "ขอบคุณค่ะ": "¡Gracias!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "Política de privacidad",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz respeta tu privacidad. No usamos cookies ni rastreadores publicitarios, y nunca vendemos tus datos.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Guardamos una pequeña cantidad de datos en tu navegador para recordar el mercado que elegiste y para almacenar temporalmente estadísticas de uso anónimas antes de enviarlas. Estos datos permanecen en tu dispositivo y puedes borrarlos en cualquier momento desde la configuración del navegador.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Recopilamos estadísticas de uso anónimas —como qué páginas se ven y en qué eventos se hace clic— para mejorar la lista. Nuestros servidores registran el tipo de navegador, la página de referencia y tu dirección IP en forma de hash unidireccional. Nunca almacenamos tu dirección IP real ni te identificamos de forma personal.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Este sitio funciona sobre la infraestructura de Cloudflare, que actúa como nuestro procesador de datos. Alojamos nuestras propias fuentes y no usamos Google Analytics, Meta Pixel ni ninguna red publicitaria.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Si tienes preguntas sobre privacidad o deseas que eliminemos tus datos, contáctanos en info@studyeventz.com",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            f"studyeventz is an independent listing of study abroad events in {pais_en} — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            f"Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in {pais_en}.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            f'placeholder=\'e.g. "{placeholder_city}" or "Online"\'',
+    }
+
+
+# ─── Colombia ────────────────────────────────────────────────────────────────
+# Spanish (es). AI-DRAFTED demo/placeholder copy — native review.
+COLOMBIA = Country(
+    code="colombia",
+    name_en="Colombia",
+    name_native="Colombia",
+    flag="🇨🇴",
+    primary_lang="es",
+    iso2="CO",
+    agent_db_match="%Colombia%",
+    timezone="America/Bogota",
+    title="Eventos de Estudios en el Extranjero en Colombia | Ferias Universitarias y Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Colombia — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="Encuentra eventos de estudios en el extranjero en Colombia — ferias, webinars y sesiones informativas. Actualizado cada semana.",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Recibe nuevos eventos cada semana → escríbenos",
+    local_filter_label="Bogotá",
+    local_filter_match="bogot",
+    translations=_es_translations("Colombia", "Colombia", 'Bogotá, Colombia'),
+)
+
+# ─── Mexico ──────────────────────────────────────────────────────────────────
+# Spanish (es). AI-DRAFTED demo/placeholder copy — native review.
+MEXICO = Country(
+    code="mexico",
+    name_en="Mexico",
+    name_native="México",
+    flag="🇲🇽",
+    primary_lang="es",
+    iso2="MX",
+    agent_db_match="%Mexico%",
+    timezone="America/Mexico_City",
+    title="Eventos de Estudios en el Extranjero en México | Ferias Universitarias y Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Mexico — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="Encuentra eventos de estudios en el extranjero en México — ferias, webinars y sesiones informativas. Actualizado cada semana.",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Recibe nuevos eventos cada semana → escríbenos",
+    translations=_es_translations("México", "Mexico", 'Ciudad de México, México'),
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
 COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA,
                             GHANA, NIGERIA, SINGAPORE, CAMBODIA, INDIA, NEPAL, SRILANKA,
-                            JAPAN, KOREA]
+                            JAPAN, KOREA, BRAZIL, COLOMBIA, MEXICO]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).

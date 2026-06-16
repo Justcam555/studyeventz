@@ -210,6 +210,38 @@ COUNTRY_CONFIG = {
             "nugegoda", "dehiwala", "moratuwa",
         },
     },
+    "brazil": {
+        "db_match": "%Brazil%",
+        "name": "Brazil",
+        "adjective": "Brazilian",
+        "prompt_cities": "São Paulo, Rio de Janeiro, Brasília, Belo Horizonte, or other Brazilian cities",
+        "home_cities": {
+            "são paulo", "sao paulo", "rio de janeiro", "brasilia", "brasília",
+            "belo horizonte", "salvador", "fortaleza", "curitiba", "recife",
+            "porto alegre", "campinas", "florianopolis", "florianópolis",
+        },
+    },
+    "colombia": {
+        "db_match": "%Colombia%",
+        "name": "Colombia",
+        "adjective": "Colombian",
+        "prompt_cities": "Bogotá, Medellín, Cali, Barranquilla, or other Colombian cities",
+        "home_cities": {
+            "bogota", "bogotá", "medellin", "medellín", "cali", "barranquilla",
+            "cartagena", "bucaramanga", "pereira", "manizales", "cucuta", "cúcuta",
+        },
+    },
+    "mexico": {
+        "db_match": "%Mexico%",
+        "name": "Mexico",
+        "adjective": "Mexican",
+        "prompt_cities": "Mexico City, Guadalajara, Monterrey, Puebla, or other Mexican cities",
+        "home_cities": {
+            "mexico city", "ciudad de mexico", "ciudad de méxico", "cdmx",
+            "guadalajara", "monterrey", "puebla", "tijuana", "queretaro",
+            "querétaro", "cancun", "cancún", "merida", "mérida", "leon", "león",
+        },
+    },
 }
 
 EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
@@ -295,6 +327,12 @@ FOREIGN_CITIES = {
     "amsterdam", "rotterdam", "the hague",
     "madrid", "barcelona", "rome", "milan", "florence",
     "vienna", "zurich", "geneva", "stockholm", "copenhagen", "oslo", "helsinki",
+    # Latin America
+    "são paulo", "sao paulo", "rio de janeiro", "brasilia", "brasília",
+    "belo horizonte", "salvador", "fortaleza", "curitiba", "recife", "porto alegre",
+    "bogota", "bogotá", "medellin", "medellín", "cali", "barranquilla", "cartagena",
+    "mexico city", "ciudad de mexico", "ciudad de méxico", "guadalajara",
+    "monterrey", "puebla", "tijuana", "cancun", "cancún",
 }
 
 # Compiled exclusion regex per country, cached. Built from FOREIGN_CITIES minus
