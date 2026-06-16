@@ -1,0 +1,112 @@
+{
+  "country": "ghana",
+  "country_name": "Ghana",
+  "generated_at": "2026-06-16T09:16:41",
+  "window": {
+    "from": "2026-06-16",
+    "to": "2026-07-16"
+  },
+  "archive": {
+    "from": "2024-06-16",
+    "to": "2026-06-15"
+  },
+  "events": [
+    {
+      "id": 475,
+      "name": "Study Creative Courses at the University for the Creative Arts in the UK - Ghana",
+      "date": "2026-06-18",
+      "time": "11:00 AM - 12:00 PM",
+      "location": "Accra (Osu), Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    },
+    {
+      "id": 479,
+      "name": "Ready to Study and Work in Canada",
+      "date": "2026-06-18",
+      "time": "4:00 PM",
+      "location": "Online",
+      "organizer": "Astolinks International",
+      "agent_name": "Astolinks International",
+      "agent_country": "Ghana",
+      "agent_website": "www.astolinks.net",
+      "registration_url": "https://www.astolinks.net/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AI"
+    },
+    {
+      "id": 478,
+      "name": "Study Education & Social Science in the UK",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "location": "Accra, Ghana",
+      "organizer": "British Canadian International Education (Ghana)",
+      "agent_name": "British Canadian International Education (Ghana)",
+      "agent_country": "Ghana",
+      "agent_website": "https://bcie.co.uk//offices/ghana--accra",
+      "registration_url": "https://www.bcie.co.uk/events?",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    },
+    {
+      "id": 486,
+      "name": "Study Education & Social Science in the UK",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "location": "Accra, Ghana",
+      "organizer": "BCIE, Ghana",
+      "agent_name": "BCIE, Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "www.bcie.co.uk",
+      "registration_url": "https://www.bcie.co.uk/events?",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BG"
+    },
+    {
+      "id": 476,
+      "name": "Exclusive UK Webinar – September 2026 Intake - Ghana",
+      "date": "2026-06-25",
+      "time": "10:00 AM - 11:00 AM",
+      "location": "Online",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    },
+    {
+      "id": 477,
+      "name": "University of South Wales Open Day - Accra",
+      "date": "2026-07-03",
+      "time": "10:00 AM - 5:00 PM",
+      "location": "Accra (Osu), Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    }
+  ],
+  "past": []
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — studyeventz</title>
+<meta name="description" content="Contact studyeventz to list a study abroad event, report a correction, or explore a partnership. Email info@studyeventz.com.">
+<link rel="canonical" href="https://www.studyeventz.com/contact.html">
+
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
+
+<style>
+  :root {
+    --teal: #0d7377; --teal-dark: #095a5d; --gold: #f4a825;
+    --ink: #0d2233; --bg: #f5f7f9; --text: #1a2530;
+    --muted: #5d6b78; --border: #e2e8ed;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6;
+         padding-bottom: 92px; }
+  [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
+                              -apple-system, BlinkMacSystemFont, sans-serif; }
+
+  /* Header */
+  .site-header { background: var(--teal); color: #fff; }
+  .header-bar { max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem;
+                display: flex; align-items: center; justify-content: space-between;
+                gap: 1.5rem; flex-wrap: wrap; }
+  .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
+  .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
+  .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,.85); text-decoration: none;
+           padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
+           transition: background .15s, color .15s; }
+  .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
+  .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
+
+  /* Hero */
+  .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
+  .about-hero-inner { max-width: 760px; margin: 0 auto; }
+  .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
+  .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
+                               line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
+
+  /* Body */
+  .about-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+
+  /* Intro (with prominent email CTA) */
+  .contact-intro { margin-bottom: 2.5rem; padding-bottom: 2.5rem;
+                   border-bottom: 1px solid var(--border); }
+  .contact-intro p { font-size: 1.05rem; margin: 0; }
+  .contact-intro p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
+  .contact-intro p:not(.th) { color: var(--muted); margin-bottom: 1.5rem; }
+  .email-btn { display: inline-block; background: var(--teal); color: #fff;
+               padding: .85rem 1.4rem; border-radius: 8px;
+               font-size: 1.05rem; font-weight: 600; text-decoration: none;
+               transition: background .15s; }
+  .email-btn:hover { background: var(--teal-dark); }
+
+  /* Sub-categories */
+  .contact-category { margin-bottom: 2rem; }
+  .contact-category .th-title { color: var(--gold); font-size: 1.2rem;
+                                font-weight: 700; margin: 0 0 .1rem 0;
+                                line-height: 1.3; }
+  .contact-category .en-title { color: var(--teal); font-size: 1rem;
+                                font-weight: 700; text-transform: uppercase;
+                                letter-spacing: .04em; margin: 0 0 .65rem 0;
+                                line-height: 1.3; }
+  .contact-category p { font-size: 1rem; margin: 0; }
+  .contact-category p.th { color: var(--text); margin-bottom: .35rem; }
+  .contact-category p:not(.th) { color: var(--muted); }
+
+  /* LINE banner */
+  .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
+                 background: var(--teal); color: var(--gold);
+                 padding: 1.25rem 1rem; z-index: 50;
+                 box-shadow: 0 -2px 8px rgba(13,34,51,.15);
+                 display: flex; align-items: center; justify-content: center; gap: .8rem; }
+  .line-banner a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  .line-banner a:hover { text-decoration: underline; }
+  .line-banner-text { font-size: 1.02rem; }
+  .line-banner-handle { background: rgba(244, 168, 37, .15);
+                        border: 1px solid rgba(244, 168, 37, .35);
+                        padding: .2rem .65rem; border-radius: 14px;
+                        font-size: .9rem; margin-left: .25rem; }
+  .line-icon { width: 30px; height: 30px; flex-shrink: 0; }
+
+  @media (max-width: 640px) {
+    .header-bar { padding: .8rem 1rem; }
+    .brand { font-size: 1.4rem; }
+    .about-hero { padding: 1.5rem 1rem 1.7rem; }
+    .about-hero h1 { font-size: 1.5rem; }
+    .about-hero .hero-th-title { font-size: 1.95rem; }
+    .about-content { padding: 2rem 1.1rem 2.5rem; }
+    .contact-intro p, .contact-category p { font-size: .98rem; }
+    .email-btn { font-size: 1rem; padding: .75rem 1.2rem; }
+    .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
+    .line-banner-text { font-size: .92rem; text-align: center; }
+    .line-icon { width: 26px; height: 26px; }
+    body { padding-bottom: 115px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">🇳🇬</span></a>
+    <nav class="nav">
+      <a href="events.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <h1>Contact Us</h1>
+  </div>
+</section>
+
+<main class="about-content">
+
+  <section class="contact-intro">
+    <p>Have an event we should list, spotted something out of date, or want to work with us? Email us at <a href="mailto:info@studyeventz.com" style="color:inherit;font-weight:600">info@studyeventz.com</a> and we'll get back to you.</p>
+    <a class="email-btn" href="mailto:info@studyeventz.com">✉  info@studyeventz.com</a>
+  </section>
+
+  <section class="contact-category">
+    <h2 class="en-title">List an event</h2>
+    <p>Running a study abroad fair, open day or info session? Send us the details and we'll add it.</p>
+    <p style="margin-top:.65rem"><a href="submit.html" style="color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor">→ Submit your event</a></p>
+  </section>
+
+  <section class="contact-category">
+    <h2 class="en-title">Report a correction</h2>
+    <p>Found a wrong date or a dead link? Let us know and we'll fix it.</p>
+  </section>
+
+  <section class="contact-category">
+    <h2 class="en-title">Partnerships</h2>
+    <p>If you'd like to bring studyeventz to a new market, or partner with us in one we already cover, get in touch.</p>
+  </section>
+
+</main>
+
+<aside class="line-banner" role="contentinfo" aria-label="Email updates">
+  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </svg>
+  <span class="line-banner-text" lang="en">Get notified about new study abroad events every week → email us</span>
+  <a href="mailto:info@studyeventz.com">
+    <span class="line-banner-handle">info@studyeventz.com</span>
+  </a>
+</aside>
+
+</body>
+</html>

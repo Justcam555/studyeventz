@@ -114,6 +114,82 @@ COUNTRY_CONFIG = {
             "kuching", "kota kinabalu", "malacca", "melaka", "putrajaya", "cyberjaya",
         },
     },
+    "ghana": {
+        "db_match": "%Ghana%",
+        "name": "Ghana",
+        "adjective": "Ghanaian",
+        "prompt_cities": "Accra, Kumasi, Tamale, Takoradi, or other Ghanaian cities",
+        "home_cities": {
+            "accra", "kumasi", "tamale", "takoradi", "tema", "cape coast",
+            "ho", "koforidua", "sunyani", "east legon",
+        },
+    },
+    "nigeria": {
+        "db_match": "%Nigeria%",
+        "name": "Nigeria",
+        "adjective": "Nigerian",
+        "prompt_cities": "Lagos, Abuja, Ibadan, Port Harcourt, or other Nigerian cities",
+        "home_cities": {
+            "lagos", "abuja", "ibadan", "kano", "port harcourt", "benin city",
+            "kaduna", "enugu", "ilorin", "jos", "abeokuta", "owerri", "uyo",
+            "calabar", "lekki", "ikeja",
+        },
+    },
+    "singapore": {
+        "db_match": "%Singapore%",
+        "name": "Singapore",
+        "adjective": "Singaporean",
+        "prompt_cities": "Singapore (any district — Orchard, Jurong, Tampines, etc.)",
+        "home_cities": {
+            "singapore", "orchard", "jurong", "tampines", "woodlands",
+            "sentosa", "novena", "bugis", "clementi", "one-north",
+        },
+    },
+    "cambodia": {
+        "db_match": "%Cambodia%",
+        "name": "Cambodia",
+        "adjective": "Cambodian",
+        "prompt_cities": "Phnom Penh, Siem Reap, Battambang, or other Cambodian cities",
+        "home_cities": {
+            "phnom penh", "siem reap", "sihanoukville", "battambang",
+            "kampong cham", "kandal", "poipet", "kep", "kampot",
+        },
+    },
+    "india": {
+        "db_match": "%India%",
+        "name": "India",
+        "adjective": "Indian",
+        "prompt_cities": "Mumbai, Delhi, Bangalore, Chennai, Hyderabad, or other Indian cities",
+        "home_cities": {
+            "mumbai", "delhi", "new delhi", "bangalore", "bengaluru", "chennai",
+            "kolkata", "hyderabad", "pune", "ahmedabad", "jaipur", "chandigarh",
+            "lucknow", "kochi", "cochin", "nagpur", "indore", "surat", "gurgaon",
+            "gurugram", "noida", "coimbatore", "vadodara", "vijayawada",
+            "thiruvananthapuram", "trivandrum", "bhopal", "patna", "kanpur",
+            "nashik", "ludhiana", "amritsar", "mangalore", "mysore", "visakhapatnam",
+        },
+    },
+    "nepal": {
+        "db_match": "%Nepal%",
+        "name": "Nepal",
+        "adjective": "Nepali",
+        "prompt_cities": "Kathmandu, Pokhara, Lalitpur, Biratnagar, or other Nepali cities",
+        "home_cities": {
+            "kathmandu", "pokhara", "lalitpur", "patan", "biratnagar", "butwal",
+            "chitwan", "bharatpur", "birgunj", "dharan", "nepalgunj", "itahari",
+        },
+    },
+    "srilanka": {
+        "db_match": "%Sri Lanka%",
+        "name": "Sri Lanka",
+        "adjective": "Sri Lankan",
+        "prompt_cities": "Colombo, Kandy, Galle, Jaffna, or other Sri Lankan cities",
+        "home_cities": {
+            "colombo", "kandy", "galle", "jaffna", "negombo", "kurunegala",
+            "batticaloa", "anuradhapura", "ratnapura", "matara", "gampaha",
+            "nugegoda", "dehiwala", "moratuwa",
+        },
+    },
 }
 
 EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
@@ -163,9 +239,12 @@ FOREIGN_CITIES = {
     # Canada
     "toronto", "vancouver", "montreal", "ottawa", "calgary",
     # India
-    "mumbai", "delhi", "bangalore", "bengaluru", "chennai", "kolkata",
+    "mumbai", "delhi", "new delhi", "bangalore", "bengaluru", "chennai", "kolkata",
     "hyderabad", "pune", "ahmedabad", "jaipur", "chandigarh", "lucknow",
-    "kochi", "nagpur", "indore", "surat",
+    "kochi", "cochin", "nagpur", "indore", "surat", "gurgaon", "gurugram",
+    "noida", "coimbatore", "vadodara", "vijayawada", "thiruvananthapuram",
+    "trivandrum", "bhopal", "patna", "kanpur", "nashik", "ludhiana", "amritsar",
+    "mangalore", "mysore", "visakhapatnam",
     # Other Asia
     "singapore", "hong kong", "kowloon", "kuala lumpur", "penang", "johor",
     "petaling jaya", "johor bahru", "george town", "ipoh", "shah alam",
@@ -173,16 +252,20 @@ FOREIGN_CITIES = {
     "jakarta", "bali", "surabaya", "bandung", "medan", "semarang", "yogyakarta",
     "makassar", "denpasar", "palembang", "manila", "cebu",
     "ho chi minh", "hanoi", "da nang", "saigon",
-    "phnom penh", "siem reap", "vientiane", "yangon",
+    "phnom penh", "siem reap", "sihanoukville", "battambang", "vientiane", "yangon",
     "tokyo", "osaka", "kyoto", "seoul", "busan",
     "beijing", "shanghai", "shenzhen", "guangzhou", "taipei", "kaohsiung",
     "taichung", "tainan", "hsinchu", "taoyuan",
-    "colombo", "kathmandu", "dhaka", "karachi", "lahore", "islamabad",
+    "colombo", "kandy", "galle", "jaffna", "negombo", "kurunegala",
+    "kathmandu", "pokhara", "lalitpur", "biratnagar", "butwal", "bharatpur",
+    "dhaka", "karachi", "lahore", "islamabad",
     # Middle East
     "dubai", "abu dhabi", "doha", "riyadh", "jeddah", "kuwait city", "muscat",
     # Africa
     "cape town", "johannesburg", "durban", "pretoria", "nairobi",
-    "lagos", "cairo", "accra",
+    "lagos", "cairo", "accra", "kumasi", "tamale", "takoradi", "tema",
+    "abuja", "ibadan", "kano", "port harcourt", "benin city", "kaduna",
+    "enugu", "ilorin", "abeokuta", "owerri", "calabar", "lekki", "ikeja",
     # NZ
     "auckland", "wellington", "christchurch",
     # Europe

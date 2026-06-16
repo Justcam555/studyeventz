@@ -71,6 +71,11 @@ class Country:
     local_filter_label: str = ""    # chip label, e.g. "Bangkok"
     local_filter_match: str = ""    # lowercase substring matched against event location
 
+    # English-native markets (e.g. Ghana, Nigeria): render single-language
+    # English by dropping the bilingual native-language counterparts, rather
+    # than carrying a translation map. Leaves only the English copy.
+    english_only: bool = False
+
     # Native-language localisation. Maps a source substring found verbatim in
     # the page templates (Thai, the original build language) to its translation
     # for this market. Thailand leaves this empty (templates are already Thai),
@@ -622,8 +627,176 @@ MALAYSIA = Country(
     },
 )
 
+# ─── Ghana ───────────────────────────────────────────────────────────────────
+# English-native market: english_only drops the bilingual native lines, leaving
+# clean single-language English. No translation map needed.
+GHANA = Country(
+    code="ghana",
+    name_en="Ghana",
+    name_native="Ghana",
+    flag="🇬🇭",
+    primary_lang="en",
+    iso2="GH",
+    agent_db_match="%Ghana%",
+    timezone="Africa/Accra",
+    title="Study Abroad Events in Ghana | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Ghana — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    local_filter_label="Accra",
+    local_filter_match="accra",
+    english_only=True,
+)
+
+# ─── Nigeria ─────────────────────────────────────────────────────────────────
+NIGERIA = Country(
+    code="nigeria",
+    name_en="Nigeria",
+    name_native="Nigeria",
+    flag="🇳🇬",
+    primary_lang="en",
+    iso2="NG",
+    agent_db_match="%Nigeria%",
+    timezone="Africa/Lagos",
+    title="Study Abroad Events in Nigeria | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Nigeria — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    local_filter_label="Lagos",
+    local_filter_match="lagos",
+    english_only=True,
+)
+
+# ─── Singapore ───────────────────────────────────────────────────────────────
+# English-native city-state: english_only render, no local-city chip.
+SINGAPORE = Country(
+    code="singapore",
+    name_en="Singapore",
+    name_native="Singapore",
+    flag="🇸🇬",
+    primary_lang="en",
+    iso2="SG",
+    agent_db_match="%Singapore%",
+    timezone="Asia/Singapore",
+    title="Study Abroad Events in Singapore | University Fairs & Webinars | StudyEventz",
+    meta_desc_en=("Find study abroad events in Singapore — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="Get notified about new study abroad events every week → email us",
+    english_only=True,
+)
+
+# ─── Cambodia ────────────────────────────────────────────────────────────────
+# Khmer (km). AI-DRAFTED demo/placeholder copy — Khmer is lower-confidence than
+# the other localisations, so flag clearly for native review before launch.
+CAMBODIA = Country(
+    code="cambodia",
+    name_en="Cambodia",
+    name_native="កម្ពុជា",
+    flag="🇰🇭",
+    primary_lang="km",
+    iso2="KH",
+    agent_db_match="%Cambodia%",
+    timezone="Asia/Phnom_Penh",
+    title="ព្រឹត្តិការណ៍សិក្សានៅបរទេសក្នុងប្រទេសកម្ពុជា | ពិព័រណ៍សាកលវិទ្យាល័យ និងវេបៀណា | StudyEventz",
+    meta_desc_en=("Find study abroad events in Cambodia — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="ស្វែងរកព្រឹត្តិការណ៍សិក្សានៅបរទេសក្នុងប្រទេសកម្ពុជា ធ្វើបច្ចុប្បន្នភាពរៀងរាល់សប្តាហ៍។",
+    contact_email="info@studyeventz.com",
+    notify_channel="email",
+    notify_text_native="ទទួលដំណឹងព្រឹត្តិការណ៍ថ្មីរៀងរាល់សប្តាហ៍ → ផ្ញើអ៊ីមែលមកយើង",
+    local_filter_label="Phnom Penh",
+    local_filter_match="phnom penh",
+    translations={
+        # ── Events page ──
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "ព្រឹត្តិការណ៍សិក្សានៅបរទេសក្នុងប្រទេសកម្ពុជា",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "ពិព័រណ៍សាកលវិទ្យាល័យ វេបៀណា និងព្រឹត្តិការណ៍សិក្សានៅបរទេស ទាំងអស់នៅកន្លែងតែមួយ។",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "ធ្វើបច្ចុប្បន្នភាពរៀងរាល់សប្តាហ៍ ជាមួយព្រឹត្តិការណ៍ក្នុងរយៈពេល៣០ថ្ងៃខាងមុខ។",
+        "ตัวกรอง": "តម្រង",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz ប្រមូលផ្តុំព្រឹត្តិការណ៍សិក្សានៅបរទេសពីក្រុមហ៊ុនប្រឹក្សាអប់រំទូទាំងប្រទេសកម្ពុជា។ ធ្វើបច្ចុប្បន្នភាពរៀងរាល់ថ្ងៃច័ន្ទ។",
+        # ── About page ──
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz គឺជាមគ្គុទេសក៍ឯករាជ្យសម្រាប់ស្វែងរកព្រឹត្តិការណ៍សិក្សានៅបរទេសក្នុងប្រទេសកម្ពុជា",
+        "เกี่ยวกับเรา": "អំពីយើង",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz គឺជាមគ្គុទេសក៍ឯករាជ្យសម្រាប់ស្វែងរកព្រឹត្តិការណ៍សិក្សានៅបរទេស — មិនថាជាពិព័រណ៍សាកលវិទ្យាល័យ ថ្ងៃផ្តល់ព័ត៌មាន Open Day ឬកាលបរិច្ឆេទផុតកំណត់អាហារូបករណ៍ — ប្រមូលផ្តុំនៅកន្លែងតែមួយ និងធ្វើបច្ចុប្បន្នភាពរៀងរាល់សប្តាហ៍។",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "ជាធម្មតា ការស្វែងរកព្រឹត្តិការណ៍ទាំងនេះ មានន័យថាត្រូវរុករកទំព័រ Facebook រាប់សិប គេហទំព័រភ្នាក់ងារ និងប្រតិទិនព្រឹត្តិការណ៍របស់សាកលវិទ្យាល័យផ្សេងៗ។ យើងធ្វើការងារនោះដោយស្វ័យប្រវត្តិ៖ រៀងរាល់សប្តាហ៍ យើងប្រមូលព្រឹត្តិការណ៍ពីក្រុមហ៊ុនប្រឹក្សាអប់រំ និងដៃគូសាកលវិទ្យាល័យទូទាំងទីផ្សារ ផ្ទៀងផ្ទាត់ និងលុបព័ត៌មានស្ទួន រួចបោះពុម្ពផ្សាយជាបញ្ជីដ៏ស្អាត ច្បាស់លាស់ និងគួរឱ្យទុកចិត្ត។",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "យើងបានចាប់ផ្តើមនៅប្រទេសថៃ ដែលរៀងរាល់ឆ្នាំមានព្រឹត្តិការណ៍សិក្សានៅបរទេសរាប់រយ ប៉ុន្តែគ្មានកន្លែងកណ្តាលតែមួយសម្រាប់ស្វែងរកវា។ យើងជាវេទិកាឯករាជ្យ — មិនតំណាងឱ្យសាកលវិទ្យាល័យ ឬភ្នាក់ងារណាមួយជាក់លាក់ទេ ដូច្នេះអ្វីដែលអ្នកឃើញ គឺជាទិដ្ឋភាពទូទៅនៃជម្រើសចម្រុះ មិនមែនជាការផ្សព្វផ្សាយរបស់ក្រុមហ៊ុនណាមួយឡើយ។",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "ចាប់អារម្មណ៍នាំ studyeventz ទៅកាន់ទីផ្សាររបស់អ្នកមែនទេ? យើងរីករាយក្នុងការពិភាក្សាជាមួយអ្នក។",
+        # ── Contact page ──
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "ទាក់ទង studyeventz ដើម្បីបន្ថែមព្រឹត្តិការណ៍ រាយការណ៍កំហុស ឬសហការជាមួយយើង",
+        "ติดต่อเรา": "ទាក់ទងយើង",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "មានព្រឹត្តិការណ៍ដែលយើងគួរបន្ថែម ឃើញព័ត៌មានហួសសម័យ ឬចង់សហការជាមួយយើងមែនទេ? សូមផ្ញើអ៊ីមែលមកយើងតាម ",
+        " แล้วเราจะติดต่อกลับไป": " រួចយើងនឹងទាក់ទងត្រឡប់ទៅវិញ។",
+        "แจ้งเพิ่มกิจกรรม": "បន្ថែមព្រឹត្តិការណ៍",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "ប្រសិនបើអ្នកកំពុងរៀបចំពិព័រណ៍សិក្សានៅបរទេស Open Day ឬវគ្គផ្តល់ព័ត៌មាន សូមផ្ញើព័ត៌មានលម្អិតមកយើង រួចយើងនឹងបន្ថែមវាទៅក្នុងបញ្ជី។",
+        "ส่งงานเข้ามา": "ដាក់ស្នើព្រឹត្តិការណ៍",
+        "แจ้งแก้ไขข้อมูล": "រាយការណ៍កំហុសព័ត៌មាន",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "ឃើញកាលបរិច្ឆេទខុស ឬតំណភ្ជាប់ខូចមែនទេ? សូមប្រាប់យើង រួចយើងនឹងកែតម្រូវវាភ្លាមៗ។",
+        "ความร่วมมือ": "ភាពជាដៃគូ",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "ប្រសិនបើអ្នកចាប់អារម្មណ៍នាំ studyeventz ទៅកាន់ទីផ្សារថ្មី ឬសហការជាមួយយើងនៅទីផ្សារដែលយើងមានវត្តមានរួចហើយ សូមទាក់ទងមកយើង។",
+        # ── Submit page ──
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "ដាក់ស្នើព្រឹត្តិការណ៍សិក្សានៅបរទេសទៅ studyeventz",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "បំពេញព័ត៌មានលម្អិតខាងក្រោម។ យើងនឹងពិនិត្យ និងបន្ថែមវាទៅក្នុងបញ្ជី។ ឥតគិតថ្លៃសម្រាប់អ្នករៀបចំ។",
+        "รายละเอียดกิจกรรม": "ព័ត៌មានលម្អិតព្រឹត្តិការណ៍",
+        "ผู้จัด": "អ្នករៀបចំ",
+        "ชื่อกิจกรรม": "ឈ្មោះព្រឹត្តិការណ៍",
+        "วันที่": "កាលបរិច្ឆេទ",
+        "เวลา": "ម៉ោង",
+        "สถานที่": "ទីតាំង",
+        "ลิงก์ลงทะเบียน": "តំណចុះឈ្មោះ",
+        "ข้อมูลผู้แจ้ง": "ព័ត៌មានអ្នកដាក់ស្នើ",
+        "ชื่อ": "ឈ្មោះ",
+        "อีเมล": "អ៊ីមែល",
+        "หมายเหตุเพิ่มเติม": "កំណត់សម្គាល់បន្ថែម",
+        "ส่ง": "ផ្ញើ",
+        "ขอบคุณค่ะ": "សូមអរគុណ!",
+        # ── Privacy page (AI-drafted, review before launch) ──
+        "นโยบายความเป็นส่วนตัว": "គោលការណ៍ឯកជនភាព",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz គោរពឯកជនភាពរបស់អ្នក។ យើងមិនប្រើខូឃី មិនប្រើឧបករណ៍តាមដានផ្សាយពាណិជ្ជកម្ម ហើយមិនដែលលក់ទិន្នន័យរបស់អ្នកឡើយ។",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "យើងរក្សាទុកទិន្នន័យតិចតួចនៅក្នុងកម្មវិធីរុករករបស់អ្នក ដើម្បីចងចាំទីផ្សារដែលអ្នកបានជ្រើសរើស និងដើម្បីផ្ទុកស្ថិតិការប្រើប្រាស់អនាមិកមុនពេលផ្ញើ។ ទិន្នន័យនេះស្ថិតនៅលើឧបករណ៍របស់អ្នក ហើយអ្នកអាចលុបវាបានគ្រប់ពេលតាមរយៈការកំណត់កម្មវិធីរុករក។",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "យើងប្រមូលស្ថិតិការប្រើប្រាស់អនាមិក — ដូចជាទំព័រដែលបានមើល និងព្រឹត្តិការណ៍ដែលបានចុច — ដើម្បីកែលម្អបញ្ជី។ ម៉ាស៊ីនមេរបស់យើងកត់ត្រាប្រភេទកម្មវិធីរុករក ទំព័របញ្ជូន និងអាសយដ្ឋាន IP របស់អ្នកក្នុងទម្រង់ hash មួយទិសដៅ។ យើងមិនដែលរក្សាទុកអាសយដ្ឋាន IP ពិតរបស់អ្នក ហើយមិនកំណត់អត្តសញ្ញាណអ្នកជាលក្ខណៈបុគ្គលឡើយ។",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "គេហទំព័រនេះដំណើរការលើហេដ្ឋារចនាសម្ព័ន្ធ Cloudflare ដែលដើរតួជាអ្នកដំណើរការទិន្នន័យរបស់យើង។ យើងបង្ហោះពុម្ពអក្សរផ្ទាល់ខ្លួន ហើយមិនប្រើ Google Analytics, Meta Pixel ឬបណ្តាញផ្សាយពាណិជ្ជកម្មណាមួយឡើយ។",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "ប្រសិនបើអ្នកមានសំណួរអំពីឯកជនភាព ឬចង់ឱ្យលុបទិន្នន័យរបស់អ្នក សូមទាក់ទងមកយើងតាម info@studyeventz.com",
+        # ── Country-specific English copy ──
+        "studyeventz is an independent guide to study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent guide to study abroad events in Cambodia — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Cambodia.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Phnom Penh, Cambodia" or "Online"\'',
+    },
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
-COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA]
+COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA,
+                            GHANA, NIGERIA, SINGAPORE, CAMBODIA]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).
@@ -666,11 +839,36 @@ def render_notify_banner(country: "Country") -> str:
     )
 
 
+def _english_only(html: str) -> str:
+    """Render an English-native market (Ghana, Nigeria, …): strip the bilingual
+    native-language (Thai) counterparts, leaving only the English text. The base
+    template mixes several bilingual patterns, each handled in order below."""
+    TH = r'[฀-๿]'
+    # 1. Thai <meta> description — drop the whole tag.
+    html = re.sub(r'[ \t]*<meta[^>]*\blang="th"[^>]*>\n?', '', html)
+    # 2. Block-level native lines (paired with an English sibling) -> drop.
+    html = re.sub(r'[ \t]*<(p|h[1-6])\b[^>]*\blang="th"[^>]*>.*?</\1>\n?', '', html, flags=re.S)
+    # 3. site-about Thai line (class="th", no lang attr) -> drop.
+    html = re.sub(r'[ \t]*<p class="th">.*?</p>\n?', '', html, flags=re.S)
+    # 4. Inline labels "<span ... lang='th'>Thai</span> / English" -> "English".
+    html = re.sub(r'<span[^>]*\blang="th"[^>]*>[^<]*</span>\s*/\s*', '', html)
+    # 5. Raw inline "Thai / English" (section titles, links, buttons) -> "English".
+    #    Stay within one short text run — never cross a tag, quote or newline,
+    #    so it can't run past the end of a JS string into later code.
+    html = re.sub(TH + r'[^<>/\n\'"]*?\s*/\s*', '', html)
+    # 6. Any remaining standalone Thai run (e.g. a trailing JS string) -> drop.
+    html = re.sub(r'\s*' + TH + r'+', '', html)
+    return html
+
+
 def localize(html: str, country: "Country") -> str:
     """Apply a market's native-language translations and language tags to a
     rendered template. Longest keys first so a short source string can't clobber
     a longer one it is a substring of. Thailand (empty map, lang 'th') is a
-    no-op and its output is unchanged."""
+    no-op and its output is unchanged. English-only markets strip the native
+    counterparts instead of translating."""
+    if country.english_only:
+        return _english_only(html)
     for src in sorted(country.translations, key=len, reverse=True):
         html = html.replace(src, country.translations[src])
     if country.primary_lang != "th":
