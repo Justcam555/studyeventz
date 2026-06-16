@@ -1,7 +1,7 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-06-16T16:36:00",
+  "generated_at": "2026-06-16T17:27:28",
   "window": {
     "from": "2026-06-16",
     "to": "2026-07-16"
@@ -10,6 +10,87 @@
     "from": "2024-06-16",
     "to": "2026-06-15"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 918,
+      "name": "NABA İtalya & Londra Kabul Günleri - İzmir",
+      "date": "2026-06-23",
+      "time": "14:00",
+      "location": "Academix İzmir Ofisi, İzmir",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "https://www.academix.com.tr/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 919,
+      "name": "NABA İtalya & Londra Kabul Günleri - Ankara",
+      "date": "2026-06-24",
+      "time": "14:00",
+      "location": "Academix Ankara Ofisi, Ankara",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "https://www.academix.com.tr/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 914,
+      "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
+      "date": "2026-06-24",
+      "time": "8:00 PM - 9:00 PM",
+      "location": "Online",
+      "organizer": "IDP Turkey",
+      "agent_name": "IDP Turkey",
+      "agent_country": "Turkey",
+      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/turkey/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IT"
+    },
+    {
+      "id": 920,
+      "name": "NABA İtalya & Londra Kabul Günleri - Taksim",
+      "date": "2026-06-25",
+      "time": "14:00",
+      "location": "Academix Taksim Ofisi, İstanbul",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "https://www.academix.com.tr/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 915,
+      "name": "Exclusive UK Webinar – September 2026 Intake - Turkey",
+      "date": "2026-06-25",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "Online",
+      "organizer": "IDP Turkey",
+      "agent_name": "IDP Turkey",
+      "agent_country": "Turkey",
+      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/turkey/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IT"
+    }
+  ],
   "past": []
 }

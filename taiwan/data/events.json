@@ -1,7 +1,7 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-06-16T16:36:00",
+  "generated_at": "2026-06-16T17:27:27",
   "window": {
     "from": "2026-06-16",
     "to": "2026-07-16"
@@ -58,38 +58,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IS"
-    },
-    {
-      "id": 379,
-      "name": "加拿大短期插班项目-圣约翰中学VS多伦多天主教育局 线上讲座",
-      "date": "2026-06-18",
-      "time": "10:00",
-      "location": "Online",
-      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited",
-      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited",
-      "agent_country": "China (excludes SARs and Taiwan)",
-      "agent_website": "http://www.ht-international.net/",
-      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HX"
-    },
-    {
-      "id": 380,
-      "name": "安省艾琳黛尔中学私立优质中学宣传会 线上讲座",
-      "date": "2026-06-23",
-      "time": "10:00",
-      "location": "Online",
-      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited",
-      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited",
-      "agent_country": "China (excludes SARs and Taiwan)",
-      "agent_website": "http://www.ht-international.net/",
-      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HX"
     },
     {
       "id": 356,

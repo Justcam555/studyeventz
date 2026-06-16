@@ -1,7 +1,7 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-06-16T16:36:00",
+  "generated_at": "2026-06-16T17:27:28",
   "window": {
     "from": "2026-06-16",
     "to": "2026-07-16"
@@ -10,6 +10,55 @@
     "from": "2024-06-16",
     "to": "2026-06-15"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 899,
+      "name": "Study Abroad Expo 2026 in Saudi",
+      "date": "2026-06-19",
+      "time": "04:00 PM – 09:00 PM",
+      "location": "Ibn Turki Hall, Sheraton Hotel Riyadh",
+      "organizer": "JnS Education",
+      "agent_name": "JnS Education",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://jnsedu.com/contact-us/",
+      "registration_url": "https://jnsedu.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 903,
+      "name": "Study Abroad Expo 2026 in Saudi",
+      "date": "2026-06-19",
+      "time": "04:00 PM – 09:00 PM",
+      "location": "Ibn Turki Hall, Sheraton Hotel Riyadh",
+      "organizer": "JNS Education Consultant (UK) Ltd",
+      "agent_name": "JNS Education Consultant (UK) Ltd",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "www.jnsedu.com",
+      "registration_url": "https://jnsedu.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 898,
+      "name": "Exclusive UK Webinar – September 2026 Intake - KSA",
+      "date": "2026-06-25",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty",
+      "agent_name": "IDP Education Pty",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://www.idp.com/saudiarabia",
+      "registration_url": "https://www.idp.com/saudiarabia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
   "past": []
 }
