@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit an Event — studyeventz</title>
+<meta name="description" content="Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Japan.">
+<meta name="description" lang="ja" content="studyeventz に留学イベントを送信">
+<link rel="canonical" href="https://www.studyeventz.com/submit.html">
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
+
+<style>
+  :root {
+    --teal: #0d7377; --teal-dark: #095a5d; --gold: #f4a825;
+    --ink: #0d2233; --bg: #f5f7f9; --text: #1a2530;
+    --muted: #5d6b78; --border: #e2e8ed; --error: #c0392b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6;
+         padding-bottom: 92px; }
+  [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
+                              -apple-system, BlinkMacSystemFont, sans-serif; }
+
+  .site-header { background: var(--teal); color: #fff; }
+  .header-bar { max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem;
+                display: flex; align-items: center; justify-content: space-between;
+                gap: 1.5rem; flex-wrap: wrap; }
+  .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
+  .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit;
+                transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
+  .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,.85); text-decoration: none;
+           padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
+           transition: background .15s, color .15s; }
+  .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
+  .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
+
+  .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
+  .about-hero-inner { max-width: 760px; margin: 0 auto; }
+  .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
+  .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
+                               line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
+  .about-hero p.intro { opacity: .9; font-size: .95rem; margin-top: .5rem; }
+  .about-hero p.intro.th { color: var(--gold); margin-top: .75rem; }
+
+  .about-content { max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+
+  /* Form */
+  .submit-form { background: #fff; border-radius: 10px; padding: 2rem;
+                 box-shadow: 0 1px 3px rgba(13,34,51,.06); }
+  .field-group { margin-bottom: 1.25rem; }
+  .field-group:last-of-type { margin-bottom: 0; }
+  .field-label { display: block; font-size: .85rem; font-weight: 600;
+                 color: var(--text); margin-bottom: .35rem; }
+  .field-label .th { color: var(--teal); font-weight: 700; }
+  .field-label .req { color: var(--error); margin-left: .15rem; }
+  .field-hint { font-size: .78rem; color: var(--muted); margin-top: .25rem; }
+  input[type=text], input[type=email], input[type=url], input[type=date],
+  input[type=time], textarea, select {
+    width: 100%; padding: .65rem .85rem; border: 1px solid var(--border);
+    border-radius: 6px; font-size: .95rem; font-family: inherit;
+    color: var(--text); background: #fff; transition: border-color .15s;
+  }
+  textarea { resize: vertical; min-height: 80px; line-height: 1.45; }
+  input:focus, textarea:focus { outline: none; border-color: var(--teal); }
+  input.error, textarea.error { border-color: var(--error); }
+
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 540px) { .field-row { grid-template-columns: 1fr; gap: 1.25rem; } }
+
+  .form-section-title { font-size: .78rem; font-weight: 700; text-transform: uppercase;
+                        letter-spacing: .08em; color: var(--muted);
+                        margin: 2rem 0 1rem 0; padding-top: 1.5rem;
+                        border-top: 1px solid var(--border); }
+  .form-section-title:first-child { margin-top: 0; padding-top: 0; border: none; }
+
+  .submit-btn { background: var(--teal); color: #fff; border: none;
+                padding: .85rem 1.6rem; border-radius: 8px;
+                font-size: 1.02rem; font-weight: 600; cursor: pointer;
+                transition: background .15s; margin-top: 1.5rem; }
+  .submit-btn:hover:not(:disabled) { background: var(--teal-dark); }
+  .submit-btn:disabled { background: #cbd5d8; cursor: not-allowed; }
+
+  .form-msg { padding: 1rem 1.2rem; border-radius: 8px; margin-top: 1rem;
+              font-size: .92rem; display: none; }
+  .form-msg.ok    { display: block; background: #e7f5ee; color: #1f7a3f;
+                    border: 1px solid #b5dec5; }
+  .form-msg.err   { display: block; background: #fde7e5; color: var(--error);
+                    border: 1px solid #f1bbb5; }
+
+  /* LINE banner */
+  .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
+                 background: var(--teal); color: var(--gold);
+                 padding: 1.25rem 1rem; z-index: 50;
+                 box-shadow: 0 -2px 8px rgba(13,34,51,.15);
+                 display: flex; align-items: center; justify-content: center; gap: .8rem; }
+  .line-banner a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  .line-banner a:hover { text-decoration: underline; }
+  .line-banner-text { font-size: 1.02rem; }
+  .line-banner-handle { background: rgba(244, 168, 37, .15);
+                        border: 1px solid rgba(244, 168, 37, .35);
+                        padding: .2rem .65rem; border-radius: 14px;
+                        font-size: .9rem; margin-left: .25rem; }
+  .line-icon { width: 30px; height: 30px; flex-shrink: 0; }
+
+  @media (max-width: 640px) {
+    .header-bar { padding: .8rem 1rem; }
+    .brand { font-size: 1.4rem; }
+    .about-hero { padding: 1.5rem 1rem 1.7rem; }
+    .about-hero h1 { font-size: 1.5rem; }
+    .about-hero .hero-th-title { font-size: 1.95rem; }
+    .about-content { padding: 1.5rem 1rem 2.5rem; }
+    .submit-form { padding: 1.5rem 1.2rem; }
+    .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
+    .line-banner-text { font-size: .92rem; text-align: center; }
+    .line-icon { width: 26px; height: 26px; }
+    body { padding-bottom: 115px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">🇯🇵</span></a>
+    <nav class="nav">
+      <a href="events.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <p class="hero-th-title" lang="ja">イベントを追加</p>
+    <h1>Submit an Event</h1>
+    <p class="intro th" lang="ja">以下に詳細をご記入ください。確認のうえ一覧に追加します。主催者は無料です。</p>
+    <p class="intro">Fill in the details below. We'll review and add it to the listings. Free for organizers.</p>
+  </div>
+</section>
+
+<main class="about-content">
+  <form id="submit-form" class="submit-form" novalidate>
+
+    <div class="form-section-title">イベント詳細 / Event details</div>
+
+    <div class="field-group">
+      <label class="field-label" for="f-organizer">
+        <span class="th" lang="ja">主催者</span> / Organizer <span class="req">*</span>
+      </label>
+      <input type="text" id="f-organizer" name="organizer" required maxlength="300"
+             placeholder="e.g. IDP Education, BRIT Education UK, Hands On Education Consultants">
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="f-event-name">
+        <span class="th" lang="ja">イベント名</span> / Event name <span class="req">*</span>
+      </label>
+      <input type="text" id="f-event-name" name="event_name" required maxlength="500"
+             placeholder="e.g. UK Study Day: Last Ticket to UK!">
+    </div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label" for="f-event-date">
+          <span class="th" lang="ja">日付</span> / Date <span class="req">*</span>
+        </label>
+        <input type="date" id="f-event-date" name="event_date" required>
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="f-event-time">
+          <span class="th" lang="ja">時間</span> / Time
+        </label>
+        <input type="text" id="f-event-time" name="event_time" maxlength="50"
+               placeholder="e.g. 14:00 - 16:00">
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="f-location">
+        <span class="th" lang="ja">場所</span> / Location
+      </label>
+      <input type="text" id="f-location" name="location" maxlength="300"
+             placeholder='e.g. "Tokyo, Japan" or "Online"'>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="f-url">
+        <span class="th" lang="ja">登録リンク</span> / Registration URL <span class="req">*</span>
+      </label>
+      <input type="url" id="f-url" name="registration_url" required maxlength="1000"
+             placeholder="https://...">
+      <p class="field-hint">A landing page where attendees can find more details or register.</p>
+    </div>
+
+    <div class="form-section-title">送信者情報 / Submitter info <small style="font-weight:400;text-transform:none">— optional</small></div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label" for="f-name">
+          <span class="th" lang="ja">お名前</span> / Your name
+        </label>
+        <input type="text" id="f-name" name="submitter_name" maxlength="200">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="f-email">
+          <span class="th" lang="ja">メール</span> / Email
+        </label>
+        <input type="email" id="f-email" name="submitter_email" maxlength="300"
+               placeholder="we'll only email if we have a question">
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label" for="f-notes">
+        <span class="th" lang="ja">備考</span> / Notes
+      </label>
+      <textarea id="f-notes" name="notes" maxlength="2000"
+                placeholder="Anything else we should know?"></textarea>
+    </div>
+
+    <button type="submit" id="submit-btn" class="submit-btn">
+      送信 / Submit
+    </button>
+    <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+
+  </form>
+</main>
+
+<aside class="line-banner" role="contentinfo" aria-label="Email updates">
+  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </svg>
+  <span class="line-banner-text" lang="ja">毎週新しいイベント情報を受け取る → メールでご連絡ください</span>
+  <a href="mailto:info@studyeventz.com">
+    <span class="line-banner-handle">info@studyeventz.com</span>
+  </a>
+</aside>
+
+<script>
+const SUBMIT_URL = "https://studyeventz-app.mylogins555.workers.dev/s";
+const SITE_KEY   = "studyeventz-public-2026";
+
+const form = document.getElementById('submit-form');
+const btn  = document.getElementById('submit-btn');
+const msg  = document.getElementById('form-msg');
+
+function showMsg(kind, text) {
+  msg.className = 'form-msg ' + kind;
+  msg.textContent = text;
+}
+
+function clearFieldErrors() {
+  form.querySelectorAll('input, textarea').forEach(el => el.classList.remove('error'));
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  clearFieldErrors();
+  msg.className = 'form-msg';
+  msg.textContent = '';
+
+  if (!SUBMIT_URL) {
+    showMsg('err', 'Submission endpoint is not configured yet. Please email us at info@studyeventz.com.');
+    return;
+  }
+
+  const body = {
+    country:          "japan",
+    organizer:        form.organizer.value.trim(),
+    event_name:       form.event_name.value.trim(),
+    event_date:       form.event_date.value.trim(),
+    event_time:       form.event_time.value.trim(),
+    location:         form.location.value.trim(),
+    registration_url: form.registration_url.value.trim(),
+    submitter_name:   form.submitter_name.value.trim(),
+    submitter_email:  form.submitter_email.value.trim(),
+    notes:            form.notes.value.trim(),
+  };
+
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  try {
+    const url = SUBMIT_URL + (SUBMIT_URL.includes('?') ? '&' : '?') + 'k=' + encodeURIComponent(SITE_KEY);
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.ok && data.ok) {
+      form.style.display = 'none';
+      showMsg('ok', 'Thanks! We\'ve received your submission and will review it shortly. ありがとうございます！');
+    } else if (data && data.error === 'validation_failed' && data.fields) {
+      // Highlight broken fields
+      Object.keys(data.fields).forEach(f => {
+        const el = form.querySelector(`[name="${f}"]`);
+        if (el) el.classList.add('error');
+      });
+      showMsg('err', 'Please check the highlighted fields and try again.');
+    } else {
+      showMsg('err', 'Could not submit. Please try again or email info@studyeventz.com.');
+    }
+  } catch (err) {
+    showMsg('err', 'Network error — please try again or email info@studyeventz.com.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '送信 / Submit';
+  }
+});
+</script>
+</body>
+</html>

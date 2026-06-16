@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — studyeventz</title>
+<meta name="description" content="How studyeventz handles your data — no cookies, no advertising trackers, anonymous analytics only.">
+<link rel="canonical" href="https://www.studyeventz.com/korea/privacy.html">
+
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
+
+<style>
+  :root {
+    --teal: #0d7377; --teal-dark: #095a5d; --gold: #f4a825;
+    --ink: #0d2233; --bg: #f5f7f9; --text: #1a2530;
+    --muted: #5d6b78; --border: #e2e8ed;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6;
+         padding-bottom: 92px; }
+  [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
+                              -apple-system, BlinkMacSystemFont, sans-serif; }
+
+  .site-header { background: var(--teal); color: #fff; }
+  .header-bar { max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem;
+                display: flex; align-items: center; justify-content: space-between;
+                gap: 1.5rem; flex-wrap: wrap; }
+  .brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; }
+  .brand .gold { color: var(--gold); }
+  .brand-link { display: inline-flex; align-items: center; gap: .55rem;
+                text-decoration: none; color: inherit; transition: opacity .15s; }
+  .brand-link:hover { opacity: .85; }
+  .brand-flag { font-size: 1.3rem; line-height: 1; }
+  .nav { display: flex; gap: .25rem; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,.85); text-decoration: none;
+           padding: .5rem .9rem; border-radius: 6px; font-size: .9rem; font-weight: 500;
+           transition: background .15s, color .15s; }
+  .nav a:hover { background: rgba(255,255,255,.12); color: #fff; }
+  .nav a.active { background: rgba(255,255,255,.18); color: #fff; font-weight: 600; }
+
+  .about-hero { background: var(--teal-dark); color: #fff; padding: 2rem 1.5rem 2.2rem; }
+  .about-hero-inner { max-width: 760px; margin: 0 auto; }
+  .about-hero h1 { font-size: 1.9rem; font-weight: 700; line-height: 1.2; margin: 0; }
+  .about-hero .hero-th-title { color: var(--gold); font-size: 2.47rem; font-weight: 700;
+                               line-height: 1.2; margin: 0 0 .35rem 0; letter-spacing: .01em; }
+
+  .about-content { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+  .about-pair { margin-bottom: 2rem; }
+  .about-pair p { font-size: 1.05rem; margin: 0; }
+  .about-pair p.th { color: var(--text); font-weight: 500; margin-bottom: .5rem; }
+  .about-pair p:not(.th) { color: var(--muted); }
+  .privacy-updated { color: var(--muted); font-size: .9rem; margin-top: 2.5rem;
+                     border-top: 1px solid var(--border); padding-top: 1.5rem; }
+
+  .line-banner { position: fixed; left: 0; right: 0; bottom: 0;
+                 background: var(--teal); color: var(--gold);
+                 padding: 1.25rem 1rem; z-index: 50;
+                 box-shadow: 0 -2px 8px rgba(13,34,51,.15);
+                 display: flex; align-items: center; justify-content: center; gap: .8rem; }
+  .line-banner a { color: var(--gold); text-decoration: none; font-weight: 600; }
+  .line-banner a:hover { text-decoration: underline; }
+  .line-banner-text { font-size: 1.02rem; }
+  .line-banner-handle { background: rgba(244, 168, 37, .15);
+                        border: 1px solid rgba(244, 168, 37, .35);
+                        padding: .2rem .65rem; border-radius: 14px;
+                        font-size: .9rem; margin-left: .25rem; }
+  .line-icon { width: 30px; height: 30px; flex-shrink: 0; }
+
+  @media (max-width: 640px) {
+    .header-bar { padding: .8rem 1rem; }
+    .brand { font-size: 1.4rem; }
+    .about-hero { padding: 1.5rem 1rem 1.7rem; }
+    .about-hero h1 { font-size: 1.5rem; }
+    .about-hero .hero-th-title { font-size: 1.95rem; }
+    .about-content { padding: 2rem 1.1rem 2.5rem; }
+    .about-pair p { font-size: .98rem; }
+    .line-banner { padding: .9rem .8rem; gap: .5rem; flex-wrap: wrap; }
+    .line-banner-text { font-size: .92rem; text-align: center; }
+    .line-icon { width: 26px; height: 26px; }
+    body { padding-bottom: 115px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="brand-link" href="/?pick" aria-label="Change country"><span class="brand">studyevent<span class="gold">z</span></span><span class="brand-flag" aria-hidden="true">🇰🇷</span></a>
+    <nav class="nav">
+      <a href="events.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html" class="active">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <p class="hero-th-title" lang="ko">개인정보 처리방침</p>
+    <h1>Privacy</h1>
+  </div>
+</section>
+
+<main class="about-content">
+  <section class="about-pair">
+    <p class="th" lang="ko">studyeventz는 귀하의 개인정보를 존중합니다. 쿠키나 광고 추적기를 사용하지 않으며, 귀하의 데이터를 판매하지 않습니다.</p>
+    <p>studyeventz respects your privacy. We don't use cookies, we don't use advertising trackers, and we never sell your data.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="ko">선택하신 시장을 기억하고 익명의 사용 통계를 전송하기 전에 임시 저장하기 위해 브라우저에 소량의 데이터를 저장합니다. 이 데이터는 귀하의 기기에 남아 있으며 브라우저 설정에서 언제든지 삭제할 수 있습니다.</p>
+    <p>We store a small amount of data in your browser to remember the market you chose and to hold anonymous usage statistics before they are sent. This data stays on your device and you can clear it at any time through your browser settings.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="ko">저희는 조회된 페이지와 클릭된 이벤트 등 익명의 사용 통계를 수집하여 목록을 개선합니다. 서버는 브라우저 종류, 참조 페이지, 그리고 단방향 해시 처리된 IP 주소를 기록합니다. 실제 IP 주소는 저장하지 않으며 개인을 식별하지 않습니다.</p>
+    <p>We collect anonymous usage statistics — such as which pages are viewed and which events are clicked — to improve the listings. Our servers log your browser type, the referring page, and your IP address in a one-way hashed form. We never store your real IP address and we do not identify you personally.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="ko">이 사이트는 Cloudflare 인프라에서 운영되며, Cloudflare는 당사의 데이터 처리자 역할을 합니다. 폰트는 자체 호스팅하며 Google Analytics, Meta Pixel 또는 기타 광고 네트워크를 사용하지 않습니다.</p>
+    <p>This site runs on Cloudflare infrastructure, which acts as our data processor. We host our own fonts, and we don't use Google Analytics, the Meta Pixel, or any advertising networks.</p>
+  </section>
+
+  <section class="about-pair">
+    <p class="th" lang="ko">개인정보에 관한 문의나 데이터 삭제를 원하시면 info@studyeventz.com으로 연락해 주세요.</p>
+    <p>If you have any questions about privacy or would like your data removed, contact us at <a href="mailto:info@studyeventz.com" style="color:var(--teal);font-weight:600">info@studyeventz.com</a>.</p>
+  </section>
+
+  <p class="privacy-updated">Last updated: June 2026.</p>
+</main>
+
+<aside class="line-banner" role="contentinfo" aria-label="Email updates">
+  <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </svg>
+  <span class="line-banner-text" lang="ko">매주 새로운 이벤트 소식 받기 → 이메일로 연락주세요</span>
+  <a href="mailto:info@studyeventz.com">
+    <span class="line-banner-handle">info@studyeventz.com</span>
+  </a>
+</aside>
+
+</body>
+</html>

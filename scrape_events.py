@@ -179,6 +179,26 @@ COUNTRY_CONFIG = {
             "chitwan", "bharatpur", "birgunj", "dharan", "nepalgunj", "itahari",
         },
     },
+    "japan": {
+        "db_match": "%Japan%",
+        "name": "Japan",
+        "adjective": "Japanese",
+        "prompt_cities": "Tokyo, Osaka, Kyoto, Yokohama, Nagoya, or other Japanese cities",
+        "home_cities": {
+            "tokyo", "osaka", "kyoto", "yokohama", "nagoya", "sapporo", "fukuoka",
+            "kobe", "sendai", "hiroshima", "saitama", "chiba", "kawasaki",
+        },
+    },
+    "korea": {
+        "db_match": "%Korea%",
+        "name": "South Korea",
+        "adjective": "Korean",
+        "prompt_cities": "Seoul, Busan, Incheon, Daegu, Daejeon, or other Korean cities",
+        "home_cities": {
+            "seoul", "busan", "incheon", "daegu", "daejeon", "gwangju", "suwon",
+            "ulsan", "jeju", "seongnam", "goyang", "yongin",
+        },
+    },
     "srilanka": {
         "db_match": "%Sri Lanka%",
         "name": "Sri Lanka",
@@ -253,7 +273,8 @@ FOREIGN_CITIES = {
     "makassar", "denpasar", "palembang", "manila", "cebu",
     "ho chi minh", "hanoi", "da nang", "saigon",
     "phnom penh", "siem reap", "sihanoukville", "battambang", "vientiane", "yangon",
-    "tokyo", "osaka", "kyoto", "seoul", "busan",
+    "tokyo", "osaka", "kyoto", "yokohama", "nagoya", "sapporo", "fukuoka", "kobe",
+    "seoul", "busan", "incheon", "daegu", "daejeon", "gwangju",
     "beijing", "shanghai", "shenzhen", "guangzhou", "taipei", "kaohsiung",
     "taichung", "tainan", "hsinchu", "taoyuan",
     "colombo", "kandy", "galle", "jaffna", "negombo", "kurunegala",
@@ -850,6 +871,8 @@ def main() -> int:
     ap.add_argument("--company", nargs="+", help="Only scan agents matching these names (e.g. --company WIN StudyIn)")
     ap.add_argument("--country", default="thailand", choices=sorted(COUNTRY_CONFIG),
                     help="Market to scrape (default: thailand)")
+    ap.add_argument("--all", action="store_true",
+                    help="Scrape every market in COUNTRY_CONFIG (used by the weekly cron)")
     args = ap.parse_args()
 
     if args.report:
@@ -857,8 +880,12 @@ def main() -> int:
         print(f"Report written to {path}")
         return 0
 
-    asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh,
-                             companies=args.company, country=args.country))
+    countries = sorted(COUNTRY_CONFIG) if args.all else [args.country]
+    for country in countries:
+        if args.all:
+            print(f"\n=== {COUNTRY_CONFIG[country]['name']} ===")
+        asyncio.run(scrape_async(limit=args.limit, refresh=args.refresh,
+                                 companies=args.company, country=country))
     return 0
 
 
