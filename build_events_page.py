@@ -4007,7 +4007,7 @@ INDEX_HTML = r"""<!doctype html>
 __COUNTRY_TILES__
   </div>
 
-  <p class="meta">More markets coming soon.</p>
+  <p class="meta">Events are gathered from publicly listed sources. Translations are AI-generated — please allow for errors.</p>
 </main>
 
 <script>
