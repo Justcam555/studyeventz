@@ -1283,10 +1283,203 @@ MEXICO = Country(
     translations=_es_translations("México", "Mexico", 'Ciudad de México, México'),
 )
 
+def _english_market(code, name, flag, iso2, db_match, tz, city_label="", city_match=""):
+    """Build an english_only Country with the standard English copy."""
+    return Country(
+        code=code, name_en=name, name_native=name, flag=flag, primary_lang="en",
+        iso2=iso2, agent_db_match=db_match, timezone=tz,
+        title=f"Study Abroad Events in {name} | University Fairs & Webinars | StudyEventz",
+        meta_desc_en=(f"Find study abroad events in {name} — fairs, webinars and briefings for "
+                      "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+        meta_desc_native="", contact_email="info@studyeventz.com", notify_channel="email",
+        notify_text_native="Get notified about new study abroad events every week → email us",
+        local_filter_label=city_label, local_filter_match=city_match, english_only=True,
+    )
+
+
+# English-native markets (Kenya, Pakistan, Bangladesh) + Gulf markets rendered in
+# English (Saudi, UAE) — Arabic would need right-to-left layout the template
+# doesn't support, and English is widely used in Gulf education. Flag for review.
+KENYA      = _english_market("kenya", "Kenya", "🇰🇪", "KE", "%Kenya%", "Africa/Nairobi", "Nairobi", "nairobi")
+PAKISTAN   = _english_market("pakistan", "Pakistan", "🇵🇰", "PK", "%Pakistan%", "Asia/Karachi", "Karachi", "karachi")
+BANGLADESH = _english_market("bangladesh", "Bangladesh", "🇧🇩", "BD", "%Bangladesh%", "Asia/Dhaka", "Dhaka", "dhaka")
+SAUDI      = _english_market("saudi", "Saudi Arabia", "🇸🇦", "SA", "%Saudi%", "Asia/Riyadh", "Riyadh", "riyadh")
+UAE        = _english_market("uae", "UAE", "🇦🇪", "AE", "%Emirates%", "Asia/Dubai", "Dubai", "dubai")
+
+# ─── Turkey ──────────────────────────────────────────────────────────────────
+# Turkish (tr). AI-DRAFTED demo/placeholder copy — native review.
+TURKEY = Country(
+    code="turkey", name_en="Turkey", name_native="Türkiye", flag="🇹🇷",
+    primary_lang="tr", iso2="TR", agent_db_match="%Turkey%", timezone="Europe/Istanbul",
+    title="Türkiye'de Yurt Dışı Eğitim Etkinlikleri | Üniversite Fuarları ve Web Seminerleri | StudyEventz",
+    meta_desc_en=("Find study abroad events in Turkey — fairs, webinars and briefings for "
+                  "students considering the UK, USA, Canada, Australia and Europe. Updated weekly."),
+    meta_desc_native="Türkiye'deki yurt dışı eğitim etkinliklerini bulun — fuarlar, web seminerleri ve bilgilendirmeler. Her hafta güncellenir.",
+    contact_email="info@studyeventz.com", notify_channel="email",
+    notify_text_native="Her hafta yeni etkinliklerden haberdar olun → bize e-posta gönderin",
+    local_filter_label="Istanbul", local_filter_match="istanbul",
+    translations={
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "Türkiye'deki yurt dışı eğitim etkinlikleri",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "Üniversite fuarları, web seminerleri ve yurt dışı eğitim etkinlikleri, hepsi tek bir yerde.",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "Her hafta güncellenir, önümüzdeki 30 günün etkinlikleriyle.",
+        "ตัวกรอง": "Filtrele",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz, Türkiye genelindeki danışmanlık şirketlerinin yurt dışı eğitim etkinliklerini bir araya getirir. Her Pazartesi güncellenir.",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz, Türkiye'deki yurt dışı eğitim etkinliklerini bulmanız için bağımsız bir listedir",
+        "เกี่ยวกับเรา": "Hakkımızda",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz, yurt dışı eğitim etkinliklerini bulmak için bağımsız bir listedir — üniversite fuarları, bilgi günleri, açık günler ve burs son tarihleri, hepsi tek bir yerde toplanır ve her hafta güncellenir.",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "Normalde bu etkinlikleri bulmak, onlarca Facebook sayfasını, danışmanlık web sitelerini ve çeşitli üniversitelerin etkinlik takvimlerini taramak anlamına gelir. Biz bu işi otomatik olarak yapıyoruz: her hafta tüm pazardaki eğitim danışmanlıkları ve üniversite ortaklarından etkinlikleri topluyor, doğruluyor, tekrarları kaldırıyor ve temiz, güvenilir bir liste olarak yayınlıyoruz.",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "Tayland'da başladık; her yıl yüzlerce yurt dışı eğitim etkinliği düzenlenmesine rağmen bunları bulabileceğiniz tek bir yer yoktu. Bağımsız bir platformuz — belirli bir üniversiteyi veya danışmanlığı temsil etmiyoruz, bu yüzden gördüğünüz şey tek bir şirketin tanıtımı değil, çeşitli seçeneklerin genel görünümüdür.",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "studyeventz'i kendi pazarınıza getirmek ister misiniz? Sizinle konuşmaktan memnuniyet duyarız.",
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "Etkinlik eklemek, bir düzeltme bildirmek veya bizimle iş birliği yapmak için studyeventz ile iletişime geçin",
+        "ติดต่อเรา": "İletişim",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "Eklememiz gereken bir etkinlik mi var, güncel olmayan bir bilgi mi buldunuz ya da bizimle iş birliği mi yapmak istiyorsunuz? Bize e-posta gönderin: ",
+        " แล้วเราจะติดต่อกลับไป": " size geri döneceğiz.",
+        "แจ้งเพิ่มกิจกรรม": "Etkinlik ekle",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "Bir yurt dışı eğitim fuarı, açık gün veya bilgilendirme oturumu düzenliyorsanız, ayrıntıları bize gönderin, listeye ekleyelim.",
+        "ส่งงานเข้ามา": "Etkinlik gönder",
+        "แจ้งแก้ไขข้อมูล": "Düzeltme bildir",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "Yanlış bir tarih veya bozuk bir bağlantı mı buldunuz? Bize bildirin, hemen düzeltelim.",
+        "ความร่วมมือ": "İş birliği",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "studyeventz'i yeni bir pazara taşımak veya hâlihazırda bulunduğumuz bir pazarda bizimle iş birliği yapmak isterseniz, bizimle iletişime geçin.",
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "studyeventz'e yurt dışı eğitim etkinliği gönderin",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "Aşağıdaki bilgileri doldurun. İnceleyip listeye ekleyeceğiz. Düzenleyenler için ücretsizdir.",
+        "รายละเอียดกิจกรรม": "Etkinlik ayrıntıları",
+        "ผู้จัด": "Düzenleyen",
+        "ชื่อกิจกรรม": "Etkinlik adı",
+        "วันที่": "Tarih",
+        "เวลา": "Saat",
+        "สถานที่": "Konum",
+        "ลิงก์ลงทะเบียน": "Kayıt bağlantısı",
+        "ข้อมูลผู้แจ้ง": "Gönderen bilgileri",
+        "ชื่อ": "Adınız",
+        "อีเมล": "E-posta",
+        "หมายเหตุเพิ่มเติม": "Ek notlar",
+        "ส่ง": "Gönder",
+        "ขอบคุณค่ะ": "Teşekkürler!",
+        "นโยบายความเป็นส่วนตัว": "Gizlilik Politikası",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz gizliliğinize saygı duyar. Çerez veya reklam izleyici kullanmıyoruz ve verilerinizi asla satmıyoruz.",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "Seçtiğiniz pazarı hatırlamak ve anonim kullanım istatistiklerini göndermeden önce geçici olarak saklamak için tarayıcınızda az miktarda veri saklarız. Bu veriler cihazınızda kalır ve tarayıcı ayarlarından istediğiniz zaman silebilirsiniz.",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "Listeyi geliştirmek için hangi sayfaların görüntülendiği ve hangi etkinliklere tıklandığı gibi anonim kullanım istatistikleri topluyoruz. Sunucularımız tarayıcı türünü, yönlendiren sayfayı ve IP adresinizi tek yönlü karma (hash) biçiminde kaydeder. Gerçek IP adresinizi asla saklamayız ve sizi kişisel olarak tanımlamayız.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Bu site, veri işleyicimiz olarak hareket eden Cloudflare altyapısında çalışır. Yazı tiplerini kendimiz barındırıyoruz ve Google Analytics, Meta Pixel veya herhangi bir reklam ağı kullanmıyoruz.",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "Gizlilikle ilgili sorularınız varsa veya verilerinizin silinmesini isterseniz, info@studyeventz.com adresinden bize ulaşın.",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in Turkey — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Turkey.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Istanbul, Turkey" or "Online"\'',
+    },
+)
+
+# ─── China ───────────────────────────────────────────────────────────────────
+# Simplified Chinese (zh-Hans). AI-DRAFTED demo/placeholder copy — native review.
+CHINA = Country(
+    code="china", name_en="China", name_native="中国", flag="🇨🇳",
+    primary_lang="zh-Hans", iso2="CN", agent_db_match="%China%", timezone="Asia/Shanghai",
+    title="中国的海外留学活动 | 大学展与网络研讨会 | StudyEventz",
+    meta_desc_en=("Find study abroad events in China — fairs, webinars and briefings for "
+                  "students considering the UK, Australia, USA, Canada and Europe. Updated weekly."),
+    meta_desc_native="查找中国的海外留学活动——大学展、网络研讨会和说明会。每周更新。",
+    contact_email="info@studyeventz.com", notify_channel="email",
+    notify_text_native="每周获取最新活动资讯 → 发邮件联系我们",
+    translations={
+        "รวมอีเวนต์เรียนต่อต่างประเทศในไทย": "中国的海外留学活动汇总",
+        "รวมงานแฟร์มหาวิทยาลัย เวบินาร์ และกิจกรรมเรียนต่อต่างประเทศไว้ในที่เดียว":
+            "大学展、网络研讨会和留学活动，全部汇集于一处。",
+        "อัปเดตทุกสัปดาห์ พร้อมอีเวนต์ในอีก 30 วันข้างหน้า":
+            "每周更新，涵盖未来30天的活动。",
+        "ตัวกรอง": "筛选",
+        "studyeventz รวบรวมงาน study abroad จากบริษัทแนะแนวทั่วประเทศไทย อัปเดตทุกวันจันทร์":
+            "studyeventz 汇集了中国各地留学顾问机构的海外留学活动。每周一更新。",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย":
+            "studyeventz 是帮助你查找中国海外留学活动的独立目录",
+        "เกี่ยวกับเรา": "关于我们",
+        "studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศ ไม่ว่าจะเป็นงานแฟร์มหาวิทยาลัย วันให้ข้อมูล Open Day หรือกำหนดปิดรับสมัครทุนการศึกษา โดยรวบรวมไว้ในที่เดียว และอัปเดตทุกสัปดาห์":
+            "studyeventz 是帮助你查找海外留学活动的独立目录——包括大学展、信息日、开放日和奖学金截止日期——全部汇集于一处，并每周更新。",
+        "ปกติแล้ว การหากิจกรรมเหล่านี้ต้องใช้เวลาค้นหาจาก Facebook หลายสิบเพจ เว็บไซต์เอเจนซี่ และปฏิทินกิจกรรมของมหาวิทยาลัยต่าง ๆ แต่เราเป็นคนทำงานนั้นให้โดยอัตโนมัติ ทุกสัปดาห์ เรารวบรวมกิจกรรมจากบริษัทแนะแนวการศึกษาและพาร์ตเนอร์มหาวิทยาลัยทั่วตลาด ตรวจสอบและลบข้อมูลซ้ำ แล้วเผยแพร่เป็นรายการกิจกรรมที่สะอาด ชัดเจน และเชื่อถือได้":
+            "通常，要找到这些活动，你得翻查数十个 Facebook 页面、各家顾问机构的网站以及不同大学的活动日历。我们将这项工作自动化：每周从整个市场的教育顾问机构和大学合作伙伴处收集活动，核实并去除重复，然后发布成一份干净、清晰、值得信赖的清单。",
+        "เราเริ่มต้นจากประเทศไทย ซึ่งในแต่ละปีมีงานเรียนต่อต่างประเทศหลายร้อยงาน แต่ยังไม่มีศูนย์กลางเดียวสำหรับค้นหาข้อมูลเหล่านี้ เราเป็นแพลตฟอร์มอิสระ ไม่ได้เป็นตัวแทนของมหาวิทยาลัยหรือเอเจนซี่ใดเป็นพิเศษ ดังนั้นสิ่งที่คุณเห็นคือภาพรวมของตัวเลือกที่หลากหลาย ไม่ใช่การนำเสนอจากบริษัทใดบริษัทหนึ่งเท่านั้น":
+            "我们从泰国起步，那里每年举办数百场留学活动，却没有一个集中查询的平台。我们是独立平台，不代表任何特定大学或顾问机构，因此你看到的是多元选择的全貌，而非某一家公司的推广。",
+        "สนใจนำ studyeventz ไปใช้ในตลาดของคุณหรือไม่? เรายินดีพูดคุยกับคุณครับ/ค่ะ":
+            "有兴趣把 studyeventz 引入你的市场吗？我们很乐意与你交流。",
+        "ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา":
+            "联系 studyeventz：添加活动、报告信息更正或与我们合作",
+        "ติดต่อเรา": "联系我们",
+        "มีงานที่เราควรเพิ่มในรายการ พบข้อมูลที่ล้าสมัย หรืออยากร่วมงานกับเราใช่ไหม? อีเมลหาเราได้ที่ ":
+            "有我们应当收录的活动、发现了过时信息，或想与我们合作？欢迎发送电子邮件至：",
+        " แล้วเราจะติดต่อกลับไป": "，我们会尽快回复你。",
+        "แจ้งเพิ่มกิจกรรม": "添加活动",
+        "หากคุณกำลังจัดงานแฟร์เรียนต่อต่างประเทศ Open Day หรืองานให้ข้อมูล ส่งรายละเอียดมาให้เรา แล้วเราจะเพิ่มลงในรายการ":
+            "如果你正在举办留学展、开放日或信息说明会，请把详情发给我们，我们会将其加入清单。",
+        "ส่งงานเข้ามา": "提交活动",
+        "แจ้งแก้ไขข้อมูล": "报告信息更正",
+        "พบวันที่ผิด หรือลิงก์ใช้งานไม่ได้ใช่ไหม? แจ้งให้เราทราบ แล้วเราจะรีบแก้ไขให้":
+            "发现日期有误或链接失效？告诉我们，我们会尽快修正。",
+        "ความร่วมมือ": "合作",
+        "หากคุณสนใจนำ studyeventz ไปเปิดในตลาดใหม่ หรืออยากร่วมมือกับเราในตลาดที่เราครอบคลุมอยู่แล้ว ติดต่อเราได้เลย":
+            "如果你有意把 studyeventz 引入新市场，或在我们已覆盖的市场与我们合作，欢迎联系我们。",
+        "แจ้งเพิ่มกิจกรรมเรียนต่อต่างประเทศใน studyeventz":
+            "向 studyeventz 提交留学活动",
+        "กรอกรายละเอียดด้านล่าง เราจะตรวจสอบและเพิ่มลงในรายการของเรา ฟรี ไม่มีค่าใช้จ่าย":
+            "请填写以下信息。我们会审核并加入清单。面向主办方免费。",
+        "รายละเอียดกิจกรรม": "活动详情",
+        "ผู้จัด": "主办方",
+        "ชื่อกิจกรรม": "活动名称",
+        "วันที่": "日期",
+        "เวลา": "时间",
+        "สถานที่": "地点",
+        "ลิงก์ลงทะเบียน": "报名链接",
+        "ข้อมูลผู้แจ้ง": "提交者信息",
+        "ชื่อ": "姓名",
+        "อีเมล": "电子邮件",
+        "หมายเหตุเพิ่มเติม": "其他备注",
+        "ส่ง": "提交",
+        "ขอบคุณค่ะ": "谢谢！",
+        "นโยบายความเป็นส่วนตัว": "隐私政策",
+        "studyeventz ให้ความสำคัญกับความเป็นส่วนตัวของคุณ เราไม่ใช้คุกกี้ ไม่ใช้ตัวติดตามเพื่อการโฆษณา และไม่ขายข้อมูลของคุณ":
+            "studyeventz 尊重你的隐私。我们不使用 Cookie 或广告追踪器，也绝不出售你的数据。",
+        "เราเก็บข้อมูลเล็กน้อยไว้ในเบราว์เซอร์ของคุณ เพื่อจดจำตลาดที่คุณเลือก และเพื่อพักข้อมูลสถิติการใช้งานแบบไม่ระบุตัวตนก่อนส่ง ข้อมูลนี้อยู่บนอุปกรณ์ของคุณ และคุณลบได้ทุกเมื่อผ่านการตั้งค่าเบราว์เซอร์":
+            "我们会在你的浏览器中存储少量数据，用于记住你选择的市场，并在发送前临时保存匿名使用统计。这些数据保存在你的设备上，你可以随时通过浏览器设置删除。",
+        "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
+            "我们收集匿名使用统计——例如哪些页面被浏览、哪些活动被点击——以改进清单。我们的服务器会记录浏览器类型、来源页面以及经过单向哈希处理的 IP 地址。我们绝不存储你真实的 IP 地址，也不会识别你的个人身份。",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "本网站运行于 Cloudflare 基础设施之上，Cloudflare 作为我们的数据处理方。我们自行托管字体，不使用 Google Analytics、Meta Pixel 或任何广告网络。",
+        "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
+            "如对隐私有任何疑问，或希望删除你的数据，请联系 info@studyeventz.com。",
+        "studyeventz is an independent listing of study abroad events in Thailand — fairs, webinars and briefings gathered weekly.":
+            "studyeventz is an independent listing of study abroad events in China — fairs, webinars and briefings gathered weekly.",
+        "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in Thailand.":
+            "Submit a study abroad event to studyeventz — university fair, info session, open day, webinar. Free for organizers in China.",
+        'placeholder=\'e.g. "Bangkok, Thailand" or "Online"\'':
+            'placeholder=\'e.g. "Shanghai, China" or "Online"\'',
+    },
+)
+
 # Future-ready: appending another Country() launches that market with one build run.
 COUNTRIES: list[Country] = [THAILAND, VIETNAM, TAIWAN, HONGKONG, INDONESIA, MALAYSIA,
                             GHANA, NIGERIA, SINGAPORE, CAMBODIA, INDIA, NEPAL, SRILANKA,
-                            JAPAN, KOREA, BRAZIL, COLOMBIA, MEXICO]
+                            JAPAN, KOREA, BRAZIL, COLOMBIA, MEXICO,
+                            KENYA, PAKISTAN, BANGLADESH, SAUDI, UAE, TURKEY, CHINA]
 
 
 # SVG icon paths for the sticky notify banner (24×24 viewBox).
@@ -3841,6 +4034,17 @@ __COUNTRY_TILES__
 """
 
 
+# Native autonym for each page language — shown on the picker tile so the page
+# language is clear even where the country name is identical in English and the
+# local language (Colombia, Indonesia, Malaysia…).
+LANG_LABELS = {
+    "en": "English", "es": "Español", "pt": "Português", "ja": "日本語",
+    "ko": "한국어", "zh-Hant": "繁體中文", "zh-Hans": "简体中文", "th": "ภาษาไทย",
+    "vi": "Tiếng Việt", "id": "Bahasa Indonesia", "ms": "Bahasa Melayu",
+    "km": "ភាសាខ្មែរ", "tr": "Türkçe",
+}
+
+
 def build_index_html(counts: dict | None = None) -> None:
     """Write the root index.html country picker. `counts` maps country code →
     number of upcoming events, shown as a badge on each tile."""
@@ -3849,12 +4053,13 @@ def build_index_html(counts: dict | None = None) -> None:
     # Alphabetical by English name — predictable scanning across many markets.
     for c in sorted(COUNTRIES, key=lambda c: c.name_en):
         n = counts.get(c.code, 0)
-        # Gold sub-line: native name only when it differs from the English name
-        # (so English-native markets don't show "India / India"), plus a live
-        # event-count badge.
+        # Gold sub-line: the page's language (autonym) so localised markets whose
+        # name matches English (Colombia, Indonesia…) still read as localised,
+        # plus a live event-count badge.
         sub_parts = []
-        if c.name_native and c.name_native != c.name_en:
-            sub_parts.append(f'<span class="tile-native" lang="{c.primary_lang}">{c.name_native}</span>')
+        lang_label = LANG_LABELS.get(c.primary_lang, "")
+        if lang_label:
+            sub_parts.append(f'<span class="tile-native" lang="{c.primary_lang}">{lang_label}</span>')
         if n > 0:
             sub_parts.append(f'<span class="tile-count">{n} event{"" if n == 1 else "s"}</span>')
         if not sub_parts:

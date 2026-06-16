@@ -1,0 +1,15 @@
+{
+  "country": "turkey",
+  "country_name": "Turkey",
+  "generated_at": "2026-06-16T16:36:00",
+  "window": {
+    "from": "2026-06-16",
+    "to": "2026-07-16"
+  },
+  "archive": {
+    "from": "2024-06-16",
+    "to": "2026-06-15"
+  },
+  "events": [],
+  "past": []
+}

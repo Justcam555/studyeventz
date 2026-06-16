@@ -242,6 +242,48 @@ COUNTRY_CONFIG = {
             "querétaro", "cancun", "cancún", "merida", "mérida", "leon", "león",
         },
     },
+    "kenya": {
+        "db_match": "%Kenya%", "name": "Kenya", "adjective": "Kenyan",
+        "prompt_cities": "Nairobi, Mombasa, Kisumu, Nakuru, or other Kenyan cities",
+        "home_cities": {"nairobi", "mombasa", "kisumu", "nakuru", "eldoret", "thika"},
+    },
+    "pakistan": {
+        "db_match": "%Pakistan%", "name": "Pakistan", "adjective": "Pakistani",
+        "prompt_cities": "Karachi, Lahore, Islamabad, Rawalpindi, or other Pakistani cities",
+        "home_cities": {"karachi", "lahore", "islamabad", "rawalpindi", "faisalabad",
+                        "peshawar", "multan", "quetta", "sialkot", "gujranwala"},
+    },
+    "bangladesh": {
+        "db_match": "%Bangladesh%", "name": "Bangladesh", "adjective": "Bangladeshi",
+        "prompt_cities": "Dhaka, Chittagong, Sylhet, Khulna, or other Bangladeshi cities",
+        "home_cities": {"dhaka", "chittagong", "chattogram", "sylhet", "khulna",
+                        "rajshahi", "comilla", "narayanganj"},
+    },
+    "saudi": {
+        "db_match": "%Saudi%", "name": "Saudi Arabia", "adjective": "Saudi",
+        "prompt_cities": "Riyadh, Jeddah, Dammam, Mecca, or other Saudi cities",
+        "home_cities": {"riyadh", "jeddah", "dammam", "mecca", "makkah", "medina",
+                        "madinah", "khobar", "dhahran"},
+    },
+    "uae": {
+        "db_match": "%Emirates%", "name": "United Arab Emirates", "adjective": "UAE-based",
+        "prompt_cities": "Dubai, Abu Dhabi, Sharjah, or other UAE cities",
+        "home_cities": {"dubai", "abu dhabi", "sharjah", "ajman", "al ain",
+                        "ras al khaimah", "fujairah"},
+    },
+    "turkey": {
+        "db_match": "%Turkey%", "name": "Turkey", "adjective": "Turkish",
+        "prompt_cities": "Istanbul, Ankara, Izmir, Bursa, or other Turkish cities",
+        "home_cities": {"istanbul", "ankara", "izmir", "bursa", "antalya", "adana",
+                        "gaziantep", "konya", "kayseri"},
+    },
+    "china": {
+        "db_match": "%China%", "name": "China", "adjective": "Chinese",
+        "prompt_cities": "Beijing, Shanghai, Guangzhou, Shenzhen, or other Chinese cities",
+        "home_cities": {"beijing", "shanghai", "guangzhou", "shenzhen", "chengdu",
+                        "hangzhou", "wuhan", "xian", "xi'an", "nanjing", "tianjin",
+                        "chongqing", "suzhou", "qingdao", "dalian", "shenyang"},
+    },
 }
 
 EXTRACTION_SYSTEM_PROMPT_TEMPLATE = """You extract upcoming education event listings from agent websites for international universities.
@@ -307,16 +349,22 @@ FOREIGN_CITIES = {
     "phnom penh", "siem reap", "sihanoukville", "battambang", "vientiane", "yangon",
     "tokyo", "osaka", "kyoto", "yokohama", "nagoya", "sapporo", "fukuoka", "kobe",
     "seoul", "busan", "incheon", "daegu", "daejeon", "gwangju",
-    "beijing", "shanghai", "shenzhen", "guangzhou", "taipei", "kaohsiung",
+    "beijing", "shanghai", "shenzhen", "guangzhou", "chengdu", "hangzhou", "wuhan",
+    "xian", "nanjing", "tianjin", "chongqing", "suzhou", "qingdao", "taipei", "kaohsiung",
     "taichung", "tainan", "hsinchu", "taoyuan",
     "colombo", "kandy", "galle", "jaffna", "negombo", "kurunegala",
     "kathmandu", "pokhara", "lalitpur", "biratnagar", "butwal", "bharatpur",
-    "dhaka", "karachi", "lahore", "islamabad",
+    "dhaka", "chittagong", "chattogram", "sylhet", "karachi", "lahore", "islamabad",
+    "rawalpindi", "faisalabad", "peshawar", "multan",
     # Middle East
-    "dubai", "abu dhabi", "doha", "riyadh", "jeddah", "kuwait city", "muscat",
+    "dubai", "abu dhabi", "sharjah", "ajman", "al ain", "doha", "riyadh", "jeddah",
+    "dammam", "mecca", "makkah", "medina", "madinah", "khobar", "kuwait city", "muscat",
+    # Turkey
+    "istanbul", "ankara", "izmir", "bursa", "antalya", "adana", "gaziantep", "konya",
     # Africa
     "cape town", "johannesburg", "durban", "pretoria", "nairobi",
     "lagos", "cairo", "accra", "kumasi", "tamale", "takoradi", "tema",
+    "mombasa", "kisumu", "nakuru",
     "abuja", "ibadan", "kano", "port harcourt", "benin city", "kaduna",
     "enugu", "ilorin", "abeokuta", "owerri", "calabar", "lekki", "ikeja",
     # NZ
