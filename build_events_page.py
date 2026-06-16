@@ -448,18 +448,18 @@ STOPWORDS_FOR_INITIALS = {"co", "ltd", "the", "and", "pty", "inc", "llc", "corp"
 
 
 def extract_initials(name: str) -> str:
-    """Return up to 2 uppercase initials for use in the fallback avatar."""
+    """Return up to 2 uppercase initials for use in the fallback monogram."""
     if not name:
         return "?"
-    words = re.findall(r"[A-Za-z]+", name)
-    chars: list[str] = []
-    for w in words:
-        if w.lower() in STOPWORDS_FOR_INITIALS:
-            continue
-        chars.append(w[0].upper())
-        if len(chars) >= 2:
-            break
-    return "".join(chars) or name[:1].upper()
+    words = [w for w in re.findall(r"[A-Za-z]+", name)
+             if w.lower() not in STOPWORDS_FOR_INITIALS]
+    if not words:
+        return (name[:1].upper() or "?")
+    # Single-token brands (e.g. "Hkies", "Applyboard") → first two letters,
+    # so the monogram is a balanced two-character badge rather than one letter.
+    if len(words) == 1:
+        return words[0][:2].upper()
+    return (words[0][0] + words[1][0]).upper()
 
 
 def find_logo(agent_name: str) -> str | None:

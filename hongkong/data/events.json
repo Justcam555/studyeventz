@@ -1,48 +1,16 @@
 {
   "country": "hongkong",
   "country_name": "Hong Kong",
-  "generated_at": "2026-06-15T18:42:05",
+  "generated_at": "2026-06-16T07:07:22",
   "window": {
-    "from": "2026-06-15",
-    "to": "2026-07-15"
+    "from": "2026-06-16",
+    "to": "2026-07-16"
   },
   "archive": {
-    "from": "2024-06-15",
-    "to": "2026-06-14"
+    "from": "2024-06-16",
+    "to": "2026-06-15"
   },
   "events": [
-    {
-      "id": 389,
-      "name": "6 月 15 至 25 日 | 英澳升學資訊週 (Study in Australia & UK Info Weeks)",
-      "date": "2026-06-15",
-      "time": "4:00 PM - 6:00 PM",
-      "location": "Hong Kong",
-      "organizer": "IDP Education Ltd",
-      "agent_name": "IDP Education Ltd",
-      "agent_country": "Hong Kong",
-      "agent_website": "https://www.idp.com/hongkong",
-      "registration_url": "https://www.idp.com/hongkong/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 404,
-      "name": "英國寄宿學校招生週",
-      "date": "2026-06-15",
-      "time": "4:00PM - 7:00PM",
-      "location": "《英倫》旺角辦公室 / 在家參與",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BU"
-    },
     {
       "id": 419,
       "name": "英國大學申請攻略講座 2026 (Appointment)",
@@ -57,7 +25,7 @@
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "H"
+      "initials": "HK"
     },
     {
       "id": 408,
@@ -89,7 +57,7 @@
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "A"
+      "initials": "AP"
     },
     {
       "id": 388,
@@ -121,7 +89,7 @@
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "A"
+      "initials": "AP"
     },
     {
       "id": 395,
@@ -169,7 +137,7 @@
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "A"
+      "initials": "AP"
     },
     {
       "id": 399,
@@ -201,7 +169,7 @@
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "A"
+      "initials": "AP"
     },
     {
       "id": 396,
@@ -348,5 +316,38 @@
       "initials": "BU"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 404,
+      "name": "英國寄宿學校招生週",
+      "date": "2026-06-15",
+      "time": "4:00PM - 7:00PM",
+      "location": "《英倫》旺角辦公室 / 在家參與",
+      "organizer": "British United Education Services Limited",
+      "agent_name": "British United Education Services Limited",
+      "agent_country": "Hong Kong",
+      "agent_website": "britishunited.net",
+      "registration_url": "https://www.britishunited.net/seminars/#bs",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BU"
+    },
+    {
+      "id": 389,
+      "name": "6 月 15 至 25 日 | 英澳升學資訊週 (Study in Australia & UK Info Weeks)",
+      "date": "2026-06-15",
+      "time": "4:00 PM - 6:00 PM",
+      "location": "Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-06-15T18:42:05",
+  "generated_at": "2026-06-16T07:07:22",
   "window": {
-    "from": "2026-06-15",
-    "to": "2026-07-15"
+    "from": "2026-06-16",
+    "to": "2026-07-16"
   },
   "archive": {
-    "from": "2024-06-15",
-    "to": "2026-06-14"
+    "from": "2024-06-16",
+    "to": "2026-06-15"
   },
   "events": [
     {
@@ -137,7 +137,7 @@
       "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "S"
+      "initials": "ST"
     },
     {
       "id": 320,
@@ -153,7 +153,7 @@
       "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "G"
+      "initials": "GO"
     },
     {
       "id": 296,
@@ -297,7 +297,7 @@
       "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "S"
+      "initials": "ST"
     },
     {
       "id": 321,
