@@ -211,8 +211,8 @@ VIETNAM = Country(
             "Chúng tôi lưu một lượng nhỏ dữ liệu trong trình duyệt của bạn để ghi nhớ thị trường bạn đã chọn và để tạm giữ số liệu sử dụng ẩn danh trước khi gửi đi. Dữ liệu này nằm trên thiết bị của bạn và bạn có thể xóa bất cứ lúc nào qua cài đặt trình duyệt.",
         "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
             "Chúng tôi thu thập số liệu sử dụng ẩn danh — chẳng hạn những trang được xem và sự kiện được nhấp — để cải thiện danh sách. Máy chủ của chúng tôi ghi lại loại trình duyệt, trang giới thiệu, và địa chỉ IP của bạn ở dạng băm một chiều. Chúng tôi không bao giờ lưu địa chỉ IP thật và không nhận dạng bạn theo cá nhân.",
-        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
-            "Chúng tôi tải phông chữ từ Google Fonts, nghĩa là Google có thể nhận địa chỉ IP của bạn, và trang web này chạy trên hạ tầng Cloudflare — đơn vị xử lý dữ liệu cho chúng tôi. Chúng tôi không dùng Google Analytics, Meta Pixel, hay bất kỳ mạng quảng cáo nào.",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "Trang web này chạy trên hạ tầng Cloudflare — đơn vị xử lý dữ liệu cho chúng tôi. Chúng tôi tự lưu trữ phông chữ của mình, và không dùng Google Analytics, Meta Pixel, hay bất kỳ mạng quảng cáo nào.",
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "Nếu bạn có thắc mắc về quyền riêng tư hoặc muốn xóa dữ liệu của mình, hãy liên hệ chúng tôi tại info@studyeventz.com",
         # ── Country-specific English copy ──
@@ -311,8 +311,8 @@ TAIWAN = Country(
             "我們會在你的瀏覽器中儲存少量資料，用來記住你選擇的市場，並在傳送前暫存匿名的使用統計。這些資料存放在你的裝置上，你可以隨時透過瀏覽器設定清除。",
         "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
             "我們收集匿名的使用統計——例如哪些頁面被瀏覽、哪些活動被點擊——以改善清單內容。我們的伺服器會記錄瀏覽器類型、來源頁面，以及經單向雜湊處理的 IP 位址。我們絕不儲存你真實的 IP 位址，也不會辨識你的個人身分。",
-        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
-            "我們透過 Google Fonts 載入字型，因此 Google 可能會取得你的 IP 位址；本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們自行託管字型，並不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "如果你對隱私有任何疑問，或希望刪除你的資料，請來信 info@studyeventz.com",
         # ── Country-specific English copy ──
@@ -409,8 +409,8 @@ HONGKONG = Country(
             "我們會在你的瀏覽器中儲存少量資料，用以記住你所選的市場，並在傳送前暫存匿名的使用統計。這些資料存放於你的裝置上，你可隨時透過瀏覽器設定清除。",
         "เราเก็บสถิติการใช้งานแบบไม่ระบุตัวตน เช่น หน้าที่เปิดดูและกิจกรรมที่คลิก เพื่อปรับปรุงรายการให้ดีขึ้น เซิร์ฟเวอร์ของเราบันทึกชนิดเบราว์เซอร์ หน้าที่อ้างอิงเข้ามา และที่อยู่ IP ในรูปแบบที่แปลงเป็นค่าแฮชทางเดียว เราไม่เคยเก็บที่อยู่ IP จริงของคุณ และไม่ระบุตัวตนของคุณเป็นรายบุคคล":
             "我們收集匿名的使用統計——例如哪些頁面被瀏覽、哪些活動被點擊——以改善清單內容。我們的伺服器會記錄瀏覽器類型、來源頁面，以及經單向雜湊處理的 IP 位址。我們絕不儲存你真實的 IP 位址，亦不會識別你的個人身分。",
-        "เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
-            "我們透過 Google Fonts 載入字型，因此 Google 可能會取得你的 IP 位址；本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
+        "เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ":
+            "本網站運行於 Cloudflare 的基礎設施上，由其作為我們的資料處理者。我們自行寄存字型，並不使用 Google Analytics、Meta Pixel 或任何廣告聯播網。",
         "หากมีคำถามเกี่ยวกับความเป็นส่วนตัว หรือต้องการให้ลบข้อมูลของคุณ ติดต่อเราได้ที่ info@studyeventz.com":
             "如果你對私隱有任何疑問，或希望刪除你的資料，請電郵 info@studyeventz.com",
         # ── Country-specific English copy ──
@@ -961,9 +961,7 @@ __JSON_LD__
 </script>
 
 <!-- Thai-optimized typography (Noto Sans Thai pairs cleanly with system Latin fonts) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 <style>
   :root {
     --teal: #0d7377;
@@ -1919,9 +1917,7 @@ ABOUT_HTML = r"""<!doctype html>
 <meta name="description" lang="th" content="studyeventz เป็นคู่มืออิสระสำหรับค้นหากิจกรรมเรียนต่อต่างประเทศในไทย">
 <link rel="canonical" href="__SITE_URL__/about.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 
 <style>
   :root {
@@ -2078,9 +2074,7 @@ PRIVACY_HTML = r"""<!doctype html>
 <meta name="description" content="How studyeventz handles your data — no cookies, no advertising trackers, anonymous analytics only.">
 <link rel="canonical" href="__SITE_URL__/privacy.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 
 <style>
   :root {
@@ -2193,8 +2187,8 @@ PRIVACY_HTML = r"""<!doctype html>
   </section>
 
   <section class="about-pair">
-    <p class="th" lang="th">เราโหลดฟอนต์จาก Google Fonts ซึ่งอาจทำให้ Google ได้รับที่อยู่ IP ของคุณ และเว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ</p>
-    <p>We load fonts from Google Fonts, which means Google may receive your IP address, and this site runs on Cloudflare infrastructure, which acts as our data processor. We do not use Google Analytics, the Meta Pixel, or any advertising networks.</p>
+    <p class="th" lang="th">เว็บไซต์นี้ทำงานบนโครงสร้างพื้นฐานของ Cloudflare ซึ่งเป็นผู้ประมวลผลข้อมูลให้เรา เราโฮสต์ฟอนต์ของเราเอง และไม่ใช้ Google Analytics, Meta Pixel หรือเครือข่ายโฆษณาใด ๆ</p>
+    <p>This site runs on Cloudflare infrastructure, which acts as our data processor. We host our own fonts, and we don't use Google Analytics, the Meta Pixel, or any advertising networks.</p>
   </section>
 
   <section class="about-pair">
@@ -2238,9 +2232,7 @@ CONTACT_HTML = r"""<!doctype html>
 <meta name="description" lang="th" content="ติดต่อ studyeventz เพื่อแจ้งเพิ่มงาน แจ้งแก้ไขข้อมูล หรือร่วมงานกับเรา">
 <link rel="canonical" href="__SITE_URL__/contact.html">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 
 <style>
   :root {
@@ -2428,9 +2420,7 @@ SUBMIT_HTML = r"""<!doctype html>
 <link rel="canonical" href="__SITE_URL__/submit.html">
 <meta name="robots" content="noindex">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 
 <style>
   :root {
@@ -2830,9 +2820,7 @@ INDEX_HTML = r"""<!doctype html>
 <meta name="description" content="studyeventz aggregates study abroad events — fairs, webinars and information sessions. Pick your market.">
 <link rel="canonical" href="__SITE_URL__/">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/noto-sans-thai.css">
 
 <style>
   :root {
