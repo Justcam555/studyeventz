@@ -19,10 +19,12 @@ CREATE TABLE IF NOT EXISTS events (
     user_agent   TEXT,
     referrer     TEXT,
     ip_hash      TEXT,                    -- SHA-256(ip + salt) truncated to 12 hex chars; NOT raw IP
+    geo_country  TEXT,                    -- visitor country (ISO-3166 alpha-2) from Cloudflare edge geo-IP
     received_at  DATETIME DEFAULT CURRENT_TIMESTAMP
 );
--- Existing deployments: add the new column with
+-- Existing deployments: add the newer columns with
 --   ALTER TABLE events ADD COLUMN country TEXT;
+--   ALTER TABLE events ADD COLUMN geo_country TEXT;
 
 CREATE INDEX IF NOT EXISTS idx_events_type        ON events(type);
 CREATE INDEX IF NOT EXISTS idx_events_event_id    ON events(event_id);

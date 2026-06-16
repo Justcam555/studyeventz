@@ -18,6 +18,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const ALLOWED_TYPES = new Set([
+  "page_view",
   "event_impression",
   "event_register_click",
   "logo_click",
@@ -247,10 +248,11 @@ async function handleDash(request, env, url) {
     return r.results || [];
   };
 
-  let summary, byType, byDay, topEvents, topAgents, byCountry, subs;
+  let summary, byType, byDay, topEvents, topAgents, byCountry, subs, geo, devices, referrers;
   try {
     [summary] = await q(
       `SELECT
+         SUM(type='page_view') AS pageviews,
          SUM(type='event_impression') AS impressions,
          SUM(type='event_register_click') AS reg_clicks,
          SUM(type LIKE '%click' AND type<>'event_register_click') AS other_clicks,
@@ -258,6 +260,26 @@ async function handleDash(request, env, url) {
          COUNT(DISTINCT session_id) AS sessions,
          COUNT(DISTINCT ip_hash) AS visitors
        FROM events WHERE received_at >= datetime('now', ?)`, window);
+    // Visitors by country (server-side geo-IP; visits = distinct sessions).
+    geo = await q(
+      `SELECT COALESCE(NULLIF(geo_country,''),'??') cc,
+         COUNT(DISTINCT session_id) visits, COUNT(DISTINCT ip_hash) visitors
+       FROM events WHERE received_at >= datetime('now', ?)
+       GROUP BY cc ORDER BY visits DESC, visitors DESC LIMIT 40`, window);
+    // Device split (coarse, from user-agent).
+    devices = await q(
+      `SELECT CASE WHEN user_agent LIKE '%Mobi%' OR user_agent LIKE '%Android%'
+                    OR user_agent LIKE '%iPhone%' OR user_agent LIKE '%iPad%'
+                   THEN 'Mobile' ELSE 'Desktop' END dev,
+         COUNT(DISTINCT session_id) visits
+       FROM events WHERE received_at >= datetime('now', ?)
+       GROUP BY dev ORDER BY visits DESC`, window);
+    // Referrers (full URL; host extraction + internal-traffic filtering in JS).
+    referrers = await q(
+      `SELECT COALESCE(NULLIF(referrer,''),'(direct)') ref,
+         COUNT(DISTINCT session_id) visits
+       FROM events WHERE received_at >= datetime('now', ?)
+       GROUP BY ref ORDER BY visits DESC LIMIT 60`, window);
     byType = await q(
       `SELECT type, COUNT(*) n FROM events
        WHERE received_at >= datetime('now', ?) GROUP BY type ORDER BY n DESC`, window);
@@ -329,6 +351,38 @@ async function handleDash(request, env, url) {
   const typeRows = byType.map(t => `<tr><td>${escapeHtml(t.type)}</td><td class="num">${t.n}</td></tr>`).join("");
   const countryRows = byCountry.map(c => `<tr><td>${escapeHtml(c.country)}</td><td class="num">${c.n}</td></tr>`).join("");
 
+  // ISO-3166 alpha-2 → flag emoji (regional indicators).
+  const ccFlag = (cc) => /^[A-Z]{2}$/.test(cc)
+    ? String.fromCodePoint(...[...cc].map(c => 0x1F1E6 + c.charCodeAt(0) - 65)) : "";
+  const maxGeo = Math.max(1, ...geo.map(g => g.visits || 0));
+  const geoRows = geo.length
+    ? geo.map(g => bar(g.visits || 0, maxGeo, `${ccFlag(g.cc)} ${g.cc}`.trim(),
+        (g.visitors || 0) + " visitor" + ((g.visitors || 0) === 1 ? "" : "s"))).join("")
+    : `<div class="muted">No visitor geography yet.</div>`;
+
+  const maxDev = Math.max(1, ...devices.map(d => d.visits || 0));
+  const deviceRows = devices.length
+    ? devices.map(d => bar(d.visits || 0, maxDev, d.dev, "")).join("")
+    : `<div class="muted">—</div>`;
+
+  // Referrers: reduce full URLs to host, drop our own internal navigation.
+  const refHost = (u) => {
+    if (u === "(direct)") return "(direct)";
+    const h = u.replace(/^https?:\/\//i, "").split("/")[0].replace(/^www\./i, "");
+    return h || "(direct)";
+  };
+  const refMap = new Map();
+  for (const r of referrers) {
+    const h = refHost(r.ref);
+    if (h.includes("studyeventz")) continue;      // internal navigation
+    refMap.set(h, (refMap.get(h) || 0) + (r.visits || 0));
+  }
+  const refList = [...refMap.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15);
+  const maxRef = Math.max(1, ...refList.map(r => r[1]));
+  const refRows = refList.length
+    ? refList.map(([h, v]) => bar(v, maxRef, h, "")).join("")
+    : `<div class="muted">No external referrers yet.</div>`;
+
   const html = `<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8">
@@ -384,12 +438,28 @@ async function handleDash(request, env, url) {
     ${dayChip(7, "7d")}${dayChip(30, "30d")}${dayChip(90, "90d")}${dayChip(365, "1y")}
   </div>
   <div class="cards">
-    <div class="stat"><div class="n">${imps}</div><div class="l">Impressions</div></div>
-    <div class="stat"><div class="n accent">${regClicks}</div><div class="l">Register clicks</div></div>
-    <div class="stat"><div class="n">${ctr}%</div><div class="l">Click rate</div></div>
-    <div class="stat"><div class="n">${s.other_clicks || 0}</div><div class="l">Other clicks</div></div>
-    <div class="stat"><div class="n">${s.sessions || 0}</div><div class="l">Sessions</div></div>
+    <div class="stat"><div class="n accent">${s.pageviews || 0}</div><div class="l">Pageviews</div></div>
+    <div class="stat"><div class="n">${s.sessions || 0}</div><div class="l">Visits</div></div>
     <div class="stat"><div class="n">${s.visitors || 0}</div><div class="l">Visitors</div></div>
+    <div class="stat"><div class="n">${imps}</div><div class="l">Impressions</div></div>
+    <div class="stat"><div class="n">${regClicks}</div><div class="l">Register clicks</div></div>
+    <div class="stat"><div class="n">${ctr}%</div><div class="l">Click rate</div></div>
+  </div>
+
+  <section>
+    <h2>Visitors by country</h2>
+    ${geoRows}
+  </section>
+
+  <div class="two">
+    <section>
+      <h2>Where they come from</h2>
+      ${refRows}
+    </section>
+    <section>
+      <h2>Device</h2>
+      ${deviceRows}
+    </section>
   </div>
 
   <section>
@@ -509,6 +579,9 @@ export default {
     const ipHash = await hashIp(ip, env.IP_HASH_SALT);
     const userAgent = cap(request.headers.get("User-Agent"), 500);
     const referrer = cap(request.headers.get("Referer"), 500);
+    // Visitor country, derived server-side from Cloudflare's edge geo-IP
+    // (ISO-3166 alpha-2, e.g. "TH", "GB"). Never the raw IP — see hashIp().
+    const geoCountry = (request.cf && request.cf.country) || null;
 
     let saved = 0;
     let skipped = 0;
@@ -521,8 +594,8 @@ export default {
           INSERT INTO events (
             type, ts, session_id, page, country, event_id, event_name,
             agent_name, agent_id, event_date, clicked_url,
-            user_agent, referrer, ip_hash
-          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            user_agent, referrer, ip_hash, geo_country
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `).bind(
           cap(ev.type,         FIELD_CAPS.type),
           cap(ev.ts,           FIELD_CAPS.ts),
@@ -537,7 +610,8 @@ export default {
           clickedUrl ? cap(clickedUrl, FIELD_CAPS.clicked_url) : null,
           userAgent,
           referrer,
-          ipHash
+          ipHash,
+          geoCountry
         ).run();
         saved++;
       } catch (e) {
