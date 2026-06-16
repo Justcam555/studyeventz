@@ -3306,14 +3306,14 @@ INDEX_HTML = r"""<!doctype html>
   /* Brand character as a full-height backdrop, dissolving in from the left edge
      (gradient mask on the right + top so there are no hard image-box edges). */
   .bg-char { position: fixed; bottom: 0; left: 0; z-index: 0; pointer-events: none;
-             height: 100vh; opacity: .2; user-select: none;
+             height: min(56vh, 520px); opacity: .2; user-select: none;
              -webkit-mask-image:
-               linear-gradient(to right, #000 0%, rgba(0,0,0,.75) 30%, transparent 70%),
-               linear-gradient(to top, #000 55%, transparent 100%);
+               linear-gradient(to right, #000 0%, #000 35%, transparent 100%),
+               linear-gradient(to top, #000 50%, transparent 100%);
              -webkit-mask-composite: source-in;
              mask-image:
-               linear-gradient(to right, #000 0%, rgba(0,0,0,.75) 30%, transparent 70%),
-               linear-gradient(to top, #000 55%, transparent 100%);
+               linear-gradient(to right, #000 0%, #000 35%, transparent 100%),
+               linear-gradient(to top, #000 50%, transparent 100%);
              mask-composite: intersect; }
   @media (max-width: 860px) { .bg-char { display: none; } }
 
