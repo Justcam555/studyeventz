@@ -3303,11 +3303,18 @@ INDEX_HTML = r"""<!doctype html>
   [lang="th"] { font-family: "Noto Sans Thai", "Sukhumvit Set", "Leelawadee UI",
                               -apple-system, BlinkMacSystemFont, sans-serif; }
 
-  /* Brand character illustrations as a faint backdrop (own assets, no third party) */
-  .bg-char { position: fixed; bottom: 0; z-index: 0; pointer-events: none;
-             opacity: .12; height: min(46vh, 430px); filter: saturate(.85); user-select: none; }
-  .bg-char.left  { left: -2.5vw; }
-  .bg-char.right { right: -2.5vw; transform: scaleX(-1); }
+  /* Brand character as a full-height backdrop, dissolving in from the left edge
+     (gradient mask on the right + top so there are no hard image-box edges). */
+  .bg-char { position: fixed; bottom: 0; left: 0; z-index: 0; pointer-events: none;
+             height: 100vh; opacity: .2; user-select: none;
+             -webkit-mask-image:
+               linear-gradient(to right, #000 0%, rgba(0,0,0,.75) 30%, transparent 70%),
+               linear-gradient(to top, #000 55%, transparent 100%);
+             -webkit-mask-composite: source-in;
+             mask-image:
+               linear-gradient(to right, #000 0%, rgba(0,0,0,.75) 30%, transparent 70%),
+               linear-gradient(to top, #000 55%, transparent 100%);
+             mask-composite: intersect; }
   @media (max-width: 860px) { .bg-char { display: none; } }
 
   .picker { max-width: 960px; width: 100%; text-align: center; position: relative; z-index: 1; }
@@ -3367,8 +3374,7 @@ INDEX_HTML = r"""<!doctype html>
 </head>
 <body>
 
-<img class="bg-char left" src="/assets/characters/studyeventz%202.png" alt="" aria-hidden="true" loading="lazy">
-<img class="bg-char right" src="/assets/characters/studyeventz%209.png" alt="" aria-hidden="true" loading="lazy">
+<img class="bg-char" src="/assets/characters/studyeventz%202.png" alt="" aria-hidden="true" loading="lazy">
 
 <main class="picker">
   <div class="brand">studyevent<span class="gold">z</span></div>
