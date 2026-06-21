@@ -1,51 +1,19 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:57",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 792,
-      "name": "The University of Law: More Than Law, Built for Career Success",
-      "date": "2026-06-16",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Colombia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 793,
+      "id": 1115,
       "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
-      "date": "2026-06-19",
-      "time": "8:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Colombia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 795,
-      "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
       "date": "2026-06-23",
       "time": "7:00 AM EDT",
       "location": "Online",
@@ -60,7 +28,7 @@
       "initials": "AP"
     },
     {
-      "id": 796,
+      "id": 1116,
       "name": "University of Canada West and University of North Florida: Refresher course for ApplyBoard India Partners",
       "date": "2026-06-25",
       "time": "4:30 PM IST",

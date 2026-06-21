@@ -1,69 +1,69 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:56",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 490,
-      "name": "Attend the University of Windsor Webinar with IDP",
-      "date": "2026-06-17",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "Online",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
+      "id": 1471,
+      "name": "UK & Canada Education Fair – Asaba, Delta State",
+      "date": "2026-06-21",
+      "time": "",
+      "location": "Asaba, Delta State, Nigeria",
+      "organizer": "RONALD AND PARTNERS CONSULT",
+      "agent_name": "RONALD AND PARTNERS CONSULT",
       "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
-    {
-      "id": 491,
-      "name": "Study Creative Courses at the University for the Creative Arts in the UK - Nigeria",
-      "date": "2026-06-18",
-      "time": "12:00 PM - 1:00 PM",
-      "location": "Online",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
-    {
-      "id": 496,
-      "name": "Study Education & Social Science in the UK",
-      "date": "2026-06-20",
-      "time": "10:00",
-      "location": "BCIE Nigeria - Ikeja",
-      "organizer": "British Canadian International Education (Nigeria)",
-      "agent_name": "British Canadian International Education (Nigeria)",
-      "agent_country": "Nigeria",
-      "agent_website": "https://bcie.co.uk//offices/nigeria---abuja",
-      "registration_url": "https://www.bcie.co.uk/events",
+      "agent_website": "https://ronald-partners.net/pages/contact-us.html",
+      "registration_url": "https://ronald-partners.net/pages/events.html",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "BC"
+      "initials": "RP"
     },
     {
-      "id": 492,
+      "id": 1473,
+      "name": "Everything you need to know about studying in UK, Netherlands & Germany",
+      "date": "2026-06-23",
+      "time": "10:00 am - 12:00 pm",
+      "location": "Lagos Office, Catherine House, 6, Idowu Lane, Off Salvation Road, Opebi, Ikeja, Lagos, Nigeria",
+      "organizer": "My International Office",
+      "agent_name": "My International Office",
+      "agent_country": "Nigeria",
+      "agent_website": "https://myinternationaloffice.co.uk/",
+      "registration_url": "https://myinternationaloffice.co.uk/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "MI"
+    },
+    {
+      "id": 1457,
       "name": "Exclusive UK Webinar – September 2026 Intake - Nigeria",
       "date": "2026-06-25",
       "time": "11:00 AM - 12:00 PM",
+      "location": "Online",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
+    {
+      "id": 1458,
+      "name": "Study at Royal Holloway, University of London with IDP - Nigeria",
+      "date": "2026-07-02",
+      "time": "12:00 PM - 1:00 PM",
       "location": "Online",
       "organizer": "IDP Nigeria",
       "agent_name": "IDP Nigeria",
@@ -108,7 +108,7 @@
       "initials": "CL"
     },
     {
-      "id": 504,
+      "id": 1468,
       "name": "Study Abroad Expo In Ibadan",
       "date": "2026-07-14",
       "time": "10:00 AM - 03:00 PM",
@@ -124,7 +124,7 @@
       "initials": "TM"
     },
     {
-      "id": 503,
+      "id": 1467,
       "name": "Study Abroad Expo In Benin",
       "date": "2026-07-16",
       "time": "10:00 AM - 03:00 PM",
@@ -138,7 +138,56 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "TM"
+    },
+    {
+      "id": 1466,
+      "name": "Study Abroad Expo In Kano",
+      "date": "2026-07-18",
+      "time": "10:00 AM - 03:00 PM",
+      "location": "Kano City, Nigeria",
+      "organizer": "Tg Marchnata (Tgm Education)",
+      "agent_name": "Tg Marchnata (Tgm Education)",
+      "agent_country": "Nigeria",
+      "agent_website": "www.tgmeducation.com",
+      "registration_url": "https://tgmeducation.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TM"
+    },
+    {
+      "id": 1465,
+      "name": "Study Abroad Expo In Enugu",
+      "date": "2026-07-21",
+      "time": "10:00 AM - 03:00 PM",
+      "location": "Enugu City, Nigeria",
+      "organizer": "Tg Marchnata (Tgm Education)",
+      "agent_name": "Tg Marchnata (Tgm Education)",
+      "agent_country": "Nigeria",
+      "agent_website": "www.tgmeducation.com",
+      "registration_url": "https://tgmeducation.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TM"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 496,
+      "name": "Study Education & Social Science in the UK",
+      "date": "2026-06-20",
+      "time": "10:00",
+      "location": "BCIE Nigeria - Ikeja",
+      "organizer": "British Canadian International Education (Nigeria)",
+      "agent_name": "British Canadian International Education (Nigeria)",
+      "agent_country": "Nigeria",
+      "agent_website": "https://bcie.co.uk//offices/nigeria---abuja",
+      "registration_url": "https://www.bcie.co.uk/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    }
+  ]
 }

@@ -1,32 +1,130 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:57",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 702,
-      "name": "UK Sep Intake Webinar – South Asia (India, Nepal, Sri Lanka, Pakistan)",
-      "date": "2026-06-16",
+      "id": 1455,
+      "name": "Meet SIAM University",
+      "date": "2026-06-24",
       "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners - Nepal",
-      "agent_name": "Global Study Partners - Nepal",
+      "location": "Nepal",
+      "organizer": "Alfa Beta Institute Private Limited",
+      "agent_name": "Alfa Beta Institute Private Limited",
       "agent_country": "Nepal",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
+      "agent_website": "https://www.alfabetaglobal.com/",
+      "registration_url": "https://www.alfabetaglobal.com/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GS"
+      "initials": "AB"
     },
+    {
+      "id": 1446,
+      "name": "Virtual France Application Day",
+      "date": "2026-06-24",
+      "time": "3 PM - 5 PM",
+      "location": "Online",
+      "organizer": "Global Reach - Kathmandu",
+      "agent_name": "Global Reach - Kathmandu",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.globalreach.in/",
+      "registration_url": "https://www.globalreach.in/upcoming-events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GR"
+    },
+    {
+      "id": 1448,
+      "name": "Exclusive UK Webinar – September 2026 Intake",
+      "date": "2026-06-25",
+      "time": "4:45 PM - 5:45 PM",
+      "location": "Online",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1450,
+      "name": "Nepcoms Global Edu Expo 2026 - Day 1",
+      "date": "2026-06-26",
+      "time": "11:00 AM - 3:00 PM",
+      "location": "Bagbazar, Kathmandu, Nepal",
+      "organizer": "Nepcoms services Pvt Ltd",
+      "agent_name": "Nepcoms services Pvt Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "https://nepcoms.com/contact-us/",
+      "registration_url": "https://nepcoms.com/nepcoms-events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "NS"
+    },
+    {
+      "id": 1451,
+      "name": "Nepcoms Global Edu Expo 2026 - Day 2",
+      "date": "2026-06-30",
+      "time": "11:00 AM - 3:00 PM",
+      "location": "Bagbazar, Kathmandu, Nepal",
+      "organizer": "Nepcoms services Pvt Ltd",
+      "agent_name": "Nepcoms services Pvt Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "https://nepcoms.com/contact-us/",
+      "registration_url": "https://nepcoms.com/nepcoms-events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "NS"
+    },
+    {
+      "id": 1447,
+      "name": "UK Virtual Admission Day",
+      "date": "2026-07-06",
+      "time": "12:15 PM",
+      "location": "Online",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Nepal",
+      "agent_website": "www.aeccglobal.com.np",
+      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 1452,
+      "name": "GATEWAY TO DUBAI – EDUCATION FAIR",
+      "date": "2026-07-18",
+      "time": "8:00 am - 2:00 pm",
+      "location": "All Nepal",
+      "organizer": "Grace International",
+      "agent_name": "Grace International",
+      "agent_country": "Nepal",
+      "agent_website": "https://graceintlgroup.com/contact-us/",
+      "registration_url": "https://graceintlgroup.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    }
+  ],
+  "past": [
     {
       "id": 703,
       "name": "UK Application Day 2026 in Baneshwor",
@@ -44,37 +142,20 @@
       "initials": "ST"
     },
     {
-      "id": 699,
-      "name": "Virtual France Application Day",
-      "date": "2026-06-24",
-      "time": "3 PM - 5 PM",
+      "id": 702,
+      "name": "UK Sep Intake Webinar – South Asia (India, Nepal, Sri Lanka, Pakistan)",
+      "date": "2026-06-16",
+      "time": "",
       "location": "Online",
-      "organizer": "Global Reach - Kathmandu",
-      "agent_name": "Global Reach - Kathmandu",
+      "organizer": "Global Study Partners - Nepal",
+      "agent_name": "Global Study Partners - Nepal",
       "agent_country": "Nepal",
-      "agent_website": "https://www.globalreach.in/",
-      "registration_url": "https://www.globalreach.in/upcoming-events.php",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GR"
-    },
-    {
-      "id": 700,
-      "name": "UK Virtual Admission Day",
-      "date": "2026-07-06",
-      "time": "12:15 PM",
-      "location": "Online",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Nepal",
-      "agent_website": "www.aeccglobal.com.np",
-      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
+      "initials": "GS"
     }
-  ],
-  "past": []
+  ]
 }

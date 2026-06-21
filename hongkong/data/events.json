@@ -1,20 +1,20 @@
 {
   "country": "hongkong",
   "country_name": "Hong Kong",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:56",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 419,
-      "name": "英國大學申請攻略講座 2026 (Appointment)",
-      "date": "2026-06-16",
+      "id": 1155,
+      "name": "英國大學申請攻略講座 2026 (UK University Application Strategy Talk 2026)",
+      "date": "2026-06-22",
       "time": "",
       "location": "Unit 1302-03 Pilkem Commercial Centre, 8 Pilkem Street, Jordan, Kowloon, Hong Kong",
       "organizer": "Hkies",
@@ -28,90 +28,10 @@
       "initials": "HK"
     },
     {
-      "id": 408,
-      "name": "Kent College Canterbury 實體面試及資訊日",
-      "date": "2026-06-16",
-      "time": "4:30PM - 6:30PM",
-      "location": "《英倫》旺角辦公室 / 在家參與",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BU"
-    },
-    {
-      "id": 420,
-      "name": "The University of Law: More Than Law, Built for Career Success",
-      "date": "2026-06-16",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 388,
-      "name": "航空學及航天工程招生講座",
-      "date": "2026-06-17",
-      "time": "7:00-8:30 pm",
-      "location": "Hong Kong",
-      "organizer": "Hong Kong Education Web Ltd.",
-      "agent_name": "Hong Kong Education Web Ltd.",
-      "agent_country": "Hong Kong",
-      "agent_website": "https://www.education.com.hk",
-      "registration_url": "https://www.education.com.hk/event/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HK"
-    },
-    {
-      "id": 421,
-      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
-      "date": "2026-06-19",
-      "time": "8:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 395,
-      "name": "醫科面試攻略班 2026",
-      "date": "2026-06-20",
-      "time": "",
-      "location": "Wanchai, Hong Kong",
-      "organizer": "Aston Education",
-      "agent_name": "Aston Education",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.aston.edu.hk",
-      "registration_url": "https://aston.edu.hk/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 394,
+      "id": 1134,
       "name": "NSW Government School in Australia 與院校會面",
       "date": "2026-06-22",
-      "time": "4:00 PM",
+      "time": "16:00",
       "location": "Online",
       "organizer": "Academic And Continuing Education Limited",
       "agent_name": "Academic And Continuing Education Limited",
@@ -124,10 +44,26 @@
       "initials": "AC"
     },
     {
-      "id": 423,
+      "id": 1146,
+      "name": "University of the Arts London (UAL) 實體報名及資訊日",
+      "date": "2026-06-23",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "英倫旺角辦公室, Hong Kong / Online",
+      "organizer": "British United Education Services Limited",
+      "agent_name": "British United Education Services Limited",
+      "agent_country": "Hong Kong",
+      "agent_website": "britishunited.net",
+      "registration_url": "https://www.britishunited.net/seminars/#bs",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BU"
+    },
+    {
+      "id": 1156,
       "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
       "date": "2026-06-23",
-      "time": "7:00 AM EDT",
+      "time": "7:00 AM EDT / 4:30 PM IST",
       "location": "Online",
       "organizer": "Applyboard",
       "agent_name": "Applyboard",
@@ -140,11 +76,11 @@
       "initials": "AP"
     },
     {
-      "id": 399,
-      "name": "Western Australia's Authority in Health Sciences: The Ultimate Guide to Medicine, Physiotherapy, and Allied Health",
+      "id": 1140,
+      "name": "Western Australia's Authority in Health Sciences – The Ultimate Guide to Medicine, Physiotherapy, and Allied Health",
       "date": "2026-06-25",
       "time": "",
-      "location": "Room 2807, 28/F, Tower 2, Times Square, 1 Matheson Street, Causeway Bay, Hong Kong",
+      "location": "Hong Kong",
       "organizer": "Synchro Overseas Education Company Limited",
       "agent_name": "Synchro Overseas Education Company Limited",
       "agent_country": "Hong Kong",
@@ -156,7 +92,7 @@
       "initials": "SO"
     },
     {
-      "id": 424,
+      "id": 1157,
       "name": "University of Canada West and University of North Florida: Refresher course for ApplyBoard India Partners",
       "date": "2026-06-25",
       "time": "4:30 PM IST",
@@ -172,7 +108,23 @@
       "initials": "AP"
     },
     {
-      "id": 396,
+      "id": 1129,
+      "name": "6 月 25 日 | Exclusive UK – September 2026 Intake",
+      "date": "2026-06-25",
+      "time": "6:00 PM - 7:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1135,
       "name": "運動科學 × 脊醫 — 英澳大學選科策略網上講座",
       "date": "2026-06-27",
       "time": "",
@@ -188,23 +140,7 @@
       "initials": "AE"
     },
     {
-      "id": 413,
-      "name": "英國大學及銜接課程講座",
-      "date": "2026-06-27",
-      "time": "",
-      "location": "《英倫》旺角辦公室 / 在家參與",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BU"
-    },
-    {
-      "id": 390,
+      "id": 1130,
       "name": "6 月 27 日 |【重量級官方代表親臨分享】塔斯馬尼亞升學、就業與移民全解析 (Study in Tasmania Seminar)",
       "date": "2026-06-27",
       "time": "1:15 PM - 4:00 PM",
@@ -236,7 +172,7 @@
       "initials": "AE"
     },
     {
-      "id": 391,
+      "id": 1131,
       "name": "6 月 28 日 | 【獨家首創】藍帶學院一日體驗班 (Le Cordon Bleu Workshop)",
       "date": "2026-06-28",
       "time": "1:00 PM - 4:00 PM",
@@ -252,11 +188,11 @@
       "initials": "IE"
     },
     {
-      "id": 397,
+      "id": 1136,
       "name": "醫療科技大趨勢下的選科智慧 英澳放射治療與健康科學攻略講座",
       "date": "2026-06-29",
       "time": "",
-      "location": "Wanchai, Hong Kong",
+      "location": "Online",
       "organizer": "Aston Education",
       "agent_name": "Aston Education",
       "agent_country": "Hong Kong",
@@ -268,11 +204,27 @@
       "initials": "AE"
     },
     {
-      "id": 398,
+      "id": 1137,
+      "name": "英國伯明翰大學網上講座：率先公佈 Clearing 學科及收生要求",
+      "date": "2026-07-02",
+      "time": "",
+      "location": "Online",
+      "organizer": "Aston Education",
+      "agent_name": "Aston Education",
+      "agent_country": "Hong Kong",
+      "agent_website": "www.aston.edu.hk",
+      "registration_url": "https://aston.edu.hk/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 1138,
       "name": "突破DSE 16分升學樽頸 直入 QS 百強澳洲八大 Adelaide University 講座",
       "date": "2026-07-03",
       "time": "",
-      "location": "Wanchai, Hong Kong",
+      "location": "Online",
       "organizer": "Aston Education",
       "agent_name": "Aston Education",
       "agent_country": "Hong Kong",
@@ -284,7 +236,7 @@
       "initials": "AE"
     },
     {
-      "id": 392,
+      "id": 1132,
       "name": "7 月 5 及 6 日 | 英澳名校諮詢日 (Overseas Education Fair: IB Info Day)",
       "date": "2026-07-05",
       "time": "2:00 PM - 10:00 PM",
@@ -300,44 +252,26 @@
       "initials": "IE"
     },
     {
-      "id": 414,
-      "name": "英國寄宿學校講座",
-      "date": "2026-07-11",
+      "id": 1139,
+      "name": "IB 放榜日即時升學諮詢",
+      "date": "2026-07-06",
       "time": "",
-      "location": "《英倫》旺角辦公室 / 在家參與",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
+      "location": "Online",
+      "organizer": "Aston Education",
+      "agent_name": "Aston Education",
       "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
+      "agent_website": "www.aston.edu.hk",
+      "registration_url": "https://aston.edu.hk/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "BU"
-    }
-  ],
-  "past": [
-    {
-      "id": 404,
-      "name": "英國寄宿學校招生週",
-      "date": "2026-06-15",
-      "time": "4:00PM - 7:00PM",
-      "location": "《英倫》旺角辦公室 / 在家參與",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BU"
+      "initials": "AE"
     },
     {
-      "id": 389,
-      "name": "6 月 15 至 25 日 | 英澳升學資訊週 (Study in Australia & UK Info Weeks)",
-      "date": "2026-06-15",
-      "time": "4:00 PM - 6:00 PM",
+      "id": 1133,
+      "name": "7 月 15、18 及 19 日 | 【全年最大型活動】IDP 海外升學展 2026 (IDP Overseas Education Expo 2026)",
+      "date": "2026-07-15",
+      "time": "11:00 AM - 4:30 PM",
       "location": "Hong Kong",
       "organizer": "IDP Education Ltd",
       "agent_name": "IDP Education Ltd",
@@ -348,6 +282,24 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    }
+  ],
+  "past": [
+    {
+      "id": 388,
+      "name": "航空學及航天工程招生講座",
+      "date": "2026-06-17",
+      "time": "7:00-8:30 pm",
+      "location": "Hong Kong",
+      "organizer": "Hong Kong Education Web Ltd.",
+      "agent_name": "Hong Kong Education Web Ltd.",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.education.com.hk",
+      "registration_url": "https://www.education.com.hk/event/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HK"
     }
   ]
 }

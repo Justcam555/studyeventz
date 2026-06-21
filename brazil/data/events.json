@@ -1,64 +1,16 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:57",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
-    {
-      "id": 787,
-      "name": "The University of Law: More Than Law, Built for Career Success",
-      "date": "2026-06-16",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Brazil",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 786,
-      "name": "Conectando o Brasil à Irlanda: Insights Exclusivos com a Education Ireland",
-      "date": "2026-06-17",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners",
-      "agent_name": "Global Study Partners",
-      "agent_country": "Brazil",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 788,
-      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
-      "date": "2026-06-19",
-      "time": "8:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Brazil",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
     {
       "id": 790,
       "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
@@ -92,5 +44,54 @@
       "initials": "AP"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 788,
+      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
+      "date": "2026-06-19",
+      "time": "8:00 AM EDT",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Brazil",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 786,
+      "name": "Conectando o Brasil à Irlanda: Insights Exclusivos com a Education Ireland",
+      "date": "2026-06-17",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners",
+      "agent_name": "Global Study Partners",
+      "agent_country": "Brazil",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 787,
+      "name": "The University of Law: More Than Law, Built for Career Success",
+      "date": "2026-06-16",
+      "time": "7:00 AM EDT",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Brazil",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    }
+  ]
 }

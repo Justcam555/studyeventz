@@ -1,48 +1,16 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:57",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
-    {
-      "id": 521,
-      "name": "The University of Law: More Than Law, Built for Career Success",
-      "date": "2026-06-16",
-      "time": "7:00 AM EDT / 4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Cambodia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 522,
-      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
-      "date": "2026-06-19",
-      "time": "8:00 AM EDT / 5:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Cambodia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
     {
       "id": 524,
       "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
@@ -74,7 +42,88 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
+    },
+    {
+      "id": 1020,
+      "name": "Study in the UK This September with Confidence",
+      "date": "2026-06-25",
+      "time": "5:00 PM - 6:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Cambodia Ltd",
+      "agent_name": "IDP Education Cambodia Ltd",
+      "agent_country": "Cambodia",
+      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/cambodia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1021,
+      "name": "Study in Australia Fair",
+      "date": "2026-07-11",
+      "time": "9:00 AM - 3:00 PM",
+      "location": "Phnom Penh, Cambodia",
+      "organizer": "IDP Education Cambodia Ltd",
+      "agent_name": "IDP Education Cambodia Ltd",
+      "agent_country": "Cambodia",
+      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/cambodia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1022,
+      "name": "Study in Australia Fair",
+      "date": "2026-07-12",
+      "time": "2:00 PM - 6:00 PM",
+      "location": "Siem Reap, Cambodia",
+      "organizer": "IDP Education Cambodia Ltd",
+      "agent_name": "IDP Education Cambodia Ltd",
+      "agent_country": "Cambodia",
+      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/cambodia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 522,
+      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
+      "date": "2026-06-19",
+      "time": "8:00 AM EDT / 5:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Cambodia",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 521,
+      "name": "The University of Law: More Than Law, Built for Career Success",
+      "date": "2026-06-16",
+      "time": "7:00 AM EDT / 4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Cambodia",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    }
+  ]
 }

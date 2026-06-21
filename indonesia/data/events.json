@@ -1,69 +1,21 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:56",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 430,
-      "name": "IDP Makassar Education Fair - June 2026",
-      "date": "2026-06-16",
-      "time": "12:00 PM - 6:00 PM",
-      "location": "Makassar, Indonesia",
-      "organizer": "IDP Indonesia",
-      "agent_name": "IDP Indonesia",
-      "agent_country": "Indonesia",
-      "agent_website": "https://www.idp.com/indonesia/office/kota-batam/idp-batam-office/id-1018/",
-      "registration_url": "https://www.idp.com/indonesia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "II"
-    },
-    {
-      "id": 446,
-      "name": "The University of Law: More Than Law, Built for Career Success",
-      "date": "2026-06-16",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Indonesia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 447,
-      "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",
-      "date": "2026-06-19",
-      "time": "8:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Indonesia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 449,
+      "id": 1342,
       "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
       "date": "2026-06-23",
-      "time": "7:00 AM EDT",
+      "time": "7:00 AM EDT / 4:30 PM IST",
       "location": "Online",
       "organizer": "Applyboard",
       "agent_name": "Applyboard",
@@ -76,10 +28,10 @@
       "initials": "AP"
     },
     {
-      "id": 439,
+      "id": 1340,
       "name": "Free Webinar: Your Guide to Studying at Scottish Universities",
       "date": "2026-06-23",
-      "time": "7:00 PM - 8:30 PM",
+      "time": "7:00 pm - 8:30 pm",
       "location": "Online",
       "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
       "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
@@ -92,7 +44,7 @@
       "initials": "AE"
     },
     {
-      "id": 450,
+      "id": 1343,
       "name": "University of Canada West and University of North Florida: Refresher course for ApplyBoard India Partners",
       "date": "2026-06-25",
       "time": "4:30 PM IST",
@@ -108,7 +60,7 @@
       "initials": "AP"
     },
     {
-      "id": 432,
+      "id": 1331,
       "name": "NZ Open Day Bali",
       "date": "2026-06-27",
       "time": "",
@@ -124,11 +76,11 @@
       "initials": "EC"
     },
     {
-      "id": 438,
+      "id": 1339,
       "name": "Taylor's University Last Application Day: Study In Malaysia With Work Opportunities After Graduation",
       "date": "2026-06-27",
       "time": "13:00 - 16:00 WIB",
-      "location": "Jakarta",
+      "location": "Jakarta, Indonesia",
       "organizer": "CV Jembatan Dwitama",
       "agent_name": "CV Jembatan Dwitama",
       "agent_country": "Indonesia",
@@ -140,11 +92,11 @@
       "initials": "CJ"
     },
     {
-      "id": 431,
+      "id": 1330,
       "name": "JACK Study UK & EU Expo",
       "date": "2026-07-05",
       "time": "13:00 - 17:00",
-      "location": "Le Meridien Jakarta",
+      "location": "Le Meridien Jakarta, Jakarta",
       "organizer": "JACK StudyAbroad",
       "agent_name": "JACK StudyAbroad",
       "agent_country": "Indonesia",
@@ -156,7 +108,7 @@
       "initials": "JS"
     },
     {
-      "id": 433,
+      "id": 1332,
       "name": "OVERSEAS EDUCATION EXHIBITION BANDUNG 2026",
       "date": "2026-07-15",
       "time": "",
@@ -170,7 +122,72 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EC"
+    },
+    {
+      "id": 1333,
+      "name": "OVERSEAS EDUCATION EXHIBITION SERPONG 2026",
+      "date": "2026-07-17",
+      "time": "",
+      "location": "Tangerang",
+      "organizer": "Edlink+ConneX",
+      "agent_name": "Edlink+ConneX",
+      "agent_country": "Indonesia",
+      "agent_website": "www.edlinkeducation.com",
+      "registration_url": "https://edlinkconnex.com/id/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EC"
+    },
+    {
+      "id": 1334,
+      "name": "OVERSEAS EDUCATION EXHIBITION SUDIRMAN 2026",
+      "date": "2026-07-18",
+      "time": "",
+      "location": "Jakarta",
+      "organizer": "Edlink+ConneX",
+      "agent_name": "Edlink+ConneX",
+      "agent_country": "Indonesia",
+      "agent_website": "www.edlinkeducation.com",
+      "registration_url": "https://edlinkconnex.com/id/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EC"
+    },
+    {
+      "id": 1341,
+      "name": "Study in Asia University Fair",
+      "date": "2026-07-18",
+      "time": "2:00 pm - 5:00 pm",
+      "location": "Jakarta",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Indonesia",
+      "agent_website": "www.aeccglobal.co.id",
+      "registration_url": "https://www.aeccglobal.co.id/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 430,
+      "name": "IDP Makassar Education Fair - June 2026",
+      "date": "2026-06-16",
+      "time": "12:00 PM - 6:00 PM",
+      "location": "Makassar, Indonesia",
+      "organizer": "IDP Indonesia",
+      "agent_name": "IDP Indonesia",
+      "agent_country": "Indonesia",
+      "agent_website": "https://www.idp.com/indonesia/office/kota-batam/idp-batam-office/id-1018/",
+      "registration_url": "https://www.idp.com/indonesia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "II"
+    }
+  ]
 }

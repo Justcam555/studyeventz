@@ -1,80 +1,16 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:57",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
-    {
-      "id": 782,
-      "name": "입학 설명회",
-      "date": "2026-06-18",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 4길 14, 미림타워 6층 (강남역 1번 출구)",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 778,
-      "name": "加拿大短期插班项目-圣约翰中学VS多伦多天主教育局 线上讲座",
-      "date": "2026-06-18",
-      "time": "10:00",
-      "location": "Online",
-      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
-      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
-      "agent_country": "South Korea",
-      "agent_website": "http://www.ht-international.net",
-      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HX"
-    },
-    {
-      "id": 776,
-      "name": "제56회 코엑스 호주&뉴질랜드 유학박람회",
-      "date": "2026-06-20",
-      "time": "",
-      "location": "COEX, Seoul",
-      "organizer": "KOKOS Korea Co. Ltd",
-      "agent_name": "KOKOS Korea Co. Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "www.ikokos.com",
-      "registration_url": "https://www.ikokos.com/kor/main/?ckattempt=1",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KK"
-    },
-    {
-      "id": 783,
-      "name": "입학 설명회",
-      "date": "2026-06-20",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 4길 14, 미림타워 6층 (강남역 1번 출구)",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 779,
       "name": "安省艾琳黛尔中学私立优质中学宣传会 线上讲座",
@@ -108,7 +44,7 @@
       "initials": "SE"
     },
     {
-      "id": 774,
+      "id": 1421,
       "name": "영국유학 특별 웨비나 – September 2026 Intake",
       "date": "2026-06-25",
       "time": "7:00 PM - 8:00 PM",
@@ -124,5 +60,70 @@
       "initials": "IE"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 783,
+      "name": "입학 설명회",
+      "date": "2026-06-20",
+      "time": "",
+      "location": "서울시 강남구 테헤란로 4길 14, 미림타워 6층 (강남역 1번 출구)",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "https://www.ienau.com/community/news/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 776,
+      "name": "제56회 코엑스 호주&뉴질랜드 유학박람회",
+      "date": "2026-06-20",
+      "time": "",
+      "location": "COEX, Seoul",
+      "organizer": "KOKOS Korea Co. Ltd",
+      "agent_name": "KOKOS Korea Co. Ltd",
+      "agent_country": "South Korea",
+      "agent_website": "www.ikokos.com",
+      "registration_url": "https://www.ikokos.com/kor/main/?ckattempt=1",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KK"
+    },
+    {
+      "id": 778,
+      "name": "加拿大短期插班项目-圣约翰中学VS多伦多天主教育局 线上讲座",
+      "date": "2026-06-18",
+      "time": "10:00",
+      "location": "Online",
+      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
+      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
+      "agent_country": "South Korea",
+      "agent_website": "http://www.ht-international.net",
+      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HX"
+    },
+    {
+      "id": 782,
+      "name": "입학 설명회",
+      "date": "2026-06-18",
+      "time": "",
+      "location": "서울시 강남구 테헤란로 4길 14, 미림타워 6층 (강남역 1번 출구)",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "https://www.ienau.com/community/news/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ]
 }

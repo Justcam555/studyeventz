@@ -1,20 +1,20 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:56",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 517,
-      "name": "Legacy matters for admissions, right?",
-      "date": "2026-06-18",
+      "id": 1518,
+      "name": "How to stand out to top universities as a Singaporean in 2026",
+      "date": "2026-06-24",
       "time": "7:00 PM SGT",
       "location": "Online",
       "organizer": "The Added Company Pte Ltd",
@@ -28,23 +28,7 @@
       "initials": "AC"
     },
     {
-      "id": 515,
-      "name": "UK virtual Admissions Day",
-      "date": "2026-06-20",
-      "time": "",
-      "location": "Online",
-      "organizer": "The Chopras Global Holdings PTE Ltd.",
-      "agent_name": "The Chopras Global Holdings PTE Ltd.",
-      "agent_country": "Singapore",
-      "agent_website": "https://tcglobal.com/our-locations/",
-      "registration_url": "https://www.thechopras.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CG"
-    },
-    {
-      "id": 510,
+      "id": 1508,
       "name": "[25 Jun] Study in the UK This September with Confidence",
       "date": "2026-06-25",
       "time": "6:00 PM - 7:00 PM",
@@ -60,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 514,
+      "id": 1516,
       "name": "Virtual Admissions Day Europe Day",
       "date": "2026-06-26",
       "time": "",
@@ -76,7 +60,39 @@
       "initials": "CG"
     },
     {
-      "id": 513,
+      "id": 1526,
+      "name": "C-Suite Connect 2026: Building Future-Ready Leaders for the AI Economy",
+      "date": "2026-06-27",
+      "time": "",
+      "location": "BAC College (Singapore), 45 New Bridge Road, Singapore",
+      "organizer": "BAC College (Singapore) Pte Ltd",
+      "agent_name": "BAC College (Singapore) Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "bac.edu.sg",
+      "registration_url": "https://www.bac.edu.sg/#pix-tab-1766118752385-039b2d62-9d83",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    },
+    {
+      "id": 1510,
+      "name": "[1 Jul] Meet The Expert - University of Technology Sydney",
+      "date": "2026-07-01",
+      "time": "2:00 PM - 4:00 PM",
+      "location": "Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1515,
       "name": "Virtual Admissions Day New Zealand",
       "date": "2026-07-04",
       "time": "",
@@ -92,10 +108,10 @@
       "initials": "CG"
     },
     {
-      "id": 512,
-      "name": "[10 Jul] IDP Study Abroad Open Day",
+      "id": 1511,
+      "name": "[10 July] Meet The Expert - UNSW Sydney",
       "date": "2026-07-10",
-      "time": "2:00 PM - 6:00 PM",
+      "time": "11:00 AM - 1:00 PM",
       "location": "Singapore",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
@@ -108,7 +124,23 @@
       "initials": "IE"
     },
     {
-      "id": 516,
+      "id": 1513,
+      "name": "[14 July] Meet The Expert - University of Sydney",
+      "date": "2026-07-14",
+      "time": "2:00 PM - 5:00 PM",
+      "location": "Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 1517,
       "name": "Discover Your Personality - Know Yourself | Shape Your Future",
       "date": "2026-07-15",
       "time": "07:00 PM - 09:00 PM",
@@ -122,6 +154,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
+    },
+    {
+      "id": 1514,
+      "name": "[16 Jul] Meet The Expert - The Australian National University (Virtual)",
+      "date": "2026-07-16",
+      "time": "3:00 PM - 4:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": []

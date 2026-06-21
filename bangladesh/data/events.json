@@ -1,21 +1,21 @@
 {
   "country": "bangladesh",
   "country_name": "Bangladesh",
-  "generated_at": "2026-06-16T17:36:15",
+  "generated_at": "2026-06-21T21:13:58",
   "window": {
-    "from": "2026-06-16",
-    "to": "2026-07-16"
+    "from": "2026-06-21",
+    "to": "2026-07-21"
   },
   "archive": {
-    "from": "2024-06-16",
-    "to": "2026-06-15"
+    "from": "2024-06-21",
+    "to": "2026-06-20"
   },
   "events": [
     {
-      "id": 861,
-      "name": "IDP's Free IELTS on Computer Familiarization Masterclass by Experts",
-      "date": "2026-06-19",
-      "time": "3:00 PM - 6:00 PM",
+      "id": 988,
+      "name": "IDP Study Abroad Expo - Barisal",
+      "date": "2026-06-21",
+      "time": "2:00 PM - 5:00 PM",
       "location": "Bangladesh - Dhaka",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
@@ -28,27 +28,11 @@
       "initials": "IE"
     },
     {
-      "id": 862,
-      "name": "IDP Study Abroad Expo - Barisal",
-      "date": "2026-06-21",
-      "time": "2:00 PM - 5:00 PM",
-      "location": "Bangladesh - Barisal",
-      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh",
-      "registration_url": "https://www.idp.com/bangladesh/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 863,
+      "id": 989,
       "name": "IDP Study Abroad Expo - Khulna",
       "date": "2026-06-22",
       "time": "2:00 PM - 5:00 PM",
-      "location": "Bangladesh - Khulna",
+      "location": "Bangladesh - Dhaka",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
@@ -60,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 870,
+      "id": 996,
       "name": "Meet the Delegate – Lakehead University (Canada)",
       "date": "2026-06-23",
       "time": "10:30 AM - 1:00 PM",
@@ -69,14 +53,14 @@
       "agent_name": "Eduko Pathways Singapore Pte Ltd",
       "agent_country": "Bangladesh",
       "agent_website": "https://edukopathwaysbd.com/contact/",
-      "registration_url": "https://edukopathwaysbd.com/upcoming-event/",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EP"
     },
     {
-      "id": 889,
+      "id": 1012,
       "name": "Meet the Delegate – Lakehead University (Canada)",
       "date": "2026-06-23",
       "time": "10:30 AM - 1:00 PM",
@@ -92,7 +76,7 @@
       "initials": "EP"
     },
     {
-      "id": 869,
+      "id": 995,
       "name": "Virtual France Application Day",
       "date": "2026-06-24",
       "time": "3 PM - 5 PM",
@@ -108,7 +92,7 @@
       "initials": "GR"
     },
     {
-      "id": 864,
+      "id": 990,
       "name": "Exclusive UK Webinar – September 2026 Intake",
       "date": "2026-06-25",
       "time": "5:00 PM - 6:00 PM",
@@ -124,11 +108,11 @@
       "initials": "IE"
     },
     {
-      "id": 865,
+      "id": 991,
       "name": "IDP's Free IELTS on Computer Familiarization Masterclass by Experts - At Dhanmondi",
       "date": "2026-06-26",
       "time": "3:00 PM - 6:00 PM",
-      "location": "Bangladesh - Dhaka",
+      "location": "Dhanmondi, Dhaka, Bangladesh",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
@@ -140,11 +124,11 @@
       "initials": "IE"
     },
     {
-      "id": 866,
+      "id": 992,
       "name": "UK Application Day - Make Your UK Dream Easier with IDP Uttara",
       "date": "2026-07-07",
       "time": "12:00 PM - 4:00 PM",
-      "location": "Bangladesh - Dhaka",
+      "location": "Uttara, Dhaka, Bangladesh",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
@@ -156,11 +140,11 @@
       "initials": "IE"
     },
     {
-      "id": 867,
+      "id": 993,
       "name": "UK Application Day - Make Your UK Dream Easier with IDP Dhanmondi",
       "date": "2026-07-08",
       "time": "12:00 PM - 4:00 PM",
-      "location": "Bangladesh - Dhaka",
+      "location": "Dhanmondi, Dhaka, Bangladesh",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
@@ -172,11 +156,11 @@
       "initials": "IE"
     },
     {
-      "id": 868,
+      "id": 994,
       "name": "UK Application Day - Make Your UK Dream Easier with IDP Gulshan",
       "date": "2026-07-09",
       "time": "12:00 PM - 4:00 PM",
-      "location": "Bangladesh - Dhaka",
+      "location": "Gulshan, Dhaka, Bangladesh",
       "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
