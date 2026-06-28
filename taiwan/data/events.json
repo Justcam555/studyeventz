@@ -1,82 +1,18 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-06-21T21:13:56",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 1549,
-      "name": "06/24 英國留學不是你想的那樣: 深入解析學制、科系與學習含金量",
-      "date": "2026-06-24",
-      "time": "7:00 PM - 8:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 1548,
-      "name": "雪梨頂尖私立中小學說明會",
-      "date": "2026-06-25",
-      "time": "",
-      "location": "Taiwan",
-      "organizer": "I.S. Global Education Co., Ltd.",
-      "agent_name": "I.S. Global Education Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.isec.com.tw/",
-      "registration_url": "https://www.isec.com.tw/activities-and-events.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IS"
-    },
-    {
-      "id": 1546,
-      "name": "2026 澳洲中小學留學展",
-      "date": "2026-06-27",
-      "time": "",
-      "location": "Taiwan",
-      "organizer": "I.S. Global Education Co., Ltd.",
-      "agent_name": "I.S. Global Education Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.isec.com.tw/",
-      "registration_url": "https://www.isec.com.tw/activities-and-events.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IS"
-    },
-    {
-      "id": 1563,
-      "name": "台灣高中銜接雪梨大學線上說明會",
-      "date": "2026-06-27",
-      "time": "11:00 - 12:00",
-      "location": "Online",
-      "organizer": "JRIS Education - Taiwan",
-      "agent_name": "JRIS Education - Taiwan",
-      "agent_country": "Taiwan",
-      "agent_website": "www.jris.com",
-      "registration_url": "https://jris.com/event/20260627/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "JE"
-    },
-    {
-      "id": 1545,
+      "id": 2202,
       "name": "澳洲昆士蘭公立中小學｜留學說明會",
       "date": "2026-07-01",
       "time": "",
@@ -92,7 +28,7 @@
       "initials": "IS"
     },
     {
-      "id": 1550,
+      "id": 2203,
       "name": "7/1【IDP STUDY WORLD】澳紐留遊學展前攻略",
       "date": "2026-07-01",
       "time": "7:00 PM - 8:00 PM",
@@ -108,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 1551,
+      "id": 2204,
       "name": "07/02 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
       "date": "2026-07-02",
       "time": "7:00 PM - 8:00 PM",
@@ -124,7 +60,39 @@
       "initials": "IE"
     },
     {
-      "id": 1564,
+      "id": 2227,
+      "name": "Monash 蒙納許大學面談會",
+      "date": "2026-07-03",
+      "time": "15:00 - 17:00",
+      "location": "Taiwan",
+      "organizer": "JRIS Education - Taiwan",
+      "agent_name": "JRIS Education - Taiwan",
+      "agent_country": "Taiwan",
+      "agent_website": "www.jris.com",
+      "registration_url": "https://jris.com/event/20260703/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 2228,
+      "name": "QUT 昆士蘭科技大學說明會",
+      "date": "2026-07-04",
+      "time": "11:00 - 12:00",
+      "location": "Taiwan",
+      "organizer": "JRIS Education - Taiwan",
+      "agent_name": "JRIS Education - Taiwan",
+      "agent_country": "Taiwan",
+      "agent_website": "www.jris.com",
+      "registration_url": "https://jris.com/event/20260703/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 2229,
       "name": "【線上講座】甩掉澳打新手的超級菜味 - 2.5 小時一站式幫你做完功課！",
       "date": "2026-07-04",
       "time": "14:00",
@@ -140,7 +108,7 @@
       "initials": "SC"
     },
     {
-      "id": 1544,
+      "id": 2201,
       "name": "解鎖澳洲高薪科系｜麥考瑞大學職涯講座",
       "date": "2026-07-07",
       "time": "",
@@ -156,7 +124,7 @@
       "initials": "IS"
     },
     {
-      "id": 1543,
+      "id": 2200,
       "name": "昆士蘭大學一對一面談會",
       "date": "2026-07-09",
       "time": "",
@@ -172,7 +140,7 @@
       "initials": "IS"
     },
     {
-      "id": 1541,
+      "id": 2198,
       "name": "蒙納許大學一對一面談會",
       "date": "2026-07-10",
       "time": "",
@@ -188,7 +156,23 @@
       "initials": "IS"
     },
     {
-      "id": 1552,
+      "id": 2205,
+      "name": "07/10 昆士蘭大學官方面談會 台中場",
+      "date": "2026-07-10",
+      "time": "1:00 PM - 5:00 PM",
+      "location": "Taichung, Taiwan",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2206,
       "name": "2026 IDP Study World 澳紐留遊學展 | 台北",
       "date": "2026-07-11",
       "time": "1:00 PM - 6:00 PM",
@@ -204,7 +188,7 @@
       "initials": "IE"
     },
     {
-      "id": 1553,
+      "id": 2207,
       "name": "2026 IDP Study World 澳紐留遊學展 | 台中",
       "date": "2026-07-12",
       "time": "2:00 PM - 6:00 PM",
@@ -220,7 +204,7 @@
       "initials": "IE"
     },
     {
-      "id": 1554,
+      "id": 2208,
       "name": "2026 IDP Study World 澳紐留遊學展 | 高雄",
       "date": "2026-07-13",
       "time": "4:00 PM - 8:00 PM",
@@ -236,7 +220,7 @@
       "initials": "IE"
     },
     {
-      "id": 1540,
+      "id": 2197,
       "name": "墨爾本大學 VIP 快速通道申請日",
       "date": "2026-07-14",
       "time": "",
@@ -252,10 +236,74 @@
       "initials": "IS"
     },
     {
-      "id": 1555,
+      "id": 2196,
+      "name": "雪梨大學校代面談會",
+      "date": "2026-07-15",
+      "time": "",
+      "location": "Taiwan",
+      "organizer": "I.S. Global Education Co., Ltd.",
+      "agent_name": "I.S. Global Education Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.isec.com.tw/",
+      "registration_url": "https://www.isec.com.tw/activities-and-events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IS"
+    },
+    {
+      "id": 2209,
       "name": "07/16 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
       "date": "2026-07-16",
       "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2210,
+      "name": "07/22 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-07-22",
+      "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2211,
+      "name": "7/23 夢想成真: 英國政府全額獎學金Chevening講座",
+      "date": "2026-07-23",
+      "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2212,
+      "name": "07/25 百年理工學院 Centennial College: 入學到就業官方指南",
+      "date": "2026-07-25",
+      "time": "2:00 PM - 3:00 PM",
       "location": "Online",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",

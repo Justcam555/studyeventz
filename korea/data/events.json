@@ -1,32 +1,34 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-06-21T21:13:57",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 779,
-      "name": "安省艾琳黛尔中学私立优质中学宣传会 线上讲座",
-      "date": "2026-06-23",
-      "time": "10:00",
-      "location": "Online",
-      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
-      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
+      "id": 2072,
+      "name": "2026 영국학생비자 세미나",
+      "date": "2026-07-25",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
       "agent_country": "South Korea",
-      "agent_website": "http://www.ht-international.net",
-      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
-      "logo_url": "",
+      "agent_website": "https://www.idp.com/korea",
+      "registration_url": "https://www.idp.com/korea/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "HX"
-    },
+      "initials": "IE"
+    }
+  ],
+  "past": [
     {
       "id": 777,
       "name": "호주간호 취업 영주권 세미나",
@@ -44,23 +46,21 @@
       "initials": "SE"
     },
     {
-      "id": 1421,
-      "name": "영국유학 특별 웨비나 – September 2026 Intake",
-      "date": "2026-06-25",
-      "time": "7:00 PM - 8:00 PM",
+      "id": 779,
+      "name": "安省艾琳黛尔中学私立优质中学宣传会 线上讲座",
+      "date": "2026-06-23",
+      "time": "10:00",
       "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
+      "organizer": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
+      "agent_name": "Huatong Xinnuo Int'l Cultural Exchange Centre Limited T/A HTI",
       "agent_country": "South Korea",
-      "agent_website": "https://www.idp.com/korea",
-      "registration_url": "https://www.idp.com/korea/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "agent_website": "http://www.ht-international.net",
+      "registration_url": "https://www.ht-international.net/index.php?module=news&action=detail&id=51897",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
+      "initials": "HX"
+    },
     {
       "id": 783,
       "name": "입학 설명회",

@@ -1,82 +1,18 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-06-21T21:13:56",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 1518,
-      "name": "How to stand out to top universities as a Singaporean in 2026",
-      "date": "2026-06-24",
-      "time": "7:00 PM SGT",
-      "location": "Online",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
-      "registration_url": "https://www.addededucation.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AC"
-    },
-    {
-      "id": 1508,
-      "name": "[25 Jun] Study in the UK This September with Confidence",
-      "date": "2026-06-25",
-      "time": "6:00 PM - 7:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 1516,
-      "name": "Virtual Admissions Day Europe Day",
-      "date": "2026-06-26",
-      "time": "",
-      "location": "Online",
-      "organizer": "The Chopras Global Holdings PTE Ltd.",
-      "agent_name": "The Chopras Global Holdings PTE Ltd.",
-      "agent_country": "Singapore",
-      "agent_website": "https://tcglobal.com/our-locations/",
-      "registration_url": "https://www.thechopras.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CG"
-    },
-    {
-      "id": 1526,
-      "name": "C-Suite Connect 2026: Building Future-Ready Leaders for the AI Economy",
-      "date": "2026-06-27",
-      "time": "",
-      "location": "BAC College (Singapore), 45 New Bridge Road, Singapore",
-      "organizer": "BAC College (Singapore) Pte Ltd",
-      "agent_name": "BAC College (Singapore) Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "bac.edu.sg",
-      "registration_url": "https://www.bac.edu.sg/#pix-tab-1766118752385-039b2d62-9d83",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BC"
-    },
-    {
-      "id": 1510,
+      "id": 2163,
       "name": "[1 Jul] Meet The Expert - University of Technology Sydney",
       "date": "2026-07-01",
       "time": "2:00 PM - 4:00 PM",
@@ -92,7 +28,23 @@
       "initials": "IE"
     },
     {
-      "id": 1515,
+      "id": 2168,
+      "name": "Study in Singapore Info Day!",
+      "date": "2026-07-03",
+      "time": "4:00 PM – 7:00 PM",
+      "location": "ED Network Horizon Hills 14 & 16, Jalan Horizon Perdana 6, Horizon Hills",
+      "organizer": "Ed Network International Education Pte Ltd",
+      "agent_name": "Ed Network International Education Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.ednet.com.my/",
+      "registration_url": "https://tinyurl.com/yc65etr5",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EN"
+    },
+    {
+      "id": 2169,
       "name": "Virtual Admissions Day New Zealand",
       "date": "2026-07-04",
       "time": "",
@@ -108,7 +60,7 @@
       "initials": "CG"
     },
     {
-      "id": 1511,
+      "id": 2164,
       "name": "[10 July] Meet The Expert - UNSW Sydney",
       "date": "2026-07-10",
       "time": "11:00 AM - 1:00 PM",
@@ -124,7 +76,7 @@
       "initials": "IE"
     },
     {
-      "id": 1513,
+      "id": 2166,
       "name": "[14 July] Meet The Expert - University of Sydney",
       "date": "2026-07-14",
       "time": "2:00 PM - 5:00 PM",
@@ -140,7 +92,23 @@
       "initials": "IE"
     },
     {
-      "id": 1517,
+      "id": 2171,
+      "name": "Why what gets you into NUS won't get you into Oxford or the Ivy League",
+      "date": "2026-07-14",
+      "time": "7:00 PM SGT",
+      "location": "Online",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "https://www.addededucation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
+    {
+      "id": 2170,
       "name": "Discover Your Personality - Know Yourself | Shape Your Future",
       "date": "2026-07-15",
       "time": "07:00 PM - 09:00 PM",
@@ -156,7 +124,7 @@
       "initials": "PA"
     },
     {
-      "id": 1514,
+      "id": 2167,
       "name": "[16 Jul] Meet The Expert - The Australian National University (Virtual)",
       "date": "2026-07-16",
       "time": "3:00 PM - 4:00 PM",
@@ -172,5 +140,22 @@
       "initials": "IE"
     }
   ],
-  "past": []
+  "past": [
+    {
+      "id": 1526,
+      "name": "C-Suite Connect 2026: Building Future-Ready Leaders for the AI Economy",
+      "date": "2026-06-27",
+      "time": "",
+      "location": "BAC College (Singapore), 45 New Bridge Road, Singapore",
+      "organizer": "BAC College (Singapore) Pte Ltd",
+      "agent_name": "BAC College (Singapore) Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "bac.edu.sg",
+      "registration_url": "https://www.bac.edu.sg/#pix-tab-1766118752385-039b2d62-9d83",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    }
+  ]
 }

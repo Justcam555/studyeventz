@@ -1,20 +1,20 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-06-21T21:13:56",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 1471,
-      "name": "UK & Canada Education Fair – Asaba, Delta State",
-      "date": "2026-06-21",
+      "id": 2100,
+      "name": "UK & Canada Education Fair – Asaba",
+      "date": "2026-06-28",
       "time": "",
       "location": "Asaba, Delta State, Nigeria",
       "organizer": "RONALD AND PARTNERS CONSULT",
@@ -28,39 +28,7 @@
       "initials": "RP"
     },
     {
-      "id": 1473,
-      "name": "Everything you need to know about studying in UK, Netherlands & Germany",
-      "date": "2026-06-23",
-      "time": "10:00 am - 12:00 pm",
-      "location": "Lagos Office, Catherine House, 6, Idowu Lane, Off Salvation Road, Opebi, Ikeja, Lagos, Nigeria",
-      "organizer": "My International Office",
-      "agent_name": "My International Office",
-      "agent_country": "Nigeria",
-      "agent_website": "https://myinternationaloffice.co.uk/",
-      "registration_url": "https://myinternationaloffice.co.uk/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "MI"
-    },
-    {
-      "id": 1457,
-      "name": "Exclusive UK Webinar – September 2026 Intake - Nigeria",
-      "date": "2026-06-25",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Online",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
-    {
-      "id": 1458,
+      "id": 2091,
       "name": "Study at Royal Holloway, University of London with IDP - Nigeria",
       "date": "2026-07-02",
       "time": "12:00 PM - 1:00 PM",
@@ -92,10 +60,10 @@
       "initials": "CR"
     },
     {
-      "id": 509,
+      "id": 2102,
       "name": "Craydel Lagos Study Abroad Fair 2026",
       "date": "2026-07-04",
-      "time": "9:00 AM - 4:00 PM",
+      "time": "9:00 AM – 4:00 PM",
       "location": "Sheraton Lagos Hotel, 30 Mobolaji Bank Anthony Way, Ikeja, Lagos",
       "organizer": "Craydel - Lagos Office",
       "agent_name": "Craydel - Lagos Office",
@@ -108,7 +76,7 @@
       "initials": "CL"
     },
     {
-      "id": 1468,
+      "id": 2098,
       "name": "Study Abroad Expo In Ibadan",
       "date": "2026-07-14",
       "time": "10:00 AM - 03:00 PM",
@@ -124,7 +92,7 @@
       "initials": "TM"
     },
     {
-      "id": 1467,
+      "id": 2097,
       "name": "Study Abroad Expo In Benin",
       "date": "2026-07-16",
       "time": "10:00 AM - 03:00 PM",
@@ -140,7 +108,7 @@
       "initials": "TM"
     },
     {
-      "id": 1466,
+      "id": 2096,
       "name": "Study Abroad Expo In Kano",
       "date": "2026-07-18",
       "time": "10:00 AM - 03:00 PM",
@@ -156,7 +124,7 @@
       "initials": "TM"
     },
     {
-      "id": 1465,
+      "id": 2095,
       "name": "Study Abroad Expo In Enugu",
       "date": "2026-07-21",
       "time": "10:00 AM - 03:00 PM",
@@ -173,6 +141,22 @@
     }
   ],
   "past": [
+    {
+      "id": 1473,
+      "name": "Everything you need to know about studying in UK, Netherlands & Germany",
+      "date": "2026-06-23",
+      "time": "10:00 am - 12:00 pm",
+      "location": "Lagos Office, Catherine House, 6, Idowu Lane, Off Salvation Road, Opebi, Ikeja, Lagos, Nigeria",
+      "organizer": "My International Office",
+      "agent_name": "My International Office",
+      "agent_country": "Nigeria",
+      "agent_website": "https://myinternationaloffice.co.uk/",
+      "registration_url": "https://myinternationaloffice.co.uk/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "MI"
+    },
     {
       "id": 496,
       "name": "Study Education & Social Science in the UK",

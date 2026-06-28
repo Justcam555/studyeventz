@@ -1,32 +1,50 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-06-21T21:13:57",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 524,
-      "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
-      "date": "2026-06-23",
-      "time": "7:00 AM EDT / 4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
+      "id": 1703,
+      "name": "Study in Australia Fair | Saturday 11 July 2026 | 9:00AM-3:00PM | Phnom Penh",
+      "date": "2026-07-11",
+      "time": "9:00 AM - 3:00 PM",
+      "location": "Phnom Penh, Cambodia",
+      "organizer": "IDP Education Cambodia Ltd",
+      "agent_name": "IDP Education Cambodia Ltd",
       "agent_country": "Cambodia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
+      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/cambodia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AP"
+      "initials": "IE"
     },
+    {
+      "id": 1704,
+      "name": "Study in Australia Fair | Sunday 12 July 2026 | 2:00PM-6:00PM | Siem Reap",
+      "date": "2026-07-12",
+      "time": "2:00 PM - 6:00 PM",
+      "location": "Siem Reap, Cambodia",
+      "organizer": "IDP Education Cambodia Ltd",
+      "agent_name": "IDP Education Cambodia Ltd",
+      "agent_country": "Cambodia",
+      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/cambodia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
+  "past": [
     {
       "id": 525,
       "name": "University of Canada West and University of North Florida: Refresher course for ApplyBoard India Partners",
@@ -44,55 +62,21 @@
       "initials": "AP"
     },
     {
-      "id": 1020,
-      "name": "Study in the UK This September with Confidence",
-      "date": "2026-06-25",
-      "time": "5:00 PM - 6:00 PM",
+      "id": 524,
+      "name": "Maximize Your U.S. Portfolio with Oral Roberts University: Our Newest Prime Institution",
+      "date": "2026-06-23",
+      "time": "7:00 AM EDT / 4:30 PM IST",
       "location": "Online",
-      "organizer": "IDP Education Cambodia Ltd",
-      "agent_name": "IDP Education Cambodia Ltd",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
       "agent_country": "Cambodia",
-      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/cambodia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "AP"
     },
-    {
-      "id": 1021,
-      "name": "Study in Australia Fair",
-      "date": "2026-07-11",
-      "time": "9:00 AM - 3:00 PM",
-      "location": "Phnom Penh, Cambodia",
-      "organizer": "IDP Education Cambodia Ltd",
-      "agent_name": "IDP Education Cambodia Ltd",
-      "agent_country": "Cambodia",
-      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/cambodia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 1022,
-      "name": "Study in Australia Fair",
-      "date": "2026-07-12",
-      "time": "2:00 PM - 6:00 PM",
-      "location": "Siem Reap, Cambodia",
-      "organizer": "IDP Education Cambodia Ltd",
-      "agent_name": "IDP Education Cambodia Ltd",
-      "agent_country": "Cambodia",
-      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/cambodia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
     {
       "id": 522,
       "name": "From Classroom to Career: NAIT's IPDC Programs Showcase",

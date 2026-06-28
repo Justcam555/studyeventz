@@ -1,21 +1,21 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-06-21T21:13:56",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 1117,
-      "name": "Exclusive UK Webinar – September 2026 Intake - Ghana",
-      "date": "2026-06-25",
-      "time": "10:00 AM - 11:00 AM",
+      "id": 1800,
+      "name": "Study at Royal Holloway, University of London with IDP",
+      "date": "2026-07-02",
+      "time": "11:00 AM - 12:00 PM",
       "location": "Online",
       "organizer": "IDP - Ghana",
       "agent_name": "IDP - Ghana",
@@ -28,27 +28,11 @@
       "initials": "IG"
     },
     {
-      "id": 1118,
-      "name": "Study at Royal Holloway, University of London with IDP",
-      "date": "2026-07-02",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Accra (Osu), Kumasi, Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
-    {
-      "id": 1119,
+      "id": 1801,
       "name": "University of South Wales Open Day - Accra",
       "date": "2026-07-03",
       "time": "10:00 AM - 5:00 PM",
-      "location": "Accra (Osu), Kumasi, Ghana",
+      "location": "Accra (Osu), Ghana",
       "organizer": "IDP - Ghana",
       "agent_name": "IDP - Ghana",
       "agent_country": "Ghana",

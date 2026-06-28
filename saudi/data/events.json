@@ -1,22 +1,22 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-06-21T21:13:58",
+  "generated_at": "2026-06-28T21:19:02",
   "window": {
-    "from": "2026-06-21",
-    "to": "2026-07-21"
+    "from": "2026-06-28",
+    "to": "2026-07-28"
   },
   "archive": {
-    "from": "2024-06-21",
-    "to": "2026-06-20"
+    "from": "2024-06-28",
+    "to": "2026-06-27"
   },
   "events": [
     {
-      "id": 1486,
-      "name": "Exclusive UK Webinar – September 2026 Intake - KSA",
-      "date": "2026-06-25",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "Online",
+      "id": 2131,
+      "name": "Meet the Certified Study Abroad Experts at IDP Dammam Office",
+      "date": "2026-06-28",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Dammam, Saudi Arabia",
       "organizer": "IDP Education Pty",
       "agent_name": "IDP Education Pty",
       "agent_country": "Saudi Arabia",
@@ -28,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 1487,
+      "id": 2139,
       "name": "Meet the Certified Study Abroad Experts at IDP Dammam Office",
       "date": "2026-06-30",
       "time": "9:00 AM - 5:00 PM",
@@ -37,6 +37,38 @@
       "agent_name": "IDP Education Australia",
       "agent_country": "Saudi Arabia",
       "agent_website": "https://www.idp.com/saudiarabia/study-abroad-consultants/al-khobar/madinal-al-ummal/sa-1001/",
+      "registration_url": "https://www.idp.com/saudiarabia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2137,
+      "name": "Fast-track your UK degree with IDP KSA",
+      "date": "2026-07-01",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
+      "organizer": "IDP Education Pty",
+      "agent_name": "IDP Education Pty",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://www.idp.com/saudiarabia",
+      "registration_url": "https://www.idp.com/saudiarabia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2138,
+      "name": "UCAS Clearing: Your second chance to study in the UK",
+      "date": "2026-07-02",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
+      "organizer": "IDP Education Pty",
+      "agent_name": "IDP Education Pty",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://www.idp.com/saudiarabia",
       "registration_url": "https://www.idp.com/saudiarabia/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
