@@ -1,22 +1,39 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-06-28T21:19:02",
+  "generated_at": "2026-07-05T21:35:45",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 2131,
-      "name": "Meet the Certified Study Abroad Experts at IDP Dammam Office",
-      "date": "2026-06-28",
+      "id": 2138,
+      "name": "UCAS Clearing: Your second chance to study in the UK",
+      "date": "2026-07-02",
       "time": "9:00 AM - 5:00 PM",
-      "location": "Dammam, Saudi Arabia",
+      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
+      "organizer": "IDP Education Pty",
+      "agent_name": "IDP Education Pty",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://www.idp.com/saudiarabia",
+      "registration_url": "https://www.idp.com/saudiarabia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2137,
+      "name": "Fast-track your UK degree with IDP KSA",
+      "date": "2026-07-01",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
       "organizer": "IDP Education Pty",
       "agent_name": "IDP Education Pty",
       "agent_country": "Saudi Arabia",
@@ -44,11 +61,11 @@
       "initials": "IE"
     },
     {
-      "id": 2137,
-      "name": "Fast-track your UK degree with IDP KSA",
-      "date": "2026-07-01",
+      "id": 2131,
+      "name": "Meet the Certified Study Abroad Experts at IDP Dammam Office",
+      "date": "2026-06-28",
       "time": "9:00 AM - 5:00 PM",
-      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
+      "location": "Dammam, Saudi Arabia",
       "organizer": "IDP Education Pty",
       "agent_name": "IDP Education Pty",
       "agent_country": "Saudi Arabia",
@@ -59,24 +76,6 @@
       "logo_bg_color": "",
       "initials": "IE"
     },
-    {
-      "id": 2138,
-      "name": "UCAS Clearing: Your second chance to study in the UK",
-      "date": "2026-07-02",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Dammam, Jeddah, Riyadh, Saudi Arabia",
-      "organizer": "IDP Education Pty",
-      "agent_name": "IDP Education Pty",
-      "agent_country": "Saudi Arabia",
-      "agent_website": "https://www.idp.com/saudiarabia",
-      "registration_url": "https://www.idp.com/saudiarabia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
     {
       "id": 903,
       "name": "Study Abroad Expo 2026 in Saudi",

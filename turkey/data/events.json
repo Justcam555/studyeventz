@@ -1,16 +1,50 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-06-28T21:19:03",
+  "generated_at": "2026-07-05T21:35:45",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
   "events": [
+    {
+      "id": 2805,
+      "name": "Almanya'da İngilizce Lisans ve Yüksek Lisans Fırsatları: Macromedia University Webinarı",
+      "date": "2026-07-07",
+      "time": "14:00",
+      "location": "Online",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "https://www.academix.com.tr/yurtdisi-egitim-etkinlikleri/almanyada-ingilizce-lisans-ve-yuksek-lisans-firsatlari-macromedia-university-webinari",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    }
+  ],
+  "past": [
+    {
+      "id": 2288,
+      "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
+      "date": "2026-07-02",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners, Turkey",
+      "agent_name": "Global Study Partners, Turkey",
+      "agent_country": "Turkey",
+      "agent_website": "https://upgradgsp.com/",
+      "registration_url": "https://upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
     {
       "id": 2287,
       "name": "Career from Day One: C3S Business School Spain | Partner Training",
@@ -28,24 +62,6 @@
       "initials": "GS"
     },
     {
-      "id": 2288,
-      "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
-      "date": "2026-07-02",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Turkey",
-      "agent_name": "Global Study Partners, Turkey",
-      "agent_country": "Turkey",
-      "agent_website": "https://upgradgsp.com/",
-      "registration_url": "https://upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    }
-  ],
-  "past": [
-    {
       "id": 1622,
       "name": "Exclusive UK Webinar – September 2026 Intake - Turkey",
       "date": "2026-06-25",
@@ -62,22 +78,6 @@
       "initials": "IT"
     },
     {
-      "id": 1627,
-      "name": "NABA İtalya & Londra Kabul Günleri - Taksim",
-      "date": "2026-06-25",
-      "time": "14:00",
-      "location": "Academix Taksim Ofisi, İstanbul",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
-      "registration_url": "https://www.academix.com.tr/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
       "id": 1621,
       "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
       "date": "2026-06-24",
@@ -92,38 +92,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IT"
-    },
-    {
-      "id": 1626,
-      "name": "NABA İtalya & Londra Kabul Günleri - Ankara",
-      "date": "2026-06-24",
-      "time": "14:00",
-      "location": "Academix Ankara Ofisi, Ankara",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
-      "registration_url": "https://www.academix.com.tr/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 1625,
-      "name": "NABA İtalya & Londra Kabul Günleri - İzmir",
-      "date": "2026-06-23",
-      "time": "14:00",
-      "location": "Academix İzmir Ofisi, İzmir",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
-      "registration_url": "https://www.academix.com.tr/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
     }
   ]
 }

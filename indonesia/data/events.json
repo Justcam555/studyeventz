@@ -1,50 +1,18 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-06-28T21:19:02",
+  "generated_at": "2026-07-05T21:35:44",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
   "events": [
     {
-      "id": 1993,
-      "name": "Career from Day One: C3S Business School Spain | Partner Training",
-      "date": "2026-06-30",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Indonesia",
-      "agent_name": "Global Study Partners, Indonesia",
-      "agent_country": "Indonesia",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 1994,
-      "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
-      "date": "2026-07-02",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Indonesia",
-      "agent_name": "Global Study Partners, Indonesia",
-      "agent_country": "Indonesia",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 1977,
+      "id": 2533,
       "name": "JACK Study UK & EU Expo",
       "date": "2026-07-05",
       "time": "13:00 - 17:00",
@@ -60,11 +28,43 @@
       "initials": "JS"
     },
     {
-      "id": 1978,
+      "id": 2542,
+      "name": "Study in the USA Series - California Info Session",
+      "date": "2026-07-11",
+      "time": "",
+      "location": "Online",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "www.suneducationgroup.com",
+      "registration_url": "https://www.suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 2555,
+      "name": "UON: Exclusive Agent Training | Makati",
+      "date": "2026-07-11",
+      "time": "",
+      "location": "Makati",
+      "organizer": "Global Study Partners, Indonesia",
+      "agent_name": "Global Study Partners, Indonesia",
+      "agent_country": "Indonesia",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 2534,
       "name": "OVERSEAS EDUCATION EXHIBITION BANDUNG 2026",
       "date": "2026-07-15",
       "time": "",
-      "location": "Bandung",
+      "location": "Bandung, Indonesia",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -76,11 +76,11 @@
       "initials": "EC"
     },
     {
-      "id": 1979,
+      "id": 2535,
       "name": "OVERSEAS EDUCATION EXHIBITION SERPONG 2026",
       "date": "2026-07-17",
       "time": "",
-      "location": "Tangerang",
+      "location": "Tangerang, Indonesia",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -92,11 +92,11 @@
       "initials": "EC"
     },
     {
-      "id": 1980,
+      "id": 2536,
       "name": "OVERSEAS EDUCATION EXHIBITION SUDIRMAN 2026",
       "date": "2026-07-18",
       "time": "",
-      "location": "Jakarta",
+      "location": "Jakarta, Indonesia",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -108,7 +108,23 @@
       "initials": "EC"
     },
     {
-      "id": 1988,
+      "id": 2541,
+      "name": "Study in the USA Series - Massachusetts Info Session",
+      "date": "2026-07-18",
+      "time": "",
+      "location": "Online",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "www.suneducationgroup.com",
+      "registration_url": "https://www.suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 2550,
       "name": "Portfolio Review: Prepare Your Creative Portfolio For The Industry (Gading Serpong)",
       "date": "2026-07-18",
       "time": "13:00 - 15:00 WIB",
@@ -124,10 +140,10 @@
       "initials": "CJ"
     },
     {
-      "id": 1989,
+      "id": 2551,
       "name": "Study in Asia University Fair",
       "date": "2026-07-18",
-      "time": "2:00 PM - 5:00 PM",
+      "time": "2:00 pm - 5:00 pm",
       "location": "Jakarta",
       "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
       "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
@@ -140,10 +156,10 @@
       "initials": "AE"
     },
     {
-      "id": 1990,
+      "id": 2552,
       "name": "Study Hospitality Fair - Bali",
       "date": "2026-07-20",
-      "time": "3:00 PM - 6:00 PM",
+      "time": "3:00 pm - 6:00 pm",
       "location": "Bali",
       "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
       "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
@@ -156,11 +172,11 @@
       "initials": "AE"
     },
     {
-      "id": 1981,
+      "id": 2537,
       "name": "OVERSEAS EDUCATION EXHIBITION SURABAYA 2026",
       "date": "2026-07-24",
       "time": "",
-      "location": "Surabaya",
+      "location": "Surabaya, Indonesia",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -172,11 +188,11 @@
       "initials": "EC"
     },
     {
-      "id": 1982,
+      "id": 2538,
       "name": "OVERSEAS EDUCATION EXHIBITION DENPASAR 2026",
       "date": "2026-07-25",
       "time": "",
-      "location": "Denpasar",
+      "location": "Denpasar, Indonesia",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -188,10 +204,10 @@
       "initials": "EC"
     },
     {
-      "id": 1991,
+      "id": 2553,
       "name": "Global Education Fair - Surabaya - 25 July 2026",
       "date": "2026-07-25",
-      "time": "1:00 PM - 6:00 PM",
+      "time": "1:00 pm - 6:00 pm",
       "location": "Surabaya",
       "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
       "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
@@ -204,10 +220,10 @@
       "initials": "AE"
     },
     {
-      "id": 1992,
+      "id": 2554,
       "name": "Global Education Fair - Malang - 26 July 2026",
       "date": "2026-07-26",
-      "time": "1:00 PM - 6:00 PM",
+      "time": "1:00 pm - 6:00 pm",
       "location": "Malang",
       "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
       "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
@@ -218,6 +234,38 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AE"
+    },
+    {
+      "id": 2539,
+      "name": "OVERSEAS EDUCATION EXHIBITION KEBON JERUK 2026",
+      "date": "2026-07-31",
+      "time": "",
+      "location": "Jakarta, Indonesia",
+      "organizer": "Edlink+ConneX",
+      "agent_name": "Edlink+ConneX",
+      "agent_country": "Indonesia",
+      "agent_website": "www.edlinkeducation.com",
+      "registration_url": "https://edlinkconnex.com/id/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EC"
+    },
+    {
+      "id": 2540,
+      "name": "OVERSEAS EDUCATION EXHIBITION PONDOK INDAH 2026",
+      "date": "2026-08-01",
+      "time": "",
+      "location": "Jakarta, Indonesia",
+      "organizer": "Edlink+ConneX",
+      "agent_name": "Edlink+ConneX",
+      "agent_country": "Indonesia",
+      "agent_website": "www.edlinkeducation.com",
+      "registration_url": "https://edlinkconnex.com/id/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EC"
     }
   ],
   "past": [

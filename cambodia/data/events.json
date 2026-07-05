@@ -1,18 +1,18 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-06-28T21:19:02",
+  "generated_at": "2026-07-05T21:35:44",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
   "events": [
     {
-      "id": 1703,
+      "id": 2349,
       "name": "Study in Australia Fair | Saturday 11 July 2026 | 9:00AM-3:00PM | Phnom Penh",
       "date": "2026-07-11",
       "time": "9:00 AM - 3:00 PM",
@@ -28,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 1704,
+      "id": 2350,
       "name": "Study in Australia Fair | Sunday 12 July 2026 | 2:00PM-6:00PM | Siem Reap",
       "date": "2026-07-12",
       "time": "2:00 PM - 6:00 PM",

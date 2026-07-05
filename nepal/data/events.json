@@ -1,32 +1,82 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-06-28T21:19:02",
+  "generated_at": "2026-07-05T21:35:44",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
   "events": [
     {
-      "id": 2086,
-      "name": "Nepcoms Global Edu Expo 2026 - Day 2",
-      "date": "2026-06-30",
-      "time": "11:00 AM - 3:00 PM",
-      "location": "Bagbazar, Kathmandu",
-      "organizer": "Nepcoms services Pvt Ltd",
-      "agent_name": "Nepcoms services Pvt Ltd",
+      "id": 2647,
+      "name": "Meet Sudhir Kr. Pandey, Bennett University (The Times Group), Study in India",
+      "date": "2026-07-05",
+      "time": "",
+      "location": "Kathmandu, Nepal",
+      "organizer": "Edu Bridge Pvt. Ltd",
+      "agent_name": "Edu Bridge Pvt. Ltd",
       "agent_country": "Nepal",
-      "agent_website": "https://nepcoms.com/contact-us/",
-      "registration_url": "https://nepcoms.com/nepcoms-events/",
+      "agent_website": "http://www.edubridge.com.np/",
+      "registration_url": "https://www.edubridge.com.np/news",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "NS"
+      "initials": "EB"
     },
+    {
+      "id": 2648,
+      "name": "IS NEW ZEALAND THE RIGHT DESTINATION FOR NEPALI STUDENTS? Webinar on 6 July 2026",
+      "date": "2026-07-06",
+      "time": "",
+      "location": "Online",
+      "organizer": "Edu Bridge Pvt. Ltd",
+      "agent_name": "Edu Bridge Pvt. Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "http://www.edubridge.com.np/",
+      "registration_url": "https://www.edubridge.com.np/news",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EB"
+    },
+    {
+      "id": 2644,
+      "name": "UK Virtual Admission Day",
+      "date": "2026-07-06",
+      "time": "12:15 pm",
+      "location": "Online",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Nepal",
+      "agent_website": "www.aeccglobal.com.np",
+      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 2645,
+      "name": "GATEWAY TO DUBAI – EDUCATION FAIR",
+      "date": "2026-07-18",
+      "time": "8:00 am - 2:00 pm",
+      "location": "All Nepal",
+      "organizer": "Grace International",
+      "agent_name": "Grace International",
+      "agent_country": "Nepal",
+      "agent_website": "https://graceintlgroup.com/contact-us/",
+      "registration_url": "https://graceintlgroup.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    }
+  ],
+  "past": [
     {
       "id": 2085,
       "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
@@ -44,39 +94,21 @@
       "initials": "IE"
     },
     {
-      "id": 2084,
-      "name": "UK Virtual Admission Day",
-      "date": "2026-07-06",
-      "time": "05:15 am",
-      "location": "Online",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "id": 2086,
+      "name": "Nepcoms Global Edu Expo 2026 - Day 2",
+      "date": "2026-06-30",
+      "time": "11:00 AM - 3:00 PM",
+      "location": "Bagbazar, Kathmandu",
+      "organizer": "Nepcoms services Pvt Ltd",
+      "agent_name": "Nepcoms services Pvt Ltd",
       "agent_country": "Nepal",
-      "agent_website": "www.aeccglobal.com.np",
-      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 2087,
-      "name": "GATEWAY TO DUBAI – EDUCATION FAIR",
-      "date": "2026-07-18",
-      "time": "8:00 am - 2:00 pm",
-      "location": "All Nepal",
-      "organizer": "Grace International",
-      "agent_name": "Grace International",
-      "agent_country": "Nepal",
-      "agent_website": "https://graceintlgroup.com/contact-us/",
-      "registration_url": "https://graceintlgroup.com/events/",
+      "agent_website": "https://nepcoms.com/contact-us/",
+      "registration_url": "https://nepcoms.com/nepcoms-events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GI"
-    }
-  ],
-  "past": [
+      "initials": "NS"
+    },
     {
       "id": 1446,
       "name": "Virtual France Application Day",

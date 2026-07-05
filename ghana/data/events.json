@@ -1,16 +1,50 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-06-28T21:19:02",
+  "generated_at": "2026-07-05T21:35:44",
   "window": {
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "archive": {
-    "from": "2024-06-28",
-    "to": "2026-06-27"
+    "from": "2024-07-05",
+    "to": "2026-07-04"
   },
   "events": [
+    {
+      "id": 2390,
+      "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Ghana",
+      "date": "2026-07-31",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Accra (East Legon), Accra, Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/accra/east-legon/gh-1000/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    }
+  ],
+  "past": [
+    {
+      "id": 1801,
+      "name": "University of South Wales Open Day - Accra",
+      "date": "2026-07-03",
+      "time": "10:00 AM - 5:00 PM",
+      "location": "Accra (Osu), Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    },
     {
       "id": 1800,
       "name": "Study at Royal Holloway, University of London with IDP",
@@ -27,24 +61,6 @@
       "logo_bg_color": "",
       "initials": "IG"
     },
-    {
-      "id": 1801,
-      "name": "University of South Wales Open Day - Accra",
-      "date": "2026-07-03",
-      "time": "10:00 AM - 5:00 PM",
-      "location": "Accra (Osu), Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    }
-  ],
-  "past": [
     {
       "id": 486,
       "name": "Study Education & Social Science in the UK",
