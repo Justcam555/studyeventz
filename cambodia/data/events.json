@@ -1,35 +1,19 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-07-05T21:35:44",
+  "generated_at": "2026-07-12T21:24:28",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2349,
-      "name": "Study in Australia Fair | Saturday 11 July 2026 | 9:00AM-3:00PM | Phnom Penh",
-      "date": "2026-07-11",
-      "time": "9:00 AM - 3:00 PM",
-      "location": "Phnom Penh, Cambodia",
-      "organizer": "IDP Education Cambodia Ltd",
-      "agent_name": "IDP Education Cambodia Ltd",
-      "agent_country": "Cambodia",
-      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/cambodia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 2350,
-      "name": "Study in Australia Fair | Sunday 12 July 2026 | 2:00PM-6:00PM | Siem Reap",
+      "id": 2857,
+      "name": "Study in Australia Fair",
       "date": "2026-07-12",
       "time": "2:00 PM - 6:00 PM",
       "location": "Siem Reap, Cambodia",

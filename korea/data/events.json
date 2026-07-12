@@ -1,18 +1,18 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-07-05T21:35:45",
+  "generated_at": "2026-07-12T21:24:28",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2623,
+      "id": 3201,
       "name": "입학 설명회",
       "date": "2026-07-25",
       "time": "",
@@ -28,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 2621,
+      "id": 3196,
       "name": "2026 영국학생비자 세미나",
       "date": "2026-07-25",
       "time": "1:00 PM - 2:00 PM",
@@ -44,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 2624,
+      "id": 3202,
       "name": "입학 설명회",
       "date": "2026-07-30",
       "time": "",
@@ -58,6 +58,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 3198,
+      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 직접 참석)",
+      "date": "2026-08-08",
+      "time": "1:00 PM - 5:00 PM",
+      "location": "선릉 더 모임센터, 강남구 테헤란로 326, 서울",
+      "organizer": "EEVS ASIA PTY LTD",
+      "agent_name": "EEVS ASIA PTY LTD",
+      "agent_country": "South Korea",
+      "agent_website": "https://experteducation.co.kr/",
+      "registration_url": "https://experteducation.co.kr/event/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172185377&t=board",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EA"
     }
   ],
   "past": [

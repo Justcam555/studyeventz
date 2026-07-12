@@ -1,50 +1,18 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-07-05T21:35:44",
+  "generated_at": "2026-07-12T21:24:27",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2699,
-      "name": "The Plaza: Meet, Play, Repeat (Campus Club Fair)",
-      "date": "2026-07-08",
-      "time": "11:00 AM - 05:00 PM",
-      "location": "Level 4, Main Wing, PSB Academy, Singapore",
-      "organizer": "PSB Academy(Singapore)",
-      "agent_name": "PSB Academy(Singapore)",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.psb-academy.edu.sg/",
-      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PA"
-    },
-    {
-      "id": 2692,
-      "name": "[10 July] Meet The Expert - UNSW Sydney",
-      "date": "2026-07-10",
-      "time": "11:00 AM - 1:00 PM",
-      "location": "Singapore",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 2694,
+      "id": 3299,
       "name": "[14 July] Meet The Expert - University of Sydney",
       "date": "2026-07-14",
       "time": "2:00 PM - 5:00 PM",
@@ -60,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 2700,
+      "id": 3302,
       "name": "Why what gets you into NUS won't get you into Oxford or the Ivy League",
       "date": "2026-07-14",
       "time": "7:00 PM SGT",
@@ -92,7 +60,7 @@
       "initials": "PA"
     },
     {
-      "id": 2695,
+      "id": 3300,
       "name": "[16 Jul] Meet The Expert - The Australian National University (Virtual)",
       "date": "2026-07-16",
       "time": "3:00 PM - 4:00 PM",
@@ -108,7 +76,7 @@
       "initials": "IE"
     },
     {
-      "id": 2696,
+      "id": 3301,
       "name": "[18 July] From Campus to Career: How UWA Sets You Up for Success in Singapore & Australia",
       "date": "2026-07-18",
       "time": "12:00 PM - 2:00 PM",
@@ -141,6 +109,22 @@
     }
   ],
   "past": [
+    {
+      "id": 2699,
+      "name": "The Plaza: Meet, Play, Repeat (Campus Club Fair)",
+      "date": "2026-07-08",
+      "time": "11:00 AM - 05:00 PM",
+      "location": "Level 4, Main Wing, PSB Academy, Singapore",
+      "organizer": "PSB Academy(Singapore)",
+      "agent_name": "PSB Academy(Singapore)",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.psb-academy.edu.sg/",
+      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PA"
+    },
     {
       "id": 2169,
       "name": "Virtual Admissions Day New Zealand",

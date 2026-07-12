@@ -1,18 +1,34 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-07-05T21:35:44",
+  "generated_at": "2026-07-12T21:24:27",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2390,
+      "id": 2929,
+      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Ghana",
+      "date": "2026-07-30",
+      "time": "11:00 AM - 12:00 PM",
+      "location": "Online",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    },
+    {
+      "id": 2930,
       "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Ghana",
       "date": "2026-07-31",
       "time": "9:00 AM - 5:00 PM",
@@ -29,38 +45,6 @@
     }
   ],
   "past": [
-    {
-      "id": 1801,
-      "name": "University of South Wales Open Day - Accra",
-      "date": "2026-07-03",
-      "time": "10:00 AM - 5:00 PM",
-      "location": "Accra (Osu), Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
-    {
-      "id": 1800,
-      "name": "Study at Royal Holloway, University of London with IDP",
-      "date": "2026-07-02",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Online",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
     {
       "id": 486,
       "name": "Study Education & Social Science in the UK",

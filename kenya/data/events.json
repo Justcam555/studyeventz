@@ -1,22 +1,22 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-07-05T21:35:45",
+  "generated_at": "2026-07-12T21:24:29",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2601,
-      "name": "Study in Australia Open Day – Eldoret",
-      "date": "2026-07-07",
+      "id": 3185,
+      "name": "Study in Malaysia INTI - Open Day",
+      "date": "2026-07-14",
       "time": "10:00 - 16:00",
-      "location": "Eldoret, Kenya",
+      "location": "Nairobi",
       "organizer": "Educare International Limited",
       "agent_name": "Educare International Limited",
       "agent_country": "Kenya",
@@ -28,11 +28,11 @@
       "initials": "EI"
     },
     {
-      "id": 2613,
-      "name": "Study in Australia Open Day – Eldoret",
-      "date": "2026-07-07",
+      "id": 3193,
+      "name": "Study in Malaysia INTI - Open Day",
+      "date": "2026-07-14",
       "time": "10:00 - 16:00",
-      "location": "Eldoret, Kenya",
+      "location": "Nairobi",
       "organizer": "EDUCARE INTERNATIONAL LIMITED",
       "agent_name": "EDUCARE INTERNATIONAL LIMITED",
       "agent_country": "Kenya",
@@ -44,11 +44,11 @@
       "initials": "EI"
     },
     {
-      "id": 2605,
-      "name": "Study in Hungary Open Day - Mombasa",
-      "date": "2026-07-09",
+      "id": 3186,
+      "name": "Study in the United Kingdom Open Day",
+      "date": "2026-07-15",
       "time": "10:00 - 16:00",
-      "location": "Mombasa, Nyali, Kenya",
+      "location": "Nairobi",
       "organizer": "Educare International Limited",
       "agent_name": "Educare International Limited",
       "agent_country": "Kenya",
@@ -60,11 +60,11 @@
       "initials": "EI"
     },
     {
-      "id": 2617,
-      "name": "Study in Hungary Open Day - Mombasa",
-      "date": "2026-07-09",
+      "id": 3194,
+      "name": "Study in the United Kingdom Open Day",
+      "date": "2026-07-15",
       "time": "10:00 - 16:00",
-      "location": "Mombasa- Nyali, Kenya",
+      "location": "Nairobi",
       "organizer": "EDUCARE INTERNATIONAL LIMITED",
       "agent_name": "EDUCARE INTERNATIONAL LIMITED",
       "agent_country": "Kenya",
@@ -76,27 +76,59 @@
       "initials": "EI"
     },
     {
-      "id": 2596,
-      "name": "Study in the UK: Open Day - Kisumu Edition",
-      "date": "2026-07-10",
-      "time": "",
-      "location": "Uniserv Education Kisumu, Kisumu",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
+      "id": 3188,
+      "name": "Careers of the Future Open Day: Australia & New Zealand",
+      "date": "2026-07-16",
+      "time": "10:00 AM – 3:00 PM",
+      "location": "Craydel Offices, The Pavilion, 1st Floor, Lower Kabete Road, Westlands, Nairobi",
+      "organizer": "Craydel Inc.",
+      "agent_name": "Craydel Inc.",
       "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "https://www.uniserveducation.com/event",
+      "agent_website": "https://craydel.com/about/contact",
+      "registration_url": "https://craydel.com/events",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "UE"
+      "initials": "CR"
     },
     {
-      "id": 2597,
+      "id": 3187,
+      "name": "Study in France Open Day",
+      "date": "2026-07-17",
+      "time": "10:00 - 14:00",
+      "location": "Nairobi, Kenya",
+      "organizer": "Educare International Limited",
+      "agent_name": "Educare International Limited",
+      "agent_country": "Kenya",
+      "agent_website": "https://educare-studyabroad.com/contact-us?office=mombasa",
+      "registration_url": "https://educare-studyabroad.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EI"
+    },
+    {
+      "id": 3195,
+      "name": "Study in France Open Day",
+      "date": "2026-07-17",
+      "time": "10:00 - 14:00",
+      "location": "Nairobi, Kenya",
+      "organizer": "EDUCARE INTERNATIONAL LIMITED",
+      "agent_name": "EDUCARE INTERNATIONAL LIMITED",
+      "agent_country": "Kenya",
+      "agent_website": "https://www.educare-studyabroad.com/",
+      "registration_url": "https://www.educare-studyabroad.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EI"
+    },
+    {
+      "id": 3180,
       "name": "University of Birmingham: Pre-Departure",
       "date": "2026-07-18",
       "time": "",
-      "location": "Uniserv Education Nairobi, Nairobi",
+      "location": "Nairobi",
       "organizer": "Uniserv Education",
       "agent_name": "Uniserv Education",
       "agent_country": "Kenya",
@@ -108,7 +140,7 @@
       "initials": "UE"
     },
     {
-      "id": 2598,
+      "id": 3181,
       "name": "Canada Sept 2026 Pre-Departure",
       "date": "2026-07-24",
       "time": "",
@@ -124,7 +156,23 @@
       "initials": "UE"
     },
     {
-      "id": 2599,
+      "id": 3184,
+      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Kenya",
+      "date": "2026-07-30",
+      "time": "2:00 PM - 3:00 PM",
+      "location": "Online",
+      "organizer": "IDP Kenya",
+      "agent_name": "IDP Kenya",
+      "agent_country": "Kenya",
+      "agent_website": "https://www.idp.com/kenya",
+      "registration_url": "https://www.idp.com/kenya/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IK"
+    },
+    {
+      "id": 3182,
       "name": "Canada Sept 2026 Pre-Departure Virtual Event",
       "date": "2026-07-31",
       "time": "",
@@ -140,7 +188,7 @@
       "initials": "UE"
     },
     {
-      "id": 2600,
+      "id": 3183,
       "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Kenya",
       "date": "2026-07-31",
       "time": "9:00 AM - 5:00 PM",
@@ -188,22 +236,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ST"
-    },
-    {
-      "id": 2061,
-      "name": "Study in Canada Open Day 2026",
-      "date": "2026-06-30",
-      "time": "10:00 AM – 2:00 PM",
-      "location": "Craydel Offices, The Pavilion, 1st Floor, Lower Kabete Road, Westlands, Nairobi",
-      "organizer": "Craydel Inc.",
-      "agent_name": "Craydel Inc.",
-      "agent_country": "Kenya",
-      "agent_website": "https://craydel.com/about/contact",
-      "registration_url": "https://craydel.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CR"
     },
     {
       "id": 2052,

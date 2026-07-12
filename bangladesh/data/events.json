@@ -1,79 +1,31 @@
 {
   "country": "bangladesh",
   "country_name": "Bangladesh",
-  "generated_at": "2026-07-05T21:35:45",
+  "generated_at": "2026-07-12T21:24:29",
   "window": {
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "archive": {
-    "from": "2024-07-05",
-    "to": "2026-07-04"
+    "from": "2024-07-12",
+    "to": "2026-07-11"
   },
   "events": [
     {
-      "id": 2334,
-      "name": "UK Application Day - Make Your UK Dream Easier with IDP Uttara",
-      "date": "2026-07-07",
-      "time": "12:00 PM - 4:00 PM",
-      "location": "Dhaka, Bangladesh",
-      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "id": 2849,
+      "name": "IELTS Prepare by IDP",
+      "date": "2026-07-12",
+      "time": "1:00 AM - 11:59 PM",
+      "location": "Chittagong, Dhaka, Sylhet, Bangladesh",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
       "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh/study-abroad-consultants/chittagong/nasiarabad/BD-1000/",
       "registration_url": "https://www.idp.com/bangladesh/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 2335,
-      "name": "UK Application Day - Make Your UK Dream Easier with IDP Dhanmondi",
-      "date": "2026-07-08",
-      "time": "12:00 PM - 4:00 PM",
-      "location": "Dhaka, Bangladesh",
-      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh",
-      "registration_url": "https://www.idp.com/bangladesh/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 2336,
-      "name": "UK Application Day - Make Your UK Dream Easier with IDP Gulshan",
-      "date": "2026-07-09",
-      "time": "12:00 PM - 4:00 PM",
-      "location": "Dhaka, Bangladesh",
-      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh",
-      "registration_url": "https://www.idp.com/bangladesh/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 2348,
-      "name": "UAE Admissions Day",
-      "date": "2026-07-11",
-      "time": "11:30 AM",
-      "location": "Online",
-      "organizer": "Edvoy Education Ltd",
-      "agent_name": "Edvoy Education Ltd",
-      "agent_country": "Bangladesh",
-      "agent_website": "www.edvoy.com",
-      "registration_url": "https://edvoy.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EE"
     },
     {
       "id": 2337,
@@ -92,7 +44,7 @@
       "initials": "SD"
     },
     {
-      "id": 2338,
+      "id": 2848,
       "name": "Global Education Expo 2026",
       "date": "2026-08-01",
       "time": "",
@@ -108,7 +60,7 @@
       "initials": "PG"
     },
     {
-      "id": 2333,
+      "id": 2845,
       "name": "Study in Australia & New Zealand Expo",
       "date": "2026-08-02",
       "time": "10:00 AM",
@@ -122,9 +74,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "MS"
+    },
+    {
+      "id": 2846,
+      "name": "IDP Australia Roadshow 2026",
+      "date": "2026-08-07",
+      "time": "10:00 AM - 6:00 PM",
+      "location": "Dhaka, Bangladesh",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh",
+      "registration_url": "https://www.idp.com/bangladesh/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 2847,
+      "name": "IDP's Study World Roadshow 2.0, August | Chattogram",
+      "date": "2026-08-08",
+      "time": "10:00 AM - 6:00 PM",
+      "location": "Chittagong, Bangladesh",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh",
+      "registration_url": "https://www.idp.com/bangladesh/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
+    {
+      "id": 2348,
+      "name": "UAE Admissions Day",
+      "date": "2026-07-11",
+      "time": "11:30 AM",
+      "location": "Online",
+      "organizer": "Edvoy Education Ltd",
+      "agent_name": "Edvoy Education Ltd",
+      "agent_country": "Bangladesh",
+      "agent_website": "www.edvoy.com",
+      "registration_url": "https://edvoy.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EE"
+    },
     {
       "id": 1690,
       "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
