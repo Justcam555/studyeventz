@@ -1,31 +1,81 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-07-12T21:24:28",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3226,
-      "name": "USA AND CANADA EDUCATION FAIR",
-      "date": "2026-07-12",
-      "time": "8:00 am - 5:00 pm",
-      "location": "Nepal",
-      "organizer": "Grace International",
-      "agent_name": "Grace International",
+      "id": 3858,
+      "name": "Unicampus Global IELTS & PTE Score Challenge 2026",
+      "date": "2026-07-22",
+      "time": "11:00 AM – 2:00 PM",
+      "location": "Putalisadak, Kathmandu, Nepal",
+      "organizer": "Unicampus Education Network Pvt. Ltd",
+      "agent_name": "Unicampus Education Network Pvt. Ltd",
       "agent_country": "Nepal",
-      "agent_website": "https://graceintlgroup.com/contact-us/",
-      "registration_url": "https://graceintlgroup.com/events/",
+      "agent_website": "https://myunicampus.com/contact",
+      "registration_url": "https://myunicampus.com/events",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GI"
+      "initials": "UE"
+    },
+    {
+      "id": 3860,
+      "name": "Fleming College Visit to Education Asia",
+      "date": "2026-07-22",
+      "time": "11:30 am - 2:00 pm",
+      "location": "Sallyan House, Block B, First Floor Bagbazar, Kathmandu, Nepal",
+      "organizer": "Education Asia (P) LTD",
+      "agent_name": "Education Asia (P) LTD",
+      "agent_country": "Nepal",
+      "agent_website": "www.educationasia.com/contact-us/Kathmandu%20Office",
+      "registration_url": "https://educationasia.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EA"
+    },
+    {
+      "id": 3859,
+      "name": "AECC Global Education Roadshow",
+      "date": "2026-08-16",
+      "time": "12:15 PM",
+      "location": "AECC Office, Sunrise Bizz Park, Charkhal, Dilibazar, Kathmandu, Nepal",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Nepal",
+      "agent_website": "www.aeccglobal.com.np",
+      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    }
+  ],
+  "past": [
+    {
+      "id": 3228,
+      "name": "Europe Discovery Day July 17, 2026",
+      "date": "2026-07-17",
+      "time": "",
+      "location": "NIEC 4th & 5th Floor Share Market Complex, Putalisadak, Kathmandu",
+      "organizer": "Nepal Intl Educational Consultancy",
+      "agent_name": "Nepal Intl Educational Consultancy",
+      "agent_country": "Nepal",
+      "agent_website": "https://niec.edu.np/",
+      "registration_url": "https://niec.edu.np/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "NI"
     },
     {
       "id": 3229,
@@ -44,38 +94,20 @@
       "initials": "NI"
     },
     {
-      "id": 3228,
-      "name": "Europe Discovery Day July 17, 2026",
-      "date": "2026-07-17",
-      "time": "",
-      "location": "NIEC 4th & 5th Floor Share Market Complex, Putalisadak, Kathmandu",
-      "organizer": "Nepal Intl Educational Consultancy",
-      "agent_name": "Nepal Intl Educational Consultancy",
+      "id": 3226,
+      "name": "USA AND CANADA EDUCATION FAIR",
+      "date": "2026-07-12",
+      "time": "8:00 am - 5:00 pm",
+      "location": "Nepal",
+      "organizer": "Grace International",
+      "agent_name": "Grace International",
       "agent_country": "Nepal",
-      "agent_website": "https://niec.edu.np/",
-      "registration_url": "https://niec.edu.np/events/",
+      "agent_website": "https://graceintlgroup.com/contact-us/",
+      "registration_url": "https://graceintlgroup.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "NI"
-    }
-  ],
-  "past": [
-    {
-      "id": 2644,
-      "name": "UK Virtual Admission Day",
-      "date": "2026-07-06",
-      "time": "12:15 pm",
-      "location": "Online",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Nepal",
-      "agent_website": "www.aeccglobal.com.np",
-      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
+      "initials": "GI"
     },
     {
       "id": 2648,

@@ -1,37 +1,21 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-07-12T21:24:27",
+  "generated_at": "2026-07-19T21:30:43",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3299,
-      "name": "[14 July] Meet The Expert - University of Sydney",
-      "date": "2026-07-14",
-      "time": "2:00 PM - 5:00 PM",
-      "location": "Singapore",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 3302,
-      "name": "Why what gets you into NUS won't get you into Oxford or the Ivy League",
-      "date": "2026-07-14",
-      "time": "7:00 PM SGT",
+      "id": 3929,
+      "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
+      "date": "2026-07-28",
+      "time": "7:00 PM",
       "location": "Online",
       "organizer": "The Added Company Pte Ltd",
       "agent_name": "The Added Company Pte Ltd",
@@ -44,11 +28,11 @@
       "initials": "AC"
     },
     {
-      "id": 2697,
-      "name": "Discover Your Personality - Know Yourself | Shape Your Future",
-      "date": "2026-07-15",
+      "id": 3928,
+      "name": "Building Confidence to Speak Up as a Bystander",
+      "date": "2026-07-30",
       "time": "07:00 PM - 09:00 PM",
-      "location": "Classroom A06, Main Wing, PSB Academy, Singapore",
+      "location": "Classroom A15, Main Wing, PSB Academy, Singapore",
       "organizer": "PSB Academy(Singapore)",
       "agent_name": "PSB Academy(Singapore)",
       "agent_country": "Singapore",
@@ -58,6 +42,24 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
+    }
+  ],
+  "past": [
+    {
+      "id": 3301,
+      "name": "[18 July] From Campus to Career: How UWA Sets You Up for Success in Singapore & Australia",
+      "date": "2026-07-18",
+      "time": "12:00 PM - 2:00 PM",
+      "location": "Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     },
     {
       "id": 3300,
@@ -76,10 +78,10 @@
       "initials": "IE"
     },
     {
-      "id": 3301,
-      "name": "[18 July] From Campus to Career: How UWA Sets You Up for Success in Singapore & Australia",
-      "date": "2026-07-18",
-      "time": "12:00 PM - 2:00 PM",
+      "id": 3299,
+      "name": "[14 July] Meet The Expert - University of Sydney",
+      "date": "2026-07-14",
+      "time": "2:00 PM - 5:00 PM",
       "location": "Singapore",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
@@ -90,40 +92,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 2698,
-      "name": "Building Confidence to Speak Up as a Bystander",
-      "date": "2026-07-30",
-      "time": "07:00 PM - 09:00 PM",
-      "location": "Classroom A15, Main Wing, PSB Academy, Singapore",
-      "organizer": "PSB Academy(Singapore)",
-      "agent_name": "PSB Academy(Singapore)",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.psb-academy.edu.sg/",
-      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PA"
-    }
-  ],
-  "past": [
-    {
-      "id": 2699,
-      "name": "The Plaza: Meet, Play, Repeat (Campus Club Fair)",
-      "date": "2026-07-08",
-      "time": "11:00 AM - 05:00 PM",
-      "location": "Level 4, Main Wing, PSB Academy, Singapore",
-      "organizer": "PSB Academy(Singapore)",
-      "agent_name": "PSB Academy(Singapore)",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.psb-academy.edu.sg/",
-      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PA"
     },
     {
       "id": 2169,

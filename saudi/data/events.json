@@ -1,16 +1,33 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-07-12T21:24:29",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 3923,
+      "name": "Fast-track your UK degree with IDP KSA",
+      "date": "2026-07-19",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Saudi Arabia - Dammam, Jeddah, Riyadh",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "https://www.idp.com/saudiarabia/study-abroad-consultants/al-khobar/madinal-al-ummal/sa-1001/",
+      "registration_url": "https://www.idp.com/saudiarabia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
   "past": [
     {
       "id": 2138,
@@ -38,22 +55,6 @@
       "agent_name": "IDP Education Pty",
       "agent_country": "Saudi Arabia",
       "agent_website": "https://www.idp.com/saudiarabia",
-      "registration_url": "https://www.idp.com/saudiarabia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 2139,
-      "name": "Meet the Certified Study Abroad Experts at IDP Dammam Office",
-      "date": "2026-06-30",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Dammam, Saudi Arabia",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
-      "agent_country": "Saudi Arabia",
-      "agent_website": "https://www.idp.com/saudiarabia/study-abroad-consultants/al-khobar/madinal-al-ummal/sa-1001/",
       "registration_url": "https://www.idp.com/saudiarabia/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,

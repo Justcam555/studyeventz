@@ -1,21 +1,21 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-07-12T21:24:29",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3221,
-      "name": "Canada in 2026: The Data Behind Smarter Conversations with Your Students",
-      "date": "2026-07-14",
-      "time": "7:00 AM EDT",
+      "id": 3856,
+      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
+      "date": "2026-07-22",
+      "time": "9:00 AM EDT",
       "location": "Online",
       "organizer": "Applyboard",
       "agent_name": "Applyboard",
@@ -28,55 +28,7 @@
       "initials": "AP"
     },
     {
-      "id": 3219,
-      "name": "Próximo destino: Estudia en TAFE Queensland",
-      "date": "2026-07-15",
-      "time": "15:00",
-      "location": "Online",
-      "organizer": "Go Study Australia Pty. Ltd.",
-      "agent_name": "Go Study Australia Pty. Ltd.",
-      "agent_country": "Mexico",
-      "agent_website": "https://www.gostudyaus.es",
-      "registration_url": "https://gostudyaus.es/community/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 3222,
-      "name": "Sponsored Paths: US Universities Hosting Sponsored Students — Part 2",
-      "date": "2026-07-15",
-      "time": "8:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Mexico",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 3223,
-      "name": "Meet Regent's University London: Central London, Global Reach",
-      "date": "2026-07-16",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Mexico",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 3224,
+      "id": 3857,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
       "date": "2026-07-27",
       "time": "7:00 AM EDT",
@@ -109,6 +61,22 @@
     }
   ],
   "past": [
+    {
+      "id": 3219,
+      "name": "Próximo destino: Estudia en TAFE Queensland",
+      "date": "2026-07-15",
+      "time": "15:00",
+      "location": "Online",
+      "organizer": "Go Study Australia Pty. Ltd.",
+      "agent_name": "Go Study Australia Pty. Ltd.",
+      "agent_country": "Mexico",
+      "agent_website": "https://www.gostudyaus.es",
+      "registration_url": "https://gostudyaus.es/community/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
     {
       "id": 2081,
       "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",

@@ -1,53 +1,21 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-07-12T21:24:28",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3309,
-      "name": "Canada in 2026: The Data Behind Smarter Conversations with Your Students",
-      "date": "2026-07-14",
-      "time": "7:00 AM EDT | 4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
-    },
-    {
-      "id": 3310,
-      "name": "Sponsored Paths: US Universities Hosting Sponsored Students — Part 2",
-      "date": "2026-07-15",
-      "time": "8:00 AM EDT | 5:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
-    },
-    {
-      "id": 3311,
-      "name": "Meet Regent's University London: Central London, Global Reach",
-      "date": "2026-07-16",
-      "time": "7:00 AM EDT | 4:30 PM IST",
+      "id": 3933,
+      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
+      "date": "2026-07-22",
+      "time": "9:00 AM EDT | 6:30 PM IST",
       "location": "Online",
       "organizer": "Applyboard (Sri Lanka)",
       "agent_name": "Applyboard (Sri Lanka)",
@@ -76,23 +44,7 @@
       "initials": "PG"
     },
     {
-      "id": 3308,
-      "name": "Admissions Day - UK",
-      "date": "2026-07-25",
-      "time": "12 noon to 5 pm",
-      "location": "Colombo",
-      "organizer": "KC Overseas Education – Colombo",
-      "agent_name": "KC Overseas Education – Colombo",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
-      "registration_url": "https://www.studies-overseas.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KO"
-    },
-    {
-      "id": 3312,
+      "id": 3934,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
       "date": "2026-07-27",
       "time": "7:00 AM EDT | 4:30 PM IST",
@@ -108,7 +60,7 @@
       "initials": "AS"
     },
     {
-      "id": 3306,
+      "id": 3930,
       "name": "JCU Singapore University Visit",
       "date": "2026-07-31",
       "time": "11:00 AM to 12:00 PM",
@@ -124,7 +76,7 @@
       "initials": "VI"
     },
     {
-      "id": 3313,
+      "id": 3936,
       "name": "JCU Singapore University Visit",
       "date": "2026-07-31",
       "time": "11:00 AM to 12:00 PM",
@@ -138,6 +90,38 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "VS"
+    },
+    {
+      "id": 3935,
+      "name": "ABEC Australia & New Zealand Kandy Expo 2026",
+      "date": "2026-08-08",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Queens Hotel, Kandy",
+      "organizer": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.abec.lk",
+      "registration_url": "https://abec.lk/event/kandy-edu-expo-2026/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AB"
+    },
+    {
+      "id": 3932,
+      "name": "Admissions Day - New Zealand",
+      "date": "2026-08-16",
+      "time": "12 noon to 5 pm",
+      "location": "Colombo",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "https://www.studies-overseas.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
     }
   ],
   "past": [
@@ -156,22 +140,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CD"
-    },
-    {
-      "id": 2718,
-      "name": "Essex Open Day Kandy",
-      "date": "2026-07-11",
-      "time": "10:00 AM - 1:00 PM",
-      "location": "ABEC - Kandy Branch, Kandy",
-      "organizer": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.abec.lk",
-      "registration_url": "https://abec.lk/event/essex-open-day-kandy-2026/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AB"
     },
     {
       "id": 2184,

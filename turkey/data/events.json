@@ -1,14 +1,14 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-07-12T21:24:29",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [],
   "past": [

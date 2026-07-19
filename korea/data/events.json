@@ -1,18 +1,18 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-07-12T21:24:28",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3201,
+      "id": 3834,
       "name": "입학 설명회",
       "date": "2026-07-25",
       "time": "",
@@ -28,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 3196,
+      "id": 3829,
       "name": "2026 영국학생비자 세미나",
       "date": "2026-07-25",
       "time": "1:00 PM - 2:00 PM",
@@ -44,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 3202,
+      "id": 3835,
       "name": "입학 설명회",
       "date": "2026-07-30",
       "time": "",
@@ -60,11 +60,11 @@
       "initials": "IE"
     },
     {
-      "id": 3198,
-      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 직접 참석)",
+      "id": 3831,
+      "name": "호주 약대 졸업하면 진짜 어떻게 되나요? 현직 약사님께 직접 물어보세요 | 무료 세미나",
       "date": "2026-08-08",
       "time": "1:00 PM - 5:00 PM",
-      "location": "선릉 더 모임센터, 강남구 테헤란로 326, 서울",
+      "location": "선릉 더 모임센터, 강남구 테헤란로 326 역삼아이타워 B1, 서울",
       "organizer": "EEVS ASIA PTY LTD",
       "agent_name": "EEVS ASIA PTY LTD",
       "agent_country": "South Korea",

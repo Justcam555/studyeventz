@@ -1,50 +1,34 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-07-12T21:24:27",
+  "generated_at": "2026-07-19T21:30:42",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 3240,
-      "name": "Study Abroad Expo In Ibadan",
-      "date": "2026-07-14",
-      "time": "10:00 AM - 03:00 PM",
-      "location": "Ibadan City, Nigeria",
-      "organizer": "Tg Marchnata (Tgm Education)",
-      "agent_name": "Tg Marchnata (Tgm Education)",
+      "id": 3885,
+      "name": "OnCampus Pathway",
+      "date": "2026-07-20",
+      "time": "11:00 am - 12:00 pm",
+      "location": "Online",
+      "organizer": "My International Office",
+      "agent_name": "My International Office",
       "agent_country": "Nigeria",
-      "agent_website": "www.tgmeducation.com",
-      "registration_url": "https://tgmeducation.com/events/",
+      "agent_website": "https://myinternationaloffice.co.uk/",
+      "registration_url": "https://myinternationaloffice.co.uk/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "TM"
+      "initials": "MI"
     },
     {
-      "id": 3239,
-      "name": "Study Abroad Expo In Kano",
-      "date": "2026-07-18",
-      "time": "10:00 AM - 03:00 PM",
-      "location": "Kano City, Nigeria",
-      "organizer": "Tg Marchnata (Tgm Education)",
-      "agent_name": "Tg Marchnata (Tgm Education)",
-      "agent_country": "Nigeria",
-      "agent_website": "www.tgmeducation.com",
-      "registration_url": "https://tgmeducation.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "TM"
-    },
-    {
-      "id": 3238,
+      "id": 3878,
       "name": "Study Abroad Expo In Enugu",
       "date": "2026-07-21",
       "time": "10:00 AM - 03:00 PM",
@@ -60,7 +44,7 @@
       "initials": "TM"
     },
     {
-      "id": 3231,
+      "id": 3862,
       "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Nigeria",
       "date": "2026-07-30",
       "time": "12:00 PM - 1:00 PM",
@@ -76,11 +60,43 @@
       "initials": "IN"
     },
     {
-      "id": 3230,
+      "id": 3868,
       "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Nigeria",
       "date": "2026-07-31",
       "time": "9:00 AM - 5:00 PM",
-      "location": "Nigeria - Abuja, Benin, Enugu",
+      "location": "Nigeria - Abuja, Asaba, Benin, Enugu",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
+    {
+      "id": 3879,
+      "name": "Study in Australia & New Zealand — Meet Navitas at Craydel",
+      "date": "2026-08-01",
+      "time": "10:00 AM – 3:00 PM",
+      "location": "Unit 6, Thompson Building, 17 Phillips Road, Belgravia, Harare, Zimbabwe",
+      "organizer": "Craydel Inc.",
+      "agent_name": "Craydel Inc.",
+      "agent_country": "Nigeria",
+      "agent_website": "https://craydel.com/about/contact",
+      "registration_url": "https://craydel.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CR"
+    },
+    {
+      "id": 3863,
+      "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP Abuja",
+      "date": "2026-08-15",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Abuja, Nigeria",
       "organizer": "IDP Nigeria",
       "agent_name": "IDP Nigeria",
       "agent_country": "Nigeria",
@@ -93,22 +109,6 @@
     }
   ],
   "past": [
-    {
-      "id": 2655,
-      "name": "Meet the University of Sheffield in Lagos",
-      "date": "2026-07-06",
-      "time": "12:00 pm - 1:00 pm",
-      "location": "Lagos Office Catherine House, 6, Idowu Lane, Off Salvation Road, Opebi, Ikeja, Lagos, Nigeria",
-      "organizer": "My International Office",
-      "agent_name": "My International Office",
-      "agent_country": "Nigeria",
-      "agent_website": "https://myinternationaloffice.co.uk/",
-      "registration_url": "https://myinternationaloffice.co.uk/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "MI"
-    },
     {
       "id": 2102,
       "name": "Craydel Lagos Study Abroad Fair 2026",
@@ -124,22 +124,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CL"
-    },
-    {
-      "id": 505,
-      "name": "Craydel Lagos Study Abroad Fair 2026",
-      "date": "2026-07-04",
-      "time": "9:00 AM - 4:00 PM",
-      "location": "Sheraton Lagos Hotel, 30 Mobolaji Bank Anthony Way, Ikeja, Lagos",
-      "organizer": "Craydel Inc.",
-      "agent_name": "Craydel Inc.",
-      "agent_country": "Nigeria",
-      "agent_website": "https://craydel.com/about/contact",
-      "registration_url": "https://craydel.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CR"
     },
     {
       "id": 2100,

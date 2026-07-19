@@ -1,26 +1,26 @@
 {
   "country": "bangladesh",
   "country_name": "Bangladesh",
-  "generated_at": "2026-07-12T21:24:29",
+  "generated_at": "2026-07-19T21:30:44",
   "window": {
-    "from": "2026-07-12",
-    "to": "2026-08-11"
+    "from": "2026-07-19",
+    "to": "2026-08-18"
   },
   "archive": {
-    "from": "2024-07-12",
-    "to": "2026-07-11"
+    "from": "2024-07-19",
+    "to": "2026-07-18"
   },
   "events": [
     {
-      "id": 2849,
-      "name": "IELTS Prepare by IDP",
-      "date": "2026-07-12",
-      "time": "1:00 AM - 11:59 PM",
-      "location": "Chittagong, Dhaka, Sylhet, Bangladesh",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
+      "id": 3427,
+      "name": "Australia - Group of Eight Virtual Application Day",
+      "date": "2026-07-22",
+      "time": "11:00 AM - 1:00 PM",
+      "location": "Online",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
       "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh/study-abroad-consultants/chittagong/nasiarabad/BD-1000/",
+      "agent_website": "https://www.idp.com/bangladesh",
       "registration_url": "https://www.idp.com/bangladesh/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
@@ -28,7 +28,39 @@
       "initials": "IE"
     },
     {
-      "id": 2337,
+      "id": 3437,
+      "name": "Meet Flinders University 1-on-1 in Dhaka",
+      "date": "2026-07-22",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "Eduko Pathways Banani Office, Dhaka, Bangladesh",
+      "organizer": "Eduko Pathways Singapore Pte Ltd",
+      "agent_name": "Eduko Pathways Singapore Pte Ltd",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://edukopathwaysbd.com/contact/",
+      "registration_url": "https://edukopathwaysbd.com/upcoming-event/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 3453,
+      "name": "Meet Flinders University 1-on-1 in Dhaka",
+      "date": "2026-07-22",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "Eduko Pathways Banani Office, Dhaka, Bangladesh",
+      "organizer": "Eduko Pathways Singapore PTE. LTD.",
+      "agent_name": "Eduko Pathways Singapore PTE. LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://edukopathwaysbd.com",
+      "registration_url": "https://edukopathwaysbd.com/upcoming-event/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 3434,
       "name": "Australian Higher Education Roadshow 2026",
       "date": "2026-07-31",
       "time": "10:30 AM to 06:00 PM",
@@ -44,7 +76,23 @@
       "initials": "SD"
     },
     {
-      "id": 2848,
+      "id": 3428,
+      "name": "IDP's Free IELTS on Computer Familiarization Masterclass by Experts - At Gulshan",
+      "date": "2026-07-31",
+      "time": "3:00 PM - 6:00 PM",
+      "location": "Dhaka, Bangladesh",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh",
+      "registration_url": "https://www.idp.com/bangladesh/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 3441,
       "name": "Global Education Expo 2026",
       "date": "2026-08-01",
       "time": "",
@@ -60,7 +108,39 @@
       "initials": "PG"
     },
     {
-      "id": 2845,
+      "id": 3440,
+      "name": "MULTI DESTINATION EDUCATION EXPO 2026",
+      "date": "2026-08-01",
+      "time": "10:00 AM - 05:00 PM",
+      "location": "NI Tower, Level 3, Road 10, Block E, Banani, Dhaka 1213, Bangladesh",
+      "organizer": "Lumos Global",
+      "agent_name": "Lumos Global",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://lumosglobal.com.au/globaloffices.php",
+      "registration_url": "https://lumosglobal.com.au/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "LG"
+    },
+    {
+      "id": 3429,
+      "name": "IDP's Free IELTS on Computer Familiarization Masterclass by Experts - At Dhanmondi",
+      "date": "2026-08-01",
+      "time": "3:00 PM - 6:00 PM",
+      "location": "Dhaka, Bangladesh",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh",
+      "registration_url": "https://www.idp.com/bangladesh/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 3426,
       "name": "Study in Australia & New Zealand Expo",
       "date": "2026-08-02",
       "time": "10:00 AM",
@@ -76,7 +156,23 @@
       "initials": "MS"
     },
     {
-      "id": 2846,
+      "id": 3432,
+      "name": "Australian Education EXPO",
+      "date": "2026-08-05",
+      "time": "10AM – 5PM",
+      "location": "Lakeshore Hotel, Gulshan-2, Dhaka",
+      "organizer": "Australian Education Service",
+      "agent_name": "Australian Education Service",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://aesbd.net/contact/",
+      "registration_url": "https://surl.li/hsdusj",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 3430,
       "name": "IDP Australia Roadshow 2026",
       "date": "2026-08-07",
       "time": "10:00 AM - 6:00 PM",
@@ -92,7 +188,7 @@
       "initials": "IE"
     },
     {
-      "id": 2847,
+      "id": 3431,
       "name": "IDP's Study World Roadshow 2.0, August | Chattogram",
       "date": "2026-08-08",
       "time": "10:00 AM - 6:00 PM",
@@ -106,6 +202,54 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 3435,
+      "name": "Australian Higher Education Roadshow 2026",
+      "date": "2026-08-10",
+      "time": "10:30 AM to 06:00 PM",
+      "location": "The Peninsula Chittagong, Bulbul Center, 486/B O.R. Nizam Road CDA Avenue, Chittagong 4100",
+      "organizer": "StudyNet Pty Ltd - Dhaka",
+      "agent_name": "StudyNet Pty Ltd - Dhaka",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://studynet.io/",
+      "registration_url": "https://studynet.io/search/Events?View=list",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SD"
+    },
+    {
+      "id": 3433,
+      "name": "Australia Education Expo 2026",
+      "date": "2026-08-15",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Dhaka",
+      "organizer": "Australian Education Service",
+      "agent_name": "Australian Education Service",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://aesbd.net/contact/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 3436,
+      "name": "Australian Higher Education Roadshow 2026",
+      "date": "2026-08-15",
+      "time": "10:30 AM to 06:00 PM",
+      "location": "Level 13, Elegant Shopping Mall, Jallarpar Rd, Sylhet 3100, Bangladesh",
+      "organizer": "StudyNet Pty Ltd - Dhaka",
+      "agent_name": "StudyNet Pty Ltd - Dhaka",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://studynet.io/",
+      "registration_url": "https://studynet.io/search/Events?View=list",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SD"
     }
   ],
   "past": [
@@ -172,38 +316,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GR"
-    },
-    {
-      "id": 1012,
-      "name": "Meet the Delegate – Lakehead University (Canada)",
-      "date": "2026-06-23",
-      "time": "10:30 AM - 1:00 PM",
-      "location": "Eduko Pathways Banani Office, Banani, Dhaka, Bangladesh",
-      "organizer": "Eduko Pathways Singapore PTE. LTD.",
-      "agent_name": "Eduko Pathways Singapore PTE. LTD.",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://edukopathwaysbd.com",
-      "registration_url": "https://edukopathwaysbd.com/upcoming-event/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
-    },
-    {
-      "id": 996,
-      "name": "Meet the Delegate – Lakehead University (Canada)",
-      "date": "2026-06-23",
-      "time": "10:30 AM - 1:00 PM",
-      "location": "Eduko Pathways Banani Office, Banani, Dhaka",
-      "organizer": "Eduko Pathways Singapore Pte Ltd",
-      "agent_name": "Eduko Pathways Singapore Pte Ltd",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://edukopathwaysbd.com/contact/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
     }
   ]
 }
