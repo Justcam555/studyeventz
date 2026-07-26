@@ -1,96 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-07-19T21:30:42",
+  "generated_at": "2026-07-26T21:32:26",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
-    {
-      "id": 3939,
-      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
-      "date": "2026-07-22",
-      "time": "7:00 PM - 8:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 3959,
-      "name": "MQ 麥考瑞大學 面談會",
-      "date": "2026-07-23",
-      "time": "10:00 - 12:00",
-      "location": "Taiwan",
-      "organizer": "JRIS Education - Taiwan",
-      "agent_name": "JRIS Education - Taiwan",
-      "agent_country": "Taiwan",
-      "agent_website": "www.jris.com",
-      "registration_url": "https://jris.com/event/20260717/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "JE"
-    },
-    {
-      "id": 3940,
-      "name": "夢想成真: 英國政府全額獎學金Chevening講座",
-      "date": "2026-07-23",
-      "time": "7:00 PM - 8:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 3344,
-      "name": "美國留學｜社大轉學 X 大學名校申請｜費用 X OPT 留美發展全解析",
-      "date": "2026-07-25",
-      "time": "11:00",
-      "location": "高雄",
-      "organizer": "OH Study Education Consulting Center Co., Ltd.",
-      "agent_name": "OH Study Education Consulting Center Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://ohstudy.net",
-      "registration_url": "https://ohstudy.net/seminar.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OS"
-    },
-    {
-      "id": 3941,
-      "name": "百年理工學院 Centennial College: 入學到就業官方指南",
-      "date": "2026-07-25",
-      "time": "2:00 PM - 3:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 3346,
       "name": "加拿大留學｜三大高就業科系｜海外職涯全解析",
@@ -108,8 +28,8 @@
       "initials": "OS"
     },
     {
-      "id": 3944,
-      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "id": 4584,
+      "name": "08/06 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
       "date": "2026-08-06",
       "time": "7:00 PM - 8:00 PM",
       "location": "Online",
@@ -124,8 +44,8 @@
       "initials": "IE"
     },
     {
-      "id": 3945,
-      "name": "Western University 官方專場：加拿大頂尖商管與工程入學指南",
+      "id": 4585,
+      "name": "08/08 Western International College官方專場：國際大一與工程碩士入學指南",
       "date": "2026-08-08",
       "time": "2:00 PM - 3:30 PM",
       "location": "Online",
@@ -140,8 +60,8 @@
       "initials": "IE"
     },
     {
-      "id": 3947,
-      "name": "英國留學申請全攻略：選校策略、錄取關鍵與預算解析",
+      "id": 4587,
+      "name": "08/12 英國留學申請全攻略：選校策略、錄取關鍵與預算解析",
       "date": "2026-08-12",
       "time": "7:00 PM - 8:00 PM",
       "location": "Online",
@@ -156,10 +76,26 @@
       "initials": "IE"
     },
     {
-      "id": 3948,
-      "name": "南卡羅萊納大學 USC: 解析台灣學生專屬入學優惠!",
+      "id": 4588,
+      "name": "08/15 南卡羅萊納大學 USC: 解析台灣學生專屬入學優惠!",
       "date": "2026-08-15",
       "time": "1:00 PM - 2:30 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4589,
+      "name": "08/22 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
+      "date": "2026-08-22",
+      "time": "11:00 AM - 12:00 PM",
       "location": "Online",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
@@ -173,6 +109,38 @@
     }
   ],
   "past": [
+    {
+      "id": 3344,
+      "name": "美國留學｜社大轉學 X 大學名校申請｜費用 X OPT 留美發展全解析",
+      "date": "2026-07-25",
+      "time": "11:00",
+      "location": "高雄",
+      "organizer": "OH Study Education Consulting Center Co., Ltd.",
+      "agent_name": "OH Study Education Consulting Center Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://ohstudy.net",
+      "registration_url": "https://ohstudy.net/seminar.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OS"
+    },
+    {
+      "id": 3959,
+      "name": "MQ 麥考瑞大學 面談會",
+      "date": "2026-07-23",
+      "time": "10:00 - 12:00",
+      "location": "Taiwan",
+      "organizer": "JRIS Education - Taiwan",
+      "agent_name": "JRIS Education - Taiwan",
+      "agent_country": "Taiwan",
+      "agent_website": "www.jris.com",
+      "registration_url": "https://jris.com/event/20260717/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
     {
       "id": 3342,
       "name": "澳洲留學｜西澳大學 UWA ✕ 頂尖高薪科系｜升學規劃全解析",

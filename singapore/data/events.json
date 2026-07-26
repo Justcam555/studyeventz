@@ -1,18 +1,18 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-07-19T21:30:43",
+  "generated_at": "2026-07-26T21:32:27",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
     {
-      "id": 3929,
+      "id": 4554,
       "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
       "date": "2026-07-28",
       "time": "7:00 PM",
@@ -42,29 +42,11 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
-    }
-  ],
-  "past": [
-    {
-      "id": 3301,
-      "name": "[18 July] From Campus to Career: How UWA Sets You Up for Success in Singapore & Australia",
-      "date": "2026-07-18",
-      "time": "12:00 PM - 2:00 PM",
-      "location": "Singapore",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
-      "id": 3300,
-      "name": "[16 Jul] Meet The Expert - The Australian National University (Virtual)",
-      "date": "2026-07-16",
+      "id": 4553,
+      "name": "Meet The Expert - The Australian National University (Virtual)",
+      "date": "2026-08-14",
       "time": "3:00 PM - 4:00 PM",
       "location": "Online",
       "organizer": "IDP Education Pty Ltd",
@@ -76,23 +58,9 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 3299,
-      "name": "[14 July] Meet The Expert - University of Sydney",
-      "date": "2026-07-14",
-      "time": "2:00 PM - 5:00 PM",
-      "location": "Singapore",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
+    }
+  ],
+  "past": [
     {
       "id": 2169,
       "name": "Virtual Admissions Day New Zealand",

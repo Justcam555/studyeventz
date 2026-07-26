@@ -1,38 +1,54 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-07-19T21:30:44",
+  "generated_at": "2026-07-26T21:32:28",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
     {
-      "id": 3858,
-      "name": "Unicampus Global IELTS & PTE Score Challenge 2026",
-      "date": "2026-07-22",
-      "time": "11:00 AM – 2:00 PM",
-      "location": "Putalisadak, Kathmandu, Nepal",
-      "organizer": "Unicampus Education Network Pvt. Ltd",
-      "agent_name": "Unicampus Education Network Pvt. Ltd",
+      "id": 4487,
+      "name": "Meet Regent's University London | Nepal",
+      "date": "2026-07-29",
+      "time": "4:15 PM - 5:15 PM",
+      "location": "Chitwan, Kathmandu, Pokhara, Nepal",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
       "agent_country": "Nepal",
-      "agent_website": "https://myunicampus.com/contact",
-      "registration_url": "https://myunicampus.com/events",
+      "agent_website": "https://www.idp.com/nepal/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4490,
+      "name": "Last Call: 2026 intakes",
+      "date": "2026-08-01",
+      "time": "11:30 AM",
+      "location": "Online",
+      "organizer": "Edvoy",
+      "agent_name": "Edvoy",
+      "agent_country": "Nepal",
+      "agent_website": "https://edvoy.com/",
+      "registration_url": "https://edvoy.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "UE"
+      "initials": "ED"
     },
     {
-      "id": 3860,
-      "name": "Fleming College Visit to Education Asia",
-      "date": "2026-07-22",
-      "time": "11:30 am - 2:00 pm",
-      "location": "Sallyan House, Block B, First Floor Bagbazar, Kathmandu, Nepal",
+      "id": 4488,
+      "name": "SIT Visit to Education Asia",
+      "date": "2026-08-02",
+      "time": "12:00 PM - 2:00 PM",
+      "location": "Education Asia Sallyan House, Bagbazar, Kathmandu, Nepal",
       "organizer": "Education Asia (P) LTD",
       "agent_name": "Education Asia (P) LTD",
       "agent_country": "Nepal",
@@ -44,7 +60,23 @@
       "initials": "EA"
     },
     {
-      "id": 3859,
+      "id": 4491,
+      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
+      "date": "2026-08-05",
+      "time": "",
+      "location": "Pokhara Head Office, Pokhara, Nepal",
+      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_country": "Nepal",
+      "agent_website": "franklinedu.co.uk",
+      "registration_url": "https://www.franklinglobalstudy.com/blog",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OR"
+    },
+    {
+      "id": 4486,
       "name": "AECC Global Education Roadshow",
       "date": "2026-08-16",
       "time": "12:15 PM",
@@ -61,6 +93,22 @@
     }
   ],
   "past": [
+    {
+      "id": 3858,
+      "name": "Unicampus Global IELTS & PTE Score Challenge 2026",
+      "date": "2026-07-22",
+      "time": "11:00 AM – 2:00 PM",
+      "location": "Putalisadak, Kathmandu, Nepal",
+      "organizer": "Unicampus Education Network Pvt. Ltd",
+      "agent_name": "Unicampus Education Network Pvt. Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "https://myunicampus.com/contact",
+      "registration_url": "https://myunicampus.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
     {
       "id": 3228,
       "name": "Europe Discovery Day July 17, 2026",
@@ -140,22 +188,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EB"
-    },
-    {
-      "id": 2085,
-      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
-      "date": "2026-07-01",
-      "time": "4:15 PM - 5:45 PM",
-      "location": "Online",
-      "organizer": "IDP Education Student Services Nepal Private Limited",
-      "agent_name": "IDP Education Student Services Nepal Private Limited",
-      "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/",
-      "registration_url": "https://www.idp.com/nepal/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 2086,

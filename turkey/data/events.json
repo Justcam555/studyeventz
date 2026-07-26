@@ -1,16 +1,33 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-07-19T21:30:44",
+  "generated_at": "2026-07-26T21:32:29",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 4639,
+      "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
+      "date": "2026-08-05",
+      "time": "8:00 PM - 9:00 PM",
+      "location": "Online",
+      "organizer": "IDP Turkey",
+      "agent_name": "IDP Turkey",
+      "agent_country": "Turkey",
+      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/turkey/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IT"
+    }
+  ],
   "past": [
     {
       "id": 2805,
@@ -59,38 +76,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    },
-    {
-      "id": 1622,
-      "name": "Exclusive UK Webinar – September 2026 Intake - Turkey",
-      "date": "2026-06-25",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "Online",
-      "organizer": "IDP Turkey",
-      "agent_name": "IDP Turkey",
-      "agent_country": "Turkey",
-      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/turkey/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IT"
-    },
-    {
-      "id": 1621,
-      "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
-      "date": "2026-06-24",
-      "time": "8:00 PM - 9:00 PM",
-      "location": "Online",
-      "organizer": "IDP Turkey",
-      "agent_name": "IDP Turkey",
-      "agent_country": "Turkey",
-      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/turkey/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IT"
     }
   ]
 }

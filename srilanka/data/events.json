@@ -1,53 +1,21 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-07-19T21:30:44",
+  "generated_at": "2026-07-26T21:32:28",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
     {
-      "id": 3933,
-      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
-      "date": "2026-07-22",
-      "time": "9:00 AM EDT | 6:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
-    },
-    {
-      "id": 2706,
-      "name": "World Study Fair",
-      "date": "2026-07-24",
-      "time": "",
-      "location": "Colombo, Sri Lanka",
-      "organizer": "PFEC Global- Sri Lanka",
-      "agent_name": "PFEC Global- Sri Lanka",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://pfecglobal.com.lk/",
-      "registration_url": "https://pfecglobal.com.lk/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PG"
-    },
-    {
-      "id": 3934,
+      "id": 4572,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
       "date": "2026-07-27",
-      "time": "7:00 AM EDT | 4:30 PM IST",
+      "time": "4:30 PM IST",
       "location": "Online",
       "organizer": "Applyboard (Sri Lanka)",
       "agent_name": "Applyboard (Sri Lanka)",
@@ -60,11 +28,27 @@
       "initials": "AS"
     },
     {
-      "id": 3930,
+      "id": 4556,
+      "name": "Meet Regent's University London | Sri Lanka",
+      "date": "2026-07-29",
+      "time": "4:00 PM - 5:00 PM",
+      "location": "Colombo, Jaffna, Kandy, Sri Lanka",
+      "organizer": "IDP Education Lanka Private Ltd",
+      "agent_name": "IDP Education Lanka Private Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4562,
       "name": "JCU Singapore University Visit",
       "date": "2026-07-31",
-      "time": "11:00 AM to 12:00 PM",
-      "location": "VIEC-Sri Lanka, Colombo (Office)",
+      "time": "11:00 AM - 12:00 PM",
+      "location": "VIEC-Sri Lanka, Colombo",
       "organizer": "VIEC",
       "agent_name": "VIEC",
       "agent_country": "Sri Lanka",
@@ -76,7 +60,7 @@
       "initials": "VI"
     },
     {
-      "id": 3936,
+      "id": 4578,
       "name": "JCU Singapore University Visit",
       "date": "2026-07-31",
       "time": "11:00 AM to 12:00 PM",
@@ -90,6 +74,38 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "VS"
+    },
+    {
+      "id": 4570,
+      "name": "James Cook University - Singapore - International Visit",
+      "date": "2026-07-31",
+      "time": "4 pm to 6 pm",
+      "location": "Rivil Office - Mount Lavinia, Sri Lanka",
+      "organizer": "Rivil International (Pvt) Ltd",
+      "agent_name": "Rivil International (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.riviledu.com",
+      "registration_url": "https://www.riviledu.com/events.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "RI"
+    },
+    {
+      "id": 4573,
+      "name": "Western Community College Reopens Offshore Applications: Now a Prime Institution",
+      "date": "2026-08-05",
+      "time": "7:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
     },
     {
       "id": 3935,
@@ -108,7 +124,23 @@
       "initials": "AB"
     },
     {
-      "id": 3932,
+      "id": 4561,
+      "name": "Edlocate International Education Expo 2026 – Colombo",
+      "date": "2026-08-15",
+      "time": "10:30 am",
+      "location": "Courtyard by Marriott Colombo (Grand Sapphire), Colombo",
+      "organizer": "Edlocate (Pvt) Ltd",
+      "agent_name": "Edlocate (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.edlocate.lk",
+      "registration_url": "https://www.edlocate.lk/news-and-events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 4569,
       "name": "Admissions Day - New Zealand",
       "date": "2026-08-16",
       "time": "12 noon to 5 pm",
@@ -122,15 +154,45 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "KO"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 2707,
-      "name": "Victoria University, Australia OPEN DAY",
-      "date": "2026-07-11",
-      "time": "11:00 AM – 3:00 PM",
-      "location": "Campus Direct, 36B, Gower Street, Colombo 05",
+      "id": 4557,
+      "name": "IDP Global Education Fair",
+      "date": "2026-08-21",
+      "time": "11:00 AM - 4:00 PM",
+      "location": "Kandy, Sri Lanka",
+      "organizer": "IDP Education Lanka Private Ltd",
+      "agent_name": "IDP Education Lanka Private Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4559,
+      "name": "IDP Global Education Fair August",
+      "date": "2026-08-22",
+      "time": "11:00 AM - 4:30 PM",
+      "location": "Colombo, Sri Lanka",
+      "organizer": "IDP Education Lanka Private Ltd",
+      "agent_name": "IDP Education Lanka Private Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4560,
+      "name": "Campus Direct World Education Fair 2026",
+      "date": "2026-08-23",
+      "time": "11:00 AM – 5:00 PM",
+      "location": "The Oak Room, Cinnamon Grand, Colombo",
       "organizer": "Campus Direct",
       "agent_name": "Campus Direct",
       "agent_country": "Sri Lanka",
@@ -140,6 +202,24 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CD"
+    }
+  ],
+  "past": [
+    {
+      "id": 2706,
+      "name": "World Study Fair",
+      "date": "2026-07-24",
+      "time": "",
+      "location": "Colombo, Sri Lanka",
+      "organizer": "PFEC Global- Sri Lanka",
+      "agent_name": "PFEC Global- Sri Lanka",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://pfecglobal.com.lk/",
+      "registration_url": "https://pfecglobal.com.lk/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PG"
     },
     {
       "id": 2184,
@@ -156,22 +236,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    },
-    {
-      "id": 2177,
-      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Sri Lanka",
-      "date": "2026-07-01",
-      "time": "4:00 PM - 5:30 PM",
-      "location": "Online",
-      "organizer": "IDP Education Lanka Private Ltd",
-      "agent_name": "IDP Education Lanka Private Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 2183,
@@ -204,22 +268,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GR"
-    },
-    {
-      "id": 1534,
-      "name": "Manipal University Malaysia - Medicine - Open Day",
-      "date": "2026-06-23",
-      "time": "2 pm to 5 pm",
-      "location": "Rivil Office - Mount Lavinia, Sri Lanka",
-      "organizer": "Rivil International (Pvt) Ltd",
-      "agent_name": "Rivil International (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.riviledu.com",
-      "registration_url": "https://www.riviledu.com/events.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "RI"
     },
     {
       "id": 726,

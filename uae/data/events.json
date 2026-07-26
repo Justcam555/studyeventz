@@ -1,37 +1,21 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-07-19T21:30:44",
+  "generated_at": "2026-07-26T21:32:28",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
     {
-      "id": 4002,
-      "name": "Fast-track your University Acceptance with IDP Fastlane Universities Application Session! | IDP Abu Dhabi | July 20, 2026",
-      "date": "2026-07-20",
+      "id": 4641,
+      "name": "Study in Dubai: Explore Top Universities with IDP Dubai!",
+      "date": "2026-07-28",
       "time": "5:00 PM - 6:00 PM",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4003,
-      "name": "Careers Shaping the Modern World: AI, Data Science & Beyond | IDP Abu Dhabi | July 21, 2026",
-      "date": "2026-07-21",
-      "time": "5:00 PM - 5:30 PM",
       "location": "Online",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
@@ -44,43 +28,11 @@
       "initials": "IE"
     },
     {
-      "id": 4004,
-      "name": "Join our UK Clearing 2026 session and discover how you can still secure your place at a UK university! | IDP Abu Dhabi | July 24, 2026",
-      "date": "2026-07-24",
-      "time": "5:00 PM - 6:00 PM",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4005,
-      "name": "Study in Dubai: Explore Top Universities with IDP Dubai!",
-      "date": "2026-07-28",
-      "time": "5:00 PM - 6:00 PM",
-      "location": "Dubai, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4006,
+      "id": 4642,
       "name": "Australia vs New Zealand: Which Destination is Better for Your Career?",
       "date": "2026-07-30",
       "time": "4:00 PM - 5:00 PM",
-      "location": "Dubai, United Arab Emirates",
+      "location": "Online",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
       "agent_country": "United Arab Emirates",
@@ -92,7 +44,7 @@
       "initials": "IE"
     },
     {
-      "id": 4007,
+      "id": 4643,
       "name": "Clearing is Open, Results day is coming - IDP Dubai",
       "date": "2026-08-13",
       "time": "3:30 PM - 6:30 PM",
@@ -108,7 +60,7 @@
       "initials": "IE"
     },
     {
-      "id": 4008,
+      "id": 4644,
       "name": "Clearing is Open, Results day is coming - IDP Abu Dhabi",
       "date": "2026-08-14",
       "time": "3:30 PM - 6:30 PM",
@@ -122,6 +74,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 4645,
+      "name": "UK Pre-Departure Event",
+      "date": "2026-08-16",
+      "time": "7 PM",
+      "location": "Wyndham Hotel",
+      "organizer": "Education Zone fz llc",
+      "agent_name": "Education Zone fz llc",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.ezone.ae/contact/",
+      "registration_url": "https://ezone.ae/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EZ"
     }
   ],
   "past": [

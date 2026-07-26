@@ -1,32 +1,16 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-07-19T21:30:44",
+  "generated_at": "2026-07-26T21:32:28",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
-    {
-      "id": 3856,
-      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
-      "date": "2026-07-22",
-      "time": "9:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Mexico",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
     {
       "id": 3857,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
@@ -44,8 +28,8 @@
       "initials": "AP"
     },
     {
-      "id": 3225,
-      "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",
+      "id": 4485,
+      "name": "Study your Master's degree with a full scholarship for Latin American Students",
       "date": "2026-08-04",
       "time": "",
       "location": "Online",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 3856,
+      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
+      "date": "2026-07-22",
+      "time": "9:00 AM EDT",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Mexico",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
     {
       "id": 3219,
       "name": "Próximo destino: Estudia en TAFE Queensland",

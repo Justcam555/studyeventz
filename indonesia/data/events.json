@@ -1,98 +1,18 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-07-19T21:30:42",
+  "generated_at": "2026-07-26T21:32:26",
   "window": {
-    "from": "2026-07-19",
-    "to": "2026-08-18"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "archive": {
-    "from": "2024-07-19",
-    "to": "2026-07-18"
+    "from": "2024-07-26",
+    "to": "2026-07-25"
   },
   "events": [
     {
-      "id": 3747,
-      "name": "Study Hospitality Fair - Bali",
-      "date": "2026-07-20",
-      "time": "3:00 pm - 6:00 pm",
-      "location": "Bali",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Indonesia",
-      "agent_website": "www.aeccglobal.co.id",
-      "registration_url": "https://www.aeccglobal.co.id/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 3750,
-      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
-      "date": "2026-07-22",
-      "time": "9:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Indonesia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 3727,
-      "name": "OVERSEAS EDUCATION EXHIBITION SURABAYA 2026",
-      "date": "2026-07-24",
-      "time": "",
-      "location": "Surabaya",
-      "organizer": "Edlink+ConneX",
-      "agent_name": "Edlink+ConneX",
-      "agent_country": "Indonesia",
-      "agent_website": "www.edlinkeducation.com",
-      "registration_url": "https://edlinkconnex.com/id/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EC"
-    },
-    {
-      "id": 3728,
-      "name": "OVERSEAS EDUCATION EXHIBITION DENPASAR 2026",
-      "date": "2026-07-25",
-      "time": "",
-      "location": "Denpasar",
-      "organizer": "Edlink+ConneX",
-      "agent_name": "Edlink+ConneX",
-      "agent_country": "Indonesia",
-      "agent_website": "www.edlinkeducation.com",
-      "registration_url": "https://edlinkconnex.com/id/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EC"
-    },
-    {
-      "id": 3748,
-      "name": "Global Education Fair - Surabaya - 25 July 2026",
-      "date": "2026-07-25",
-      "time": "1:00 pm - 6:00 pm",
-      "location": "Surabaya",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Indonesia",
-      "agent_website": "www.aeccglobal.co.id",
-      "registration_url": "https://www.aeccglobal.co.id/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 3749,
+      "id": 4372,
       "name": "Global Education Fair - Malang - 26 July 2026",
       "date": "2026-07-26",
       "time": "1:00 pm - 6:00 pm",
@@ -124,11 +44,11 @@
       "initials": "AP"
     },
     {
-      "id": 3729,
+      "id": 4351,
       "name": "OVERSEAS EDUCATION EXHIBITION KEBON JERUK 2026",
       "date": "2026-07-31",
       "time": "",
-      "location": "Jakarta",
+      "location": "Kebon Jeruk, Jakarta",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -140,11 +60,11 @@
       "initials": "EC"
     },
     {
-      "id": 3730,
+      "id": 4352,
       "name": "OVERSEAS EDUCATION EXHIBITION PONDOK INDAH 2026",
       "date": "2026-08-01",
       "time": "",
-      "location": "Jakarta",
+      "location": "Pondok Indah, Jakarta",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -156,7 +76,7 @@
       "initials": "EC"
     },
     {
-      "id": 3734,
+      "id": 4362,
       "name": "SUN International Education Expo Hadir Kembali di Jakarta & Tangerang!",
       "date": "2026-08-01",
       "time": "",
@@ -172,7 +92,7 @@
       "initials": "SE"
     },
     {
-      "id": 3743,
+      "id": 4368,
       "name": "Maximize Your Study Opportunities In Australia With University Of Tasmania",
       "date": "2026-08-01",
       "time": "10:00 - 12:00 WIB",
@@ -188,7 +108,39 @@
       "initials": "CJ"
     },
     {
-      "id": 3744,
+      "id": 4361,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 MEDAN",
+      "date": "2026-08-01",
+      "time": "13.00 - 18.00",
+      "location": "Medan, Adimulia Hotel Medan",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/MEDAN",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4360,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 BATAM",
+      "date": "2026-08-02",
+      "time": "13.00 - 18.00",
+      "location": "Batam, Hotel Aston Batam",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/BATAM",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4369,
       "name": "Overseas Education Expo 2026 (Bandung)",
       "date": "2026-08-02",
       "time": "13:00 - 18:00 WIB",
@@ -220,11 +172,11 @@
       "initials": "IE"
     },
     {
-      "id": 3731,
+      "id": 4353,
       "name": "OVERSEAS EDUCATION EXHIBITION PIK 2026",
       "date": "2026-08-07",
       "time": "",
-      "location": "Jakarta",
+      "location": "PIK, Jakarta",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -236,11 +188,11 @@
       "initials": "EC"
     },
     {
-      "id": 3732,
+      "id": 4354,
       "name": "OVERSEAS EDUCATION EXHIBITION KELAPA GADING 2026",
       "date": "2026-08-08",
       "time": "",
-      "location": "Jakarta",
+      "location": "Kelapa Gading, Jakarta",
       "organizer": "Edlink+ConneX",
       "agent_name": "Edlink+ConneX",
       "agent_country": "Indonesia",
@@ -252,7 +204,7 @@
       "initials": "EC"
     },
     {
-      "id": 3745,
+      "id": 4370,
       "name": "OVERSEAS EDUCATION EXPO 2026 (GADING SERPONG)",
       "date": "2026-08-08",
       "time": "13:00 - 18:00 WIB",
@@ -268,7 +220,23 @@
       "initials": "CJ"
     },
     {
-      "id": 3746,
+      "id": 4359,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 BANGKA",
+      "date": "2026-08-09",
+      "time": "13.00 - 19.00",
+      "location": "Bangka, Novotel Bangka",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/BANGKA",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4371,
       "name": "OVERSEAS EDUCATION EXPO 2026 (PONTIANAK)",
       "date": "2026-08-09",
       "time": "13:00 - 18:00 WIB",
@@ -284,7 +252,7 @@
       "initials": "CJ"
     },
     {
-      "id": 3733,
+      "id": 4355,
       "name": "OVERSEAS EDUCATION EXHIBITION PEKANBARU 2026",
       "date": "2026-08-14",
       "time": "",
@@ -298,9 +266,73 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EC"
+    },
+    {
+      "id": 4358,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 BANDUNG",
+      "date": "2026-08-16",
+      "time": "13.00 - 18.00",
+      "location": "Bandung, Pullman Hotel Bandung",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/BANDUNG",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4357,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 JAMBI",
+      "date": "2026-08-22",
+      "time": "13.00 - 18.00",
+      "location": "Jambi, BW Luxury Hotel",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/JAMBI",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4356,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 DAAN MOGOT",
+      "date": "2026-08-23",
+      "time": "13.00 - 18.49",
+      "location": "Jakarta, Mercure PIK",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/JAKARTA",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
     }
   ],
   "past": [
+    {
+      "id": 3750,
+      "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
+      "date": "2026-07-22",
+      "time": "9:00 AM EDT",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Indonesia",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
     {
       "id": 2555,
       "name": "UON: Exclusive Agent Training | Makati",
