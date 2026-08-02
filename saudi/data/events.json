@@ -1,16 +1,17 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:59",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4547,
       "name": "Fast-track your UK degree with IDP KSA",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 2138,
       "name": "UCAS Clearing: Your second chance to study in the UK",

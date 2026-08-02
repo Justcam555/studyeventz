@@ -1,16 +1,17 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-07-26T21:32:27",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 3462,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 3461,
       "name": "Global Hospitality & Tourism: Insights from Top US Institutions",

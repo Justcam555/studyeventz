@@ -1,16 +1,66 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
+    {
+      "id": 4485,
+      "name": "Study your Master's degree with a full scholarship for Latin American Students",
+      "date": "2026-08-04",
+      "time": "",
+      "location": "Online",
+      "organizer": "Studies Planet.com",
+      "agent_name": "Studies Planet.com",
+      "agent_country": "Mexico",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    },
+    {
+      "id": 5060,
+      "name": "Discover UK: London Metropolitan University Partner Webinar",
+      "date": "2026-08-04",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
+      "agent_country": "Mexico",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 5061,
+      "name": "Como vender Torrens y tacticas de venta Higher Education",
+      "date": "2026-08-05",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
+      "agent_country": "Mexico",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    }
+  ],
+  "past": [
     {
       "id": 3857,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
@@ -27,24 +77,6 @@
       "logo_bg_color": "",
       "initials": "AP"
     },
-    {
-      "id": 4485,
-      "name": "Study your Master's degree with a full scholarship for Latin American Students",
-      "date": "2026-08-04",
-      "time": "",
-      "location": "Online",
-      "organizer": "Studies Planet.com",
-      "agent_name": "Studies Planet.com",
-      "agent_country": "Mexico",
-      "agent_website": "www.studiesplanet.com",
-      "registration_url": "https://www.studiesplanet.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SP"
-    }
-  ],
-  "past": [
     {
       "id": 3856,
       "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
@@ -72,38 +104,6 @@
       "agent_country": "Mexico",
       "agent_website": "https://www.gostudyaus.es",
       "registration_url": "https://gostudyaus.es/community/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 2081,
-      "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
-      "date": "2026-07-02",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
-      "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 2080,
-      "name": "Career from Day One: C3S Business School Spain | Partner Training",
-      "date": "2026-06-30",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
-      "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",

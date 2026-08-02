@@ -1,32 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-07-26T21:32:26",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
-    {
-      "id": 3346,
-      "name": "加拿大留學｜三大高就業科系｜海外職涯全解析",
-      "date": "2026-08-01",
-      "time": "14:00",
-      "location": "全台 (Online/Nationwide)",
-      "organizer": "OH Study Education Consulting Center Co., Ltd.",
-      "agent_name": "OH Study Education Consulting Center Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://ohstudy.net",
-      "registration_url": "https://ohstudy.net/seminar.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OS"
-    },
     {
       "id": 4584,
       "name": "08/06 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
@@ -42,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5134,
+      "name": "【台北講座】別讓履歷石沉大海！澳洲職涯教練教你海外求職成功五大關鍵技巧！",
+      "date": "2026-08-08",
+      "time": "10:00-12:00",
+      "location": "台北市松山區南京東路五段234號4樓-3",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
     },
     {
       "id": 4585,
@@ -92,6 +92,22 @@
       "initials": "IE"
     },
     {
+      "id": 5135,
+      "name": "【線上講座】墨爾本餐廳經理 Abby 學姊親授！澳洲餐飲課程與求職的實戰分享",
+      "date": "2026-08-19",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
+    {
       "id": 4589,
       "name": "08/22 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
       "date": "2026-08-22",
@@ -106,9 +122,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5133,
+      "name": "08/27 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-08-27",
+      "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5136,
+      "name": "【線上講座】想靠「教育專業」翻轉人生？這場講座就是你的澳洲留學第一課！",
+      "date": "2026-08-29",
+      "time": "14:00",
+      "location": "Online",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
     }
   ],
   "past": [
+    {
+      "id": 3346,
+      "name": "加拿大留學｜三大高就業科系｜海外職涯全解析",
+      "date": "2026-08-01",
+      "time": "14:00",
+      "location": "全台 (Online/Nationwide)",
+      "organizer": "OH Study Education Consulting Center Co., Ltd.",
+      "agent_name": "OH Study Education Consulting Center Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://ohstudy.net",
+      "registration_url": "https://ohstudy.net/seminar.php",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OS"
+    },
     {
       "id": 3344,
       "name": "美國留學｜社大轉學 X 大學名校申請｜費用 X OPT 留美發展全解析",
@@ -204,22 +268,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IS"
-    },
-    {
-      "id": 2229,
-      "name": "【線上講座】甩掉澳打新手的超級菜味 - 2.5 小時一站式幫你做完功課！",
-      "date": "2026-07-04",
-      "time": "14:00",
-      "location": "Online",
-      "organizer": "Study Central Pty Ltd",
-      "agent_name": "Study Central Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://studycentralau.com/",
-      "registration_url": "https://studycentralau.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SC"
     }
   ]
 }

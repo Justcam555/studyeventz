@@ -1,20 +1,20 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-07-26T21:32:27",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 4554,
+      "id": 5107,
       "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
-      "date": "2026-07-28",
+      "date": "2026-08-08",
       "time": "7:00 PM",
       "location": "Online",
       "organizer": "The Added Company Pte Ltd",
@@ -28,23 +28,7 @@
       "initials": "AC"
     },
     {
-      "id": 3928,
-      "name": "Building Confidence to Speak Up as a Bystander",
-      "date": "2026-07-30",
-      "time": "07:00 PM - 09:00 PM",
-      "location": "Classroom A15, Main Wing, PSB Academy, Singapore",
-      "organizer": "PSB Academy(Singapore)",
-      "agent_name": "PSB Academy(Singapore)",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.psb-academy.edu.sg/",
-      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PA"
-    },
-    {
-      "id": 4553,
+      "id": 5105,
       "name": "Meet The Expert - The Australian National University (Virtual)",
       "date": "2026-08-14",
       "time": "3:00 PM - 4:00 PM",
@@ -58,6 +42,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5106,
+      "name": "Movie in The House - Michael",
+      "date": "2026-08-28",
+      "time": "06:00 PM - 09:30 PM",
+      "location": "LT3, Main Wing, City Campus, Singapore",
+      "organizer": "PSB Academy(Singapore)",
+      "agent_name": "PSB Academy(Singapore)",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.psb-academy.edu.sg/",
+      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PA"
     }
   ],
   "past": [

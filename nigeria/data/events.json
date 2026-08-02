@@ -1,37 +1,37 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-07-26T21:32:26",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 4494,
-      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Nigeria",
-      "date": "2026-07-30",
-      "time": "12:00 PM - 1:00 PM",
-      "location": "Online",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
+      "id": 5086,
+      "name": "UK & Canada Education Fair – Asaba",
+      "date": "2026-08-02",
+      "time": "",
+      "location": "Asaba, Delta State, Nigeria",
+      "organizer": "RONALD AND PARTNERS CONSULT",
+      "agent_name": "RONALD AND PARTNERS CONSULT",
       "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "agent_website": "https://ronald-partners.net/pages/contact-us.html",
+      "registration_url": "https://ronald-partners.net/pages/events.html",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IN"
+      "initials": "RP"
     },
     {
-      "id": 4492,
-      "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Nigeria",
-      "date": "2026-07-31",
-      "time": "9:00 AM - 5:00 PM",
+      "id": 5065,
+      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Nigeria",
+      "date": "2026-08-15",
+      "time": "10:00 AM - 4:00 PM",
       "location": "Nigeria - Abuja, Asaba, Benin, Enugu",
       "organizer": "IDP Nigeria",
       "agent_name": "IDP Nigeria",
@@ -43,6 +43,40 @@
       "logo_bg_color": "",
       "initials": "IN"
     },
+    {
+      "id": 5068,
+      "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP Enugu",
+      "date": "2026-08-22",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Enugu, Nigeria",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
+    {
+      "id": 5070,
+      "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP GRA",
+      "date": "2026-08-29",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Lagos Mainland, Nigeria",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    }
+  ],
+  "past": [
     {
       "id": 4520,
       "name": "Study in Australia & New Zealand — Meet Navitas at Craydel",
@@ -59,40 +93,6 @@
       "logo_bg_color": "",
       "initials": "CR"
     },
-    {
-      "id": 4493,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Nigeria",
-      "date": "2026-08-15",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Nigeria - Abuja, Asaba, Benin, Enugu",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
-    {
-      "id": 4497,
-      "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP Enugu",
-      "date": "2026-08-22",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Enugu, Nigeria",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    }
-  ],
-  "past": [
     {
       "id": 3878,
       "name": "Study Abroad Expo In Enugu",
@@ -140,22 +140,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CL"
-    },
-    {
-      "id": 2100,
-      "name": "UK & Canada Education Fair – Asaba",
-      "date": "2026-06-28",
-      "time": "",
-      "location": "Asaba, Delta State, Nigeria",
-      "organizer": "RONALD AND PARTNERS CONSULT",
-      "agent_name": "RONALD AND PARTNERS CONSULT",
-      "agent_country": "Nigeria",
-      "agent_website": "https://ronald-partners.net/pages/contact-us.html",
-      "registration_url": "https://ronald-partners.net/pages/events.html",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "RP"
     },
     {
       "id": 496,

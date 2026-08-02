@@ -1,38 +1,22 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-07-26T21:32:26",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 4148,
-      "name": "Study, Work & Build Your Future in Australia!",
-      "date": "2026-07-29",
-      "time": "11:30 AM",
-      "location": "Online",
-      "organizer": "Astolinks International",
-      "agent_name": "Astolinks International",
-      "agent_country": "Ghana",
-      "agent_website": "www.astolinks.net",
-      "registration_url": "https://www.astolinks.net/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AI"
-    },
-    {
-      "id": 4147,
-      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Ghana",
-      "date": "2026-07-30",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Online",
+      "id": 4146,
+      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",
+      "date": "2026-08-12",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Accra (East Legon), Accra, Ghana",
       "organizer": "IDP - Ghana",
       "agent_name": "IDP - Ghana",
       "agent_country": "Ghana",
@@ -43,6 +27,24 @@
       "logo_bg_color": "",
       "initials": "IG"
     },
+    {
+      "id": 4782,
+      "name": "What Makes the University of South Wales Stand Out?",
+      "date": "2026-08-20",
+      "time": "",
+      "location": "To Be Announced",
+      "organizer": "Astolinks International",
+      "agent_name": "Astolinks International",
+      "agent_country": "Ghana",
+      "agent_website": "www.astolinks.net",
+      "registration_url": "https://www.astolinks.net/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AI"
+    }
+  ],
+  "past": [
     {
       "id": 4145,
       "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Ghana",
@@ -60,11 +62,11 @@
       "initials": "IG"
     },
     {
-      "id": 4146,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",
-      "date": "2026-08-12",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Accra (East Legon), Accra, Ghana",
+      "id": 4147,
+      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Ghana",
+      "date": "2026-07-30",
+      "time": "11:00 AM - 12:00 PM",
+      "location": "Online",
       "organizer": "IDP - Ghana",
       "agent_name": "IDP - Ghana",
       "agent_country": "Ghana",
@@ -74,9 +76,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IG"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 3525,
       "name": "OnCampus Pathway",

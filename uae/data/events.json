@@ -1,48 +1,16 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:59",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
-    {
-      "id": 4641,
-      "name": "Study in Dubai: Explore Top Universities with IDP Dubai!",
-      "date": "2026-07-28",
-      "time": "5:00 PM - 6:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4642,
-      "name": "Australia vs New Zealand: Which Destination is Better for Your Career?",
-      "date": "2026-07-30",
-      "time": "4:00 PM - 5:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 4643,
       "name": "Clearing is Open, Results day is coming - IDP Dubai",
@@ -93,6 +61,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4642,
+      "name": "Australia vs New Zealand: Which Destination is Better for Your Career?",
+      "date": "2026-07-30",
+      "time": "4:00 PM - 5:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4641,
+      "name": "Study in Dubai: Explore Top Universities with IDP Dubai!",
+      "date": "2026-07-28",
+      "time": "5:00 PM - 6:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 3400,
       "name": "GATEWAY TO DUBAI – EDUCATION FAIR",

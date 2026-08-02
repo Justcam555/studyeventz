@@ -1,16 +1,34 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
+    {
+      "id": 4721,
+      "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",
+      "date": "2026-08-04",
+      "time": "",
+      "location": "Online",
+      "organizer": "Studies Planet",
+      "agent_name": "Studies Planet",
+      "agent_country": "Brazil",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    }
+  ],
+  "past": [
     {
       "id": 3460,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
@@ -26,9 +44,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 3459,
       "name": "Global Hospitality & Tourism: Insights from Top US Institutions",

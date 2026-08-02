@@ -1,38 +1,22 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 4461,
-      "name": "입학 설명회",
-      "date": "2026-07-30",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구), Seoul",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4462,
+      "id": 5033,
       "name": "입학 설명회",
       "date": "2026-08-08",
       "time": "",
-      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구), Seoul",
+      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
       "organizer": "International Education Network Inc (IEN)",
       "agent_name": "International Education Network Inc (IEN)",
       "agent_country": "Korea",
@@ -44,8 +28,8 @@
       "initials": "IE"
     },
     {
-      "id": 4459,
-      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 토크 세션 포함)",
+      "id": 5032,
+      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 토크 세션)",
       "date": "2026-08-08",
       "time": "1:00 PM - 5:00 PM",
       "location": "선릉 더 모임센터, 강남구 테헤란로 326 역삼아이타워 B1, 서울",
@@ -58,6 +42,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EA"
+    },
+    {
+      "id": 5034,
+      "name": "입학 설명회",
+      "date": "2026-08-13",
+      "time": "",
+      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "https://www.ienau.com/community/news/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     },
     {
       "id": 4460,

@@ -1,102 +1,38 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-07-26T21:32:26",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 3855,
-      "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
-      "date": "2026-07-27",
-      "time": "7:00 AM EDT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Malaysia",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 4464,
-      "name": "UK & Ireland Application & Clearing Week 2026",
-      "date": "2026-07-30",
+      "id": 5044,
+      "name": "SUN international Education Expo 2026",
+      "date": "2026-08-02",
       "time": "",
       "location": "Malaysia",
-      "organizer": "JM Education Group Sdn Bhd",
-      "agent_name": "JM Education Group Sdn Bhd",
+      "organizer": "SUN Education Malaysia",
+      "agent_name": "SUN Education Malaysia",
       "agent_country": "Malaysia",
-      "agent_website": "www.jmeducationgroup.com",
-      "registration_url": "https://jmeducationgroup.com/events",
+      "agent_website": "https://malaysia.suneducationgroup.com/contact/",
+      "registration_url": "https://malaysia.suneducationgroup.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "JE"
+      "initials": "SE"
     },
     {
-      "id": 4478,
-      "name": "BAC Movie Day",
-      "date": "2026-07-30",
-      "time": "",
-      "location": "Kuala Lumpur, Malaysia",
-      "organizer": "Brickfields Asia College Sdn Bhd",
-      "agent_name": "Brickfields Asia College Sdn Bhd",
-      "agent_country": "Malaysia",
-      "agent_website": "bac.edu.my",
-      "registration_url": "https://www.bac.edu.my/events-all/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BA"
-    },
-    {
-      "id": 4471,
-      "name": "UNSW College Info Session",
-      "date": "2026-08-01",
-      "time": "1:00 PM – 3:00 PM",
-      "location": "ED Network JB Office, 14 & 16 Jalan Horizon Perdana 6, Horizon Hills, Iskandar Puteri, Johor",
-      "organizer": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_name": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_country": "Malaysia",
-      "agent_website": "www.ednet.com.my",
-      "registration_url": "https://www.ednet.com.my/event-pre-registration/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EN"
-    },
-    {
-      "id": 4465,
-      "name": "Australia & UK Branch Campus Application Month: Final Call for 2026 Intakes",
-      "date": "2026-08-01",
-      "time": "2:00 PM - 4:00 PM",
-      "location": "Malaysia - Kota Kinabalu, Kuching",
-      "organizer": "IDP Education Limited",
-      "agent_name": "IDP Education Limited",
-      "agent_country": "Malaysia",
-      "agent_website": "https://www.idp.com/malaysia",
-      "registration_url": "https://www.idp.com/malaysia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4476,
+      "id": 5051,
       "name": "Next Stop: UK (Bon Voyage Lunch)",
       "date": "2026-08-07",
       "time": "",
-      "location": "Kuala Lumpur, Malaysia",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
       "organizer": "Brickfields Asia College Sdn Bhd",
       "agent_name": "Brickfields Asia College Sdn Bhd",
       "agent_country": "Malaysia",
@@ -108,7 +44,7 @@
       "initials": "BA"
     },
     {
-      "id": 4463,
+      "id": 5037,
       "name": "Study in New Zealand Info Sessions 2026",
       "date": "2026-08-08",
       "time": "",
@@ -124,7 +60,23 @@
       "initials": "JE"
     },
     {
-      "id": 4466,
+      "id": 5052,
+      "name": "What's Next After Your Law Degree?",
+      "date": "2026-08-08",
+      "time": "",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
+      "organizer": "Brickfields Asia College Sdn Bhd",
+      "agent_name": "Brickfields Asia College Sdn Bhd",
+      "agent_country": "Malaysia",
+      "agent_website": "bac.edu.my",
+      "registration_url": "https://www.bac.edu.my/events-all/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BA"
+    },
+    {
+      "id": 5038,
       "name": "UK Master's Unlocked: One Year, Funding & Your Graduate Route to Success",
       "date": "2026-08-08",
       "time": "10:00 AM - 11:00 AM",
@@ -140,11 +92,11 @@
       "initials": "IE"
     },
     {
-      "id": 4474,
+      "id": 5049,
       "name": "Weekly Futsal",
       "date": "2026-08-11",
       "time": "",
-      "location": "Kuala Lumpur, Malaysia",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
       "organizer": "Brickfields Asia College Sdn Bhd",
       "agent_name": "Brickfields Asia College Sdn Bhd",
       "agent_country": "Malaysia",
@@ -156,11 +108,43 @@
       "initials": "BA"
     },
     {
-      "id": 4477,
+      "id": 5036,
+      "name": "Discover Monash University Malaysia 2026",
+      "date": "2026-08-14",
+      "time": "",
+      "location": "Malaysia",
+      "organizer": "JM Education Group Sdn Bhd",
+      "agent_name": "JM Education Group Sdn Bhd",
+      "agent_country": "Malaysia",
+      "agent_website": "www.jmeducationgroup.com",
+      "registration_url": "https://jmeducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 5039,
+      "name": "UK Universities Information Day",
+      "date": "2026-08-14",
+      "time": "2:00 PM - 4:00 PM",
+      "location": "Malaysia - Johor Bahru, Penang",
+      "organizer": "IDP Education Limited",
+      "agent_name": "IDP Education Limited",
+      "agent_country": "Malaysia",
+      "agent_website": "https://www.idp.com/malaysia",
+      "registration_url": "https://www.idp.com/malaysia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5053,
       "name": "INKSIDE: Sandbox",
       "date": "2026-08-15",
       "time": "",
-      "location": "Kuala Lumpur, Malaysia",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
       "organizer": "Brickfields Asia College Sdn Bhd",
       "agent_name": "Brickfields Asia College Sdn Bhd",
       "agent_country": "Malaysia",
@@ -172,7 +156,7 @@
       "initials": "BA"
     },
     {
-      "id": 4467,
+      "id": 5040,
       "name": "IDP Study Abroad Exhibition August 2026",
       "date": "2026-08-15",
       "time": "12:00 PM - 5:00 PM",
@@ -188,11 +172,11 @@
       "initials": "IE"
     },
     {
-      "id": 4475,
+      "id": 5050,
       "name": "Basketball Sessions",
       "date": "2026-08-16",
       "time": "",
-      "location": "Kuala Lumpur, Malaysia",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
       "organizer": "Brickfields Asia College Sdn Bhd",
       "agent_name": "Brickfields Asia College Sdn Bhd",
       "agent_country": "Malaysia",
@@ -204,7 +188,7 @@
       "initials": "BA"
     },
     {
-      "id": 4469,
+      "id": 5042,
       "name": "IDP Study Abroad Exhibition Aug 2026 - Eastern & Oriental Hotel, Penang",
       "date": "2026-08-16",
       "time": "1:00 PM - 5:00 PM",
@@ -220,7 +204,23 @@
       "initials": "IE"
     },
     {
-      "id": 4470,
+      "id": 5035,
+      "name": "Study in Sydney with Western Sydney University!",
+      "date": "2026-08-19",
+      "time": "",
+      "location": "Malaysia",
+      "organizer": "JM Education Group Sdn Bhd",
+      "agent_name": "JM Education Group Sdn Bhd",
+      "agent_country": "Malaysia",
+      "agent_website": "www.jmeducationgroup.com",
+      "registration_url": "https://jmeducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 5043,
       "name": "IDP Study Abroad Exhibition Aug 2026 - Opero Hotel Southkey, Johor Bahru",
       "date": "2026-08-22",
       "time": "1:00 PM - 5:00 PM",
@@ -238,6 +238,38 @@
   ],
   "past": [
     {
+      "id": 4471,
+      "name": "UNSW College Info Session",
+      "date": "2026-08-01",
+      "time": "1:00 PM – 3:00 PM",
+      "location": "ED Network JB Office, 14 & 16 Jalan Horizon Perdana 6, Horizon Hills, Iskandar Puteri, Johor",
+      "organizer": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
+      "agent_name": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
+      "agent_country": "Malaysia",
+      "agent_website": "www.ednet.com.my",
+      "registration_url": "https://www.ednet.com.my/event-pre-registration/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EN"
+    },
+    {
+      "id": 3855,
+      "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",
+      "date": "2026-07-27",
+      "time": "7:00 AM EDT",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Malaysia",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
       "id": 3854,
       "name": "Global Hospitality & Tourism: Insights from Top US Institutions",
       "date": "2026-07-22",
@@ -252,22 +284,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    },
-    {
-      "id": 2629,
-      "name": "SUN international Education Expo 2026",
-      "date": "2026-07-05",
-      "time": "",
-      "location": "Malaysia",
-      "organizer": "SUN Education Malaysia",
-      "agent_name": "SUN Education Malaysia",
-      "agent_country": "Malaysia",
-      "agent_website": "https://malaysia.suneducationgroup.com/contact/",
-      "registration_url": "https://malaysia.suneducationgroup.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
     }
   ]
 }

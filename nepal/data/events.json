@@ -1,32 +1,66 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-07-26T21:32:28",
+  "generated_at": "2026-08-02T21:27:58",
   "window": {
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "archive": {
-    "from": "2024-07-26",
-    "to": "2026-07-25"
+    "from": "2024-08-02",
+    "to": "2026-08-01"
   },
   "events": [
     {
-      "id": 4487,
-      "name": "Meet Regent's University London | Nepal",
-      "date": "2026-07-29",
-      "time": "4:15 PM - 5:15 PM",
-      "location": "Chitwan, Kathmandu, Pokhara, Nepal",
-      "organizer": "IDP Education Student Services Nepal Private Limited",
-      "agent_name": "IDP Education Student Services Nepal Private Limited",
+      "id": 5063,
+      "name": "SIT Visit to Education Asia",
+      "date": "2026-08-02",
+      "time": "12:00 PM - 2:00 PM",
+      "location": "Education Asia Sallyan House, Bagbazar, Kathmandu, Nepal",
+      "organizer": "Education Asia (P) LTD",
+      "agent_name": "Education Asia (P) LTD",
       "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/",
-      "registration_url": "https://www.idp.com/nepal/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "agent_website": "www.educationasia.com/contact-us/Kathmandu%20Office",
+      "registration_url": "https://educationasia.com/events/",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "EA"
     },
+    {
+      "id": 5064,
+      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
+      "date": "2026-08-05",
+      "time": "",
+      "location": "Pokhara Head Office, Pokhara, Nepal",
+      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_country": "Nepal",
+      "agent_website": "franklinedu.co.uk",
+      "registration_url": "https://www.franklinglobalstudy.com/blog",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OR"
+    },
+    {
+      "id": 5062,
+      "name": "AECC Global Education Roadshow",
+      "date": "2026-08-16",
+      "time": "05:15 am",
+      "location": "AECC Office, Sunrise Bizz Park, Charkhal, Dilibazar, Kathmandu, Nepal",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Nepal",
+      "agent_website": "www.aeccglobal.com.np",
+      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    }
+  ],
+  "past": [
     {
       "id": 4490,
       "name": "Last Call: 2026 intakes",
@@ -44,55 +78,21 @@
       "initials": "ED"
     },
     {
-      "id": 4488,
-      "name": "SIT Visit to Education Asia",
-      "date": "2026-08-02",
-      "time": "12:00 PM - 2:00 PM",
-      "location": "Education Asia Sallyan House, Bagbazar, Kathmandu, Nepal",
-      "organizer": "Education Asia (P) LTD",
-      "agent_name": "Education Asia (P) LTD",
+      "id": 4487,
+      "name": "Meet Regent's University London | Nepal",
+      "date": "2026-07-29",
+      "time": "4:15 PM - 5:15 PM",
+      "location": "Chitwan, Kathmandu, Pokhara, Nepal",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
       "agent_country": "Nepal",
-      "agent_website": "www.educationasia.com/contact-us/Kathmandu%20Office",
-      "registration_url": "https://educationasia.com/events/",
-      "logo_url": "",
+      "agent_website": "https://www.idp.com/nepal/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "EA"
+      "initials": "IE"
     },
-    {
-      "id": 4491,
-      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
-      "date": "2026-08-05",
-      "time": "",
-      "location": "Pokhara Head Office, Pokhara, Nepal",
-      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_country": "Nepal",
-      "agent_website": "franklinedu.co.uk",
-      "registration_url": "https://www.franklinglobalstudy.com/blog",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OR"
-    },
-    {
-      "id": 4486,
-      "name": "AECC Global Education Roadshow",
-      "date": "2026-08-16",
-      "time": "12:15 PM",
-      "location": "AECC Office, Sunrise Bizz Park, Charkhal, Dilibazar, Kathmandu, Nepal",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Nepal",
-      "agent_website": "www.aeccglobal.com.np",
-      "registration_url": "https://www.aeccglobal.com/np/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    }
-  ],
-  "past": [
     {
       "id": 3858,
       "name": "Unicampus Global IELTS & PTE Score Challenge 2026",
