@@ -1,48 +1,16 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:02",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 5063,
-      "name": "SIT Visit to Education Asia",
-      "date": "2026-08-02",
-      "time": "12:00 PM - 2:00 PM",
-      "location": "Education Asia Sallyan House, Bagbazar, Kathmandu, Nepal",
-      "organizer": "Education Asia (P) LTD",
-      "agent_name": "Education Asia (P) LTD",
-      "agent_country": "Nepal",
-      "agent_website": "www.educationasia.com/contact-us/Kathmandu%20Office",
-      "registration_url": "https://educationasia.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EA"
-    },
-    {
-      "id": 5064,
-      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
-      "date": "2026-08-05",
-      "time": "",
-      "location": "Pokhara Head Office, Pokhara, Nepal",
-      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_country": "Nepal",
-      "agent_website": "franklinedu.co.uk",
-      "registration_url": "https://www.franklinglobalstudy.com/blog",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OR"
-    },
     {
       "id": 5062,
       "name": "AECC Global Education Roadshow",
@@ -61,6 +29,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5064,
+      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
+      "date": "2026-08-05",
+      "time": "",
+      "location": "Pokhara Head Office, Pokhara, Nepal",
+      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_country": "Nepal",
+      "agent_website": "franklinedu.co.uk",
+      "registration_url": "https://www.franklinglobalstudy.com/blog",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OR"
+    },
+    {
+      "id": 5063,
+      "name": "SIT Visit to Education Asia",
+      "date": "2026-08-02",
+      "time": "12:00 PM - 2:00 PM",
+      "location": "Education Asia Sallyan House, Bagbazar, Kathmandu, Nepal",
+      "organizer": "Education Asia (P) LTD",
+      "agent_name": "Education Asia (P) LTD",
+      "agent_country": "Nepal",
+      "agent_website": "www.educationasia.com/contact-us/Kathmandu%20Office",
+      "registration_url": "https://educationasia.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EA"
+    },
     {
       "id": 4490,
       "name": "Last Call: 2026 intakes",

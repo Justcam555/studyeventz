@@ -1,64 +1,16 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-08-02T21:27:59",
+  "generated_at": "2026-08-09T22:34:03",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 5023,
-      "name": "UCAS Clearing 2026 is Open: It's Not Too Late to Study in the UK",
-      "date": "2026-08-02",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Eldoret, Nairobi, Kenya",
-      "organizer": "IDP Kenya",
-      "agent_name": "IDP Kenya",
-      "agent_country": "Kenya",
-      "agent_website": "https://www.idp.com/kenya",
-      "registration_url": "https://www.idp.com/kenya/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IK"
-    },
-    {
-      "id": 5022,
-      "name": "The University of Sydney Open Day",
-      "date": "2026-08-07",
-      "time": "10am – 1pm",
-      "location": "4th Floor Grenadier Tower, Woodvale Close, Westlands, Nairobi",
-      "organizer": "Koala Education Consultants",
-      "agent_name": "Koala Education Consultants",
-      "agent_country": "Kenya",
-      "agent_website": "www.koala.co.ke",
-      "registration_url": "https://koala.co.ke/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KE"
-    },
-    {
-      "id": 5016,
-      "name": "Meet Cat Roberts: Study in the UK - Visa Talks",
-      "date": "2026-08-08",
-      "time": "",
-      "location": "Parklands Sports Club, Nairobi",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "https://www.uniserveducation.com/event",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
     {
       "id": 5017,
       "name": "University of Reading - September 2026 Clearing",
@@ -125,6 +77,54 @@
     }
   ],
   "past": [
+    {
+      "id": 5016,
+      "name": "Meet Cat Roberts: Study in the UK - Visa Talks",
+      "date": "2026-08-08",
+      "time": "",
+      "location": "Parklands Sports Club, Nairobi",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
+      "agent_country": "Kenya",
+      "agent_website": "www.uniserveducation.com/contact",
+      "registration_url": "https://www.uniserveducation.com/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
+    {
+      "id": 5022,
+      "name": "The University of Sydney Open Day",
+      "date": "2026-08-07",
+      "time": "10am – 1pm",
+      "location": "4th Floor Grenadier Tower, Woodvale Close, Westlands, Nairobi",
+      "organizer": "Koala Education Consultants",
+      "agent_name": "Koala Education Consultants",
+      "agent_country": "Kenya",
+      "agent_website": "www.koala.co.ke",
+      "registration_url": "https://koala.co.ke/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KE"
+    },
+    {
+      "id": 5023,
+      "name": "UCAS Clearing 2026 is Open: It's Not Too Late to Study in the UK",
+      "date": "2026-08-02",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Eldoret, Nairobi, Kenya",
+      "organizer": "IDP Kenya",
+      "agent_name": "IDP Kenya",
+      "agent_country": "Kenya",
+      "agent_website": "https://www.idp.com/kenya",
+      "registration_url": "https://www.idp.com/kenya/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IK"
+    },
     {
       "id": 4445,
       "name": "Study in Australia & New Zealand — Meet Navitas at Craydel",

@@ -1,64 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:01",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 4584,
-      "name": "08/06 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
-      "date": "2026-08-06",
-      "time": "7:00 PM - 8:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5134,
-      "name": "【台北講座】別讓履歷石沉大海！澳洲職涯教練教你海外求職成功五大關鍵技巧！",
-      "date": "2026-08-08",
-      "time": "10:00-12:00",
-      "location": "台北市松山區南京東路五段234號4樓-3",
-      "organizer": "Study Central Pty Ltd",
-      "agent_name": "Study Central Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://studycentralau.com/",
-      "registration_url": "https://studycentralau.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SC"
-    },
-    {
-      "id": 4585,
-      "name": "08/08 Western International College官方專場：國際大一與工程碩士入學指南",
-      "date": "2026-08-08",
-      "time": "2:00 PM - 3:30 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 4587,
       "name": "08/12 英國留學申請全攻略：選校策略、錄取關鍵與預算解析",
@@ -157,6 +109,54 @@
     }
   ],
   "past": [
+    {
+      "id": 4585,
+      "name": "08/08 Western International College官方專場：國際大一與工程碩士入學指南",
+      "date": "2026-08-08",
+      "time": "2:00 PM - 3:30 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5134,
+      "name": "【台北講座】別讓履歷石沉大海！澳洲職涯教練教你海外求職成功五大關鍵技巧！",
+      "date": "2026-08-08",
+      "time": "10:00-12:00",
+      "location": "台北市松山區南京東路五段234號4樓-3",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
+    {
+      "id": 4584,
+      "name": "08/06 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-08-06",
+      "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 3346,
       "name": "加拿大留學｜三大高就業科系｜海外職涯全解析",

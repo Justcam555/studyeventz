@@ -1,64 +1,16 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:02",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 5115,
-      "name": "Western Community College Reopens Offshore Applications: Now a Prime Institution",
-      "date": "2026-08-05",
-      "time": "10:00 AM EDT | 7:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
-    },
-    {
-      "id": 5120,
-      "name": "Free Seminar / Counselling : Study in Europe",
-      "date": "2026-08-07",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "https://www.geebeeworld.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
-    },
-    {
-      "id": 5121,
-      "name": "Free Seminar / Counselling : Study in Europe",
-      "date": "2026-08-08",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "https://www.geebeeworld.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
-    },
     {
       "id": 5116,
       "name": "Curtin University Head Office Colombo Open Day",
@@ -237,6 +189,54 @@
     }
   ],
   "past": [
+    {
+      "id": 5121,
+      "name": "Free Seminar / Counselling : Study in Europe",
+      "date": "2026-08-08",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "https://www.geebeeworld.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5120,
+      "name": "Free Seminar / Counselling : Study in Europe",
+      "date": "2026-08-07",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "https://www.geebeeworld.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5115,
+      "name": "Western Community College Reopens Offshore Applications: Now a Prime Institution",
+      "date": "2026-08-05",
+      "time": "10:00 AM EDT | 7:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
     {
       "id": 4570,
       "name": "James Cook University - Singapore - International Visit",

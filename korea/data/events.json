@@ -1,48 +1,16 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:02",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 5033,
-      "name": "입학 설명회",
-      "date": "2026-08-08",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5032,
-      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 토크 세션)",
-      "date": "2026-08-08",
-      "time": "1:00 PM - 5:00 PM",
-      "location": "선릉 더 모임센터, 강남구 테헤란로 326 역삼아이타워 B1, 서울",
-      "organizer": "EEVS ASIA PTY LTD",
-      "agent_name": "EEVS ASIA PTY LTD",
-      "agent_country": "South Korea",
-      "agent_website": "https://experteducation.co.kr/",
-      "registration_url": "https://experteducation.co.kr/event/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172185377&t=board",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EA"
-    },
     {
       "id": 5034,
       "name": "입학 설명회",
@@ -77,6 +45,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5032,
+      "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 토크 세션)",
+      "date": "2026-08-08",
+      "time": "1:00 PM - 5:00 PM",
+      "location": "선릉 더 모임센터, 강남구 테헤란로 326 역삼아이타워 B1, 서울",
+      "organizer": "EEVS ASIA PTY LTD",
+      "agent_name": "EEVS ASIA PTY LTD",
+      "agent_country": "South Korea",
+      "agent_website": "https://experteducation.co.kr/",
+      "registration_url": "https://experteducation.co.kr/event/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172185377&t=board",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EA"
+    },
+    {
+      "id": 5033,
+      "name": "입학 설명회",
+      "date": "2026-08-08",
+      "time": "",
+      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "https://www.ienau.com/community/news/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 3829,
       "name": "2026 영국학생비자 세미나",

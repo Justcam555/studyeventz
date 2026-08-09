@@ -1,48 +1,16 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-08-02T21:27:59",
+  "generated_at": "2026-08-09T22:34:03",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 4526,
-      "name": "Secure Your UK Student Visa with Confidence",
-      "date": "2026-08-03",
-      "time": "3:00 PM - 4:00 PM",
-      "location": "Online",
-      "organizer": "IDP Pakistan",
-      "agent_name": "IDP Pakistan",
-      "agent_country": "Pakistan",
-      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "https://www.idp.com/pakistan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IP"
-    },
-    {
-      "id": 5090,
-      "name": "Bahawalpur Study Abroad Expo 2026",
-      "date": "2026-08-06",
-      "time": "12:00 PM TO 7:00 PM",
-      "location": "Times Office - Bahawalpur",
-      "organizer": "Times Consultant",
-      "agent_name": "Times Consultant",
-      "agent_country": "Pakistan",
-      "agent_website": "https://timesconsultant.com/contact",
-      "registration_url": "https://timesconsultant.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "TC"
-    },
     {
       "id": 5091,
       "name": "Abbottabad Study Abroad Expo 2026",
@@ -141,6 +109,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5090,
+      "name": "Bahawalpur Study Abroad Expo 2026",
+      "date": "2026-08-06",
+      "time": "12:00 PM TO 7:00 PM",
+      "location": "Times Office - Bahawalpur",
+      "organizer": "Times Consultant",
+      "agent_name": "Times Consultant",
+      "agent_country": "Pakistan",
+      "agent_website": "https://timesconsultant.com/contact",
+      "registration_url": "https://timesconsultant.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TC"
+    },
+    {
+      "id": 4526,
+      "name": "Secure Your UK Student Visa with Confidence",
+      "date": "2026-08-03",
+      "time": "3:00 PM - 4:00 PM",
+      "location": "Online",
+      "organizer": "IDP Pakistan",
+      "agent_name": "IDP Pakistan",
+      "agent_country": "Pakistan",
+      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
+      "registration_url": "https://www.idp.com/pakistan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IP"
+    },
     {
       "id": 4544,
       "name": "Admission & Information Session – University of Technology Sydney",

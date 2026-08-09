@@ -1,32 +1,16 @@
 {
   "country": "vietnam",
   "country_name": "Vietnam",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:01",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 4653,
-      "name": "Thi thử IELTS cùng BC & ATS Đà Nẵng",
-      "date": "2026-08-08",
-      "time": "",
-      "location": "Đà Nẵng",
-      "organizer": "Avenue To Success Company Limited",
-      "agent_name": "Avenue To Success Company Limited",
-      "agent_country": "Vietnam",
-      "agent_website": "www.ats.org.vn",
-      "registration_url": "https://ats.org.vn/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AT"
-    },
     {
       "id": 4647,
       "name": "Chinh phục trường Go8 - University of Queensland - Săn học bổng lên đến 25%",
@@ -109,6 +93,22 @@
     }
   ],
   "past": [
+    {
+      "id": 4653,
+      "name": "Thi thử IELTS cùng BC & ATS Đà Nẵng",
+      "date": "2026-08-08",
+      "time": "",
+      "location": "Đà Nẵng",
+      "organizer": "Avenue To Success Company Limited",
+      "agent_name": "Avenue To Success Company Limited",
+      "agent_country": "Vietnam",
+      "agent_website": "www.ats.org.vn",
+      "registration_url": "https://ats.org.vn/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AT"
+    },
     {
       "id": 4646,
       "name": "Hội thảo trực tuyến: Hành trang sẵn sàng - Du học Anh vững vàng",

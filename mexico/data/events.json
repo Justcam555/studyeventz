@@ -1,31 +1,32 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:03",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 4485,
-      "name": "Study your Master's degree with a full scholarship for Latin American Students",
-      "date": "2026-08-04",
+      "id": 5061,
+      "name": "Como vender Torrens y tacticas de venta Higher Education",
+      "date": "2026-08-05",
       "time": "",
       "location": "Online",
-      "organizer": "Studies Planet.com",
-      "agent_name": "Studies Planet.com",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
       "agent_country": "Mexico",
-      "agent_website": "www.studiesplanet.com",
-      "registration_url": "https://www.studiesplanet.com/events/",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "SP"
+      "initials": "GS"
     },
     {
       "id": 5060,
@@ -44,23 +45,21 @@
       "initials": "GS"
     },
     {
-      "id": 5061,
-      "name": "Como vender Torrens y tacticas de venta Higher Education",
-      "date": "2026-08-05",
+      "id": 4485,
+      "name": "Study your Master's degree with a full scholarship for Latin American Students",
+      "date": "2026-08-04",
       "time": "",
       "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
+      "organizer": "Studies Planet.com",
+      "agent_name": "Studies Planet.com",
       "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GS"
-    }
-  ],
-  "past": [
+      "initials": "SP"
+    },
     {
       "id": 3857,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",

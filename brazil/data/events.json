@@ -1,16 +1,17 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:02",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4721,
       "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SP"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 3460,
       "name": "Career Compass: Unlocking High-Opportunity Fields & Hidden Gem Programs in the US, UK, and Canada",

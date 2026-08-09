@@ -1,32 +1,16 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-08-02T21:27:58",
+  "generated_at": "2026-08-09T22:34:01",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
   "events": [
-    {
-      "id": 5107,
-      "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "location": "Online",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
-      "registration_url": "https://www.addededucation.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AC"
-    },
     {
       "id": 5105,
       "name": "Meet The Expert - The Australian National University (Virtual)",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5107,
+      "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
+      "date": "2026-08-08",
+      "time": "7:00 PM",
+      "location": "Online",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "https://www.addededucation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
     {
       "id": 2169,
       "name": "Virtual Admissions Day New Zealand",

@@ -1,16 +1,17 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-08-02T21:27:59",
+  "generated_at": "2026-08-09T22:34:03",
   "window": {
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-09",
+    "to": "2026-09-08"
   },
   "archive": {
-    "from": "2024-08-02",
-    "to": "2026-08-01"
+    "from": "2024-08-09",
+    "to": "2026-08-08"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4639,
       "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IT"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 2805,
       "name": "Almanya'da İngilizce Lisans ve Yüksek Lisans Fırsatları: Macromedia University Webinarı",
