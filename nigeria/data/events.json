@@ -1,32 +1,16 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-08-09T22:34:01",
+  "generated_at": "2026-08-16T21:40:58",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 5065,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Nigeria",
-      "date": "2026-08-15",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Nigeria - Abuja, Asaba, Benin, Enugu",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
     {
       "id": 5068,
       "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP Enugu",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5065,
+      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Nigeria",
+      "date": "2026-08-15",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Nigeria - Abuja, Asaba, Benin, Enugu",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
     {
       "id": 5086,
       "name": "UK & Canada Education Fair – Asaba",

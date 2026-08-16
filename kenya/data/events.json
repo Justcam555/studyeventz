@@ -1,47 +1,32 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-08-09T22:34:03",
+  "generated_at": "2026-08-16T21:41:00",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 5017,
-      "name": "University of Reading - September 2026 Clearing",
-      "date": "2026-08-11",
-      "time": "",
-      "location": "Uniserv Education Nairobi",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "https://www.uniserveducation.com/event",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
-      "id": 5020,
-      "name": "Meet Jacqueline Wangari: ACU Open Day - Eldoret Edition",
+      "id": 5031,
+      "name": "Kaplan Clearing Open Day",
       "date": "2026-08-14",
-      "time": "",
-      "location": "Uniserv Education Eldoret",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
+      "time": "10:00 - 16:00",
+      "location": "Westlands, Nairobi",
+      "organizer": "EDUCARE INTERNATIONAL LIMITED",
+      "agent_name": "EDUCARE INTERNATIONAL LIMITED",
       "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "https://www.uniserveducation.com/event",
+      "agent_website": "https://www.educare-studyabroad.com/",
+      "registration_url": "https://www.educare-studyabroad.com/events",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "UE"
+      "initials": "EI"
     },
     {
       "id": 5024,
@@ -60,23 +45,37 @@
       "initials": "EI"
     },
     {
-      "id": 5031,
-      "name": "Kaplan Clearing Open Day",
+      "id": 5020,
+      "name": "Meet Jacqueline Wangari: ACU Open Day - Eldoret Edition",
       "date": "2026-08-14",
-      "time": "10:00 - 16:00",
-      "location": "Westlands, Nairobi",
-      "organizer": "EDUCARE INTERNATIONAL LIMITED",
-      "agent_name": "EDUCARE INTERNATIONAL LIMITED",
+      "time": "",
+      "location": "Uniserv Education Eldoret",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
       "agent_country": "Kenya",
-      "agent_website": "https://www.educare-studyabroad.com/",
-      "registration_url": "https://www.educare-studyabroad.com/events",
+      "agent_website": "www.uniserveducation.com/contact",
+      "registration_url": "https://www.uniserveducation.com/event",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "EI"
-    }
-  ],
-  "past": [
+      "initials": "UE"
+    },
+    {
+      "id": 5017,
+      "name": "University of Reading - September 2026 Clearing",
+      "date": "2026-08-11",
+      "time": "",
+      "location": "Uniserv Education Nairobi",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
+      "agent_country": "Kenya",
+      "agent_website": "www.uniserveducation.com/contact",
+      "registration_url": "https://www.uniserveducation.com/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
     {
       "id": 5016,
       "name": "Meet Cat Roberts: Study in the UK - Visa Talks",

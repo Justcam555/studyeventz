@@ -1,32 +1,16 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-08-09T22:34:01",
+  "generated_at": "2026-08-16T21:40:58",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 4146,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",
-      "date": "2026-08-12",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Accra (East Legon), Accra, Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
     {
       "id": 4782,
       "name": "What Makes the University of South Wales Stand Out?",
@@ -45,6 +29,22 @@
     }
   ],
   "past": [
+    {
+      "id": 4146,
+      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",
+      "date": "2026-08-12",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Accra (East Legon), Accra, Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    },
     {
       "id": 4145,
       "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Ghana",

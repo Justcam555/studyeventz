@@ -1,48 +1,16 @@
 {
   "country": "vietnam",
   "country_name": "Vietnam",
-  "generated_at": "2026-08-09T22:34:01",
+  "generated_at": "2026-08-16T21:40:58",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 4647,
-      "name": "Chinh phục trường Go8 - University of Queensland - Săn học bổng lên đến 25%",
-      "date": "2026-08-09",
-      "time": "9:00 AM - 10:30 AM",
-      "location": "Online",
-      "organizer": "IDP Education Vietnam Co Ltd",
-      "agent_name": "IDP Education Vietnam Co Ltd",
-      "agent_country": "Vietnam",
-      "agent_website": "https://www.idp.com/vietnam",
-      "registration_url": "https://www.idp.com/vietnam/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4654,
-      "name": "Go8 Universities Fair 2026 - TP.HCM",
-      "date": "2026-08-15",
-      "time": "14:00 - 17:00",
-      "location": "Liberty Central Saigon Citypoint, 59 Pasteur, TP.HCM",
-      "organizer": "Duc Anh Overseas Study Advisory & Translation Joint Stock Company",
-      "agent_name": "Duc Anh Overseas Study Advisory & Translation Joint Stock Company",
-      "agent_country": "Vietnam",
-      "agent_website": "www.ducanhduhoc.vn",
-      "registration_url": "https://ducanhduhoc.vn/vi/lichhoithao/go8-universities-fair-2026-gap-go-truc-tiep-8-dai-hoc-danh-gia-nhat-nuoc-uc-2/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "DA"
-    },
     {
       "id": 4655,
       "name": "Go8 Universities Fair 2026 - Hà Nội",
@@ -93,6 +61,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4654,
+      "name": "Go8 Universities Fair 2026 - TP.HCM",
+      "date": "2026-08-15",
+      "time": "14:00 - 17:00",
+      "location": "Liberty Central Saigon Citypoint, 59 Pasteur, TP.HCM",
+      "organizer": "Duc Anh Overseas Study Advisory & Translation Joint Stock Company",
+      "agent_name": "Duc Anh Overseas Study Advisory & Translation Joint Stock Company",
+      "agent_country": "Vietnam",
+      "agent_website": "www.ducanhduhoc.vn",
+      "registration_url": "https://ducanhduhoc.vn/vi/lichhoithao/go8-universities-fair-2026-gap-go-truc-tiep-8-dai-hoc-danh-gia-nhat-nuoc-uc-2/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "DA"
+    },
+    {
+      "id": 4647,
+      "name": "Chinh phục trường Go8 - University of Queensland - Săn học bổng lên đến 25%",
+      "date": "2026-08-09",
+      "time": "9:00 AM - 10:30 AM",
+      "location": "Online",
+      "organizer": "IDP Education Vietnam Co Ltd",
+      "agent_name": "IDP Education Vietnam Co Ltd",
+      "agent_country": "Vietnam",
+      "agent_website": "https://www.idp.com/vietnam",
+      "registration_url": "https://www.idp.com/vietnam/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 4653,
       "name": "Thi thử IELTS cùng BC & ATS Đà Nẵng",

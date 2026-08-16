@@ -1,48 +1,16 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-08-09T22:34:03",
+  "generated_at": "2026-08-16T21:41:00",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 4643,
-      "name": "Clearing is Open, Results day is coming - IDP Dubai",
-      "date": "2026-08-13",
-      "time": "3:30 PM - 6:30 PM",
-      "location": "Dubai, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4644,
-      "name": "Clearing is Open, Results day is coming - IDP Abu Dhabi",
-      "date": "2026-08-14",
-      "time": "3:30 PM - 6:30 PM",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 4645,
       "name": "UK Pre-Departure Event",
@@ -61,6 +29,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4644,
+      "name": "Clearing is Open, Results day is coming - IDP Abu Dhabi",
+      "date": "2026-08-14",
+      "time": "3:30 PM - 6:30 PM",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4643,
+      "name": "Clearing is Open, Results day is coming - IDP Dubai",
+      "date": "2026-08-13",
+      "time": "3:30 PM - 6:30 PM",
+      "location": "Dubai, United Arab Emirates",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 4642,
       "name": "Australia vs New Zealand: Which Destination is Better for Your Career?",

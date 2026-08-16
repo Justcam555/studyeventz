@@ -1,16 +1,17 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-08-09T22:34:03",
+  "generated_at": "2026-08-16T21:41:00",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4780,
       "name": "Webinar: ¿Vale la pena estudiar una maestría en Australia en 2026?",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EG"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4781,
       "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",

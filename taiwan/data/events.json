@@ -1,48 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-08-09T22:34:01",
+  "generated_at": "2026-08-16T21:40:58",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 4587,
-      "name": "08/12 英國留學申請全攻略：選校策略、錄取關鍵與預算解析",
-      "date": "2026-08-12",
-      "time": "7:00 PM - 8:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 4588,
-      "name": "08/15 南卡羅萊納大學 USC: 解析台灣學生專屬入學優惠!",
-      "date": "2026-08-15",
-      "time": "1:00 PM - 2:30 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 5135,
       "name": "【線上講座】墨爾本餐廳經理 Abby 學姊親授！澳洲餐飲課程與求職的實戰分享",
@@ -109,6 +77,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4588,
+      "name": "08/15 南卡羅萊納大學 USC: 解析台灣學生專屬入學優惠!",
+      "date": "2026-08-15",
+      "time": "1:00 PM - 2:30 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 4587,
+      "name": "08/12 英國留學申請全攻略：選校策略、錄取關鍵與預算解析",
+      "date": "2026-08-12",
+      "time": "7:00 PM - 8:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 4585,
       "name": "08/08 Western International College官方專場：國際大一與工程碩士入學指南",

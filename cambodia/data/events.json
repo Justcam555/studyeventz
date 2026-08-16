@@ -1,14 +1,14 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-08-09T22:34:02",
+  "generated_at": "2026-08-16T21:40:59",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [],
   "past": [

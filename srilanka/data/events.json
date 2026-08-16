@@ -1,48 +1,16 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-08-09T22:34:02",
+  "generated_at": "2026-08-16T21:41:00",
   "window": {
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "archive": {
-    "from": "2024-08-09",
-    "to": "2026-08-08"
+    "from": "2024-08-16",
+    "to": "2026-08-15"
   },
   "events": [
-    {
-      "id": 5116,
-      "name": "Curtin University Head Office Colombo Open Day",
-      "date": "2026-08-12",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "ABEC Head Office, Colombo",
-      "organizer": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.abec.lk",
-      "registration_url": "https://abec.lk/event/curtin-university-open-day-colombo-2026/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AB"
-    },
-    {
-      "id": 5111,
-      "name": "Edlocate International Education Expo 2026 – Colombo",
-      "date": "2026-08-15",
-      "time": "10:30 am",
-      "location": "Courtyard by Marriott Colombo (Grand Sapphire), Colombo",
-      "organizer": "Edlocate (Pvt) Ltd",
-      "agent_name": "Edlocate (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.edlocate.lk",
-      "registration_url": "https://www.edlocate.lk/news-and-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
-    },
     {
       "id": 4569,
       "name": "Admissions Day - New Zealand",
@@ -189,6 +157,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5111,
+      "name": "Edlocate International Education Expo 2026 – Colombo",
+      "date": "2026-08-15",
+      "time": "10:30 am",
+      "location": "Courtyard by Marriott Colombo (Grand Sapphire), Colombo",
+      "organizer": "Edlocate (Pvt) Ltd",
+      "agent_name": "Edlocate (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.edlocate.lk",
+      "registration_url": "https://www.edlocate.lk/news-and-events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 5116,
+      "name": "Curtin University Head Office Colombo Open Day",
+      "date": "2026-08-12",
+      "time": "1:00 PM - 2:00 PM",
+      "location": "ABEC Head Office, Colombo",
+      "organizer": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.abec.lk",
+      "registration_url": "https://abec.lk/event/curtin-university-open-day-colombo-2026/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AB"
+    },
     {
       "id": 5121,
       "name": "Free Seminar / Counselling : Study in Europe",
