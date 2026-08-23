@@ -1,16 +1,33 @@
 {
   "country": "hongkong",
   "country_name": "Hong Kong",
-  "generated_at": "2026-08-16T21:40:58",
+  "generated_at": "2026-08-23T21:26:47",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
-  "events": [
+  "events": [],
+  "past": [
+    {
+      "id": 4791,
+      "name": "Student Sharing Session - Alternatives to DSE: Leaving the Comfort Zone After S5: A Band 1 Student's Journey to a \"Games Technology\" Dream!",
+      "date": "2026-08-21",
+      "time": "",
+      "location": "Hong Kong",
+      "organizer": "Synchro Overseas Education Company Limited",
+      "agent_name": "Synchro Overseas Education Company Limited",
+      "agent_country": "Hong Kong",
+      "agent_website": "www.synedu.hk",
+      "registration_url": "https://www.synedu.hk/en-hk/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SO"
+    },
     {
       "id": 4798,
       "name": "Abbey DLD Colleges 實體面試及資訊日",
@@ -27,24 +44,6 @@
       "logo_bg_color": "",
       "initials": "BU"
     },
-    {
-      "id": 4791,
-      "name": "Student Sharing Session - Alternatives to DSE: Leaving the Comfort Zone After S5: A Band 1 Student's Journey to a \"Games Technology\" Dream!",
-      "date": "2026-08-21",
-      "time": "",
-      "location": "Hong Kong",
-      "organizer": "Synchro Overseas Education Company Limited",
-      "agent_name": "Synchro Overseas Education Company Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.synedu.hk",
-      "registration_url": "https://www.synedu.hk/en-hk/event",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SO"
-    }
-  ],
-  "past": [
     {
       "id": 4797,
       "name": "英國大學聯招日 2026 - 第三天",

@@ -1,16 +1,17 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-08-16T21:41:00",
+  "generated_at": "2026-08-23T21:26:48",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 5062,
       "name": "AECC Global Education Roadshow",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5064,
       "name": "Pre-Departure Briefing for Fall 2026 Intake Students",

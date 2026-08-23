@@ -1,16 +1,17 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-08-16T21:41:00",
+  "generated_at": "2026-08-23T21:26:48",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4645,
       "name": "UK Pre-Departure Event",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EZ"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4644,
       "name": "Clearing is Open, Results day is coming - IDP Abu Dhabi",

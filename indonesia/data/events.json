@@ -1,48 +1,16 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-08-16T21:40:58",
+  "generated_at": "2026-08-23T21:26:47",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
   "events": [
-    {
-      "id": 4958,
-      "name": "INTERNATIONAL EDUCATION EXPO 2026 BANDUNG",
-      "date": "2026-08-16",
-      "time": "13.00 - 18.00",
-      "location": "Bandung, Pullman Hotel Bandung",
-      "organizer": "Central Student",
-      "agent_name": "Central Student",
-      "agent_country": "Indonesia",
-      "agent_website": "www.central-student.com",
-      "registration_url": "https://CIE.CO/BANDUNG",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CS"
-    },
-    {
-      "id": 4957,
-      "name": "INTERNATIONAL EDUCATION EXPO 2026 JAMBI",
-      "date": "2026-08-22",
-      "time": "13.00 - 18.00",
-      "location": "Jambi, BW Luxury Hotel",
-      "organizer": "Central Student",
-      "agent_name": "Central Student",
-      "agent_country": "Indonesia",
-      "agent_website": "www.central-student.com",
-      "registration_url": "https://CIE.CO/JAMBI",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CS"
-    },
     {
       "id": 4956,
       "name": "INTERNATIONAL EDUCATION EXPO 2026 DAAN MOGOT",
@@ -93,6 +61,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4957,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 JAMBI",
+      "date": "2026-08-22",
+      "time": "13.00 - 18.00",
+      "location": "Jambi, BW Luxury Hotel",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/JAMBI",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
+    {
+      "id": 4958,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 BANDUNG",
+      "date": "2026-08-16",
+      "time": "13.00 - 18.00",
+      "location": "Bandung, Pullman Hotel Bandung",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/BANDUNG",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
     {
       "id": 4966,
       "name": "Study In Malaysia With Quest International University (BALI)",

@@ -1,48 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-08-16T21:40:58",
+  "generated_at": "2026-08-23T21:26:46",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
   "events": [
-    {
-      "id": 5135,
-      "name": "【線上講座】墨爾本餐廳經理 Abby 學姊親授！澳洲餐飲課程與求職的實戰分享",
-      "date": "2026-08-19",
-      "time": "18:00",
-      "location": "Online",
-      "organizer": "Study Central Pty Ltd",
-      "agent_name": "Study Central Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://studycentralau.com/",
-      "registration_url": "https://studycentralau.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SC"
-    },
-    {
-      "id": 4589,
-      "name": "08/22 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
-      "date": "2026-08-22",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 5133,
       "name": "08/27 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
@@ -77,6 +45,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4589,
+      "name": "08/22 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
+      "date": "2026-08-22",
+      "time": "11:00 AM - 12:00 PM",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5135,
+      "name": "【線上講座】墨爾本餐廳經理 Abby 學姊親授！澳洲餐飲課程與求職的實戰分享",
+      "date": "2026-08-19",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
     {
       "id": 4588,
       "name": "08/15 南卡羅萊納大學 USC: 解析台灣學生專屬入學優惠!",

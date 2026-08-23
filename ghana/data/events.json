@@ -1,16 +1,17 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-08-16T21:40:58",
+  "generated_at": "2026-08-23T21:26:47",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4782,
       "name": "What Makes the University of South Wales Stand Out?",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AI"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4146,
       "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",

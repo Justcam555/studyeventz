@@ -1,38 +1,23 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-08-16T21:40:58",
+  "generated_at": "2026-08-23T21:26:47",
   "window": {
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-23",
+    "to": "2026-09-22"
   },
   "archive": {
-    "from": "2024-08-16",
-    "to": "2026-08-15"
+    "from": "2024-08-23",
+    "to": "2026-08-22"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 5050,
-      "name": "Basketball Sessions",
-      "date": "2026-08-16",
-      "time": "",
-      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
-      "organizer": "Brickfields Asia College Sdn Bhd",
-      "agent_name": "Brickfields Asia College Sdn Bhd",
-      "agent_country": "Malaysia",
-      "agent_website": "bac.edu.my",
-      "registration_url": "https://www.bac.edu.my/events-all/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BA"
-    },
-    {
-      "id": 5042,
-      "name": "IDP Study Abroad Exhibition Aug 2026 - Eastern & Oriental Hotel, Penang",
-      "date": "2026-08-16",
+      "id": 5043,
+      "name": "IDP Study Abroad Exhibition Aug 2026 - Opero Hotel Southkey, Johor Bahru",
+      "date": "2026-08-22",
       "time": "1:00 PM - 5:00 PM",
-      "location": "Penang, Malaysia",
+      "location": "Johor Bahru, Malaysia",
       "organizer": "IDP Education Limited",
       "agent_name": "IDP Education Limited",
       "agent_country": "Malaysia",
@@ -60,11 +45,11 @@
       "initials": "JE"
     },
     {
-      "id": 5043,
-      "name": "IDP Study Abroad Exhibition Aug 2026 - Opero Hotel Southkey, Johor Bahru",
-      "date": "2026-08-22",
+      "id": 5042,
+      "name": "IDP Study Abroad Exhibition Aug 2026 - Eastern & Oriental Hotel, Penang",
+      "date": "2026-08-16",
       "time": "1:00 PM - 5:00 PM",
-      "location": "Johor Bahru, Malaysia",
+      "location": "Penang, Malaysia",
       "organizer": "IDP Education Limited",
       "agent_name": "IDP Education Limited",
       "agent_country": "Malaysia",
@@ -74,9 +59,23 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
+    {
+      "id": 5050,
+      "name": "Basketball Sessions",
+      "date": "2026-08-16",
+      "time": "",
+      "location": "Brickfields Asia College, Kuala Lumpur, Malaysia",
+      "organizer": "Brickfields Asia College Sdn Bhd",
+      "agent_name": "Brickfields Asia College Sdn Bhd",
+      "agent_country": "Malaysia",
+      "agent_website": "bac.edu.my",
+      "registration_url": "https://www.bac.edu.my/events-all/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BA"
+    },
     {
       "id": 5040,
       "name": "IDP Study Abroad Exhibition August 2026",
