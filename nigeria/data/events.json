@@ -1,16 +1,17 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-08-23T21:26:47",
+  "generated_at": "2026-08-30T21:45:14",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 5070,
       "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP GRA",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IN"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5068,
       "name": "IDP's Undergraduate & College Open Day | Meet Representatives in Person - IDP Enugu",

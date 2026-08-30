@@ -1,16 +1,33 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-08-23T21:26:46",
+  "generated_at": "2026-08-30T21:45:14",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
+    {
+      "id": 5136,
+      "name": "【線上講座】想靠「教育專業」翻轉人生？這場講座就是你的澳洲留學第一課！",
+      "date": "2026-08-29",
+      "time": "14:00",
+      "location": "Online",
+      "organizer": "Study Central Pty Ltd",
+      "agent_name": "Study Central Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://studycentralau.com/",
+      "registration_url": "https://studycentralau.com/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SC"
+    },
     {
       "id": 5133,
       "name": "08/27 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
@@ -27,24 +44,6 @@
       "logo_bg_color": "",
       "initials": "IE"
     },
-    {
-      "id": 5136,
-      "name": "【線上講座】想靠「教育專業」翻轉人生？這場講座就是你的澳洲留學第一課！",
-      "date": "2026-08-29",
-      "time": "14:00",
-      "location": "Online",
-      "organizer": "Study Central Pty Ltd",
-      "agent_name": "Study Central Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://studycentralau.com/",
-      "registration_url": "https://studycentralau.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SC"
-    }
-  ],
-  "past": [
     {
       "id": 4589,
       "name": "08/22 英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",

@@ -1,47 +1,32 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-08-23T21:26:48",
+  "generated_at": "2026-08-30T21:45:15",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 5109,
-      "name": "Campus Direct World Education Fair 2026",
-      "date": "2026-08-23",
-      "time": "11:00 AM – 5:00 PM",
-      "location": "The Oak Room, Cinnamon Grand, Colombo",
-      "organizer": "Campus Direct",
-      "agent_name": "Campus Direct",
+      "id": 5110,
+      "name": "Edlocate Study Abroad Day in Jaffna",
+      "date": "2026-08-29",
+      "time": "10:04 am",
+      "location": "The Valampuri Hotel (Tulip Hall), Jaffna",
+      "organizer": "Edlocate (Pvt) Ltd",
+      "agent_name": "Edlocate (Pvt) Ltd",
       "agent_country": "Sri Lanka",
-      "agent_website": "www.campusdirect.io",
-      "registration_url": "https://www.campusdirect.io/events",
+      "agent_website": "www.edlocate.lk",
+      "registration_url": "https://www.edlocate.lk/news-and-events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "CD"
-    },
-    {
-      "id": 5124,
-      "name": "Free Seminar / Counselling : Study in Germany",
-      "date": "2026-08-28",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "https://www.geebeeworld.com/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
+      "initials": "EP"
     },
     {
       "id": 5125,
@@ -60,23 +45,37 @@
       "initials": "GE"
     },
     {
-      "id": 5110,
-      "name": "Edlocate Study Abroad Day in Jaffna",
-      "date": "2026-08-29",
-      "time": "10:04 am",
-      "location": "The Valampuri Hotel (Tulip Hall), Jaffna",
-      "organizer": "Edlocate (Pvt) Ltd",
-      "agent_name": "Edlocate (Pvt) Ltd",
+      "id": 5124,
+      "name": "Free Seminar / Counselling : Study in Germany",
+      "date": "2026-08-28",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
       "agent_country": "Sri Lanka",
-      "agent_website": "www.edlocate.lk",
-      "registration_url": "https://www.edlocate.lk/news-and-events/",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "https://www.geebeeworld.com/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "EP"
-    }
-  ],
-  "past": [
+      "initials": "GE"
+    },
+    {
+      "id": 5109,
+      "name": "Campus Direct World Education Fair 2026",
+      "date": "2026-08-23",
+      "time": "11:00 AM – 5:00 PM",
+      "location": "The Oak Room, Cinnamon Grand, Colombo",
+      "organizer": "Campus Direct",
+      "agent_name": "Campus Direct",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.campusdirect.io",
+      "registration_url": "https://www.campusdirect.io/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CD"
+    },
     {
       "id": 4559,
       "name": "IDP Global Education Fair August",

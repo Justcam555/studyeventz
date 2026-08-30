@@ -1,32 +1,16 @@
 {
   "country": "bangladesh",
   "country_name": "Bangladesh",
-  "generated_at": "2026-08-23T21:26:48",
+  "generated_at": "2026-08-30T21:45:15",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
   "events": [
-    {
-      "id": 4671,
-      "name": "IDP's Study World Roadshow | Dhaka",
-      "date": "2026-08-29",
-      "time": "10:00 AM - 6:00 PM",
-      "location": "Dhaka, Bangladesh",
-      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
-      "agent_country": "Bangladesh",
-      "agent_website": "https://www.idp.com/bangladesh",
-      "registration_url": "https://www.idp.com/bangladesh/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 4672,
       "name": "IDP's Study World Roadshow 2.0, August | Sylhet",
@@ -45,6 +29,22 @@
     }
   ],
   "past": [
+    {
+      "id": 4671,
+      "name": "IDP's Study World Roadshow | Dhaka",
+      "date": "2026-08-29",
+      "time": "10:00 AM - 6:00 PM",
+      "location": "Dhaka, Bangladesh",
+      "organizer": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_name": "IDP EDUCATION BANGLADESH PRIVATE LTD.",
+      "agent_country": "Bangladesh",
+      "agent_website": "https://www.idp.com/bangladesh",
+      "registration_url": "https://www.idp.com/bangladesh/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 4670,
       "name": "Ireland Application Day - Apply for Your Undergrad & Master's",

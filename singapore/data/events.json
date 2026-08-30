@@ -1,16 +1,17 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-08-23T21:26:47",
+  "generated_at": "2026-08-30T21:45:14",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 5106,
       "name": "Movie in The House - Michael",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5105,
       "name": "Meet The Expert - The Australian National University (Virtual)",

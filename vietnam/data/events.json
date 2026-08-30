@@ -1,16 +1,17 @@
 {
   "country": "vietnam",
   "country_name": "Vietnam",
-  "generated_at": "2026-08-23T21:26:46",
+  "generated_at": "2026-08-30T21:45:14",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4649,
       "name": "Ngày hội du học Úc: Tư vấn 1-1, giải mã ngành học HOT cùng GO8 & trường TOP 50 thế giới - TP.HCM",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4648,
       "name": "Ngày hội du học Úc: Tư vấn 1-1, giải mã ngành học HOT cùng GO8 & trường TOP 50 thế giới - Hà Nội",

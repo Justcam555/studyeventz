@@ -1,48 +1,16 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-08-23T21:26:47",
+  "generated_at": "2026-08-30T21:45:14",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
   "events": [
-    {
-      "id": 4956,
-      "name": "INTERNATIONAL EDUCATION EXPO 2026 DAAN MOGOT",
-      "date": "2026-08-23",
-      "time": "13.00 - 18.49",
-      "location": "Jakarta, Mercure PIK",
-      "organizer": "Central Student",
-      "agent_name": "Central Student",
-      "agent_country": "Indonesia",
-      "agent_website": "www.central-student.com",
-      "registration_url": "https://CIE.CO/JAKARTA",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CS"
-    },
-    {
-      "id": 4967,
-      "name": "OVERSEAS EDUCATION EXPO 2026 (BALI)",
-      "date": "2026-08-29",
-      "time": "14:00 - 18:00 WIB",
-      "location": "Bali, Indonesia",
-      "organizer": "CV Jembatan Dwitama",
-      "agent_name": "CV Jembatan Dwitama",
-      "agent_country": "Indonesia",
-      "agent_website": "www.edubridge.co.id",
-      "registration_url": "https://www.edubridge.co.id/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CJ"
-    },
     {
       "id": 4955,
       "name": "INTERNATIONAL EDUCATION EXPO 2026 PEKANBARU",
@@ -61,6 +29,38 @@
     }
   ],
   "past": [
+    {
+      "id": 4967,
+      "name": "OVERSEAS EDUCATION EXPO 2026 (BALI)",
+      "date": "2026-08-29",
+      "time": "14:00 - 18:00 WIB",
+      "location": "Bali, Indonesia",
+      "organizer": "CV Jembatan Dwitama",
+      "agent_name": "CV Jembatan Dwitama",
+      "agent_country": "Indonesia",
+      "agent_website": "www.edubridge.co.id",
+      "registration_url": "https://www.edubridge.co.id/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CJ"
+    },
+    {
+      "id": 4956,
+      "name": "INTERNATIONAL EDUCATION EXPO 2026 DAAN MOGOT",
+      "date": "2026-08-23",
+      "time": "13.00 - 18.49",
+      "location": "Jakarta, Mercure PIK",
+      "organizer": "Central Student",
+      "agent_name": "Central Student",
+      "agent_country": "Indonesia",
+      "agent_website": "www.central-student.com",
+      "registration_url": "https://CIE.CO/JAKARTA",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
+    },
     {
       "id": 4957,
       "name": "INTERNATIONAL EDUCATION EXPO 2026 JAMBI",

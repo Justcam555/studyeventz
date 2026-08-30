@@ -1,16 +1,17 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-08-23T21:26:46",
+  "generated_at": "2026-08-30T21:45:13",
   "window": {
-    "from": "2026-08-23",
-    "to": "2026-09-22"
+    "from": "2026-08-30",
+    "to": "2026-09-29"
   },
   "archive": {
-    "from": "2024-08-23",
-    "to": "2026-08-22"
+    "from": "2024-08-30",
+    "to": "2026-08-29"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 5151,
       "name": "IDP Study Abroad – New Zealand University Day",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4635,
       "name": "First Step to China 2026! สัมมนาเรียนต่อจีน พูดคุยกับศิษย์เก่าตัวจริง พร้อมทริคคว้าทุน Full-Scholarship!",
