@@ -1,16 +1,17 @@
 {
   "country": "bangladesh",
   "country_name": "Bangladesh",
-  "generated_at": "2026-08-30T21:45:15",
+  "generated_at": "2026-09-13T20:42:04",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-13",
+    "to": "2026-10-13"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-13",
+    "to": "2026-09-12"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 4672,
       "name": "IDP's Study World Roadshow 2.0, August | Sylhet",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4671,
       "name": "IDP's Study World Roadshow | Dhaka",
