@@ -3,7 +3,7 @@
 scrape_events.py — Discover upcoming events on Thailand agent websites.
 
 Visits each Thailand agent's website with Playwright (async, 8 concurrent),
-finds the events/news page, and uses Claude (Sonnet 4.6) to extract structured
+finds the events/news page, and uses the local Qwen model via Ollama to extract structured
 event details. Keeps only events within the next 30 days and stores them in
 agents.db.
 
@@ -19,6 +19,7 @@ Scheduled weekly on Nesta via cron.
 import argparse
 import asyncio
 import json
+import os
 import random
 import re
 import sqlite3
@@ -26,13 +27,17 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-
-import anthropic
+from urllib.request import Request, urlopen
 
 DB_PATH = Path(__file__).parent / "data" / "agents.db"
 REPORTS_DIR = Path(__file__).parent / "reports"
-MODEL = "claude-sonnet-4-6"
+MODEL = "qwen3.5:35b"
+OLLAMA_URL = "http://127.0.0.1:11434/api/chat"
 CONCURRENCY = 8
+# A 35B local model should not receive eight simultaneous extraction requests.
+# Browser fetching remains concurrent; Qwen extraction is deliberately serialized.
+OLLAMA_CONCURRENCY = 1
+_ollama_semaphore: asyncio.Semaphore | None = None
 BATCH_DELAY_RANGE = (1.0, 2.0)  # seconds between batches
 ARCHIVE_RETENTION_YEARS = 2  # keep past events this long for the searchable archive
 
@@ -464,8 +469,8 @@ def init_events_table(conn: sqlite3.Connection) -> None:
 
 def classify_error(msg: str) -> str:
     m = msg.lower()
-    if "anthropic" in m:
-        return "anthropic"
+    if "ollama" in m or "qwen" in m:
+        return "ollama"
     if "err_cert" in m or "ssl" in m or "certificate" in m:
         return "ssl"
     if "err_name_not_resolved" in m or "dns" in m:
@@ -561,11 +566,40 @@ async def fetch_page_text(page, url: str) -> tuple[str, str]:
     return page.url, text
 
 
+def ollama_extract(system_prompt: str, user_content: str) -> str:
+    """Call local Ollama in strict JSON mode, without Qwen's visible thinking."""
+    payload = json.dumps({
+        "model": MODEL,
+        "stream": False,
+        "think": False,
+        # qwen3.5's Ollama build reliably supports JSON mode; the stricter
+        # JSON-schema mode can return an empty content field on this version.
+        "format": "json",
+        "options": {"temperature": 0},
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ],
+    }).encode("utf-8")
+    request = Request(
+        OLLAMA_URL,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urlopen(request, timeout=180) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    raw_debug = os.environ.get("OLLAMA_RAW_DEBUG")
+    if raw_debug:
+        Path(raw_debug).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return data.get("message", {}).get("content", "")
+
+
 async def extract_events(
-    client: anthropic.AsyncAnthropic, company_name: str, source_url: str, text: str,
+    company_name: str, source_url: str, text: str,
     system_prompt: str = EXTRACTION_SYSTEM_PROMPT_TEMPLATE,
 ) -> list[dict]:
-    """Call Claude to extract structured event records from the page text."""
+    """Extract structured events with Qwen running locally on NESTA."""
     if not text or len(text) < 80:
         return []
 
@@ -577,26 +611,36 @@ async def extract_events(
         f"Page content:\n---\n{text}\n---"
     )
 
-    response = await client.messages.create(
-        model=MODEL,
-        max_tokens=4096,
-        system=[
-            {
-                "type": "text",
-                "text": system_prompt,
-                "cache_control": {"type": "ephemeral"},
-            }
-        ],
-        output_config={"format": {"type": "json_schema", "schema": EVENT_SCHEMA}},
-        messages=[{"role": "user", "content": user_content}],
-    )
-
-    text_block = next((b.text for b in response.content if b.type == "text"), "")
+    global _ollama_semaphore
+    if _ollama_semaphore is None:
+        _ollama_semaphore = asyncio.Semaphore(OLLAMA_CONCURRENCY)
+    async with _ollama_semaphore:
+        text_block = await asyncio.to_thread(ollama_extract, system_prompt, user_content)
+    debug_dir = os.environ.get("EVENT_DEBUG_DIR")
+    if debug_dir:
+        Path(debug_dir).mkdir(parents=True, exist_ok=True)
+        safe_name = re.sub(r"[^A-Za-z0-9]+", "_", company_name).strip("_")[:60]
+        (Path(debug_dir) / f"{safe_name}.json").write_text(text_block, encoding="utf-8")
+    clean_json = re.sub(r"^```(?:json)?\s*|\s*```$", "", text_block.strip(), flags=re.I)
     try:
-        data = json.loads(text_block)
+        data = json.loads(clean_json)
     except json.JSONDecodeError:
         return []
-    return data.get("events", [])
+    # Qwen's JSON-schema mode may return either the schema object or the
+    # contained array directly. Both are valid event payloads.
+    records = data if isinstance(data, list) else data.get("events", []) if isinstance(data, dict) else []
+    if not isinstance(records, list):
+        return []
+    normalised = []
+    for event in records:
+        if not isinstance(event, dict):
+            continue
+        # Qwen sometimes chooses the clearer `event_name` label in JSON mode.
+        # Normalise it to the stable SQLite schema used by the site builder.
+        if "name" not in event and "event_name" in event:
+            event["name"] = event["event_name"]
+        normalised.append(event)
+    return normalised
 
 
 # Locale-code top-level paths that mirror the root content (different language,
@@ -668,16 +712,14 @@ def upsert_event(conn: sqlite3.Connection, agent_id: int, ev: dict) -> bool:
         return False
 
 
-async def process_agent(ctx, client: anthropic.AsyncAnthropic, agent: sqlite3.Row,
+async def process_agent(ctx, agent: sqlite3.Row,
                         system_prompt: str) -> tuple[sqlite3.Row, list[dict], str | None]:
     """Scrape one site and extract events. Returns (agent, events, error)."""
     page = await ctx.new_page()
     try:
         final_url, text = await fetch_page_text(page, agent["website"])
-        events = await extract_events(client, agent["company_name"], final_url, text, system_prompt)
+        events = await extract_events(agent["company_name"], final_url, text, system_prompt)
         return agent, events, None
-    except anthropic.APIStatusError as e:
-        return agent, [], f"Anthropic {e.status_code}: {e.message}"
     except Exception as e:
         return agent, [], str(e)
     finally:
@@ -768,9 +810,6 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
                 flush=True,
             )
 
-    # max_retries=5 (default is 2) so transient 529 "overloaded" responses
-    # don't drop sites during Anthropic load spikes. SDK uses exponential backoff.
-    client = anthropic.AsyncAnthropic(max_retries=5)
     total_found = total_kept = sites_with_events = total_failed = 0
 
     async with async_playwright() as p:
@@ -799,7 +838,7 @@ async def scrape_async(limit: int | None, refresh: bool, companies: list[str] | 
             )
 
             results = await asyncio.gather(
-                *(process_agent(ctx, client, a, system_prompt) for a in batch)
+                *(process_agent(ctx, a, system_prompt) for a in batch)
             )
 
             for agent, events, error in results:
