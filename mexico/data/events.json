@@ -1,14 +1,14 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-08-30T21:45:15",
+  "generated_at": "2026-09-20T21:34:36",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
   "events": [],
   "past": [

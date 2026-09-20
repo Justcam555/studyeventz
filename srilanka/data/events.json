@@ -1,16 +1,81 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-08-30T21:45:15",
+  "generated_at": "2026-09-20T21:34:36",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5361,
+      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Sri Lanka",
+      "date": "2026-09-23",
+      "time": "16:00 - 17:30",
+      "location": "Online",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka/study-abroad-consultants/colombo/galle-road/LK-1000/",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5360,
+      "name": "ABEC Global Study Connect – Galle 2026",
+      "date": "2026-10-03",
+      "time": "10:00 - 16:00",
+      "location": "Galle City Center, Galle, Sri Lanka",
+      "organizer": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.abec.lk",
+      "registration_url": "https://abec.lk/event/abec-global-study-connect-galle-2026/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AB"
+    },
+    {
+      "id": 5362,
+      "name": "IDP Canada Master's Virtual Fair | Sri Lanka",
+      "date": "2026-10-08",
+      "time": "15:00 - 19:00",
+      "location": "Online",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka/study-abroad-consultants/colombo/galle-road/LK-1000/",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5359,
+      "name": "Admissions Day",
+      "date": "2026-10-17",
+      "time": "12:00 - 17:00",
+      "location": "Colombo",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
+    }
+  ],
   "past": [
     {
       "id": 5110,
@@ -141,22 +206,6 @@
       "initials": "GE"
     },
     {
-      "id": 4569,
-      "name": "Admissions Day - New Zealand",
-      "date": "2026-08-16",
-      "time": "12 noon to 5 pm",
-      "location": "Colombo",
-      "organizer": "KC Overseas Education – Colombo",
-      "agent_name": "KC Overseas Education – Colombo",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
-      "registration_url": "https://www.studies-overseas.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KO"
-    },
-    {
       "id": 5111,
       "name": "Edlocate International Education Expo 2026 – Colombo",
       "date": "2026-08-15",
@@ -171,22 +220,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EP"
-    },
-    {
-      "id": 5116,
-      "name": "Curtin University Head Office Colombo Open Day",
-      "date": "2026-08-12",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "ABEC Head Office, Colombo",
-      "organizer": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.abec.lk",
-      "registration_url": "https://abec.lk/event/curtin-university-open-day-colombo-2026/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AB"
     },
     {
       "id": 5121,

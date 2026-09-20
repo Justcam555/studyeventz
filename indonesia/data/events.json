@@ -1,16 +1,162 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-08-30T21:45:14",
+  "generated_at": "2026-09-20T21:34:35",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
   "events": [
+    {
+      "id": 5291,
+      "name": "IDP Jakarta Education Fair - September 2026",
+      "date": "2026-09-20",
+      "time": "12:00 PM - 6:00 PM",
+      "location": "Jakarta, Indonesia",
+      "organizer": "IDP Indonesia",
+      "agent_name": "IDP Indonesia",
+      "agent_country": "Indonesia",
+      "agent_website": "https://www.idp.com/indonesia",
+      "registration_url": "https://www.idp.com/indonesia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "II"
+    },
+    {
+      "id": 5290,
+      "name": "BCIT Info Day: Career-Ready in Canada",
+      "date": "2026-09-21",
+      "time": "",
+      "location": "SUN Education Alam Sutera",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5289,
+      "name": "Info Day: One Application to US, UK, and Australia Universities",
+      "date": "2026-09-22",
+      "time": "",
+      "location": "SUN Education Palembang",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5292,
+      "name": "IDP Medan Education Fair - September 2026",
+      "date": "2026-09-22",
+      "time": "12:00 PM - 6:00 PM",
+      "location": "Medan, Indonesia",
+      "organizer": "IDP Indonesia",
+      "agent_name": "IDP Indonesia",
+      "agent_country": "Indonesia",
+      "agent_website": "https://www.idp.com/indonesia",
+      "registration_url": "https://www.idp.com/indonesia/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "II"
+    },
+    {
+      "id": 5288,
+      "name": "Road to Canada: Bikin Mantap Perjalanan Studi Kamu!",
+      "date": "2026-09-26",
+      "time": "",
+      "location": "Online",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5287,
+      "name": "SUN International Education Expo Roadshow 2026",
+      "date": "2026-09-27",
+      "time": "",
+      "location": "15 Kota di Indonesia",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5295,
+      "name": "[Medan] Australia Education Expo 2026",
+      "date": "2026-10-08",
+      "time": "15:30",
+      "location": "Grand Mercure, Medan Ruangan Jasmine 1, Medan, Indonesia",
+      "organizer": "Progress Study Consultancy Pty Ltd",
+      "agent_name": "Progress Study Consultancy Pty Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://progress-study.com.au/contact-us/bali/",
+      "registration_url": "https://progress-study.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PS"
+    },
+    {
+      "id": 5294,
+      "name": "[Jakarta] Australia Education Expo 2026",
+      "date": "2026-10-10",
+      "time": "13:00",
+      "location": "Pullman Jakarta Central Park, Jakarta, Indonesia",
+      "organizer": "Progress Study Consultancy Pty Ltd",
+      "agent_name": "Progress Study Consultancy Pty Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://progress-study.com.au/contact-us/bali/",
+      "registration_url": "https://progress-study.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PS"
+    },
+    {
+      "id": 5293,
+      "name": "[Bali] Australia Education Expo 2026",
+      "date": "2026-10-11",
+      "time": "14:00",
+      "location": "Fairfield by Marriott Sunset Road, Kuta, Bali, Indonesia",
+      "organizer": "Progress Study Consultancy Pty Ltd",
+      "agent_name": "Progress Study Consultancy Pty Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://progress-study.com.au/contact-us/bali/",
+      "registration_url": "https://progress-study.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PS"
+    }
+  ],
+  "past": [
     {
       "id": 4955,
       "name": "INTERNATIONAL EDUCATION EXPO 2026 PEKANBARU",
@@ -26,9 +172,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CS"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4967,
       "name": "OVERSEAS EDUCATION EXPO 2026 (BALI)",

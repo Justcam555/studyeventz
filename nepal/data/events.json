@@ -1,16 +1,129 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-08-30T21:45:14",
+  "generated_at": "2026-09-20T21:34:36",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5324,
+      "name": "Special PTE Information Session with Pearson PTE Representative",
+      "date": "2026-09-22",
+      "time": "",
+      "location": "Unicampus Global, Putalisadak, Kathmandu",
+      "organizer": "Unicampus Education Network Pvt. Ltd",
+      "agent_name": "Unicampus Education Network Pvt. Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "https://myunicampus.com/contact",
+      "registration_url": "https://myunicampus.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
+    {
+      "id": 5326,
+      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
+      "date": "2026-09-23",
+      "time": "16:15 - 17:45",
+      "location": "Online",
+      "organizer": "IDP Education",
+      "agent_name": "IDP Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5331,
+      "name": "Meet Australian University Delegates Live in Kathmandu",
+      "date": "2026-09-28",
+      "time": "",
+      "location": "Kathmandu",
+      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_country": "Nepal",
+      "agent_website": "franklinedu.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OR"
+    },
+    {
+      "id": 5328,
+      "name": "Free Seminar: Study In Dubai / Malaysia",
+      "date": "2026-10-02",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5327,
+      "name": "IDP Canada Master's Virtual Fair | Nepal",
+      "date": "2026-10-08",
+      "time": "15:15 - 19:15",
+      "location": "Online",
+      "organizer": "IDP Education",
+      "agent_name": "IDP Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5329,
+      "name": "Free Seminar / Counselling : Study UK / Ireland",
+      "date": "2026-10-09",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5330,
+      "name": "Free Seminar / Counselling : Study In Europe",
+      "date": "2026-10-16",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    }
+  ],
   "past": [
     {
       "id": 5062,
@@ -27,22 +140,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AE"
-    },
-    {
-      "id": 5064,
-      "name": "Pre-Departure Briefing for Fall 2026 Intake Students",
-      "date": "2026-08-05",
-      "time": "",
-      "location": "Pokhara Head Office, Pokhara, Nepal",
-      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_country": "Nepal",
-      "agent_website": "franklinedu.co.uk",
-      "registration_url": "https://www.franklinglobalstudy.com/blog",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OR"
     },
     {
       "id": 5063,
@@ -91,22 +188,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 3858,
-      "name": "Unicampus Global IELTS & PTE Score Challenge 2026",
-      "date": "2026-07-22",
-      "time": "11:00 AM – 2:00 PM",
-      "location": "Putalisadak, Kathmandu, Nepal",
-      "organizer": "Unicampus Education Network Pvt. Ltd",
-      "agent_name": "Unicampus Education Network Pvt. Ltd",
-      "agent_country": "Nepal",
-      "agent_website": "https://myunicampus.com/contact",
-      "registration_url": "https://myunicampus.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
     },
     {
       "id": 3228,

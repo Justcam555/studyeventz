@@ -1,16 +1,49 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-08-30T21:45:14",
+  "generated_at": "2026-09-20T21:34:35",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5249,
+      "name": "UK UNIVERSITY EXPO 2026 | FIESTA ROYALE HOTEL, ACCRA, GHANA",
+      "date": "2026-09-26",
+      "time": "10:00 – 16:00",
+      "location": "Accra, Ghana",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Ghana",
+      "agent_website": "www.ahzassociates.com",
+      "registration_url": "https://www.ahzassociates.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 5248,
+      "name": "Study at Top UK & Australian Universities in Dubai Campuses - IDP Ghana",
+      "date": "2026-10-06",
+      "time": "09:00 - 17:00",
+      "location": "Accra (East Legon), Ghana",
+      "organizer": "IDP - Ghana",
+      "agent_name": "IDP - Ghana",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
+      "registration_url": "https://www.idp.com/ghana/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    }
+  ],
   "past": [
     {
       "id": 4782,
@@ -27,54 +60,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AI"
-    },
-    {
-      "id": 4146,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Ghana",
-      "date": "2026-08-12",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Accra (East Legon), Accra, Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
-    {
-      "id": 4145,
-      "name": "A £10,000 to Start on Your UK Degree with the University of Exeter - IDP Ghana",
-      "date": "2026-07-31",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Accra (East Legon), Accra, Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
-    },
-    {
-      "id": 4147,
-      "name": "Study in the UK Webinar | Explore Opportunities with SOAS University of London & Kingston University London - IDP Ghana",
-      "date": "2026-07-30",
-      "time": "11:00 AM - 12:00 PM",
-      "location": "Online",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
     },
     {
       "id": 3525,

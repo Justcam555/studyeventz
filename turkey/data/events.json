@@ -1,23 +1,54 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-08-30T21:45:15",
+  "generated_at": "2026-09-20T21:34:36",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
-  "past": [
+  "events": [
     {
-      "id": 4639,
-      "name": "YKS Puanına İhtiyaç Duymadan Yurt Dışında Eğitim",
-      "date": "2026-08-05",
-      "time": "8:00 PM - 9:00 PM",
-      "location": "Online",
+      "id": 5397,
+      "name": "Arts University Bournemouth ile Taksim Ofisimizde Yüz Yüze Görüşme Fırsatı",
+      "date": "2026-09-24",
+      "time": "16:00",
+      "location": "Taksim Ofisi, Istanbul, Turkey",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 5399,
+      "name": "İzmir'de Almanya Eğitim Günleri: Devlet Üniversiteleri ve Başvuru Rehberi",
+      "date": "2026-10-08",
+      "time": "16:30 - 18:30",
+      "location": "Academix İzmir Ofisi, Izmir, Turkey",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 5395,
+      "name": "IDP Yurt Dışı Eğitim Roadshow",
+      "date": "2026-10-11",
+      "time": "14:00 - 18:00",
+      "location": "Istanbul, Turkey",
       "organizer": "IDP Turkey",
       "agent_name": "IDP Turkey",
       "agent_country": "Turkey",
@@ -29,21 +60,39 @@
       "initials": "IT"
     },
     {
-      "id": 2805,
-      "name": "Almanya'da İngilizce Lisans ve Yüksek Lisans Fırsatları: Macromedia University Webinarı",
-      "date": "2026-07-07",
-      "time": "14:00",
-      "location": "Online",
+      "id": 5400,
+      "name": "İzmir'de İtalya Eğitim Günleri: İngilizce Üniversite ve Burs Fırsatları",
+      "date": "2026-10-12",
+      "time": "16:30 - 18:30",
+      "location": "Academix İzmir Ofisi, Izmir, Turkey",
       "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",
       "agent_website": "academix.com.tr",
-      "registration_url": "https://www.academix.com.tr/yurtdisi-egitim-etkinlikleri/almanyada-ingilizce-lisans-ve-yuksek-lisans-firsatlari-macromedia-university-webinari",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AA"
     },
+    {
+      "id": 5401,
+      "name": "İzmir'de Polonya & Macaristan Eğitim Günleri: Ekonomik Avrupa Eğitimi",
+      "date": "2026-10-15",
+      "time": "16:30 - 18:30",
+      "location": "Academix İzmir Ofisi, Izmir, Turkey",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    }
+  ],
+  "past": [
     {
       "id": 2288,
       "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",

@@ -1,16 +1,49 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-08-30T21:45:15",
+  "generated_at": "2026-09-20T21:34:36",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5318,
+      "name": "2026 UK University Fair",
+      "date": "2026-10-16",
+      "time": "13:00 - 17:00",
+      "location": "Seoul, South Korea",
+      "organizer": "UKEN",
+      "agent_name": "UKEN",
+      "agent_country": "South Korea",
+      "agent_website": "www.uken.kr",
+      "registration_url": "https://uken.kr/university-fair/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UK"
+    },
+    {
+      "id": 5319,
+      "name": "2026 UK University Fair",
+      "date": "2026-10-17",
+      "time": "11:00 - 17:00",
+      "location": "Seoul, South Korea",
+      "organizer": "UKEN",
+      "agent_name": "UKEN",
+      "agent_country": "South Korea",
+      "agent_website": "www.uken.kr",
+      "registration_url": "https://uken.kr/university-fair/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UK"
+    }
+  ],
   "past": [
     {
       "id": 4460,

@@ -1,16 +1,65 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-08-30T21:45:14",
+  "generated_at": "2026-09-20T21:34:35",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5357,
+      "name": "Singapore Education Fair",
+      "date": "2026-09-21",
+      "time": "14:30",
+      "location": "HSBC @MBFC TOWER 2, L45, Singapore",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.aeccglobal.sg/contact-us/",
+      "registration_url": "https://www.aeccglobal.com/sg/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 5358,
+      "name": "Is It Too Late? A Reality Check for Singapore Parents Starting Applications This Fall",
+      "date": "2026-09-28",
+      "time": "12:00 PM",
+      "location": "Singapore",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "https://www.addededucation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
+    {
+      "id": 5356,
+      "name": "WORLD UNI EXPO @ SUNTEC",
+      "date": "2026-10-03",
+      "time": "12:00 - 18:30",
+      "location": "Suntec Convention Centre, Level 3 Hall 331-332, Singapore",
+      "organizer": "OverseasEducation.sg Pte Ltd",
+      "agent_name": "OverseasEducation.sg Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "www.OverseasEducation.sg",
+      "registration_url": "https://www.overseaseducation.sg/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OS"
+    }
+  ],
   "past": [
     {
       "id": 5106,
@@ -43,22 +92,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 5107,
-      "name": "Free Live Webinar · Why what gets you into NUS won't get you into Oxford or the Ivy League.",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "location": "Online",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
-      "registration_url": "https://www.addededucation.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AC"
     },
     {
       "id": 2169,

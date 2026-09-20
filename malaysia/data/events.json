@@ -1,16 +1,81 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-08-30T21:45:14",
+  "generated_at": "2026-09-20T21:34:35",
   "window": {
-    "from": "2026-08-30",
-    "to": "2026-09-29"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "archive": {
-    "from": "2024-08-30",
-    "to": "2026-08-29"
+    "from": "2024-09-20",
+    "to": "2026-09-19"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5323,
+      "name": "Study Locally & Abroad Education Fair 2026",
+      "date": "2026-09-20",
+      "time": "12:00 PM – 6:00 PM",
+      "location": "Johor Bahru",
+      "organizer": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
+      "agent_name": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
+      "agent_country": "Malaysia",
+      "agent_website": "www.ednet.com.my",
+      "registration_url": "https://www.ednet.com.my/event-pre-registration/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EN"
+    },
+    {
+      "id": 5321,
+      "name": "Simon Fraser University Info Session",
+      "date": "2026-09-23",
+      "time": "15:00 - 17:00",
+      "location": "Online",
+      "organizer": "SUN EDUCATION MALAYSIA",
+      "agent_name": "SUN EDUCATION MALAYSIA",
+      "agent_country": "Malaysia",
+      "agent_website": "https://malaysia.suneducationgroup.com/",
+      "registration_url": "https://malaysia.suneducationgroup.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5322,
+      "name": "Glion & Les Roches Info Session",
+      "date": "2026-10-10",
+      "time": "11:00 - 12:00",
+      "location": "Online",
+      "organizer": "SUN EDUCATION MALAYSIA",
+      "agent_name": "SUN EDUCATION MALAYSIA",
+      "agent_country": "Malaysia",
+      "agent_website": "https://malaysia.suneducationgroup.com/",
+      "registration_url": "https://malaysia.suneducationgroup.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5320,
+      "name": "SUN EDUCATION EXPO MELAKA 2026",
+      "date": "2026-10-17",
+      "time": "",
+      "location": "Utopia Workspaces Melaka, Melaka, Malaysia",
+      "organizer": "SUN EDUCATION MALAYSIA",
+      "agent_name": "SUN EDUCATION MALAYSIA",
+      "agent_country": "Malaysia",
+      "agent_website": "https://malaysia.suneducationgroup.com/",
+      "registration_url": "https://malaysia.suneducationgroup.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    }
+  ],
   "past": [
     {
       "id": 5043,
@@ -235,22 +300,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SE"
-    },
-    {
-      "id": 4471,
-      "name": "UNSW College Info Session",
-      "date": "2026-08-01",
-      "time": "1:00 PM – 3:00 PM",
-      "location": "ED Network JB Office, 14 & 16 Jalan Horizon Perdana 6, Horizon Hills, Iskandar Puteri, Johor",
-      "organizer": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_name": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_country": "Malaysia",
-      "agent_website": "www.ednet.com.my",
-      "registration_url": "https://www.ednet.com.my/event-pre-registration/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EN"
     },
     {
       "id": 3855,
