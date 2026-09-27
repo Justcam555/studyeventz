@@ -1,32 +1,16 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-09-20T21:34:36",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
-    {
-      "id": 5312,
-      "name": "Study Abroad September Fair 2026 | NAIROBI",
-      "date": "2026-09-26",
-      "time": "10:00 - 16:00",
-      "location": "Nairobi, Kenya",
-      "organizer": "Educare International Limited",
-      "agent_name": "Educare International Limited",
-      "agent_country": "Kenya",
-      "agent_website": "https://educare-studyabroad.com/contact-us?office=mombasa",
-      "registration_url": "https://educare-studyabroad.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EI"
-    },
     {
       "id": 5314,
       "name": "Study Abroad Fair | Kapsabet, Kenya",
@@ -44,16 +28,32 @@
       "initials": "ST"
     },
     {
-      "id": 5313,
+      "id": 5500,
       "name": "Study Abroad Fair September 2026 | MOMBASA",
       "date": "2026-09-28",
       "time": "10:00 - 16:00",
-      "location": "Mombasa, Kenya",
+      "location": "Mombasa - Nyali",
       "organizer": "Educare International Limited",
       "agent_name": "Educare International Limited",
       "agent_country": "Kenya",
       "agent_website": "https://educare-studyabroad.com/contact-us?office=mombasa",
       "registration_url": "https://educare-studyabroad.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EI"
+    },
+    {
+      "id": 5501,
+      "name": "Study Abroad Fair September 2026 | MOMBASA",
+      "date": "2026-09-28",
+      "time": "10:00 - 16:00",
+      "location": "Mombasa - Nyali",
+      "organizer": "EDUCARE INTERNATIONAL LIMITED",
+      "agent_name": "EDUCARE INTERNATIONAL LIMITED",
+      "agent_country": "Kenya",
+      "agent_website": "https://www.educare-studyabroad.com/",
+      "registration_url": "https://www.educare-studyabroad.com/events",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -109,22 +109,6 @@
     }
   ],
   "past": [
-    {
-      "id": 5031,
-      "name": "Kaplan Clearing Open Day",
-      "date": "2026-08-14",
-      "time": "10:00 - 16:00",
-      "location": "Westlands, Nairobi",
-      "organizer": "EDUCARE INTERNATIONAL LIMITED",
-      "agent_name": "EDUCARE INTERNATIONAL LIMITED",
-      "agent_country": "Kenya",
-      "agent_website": "https://www.educare-studyabroad.com/",
-      "registration_url": "https://www.educare-studyabroad.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EI"
-    },
     {
       "id": 5020,
       "name": "Meet Jacqueline Wangari: ACU Open Day - Eldoret Edition",
@@ -220,38 +204,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CR"
-    },
-    {
-      "id": 4440,
-      "name": "Study in Northern Ireland – Ulster University Open Day | Eldoret",
-      "date": "2026-07-31",
-      "time": "",
-      "location": "5th floor, Khetia's Centre, Eldoret CBD, Kenya",
-      "organizer": "S Three Education Consultants Limited",
-      "agent_name": "S Three Education Consultants Limited",
-      "agent_country": "Kenya",
-      "agent_website": "www.s3education.com/contact-us/",
-      "registration_url": "https://s3education.com/our-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ST"
-    },
-    {
-      "id": 4438,
-      "name": "Study in Northern Ireland – Ulster University Open Day | Westlands, Nairobi",
-      "date": "2026-07-30",
-      "time": "",
-      "location": "4th floor Westlands Square Offices, Westlands, Nairobi, Kenya",
-      "organizer": "S Three Education Consultants Limited",
-      "agent_name": "S Three Education Consultants Limited",
-      "agent_country": "Kenya",
-      "agent_website": "www.s3education.com/contact-us/",
-      "registration_url": "https://s3education.com/our-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ST"
     },
     {
       "id": 2049,

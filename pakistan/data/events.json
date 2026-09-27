@@ -1,14 +1,14 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-09-20T21:34:36",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
@@ -44,6 +44,38 @@
       "initials": "IP"
     },
     {
+      "id": 5535,
+      "name": "Admission & Information Session",
+      "date": "2026-09-29",
+      "time": "3:00 PM – 6:00 PM",
+      "location": "Islamabad – HR ISB Head Office",
+      "organizer": "HR Consultants Pvt. Limited",
+      "agent_name": "HR Consultants Pvt. Limited",
+      "agent_country": "Pakistan",
+      "agent_website": "www.hrpakistan.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
+    },
+    {
+      "id": 5533,
+      "name": "Admission & Information Session",
+      "date": "2026-09-30",
+      "time": "11:00 AM – 12:30 PM",
+      "location": "Lahore – HR Gulberg STC",
+      "organizer": "HR Consultants Pvt. Limited",
+      "agent_name": "HR Consultants Pvt. Limited",
+      "agent_country": "Pakistan",
+      "agent_website": "www.hrpakistan.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
+    },
+    {
       "id": 5344,
       "name": "IDP's Study Abroad Expo in Johar Town, Lahore",
       "date": "2026-09-30",
@@ -60,6 +92,38 @@
       "initials": "IP"
     },
     {
+      "id": 5532,
+      "name": "Admission & Information Session",
+      "date": "2026-10-02",
+      "time": "5:00 PM – 7:00 PM",
+      "location": "Lahore – HR DHA 5",
+      "organizer": "HR Consultants Pvt. Limited",
+      "agent_name": "HR Consultants Pvt. Limited",
+      "agent_country": "Pakistan",
+      "agent_website": "www.hrpakistan.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
+    },
+    {
+      "id": 5531,
+      "name": "Admission & Information Session",
+      "date": "2026-10-03",
+      "time": "4:00 PM – 6:00 PM",
+      "location": "Karachi – HR KHI Parsa Tower",
+      "organizer": "HR Consultants Pvt. Limited",
+      "agent_name": "HR Consultants Pvt. Limited",
+      "agent_country": "Pakistan",
+      "agent_website": "www.hrpakistan.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
+    },
+    {
       "id": 5345,
       "name": "IDP's Study Abroad Expo in Karachi",
       "date": "2026-10-04",
@@ -74,6 +138,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IP"
+    },
+    {
+      "id": 5530,
+      "name": "Admission & Information Session",
+      "date": "2026-10-06",
+      "time": "10:00 AM – 11:00 AM",
+      "location": "Islamabad – Head Office – ISB",
+      "organizer": "HR Consultants Pvt. Limited",
+      "agent_name": "HR Consultants Pvt. Limited",
+      "agent_country": "Pakistan",
+      "agent_website": "www.hrpakistan.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
     },
     {
       "id": 5346,
@@ -140,22 +220,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    },
-    {
-      "id": 5102,
-      "name": "A-Level Results Day: Discover Your Next Step to the UK with IDP Pakistan",
-      "date": "2026-08-20",
-      "time": "10:00 AM - 5:00 PM",
-      "location": "Pakistan",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
-      "agent_country": "Pakistan",
-      "agent_website": "https://www.idp.com/pakistan/",
-      "registration_url": "https://www.idp.com/pakistan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 5094,
@@ -238,22 +302,6 @@
       "initials": "TC"
     },
     {
-      "id": 4544,
-      "name": "Admission & Information Session – University of Technology Sydney",
-      "date": "2026-07-31",
-      "time": "11:00 AM – 1:00 PM",
-      "location": "Lahore – HR Johar Town",
-      "organizer": "HR Consultants Pvt. Limited",
-      "agent_name": "HR Consultants Pvt. Limited",
-      "agent_country": "Pakistan",
-      "agent_website": "www.hrpakistan.com",
-      "registration_url": "https://hrpakistan.com/hri/study-abroad-admissions-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HC"
-    },
-    {
       "id": 4527,
       "name": "Admission & Information Session – University of Technology Sydney",
       "date": "2026-07-31",
@@ -263,22 +311,6 @@
       "agent_name": "HR Consultants",
       "agent_country": "Pakistan",
       "agent_website": "https://hrpakistan.com/hri/offices/hr-consultants-lahore-gulburg/",
-      "registration_url": "https://hrpakistan.com/hri/study-abroad-admissions-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HC"
-    },
-    {
-      "id": 4545,
-      "name": "Admission & Information Session – University of Technology Sydney",
-      "date": "2026-07-30",
-      "time": "10:30 AM – 12:00 PM",
-      "location": "Lahore – HR Gulberg STC",
-      "organizer": "HR Consultants Pvt. Limited",
-      "agent_name": "HR Consultants Pvt. Limited",
-      "agent_country": "Pakistan",
-      "agent_website": "www.hrpakistan.com",
       "registration_url": "https://hrpakistan.com/hri/study-abroad-admissions-events/",
       "logo_url": "",
       "logo_needs_bg": false,

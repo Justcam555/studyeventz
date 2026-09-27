@@ -1,34 +1,18 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-09-20T21:34:36",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
-      "id": 5361,
-      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Sri Lanka",
-      "date": "2026-09-23",
-      "time": "16:00 - 17:30",
-      "location": "Online",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka/study-abroad-consultants/colombo/galle-road/LK-1000/",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5360,
+      "id": 5549,
       "name": "ABEC Global Study Connect – Galle 2026",
       "date": "2026-10-03",
       "time": "10:00 - 16:00",
@@ -44,20 +28,68 @@
       "initials": "AB"
     },
     {
-      "id": 5362,
+      "id": 5547,
       "name": "IDP Canada Master's Virtual Fair | Sri Lanka",
       "date": "2026-10-08",
       "time": "15:00 - 19:00",
       "location": "Online",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
+      "organizer": "IDP Education Lanka Private Ltd",
+      "agent_name": "IDP Education Lanka Private Ltd",
       "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka/study-abroad-consultants/colombo/galle-road/LK-1000/",
+      "agent_website": "https://www.idp.com/srilanka",
       "registration_url": "https://www.idp.com/srilanka/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5548,
+      "name": "Multi-Destination Open Day",
+      "date": "2026-10-10",
+      "time": "10:00 AM – 4:30 PM",
+      "location": "36B, Gower Street, Colombo 05, Sri Lanka",
+      "organizer": "Campus Direct",
+      "agent_name": "Campus Direct",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.cduk.lk",
+      "registration_url": "https://www.campusdirect.io/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CD"
+    },
+    {
+      "id": 5551,
+      "name": "Australia Edu Fair Panadura 2026",
+      "date": "2026-10-10",
+      "time": "12:00",
+      "location": "Panadura, Sri Lanka",
+      "organizer": "Jeewa Australian Educational Centre",
+      "agent_name": "Jeewa Australian Educational Centre",
+      "agent_country": "Sri Lanka",
+      "agent_website": "http://www.jaec.net",
+      "registration_url": "https://www.jeewaeducation.lk/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JA"
+    },
+    {
+      "id": 5552,
+      "name": "Victoria University Open Day",
+      "date": "2026-10-15",
+      "time": "00:00",
+      "location": "Battaramulla, Sri Lanka",
+      "organizer": "Jeewa Australian Educational Centre",
+      "agent_name": "Jeewa Australian Educational Centre",
+      "agent_country": "Sri Lanka",
+      "agent_website": "http://www.jaec.net",
+      "registration_url": "https://www.jeewaeducation.lk/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JA"
     },
     {
       "id": 5359,
@@ -142,22 +174,6 @@
       "initials": "CD"
     },
     {
-      "id": 4559,
-      "name": "IDP Global Education Fair August",
-      "date": "2026-08-22",
-      "time": "11:00 AM - 4:30 PM",
-      "location": "Colombo, Sri Lanka",
-      "organizer": "IDP Education Lanka Private Ltd",
-      "agent_name": "IDP Education Lanka Private Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
       "id": 5123,
       "name": "Free Seminar / Counselling : Study in Australia / New Zealand",
       "date": "2026-08-22",
@@ -172,22 +188,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
-    },
-    {
-      "id": 4557,
-      "name": "IDP Global Education Fair",
-      "date": "2026-08-21",
-      "time": "11:00 AM - 4:00 PM",
-      "location": "Kandy, Sri Lanka",
-      "organizer": "IDP Education Lanka Private Ltd",
-      "agent_name": "IDP Education Lanka Private Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 5122,
@@ -316,22 +316,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "VI"
-    },
-    {
-      "id": 4556,
-      "name": "Meet Regent's University London | Sri Lanka",
-      "date": "2026-07-29",
-      "time": "4:00 PM - 5:00 PM",
-      "location": "Colombo, Jaffna, Kandy, Sri Lanka",
-      "organizer": "IDP Education Lanka Private Ltd",
-      "agent_name": "IDP Education Lanka Private Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 2706,

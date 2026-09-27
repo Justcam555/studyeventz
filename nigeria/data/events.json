@@ -1,22 +1,72 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-09-20T21:34:35",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
-      "id": 5332,
-      "name": "IDP's Study World Expo in Abuja",
-      "date": "2026-09-24",
+      "id": 5334,
+      "name": "Study at Top UK & Australian Universities in Dubai Campuses",
+      "date": "2026-10-06",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Abuja, Asaba, Enugu, Ibadan, Nigeria",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
+    {
+      "id": 5507,
+      "name": "UK UNIVERSITY EXPO 2026 | THE PALMS HOTEL | ABUJA",
+      "date": "2026-10-08",
+      "time": "10:00 - 17:00",
+      "location": "Abuja",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nigeria",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 5508,
+      "name": "UK UNIVERSITY EXPO 2026 | THE JAGZ HOTEL | IBADAN",
+      "date": "2026-10-10",
+      "time": "10:00 - 16:00",
+      "location": "Ibadan",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nigeria",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    }
+  ],
+  "past": [
+    {
+      "id": 5333,
+      "name": "IDP's Study World Expo in Lagos",
+      "date": "2026-09-26",
       "time": "10:00 AM - 4:00 PM",
-      "location": "Abuja, Nigeria",
+      "location": "Lagos, Nigeria",
       "organizer": "IDP Nigeria",
       "agent_name": "IDP Nigeria",
       "agent_country": "Nigeria",
@@ -44,11 +94,11 @@
       "initials": "SU"
     },
     {
-      "id": 5333,
-      "name": "IDP's Study World Expo in Lagos",
-      "date": "2026-09-26",
+      "id": 5332,
+      "name": "IDP's Study World Expo in Abuja",
+      "date": "2026-09-24",
       "time": "10:00 AM - 4:00 PM",
-      "location": "Lagos, Nigeria",
+      "location": "Abuja, Nigeria",
       "organizer": "IDP Nigeria",
       "agent_name": "IDP Nigeria",
       "agent_country": "Nigeria",
@@ -59,24 +109,6 @@
       "logo_bg_color": "",
       "initials": "IN"
     },
-    {
-      "id": 5334,
-      "name": "Study at Top UK & Australian Universities in Dubai Campuses",
-      "date": "2026-10-06",
-      "time": "9:00 AM - 5:00 PM",
-      "location": "Abuja, Asaba, Enugu, Ibadan, Nigeria",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    }
-  ],
-  "past": [
     {
       "id": 5086,
       "name": "UK & Canada Education Fair – Asaba",

@@ -1,51 +1,19 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-09-20T21:34:36",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
-      "id": 5324,
-      "name": "Special PTE Information Session with Pearson PTE Representative",
-      "date": "2026-09-22",
-      "time": "",
-      "location": "Unicampus Global, Putalisadak, Kathmandu",
-      "organizer": "Unicampus Education Network Pvt. Ltd",
-      "agent_name": "Unicampus Education Network Pvt. Ltd",
-      "agent_country": "Nepal",
-      "agent_website": "https://myunicampus.com/contact",
-      "registration_url": "https://myunicampus.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
-      "id": 5326,
-      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
-      "date": "2026-09-23",
-      "time": "16:15 - 17:45",
-      "location": "Online",
-      "organizer": "IDP Education",
-      "agent_name": "IDP Education",
-      "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
-      "registration_url": "https://www.idp.com/nepal/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5331,
-      "name": "Meet Australian University Delegates Live in Kathmandu",
+      "id": 5506,
+      "name": "Australia Admission Day",
       "date": "2026-09-28",
       "time": "",
       "location": "Kathmandu",
@@ -60,7 +28,7 @@
       "initials": "OR"
     },
     {
-      "id": 5328,
+      "id": 5503,
       "name": "Free Seminar: Study In Dubai / Malaysia",
       "date": "2026-10-02",
       "time": "",
@@ -92,7 +60,7 @@
       "initials": "IE"
     },
     {
-      "id": 5329,
+      "id": 5504,
       "name": "Free Seminar / Counselling : Study UK / Ireland",
       "date": "2026-10-09",
       "time": "",
@@ -108,7 +76,7 @@
       "initials": "GE"
     },
     {
-      "id": 5330,
+      "id": 5505,
       "name": "Free Seminar / Counselling : Study In Europe",
       "date": "2026-10-16",
       "time": "",
@@ -125,6 +93,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5326,
+      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
+      "date": "2026-09-23",
+      "time": "16:15 - 17:45",
+      "location": "Online",
+      "organizer": "IDP Education",
+      "agent_name": "IDP Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5324,
+      "name": "Special PTE Information Session with Pearson PTE Representative",
+      "date": "2026-09-22",
+      "time": "",
+      "location": "Unicampus Global, Putalisadak, Kathmandu",
+      "organizer": "Unicampus Education Network Pvt. Ltd",
+      "agent_name": "Unicampus Education Network Pvt. Ltd",
+      "agent_country": "Nepal",
+      "agent_website": "https://myunicampus.com/contact",
+      "registration_url": "https://myunicampus.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
     {
       "id": 5062,
       "name": "AECC Global Education Roadshow",

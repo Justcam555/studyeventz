@@ -1,14 +1,14 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-09-20T21:34:36",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
@@ -26,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "UK"
+    },
+    {
+      "id": 5502,
+      "name": "57회 코엑스 유학박람회",
+      "date": "2026-10-17",
+      "time": "",
+      "location": "Seoul, South Korea",
+      "organizer": "KOKOS Korea Co. Ltd",
+      "agent_name": "KOKOS Korea Co. Ltd",
+      "agent_country": "South Korea",
+      "agent_website": "www.ikokos.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KK"
     },
     {
       "id": 5319,
@@ -156,22 +172,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "HX"
-    },
-    {
-      "id": 776,
-      "name": "제56회 코엑스 호주&뉴질랜드 유학박람회",
-      "date": "2026-06-20",
-      "time": "",
-      "location": "COEX, Seoul",
-      "organizer": "KOKOS Korea Co. Ltd",
-      "agent_name": "KOKOS Korea Co. Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "www.ikokos.com",
-      "registration_url": "https://www.ikokos.com/kor/main/?ckattempt=1",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KK"
     },
     {
       "id": 778,

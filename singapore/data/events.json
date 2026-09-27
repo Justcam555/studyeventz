@@ -1,38 +1,22 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-09-20T21:34:35",
+  "generated_at": "2026-09-27T23:21:09",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
   "events": [
     {
-      "id": 5357,
-      "name": "Singapore Education Fair",
-      "date": "2026-09-21",
-      "time": "14:30",
-      "location": "HSBC @MBFC TOWER 2, L45, Singapore",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.aeccglobal.sg/contact-us/",
-      "registration_url": "https://www.aeccglobal.com/sg/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 5358,
-      "name": "Is It Too Late? A Reality Check for Singapore Parents Starting Applications This Fall",
-      "date": "2026-09-28",
-      "time": "12:00 PM",
-      "location": "Singapore",
+      "id": 5543,
+      "name": "The Profile Lab: building your child's story for global admissions",
+      "date": "2026-09-27",
+      "time": "12:00",
+      "location": "Online",
       "organizer": "The Added Company Pte Ltd",
       "agent_name": "The Added Company Pte Ltd",
       "agent_country": "Singapore",
@@ -42,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AC"
+    },
+    {
+      "id": 5541,
+      "name": "Level Up Your Resume with Ai Tools!",
+      "date": "2026-09-29",
+      "time": "19:00 - 20:30",
+      "location": "Online",
+      "organizer": "PSB Academy(Singapore)",
+      "agent_name": "PSB Academy(Singapore)",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.psb-academy.edu.sg/",
+      "registration_url": "https://www.psb-academy.edu.sg/virtual-notice-board/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PA"
     },
     {
       "id": 5356,
@@ -58,15 +58,45 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "OS"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 5106,
-      "name": "Movie in The House - Michael",
-      "date": "2026-08-28",
-      "time": "06:00 PM - 09:30 PM",
-      "location": "LT3, Main Wing, City Campus, Singapore",
+      "id": 5544,
+      "name": "Applying to top US or UK universities? Your child is probably doing too much.",
+      "date": "2026-10-08",
+      "time": "20:00",
+      "location": "Online",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "https://www.addededucation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
+    {
+      "id": 5546,
+      "name": "Student-athletes and their parents aiming at US universities",
+      "date": "2026-10-11",
+      "time": "20:00",
+      "location": "Online",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "https://www.addededucation.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
+    {
+      "id": 5542,
+      "name": "Career Fair 14 October 2026",
+      "date": "2026-10-14",
+      "time": "13:00",
+      "location": "Main Wing, City Campus, Singapore",
       "organizer": "PSB Academy(Singapore)",
       "agent_name": "PSB Academy(Singapore)",
       "agent_country": "Singapore",
@@ -76,6 +106,24 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
+    }
+  ],
+  "past": [
+    {
+      "id": 5357,
+      "name": "Singapore Education Fair",
+      "date": "2026-09-21",
+      "time": "14:30",
+      "location": "HSBC @MBFC TOWER 2, L45, Singapore",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.aeccglobal.sg/contact-us/",
+      "registration_url": "https://www.aeccglobal.com/sg/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
     },
     {
       "id": 5105,

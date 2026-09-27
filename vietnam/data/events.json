@@ -1,16 +1,49 @@
 {
   "country": "vietnam",
   "country_name": "Vietnam",
-  "generated_at": "2026-09-20T21:34:35",
+  "generated_at": "2026-09-27T23:21:08",
   "window": {
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-27",
+    "to": "2026-10-27"
   },
   "archive": {
-    "from": "2024-09-20",
-    "to": "2026-09-19"
+    "from": "2024-09-27",
+    "to": "2026-09-26"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 5580,
+      "name": "Canada Admission Day 10/10/2026: Mở Lối Hành Trình Du Học Canada 2027",
+      "date": "2026-10-10",
+      "time": "09:00",
+      "location": "Tòa nhà Vimedimex Building, Tầng 10, 246 Cống Quỳnh, Phường Bến Thành, TP. Hồ Chí Minh, Vietnam (Online via Zoom)",
+      "organizer": "New World Study Abroad Consulting Company Ltd",
+      "agent_name": "New World Study Abroad Consulting Company Ltd",
+      "agent_country": "Vietnam",
+      "agent_website": "newworldedu.vn",
+      "registration_url": "https://canadaedufair.newworldedu.vn",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "NW"
+    },
+    {
+      "id": 5579,
+      "name": "MASTER FAIR 2026: BEYOND THE BORDERS",
+      "date": "2026-10-15",
+      "time": "18:30 - 20:30",
+      "location": "Đại học Kinh tế Quốc dân (NEU), Hanoi, Vietnam",
+      "organizer": "iae GLOBAL Vietnam",
+      "agent_name": "iae GLOBAL Vietnam",
+      "agent_country": "Vietnam",
+      "agent_website": "www.iaeglobal.vn",
+      "registration_url": "https://www.iaeglobal.vn/su-kien-master-fair-2026-tai-neu",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IG"
+    }
+  ],
   "past": [
     {
       "id": 4649,
@@ -237,22 +270,6 @@
       "initials": "IE"
     },
     {
-      "id": 4022,
-      "name": "Sự Kiện Du Học Năm Châu 25/07/2026: Khởi Đầu Hành Trình Học Tập Quốc Tế",
-      "date": "2026-07-25",
-      "time": "9:00 AM",
-      "location": "Tòa nhà Vimedimex Building, Tầng 10, 246 Cống Quỳnh, Phường Bến Thành, TP. Hồ Chí Minh",
-      "organizer": "New World Study Abroad Consulting Company Ltd",
-      "agent_name": "New World Study Abroad Consulting Company Ltd",
-      "agent_country": "Vietnam",
-      "agent_website": "newworldedu.vn",
-      "registration_url": "https://newworldedu.vn/news-detail/hoi-thao-du-hoc/14260-su-kien-du-hoc-nam-chau-25072026-khoi-dau-hanh-trinh-hoc-tap-quoc-te/newsword.html",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "NW"
-    },
-    {
       "id": 4023,
       "name": "FLY WITH HOBIE – PRE-DEPARTURE SESSION 2026",
       "date": "2026-07-25",
@@ -267,22 +284,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ET"
-    },
-    {
-      "id": 4012,
-      "name": "Event Online: Khám phá ngành Điều dưỡng Úc 2026",
-      "date": "2026-07-24",
-      "time": "10:00 - 13:00",
-      "location": "Online",
-      "organizer": "iae GLOBAL Vietnam",
-      "agent_name": "iae GLOBAL Vietnam",
-      "agent_country": "Vietnam",
-      "agent_website": "www.iaeglobal.vn",
-      "registration_url": "https://forms.gle/FW2tvX4vp7Do4qbb9",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
     },
     {
       "id": 3414,
