@@ -1,58 +1,26 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-09-27T23:21:09",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
     {
-      "id": 5506,
-      "name": "Australia Admission Day",
-      "date": "2026-09-28",
-      "time": "",
-      "location": "Kathmandu",
-      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
-      "agent_country": "Nepal",
-      "agent_website": "franklinedu.co.uk",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OR"
-    },
-    {
-      "id": 5503,
-      "name": "Free Seminar: Study In Dubai / Malaysia",
-      "date": "2026-10-02",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Nepal",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
-    },
-    {
-      "id": 5327,
+      "id": 5744,
       "name": "IDP Canada Master's Virtual Fair | Nepal",
       "date": "2026-10-08",
       "time": "15:15 - 19:15",
       "location": "Online",
-      "organizer": "IDP Education",
-      "agent_name": "IDP Education",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
       "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
+      "agent_website": "https://www.idp.com/nepal/",
       "registration_url": "https://www.idp.com/nepal/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
@@ -60,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 5504,
+      "id": 5748,
       "name": "Free Seminar / Counselling : Study UK / Ireland",
       "date": "2026-10-09",
       "time": "",
@@ -76,7 +44,7 @@
       "initials": "GE"
     },
     {
-      "id": 5505,
+      "id": 5749,
       "name": "Free Seminar / Counselling : Study In Europe",
       "date": "2026-10-16",
       "time": "",
@@ -90,24 +58,72 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 5326,
-      "name": "Canada Student Visa SOP: Structure, Strategy & Success | Nepal",
-      "date": "2026-09-23",
-      "time": "16:15 - 17:45",
+      "id": 5750,
+      "name": "Free Seminar / Counselling : Study In Australia / New Zealand",
+      "date": "2026-10-23",
+      "time": "",
       "location": "Online",
-      "organizer": "IDP Education",
-      "agent_name": "IDP Education",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
       "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/study-abroad-consultants/kathmandu/north-gate-rd/NP-1000/",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5751,
+      "name": "Free Seminar/ Counselling : Study Germany",
+      "date": "2026-10-30",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5745,
+      "name": "IDP Canada & USA Bachelors Degree Virtual fair.",
+      "date": "2026-10-30",
+      "time": "15:15 - 19:15",
+      "location": "Online",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/",
       "registration_url": "https://www.idp.com/nepal/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    }
+  ],
+  "past": [
+    {
+      "id": 5506,
+      "name": "Australia Admission Day",
+      "date": "2026-09-28",
+      "time": "",
+      "location": "Kathmandu",
+      "organizer": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_name": "The Official Representative LLC (Previously Franklin Education and Marketing Consultancy Ltd)",
+      "agent_country": "Nepal",
+      "agent_website": "franklinedu.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OR"
     },
     {
       "id": 5324,
@@ -172,22 +188,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ED"
-    },
-    {
-      "id": 4487,
-      "name": "Meet Regent's University London | Nepal",
-      "date": "2026-07-29",
-      "time": "4:15 PM - 5:15 PM",
-      "location": "Chitwan, Kathmandu, Pokhara, Nepal",
-      "organizer": "IDP Education Student Services Nepal Private Limited",
-      "agent_name": "IDP Education Student Services Nepal Private Limited",
-      "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/",
-      "registration_url": "https://www.idp.com/nepal/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 3228,

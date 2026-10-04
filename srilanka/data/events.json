@@ -1,31 +1,31 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-09-27T23:21:09",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
     {
-      "id": 5549,
-      "name": "ABEC Global Study Connect – Galle 2026",
-      "date": "2026-10-03",
-      "time": "10:00 - 16:00",
-      "location": "Galle City Center, Galle, Sri Lanka",
-      "organizer": "Australian Business Education Centre (Pvt) Ltd",
-      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "id": 5799,
+      "name": "Elevating Germany Recruitment: Exclusive ISM International School of Management & ApplyBoard Prime Masterclass",
+      "date": "2026-10-05",
+      "time": "2:00 PM PKT",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
       "agent_country": "Sri Lanka",
-      "agent_website": "www.abec.lk",
-      "registration_url": "https://abec.lk/event/abec-global-study-connect-galle-2026/",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AB"
+      "initials": "AS"
     },
     {
       "id": 5547,
@@ -44,16 +44,32 @@
       "initials": "IE"
     },
     {
-      "id": 5548,
+      "id": 5800,
+      "name": "Learn More About London School of Business and Finance (Malaysia and Singapore)",
+      "date": "2026-10-09",
+      "time": "6:00 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
+    {
+      "id": 5798,
       "name": "Multi-Destination Open Day",
       "date": "2026-10-10",
       "time": "10:00 AM – 4:30 PM",
-      "location": "36B, Gower Street, Colombo 05, Sri Lanka",
+      "location": "Colombo, Sri Lanka",
       "organizer": "Campus Direct",
       "agent_name": "Campus Direct",
       "agent_country": "Sri Lanka",
       "agent_website": "www.cduk.lk",
-      "registration_url": "https://www.campusdirect.io/events",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -74,6 +90,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "JA"
+    },
+    {
+      "id": 5801,
+      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
+      "date": "2026-10-13",
+      "time": "4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
     },
     {
       "id": 5552,
@@ -109,6 +141,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5549,
+      "name": "ABEC Global Study Connect – Galle 2026",
+      "date": "2026-10-03",
+      "time": "10:00 - 16:00",
+      "location": "Galle City Center, Galle, Sri Lanka",
+      "organizer": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_name": "Australian Business Education Centre (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.abec.lk",
+      "registration_url": "https://abec.lk/event/abec-global-study-connect-galle-2026/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AB"
+    },
     {
       "id": 5110,
       "name": "Edlocate Study Abroad Day in Jaffna",
@@ -252,22 +300,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
-    },
-    {
-      "id": 5115,
-      "name": "Western Community College Reopens Offshore Applications: Now a Prime Institution",
-      "date": "2026-08-05",
-      "time": "10:00 AM EDT | 7:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
     },
     {
       "id": 4570,

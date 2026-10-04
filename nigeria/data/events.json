@@ -1,14 +1,14 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-09-27T23:21:09",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
     {
@@ -28,11 +28,11 @@
       "initials": "IN"
     },
     {
-      "id": 5507,
+      "id": 5755,
       "name": "UK UNIVERSITY EXPO 2026 | THE PALMS HOTEL | ABUJA",
       "date": "2026-10-08",
       "time": "10:00 - 17:00",
-      "location": "Abuja",
+      "location": "Abuja, Nigeria",
       "organizer": "AHZ Associates",
       "agent_name": "AHZ Associates",
       "agent_country": "Nigeria",
@@ -44,11 +44,11 @@
       "initials": "AA"
     },
     {
-      "id": 5508,
+      "id": 5756,
       "name": "UK UNIVERSITY EXPO 2026 | THE JAGZ HOTEL | IBADAN",
       "date": "2026-10-10",
       "time": "10:00 - 16:00",
-      "location": "Ibadan",
+      "location": "Ibadan, Nigeria",
       "organizer": "AHZ Associates",
       "agent_name": "AHZ Associates",
       "agent_country": "Nigeria",
@@ -58,6 +58,70 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AA"
+    },
+    {
+      "id": 5754,
+      "name": "",
+      "date": "2026-10-13",
+      "time": "09:00 - 15:00",
+      "location": "Hotel Presidential, Port Harcourt, Nigeria",
+      "organizer": "Tg Marchnata (Tgm Education)",
+      "agent_name": "Tg Marchnata (Tgm Education)",
+      "agent_country": "Nigeria",
+      "agent_website": "www.tgmeducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TM"
+    },
+    {
+      "id": 5757,
+      "name": "UK UNIVERSITY EXPO 2026 | AHZ HOUSE, OPEBI ROAD, IKEJA | LAGOS",
+      "date": "2026-10-13",
+      "time": "10:00 - 16:00",
+      "location": "Lagos, Nigeria",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nigeria",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 5753,
+      "name": "",
+      "date": "2026-10-15",
+      "time": "09:00 - 15:00",
+      "location": "Rockview Hotel Royale, Abuja, Nigeria",
+      "organizer": "Tg Marchnata (Tgm Education)",
+      "agent_name": "Tg Marchnata (Tgm Education)",
+      "agent_country": "Nigeria",
+      "agent_website": "www.tgmeducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TM"
+    },
+    {
+      "id": 5752,
+      "name": "",
+      "date": "2026-10-17",
+      "time": "09:00 - 15:00",
+      "location": "Sheraton Hotels, Lagos, Nigeria",
+      "organizer": "Tg Marchnata (Tgm Education)",
+      "agent_name": "Tg Marchnata (Tgm Education)",
+      "agent_country": "Nigeria",
+      "agent_website": "www.tgmeducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TM"
     }
   ],
   "past": [
@@ -140,22 +204,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CR"
-    },
-    {
-      "id": 3878,
-      "name": "Study Abroad Expo In Enugu",
-      "date": "2026-07-21",
-      "time": "10:00 AM - 03:00 PM",
-      "location": "Enugu City, Nigeria",
-      "organizer": "Tg Marchnata (Tgm Education)",
-      "agent_name": "Tg Marchnata (Tgm Education)",
-      "agent_country": "Nigeria",
-      "agent_website": "www.tgmeducation.com",
-      "registration_url": "https://tgmeducation.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "TM"
     },
     {
       "id": 3885,

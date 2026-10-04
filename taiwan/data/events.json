@@ -1,64 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-09-27T23:21:08",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
-    {
-      "id": 5554,
-      "name": "澳洲緊缺專業升學線上講座｜健康・護理・教育",
-      "date": "2026-09-29",
-      "time": "",
-      "location": "Online",
-      "organizer": "I.S. Global Education Co., Ltd.",
-      "agent_name": "I.S. Global Education Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.isec.com.tw/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IS"
-    },
-    {
-      "id": 5555,
-      "name": "澳洲弗林德斯大學一對一線上面談會",
-      "date": "2026-09-30",
-      "time": "",
-      "location": "Online",
-      "organizer": "I.S. Global Education Co., Ltd.",
-      "agent_name": "I.S. Global Education Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.isec.com.tw/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IS"
-    },
-    {
-      "id": 5365,
-      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
-      "date": "2026-09-30",
-      "time": "19:00 - 20:00",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 5556,
       "name": "不只學英文！5週解鎖澳洲咖啡師技能",
@@ -188,6 +140,22 @@
       "initials": "IE"
     },
     {
+      "id": 5804,
+      "name": "KOKOS Education Fair",
+      "date": "2026-10-23",
+      "time": "",
+      "location": "Online",
+      "organizer": "KOKOS International",
+      "agent_name": "KOKOS International",
+      "agent_country": "China (excludes SARs and Taiwan)",
+      "agent_website": "https://www.kokoschina.com/",
+      "registration_url": "https://www.kokoschina.com/webinar-registration",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KI"
+    },
+    {
       "id": 5565,
       "name": "英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
       "date": "2026-10-27",
@@ -205,6 +173,54 @@
     }
   ],
   "past": [
+    {
+      "id": 5365,
+      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-09-30",
+      "time": "19:00 - 20:00",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5555,
+      "name": "澳洲弗林德斯大學一對一線上面談會",
+      "date": "2026-09-30",
+      "time": "",
+      "location": "Online",
+      "organizer": "I.S. Global Education Co., Ltd.",
+      "agent_name": "I.S. Global Education Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.isec.com.tw/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IS"
+    },
+    {
+      "id": 5554,
+      "name": "澳洲緊缺專業升學線上講座｜健康・護理・教育",
+      "date": "2026-09-29",
+      "time": "",
+      "location": "Online",
+      "organizer": "I.S. Global Education Co., Ltd.",
+      "agent_name": "I.S. Global Education Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.isec.com.tw/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IS"
+    },
     {
       "id": 5364,
       "name": "曼徹斯特大學官方代表親自分享: 一次了解熱門課程、申請策略與全球就業優勢",

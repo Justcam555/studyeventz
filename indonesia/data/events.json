@@ -1,48 +1,16 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-09-27T23:21:08",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
-    {
-      "id": 5481,
-      "name": "SUN International Education Expo Roadshow 2026",
-      "date": "2026-09-27",
-      "time": "",
-      "location": "15 Kota di Indonesia",
-      "organizer": "Sun Education Group Pte Ltd",
-      "agent_name": "Sun Education Group Pte Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://suneducationgroup.com/contact-us/",
-      "registration_url": "https://suneducationgroup.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
-    },
-    {
-      "id": 5482,
-      "name": "UK & Ireland Education Fair: Meet Top UK & Irish Institutions",
-      "date": "2026-10-03",
-      "time": "",
-      "location": "Pan Pacific Jakarta Pacific Ballroom 11th Floor, Thamrin Nine Complex",
-      "organizer": "Sun Education Group Pte Ltd",
-      "agent_name": "Sun Education Group Pte Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://suneducationgroup.com/contact-us/",
-      "registration_url": "https://suneducationgroup.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
-    },
     {
       "id": 5295,
       "name": "[Medan] Australia Education Expo 2026",
@@ -93,6 +61,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5482,
+      "name": "UK & Ireland Education Fair: Meet Top UK & Irish Institutions",
+      "date": "2026-10-03",
+      "time": "",
+      "location": "Pan Pacific Jakarta Pacific Ballroom 11th Floor, Thamrin Nine Complex",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5481,
+      "name": "SUN International Education Expo Roadshow 2026",
+      "date": "2026-09-27",
+      "time": "",
+      "location": "15 Kota di Indonesia",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "https://suneducationgroup.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
     {
       "id": 5292,
       "name": "IDP Medan Education Fair - September 2026",

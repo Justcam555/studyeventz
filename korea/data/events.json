@@ -1,22 +1,38 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-09-27T23:21:09",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
     {
-      "id": 5318,
+      "id": 5732,
+      "name": "📢 2026 호주유학클럽 코엑스 특별세미나 참가신청｜조기유학 & 유학후이민",
+      "date": "2026-10-05",
+      "time": "",
+      "location": "Seoul, COEX (implied by title and context of Seoul office)",
+      "organizer": "Honew Consulting Group",
+      "agent_name": "Honew Consulting Group",
+      "agent_country": "South Korea",
+      "agent_website": "https://www.honew.com.au/",
+      "registration_url": "https://www.honew.com.au/notice",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HC"
+    },
+    {
+      "id": 5736,
       "name": "2026 UK University Fair",
       "date": "2026-10-16",
       "time": "13:00 - 17:00",
-      "location": "Seoul, South Korea",
+      "location": "Seoul, South Korea (ST Center)",
       "organizer": "UKEN",
       "agent_name": "UKEN",
       "agent_country": "South Korea",
@@ -44,11 +60,11 @@
       "initials": "KK"
     },
     {
-      "id": 5319,
+      "id": 5737,
       "name": "2026 UK University Fair",
       "date": "2026-10-17",
       "time": "11:00 - 17:00",
-      "location": "Seoul, South Korea",
+      "location": "Seoul, South Korea (ST Center)",
       "organizer": "UKEN",
       "agent_name": "UKEN",
       "agent_country": "South Korea",
@@ -58,6 +74,54 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "UK"
+    },
+    {
+      "id": 5734,
+      "name": "입학 설명회",
+      "date": "2026-10-22",
+      "time": "",
+      "location": "Online",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5735,
+      "name": "입학 설명회",
+      "date": "2026-10-24",
+      "time": "",
+      "location": "Online",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5731,
+      "name": "IDP 세계유학박람회",
+      "date": "2026-10-31",
+      "time": "12:00 PM - 4:00 PM",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "South Korea",
+      "agent_website": "https://www.idp.com/korea",
+      "registration_url": "https://www.idp.com/korea/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
@@ -78,22 +142,6 @@
       "initials": "UA"
     },
     {
-      "id": 5034,
-      "name": "입학 설명회",
-      "date": "2026-08-13",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
       "id": 5032,
       "name": "호주 약대 졸업 후 진로 세미나 (현직 약사님 토크 세션)",
       "date": "2026-08-08",
@@ -108,38 +156,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EA"
-    },
-    {
-      "id": 5033,
-      "name": "입학 설명회",
-      "date": "2026-08-08",
-      "time": "",
-      "location": "서울시 강남구 테헤란로 416, 연봉빌딩 2층 (선릉역 1번 출구)",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 3829,
-      "name": "2026 영국학생비자 세미나",
-      "date": "2026-07-25",
-      "time": "1:00 PM - 2:00 PM",
-      "location": "Seoul, South Korea",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "https://www.idp.com/korea",
-      "registration_url": "https://www.idp.com/korea/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 777,

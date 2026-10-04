@@ -1,22 +1,22 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-09-27T23:21:08",
+  "generated_at": "2026-10-04T21:03:25",
   "window": {
-    "from": "2026-09-27",
-    "to": "2026-10-27"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "archive": {
-    "from": "2024-09-27",
-    "to": "2026-09-26"
+    "from": "2024-10-04",
+    "to": "2026-10-03"
   },
   "events": [
     {
-      "id": 5322,
-      "name": "Glion & Les Roches Info Session",
+      "id": 5739,
+      "name": "Glion & Les roches Info Session",
       "date": "2026-10-10",
       "time": "11:00 - 12:00",
-      "location": "Online",
+      "location": "Penang / Online, Malaysia",
       "organizer": "SUN EDUCATION MALAYSIA",
       "agent_name": "SUN EDUCATION MALAYSIA",
       "agent_country": "Malaysia",
@@ -28,11 +28,11 @@
       "initials": "SE"
     },
     {
-      "id": 5320,
+      "id": 5738,
       "name": "SUN EDUCATION EXPO MELAKA 2026",
       "date": "2026-10-17",
       "time": "",
-      "location": "Utopia Workspaces Melaka, Melaka, Malaysia",
+      "location": "Melaka, Malaysia",
       "organizer": "SUN EDUCATION MALAYSIA",
       "agent_name": "SUN EDUCATION MALAYSIA",
       "agent_country": "Malaysia",
@@ -45,22 +45,6 @@
     }
   ],
   "past": [
-    {
-      "id": 5321,
-      "name": "Simon Fraser University Info Session",
-      "date": "2026-09-23",
-      "time": "15:00 - 17:00",
-      "location": "Online",
-      "organizer": "SUN EDUCATION MALAYSIA",
-      "agent_name": "SUN EDUCATION MALAYSIA",
-      "agent_country": "Malaysia",
-      "agent_website": "https://malaysia.suneducationgroup.com/",
-      "registration_url": "https://malaysia.suneducationgroup.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
-    },
     {
       "id": 5323,
       "name": "Study Locally & Abroad Education Fair 2026",
@@ -284,22 +268,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "BA"
-    },
-    {
-      "id": 5044,
-      "name": "SUN international Education Expo 2026",
-      "date": "2026-08-02",
-      "time": "",
-      "location": "Malaysia",
-      "organizer": "SUN Education Malaysia",
-      "agent_name": "SUN Education Malaysia",
-      "agent_country": "Malaysia",
-      "agent_website": "https://malaysia.suneducationgroup.com/contact/",
-      "registration_url": "https://malaysia.suneducationgroup.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
     },
     {
       "id": 3855,
