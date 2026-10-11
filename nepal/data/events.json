@@ -1,47 +1,47 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
     {
-      "id": 5744,
-      "name": "IDP Canada Master's Virtual Fair | Nepal",
-      "date": "2026-10-08",
-      "time": "15:15 - 19:15",
-      "location": "Online",
-      "organizer": "IDP Education Student Services Nepal Private Limited",
-      "agent_name": "IDP Education Student Services Nepal Private Limited",
-      "agent_country": "Nepal",
-      "agent_website": "https://www.idp.com/nepal/",
-      "registration_url": "https://www.idp.com/nepal/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5748,
-      "name": "Free Seminar / Counselling : Study UK / Ireland",
-      "date": "2026-10-09",
+      "id": 5955,
+      "name": "Discover Melbourne Webinars",
+      "date": "2026-10-13",
       "time": "",
       "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
+      "organizer": "CLUB STUDY Global",
+      "agent_name": "CLUB STUDY Global",
       "agent_country": "Nepal",
-      "agent_website": "https://www.geebeeworld.com/",
+      "agent_website": "https://www.clubstudyglobal.com/",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "GE"
+      "initials": "CS"
+    },
+    {
+      "id": 5956,
+      "name": "Discover Melbourne Webinars",
+      "date": "2026-10-14",
+      "time": "",
+      "location": "Online",
+      "organizer": "CLUB STUDY Global",
+      "agent_name": "CLUB STUDY Global",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.clubstudyglobal.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CS"
     },
     {
       "id": 5749,
@@ -74,6 +74,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
+    },
+    {
+      "id": 5957,
+      "name": "UK Last-Minute Application Week | AHZ Rajshahi",
+      "date": "2026-10-24",
+      "time": "",
+      "location": "Rajshahi, Bangladesh",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nepal",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
     },
     {
       "id": 5751,
@@ -109,6 +125,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5748,
+      "name": "Free Seminar / Counselling : Study UK / Ireland",
+      "date": "2026-10-09",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
+    {
+      "id": 5744,
+      "name": "IDP Canada Master's Virtual Fair | Nepal",
+      "date": "2026-10-08",
+      "time": "15:15 - 19:15",
+      "location": "Online",
+      "organizer": "IDP Education Student Services Nepal Private Limited",
+      "agent_name": "IDP Education Student Services Nepal Private Limited",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.idp.com/nepal/",
+      "registration_url": "https://www.idp.com/nepal/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 5506,
       "name": "Australia Admission Day",

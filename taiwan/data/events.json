@@ -1,48 +1,16 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
-    {
-      "id": 5556,
-      "name": "不只學英文！5週解鎖澳洲咖啡師技能",
-      "date": "2026-10-05",
-      "time": "",
-      "location": "Taipei",
-      "organizer": "I.S. Global Education Co., Ltd.",
-      "agent_name": "I.S. Global Education Co., Ltd.",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.isec.com.tw/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IS"
-    },
-    {
-      "id": 5366,
-      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
-      "date": "2026-10-08",
-      "time": "19:00 - 20:00",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 5557,
       "name": "澳洲私立菁英中學升學說明會｜彭布羅克學校 Pembroke School",
@@ -140,22 +108,6 @@
       "initials": "IE"
     },
     {
-      "id": 5804,
-      "name": "KOKOS Education Fair",
-      "date": "2026-10-23",
-      "time": "",
-      "location": "Online",
-      "organizer": "KOKOS International",
-      "agent_name": "KOKOS International",
-      "agent_country": "China (excludes SARs and Taiwan)",
-      "agent_website": "https://www.kokoschina.com/",
-      "registration_url": "https://www.kokoschina.com/webinar-registration",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KI"
-    },
-    {
       "id": 5565,
       "name": "英國申請文件全攻略：SOP、CV、推薦信技巧大公開，讓名校看到你！",
       "date": "2026-10-27",
@@ -170,9 +122,73 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5986,
+      "name": "【展後說明會系列】10/31 美國西岸: 奧勒岡州立大學 Oregon State University",
+      "date": "2026-10-31",
+      "time": "14:00 - 15:00",
+      "location": "Online",
+      "organizer": "IDP",
+      "agent_name": "IDP",
+      "agent_country": "Taiwan",
+      "agent_website": "www.idp.com/taiwan/studyabroad",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ID"
+    },
+    {
+      "id": 5989,
+      "name": "【展後說明會系列】11/07 Simon Fraser University 西門菲莎大學 Fraser International College 大學部",
+      "date": "2026-11-07",
+      "time": "14:00 - 15:00",
+      "location": "Online",
+      "organizer": "IDP",
+      "agent_name": "IDP",
+      "agent_country": "Taiwan",
+      "agent_website": "www.idp.com/taiwan/studyabroad",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ID"
     }
   ],
   "past": [
+    {
+      "id": 5366,
+      "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-10-08",
+      "time": "19:00 - 20:00",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5556,
+      "name": "不只學英文！5週解鎖澳洲咖啡師技能",
+      "date": "2026-10-05",
+      "time": "",
+      "location": "Taipei",
+      "organizer": "I.S. Global Education Co., Ltd.",
+      "agent_name": "I.S. Global Education Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.isec.com.tw/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IS"
+    },
     {
       "id": 5365,
       "name": "SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",

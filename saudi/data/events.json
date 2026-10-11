@@ -1,14 +1,14 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:49",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
     {
@@ -22,6 +22,22 @@
       "agent_country": "Saudi Arabia",
       "agent_website": "https://jnsedu.com/contact-us/",
       "registration_url": "https://jnsedu.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JE"
+    },
+    {
+      "id": 5972,
+      "name": "Study Abroad Expo 2026 in Saudi",
+      "date": "2026-10-16",
+      "time": "16:00 - 21:00",
+      "location": "Riyadh, Saudi Arabia",
+      "organizer": "JNS Education Consultant (UK) Ltd",
+      "agent_name": "JNS Education Consultant (UK) Ltd",
+      "agent_country": "Saudi Arabia",
+      "agent_website": "www.jnsedu.com",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -92,22 +108,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 903,
-      "name": "Study Abroad Expo 2026 in Saudi",
-      "date": "2026-06-19",
-      "time": "04:00 PM – 09:00 PM",
-      "location": "Ibn Turki Hall, Sheraton Hotel Riyadh",
-      "organizer": "JNS Education Consultant (UK) Ltd",
-      "agent_name": "JNS Education Consultant (UK) Ltd",
-      "agent_country": "Saudi Arabia",
-      "agent_website": "www.jnsedu.com",
-      "registration_url": "https://jnsedu.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "JE"
     }
   ]
 }

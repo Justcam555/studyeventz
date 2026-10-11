@@ -1,32 +1,98 @@
 {
   "country": "hongkong",
   "country_name": "Hong Kong",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
     {
-      "id": 5256,
-      "name": "Kingston University - UK University Interview & Info Day",
-      "date": "2026-10-06",
-      "time": "11:00AM - 12:00PM",
-      "location": "British United Education Services Limited, Mong Kok Office / Online",
-      "organizer": "British United Education Services Limited",
-      "agent_name": "British United Education Services Limited",
+      "id": 5878,
+      "name": "Australia's Top 20 Degrees & Careers Seminar",
+      "date": "2026-10-11",
+      "time": "12:00 PM - 3:00 PM",
+      "location": "Hong Kong, Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
       "agent_country": "Hong Kong",
-      "agent_website": "britishunited.net",
-      "registration_url": "https://www.britishunited.net/seminars/#bs",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5877,
+      "name": "《孩子成功的关键：私立学校教育与金融知识》线下研讨茶会",
+      "date": "2026-10-16",
+      "time": "09:00",
+      "location": "Barangaroo, Westpac Private Bank, Hong Kong",
+      "organizer": "ACAE Hong Kong",
+      "agent_name": "ACAE Hong Kong",
+      "agent_country": "Hong Kong",
+      "agent_website": "www.australiaeducation.com.au",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "BU"
+      "initials": "AH"
     },
+    {
+      "id": 5879,
+      "name": "Australia's Top Study Pathways: Medicine, Veterinary Science",
+      "date": "2026-10-17",
+      "time": "11:00 AM - 5:00 PM",
+      "location": "Hong Kong, Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5880,
+      "name": "UCAS Seminar",
+      "date": "2026-10-24",
+      "time": "12:00 PM - 1:00 PM",
+      "location": "Hong Kong, Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 5881,
+      "name": "The University of Sydney Open Day in Hong Kong 2026",
+      "date": "2026-10-25",
+      "time": "2:00 PM - 5:00 PM",
+      "location": "Hong Kong, Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "https://www.idp.com/hongkong/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
+  "past": [
     {
       "id": 5625,
       "name": "加拿大升學展暨專題講座",
@@ -44,23 +110,21 @@
       "initials": "MO"
     },
     {
-      "id": 5624,
-      "name": "《孩子成功的关键: 私立学校教育与金融知识》线下研讨茶会",
-      "date": "2026-10-16",
-      "time": "09:00",
-      "location": "Barangaroo, Westpac Private Bank, Hong Kong",
-      "organizer": "ACAE Hong Kong",
-      "agent_name": "ACAE Hong Kong",
+      "id": 5256,
+      "name": "Kingston University - UK University Interview & Info Day",
+      "date": "2026-10-06",
+      "time": "11:00AM - 12:00PM",
+      "location": "British United Education Services Limited, Mong Kok Office / Online",
+      "organizer": "British United Education Services Limited",
+      "agent_name": "British United Education Services Limited",
       "agent_country": "Hong Kong",
-      "agent_website": "www.australiaeducation.com.au",
-      "registration_url": "",
+      "agent_website": "britishunited.net",
+      "registration_url": "https://www.britishunited.net/seminars/#bs",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AH"
-    }
-  ],
-  "past": [
+      "initials": "BU"
+    },
     {
       "id": 5467,
       "name": "澳洲中小學全方位升學講座",
@@ -108,22 +172,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "BU"
-    },
-    {
-      "id": 5251,
-      "name": "IDP / 英澳頂尖大學及中學升學展 2026",
-      "date": "2026-09-26",
-      "time": "11:00 AM - 4:30 PM",
-      "location": "Hong Kong - Hong Kong",
-      "organizer": "IDP Education Ltd",
-      "agent_name": "IDP Education Ltd",
-      "agent_country": "Hong Kong",
-      "agent_website": "https://www.idp.com/hongkong",
-      "registration_url": "https://www.idp.com/hongkong/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 5253,

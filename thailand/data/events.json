@@ -1,48 +1,16 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
-    {
-      "id": 5805,
-      "name": "SoP Clinic – เตรียมพร้อมเรียนต่อ UK",
-      "date": "2026-10-07",
-      "time": "17:00 - 19:30",
-      "location": "Hands On Silom, Bangkok, Thailand",
-      "organizer": "Hands On Education Consultants",
-      "agent_name": "Hands On Education Consultants",
-      "agent_country": "Thailand",
-      "agent_website": "www.hands-on.co.th",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HO"
-    },
-    {
-      "id": 5393,
-      "name": "[Online Event] เปิดงบเรียนภาษาต่างประเทศ 5 Destinations สุดฮิต! UK | New Zealand | Australia | Malaysia | Philippines",
-      "date": "2026-10-10",
-      "time": "13:00 - 15:00",
-      "location": "Online",
-      "organizer": "Gouni Co. Ltd",
-      "agent_name": "Gouni Co. Ltd",
-      "agent_country": "Thailand",
-      "agent_website": "https://gouni.co.th/",
-      "registration_url": "https://gouni.co.th/event/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GO"
-    },
     {
       "id": 5810,
       "name": "UCL School of Management: Exclusive 1-on-1 เรีย...",
@@ -122,15 +90,29 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ST"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 5382,
-      "name": "UAL x IDP Exclusive Event Unboxing Creativity: เปิดโลก MA สาย Creative ที่ UAL",
-      "date": "2026-10-03",
-      "time": "14:00 - 16:00",
-      "location": "Thailand - Bangkok",
+      "id": 5993,
+      "name": "",
+      "date": "2026-11-07",
+      "time": "11:00 - 12:00",
+      "location": "BRIT-Education UK Office & Online via Zoom, Bangkok, Thailand",
+      "organizer": "BRIT-Education UK",
+      "agent_name": "BRIT-Education UK",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.brit-ed.com/contact-us",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BE"
+    },
+    {
+      "id": 5990,
+      "name": "IDP Study World - Study Abroad Expo & IELTS Carnival 2026",
+      "date": "2026-11-07",
+      "time": "13:00 - 18:00",
+      "location": "Bangkok, Thailand",
       "organizer": "IDP Education Services Co., Ltd.",
       "agent_name": "IDP Education Services Co., Ltd.",
       "agent_country": "Thailand",
@@ -140,6 +122,56 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5992,
+      "name": "The Grand UK & Australia University Exhibition ครั้งที่ 44",
+      "date": "2026-11-08",
+      "time": "12:00-17:00",
+      "location": "House Samyan ชั้น 5 สามย่านมิตรทาวน์, Bangkok, Thailand",
+      "organizer": "WIN Education",
+      "agent_name": "WIN Education",
+      "agent_country": "Thailand",
+      "agent_website": "www.win-ed.com",
+      "registration_url": "https://win-ed.com/event/the-44th-grand-uk-n-australia-education-exhibition/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "WE"
+    }
+  ],
+  "past": [
+    {
+      "id": 5393,
+      "name": "[Online Event] เปิดงบเรียนภาษาต่างประเทศ 5 Destinations สุดฮิต! UK | New Zealand | Australia | Malaysia | Philippines",
+      "date": "2026-10-10",
+      "time": "13:00 - 15:00",
+      "location": "Online",
+      "organizer": "Gouni Co. Ltd",
+      "agent_name": "Gouni Co. Ltd",
+      "agent_country": "Thailand",
+      "agent_website": "https://gouni.co.th/",
+      "registration_url": "https://gouni.co.th/event/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GO"
+    },
+    {
+      "id": 5805,
+      "name": "SoP Clinic – เตรียมพร้อมเรียนต่อ UK",
+      "date": "2026-10-07",
+      "time": "17:00 - 19:30",
+      "location": "Hands On Silom, Bangkok, Thailand",
+      "organizer": "Hands On Education Consultants",
+      "agent_name": "Hands On Education Consultants",
+      "agent_country": "Thailand",
+      "agent_website": "www.hands-on.co.th",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
     },
     {
       "id": 5392,
@@ -174,38 +206,6 @@
       "initials": "OE"
     },
     {
-      "id": 5570,
-      "name": "SOP Workshop: เขียน SOP เรียนต่ออังกฤษยังไง? ให้มหาลัยตอบรับ",
-      "date": "2026-10-03",
-      "time": "11:00 - 12:00",
-      "location": "BRIT-Education UK Office & Online via Zoom, Bangkok, Thailand",
-      "organizer": "BRIT-Education UK",
-      "agent_name": "BRIT-Education UK",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.brit-ed.com/contact-us",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BE"
-    },
-    {
-      "id": 5381,
-      "name": "IDP Study World - British Boarding Schools Expo 2026",
-      "date": "2026-09-27",
-      "time": "13:00 - 17:00",
-      "location": "Thailand - Bangkok",
-      "organizer": "IDP Education Services Co., Ltd.",
-      "agent_name": "IDP Education Services Co., Ltd.",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.idp.com/thailand/office/hat-yai/idp-hat-yai/th-1004/",
-      "registration_url": "https://www.idp.com/thailand/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
       "id": 5195,
       "name": "IEC International Secondary Schools Fair September 2026",
       "date": "2026-09-26",
@@ -236,22 +236,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GO"
-    },
-    {
-      "id": 5380,
-      "name": "SOP Workshop & UK Master's Insider Day",
-      "date": "2026-09-26",
-      "time": "13:00 - 15:00",
-      "location": "Thailand - Bangkok",
-      "organizer": "IDP Education Services Co., Ltd.",
-      "agent_name": "IDP Education Services Co., Ltd.",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.idp.com/thailand/office/hat-yai/idp-hat-yai/th-1004/",
-      "registration_url": "https://www.idp.com/thailand/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 5193,

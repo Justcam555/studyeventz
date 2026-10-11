@@ -1,22 +1,22 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
     {
-      "id": 5732,
-      "name": "📢 2026 호주유학클럽 코엑스 특별세미나 참가신청｜조기유학 & 유학후이민",
-      "date": "2026-10-05",
+      "id": 5941,
+      "name": "2026 호주유학클럽 코엑스 특별세미나 참가신청｜조기유학 & 유학후이민",
+      "date": "2026-10-13",
       "time": "",
-      "location": "Seoul, COEX (implied by title and context of Seoul office)",
+      "location": "Seoul, COEX (implied by title)",
       "organizer": "Honew Consulting Group",
       "agent_name": "Honew Consulting Group",
       "agent_country": "South Korea",
@@ -44,7 +44,7 @@
       "initials": "UK"
     },
     {
-      "id": 5502,
+      "id": 5940,
       "name": "57회 코엑스 유학박람회",
       "date": "2026-10-17",
       "time": "",
@@ -76,23 +76,7 @@
       "initials": "UK"
     },
     {
-      "id": 5734,
-      "name": "입학 설명회",
-      "date": "2026-10-22",
-      "time": "",
-      "location": "Online",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 5735,
+      "id": 5943,
       "name": "입학 설명회",
       "date": "2026-10-24",
       "time": "",
@@ -106,6 +90,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 5942,
+      "name": "",
+      "date": "2026-10-31",
+      "time": "",
+      "location": "Seoul, Busan",
+      "organizer": "SOL Edu Pty Ltd",
+      "agent_name": "SOL Edu Pty Ltd",
+      "agent_country": "South Korea",
+      "agent_website": "www.soledu.net/kr/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
     },
     {
       "id": 5731,
@@ -156,22 +156,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EA"
-    },
-    {
-      "id": 777,
-      "name": "호주간호 취업 영주권 세미나",
-      "date": "2026-06-25",
-      "time": "",
-      "location": "Online",
-      "organizer": "SOL Edu Pty Ltd",
-      "agent_name": "SOL Edu Pty Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "www.soledu.net/kr/",
-      "registration_url": "https://www.soledu.net/kr/event-list/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
     },
     {
       "id": 779,

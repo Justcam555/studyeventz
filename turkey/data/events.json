@@ -1,32 +1,16 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:49",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
-    {
-      "id": 5812,
-      "name": "İzmir'de Almanya Eğitim Günleri: Devlet Üniversiteleri ve Başvuru Rehberi",
-      "date": "2026-10-08",
-      "time": "16:30 - 18:30",
-      "location": "Academix İzmir Ofisi, Izmir, Turkey",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
     {
       "id": 5395,
       "name": "IDP Yurt Dışı Eğitim Roadshow",
@@ -44,11 +28,11 @@
       "initials": "IT"
     },
     {
-      "id": 5813,
+      "id": 5995,
       "name": "İzmir'de İtalya Eğitim Günleri: İngilizce Üniversite ve Burs Fırsatları",
       "date": "2026-10-12",
       "time": "16:30 - 18:30",
-      "location": "Academix İzmir Ofisi, Izmir, Turkey",
+      "location": "Academix İzmir Ofisi, İzmir, Turkey",
       "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",
@@ -60,11 +44,11 @@
       "initials": "AA"
     },
     {
-      "id": 5814,
+      "id": 5996,
       "name": "İzmir'de Polonya & Macaristan Eğitim Günleri: Ekonomik Avrupa Eğitimi",
       "date": "2026-10-15",
       "time": "16:30 - 18:30",
-      "location": "Academix İzmir Ofisi, Izmir, Turkey",
+      "location": "Academix İzmir Ofisi, İzmir, Turkey",
       "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",
@@ -76,11 +60,11 @@
       "initials": "AA"
     },
     {
-      "id": 5815,
+      "id": 5997,
       "name": "İzmir'de İspanya Eğitim Günleri: Üniversite ve Kısmi Burs Fırsatları",
       "date": "2026-10-16",
       "time": "16:30",
-      "location": "Academix İzmir Ofisi, Izmir, Turkey",
+      "location": "Academix İzmir Ofisi, İzmir, Turkey",
       "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",
@@ -92,7 +76,7 @@
       "initials": "AA"
     },
     {
-      "id": 5816,
+      "id": 5998,
       "name": "Akare Yurtdışı Eğitim Fuarları Güz 2026 - İstanbul Avrupa",
       "date": "2026-10-17",
       "time": "14:00 - 18:00",
@@ -108,7 +92,7 @@
       "initials": "AA"
     },
     {
-      "id": 5817,
+      "id": 5999,
       "name": "Akare Yurtdışı Eğitim Fuarları Güz 2026 - İstanbul Anadolu",
       "date": "2026-10-19",
       "time": "14:00 - 18:00",
@@ -124,7 +108,7 @@
       "initials": "AA"
     },
     {
-      "id": 5819,
+      "id": 6001,
       "name": "Akare Yurtdışı Eğitim Fuarları Güz 2026 - Ankara",
       "date": "2026-10-21",
       "time": "14:00 - 18:00",
@@ -140,11 +124,11 @@
       "initials": "AA"
     },
     {
-      "id": 5820,
+      "id": 6002,
       "name": "Akare Yurtdışı Eğitim Fuarları Güz 2026 - İzmir",
       "date": "2026-10-23",
       "time": "14:00 - 18:00",
-      "location": "Swissotel Büyük Efes, Izmir, Turkey",
+      "location": "Swissotel Büyük Efes, İzmir, Turkey",
       "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",

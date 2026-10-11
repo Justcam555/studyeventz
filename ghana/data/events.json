@@ -1,16 +1,17 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 5248,
       "name": "Study at Top UK & Australian Universities in Dubai Campuses - IDP Ghana",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IG"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5249,
       "name": "UK UNIVERSITY EXPO 2026 | FIESTA ROYALE HOTEL, ACCRA, GHANA",

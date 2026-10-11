@@ -1,22 +1,22 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-10-04T21:03:25",
+  "generated_at": "2026-10-11T21:12:48",
   "window": {
-    "from": "2026-10-04",
-    "to": "2026-11-03"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "archive": {
-    "from": "2024-10-04",
-    "to": "2026-10-03"
+    "from": "2024-10-11",
+    "to": "2026-10-10"
   },
   "events": [
     {
-      "id": 5295,
-      "name": "[Medan] Australia Education Expo 2026",
-      "date": "2026-10-08",
-      "time": "15:30",
-      "location": "Grand Mercure, Medan Ruangan Jasmine 1, Medan, Indonesia",
+      "id": 5293,
+      "name": "[Bali] Australia Education Expo 2026",
+      "date": "2026-10-11",
+      "time": "14:00",
+      "location": "Fairfield by Marriott Sunset Road, Kuta, Bali, Indonesia",
       "organizer": "Progress Study Consultancy Pty Ltd",
       "agent_name": "Progress Study Consultancy Pty Ltd",
       "agent_country": "Indonesia",
@@ -27,6 +27,56 @@
       "logo_bg_color": "",
       "initials": "PS"
     },
+    {
+      "id": 5923,
+      "name": "Navigating University Admission 2027 & Beyond",
+      "date": "2026-10-17",
+      "time": "",
+      "location": "Grillnesia",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5922,
+      "name": "The Canadian Advantages: Research, Co-op, and Career-Ready Education",
+      "date": "2026-10-19",
+      "time": "",
+      "location": "@America, Pacific Place Mall 3rd floor #325, Jl. Jendral Sudirman Kav.52-53 Kebayoran Baru, South Jakarta, 12190",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5921,
+      "name": "Jelajah Cafe x Teman Nongkrong",
+      "date": "2026-10-24",
+      "time": "",
+      "location": "Online",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    }
+  ],
+  "past": [
     {
       "id": 5294,
       "name": "[Jakarta] Australia Education Expo 2026",
@@ -44,11 +94,11 @@
       "initials": "PS"
     },
     {
-      "id": 5293,
-      "name": "[Bali] Australia Education Expo 2026",
-      "date": "2026-10-11",
-      "time": "14:00",
-      "location": "Fairfield by Marriott Sunset Road, Kuta, Bali, Indonesia",
+      "id": 5295,
+      "name": "[Medan] Australia Education Expo 2026",
+      "date": "2026-10-08",
+      "time": "15:30",
+      "location": "Grand Mercure, Medan Ruangan Jasmine 1, Medan, Indonesia",
       "organizer": "Progress Study Consultancy Pty Ltd",
       "agent_name": "Progress Study Consultancy Pty Ltd",
       "agent_country": "Indonesia",
@@ -58,40 +108,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PS"
-    }
-  ],
-  "past": [
-    {
-      "id": 5482,
-      "name": "UK & Ireland Education Fair: Meet Top UK & Irish Institutions",
-      "date": "2026-10-03",
-      "time": "",
-      "location": "Pan Pacific Jakarta Pacific Ballroom 11th Floor, Thamrin Nine Complex",
-      "organizer": "Sun Education Group Pte Ltd",
-      "agent_name": "Sun Education Group Pte Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://suneducationgroup.com/contact-us/",
-      "registration_url": "https://suneducationgroup.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
-    },
-    {
-      "id": 5481,
-      "name": "SUN International Education Expo Roadshow 2026",
-      "date": "2026-09-27",
-      "time": "",
-      "location": "15 Kota di Indonesia",
-      "organizer": "Sun Education Group Pte Ltd",
-      "agent_name": "Sun Education Group Pte Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://suneducationgroup.com/contact-us/",
-      "registration_url": "https://suneducationgroup.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
     },
     {
       "id": 5292,
