@@ -1,48 +1,16 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-10-11T21:12:49",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
-    {
-      "id": 6012,
-      "name": "Study Canadian Programmes in Dubai",
-      "date": "2026-10-12",
-      "time": "12:30 PM",
-      "location": "Dubai, UAE",
-      "organizer": "UNISERV Education Dubai",
-      "agent_name": "UNISERV Education Dubai",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.uniserveducation.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
-      "id": 6003,
-      "name": "",
-      "date": "2026-10-17",
-      "time": "12:00 PM - 5:30 PM",
-      "location": "Dubai, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 6004,
       "name": "",
@@ -125,6 +93,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6003,
+      "name": "",
+      "date": "2026-10-17",
+      "time": "12:00 PM - 5:30 PM",
+      "location": "Dubai, United Arab Emirates",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6012,
+      "name": "Study Canadian Programmes in Dubai",
+      "date": "2026-10-12",
+      "time": "12:30 PM",
+      "location": "Dubai, UAE",
+      "organizer": "UNISERV Education Dubai",
+      "agent_name": "UNISERV Education Dubai",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.uniserveducation.com/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
     {
       "id": 4645,
       "name": "UK Pre-Departure Event",

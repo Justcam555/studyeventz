@@ -1,32 +1,66 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
     {
-      "id": 5973,
-      "name": "Aiming to play college soccer in the US? UChicago Men's Soccer coach Thomas Kirk sits down with George Marin",
-      "date": "2026-10-11",
-      "time": "20:00",
-      "location": "Singapore",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
+      "id": 5975,
+      "name": "Meet The Expert - The Australian National University",
+      "date": "2026-10-21",
+      "time": "15:00 - 16:00",
+      "location": "Online",
+      "organizer": "IDP Education",
+      "agent_name": "IDP Education",
       "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
+      "agent_website": "https://www.idp.com/singapore/study-abroad-consultants/singapore-city/orange-grove-road/sg-1000/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6378,
+      "name": "Halloween Party",
+      "date": "2026-10-30",
+      "time": "18:00 - 23:55",
+      "location": "Horizon Banquet Hall, Level 3A, Menara BAC, Singapore",
+      "organizer": "BAC College (Singapore) Pte Ltd",
+      "agent_name": "BAC College (Singapore) Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "bac.edu.sg",
+      "registration_url": "https://forms.cloud.microsoft/r/meA2scUW6D",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    },
+    {
+      "id": 6377,
+      "name": "Communication Skills for Career Success",
+      "date": "2026-11-10",
+      "time": "19:00 - 20:30",
+      "location": "Classroom A06, Main Wing, PSB Academy, Singapore",
+      "organizer": "PSB Academy(Singapore)",
+      "agent_name": "PSB Academy(Singapore)",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.psb-academy.edu.sg/",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AC"
-    },
+      "initials": "PA"
+    }
+  ],
+  "past": [
     {
       "id": 5974,
       "name": "Meet The Expert - University of Birmingham",
@@ -44,39 +78,21 @@
       "initials": "IE"
     },
     {
-      "id": 5775,
-      "name": "Career Fair 14 October 2026",
-      "date": "2026-10-14",
-      "time": "13:00",
-      "location": "Main Wing, City Campus, Singapore",
-      "organizer": "PSB Academy(Singapore)",
-      "agent_name": "PSB Academy(Singapore)",
+      "id": 5973,
+      "name": "Aiming to play college soccer in the US? UChicago Men's Soccer coach Thomas Kirk sits down with George Marin",
+      "date": "2026-10-11",
+      "time": "20:00",
+      "location": "Singapore",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
       "agent_country": "Singapore",
-      "agent_website": "https://www.psb-academy.edu.sg/",
+      "agent_website": "https://www.addededucation.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "PA"
+      "initials": "AC"
     },
-    {
-      "id": 5975,
-      "name": "Meet The Expert - The Australian National University",
-      "date": "2026-10-21",
-      "time": "15:00 - 16:00",
-      "location": "Online",
-      "organizer": "IDP Education",
-      "agent_name": "IDP Education",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore/study-abroad-consultants/singapore-city/orange-grove-road/sg-1000/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
     {
       "id": 5774,
       "name": "Study in UK/Australia Open House",
@@ -156,22 +172,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EN"
-    },
-    {
-      "id": 1526,
-      "name": "C-Suite Connect 2026: Building Future-Ready Leaders for the AI Economy",
-      "date": "2026-06-27",
-      "time": "",
-      "location": "BAC College (Singapore), 45 New Bridge Road, Singapore",
-      "organizer": "BAC College (Singapore) Pte Ltd",
-      "agent_name": "BAC College (Singapore) Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "bac.edu.sg",
-      "registration_url": "https://www.bac.edu.sg/#pix-tab-1766118752385-039b2d62-9d83",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BC"
     }
   ]
 }

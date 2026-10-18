@@ -1,22 +1,23 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:54",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
-      "id": 5961,
+      "id": 5959,
       "name": "",
-      "date": "2026-10-13",
+      "date": "2026-10-17",
       "time": "09:00 - 15:00",
-      "location": "Hotel Presidential, Port Harcourt, Nigeria",
+      "location": "Sheraton Hotels, Lagos, Nigeria",
       "organizer": "Tg Marchnata (Tgm Education)",
       "agent_name": "Tg Marchnata (Tgm Education)",
       "agent_country": "Nigeria",
@@ -28,11 +29,27 @@
       "initials": "TM"
     },
     {
-      "id": 5962,
-      "name": "UK UNIVERSITY EXPO 2026 | AHZ HOUSE, OPEBI ROAD, IKEJA | LAGOS",
-      "date": "2026-10-13",
-      "time": "10:00 – 16:00",
+      "id": 5958,
+      "name": "University of Kent Is Visiting BCIE Ikeja",
+      "date": "2026-10-16",
+      "time": "15:00",
       "location": "Lagos, Nigeria",
+      "organizer": "British Canadian International Education (Nigeria)",
+      "agent_name": "British Canadian International Education (Nigeria)",
+      "agent_country": "Nigeria",
+      "agent_website": "https://bcie.co.uk//offices/nigeria---abuja",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    },
+    {
+      "id": 5963,
+      "name": "UK UNIVERSITY EXPO 2026 | HOTEL PRESIDENTIAL | PORT HARCOURT",
+      "date": "2026-10-15",
+      "time": "10:00 – 16:00",
+      "location": "Port Harcourt, Nigeria",
       "organizer": "AHZ Associates",
       "agent_name": "AHZ Associates",
       "agent_country": "Nigeria",
@@ -60,11 +77,11 @@
       "initials": "TM"
     },
     {
-      "id": 5963,
-      "name": "UK UNIVERSITY EXPO 2026 | HOTEL PRESIDENTIAL | PORT HARCOURT",
-      "date": "2026-10-15",
+      "id": 5962,
+      "name": "UK UNIVERSITY EXPO 2026 | AHZ HOUSE, OPEBI ROAD, IKEJA | LAGOS",
+      "date": "2026-10-13",
       "time": "10:00 – 16:00",
-      "location": "Port Harcourt, Nigeria",
+      "location": "Lagos, Nigeria",
       "organizer": "AHZ Associates",
       "agent_name": "AHZ Associates",
       "agent_country": "Nigeria",
@@ -76,27 +93,11 @@
       "initials": "AA"
     },
     {
-      "id": 5958,
-      "name": "University of Kent Is Visiting BCIE Ikeja",
-      "date": "2026-10-16",
-      "time": "15:00",
-      "location": "Lagos, Nigeria",
-      "organizer": "British Canadian International Education (Nigeria)",
-      "agent_name": "British Canadian International Education (Nigeria)",
-      "agent_country": "Nigeria",
-      "agent_website": "https://bcie.co.uk//offices/nigeria---abuja",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BC"
-    },
-    {
-      "id": 5959,
+      "id": 5961,
       "name": "",
-      "date": "2026-10-17",
+      "date": "2026-10-13",
       "time": "09:00 - 15:00",
-      "location": "Sheraton Hotels, Lagos, Nigeria",
+      "location": "Hotel Presidential, Port Harcourt, Nigeria",
       "organizer": "Tg Marchnata (Tgm Education)",
       "agent_name": "Tg Marchnata (Tgm Education)",
       "agent_country": "Nigeria",
@@ -106,9 +107,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "TM"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5334,
       "name": "Study at Top UK & Australian Universities in Dubai Campuses",

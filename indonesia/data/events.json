@@ -1,48 +1,16 @@
 {
   "country": "indonesia",
   "country_name": "Indonesia",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:54",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
-    {
-      "id": 5293,
-      "name": "[Bali] Australia Education Expo 2026",
-      "date": "2026-10-11",
-      "time": "14:00",
-      "location": "Fairfield by Marriott Sunset Road, Kuta, Bali, Indonesia",
-      "organizer": "Progress Study Consultancy Pty Ltd",
-      "agent_name": "Progress Study Consultancy Pty Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://progress-study.com.au/contact-us/bali/",
-      "registration_url": "https://progress-study.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "PS"
-    },
-    {
-      "id": 5923,
-      "name": "Navigating University Admission 2027 & Beyond",
-      "date": "2026-10-17",
-      "time": "",
-      "location": "Grillnesia",
-      "organizer": "Sun Education Group Pte Ltd",
-      "agent_name": "Sun Education Group Pte Ltd",
-      "agent_country": "Indonesia",
-      "agent_website": "https://suneducationgroup.com/contact-us/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SE"
-    },
     {
       "id": 5922,
       "name": "The Canadian Advantages: Research, Co-op, and Career-Ready Education",
@@ -60,6 +28,22 @@
       "initials": "SE"
     },
     {
+      "id": 6332,
+      "name": "AECC In Your Area - Surabaya",
+      "date": "2026-10-22",
+      "time": "16:00",
+      "location": "Surabaya, Indonesia",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Indonesia",
+      "agent_website": "www.aeccglobal.co.id",
+      "registration_url": "https://www.aeccglobal.com/id/en/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
       "id": 5921,
       "name": "Jelajah Cafe x Teman Nongkrong",
       "date": "2026-10-24",
@@ -74,9 +58,73 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SE"
+    },
+    {
+      "id": 6333,
+      "name": "Nusantara Permai School - Education Fair",
+      "date": "2026-10-24",
+      "time": "10:00",
+      "location": "Jakarta, Indonesia",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Indonesia",
+      "agent_website": "www.aeccglobal.co.id",
+      "registration_url": "https://www.aeccglobal.com/id/en/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
+      "id": 6334,
+      "name": "AECC In Your Area - Jakarta",
+      "date": "2026-11-06",
+      "time": "18:00",
+      "location": "Jakarta, Indonesia",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Indonesia",
+      "agent_website": "www.aeccglobal.co.id",
+      "registration_url": "https://www.aeccglobal.com/id/en/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
     }
   ],
   "past": [
+    {
+      "id": 5923,
+      "name": "Navigating University Admission 2027 & Beyond",
+      "date": "2026-10-17",
+      "time": "",
+      "location": "Grillnesia",
+      "organizer": "Sun Education Group Pte Ltd",
+      "agent_name": "Sun Education Group Pte Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://suneducationgroup.com/contact-us/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SE"
+    },
+    {
+      "id": 5293,
+      "name": "[Bali] Australia Education Expo 2026",
+      "date": "2026-10-11",
+      "time": "14:00",
+      "location": "Fairfield by Marriott Sunset Road, Kuta, Bali, Indonesia",
+      "organizer": "Progress Study Consultancy Pty Ltd",
+      "agent_name": "Progress Study Consultancy Pty Ltd",
+      "agent_country": "Indonesia",
+      "agent_website": "https://progress-study.com.au/contact-us/bali/",
+      "registration_url": "https://progress-study.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "PS"
+    },
     {
       "id": 5294,
       "name": "[Jakarta] Australia Education Expo 2026",
@@ -300,22 +348,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CS"
-    },
-    {
-      "id": 4968,
-      "name": "Cara mudah kuliah di EROPA dan USA dengan beasiswa parsial bersama GEDU Education",
-      "date": "2026-08-08",
-      "time": "2:00 PM - 5:00 PM",
-      "location": "Terrace Maxx Coffee, Lippo Mall Puri, Jakarta Barat, Jakarta",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Indonesia",
-      "agent_website": "www.aeccglobal.co.id",
-      "registration_url": "https://www.aeccglobal.co.id/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
     },
     {
       "id": 4963,

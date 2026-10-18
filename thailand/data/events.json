@@ -1,64 +1,16 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:54",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
-    {
-      "id": 5810,
-      "name": "UCL School of Management: Exclusive 1-on-1 เรีย...",
-      "date": "2026-10-16",
-      "time": "17:00 - 19:00",
-      "location": "Online",
-      "organizer": "StudyIn",
-      "agent_name": "StudyIn",
-      "agent_country": "Thailand",
-      "agent_website": "https://gostudyin.com/thailand/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ST"
-    },
-    {
-      "id": 5806,
-      "name": "UK Application Timeline Seminar",
-      "date": "2026-10-17",
-      "time": "14:00 - 15:30",
-      "location": "Online via Zoom, Thailand",
-      "organizer": "Hands On Education Consultants",
-      "agent_name": "Hands On Education Consultants",
-      "agent_country": "Thailand",
-      "agent_website": "www.hands-on.co.th",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HO"
-    },
-    {
-      "id": 5809,
-      "name": "Ready to Apply! เตรียม SOP & IELTS ให้โปรไฟล์ T...",
-      "date": "2026-10-17",
-      "time": "14:00 - 15:30",
-      "location": "Online",
-      "organizer": "StudyIn",
-      "agent_name": "StudyIn",
-      "agent_country": "Thailand",
-      "agent_website": "https://gostudyin.com/thailand/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ST"
-    },
     {
       "id": 5808,
       "name": "Introduction to University of Edinburgh & 1-on-...",
@@ -74,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ST"
+    },
+    {
+      "id": 6418,
+      "name": "MBA SPOT OFFER DAY with University of Surrey",
+      "date": "2026-10-29",
+      "time": "15:00 - 16:00",
+      "location": "BRIT-Education UK Office, Trendy Building ชั้น 2, Sukhumvit 13, Bangkok, Thailand",
+      "organizer": "BRIT-Education UK",
+      "agent_name": "BRIT-Education UK",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.brit-ed.com/contact-us",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BE"
     },
     {
       "id": 5807,
@@ -92,11 +60,11 @@
       "initials": "ST"
     },
     {
-      "id": 5993,
-      "name": "",
+      "id": 6421,
+      "name": "SOP Workshop: How to write a successful SOP for UK universities",
       "date": "2026-11-07",
       "time": "11:00 - 12:00",
-      "location": "BRIT-Education UK Office & Online via Zoom, Bangkok, Thailand",
+      "location": "Online via Zoom",
       "organizer": "BRIT-Education UK",
       "agent_name": "BRIT-Education UK",
       "agent_country": "Thailand",
@@ -138,24 +106,104 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "WE"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 5393,
-      "name": "[Online Event] เปิดงบเรียนภาษาต่างประเทศ 5 Destinations สุดฮิต! UK | New Zealand | Australia | Malaysia | Philippines",
-      "date": "2026-10-10",
-      "time": "13:00 - 15:00",
-      "location": "Online",
+      "id": 6419,
+      "name": "UK University Fair 2027",
+      "date": "2026-11-11",
+      "time": "16:00 - 19:00",
+      "location": "Grande Centre Point Terminal 21 Floor C, Bangkok, Thailand",
+      "organizer": "BRIT-Education UK",
+      "agent_name": "BRIT-Education UK",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.brit-ed.com/contact-us",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BE"
+    },
+    {
+      "id": 6417,
+      "name": "GoUni Road to Study Abroad Fair 2026 งานแฟร์เรียนต่อต่างประเทศ ร่วมฉลอง GoUni ครบรอบ 11 ปีแบบยิ่งใหญ่ที่สุดแห่งปี!",
+      "date": "2026-11-11",
+      "time": "3:00 pm - 8:00 pm",
+      "location": "Samyan Mitrtown Hall, 5th Floor, Samyan Mitrtown, Bangkok, Thailand",
       "organizer": "Gouni Co. Ltd",
       "agent_name": "Gouni Co. Ltd",
       "agent_country": "Thailand",
       "agent_website": "https://gouni.co.th/",
-      "registration_url": "https://gouni.co.th/event/",
+      "registration_url": "",
       "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GO"
+    },
+    {
+      "id": 6415,
+      "name": "Australia Open Day 2026 งานศึกษาต่อประเทศออสเตรเลีย",
+      "date": "2026-11-14",
+      "time": "10:00 am - 4:00 pm",
+      "location": "Bangkok Prep International School, Bangkok, Thailand",
+      "organizer": "One Education Consulting Company Limited",
+      "agent_name": "One Education Consulting Company Limited",
+      "agent_country": "Thailand",
+      "agent_website": "https://one-educationgroup.com/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/One%20Education%20Logo%20-%20Green.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OE"
+    }
+  ],
+  "past": [
+    {
+      "id": 5809,
+      "name": "Ready to Apply! เตรียม SOP & IELTS ให้โปรไฟล์ T...",
+      "date": "2026-10-17",
+      "time": "14:00 - 15:30",
+      "location": "Online",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/thailand/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
+    },
+    {
+      "id": 5806,
+      "name": "UK Application Timeline Seminar",
+      "date": "2026-10-17",
+      "time": "14:00 - 15:30",
+      "location": "Online via Zoom, Thailand",
+      "organizer": "Hands On Education Consultants",
+      "agent_name": "Hands On Education Consultants",
+      "agent_country": "Thailand",
+      "agent_website": "www.hands-on.co.th",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
+    },
+    {
+      "id": 5810,
+      "name": "UCL School of Management: Exclusive 1-on-1 เรีย...",
+      "date": "2026-10-16",
+      "time": "17:00 - 19:00",
+      "location": "Online",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/thailand/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
     },
     {
       "id": 5805,
@@ -172,22 +220,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "HO"
-    },
-    {
-      "id": 5392,
-      "name": "[Online Event] Boarding School & Pathway Day ฟังฟรี! เก็บข้อมูลเรียนต่อมัธยมต่างประเทศ และ ปริญญาตรี UK",
-      "date": "2026-10-03",
-      "time": "13:00 - 15:00",
-      "location": "Online",
-      "organizer": "Gouni Co. Ltd",
-      "agent_name": "Gouni Co. Ltd",
-      "agent_country": "Thailand",
-      "agent_website": "https://gouni.co.th/",
-      "registration_url": "https://gouni.co.th/event/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GO"
     },
     {
       "id": 5383,
@@ -220,22 +252,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IA"
-    },
-    {
-      "id": 5391,
-      "name": "[Online Event] เรียนปริญญาโท UK ปักเลย! โต้วาทีกันแบบจัดเต็ม London vs. Outside London Top U ที่ไหนเหมาะกับเรา?",
-      "date": "2026-09-26",
-      "time": "13:00 - 15:00",
-      "location": "Online",
-      "organizer": "Gouni Co. Ltd",
-      "agent_name": "Gouni Co. Ltd",
-      "agent_country": "Thailand",
-      "agent_website": "https://gouni.co.th/",
-      "registration_url": "https://gouni.co.th/event/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GO"
     },
     {
       "id": 5193,

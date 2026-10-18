@@ -1,47 +1,31 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
     {
-      "id": 5730,
-      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
-      "date": "2026-10-13",
-      "time": "7:00 AM EDT | 4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
+      "id": 6338,
+      "name": "UK & Ireland University Fair",
+      "date": "2026-10-22",
+      "time": "13:00 - 18:00",
+      "location": "Samarkand, Uzbekistan",
+      "organizer": "SI-UK",
+      "agent_name": "SI-UK",
       "agent_country": "Kenya",
-      "agent_website": "www.applyboard.com",
+      "agent_website": "studyin-uk.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 5932,
-      "name": "Northeastern University: Global Study Expo Africa",
-      "date": "2026-10-17",
-      "time": "16:00",
-      "location": "Nairobi, Kenya",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
+      "initials": "SU"
     },
     {
       "id": 5726,
@@ -58,6 +42,70 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CR"
+    },
+    {
+      "id": 6339,
+      "name": "UK & Ireland University Fair",
+      "date": "2026-10-24",
+      "time": "11:00 - 17:00",
+      "location": "Tashkent",
+      "organizer": "SI-UK",
+      "agent_name": "SI-UK",
+      "agent_country": "Kenya",
+      "agent_website": "studyin-uk.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SU"
+    },
+    {
+      "id": 6340,
+      "name": "UK Visa Webinar",
+      "date": "2026-10-26",
+      "time": "16:00 - 17:00",
+      "location": "Online",
+      "organizer": "SI-UK",
+      "agent_name": "SI-UK",
+      "agent_country": "Kenya",
+      "agent_website": "studyin-uk.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SU"
+    },
+    {
+      "id": 6341,
+      "name": "UK & Ireland University Fair",
+      "date": "2026-10-27",
+      "time": "13:00 - 18:00",
+      "location": "Fergana, Uzbekistan",
+      "organizer": "SI-UK",
+      "agent_name": "SI-UK",
+      "agent_country": "Kenya",
+      "agent_website": "studyin-uk.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SU"
+    },
+    {
+      "id": 6343,
+      "name": "Managing AI at Work and Employees as ...",
+      "date": "2026-10-28",
+      "time": "14:30 - 15:30",
+      "location": "Online",
+      "organizer": "SI-UK",
+      "agent_name": "SI-UK",
+      "agent_country": "Kenya",
+      "agent_website": "studyin-uk.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SU"
     },
     {
       "id": 5933,
@@ -109,6 +157,38 @@
     }
   ],
   "past": [
+    {
+      "id": 5932,
+      "name": "Northeastern University: Global Study Expo Africa",
+      "date": "2026-10-17",
+      "time": "16:00",
+      "location": "Nairobi, Kenya",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
+      "agent_country": "Kenya",
+      "agent_website": "www.uniserveducation.com/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
+    },
+    {
+      "id": 5730,
+      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
+      "date": "2026-10-13",
+      "time": "7:00 AM EDT | 4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Kenya",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
     {
       "id": 5729,
       "name": "Learn More About London School of Business and Finance (Malaysia and Singapore)",

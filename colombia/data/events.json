@@ -1,16 +1,33 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 6159,
+      "name": "",
+      "date": "2026-11-10",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "Latin American Education S.A.",
+      "agent_name": "Latin American Education S.A.",
+      "agent_country": "Colombia",
+      "agent_website": "https://lae-edu.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "LA"
+    }
+  ],
   "past": [
     {
       "id": 4780,

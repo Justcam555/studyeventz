@@ -1,64 +1,16 @@
 {
   "country": "japan",
   "country_name": "Japan",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
-    {
-      "id": 5929,
-      "name": "【オンライン】オーストラリア大学・大学院 進学セミナー クイーンズランド州（UQ・QUT・GU等）の魅力を解説",
-      "date": "2026-10-12",
-      "time": "10:00 - 11:30",
-      "location": "Online",
-      "organizer": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
-      "agent_name": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
-      "agent_country": "Japan",
-      "agent_website": "https://www.aswho.com",
-      "registration_url": "https://www.aswho.com/event",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AR"
-    },
-    {
-      "id": 5926,
-      "name": "【大阪限定】（対面）留学フェア直前対策！イギリス大学・大学院留学基礎セミナー",
-      "date": "2026-10-17",
-      "time": "",
-      "location": "Osaka, Japan",
-      "organizer": "BEO Study Abroad",
-      "agent_name": "BEO Study Abroad",
-      "agent_country": "Japan",
-      "agent_website": "https://beo.jp/",
-      "registration_url": "https://beo.jp/event/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BS"
-    },
-    {
-      "id": 5927,
-      "name": "【オンライン】日本で受講できる！IELTS不要のNCUK（英国大学連盟）大学準備コース（IFY）説明会＆体験レッスン",
-      "date": "2026-10-18",
-      "time": "",
-      "location": "Online",
-      "organizer": "BEO Study Abroad",
-      "agent_name": "BEO Study Abroad",
-      "agent_country": "Japan",
-      "agent_website": "https://beo.jp/",
-      "registration_url": "https://beo.jp/event/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BS"
-    },
     {
       "id": 5717,
       "name": "ワーキングホリデー基礎セミナー",
@@ -90,22 +42,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "WI"
-    },
-    {
-      "id": 5931,
-      "name": "StudyIn 海外大学留学フェア ～Autumn 2026～ in Osaka",
-      "date": "2026-10-25",
-      "time": "",
-      "location": "Osaka",
-      "organizer": "StudyIn - Osaka Office",
-      "agent_name": "StudyIn - Osaka Office",
-      "agent_country": "Japan",
-      "agent_website": "www.ukeducation.jp/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SO"
     },
     {
       "id": 5719,
@@ -156,7 +92,7 @@
       "initials": "WI"
     },
     {
-      "id": 5928,
+      "id": 6335,
       "name": "beo留学フェア 2026 Autumn",
       "date": "2026-10-31",
       "time": "",
@@ -172,7 +108,23 @@
       "initials": "BS"
     },
     {
-      "id": 5930,
+      "id": 6336,
+      "name": "中高生のための留学×未来デザインフェア～未来は出会いから動き出す～",
+      "date": "2026-11-01",
+      "time": "11:30 - 16:00",
+      "location": "品川シーズンテラス カンファレンス, Tokyo, Japan",
+      "organizer": "ISA-Japan",
+      "agent_name": "ISA-Japan",
+      "agent_country": "Japan",
+      "agent_website": "www.isa.co.jp",
+      "registration_url": "https://www.isa.co.jp/briefing/detail/fair.html",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IJ"
+    },
+    {
+      "id": 6337,
       "name": "StudyIn 海外大学留学フェア ～Autumn 2026～ in 東京",
       "date": "2026-11-01",
       "time": "13:00 - 18:00",
@@ -189,6 +141,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5929,
+      "name": "【オンライン】オーストラリア大学・大学院 進学セミナー クイーンズランド州（UQ・QUT・GU等）の魅力を解説",
+      "date": "2026-10-12",
+      "time": "10:00 - 11:30",
+      "location": "Online",
+      "organizer": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_name": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_country": "Japan",
+      "agent_website": "https://www.aswho.com",
+      "registration_url": "https://www.aswho.com/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AR"
+    },
     {
       "id": 5306,
       "name": "【人気急増中】なぜ今マレーシアなのか？大学生のための大学留学×海外インターン説明会",
@@ -318,38 +286,6 @@
       "initials": "SE"
     },
     {
-      "id": 4399,
-      "name": "イングリッシュキャンプ in 横浜＜小4-中3生＞",
-      "date": "2026-08-23",
-      "time": "",
-      "location": "横浜",
-      "organizer": "ISA-Japan",
-      "agent_name": "ISA-Japan",
-      "agent_country": "Japan",
-      "agent_website": "www.isa.co.jp",
-      "registration_url": "https://www.isa.co.jp/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IJ"
-    },
-    {
-      "id": 4400,
-      "name": "イングリッシュサファリ in 品川＜小2-小4生＞",
-      "date": "2026-08-22",
-      "time": "",
-      "location": "品川",
-      "organizer": "ISA-Japan",
-      "agent_name": "ISA-Japan",
-      "agent_country": "Japan",
-      "agent_website": "www.isa.co.jp",
-      "registration_url": "https://www.isa.co.jp/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IJ"
-    },
-    {
       "id": 5007,
       "name": "ギャノン大学 Gannon University 大学留学説明会",
       "date": "2026-08-21",
@@ -444,22 +380,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GG"
-    },
-    {
-      "id": 4401,
-      "name": "2026冬出発ターム留学 オンライン説明会",
-      "date": "2026-08-09",
-      "time": "",
-      "location": "Online",
-      "organizer": "ISA-Japan",
-      "agent_name": "ISA-Japan",
-      "agent_country": "Japan",
-      "agent_website": "www.isa.co.jp",
-      "registration_url": "https://www.isa.co.jp/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IJ"
     },
     {
       "id": 5006,

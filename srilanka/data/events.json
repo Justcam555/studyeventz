@@ -1,82 +1,18 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-10-11T21:12:48",
+  "generated_at": "2026-10-18T21:29:55",
   "window": {
-    "from": "2026-10-11",
-    "to": "2026-11-10"
+    "from": "2026-10-18",
+    "to": "2026-11-17"
   },
   "archive": {
-    "from": "2024-10-11",
-    "to": "2026-10-10"
+    "from": "2024-10-18",
+    "to": "2026-10-17"
   },
   "events": [
     {
-      "id": 5801,
-      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
-      "date": "2026-10-13",
-      "time": "4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard (Sri Lanka)",
-      "agent_name": "Applyboard (Sri Lanka)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.applyboard.com/",
-      "registration_url": "https://www.applyboard.com/webinars",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AS"
-    },
-    {
-      "id": 5552,
-      "name": "Victoria University Open Day",
-      "date": "2026-10-15",
-      "time": "00:00",
-      "location": "Battaramulla, Sri Lanka",
-      "organizer": "Jeewa Australian Educational Centre",
-      "agent_name": "Jeewa Australian Educational Centre",
-      "agent_country": "Sri Lanka",
-      "agent_website": "http://www.jaec.net",
-      "registration_url": "https://www.jeewaeducation.lk/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "JA"
-    },
-    {
-      "id": 5977,
-      "name": "Free Seminar / Counselling : Study In Europe",
-      "date": "2026-10-16",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
-    },
-    {
-      "id": 5359,
-      "name": "Admissions Day",
-      "date": "2026-10-17",
-      "time": "12:00 - 17:00",
-      "location": "Colombo",
-      "organizer": "KC Overseas Education – Colombo",
-      "agent_name": "KC Overseas Education – Colombo",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KO"
-    },
-    {
-      "id": 5978,
+      "id": 6382,
       "name": "Free Seminar / Counselling : Study In Australia / New Zealand",
       "date": "2026-10-23",
       "time": "",
@@ -92,7 +28,23 @@
       "initials": "GE"
     },
     {
-      "id": 5979,
+      "id": 6380,
+      "name": "Express Admissions Day",
+      "date": "2026-10-23",
+      "time": "15:00",
+      "location": "Colombo, Sri Lanka",
+      "organizer": "Edlocate (Pvt) Ltd",
+      "agent_name": "Edlocate (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.edlocate.lk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 6383,
       "name": "Free Seminar/ Counselling : Study Germany",
       "date": "2026-10-30",
       "time": "",
@@ -125,6 +77,54 @@
     }
   ],
   "past": [
+    {
+      "id": 5359,
+      "name": "Admissions Day",
+      "date": "2026-10-17",
+      "time": "12:00 - 17:00",
+      "location": "Colombo",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
+    },
+    {
+      "id": 5552,
+      "name": "Victoria University Open Day",
+      "date": "2026-10-15",
+      "time": "00:00",
+      "location": "Battaramulla, Sri Lanka",
+      "organizer": "Jeewa Australian Educational Centre",
+      "agent_name": "Jeewa Australian Educational Centre",
+      "agent_country": "Sri Lanka",
+      "agent_website": "http://www.jaec.net",
+      "registration_url": "https://www.jeewaeducation.lk/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "JA"
+    },
+    {
+      "id": 5801,
+      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
+      "date": "2026-10-13",
+      "time": "4:30 PM IST",
+      "location": "Online",
+      "organizer": "Applyboard (Sri Lanka)",
+      "agent_name": "Applyboard (Sri Lanka)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.applyboard.com/",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AS"
+    },
     {
       "id": 5551,
       "name": "Australia Edu Fair Panadura 2026",
@@ -174,22 +174,6 @@
       "initials": "AS"
     },
     {
-      "id": 5547,
-      "name": "IDP Canada Master's Virtual Fair | Sri Lanka",
-      "date": "2026-10-08",
-      "time": "15:00 - 19:00",
-      "location": "Online",
-      "organizer": "IDP Education Lanka Private Ltd",
-      "agent_name": "IDP Education Lanka Private Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
       "id": 5799,
       "name": "Elevating Germany Recruitment: Exclusive ISM International School of Management & ApplyBoard Prime Masterclass",
       "date": "2026-10-05",
@@ -222,22 +206,6 @@
       "initials": "AB"
     },
     {
-      "id": 5110,
-      "name": "Edlocate Study Abroad Day in Jaffna",
-      "date": "2026-08-29",
-      "time": "10:04 am",
-      "location": "The Valampuri Hotel (Tulip Hall), Jaffna",
-      "organizer": "Edlocate (Pvt) Ltd",
-      "agent_name": "Edlocate (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.edlocate.lk",
-      "registration_url": "https://www.edlocate.lk/news-and-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
-    },
-    {
       "id": 5109,
       "name": "Campus Direct World Education Fair 2026",
       "date": "2026-08-23",
@@ -252,22 +220,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CD"
-    },
-    {
-      "id": 5111,
-      "name": "Edlocate International Education Expo 2026 – Colombo",
-      "date": "2026-08-15",
-      "time": "10:30 am",
-      "location": "Courtyard by Marriott Colombo (Grand Sapphire), Colombo",
-      "organizer": "Edlocate (Pvt) Ltd",
-      "agent_name": "Edlocate (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.edlocate.lk",
-      "registration_url": "https://www.edlocate.lk/news-and-events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
     },
     {
       "id": 4570,
