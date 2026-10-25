@@ -1,20 +1,20 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
     {
-      "id": 5743,
-      "name": "Study in Queensland, Australia: Explore Your Future with Leading Universities",
-      "date": "2026-10-21",
+      "id": 6664,
+      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
+      "date": "2026-11-03",
       "time": "",
       "location": "Online",
       "organizer": "Global Study Partners, Mexico",
@@ -29,22 +29,6 @@
     }
   ],
   "past": [
-    {
-      "id": 5742,
-      "name": "Novedades de Auckland University y Oportunidades en Nueva Zelanda",
-      "date": "2026-10-07",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
-      "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
     {
       "id": 4485,
       "name": "Study your Master's degree with a full scholarship for Latin American Students",

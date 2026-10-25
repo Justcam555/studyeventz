@@ -1,48 +1,16 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
-    {
-      "id": 6382,
-      "name": "Free Seminar / Counselling : Study In Australia / New Zealand",
-      "date": "2026-10-23",
-      "time": "",
-      "location": "Online",
-      "organizer": "GeeBee Education",
-      "agent_name": "GeeBee Education",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.geebeeworld.com/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GE"
-    },
-    {
-      "id": 6380,
-      "name": "Express Admissions Day",
-      "date": "2026-10-23",
-      "time": "15:00",
-      "location": "Colombo, Sri Lanka",
-      "organizer": "Edlocate (Pvt) Ltd",
-      "agent_name": "Edlocate (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.edlocate.lk",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EP"
-    },
     {
       "id": 6383,
       "name": "Free Seminar/ Counselling : Study Germany",
@@ -77,6 +45,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6380,
+      "name": "Express Admissions Day",
+      "date": "2026-10-23",
+      "time": "15:00",
+      "location": "Colombo, Sri Lanka",
+      "organizer": "Edlocate (Pvt) Ltd",
+      "agent_name": "Edlocate (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.edlocate.lk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "EP"
+    },
+    {
+      "id": 6382,
+      "name": "Free Seminar / Counselling : Study In Australia / New Zealand",
+      "date": "2026-10-23",
+      "time": "",
+      "location": "Online",
+      "organizer": "GeeBee Education",
+      "agent_name": "GeeBee Education",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.geebeeworld.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GE"
+    },
     {
       "id": 5359,
       "name": "Admissions Day",

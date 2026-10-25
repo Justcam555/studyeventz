@@ -1,32 +1,16 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-10-18T21:29:54",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
-    {
-      "id": 5951,
-      "name": "Diablo Valley College Open Day: Kesempatan Transfer ke Institusi Terbaik di USA!",
-      "date": "2026-10-24",
-      "time": "",
-      "location": "Online",
-      "organizer": "StudyIn Penang",
-      "agent_name": "StudyIn Penang",
-      "agent_country": "Malaysia",
-      "agent_website": "www.suneducationgroup.com/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SP"
-    },
     {
       "id": 6350,
       "name": "Access MBA",
@@ -44,7 +28,7 @@
       "initials": "MS"
     },
     {
-      "id": 6348,
+      "id": 6662,
       "name": "MONASH MALAYSIA INFO DAY – JB",
       "date": "2026-11-14",
       "time": "13:00 - 18:00",
@@ -60,7 +44,7 @@
       "initials": "EN"
     },
     {
-      "id": 6349,
+      "id": 6663,
       "name": "MONASH MALAYSIA INFO DAY – BATU PAHAT",
       "date": "2026-11-15",
       "time": "12:00 - 17:00",
@@ -77,6 +61,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5951,
+      "name": "Diablo Valley College Open Day: Kesempatan Transfer ke Institusi Terbaik di USA!",
+      "date": "2026-10-24",
+      "time": "",
+      "location": "Online",
+      "organizer": "StudyIn Penang",
+      "agent_name": "StudyIn Penang",
+      "agent_country": "Malaysia",
+      "agent_website": "www.suneducationgroup.com/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    },
     {
       "id": 5949,
       "name": "UK University Information Session",

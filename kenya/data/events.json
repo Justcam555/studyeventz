@@ -1,66 +1,18 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
     {
-      "id": 6338,
-      "name": "UK & Ireland University Fair",
-      "date": "2026-10-22",
-      "time": "13:00 - 18:00",
-      "location": "Samarkand, Uzbekistan",
-      "organizer": "SI-UK",
-      "agent_name": "SI-UK",
-      "agent_country": "Kenya",
-      "agent_website": "studyin-uk.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SU"
-    },
-    {
-      "id": 5726,
-      "name": "Craydel Study Abroad Fair in Kigali",
-      "date": "2026-10-24",
-      "time": "09:00 - 17:00",
-      "location": "Kigali, Rwanda",
-      "organizer": "Craydel Inc.",
-      "agent_name": "Craydel Inc.",
-      "agent_country": "Kenya",
-      "agent_website": "craydel.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CR"
-    },
-    {
-      "id": 6339,
-      "name": "UK & Ireland University Fair",
-      "date": "2026-10-24",
-      "time": "11:00 - 17:00",
-      "location": "Tashkent",
-      "organizer": "SI-UK",
-      "agent_name": "SI-UK",
-      "agent_country": "Kenya",
-      "agent_website": "studyin-uk.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SU"
-    },
-    {
-      "id": 6340,
+      "id": 6655,
       "name": "UK Visa Webinar",
       "date": "2026-10-26",
       "time": "16:00 - 17:00",
@@ -76,11 +28,11 @@
       "initials": "SU"
     },
     {
-      "id": 6341,
-      "name": "UK & Ireland University Fair",
+      "id": 6656,
+      "name": "MSc Programmes in Computer & Informat...",
       "date": "2026-10-27",
-      "time": "13:00 - 18:00",
-      "location": "Fergana, Uzbekistan",
+      "time": "14:30 - 15:30",
+      "location": "Online",
       "organizer": "SI-UK",
       "agent_name": "SI-UK",
       "agent_country": "Kenya",
@@ -92,7 +44,7 @@
       "initials": "SU"
     },
     {
-      "id": 6343,
+      "id": 6657,
       "name": "Managing AI at Work and Employees as ...",
       "date": "2026-10-28",
       "time": "14:30 - 15:30",
@@ -106,6 +58,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SU"
+    },
+    {
+      "id": 6651,
+      "name": "Meet Michael Klein: Wilfred Laurier College",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "location": "Nairobi, Kenya",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
+      "agent_country": "Kenya",
+      "agent_website": "www.uniserveducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
     },
     {
       "id": 5933,
@@ -154,9 +122,41 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CR"
+    },
+    {
+      "id": 6654,
+      "name": "Meet Leah Odada - Carleton University",
+      "date": "2026-11-07",
+      "time": "13:00",
+      "location": "Nairobi, Kenya",
+      "organizer": "Uniserv Education",
+      "agent_name": "Uniserv Education",
+      "agent_country": "Kenya",
+      "agent_website": "www.uniserveducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UE"
     }
   ],
   "past": [
+    {
+      "id": 5726,
+      "name": "Craydel Study Abroad Fair in Kigali",
+      "date": "2026-10-24",
+      "time": "09:00 - 17:00",
+      "location": "Kigali, Rwanda",
+      "organizer": "Craydel Inc.",
+      "agent_name": "Craydel Inc.",
+      "agent_country": "Kenya",
+      "agent_website": "craydel.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CR"
+    },
     {
       "id": 5932,
       "name": "Northeastern University: Global Study Expo Africa",

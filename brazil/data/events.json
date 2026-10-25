@@ -1,16 +1,33 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 6501,
+      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
+      "date": "2026-11-03",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners",
+      "agent_name": "Global Study Partners",
+      "agent_country": "Brazil",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    }
+  ],
   "past": [
     {
       "id": 4721,
@@ -59,22 +76,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    },
-    {
-      "id": 786,
-      "name": "Conectando o Brasil à Irlanda: Insights Exclusivos com a Education Ireland",
-      "date": "2026-06-17",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners",
-      "agent_name": "Global Study Partners",
-      "agent_country": "Brazil",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
     }
   ]
 }

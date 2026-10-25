@@ -1,27 +1,43 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
     {
-      "id": 6159,
-      "name": "",
+      "id": 6522,
+      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
+      "date": "2026-11-03",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners - Colombia",
+      "agent_name": "Global Study Partners - Colombia",
+      "agent_country": "Colombia",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 6521,
+      "name": "Estudia en Queensland University",
       "date": "2026-11-10",
       "time": "18:00",
       "location": "Online",
       "organizer": "Latin American Education S.A.",
       "agent_name": "Latin American Education S.A.",
       "agent_country": "Colombia",
-      "agent_website": "https://lae-edu.com/",
-      "registration_url": "",
+      "agent_website": "https://lae-edu.com/oficina-cali-colombia/",
+      "registration_url": "https://lae-edu.com/eventos-lae/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -92,38 +108,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    },
-    {
-      "id": 1799,
-      "name": "VU Melbourne Spotlight | Recruitment Partner Webinar",
-      "date": "2026-07-02",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners - Colombia",
-      "agent_name": "Global Study Partners - Colombia",
-      "agent_country": "Colombia",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 1798,
-      "name": "Career from Day One: C3S Business School Spain | Partner Training",
-      "date": "2026-06-30",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners - Colombia",
-      "agent_name": "Global Study Partners - Colombia",
-      "agent_country": "Colombia",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
     }
   ]
 }

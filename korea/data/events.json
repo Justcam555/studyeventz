@@ -1,50 +1,34 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
     {
-      "id": 6345,
-      "name": "UQ 대학교 관계자 방문 인터뷰",
-      "date": "2026-10-19",
+      "id": 6658,
+      "name": "제57회 유학박람회 혜택 연장",
+      "date": "2026-10-31",
       "time": "",
-      "location": "Seoul, South Korea",
-      "organizer": "Uni. Advice",
-      "agent_name": "Uni. Advice",
+      "location": "Online",
+      "organizer": "KOKOS Korea Co. Ltd",
+      "agent_name": "KOKOS Korea Co. Ltd",
       "agent_country": "South Korea",
-      "agent_website": "www.uniadvice.com",
+      "agent_website": "www.ikokos.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "UA"
+      "initials": "KK"
     },
     {
-      "id": 6346,
-      "name": "입학 설명회",
-      "date": "2026-10-24",
-      "time": "",
-      "location": "Online",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6344,
+      "id": 6659,
       "name": "",
       "date": "2026-10-31",
       "time": "",
@@ -74,9 +58,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 6660,
+      "name": "IDP 세계유학박람회 | 31 Oct - 01 Nov",
+      "date": "2026-10-31",
+      "time": "12:00 PM - 4:00 PM",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Korea",
+      "agent_website": "https://www.idp.com/korea/study-abroad-consultants/seoul/gangnam/kr-1000/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
+    {
+      "id": 6346,
+      "name": "입학 설명회",
+      "date": "2026-10-24",
+      "time": "",
+      "location": "Online",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "https://www.ienau.com/community/news/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6345,
+      "name": "UQ 대학교 관계자 방문 인터뷰",
+      "date": "2026-10-19",
+      "time": "",
+      "location": "Seoul, South Korea",
+      "organizer": "Uni. Advice",
+      "agent_name": "Uni. Advice",
+      "agent_country": "South Korea",
+      "agent_website": "www.uniadvice.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "UA"
+    },
     {
       "id": 5737,
       "name": "2026 UK University Fair",
@@ -92,22 +124,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "UK"
-    },
-    {
-      "id": 5940,
-      "name": "57회 코엑스 유학박람회",
-      "date": "2026-10-17",
-      "time": "",
-      "location": "Seoul, South Korea",
-      "organizer": "KOKOS Korea Co. Ltd",
-      "agent_name": "KOKOS Korea Co. Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "www.ikokos.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KK"
     },
     {
       "id": 5736,

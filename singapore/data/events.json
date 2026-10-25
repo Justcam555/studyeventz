@@ -1,32 +1,16 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
-    {
-      "id": 5975,
-      "name": "Meet The Expert - The Australian National University",
-      "date": "2026-10-21",
-      "time": "15:00 - 16:00",
-      "location": "Online",
-      "organizer": "IDP Education",
-      "agent_name": "IDP Education",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore/study-abroad-consultants/singapore-city/orange-grove-road/sg-1000/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 6378,
       "name": "Halloween Party",
@@ -44,7 +28,7 @@
       "initials": "BC"
     },
     {
-      "id": 6377,
+      "id": 6708,
       "name": "Communication Skills for Career Success",
       "date": "2026-11-10",
       "time": "19:00 - 20:30",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 5975,
+      "name": "Meet The Expert - The Australian National University",
+      "date": "2026-10-21",
+      "time": "15:00 - 16:00",
+      "location": "Online",
+      "organizer": "IDP Education",
+      "agent_name": "IDP Education",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore/study-abroad-consultants/singapore-city/orange-grove-road/sg-1000/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 5974,
       "name": "Meet The Expert - University of Birmingham",

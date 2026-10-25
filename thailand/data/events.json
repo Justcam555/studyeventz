@@ -1,35 +1,35 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-10-18T21:29:54",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
     {
-      "id": 5808,
-      "name": "Introduction to University of Edinburgh & 1-on-...",
-      "date": "2026-10-21",
-      "time": "17:30 - 19:30",
-      "location": "Online",
-      "organizer": "StudyIn",
-      "agent_name": "StudyIn",
+      "id": 6736,
+      "name": "The University of Melbourne Open Day Bangkok 2026",
+      "date": "2026-10-25",
+      "time": "",
+      "location": "Bangkok, Thailand",
+      "organizer": "Education For Life Co Ltd",
+      "agent_name": "Education For Life Co Ltd",
       "agent_country": "Thailand",
-      "agent_website": "https://gostudyin.com/thailand/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "agent_website": "https://www.eduforlife.net",
+      "registration_url": "https://www.eduforlife.net/activities/",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "ST"
+      "initials": "EF"
     },
     {
-      "id": 6418,
-      "name": "MBA SPOT OFFER DAY with University of Surrey",
+      "id": 6743,
+      "name": "",
       "date": "2026-10-29",
       "time": "15:00 - 16:00",
       "location": "BRIT-Education UK Office, Trendy Building ชั้น 2, Sukhumvit 13, Bangkok, Thailand",
@@ -60,11 +60,27 @@
       "initials": "ST"
     },
     {
-      "id": 6421,
-      "name": "SOP Workshop: How to write a successful SOP for UK universities",
+      "id": 6742,
+      "name": "EDVOY UNIVERSAL EDUCATION EXPO 2026",
+      "date": "2026-11-06",
+      "time": "16:30 - 20:30",
+      "location": "Grande Centre Point Terminal 21 (Grand Ballroom, FL.C), Bangkok, Thailand",
+      "organizer": "Edvoy Thailand",
+      "agent_name": "Edvoy Thailand",
+      "agent_country": "Thailand",
+      "agent_website": "https://edvoythailand.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ET"
+    },
+    {
+      "id": 6747,
+      "name": "",
       "date": "2026-11-07",
       "time": "11:00 - 12:00",
-      "location": "Online via Zoom",
+      "location": "BRIT-Education UK Office & Online via Zoom, Bangkok, Thailand",
       "organizer": "BRIT-Education UK",
       "agent_name": "BRIT-Education UK",
       "agent_country": "Thailand",
@@ -108,11 +124,11 @@
       "initials": "WE"
     },
     {
-      "id": 6419,
-      "name": "UK University Fair 2027",
+      "id": 6744,
+      "name": "",
       "date": "2026-11-11",
-      "time": "16:00 - 19:00",
-      "location": "Grande Centre Point Terminal 21 Floor C, Bangkok, Thailand",
+      "time": "14:00 - 16:00",
+      "location": "Grand Centre Point Terminal 21 ชั้น C, Bangkok, Thailand",
       "organizer": "BRIT-Education UK",
       "agent_name": "BRIT-Education UK",
       "agent_country": "Thailand",
@@ -124,7 +140,7 @@
       "initials": "BE"
     },
     {
-      "id": 6417,
+      "id": 6741,
       "name": "GoUni Road to Study Abroad Fair 2026 งานแฟร์เรียนต่อต่างประเทศ ร่วมฉลอง GoUni ครบรอบ 11 ปีแบบยิ่งใหญ่ที่สุดแห่งปี!",
       "date": "2026-11-11",
       "time": "3:00 pm - 8:00 pm",
@@ -133,15 +149,15 @@
       "agent_name": "Gouni Co. Ltd",
       "agent_country": "Thailand",
       "agent_website": "https://gouni.co.th/",
-      "registration_url": "",
+      "registration_url": "https://gouni.co.th/event/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/GoUni%20logopng.png",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GO"
     },
     {
-      "id": 6415,
-      "name": "Australia Open Day 2026 งานศึกษาต่อประเทศออสเตรเลีย",
+      "id": 6739,
+      "name": "Australia Open Day 2026",
       "date": "2026-11-14",
       "time": "10:00 am - 4:00 pm",
       "location": "Bangkok Prep International School, Bangkok, Thailand",
@@ -154,9 +170,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "OE"
+    },
+    {
+      "id": 6738,
+      "name": "IDP Study World - Chiang Mai International Education Expo 2026",
+      "date": "2026-11-18",
+      "time": "15:00 - 20:00",
+      "location": "Chiang Mai, Thailand",
+      "organizer": "IDP Education Services Co., Ltd.",
+      "agent_name": "IDP Education Services Co., Ltd.",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.idp.com/thailand/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/thailand/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6740,
+      "name": "Macquarie University Information Session & Offer Holder Day",
+      "date": "2026-11-21",
+      "time": "1:00 pm - 3:00 pm",
+      "location": "One Education Office, Mahaneya Center (Front Building), 4th Floor, BTS Chidlom Exit 2, Bangkok, Thailand",
+      "organizer": "One Education Consulting Company Limited",
+      "agent_name": "One Education Consulting Company Limited",
+      "agent_country": "Thailand",
+      "agent_website": "https://one-educationgroup.com/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/One%20Education%20Logo%20-%20Green.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OE"
     }
   ],
   "past": [
+    {
+      "id": 5808,
+      "name": "Introduction to University of Edinburgh & 1-on-...",
+      "date": "2026-10-21",
+      "time": "17:30 - 19:30",
+      "location": "Online",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Thailand",
+      "agent_website": "https://gostudyin.com/thailand/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
+    },
     {
       "id": 5809,
       "name": "Ready to Apply! เตรียม SOP & IELTS ให้โปรไฟล์ T...",
@@ -268,38 +332,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IA"
-    },
-    {
-      "id": 5163,
-      "name": "The University of Melbourne Open Day Bangkok 2026",
-      "date": "2026-09-15",
-      "time": "",
-      "location": "Bangkok, Thailand",
-      "organizer": "Education For Life Co Ltd",
-      "agent_name": "Education For Life Co Ltd",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.eduforlife.net",
-      "registration_url": "https://www.eduforlife.net/activities/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EF"
-    },
-    {
-      "id": 4636,
-      "name": "EDVOY USA & CANADA DAY 2026",
-      "date": "2026-08-08",
-      "time": "13:00 - 16:00",
-      "location": "RENAISSANCE BANGKOK RATCHAPRASONG HOTEL (R8, FL.5), Bangkok",
-      "organizer": "Edvoy Thailand",
-      "agent_name": "Edvoy Thailand",
-      "agent_country": "Thailand",
-      "agent_website": "https://edvoythailand.com",
-      "registration_url": "https://edvoythailand.com/events-all/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ET"
     },
     {
       "id": 4632,

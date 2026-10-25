@@ -1,48 +1,16 @@
 {
   "country": "japan",
   "country_name": "Japan",
-  "generated_at": "2026-10-18T21:29:55",
+  "generated_at": "2026-10-25T21:30:14",
   "window": {
-    "from": "2026-10-18",
-    "to": "2026-11-17"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "archive": {
-    "from": "2024-10-18",
-    "to": "2026-10-17"
+    "from": "2024-10-25",
+    "to": "2026-10-24"
   },
   "events": [
-    {
-      "id": 5717,
-      "name": "ワーキングホリデー基礎セミナー",
-      "date": "2026-10-21",
-      "time": "17:00 - 18:00",
-      "location": "Online",
-      "organizer": "Wish International",
-      "agent_name": "Wish International",
-      "agent_country": "Japan",
-      "agent_website": "http://www.wish.co.jp/",
-      "registration_url": "https://www.wish.co.jp/reserve/?kubun=3&event=002&office=001&date_ua=date_list&online_flg=&soudan_flg=",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "WI"
-    },
-    {
-      "id": 5718,
-      "name": "【初心者歓迎】人気外国人講師がナビゲート！ゼロからわかる「国選びセミナー」",
-      "date": "2026-10-24",
-      "time": "10:30 - 11:30",
-      "location": "Online",
-      "organizer": "Wish International",
-      "agent_name": "Wish International",
-      "agent_country": "Japan",
-      "agent_website": "http://www.wish.co.jp/",
-      "registration_url": "https://www.wish.co.jp/reserve/?kubun=3&event=002&office=001&date_ua=date_list&online_flg=&soudan_flg=",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "WI"
-    },
     {
       "id": 5719,
       "name": "はじめての留学セミナー",
@@ -58,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "WI"
+    },
+    {
+      "id": 6648,
+      "name": "【オンライン】30分でわかる！オーストラリアの大学院進学セミナー",
+      "date": "2026-10-26",
+      "time": "12:00 - 12:30",
+      "location": "Online",
+      "organizer": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_name": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_country": "Japan",
+      "agent_website": "https://www.aswho.com",
+      "registration_url": "https://www.aswho.com/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AR"
     },
     {
       "id": 5721,
@@ -138,14 +122,12 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SO"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 5929,
-      "name": "【オンライン】オーストラリア大学・大学院 進学セミナー クイーンズランド州（UQ・QUT・GU等）の魅力を解説",
-      "date": "2026-10-12",
-      "time": "10:00 - 11:30",
+      "id": 6649,
+      "name": "【オンライン】30分でわかる！オーストラリアの大学進学セミナー（学士課程）",
+      "date": "2026-11-05",
+      "time": "12:00 - 12:30",
       "location": "Online",
       "organizer": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
       "agent_name": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
@@ -156,6 +138,56 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AR"
+    },
+    {
+      "id": 6650,
+      "name": "【オンライン】30分でわかる！オーストラリアの大学院進学セミナー",
+      "date": "2026-11-17",
+      "time": "12:30 - 13:00",
+      "location": "Online",
+      "organizer": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_name": "Australia Ryugaku Centre (GCS Group Australia Pty Ltd)",
+      "agent_country": "Japan",
+      "agent_website": "https://www.aswho.com",
+      "registration_url": "https://www.aswho.com/event",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AR"
+    }
+  ],
+  "past": [
+    {
+      "id": 5718,
+      "name": "【初心者歓迎】人気外国人講師がナビゲート！ゼロからわかる「国選びセミナー」",
+      "date": "2026-10-24",
+      "time": "10:30 - 11:30",
+      "location": "Online",
+      "organizer": "Wish International",
+      "agent_name": "Wish International",
+      "agent_country": "Japan",
+      "agent_website": "http://www.wish.co.jp/",
+      "registration_url": "https://www.wish.co.jp/reserve/?kubun=3&event=002&office=001&date_ua=date_list&online_flg=&soudan_flg=",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "WI"
+    },
+    {
+      "id": 5717,
+      "name": "ワーキングホリデー基礎セミナー",
+      "date": "2026-10-21",
+      "time": "17:00 - 18:00",
+      "location": "Online",
+      "organizer": "Wish International",
+      "agent_name": "Wish International",
+      "agent_country": "Japan",
+      "agent_website": "http://www.wish.co.jp/",
+      "registration_url": "https://www.wish.co.jp/reserve/?kubun=3&event=002&office=001&date_ua=date_list&online_flg=&soudan_flg=",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "WI"
     },
     {
       "id": 5306,
