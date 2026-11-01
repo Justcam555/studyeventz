@@ -1,32 +1,16 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
-    {
-      "id": 6685,
-      "name": "University of Melbourne Webinar: Hear directly from their representative",
-      "date": "2026-10-28",
-      "time": "12:00 PM - 1:00 PM",
-      "location": "Online",
-      "organizer": "IDP Pakistan",
-      "agent_name": "IDP Pakistan",
-      "agent_country": "Pakistan",
-      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IP"
-    },
     {
       "id": 6693,
       "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
@@ -44,7 +28,23 @@
       "initials": "GS"
     },
     {
-      "id": 6686,
+      "id": 6969,
+      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
+      "date": "2026-11-03",
+      "time": "12:00 – 16:00",
+      "location": "Dhanmondi, Bangladesh",
+      "organizer": "AHZ Associates Ltd",
+      "agent_name": "AHZ Associates Ltd",
+      "agent_country": "Pakistan",
+      "agent_website": "ahzassociates.co.uk/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 6955,
       "name": "Study in Ireland: Meet Dublin City University in Islamabad",
       "date": "2026-11-10",
       "time": "11:00 AM - 2:00 PM",
@@ -76,7 +76,7 @@
       "initials": "TC"
     },
     {
-      "id": 6687,
+      "id": 6956,
       "name": "Study in Ireland: Meet Dublin City University in Karachi",
       "date": "2026-11-13",
       "time": "11:00 AM - 2:00 PM",
@@ -140,7 +140,7 @@
       "initials": "TC"
     },
     {
-      "id": 6688,
+      "id": 6957,
       "name": "Study in Ireland: Meet Dublin City University in Lahore",
       "date": "2026-11-19",
       "time": "11:00 AM - 2:00 PM",
@@ -173,102 +173,6 @@
     }
   ],
   "past": [
-    {
-      "id": 6372,
-      "name": "UK Last Minute Application Week | AHZ Bogura",
-      "date": "2026-10-24",
-      "time": "",
-      "location": "Bogura, Bangladesh",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6371,
-      "name": "Edinburgh Napier University Open Day @ AHZ Islamabad Office",
-      "date": "2026-10-22",
-      "time": "15:00 – 17:00",
-      "location": "Islamabad, Pakistan",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6370,
-      "name": "University of Europe for Applied Sciences Open Day @ AHZ Regional Office Lahore",
-      "date": "2026-10-21",
-      "time": "16:00 – 18:00",
-      "location": "Lahore, Pakistan",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6369,
-      "name": "University of Reading Virtual Open Day",
-      "date": "2026-10-20",
-      "time": "16:00 – 18:00",
-      "location": "Online",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6367,
-      "name": "University of East Anglia Assessment Day | AHZ Dhanmondi",
-      "date": "2026-10-19",
-      "time": "15:30 – 16:30",
-      "location": "Dhanmondi, Bangladesh",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6366,
-      "name": "University of Hertfordshire Application Day | AHZ Dhanmondi",
-      "date": "2026-10-18",
-      "time": "12:00 – 16:00",
-      "location": "Dhanmondi, Bangladesh",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
     {
       "id": 5773,
       "name": "Coffee with Counsellors in Lahore",

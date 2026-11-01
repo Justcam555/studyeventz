@@ -1,48 +1,66 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
-      "id": 6658,
-      "name": "제57회 유학박람회 혜택 연장",
-      "date": "2026-10-31",
+      "id": 6946,
+      "name": "입학 설명회",
+      "date": "2026-11-07",
       "time": "",
       "location": "Online",
-      "organizer": "KOKOS Korea Co. Ltd",
-      "agent_name": "KOKOS Korea Co. Ltd",
-      "agent_country": "South Korea",
-      "agent_website": "www.ikokos.com",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "KK"
+      "initials": "IE"
     },
     {
-      "id": 6659,
+      "id": 6945,
+      "name": "[AU] 모나쉬대학교 세미나",
+      "date": "2026-11-09",
+      "time": "4:00 PM - 6:00 PM",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Korea",
+      "agent_website": "https://www.idp.com/korea/study-abroad-consultants/seoul/gangnam/kr-1000/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6944,
       "name": "",
-      "date": "2026-10-31",
+      "date": "2026-11-20",
       "time": "",
-      "location": "Seoul, Busan",
+      "location": "Online",
       "organizer": "SOL Edu Pty Ltd",
       "agent_name": "SOL Edu Pty Ltd",
       "agent_country": "South Korea",
       "agent_website": "www.soledu.net/kr/",
-      "registration_url": "",
+      "registration_url": "https://www.soledu.net/kr/event-list/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SE"
-    },
+    }
+  ],
+  "past": [
     {
       "id": 5731,
       "name": "IDP 세계유학박람회",
@@ -60,38 +78,20 @@
       "initials": "IE"
     },
     {
-      "id": 6660,
-      "name": "IDP 세계유학박람회 | 31 Oct - 01 Nov",
+      "id": 6658,
+      "name": "제57회 유학박람회 혜택 연장",
       "date": "2026-10-31",
-      "time": "12:00 PM - 4:00 PM",
-      "location": "Seoul, South Korea",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
-      "agent_country": "Korea",
-      "agent_website": "https://www.idp.com/korea/study-abroad-consultants/seoul/gangnam/kr-1000/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
-    {
-      "id": 6346,
-      "name": "입학 설명회",
-      "date": "2026-10-24",
       "time": "",
       "location": "Online",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "https://www.ienau.com/community/news/",
+      "organizer": "KOKOS Korea Co. Ltd",
+      "agent_name": "KOKOS Korea Co. Ltd",
+      "agent_country": "South Korea",
+      "agent_website": "www.ikokos.com",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "KK"
     },
     {
       "id": 6345,

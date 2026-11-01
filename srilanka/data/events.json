@@ -1,16 +1,98 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
+    {
+      "id": 6974,
+      "name": "Meet & Greet with USA University",
+      "date": "2026-11-02",
+      "time": "14:00 - 15:00",
+      "location": "Online",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
+    },
+    {
+      "id": 6978,
+      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
+      "date": "2026-11-03",
+      "time": "12:00 - 16:00",
+      "location": "Dhanmondi, Sri Lanka",
+      "organizer": "AH&Z Associates",
+      "agent_name": "AH&Z Associates",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.ahzassociates.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 6976,
+      "name": "Study in Singapore",
+      "date": "2026-11-15",
+      "time": "",
+      "location": "Online",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
+    },
+    {
+      "id": 6977,
+      "name": "University Visits",
+      "date": "2026-11-26",
+      "time": "11:30 AM - 12:30 PM",
+      "location": "Online",
+      "organizer": "Viv's International Education Centre (VIEC)",
+      "agent_name": "Viv's International Education Centre (VIEC)",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.vieceducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "VS"
+    }
+  ],
+  "past": [
+    {
+      "id": 5976,
+      "name": "IDP Canada & USA Bachelors Degree Virtual Fair",
+      "date": "2026-10-30",
+      "time": "15:00 - 19:00",
+      "location": "Online",
+      "organizer": "IDP",
+      "agent_name": "IDP",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.idp.com/srilanka/studyabroad",
+      "registration_url": "https://www.idp.com/srilanka/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ID"
+    },
     {
       "id": 6383,
       "name": "Free Seminar/ Counselling : Study Germany",
@@ -27,24 +109,6 @@
       "logo_bg_color": "",
       "initials": "GE"
     },
-    {
-      "id": 5976,
-      "name": "IDP Canada & USA Bachelors Degree Virtual Fair",
-      "date": "2026-10-30",
-      "time": "15:00 - 19:00",
-      "location": "Online",
-      "organizer": "IDP",
-      "agent_name": "IDP",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.idp.com/srilanka/studyabroad",
-      "registration_url": "https://www.idp.com/srilanka/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ID"
-    }
-  ],
-  "past": [
     {
       "id": 6380,
       "name": "Express Admissions Day",
@@ -76,22 +140,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
-    },
-    {
-      "id": 5359,
-      "name": "Admissions Day",
-      "date": "2026-10-17",
-      "time": "12:00 - 17:00",
-      "location": "Colombo",
-      "organizer": "KC Overseas Education – Colombo",
-      "agent_name": "KC Overseas Education – Colombo",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KO"
     },
     {
       "id": 5552,
@@ -236,22 +284,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "RI"
-    },
-    {
-      "id": 4578,
-      "name": "JCU Singapore University Visit",
-      "date": "2026-07-31",
-      "time": "11:00 AM to 12:00 PM",
-      "location": "VIEC-Sri Lanka, Colombo (Office)",
-      "organizer": "Viv's International Education Centre (VIEC)",
-      "agent_name": "Viv's International Education Centre (VIEC)",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.vieceducation.com",
-      "registration_url": "https://www.vieceducation.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "VS"
     },
     {
       "id": 4562,

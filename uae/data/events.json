@@ -1,38 +1,22 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
-      "id": 6752,
-      "name": "AI VS CV: Live Webinar with NEC Germany",
-      "date": "2026-10-27",
-      "time": "12:30 PM",
-      "location": "Online",
-      "organizer": "Azent Education DMCC",
-      "agent_name": "Azent Education DMCC",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "www.azent.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 6010,
-      "name": "",
-      "date": "2026-10-27",
-      "time": "5:00 PM - 6:00 PM",
-      "location": "Online",
+      "id": 7015,
+      "name": "La Trobe University Open Day at IDP Dubai",
+      "date": "2026-11-03",
+      "time": "14:00 - 17:00",
+      "location": "Dubai, United Arab Emirates",
       "organizer": "IDP Education Pty Ltd",
       "agent_name": "IDP Education Pty Ltd",
       "agent_country": "United Arab Emirates",
@@ -43,6 +27,40 @@
       "logo_bg_color": "",
       "initials": "IE"
     },
+    {
+      "id": 7016,
+      "name": "Meet Top Universities at IDP New Zealand Fair in Abu Dhabi",
+      "date": "2026-11-06",
+      "time": "11:00 - 13:00",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 7017,
+      "name": "Meet the University of Sheffield – Open Day at IDP Dubai",
+      "date": "2026-11-07",
+      "time": "14:00 - 17:00",
+      "location": "Dubai, United Arab Emirates",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.idp.com/uae",
+      "registration_url": "https://www.idp.com/uae/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
+  "past": [
     {
       "id": 6753,
       "name": "UK Education Fair – 31st October 2026",
@@ -60,86 +78,20 @@
       "initials": "AE"
     },
     {
-      "id": 6011,
-      "name": "",
-      "date": "2026-10-31",
-      "time": "4:00 PM - 5:00 PM",
+      "id": 6752,
+      "name": "AI VS CV: Live Webinar with NEC Germany",
+      "date": "2026-10-27",
+      "time": "12:30 PM",
       "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
+      "organizer": "Azent Education DMCC",
+      "agent_name": "Azent Education DMCC",
       "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "agent_website": "www.azent.com",
+      "registration_url": "",
+      "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
-    }
-  ],
-  "past": [
-    {
-      "id": 6009,
-      "name": "",
-      "date": "2026-10-24",
-      "time": "2:00 PM - 5:00 PM",
-      "location": "Dubai, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6007,
-      "name": "",
-      "date": "2026-10-23",
-      "time": "4:00 PM - 5:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6004,
-      "name": "",
-      "date": "2026-10-20",
-      "time": "4:00 PM - 5:00 PM",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6003,
-      "name": "",
-      "date": "2026-10-17",
-      "time": "12:00 PM - 5:30 PM",
-      "location": "Dubai, United Arab Emirates",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.idp.com/uae",
-      "registration_url": "https://www.idp.com/uae/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "AE"
     },
     {
       "id": 6012,

@@ -1,16 +1,50 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
+    {
+      "id": 6827,
+      "name": "Explore Career Opportunities in Australia with QUT Webinar - IDP Ghana",
+      "date": "2026-11-27",
+      "time": "10:00 AM - 11:00 AM",
+      "location": "Online",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6826,
+      "name": "Study in Australia with Partial Scholarships for the 2026 Intake - IDP Ghana",
+      "date": "2026-11-28",
+      "time": "10:00 AM - 5:00 PM",
+      "location": "Accra, Ghana",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Ghana",
+      "agent_website": "https://www.idp.com/ghana/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    }
+  ],
+  "past": [
     {
       "id": 6160,
       "name": "",
@@ -26,9 +60,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AI"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 5248,
       "name": "Study at Top UK & Australian Universities in Dubai Campuses - IDP Ghana",

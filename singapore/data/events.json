@@ -1,31 +1,47 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
-      "id": 6378,
-      "name": "Halloween Party",
-      "date": "2026-10-30",
-      "time": "18:00 - 23:55",
-      "location": "Horizon Banquet Hall, Level 3A, Menara BAC, Singapore",
-      "organizer": "BAC College (Singapore) Pte Ltd",
-      "agent_name": "BAC College (Singapore) Pte Ltd",
+      "id": 6971,
+      "name": "Meet The Expert - The University of Melbourne",
+      "date": "2026-11-03",
+      "time": "15:00 - 17:00",
+      "location": "Singapore, Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
       "agent_country": "Singapore",
-      "agent_website": "bac.edu.sg",
-      "registration_url": "https://forms.cloud.microsoft/r/meA2scUW6D",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6973,
+      "name": "Build a Research Portfolio for Oxbridge and the Ivy League",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "location": "Singapore",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "BC"
+      "initials": "AC"
     },
     {
       "id": 6708,
@@ -42,9 +58,41 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "PA"
+    },
+    {
+      "id": 6972,
+      "name": "IDP Study Abroad Open Day",
+      "date": "2026-11-13",
+      "time": "14:00 - 18:00",
+      "location": "Singapore, Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
+    {
+      "id": 6378,
+      "name": "Halloween Party",
+      "date": "2026-10-30",
+      "time": "18:00 - 23:55",
+      "location": "Horizon Banquet Hall, Level 3A, Menara BAC, Singapore",
+      "organizer": "BAC College (Singapore) Pte Ltd",
+      "agent_name": "BAC College (Singapore) Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "bac.edu.sg",
+      "registration_url": "https://forms.cloud.microsoft/r/meA2scUW6D",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BC"
+    },
     {
       "id": 5975,
       "name": "Meet The Expert - The Australian National University",
@@ -78,22 +126,6 @@
       "initials": "IE"
     },
     {
-      "id": 5973,
-      "name": "Aiming to play college soccer in the US? UChicago Men's Soccer coach Thomas Kirk sits down with George Marin",
-      "date": "2026-10-11",
-      "time": "20:00",
-      "location": "Singapore",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AC"
-    },
-    {
       "id": 5774,
       "name": "Study in UK/Australia Open House",
       "date": "2026-10-09",
@@ -124,22 +156,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AE"
-    },
-    {
-      "id": 5105,
-      "name": "Meet The Expert - The Australian National University (Virtual)",
-      "date": "2026-08-14",
-      "time": "3:00 PM - 4:00 PM",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
     },
     {
       "id": 2169,

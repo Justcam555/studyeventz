@@ -1,14 +1,14 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
@@ -22,6 +22,22 @@
       "agent_country": "Mexico",
       "agent_website": "www.upgradgsp.com",
       "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 6948,
+      "name": "Webinar: Estudia en Australia con Kaplan Business School",
+      "date": "2026-11-25",
+      "time": "17:30",
+      "location": "Online",
+      "organizer": "Go Study Australia Pty. Ltd.",
+      "agent_name": "Go Study Australia Pty. Ltd.",
+      "agent_country": "Mexico",
+      "agent_website": "https://www.gostudyaus.es",
+      "registration_url": "https://gostudyaus.es/community/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -76,22 +92,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AP"
-    },
-    {
-      "id": 3219,
-      "name": "Próximo destino: Estudia en TAFE Queensland",
-      "date": "2026-07-15",
-      "time": "15:00",
-      "location": "Online",
-      "organizer": "Go Study Australia Pty. Ltd.",
-      "agent_name": "Go Study Australia Pty. Ltd.",
-      "agent_country": "Mexico",
-      "agent_website": "https://www.gostudyaus.es",
-      "registration_url": "https://gostudyaus.es/community/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
     }
   ]
 }

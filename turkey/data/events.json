@@ -1,32 +1,114 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
-      "id": 6749,
-      "name": "Ankara’da İtalya Eğitim Günleri: Üniversiteler, Burslar ve Başvuru Rehberi",
-      "date": "2026-10-28",
-      "time": "13:30",
-      "location": "Ramada by Wyndham, Ankara, Turkey",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "id": 7011,
+      "name": "Avropada Təhsil üzrə Açıq Qapı Günü",
+      "date": "2026-11-07",
+      "time": "11:00 – 17:00",
+      "location": "Baku, Azerbaijan",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
       "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
+      "agent_website": "azeristudent.az",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AA"
+      "initials": "AZ"
     },
+    {
+      "id": 6751,
+      "name": "UniQ İngiltere Üniversiteleri Buluşması",
+      "date": "2026-11-07",
+      "time": "13:00–17:00",
+      "location": "InterContinental İstanbul, Taksim, Istanbul, Turkey",
+      "organizer": "Ogrenim Dostu (Trading as First EduMate)",
+      "agent_name": "Ogrenim Dostu (Trading as First EduMate)",
+      "agent_country": "Turkey",
+      "agent_website": "firstedumate.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OD"
+    },
+    {
+      "id": 7010,
+      "name": "Cardiff Metropolitan University IDP İstanbul Ofisi’nde!",
+      "date": "2026-11-09",
+      "time": "16:00 - 17:00",
+      "location": "Istanbul, Turkey",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Turkey",
+      "agent_website": "https://www.idp.com/turkey/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 7012,
+      "name": "A-Level və Digər Universitetə Qəbul İmtahanları üzrə Açıq Qapı Günü",
+      "date": "2026-11-14",
+      "time": "11:00 – 17:00",
+      "location": "Baku, Azerbaijan",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 7013,
+      "name": "Xaricdə Orta Məktəb Təhsili (Boarding Schools) üzrə Açıq Qapı Günü",
+      "date": "2026-11-21",
+      "time": "11:00 – 17:00",
+      "location": "Baku, Azerbaijan",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 7014,
+      "name": "Təqaüdlər və Təhsil Büdcəsi üzrə Açıq Qapı Günü",
+      "date": "2026-11-28",
+      "time": "11:00 – 17:00",
+      "location": "Baku, Azerbaijan",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    }
+  ],
+  "past": [
     {
       "id": 6748,
       "name": "\"Study in Australia\" Days",
@@ -44,23 +126,21 @@
       "initials": "HE"
     },
     {
-      "id": 6751,
-      "name": "UniQ İngiltere Üniversiteleri Buluşması",
-      "date": "2026-11-07",
-      "time": "13:00–17:00",
-      "location": "InterContinental İstanbul, Taksim, Istanbul, Turkey",
-      "organizer": "Ogrenim Dostu (Trading as First EduMate)",
-      "agent_name": "Ogrenim Dostu (Trading as First EduMate)",
+      "id": 6749,
+      "name": "Ankara’da İtalya Eğitim Günleri: Üniversiteler, Burslar ve Başvuru Rehberi",
+      "date": "2026-10-28",
+      "time": "13:30",
+      "location": "Ramada by Wyndham, Ankara, Turkey",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
       "agent_country": "Turkey",
-      "agent_website": "firstedumate.com",
+      "agent_website": "academix.com.tr",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "OD"
-    }
-  ],
-  "past": [
+      "initials": "AA"
+    },
     {
       "id": 6422,
       "name": "University of Sydney IDP İstanbul Ofisi’nde!",

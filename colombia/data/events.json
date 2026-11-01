@@ -1,14 +1,14 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-10-25T21:30:14",
+  "generated_at": "2026-11-01T21:12:29",
   "window": {
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-11-01",
+    "to": "2026-12-01"
   },
   "archive": {
-    "from": "2024-10-25",
-    "to": "2026-10-24"
+    "from": "2024-11-01",
+    "to": "2026-10-31"
   },
   "events": [
     {
@@ -28,10 +28,74 @@
       "initials": "GS"
     },
     {
-      "id": 6521,
-      "name": "Estudia en Queensland University",
+      "id": 6825,
+      "name": "Estudia tu posgrado en UWE Bristol",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "VOLEMI SAS",
+      "agent_name": "VOLEMI SAS",
+      "agent_country": "Colombia",
+      "agent_website": "https://www.volemi.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "VS"
+    },
+    {
+      "id": 6821,
+      "name": "Estudia, Trabaja y Migra a Europa",
+      "date": "2026-11-07",
+      "time": "10:00 - 14:00",
+      "location": "Medellín, Colombia",
+      "organizer": "Grasshopper International / Global Institutions S.A.S",
+      "agent_name": "Grasshopper International / Global Institutions S.A.S",
+      "agent_country": "Colombia",
+      "agent_website": "https://grasshopperstudy.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    },
+    {
+      "id": 6819,
+      "name": "",
       "date": "2026-11-10",
       "time": "18:00",
+      "location": "Online",
+      "organizer": "Latin American Education S.A.",
+      "agent_name": "Latin American Education S.A.",
+      "agent_country": "Colombia",
+      "agent_website": "https://lae-edu.com/oficina-cali-colombia/",
+      "registration_url": "https://lae-edu.com/eventos-lae/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "LA"
+    },
+    {
+      "id": 6822,
+      "name": "Estudia inglés y trabaja en Australia y Nueva Zelanda",
+      "date": "2026-11-25",
+      "time": "",
+      "location": "Online",
+      "organizer": "Grasshopper International / Global Institutions S.A.S",
+      "agent_name": "Grasshopper International / Global Institutions S.A.S",
+      "agent_country": "Colombia",
+      "agent_website": "https://grasshopperstudy.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    },
+    {
+      "id": 6820,
+      "name": "",
+      "date": "2026-11-26",
+      "time": "18:30",
       "location": "Online",
       "organizer": "Latin American Education S.A.",
       "agent_name": "Latin American Education S.A.",
