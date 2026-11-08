@@ -1,82 +1,18 @@
 {
   "country": "thailand",
   "country_name": "Thailand",
-  "generated_at": "2026-11-01T21:12:28",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6742,
-      "name": "EDVOY UNIVERSAL EDUCATION EXPO 2026",
-      "date": "2026-11-06",
-      "time": "16:30 - 20:30",
-      "location": "Grande Centre Point Terminal 21 (Grand Ballroom, FL.C), Bangkok, Thailand",
-      "organizer": "Edvoy Thailand",
-      "agent_name": "Edvoy Thailand",
-      "agent_country": "Thailand",
-      "agent_website": "https://edvoythailand.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ET"
-    },
-    {
-      "id": 6747,
-      "name": "",
-      "date": "2026-11-07",
-      "time": "11:00 - 12:00",
-      "location": "BRIT-Education UK Office & Online via Zoom, Bangkok, Thailand",
-      "organizer": "BRIT-Education UK",
-      "agent_name": "BRIT-Education UK",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.brit-ed.com/contact-us",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BE"
-    },
-    {
-      "id": 5990,
-      "name": "IDP Study World - Study Abroad Expo & IELTS Carnival 2026",
-      "date": "2026-11-07",
-      "time": "13:00 - 18:00",
-      "location": "Bangkok, Thailand",
-      "organizer": "IDP Education Services Co., Ltd.",
-      "agent_name": "IDP Education Services Co., Ltd.",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.idp.com/thailand/office/hat-yai/idp-hat-yai/th-1004/",
-      "registration_url": "https://www.idp.com/thailand/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6999,
-      "name": "Hands On Study Abroad Exhibition 2026",
-      "date": "2026-11-07",
-      "time": "14:00 - 18:00",
-      "location": "Sofitel Bangkok Sukhumvit, Bangkok, Thailand",
-      "organizer": "Hands On Education Consultants",
-      "agent_name": "Hands On Education Consultants",
-      "agent_country": "Thailand",
-      "agent_website": "www.hands-on.co.th",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HO"
-    },
-    {
-      "id": 5992,
+      "id": 7320,
       "name": "The Grand UK & Australia University Exhibition ครั้งที่ 44",
       "date": "2026-11-08",
       "time": "12:00-17:00",
@@ -124,7 +60,7 @@
       "initials": "HO"
     },
     {
-      "id": 6744,
+      "id": 7324,
       "name": "",
       "date": "2026-11-11",
       "time": "14:00 - 16:00",
@@ -188,6 +124,22 @@
       "initials": "EF"
     },
     {
+      "id": 7321,
+      "name": "Portfolio Advice by UAL Academic – รีวิวพอร์ตโฟลิโอสมัครเรียนต่อ UAL กับอาจารย์ UAL ตัวจริงบนตรงจากลอนดอน",
+      "date": "2026-11-17",
+      "time": "10:00 - 18:00",
+      "location": "Thailand - Bangkok",
+      "organizer": "IDP Education Services Co., Ltd.",
+      "agent_name": "IDP Education Services Co., Ltd.",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.idp.com/thailand",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
       "id": 6738,
       "name": "IDP Study World - Chiang Mai International Education Expo 2026",
       "date": "2026-11-18",
@@ -238,6 +190,54 @@
   ],
   "past": [
     {
+      "id": 6999,
+      "name": "Hands On Study Abroad Exhibition 2026",
+      "date": "2026-11-07",
+      "time": "14:00 - 18:00",
+      "location": "Sofitel Bangkok Sukhumvit, Bangkok, Thailand",
+      "organizer": "Hands On Education Consultants",
+      "agent_name": "Hands On Education Consultants",
+      "agent_country": "Thailand",
+      "agent_website": "www.hands-on.co.th",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HO"
+    },
+    {
+      "id": 5990,
+      "name": "IDP Study World - Study Abroad Expo & IELTS Carnival 2026",
+      "date": "2026-11-07",
+      "time": "13:00 - 18:00",
+      "location": "Bangkok, Thailand",
+      "organizer": "IDP Education Services Co., Ltd.",
+      "agent_name": "IDP Education Services Co., Ltd.",
+      "agent_country": "Thailand",
+      "agent_website": "https://www.idp.com/thailand/office/hat-yai/idp-hat-yai/th-1004/",
+      "registration_url": "https://www.idp.com/thailand/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6742,
+      "name": "EDVOY UNIVERSAL EDUCATION EXPO 2026",
+      "date": "2026-11-06",
+      "time": "16:30 - 20:30",
+      "location": "Grande Centre Point Terminal 21 (Grand Ballroom, FL.C), Bangkok, Thailand",
+      "organizer": "Edvoy Thailand",
+      "agent_name": "Edvoy Thailand",
+      "agent_country": "Thailand",
+      "agent_website": "https://edvoythailand.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ET"
+    },
+    {
       "id": 5807,
       "name": "King's College London: เจาะลึกคอร์สเด่นระดับท็อ...",
       "date": "2026-10-30",
@@ -252,22 +252,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ST"
-    },
-    {
-      "id": 6743,
-      "name": "",
-      "date": "2026-10-29",
-      "time": "15:00 - 16:00",
-      "location": "BRIT-Education UK Office, Trendy Building ชั้น 2, Sukhumvit 13, Bangkok, Thailand",
-      "organizer": "BRIT-Education UK",
-      "agent_name": "BRIT-Education UK",
-      "agent_country": "Thailand",
-      "agent_website": "https://www.brit-ed.com/contact-us",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/logo-brit-ed.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "BE"
     },
     {
       "id": 5808,

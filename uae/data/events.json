@@ -1,20 +1,38 @@
 {
   "country": "uae",
   "country_name": "UAE",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 7015,
-      "name": "La Trobe University Open Day at IDP Dubai",
-      "date": "2026-11-03",
+      "id": 7328,
+      "name": "PATHFINDER EDUCATION FAIR",
+      "date": "2026-11-22",
+      "time": "15:00 - 18:00",
+      "location": "Dubai, UAE",
+      "organizer": "Glinks International",
+      "agent_name": "Glinks International",
+      "agent_country": "United Arab Emirates",
+      "agent_website": "https://www.glinksgroup.com/contact-us/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    }
+  ],
+  "past": [
+    {
+      "id": 7017,
+      "name": "Meet the University of Sheffield – Open Day at IDP Dubai",
+      "date": "2026-11-07",
       "time": "14:00 - 17:00",
       "location": "Dubai, United Arab Emirates",
       "organizer": "IDP Education Pty Ltd",
@@ -44,9 +62,9 @@
       "initials": "IE"
     },
     {
-      "id": 7017,
-      "name": "Meet the University of Sheffield – Open Day at IDP Dubai",
-      "date": "2026-11-07",
+      "id": 7015,
+      "name": "La Trobe University Open Day at IDP Dubai",
+      "date": "2026-11-03",
       "time": "14:00 - 17:00",
       "location": "Dubai, United Arab Emirates",
       "organizer": "IDP Education Pty Ltd",
@@ -58,9 +76,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 6753,
       "name": "UK Education Fair – 31st October 2026",
@@ -136,22 +152,6 @@
       "agent_country": "United Arab Emirates",
       "agent_website": "https://graceintlgroup.com/contact-us/",
       "registration_url": "https://graceintlgroup.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GI"
-    },
-    {
-      "id": 2297,
-      "name": "Meet SGU University Representative",
-      "date": "2026-07-04",
-      "time": "4:00 PM - 6:00 PM",
-      "location": "Glinks International Dubai, Dubai, UAE",
-      "organizer": "Glinks International",
-      "agent_name": "Glinks International",
-      "agent_country": "United Arab Emirates",
-      "agent_website": "https://www.glinksgroup.com/contact-us/",
-      "registration_url": "https://www.glinksgroup.com/events-list/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",

@@ -1,32 +1,16 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
-    {
-      "id": 6946,
-      "name": "입학 설명회",
-      "date": "2026-11-07",
-      "time": "",
-      "location": "Online",
-      "organizer": "International Education Network Inc (IEN)",
-      "agent_name": "International Education Network Inc (IEN)",
-      "agent_country": "Korea",
-      "agent_website": "http://www.ienau.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
     {
       "id": 6945,
       "name": "[AU] 모나쉬대학교 세미나",
@@ -44,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 6944,
+      "id": 7284,
       "name": "",
       "date": "2026-11-20",
       "time": "",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 6946,
+      "name": "입학 설명회",
+      "date": "2026-11-07",
+      "time": "",
+      "location": "Online",
+      "organizer": "International Education Network Inc (IEN)",
+      "agent_name": "International Education Network Inc (IEN)",
+      "agent_country": "Korea",
+      "agent_website": "http://www.ienau.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 5731,
       "name": "IDP 세계유학박람회",

@@ -1,47 +1,31 @@
 {
   "country": "singapore",
   "country_name": "Singapore",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6971,
-      "name": "Meet The Expert - The University of Melbourne",
-      "date": "2026-11-03",
-      "time": "15:00 - 17:00",
-      "location": "Singapore, Singapore",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
+      "id": 7304,
+      "name": "Study in UK/Australia Open House",
+      "date": "2026-11-09",
+      "time": "10:30 AM - 2:00 PM",
+      "location": "111 Somerset #09-36, Singapore",
+      "organizer": "OverseasEducation.sg Pte Ltd",
+      "agent_name": "OverseasEducation.sg Pte Ltd",
       "agent_country": "Singapore",
-      "agent_website": "https://www.idp.com/singapore",
-      "registration_url": "https://www.idp.com/singapore/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6973,
-      "name": "Build a Research Portfolio for Oxbridge and the Ivy League",
-      "date": "2026-11-10",
-      "time": "19:00",
-      "location": "Singapore",
-      "organizer": "The Added Company Pte Ltd",
-      "agent_name": "The Added Company Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.addededucation.com",
+      "agent_website": "www.OverseasEducation.sg",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AC"
+      "initials": "OS"
     },
     {
       "id": 6708,
@@ -74,9 +58,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 7306,
+      "name": "Why Applicants Who Start Research Now Have a Head Start into Top Universities",
+      "date": "2026-11-17",
+      "time": "19:00",
+      "location": "Online",
+      "organizer": "The Added Company Pte Ltd",
+      "agent_name": "The Added Company Pte Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.addededucation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AC"
+    },
+    {
+      "id": 7305,
+      "name": "University of Plymouth Info Session",
+      "date": "2026-12-03",
+      "time": "14:00 - 17:00",
+      "location": "AECC @Singapore, Bugis Junction Towers, Singapore",
+      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
+      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.aeccglobal.sg/contact-us/",
+      "registration_url": "https://www.aeccglobal.com/sg/upcoming-events",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
     }
   ],
   "past": [
+    {
+      "id": 6971,
+      "name": "Meet The Expert - The University of Melbourne",
+      "date": "2026-11-03",
+      "time": "15:00 - 17:00",
+      "location": "Singapore, Singapore",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Singapore",
+      "agent_website": "https://www.idp.com/singapore",
+      "registration_url": "https://www.idp.com/singapore/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 6378,
       "name": "Halloween Party",
@@ -124,38 +156,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    },
-    {
-      "id": 5774,
-      "name": "Study in UK/Australia Open House",
-      "date": "2026-10-09",
-      "time": "15:00 - 18:30",
-      "location": "111 Somerset #09-36, Singapore",
-      "organizer": "OverseasEducation.sg Pte Ltd",
-      "agent_name": "OverseasEducation.sg Pte Ltd",
-      "agent_country": "Singapore",
-      "agent_website": "www.OverseasEducation.sg",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OS"
-    },
-    {
-      "id": 5357,
-      "name": "Singapore Education Fair",
-      "date": "2026-09-21",
-      "time": "14:30",
-      "location": "HSBC @MBFC TOWER 2, L45, Singapore",
-      "organizer": "Australia Education Victoria Pty Ltd as trustee for the AECC Unit Trust",
-      "agent_name": "Australia Education Victoria Pty Ltd as trustee for the AECC  Unit Trust",
-      "agent_country": "Singapore",
-      "agent_website": "https://www.aeccglobal.sg/contact-us/",
-      "registration_url": "https://www.aeccglobal.com/sg/upcoming-events",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/aecc_logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
     },
     {
       "id": 2169,

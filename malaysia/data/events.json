@@ -1,34 +1,18 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6350,
-      "name": "Access MBA",
-      "date": "2026-11-05",
-      "time": "",
-      "location": "Online",
-      "organizer": "Mabecs Sdn Bhd",
-      "agent_name": "Mabecs Sdn Bhd",
-      "agent_country": "Malaysia",
-      "agent_website": "www.mabecs.com",
-      "registration_url": "https://mabecs.com/events/scape-workshops",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "MS"
-    },
-    {
-      "id": 6662,
+      "id": 7285,
       "name": "MONASH MALAYSIA INFO DAY – JB",
       "date": "2026-11-14",
       "time": "13:00 - 18:00",
@@ -44,7 +28,7 @@
       "initials": "EN"
     },
     {
-      "id": 6663,
+      "id": 7286,
       "name": "MONASH MALAYSIA INFO DAY – BATU PAHAT",
       "date": "2026-11-15",
       "time": "12:00 - 17:00",
@@ -61,6 +45,22 @@
     }
   ],
   "past": [
+    {
+      "id": 6350,
+      "name": "Access MBA",
+      "date": "2026-11-05",
+      "time": "",
+      "location": "Online",
+      "organizer": "Mabecs Sdn Bhd",
+      "agent_name": "Mabecs Sdn Bhd",
+      "agent_country": "Malaysia",
+      "agent_website": "www.mabecs.com",
+      "registration_url": "https://mabecs.com/events/scape-workshops",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "MS"
+    },
     {
       "id": 5951,
       "name": "Diablo Valley College Open Day: Kesempatan Transfer ke Institusi Terbaik di USA!",

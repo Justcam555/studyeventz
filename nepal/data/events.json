@@ -1,32 +1,50 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6951,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 - 16:00",
-      "location": "Dhanmondi, Nepal",
-      "organizer": "AH&Z Associates",
-      "agent_name": "AH&Z Associates",
+      "id": 7290,
+      "name": "Virtual Event",
+      "date": "2026-11-14",
+      "time": "12:00 - 15:00",
+      "location": "Online",
+      "organizer": "Global Reach - Kathmandu",
+      "agent_name": "Global Reach - Kathmandu",
       "agent_country": "Nepal",
-      "agent_website": "https://www.ahzassociates.com",
+      "agent_website": "https://www.globalreach.in/",
+      "registration_url": "https://www.globalreach.in/cmp-register-with-email.php?ref=MTcwMg%3D%3D",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GR"
+    },
+    {
+      "id": 7291,
+      "name": "JCU Singapore",
+      "date": "2026-11-18",
+      "time": "14:30 - 15:30",
+      "location": "Calicut, India (Discard: Not in Nepal)",
+      "organizer": "Viv's International Education Centre (VIEC)",
+      "agent_name": "Viv's International Education Centre (VIEC)",
+      "agent_country": "Nepal",
+      "agent_website": "http://www.vieceducation.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AZ"
-    },
+      "initials": "VS"
+    }
+  ],
+  "past": [
     {
       "id": 6952,
       "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
@@ -44,39 +62,21 @@
       "initials": "AA"
     },
     {
-      "id": 6665,
-      "name": "Virtual Event",
-      "date": "2026-11-14",
-      "time": "12:00 - 15:00",
-      "location": "Online",
-      "organizer": "Global Reach - Kathmandu",
-      "agent_name": "Global Reach - Kathmandu",
+      "id": 6951,
+      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
+      "date": "2026-11-03",
+      "time": "12:00 - 16:00",
+      "location": "Dhanmondi, Nepal",
+      "organizer": "AH&Z Associates",
+      "agent_name": "AH&Z Associates",
       "agent_country": "Nepal",
-      "agent_website": "https://www.globalreach.in/",
-      "registration_url": "https://www.globalreach.in/cmp-register-with-email.php?ref=MTcwMg%3D%3D",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GR"
-    },
-    {
-      "id": 6950,
-      "name": "University Visits",
-      "date": "2026-11-26",
-      "time": "11:30 AM - 12:30 PM",
-      "location": "Online",
-      "organizer": "Viv's International Education Centre (VIEC)",
-      "agent_name": "Viv's International Education Centre (VIEC)",
-      "agent_country": "Nepal",
-      "agent_website": "http://www.vieceducation.com",
+      "agent_website": "https://www.ahzassociates.com",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "VS"
-    }
-  ],
-  "past": [
+      "initials": "AZ"
+    },
     {
       "id": 5745,
       "name": "IDP Canada & USA Bachelors Degree Virtual fair.",

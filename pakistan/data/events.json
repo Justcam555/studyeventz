@@ -1,50 +1,18 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6693,
-      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
-      "date": "2026-11-03",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners - Pakistan",
-      "agent_name": "Global Study Partners - Pakistan",
-      "agent_country": "Pakistan",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 6969,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 – 16:00",
-      "location": "Dhanmondi, Bangladesh",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6955,
+      "id": 7293,
       "name": "Study in Ireland: Meet Dublin City University in Islamabad",
       "date": "2026-11-10",
       "time": "11:00 AM - 2:00 PM",
@@ -53,7 +21,7 @@
       "agent_name": "IDP Pakistan",
       "agent_country": "Pakistan",
       "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "",
+      "registration_url": "https://www.idp.com/pakistan/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -76,7 +44,7 @@
       "initials": "TC"
     },
     {
-      "id": 6956,
+      "id": 7294,
       "name": "Study in Ireland: Meet Dublin City University in Karachi",
       "date": "2026-11-13",
       "time": "11:00 AM - 2:00 PM",
@@ -85,7 +53,7 @@
       "agent_name": "IDP Pakistan",
       "agent_country": "Pakistan",
       "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "",
+      "registration_url": "https://www.idp.com/pakistan/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -140,7 +108,7 @@
       "initials": "TC"
     },
     {
-      "id": 6957,
+      "id": 7295,
       "name": "Study in Ireland: Meet Dublin City University in Lahore",
       "date": "2026-11-19",
       "time": "11:00 AM - 2:00 PM",
@@ -149,7 +117,7 @@
       "agent_name": "IDP Pakistan",
       "agent_country": "Pakistan",
       "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "",
+      "registration_url": "https://www.idp.com/pakistan/events/",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
@@ -173,6 +141,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6969,
+      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
+      "date": "2026-11-03",
+      "time": "12:00 – 16:00",
+      "location": "Dhanmondi, Bangladesh",
+      "organizer": "AHZ Associates Ltd",
+      "agent_name": "AHZ Associates Ltd",
+      "agent_country": "Pakistan",
+      "agent_website": "ahzassociates.co.uk/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 6693,
+      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
+      "date": "2026-11-03",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners - Pakistan",
+      "agent_name": "Global Study Partners - Pakistan",
+      "agent_country": "Pakistan",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
     {
       "id": 5773,
       "name": "Coffee with Counsellors in Lahore",

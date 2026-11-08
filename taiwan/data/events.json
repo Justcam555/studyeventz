@@ -1,63 +1,31 @@
 {
   "country": "taiwan",
   "country_name": "Taiwan",
-  "generated_at": "2026-11-01T21:12:28",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6817,
-      "name": "个性化考研",
-      "date": "2026-11-02",
+      "id": 7307,
+      "name": "澳洲國立大學人文與社會科學學院研究所課程線上研討會",
+      "date": "2026-11-10",
       "time": "",
-      "location": "Beijing, China",
-      "organizer": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
-      "agent_name": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
-      "agent_country": "China (excludes SARs and Taiwan)",
-      "agent_website": "https://www.xdf.cn",
-      "registration_url": "https://www.xdf.cn/beijing/",
+      "location": "Online",
+      "organizer": "Frontier Planning International Co., Ltd.",
+      "agent_name": "Frontier Planning International Co., Ltd.",
+      "agent_country": "Taiwan",
+      "agent_website": "www.fpiedu.com",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "BN"
-    },
-    {
-      "id": 6979,
-      "name": "【英國名校面談會 Part 1】 UCL、KCL、曼大等 7 所名校任你選",
-      "date": "2026-11-02",
-      "time": "17:00 - 20:00",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6980,
-      "name": "【展後說明會系列】11/07 Simon Fraser University 西門菲莎大學 Fraser International College 大學部",
-      "date": "2026-11-07",
-      "time": "14:00 - 15:00",
-      "location": "Online",
-      "organizer": "IDP Education Pty Ltd",
-      "agent_name": "IDP Education Pty Ltd",
-      "agent_country": "Taiwan",
-      "agent_website": "https://www.idp.com/taiwan/store-finder/",
-      "registration_url": "https://www.idp.com/taiwan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "FP"
     },
     {
       "id": 6981,
@@ -76,8 +44,8 @@
       "initials": "IE"
     },
     {
-      "id": 6710,
-      "name": "2026年11月14日 墨爾本大學說明日 Meet Melbourne in Taipei",
+      "id": 7308,
+      "name": "Meet Melbourne in Taipei",
       "date": "2026-11-14",
       "time": "",
       "location": "Taipei, Taiwan",
@@ -124,11 +92,11 @@
       "initials": "IE"
     },
     {
-      "id": 6711,
-      "name": "2026年11月19〜22日 雪梨大學招生說明會",
+      "id": 7309,
+      "name": "雪梨大學招生說明會",
       "date": "2026-11-19",
       "time": "",
-      "location": "Taiwan",
+      "location": "Taipei, Taiwan",
       "organizer": "Frontier Planning International Co., Ltd.",
       "agent_name": "Frontier Planning International Co., Ltd.",
       "agent_country": "Taiwan",
@@ -172,6 +140,22 @@
       "initials": "IE"
     },
     {
+      "id": 7319,
+      "name": "11月線上Q&A分享會｜走過留學與打工的 100 種可能 feat. Mina",
+      "date": "2026-11-21",
+      "time": "14:30 - 16:30",
+      "location": "Online",
+      "organizer": "ABC Education",
+      "agent_name": "ABC Education",
+      "agent_country": "Taiwan",
+      "agent_website": "www.abcwithyou.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
+    {
       "id": 6988,
       "name": "11/25 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
       "date": "2026-11-25",
@@ -188,9 +172,57 @@
       "initials": "IE"
     },
     {
-      "id": 6816,
+      "id": 7082,
       "name": "考研无忧计划",
       "date": "2026-11-30",
+      "time": "",
+      "location": "Beijing, China",
+      "organizer": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
+      "agent_name": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
+      "agent_country": "China (excludes SARs and Taiwan)",
+      "agent_website": "https://www.xdf.cn",
+      "registration_url": "https://www.xdf.cn/beijing/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BN"
+    },
+    {
+      "id": 7318,
+      "name": "12/3 SOP 讀書計畫怎麼寫 | 留學申請必備文件解析講座",
+      "date": "2026-12-03",
+      "time": "19:00 - 20:00",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 7083,
+      "name": "听说速成 (面授/直播)",
+      "date": "2026-12-04",
+      "time": "",
+      "location": "Beijing, China",
+      "organizer": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
+      "agent_name": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
+      "agent_country": "China (excludes SARs and Taiwan)",
+      "agent_website": "https://www.xdf.cn",
+      "registration_url": "https://www.xdf.cn/beijing/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BN"
+    },
+    {
+      "id": 7085,
+      "name": "英语学习Free计划一对一",
+      "date": "2026-12-05",
       "time": "",
       "location": "Beijing, China",
       "organizer": "Beijing New Oriental Vision Overseas Consulting Co., Ltd.",
@@ -205,6 +237,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6980,
+      "name": "【展後說明會系列】11/07 Simon Fraser University 西門菲莎大學 Fraser International College 大學部",
+      "date": "2026-11-07",
+      "time": "14:00 - 15:00",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 6979,
+      "name": "【英國名校面談會 Part 1】 UCL、KCL、曼大等 7 所名校任你選",
+      "date": "2026-11-02",
+      "time": "17:00 - 20:00",
+      "location": "Online",
+      "organizer": "IDP Education Pty Ltd",
+      "agent_name": "IDP Education Pty Ltd",
+      "agent_country": "Taiwan",
+      "agent_website": "https://www.idp.com/taiwan/store-finder/",
+      "registration_url": "https://www.idp.com/taiwan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
     {
       "id": 5557,
       "name": "澳洲私立菁英中學升學說明會｜彭布羅克學校 Pembroke School",

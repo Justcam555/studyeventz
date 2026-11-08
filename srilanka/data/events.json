@@ -1,48 +1,16 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
-    {
-      "id": 6974,
-      "name": "Meet & Greet with USA University",
-      "date": "2026-11-02",
-      "time": "14:00 - 15:00",
-      "location": "Online",
-      "organizer": "KC Overseas Education – Colombo",
-      "agent_name": "KC Overseas Education – Colombo",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "KO"
-    },
-    {
-      "id": 6978,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 - 16:00",
-      "location": "Dhanmondi, Sri Lanka",
-      "organizer": "AH&Z Associates",
-      "agent_name": "AH&Z Associates",
-      "agent_country": "Sri Lanka",
-      "agent_website": "https://www.ahzassociates.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AZ"
-    },
     {
       "id": 6976,
       "name": "Study in Singapore",
@@ -77,6 +45,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6978,
+      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
+      "date": "2026-11-03",
+      "time": "12:00 - 16:00",
+      "location": "Dhanmondi, Sri Lanka",
+      "organizer": "AH&Z Associates",
+      "agent_name": "AH&Z Associates",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.ahzassociates.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 6974,
+      "name": "Meet & Greet with USA University",
+      "date": "2026-11-02",
+      "time": "14:00 - 15:00",
+      "location": "Online",
+      "organizer": "KC Overseas Education – Colombo",
+      "agent_name": "KC Overseas Education – Colombo",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.studies-overseas.com/contact-us/study-abroad-consultants-in-colombo",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "KO"
+    },
     {
       "id": 5976,
       "name": "IDP Canada & USA Bachelors Degree Virtual Fair",

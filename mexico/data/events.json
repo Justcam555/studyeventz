@@ -1,20 +1,20 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6664,
-      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
-      "date": "2026-11-03",
+      "id": 7287,
+      "name": "Estudia Higher Education en Irlanda – Tu Portal a Europa",
+      "date": "2026-11-10",
       "time": "",
       "location": "Online",
       "organizer": "Global Study Partners, Mexico",
@@ -28,10 +28,26 @@
       "initials": "GS"
     },
     {
-      "id": 6948,
+      "id": 7288,
+      "name": "Despega tu Carrera en IT en Western Australia con NIT",
+      "date": "2026-11-18",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
+      "agent_country": "Mexico",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
+    {
+      "id": 7289,
       "name": "Webinar: Estudia en Australia con Kaplan Business School",
       "date": "2026-11-25",
-      "time": "17:30",
+      "time": "",
       "location": "Online",
       "organizer": "Go Study Australia Pty. Ltd.",
       "agent_name": "Go Study Australia Pty. Ltd.",

@@ -1,48 +1,16 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
-    {
-      "id": 7011,
-      "name": "Avropada Təhsil üzrə Açıq Qapı Günü",
-      "date": "2026-11-07",
-      "time": "11:00 – 17:00",
-      "location": "Baku, Azerbaijan",
-      "organizer": "Azeristudent",
-      "agent_name": "Azeristudent",
-      "agent_country": "Turkey",
-      "agent_website": "azeristudent.az",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AZ"
-    },
-    {
-      "id": 6751,
-      "name": "UniQ İngiltere Üniversiteleri Buluşması",
-      "date": "2026-11-07",
-      "time": "13:00–17:00",
-      "location": "InterContinental İstanbul, Taksim, Istanbul, Turkey",
-      "organizer": "Ogrenim Dostu (Trading as First EduMate)",
-      "agent_name": "Ogrenim Dostu (Trading as First EduMate)",
-      "agent_country": "Turkey",
-      "agent_website": "firstedumate.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "OD"
-    },
     {
       "id": 7010,
       "name": "Cardiff Metropolitan University IDP İstanbul Ofisi’nde!",
@@ -110,6 +78,38 @@
   ],
   "past": [
     {
+      "id": 6751,
+      "name": "UniQ İngiltere Üniversiteleri Buluşması",
+      "date": "2026-11-07",
+      "time": "13:00–17:00",
+      "location": "InterContinental İstanbul, Taksim, Istanbul, Turkey",
+      "organizer": "Ogrenim Dostu (Trading as First EduMate)",
+      "agent_name": "Ogrenim Dostu (Trading as First EduMate)",
+      "agent_country": "Turkey",
+      "agent_website": "firstedumate.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "OD"
+    },
+    {
+      "id": 7011,
+      "name": "Avropada Təhsil üzrə Açıq Qapı Günü",
+      "date": "2026-11-07",
+      "time": "11:00 – 17:00",
+      "location": "Baku, Azerbaijan",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
       "id": 6748,
       "name": "\"Study in Australia\" Days",
       "date": "2026-10-31",
@@ -140,22 +140,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AA"
-    },
-    {
-      "id": 6422,
-      "name": "University of Sydney IDP İstanbul Ofisi’nde!",
-      "date": "2026-10-22",
-      "time": "15:00 - 16:30",
-      "location": "Istanbul, Turkey",
-      "organizer": "IDP Turkey",
-      "agent_name": "IDP Turkey",
-      "agent_country": "Turkey",
-      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/turkey/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IT"
     },
     {
       "id": 2288,

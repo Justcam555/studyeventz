@@ -1,16 +1,17 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 6501,
       "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 4721,
       "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",

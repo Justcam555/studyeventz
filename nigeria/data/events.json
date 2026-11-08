@@ -1,48 +1,16 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
-    {
-      "id": 6680,
-      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
-      "date": "2026-11-03",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners",
-      "agent_name": "Global Study Partners",
-      "agent_country": "Nigeria",
-      "agent_website": "upgradgsp.com",
-      "registration_url": "https://upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 6669,
-      "name": "",
-      "date": "2026-11-06",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Port Harcourt, Nigeria",
-      "organizer": "IDP Nigeria",
-      "agent_name": "IDP Nigeria",
-      "agent_country": "Nigeria",
-      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants/kano/kano/ng-1005/",
-      "registration_url": "https://www.idp.com/nigeria/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IN"
-    },
     {
       "id": 6954,
       "name": "Craydel Study Abroad Fair in Lagos",
@@ -77,6 +45,38 @@
     }
   ],
   "past": [
+    {
+      "id": 6669,
+      "name": "",
+      "date": "2026-11-06",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Port Harcourt, Nigeria",
+      "organizer": "IDP Nigeria",
+      "agent_name": "IDP Nigeria",
+      "agent_country": "Nigeria",
+      "agent_website": "https://www.idp.com/nigeria/study-abroad-consultants/kano/kano/ng-1005/",
+      "registration_url": "https://www.idp.com/nigeria/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IN"
+    },
+    {
+      "id": 6680,
+      "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",
+      "date": "2026-11-03",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners",
+      "agent_name": "Global Study Partners",
+      "agent_country": "Nigeria",
+      "agent_website": "upgradgsp.com",
+      "registration_url": "https://upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
     {
       "id": 6675,
       "name": "UK & Ireland University Fair",

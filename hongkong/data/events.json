@@ -1,83 +1,19 @@
 {
   "country": "hongkong",
   "country_name": "Hong Kong",
-  "generated_at": "2026-11-01T21:12:28",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6834,
-      "name": "Rongotai College in New Zealand",
-      "date": "2026-11-05",
-      "time": "12:30",
-      "location": "Online",
-      "organizer": "Academic And Continuing Education Limited",
-      "agent_name": "Academic And Continuing Education Limited",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.ace-hk.org",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AC"
-    },
-    {
-      "id": 6830,
-      "name": "UK Admission Test Webinar",
-      "date": "2026-11-05",
-      "time": "18:00 - 19:00",
-      "location": "Online",
-      "organizer": "IDP Education Ltd",
-      "agent_name": "IDP Education Ltd",
-      "agent_country": "Hong Kong",
-      "agent_website": "https://www.idp.com/hongkong",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6831,
-      "name": "Meet University of Melbourne In Hong Kong",
-      "date": "2026-11-07",
-      "time": "13:30 - 16:00",
-      "location": "Hong Kong, Hong Kong",
-      "organizer": "IDP Education Ltd",
-      "agent_name": "IDP Education Ltd",
-      "agent_country": "Hong Kong",
-      "agent_website": "https://www.idp.com/hongkong",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6837,
-      "name": "英國心理學升學講座｜Bath、Birmingham與UCAS申請",
-      "date": "2026-11-07",
-      "time": "15:30 - 17:00",
-      "location": "Aston Education 升學中心｜灣仔軒尼詩道303號協成行灣仔中心5樓, Hong Kong",
-      "organizer": "Aston Education",
-      "agent_name": "Aston Education",
-      "agent_country": "Hong Kong",
-      "agent_website": "www.aston.edu.hk",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AE"
-    },
-    {
-      "id": 6832,
-      "name": "Tasmanian Education Fair 2026 [Hong Kong]",
+      "id": 7096,
+      "name": "Tasmanian Education Fair 2026",
       "date": "2026-11-08",
       "time": "14:00 - 18:00",
       "location": "Hong Kong, Hong Kong",
@@ -92,7 +28,7 @@
       "initials": "IE"
     },
     {
-      "id": 6835,
+      "id": 7099,
       "name": "Wakatipu High School in New Zealand",
       "date": "2026-11-09",
       "time": "10:00",
@@ -124,7 +60,7 @@
       "initials": "AE"
     },
     {
-      "id": 6833,
+      "id": 7097,
       "name": "Australia, UK and Canada Education Info Day 2026",
       "date": "2026-11-14",
       "time": "11:00 - 16:30",
@@ -140,7 +76,7 @@
       "initials": "IE"
     },
     {
-      "id": 6836,
+      "id": 7100,
       "name": "St Mary's College in New Zealand",
       "date": "2026-11-16",
       "time": "09:00",
@@ -170,9 +106,41 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AE"
+    },
+    {
+      "id": 7098,
+      "name": "Australia Medicine & UK Allied Health Seminar",
+      "date": "2026-11-21",
+      "time": "11:00 - 16:00",
+      "location": "Hong Kong, Hong Kong",
+      "organizer": "IDP Education Ltd",
+      "agent_name": "IDP Education Ltd",
+      "agent_country": "Hong Kong",
+      "agent_website": "https://www.idp.com/hongkong",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
+    {
+      "id": 6837,
+      "name": "英國心理學升學講座｜Bath、Birmingham與UCAS申請",
+      "date": "2026-11-07",
+      "time": "15:30 - 17:00",
+      "location": "Aston Education 升學中心｜灣仔軒尼詩道303號協成行灣仔中心5樓, Hong Kong",
+      "organizer": "Aston Education",
+      "agent_name": "Aston Education",
+      "agent_country": "Hong Kong",
+      "agent_website": "www.aston.edu.hk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AE"
+    },
     {
       "id": 6167,
       "name": "認識 Abbey DLD Group of Colleges：直通英國頂尖名校之路",

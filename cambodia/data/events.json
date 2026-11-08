@@ -1,34 +1,18 @@
 {
   "country": "cambodia",
   "country_name": "Cambodia",
-  "generated_at": "2026-11-01T21:12:29",
+  "generated_at": "2026-11-08T21:21:07",
   "window": {
-    "from": "2026-11-01",
-    "to": "2026-12-01"
+    "from": "2026-11-08",
+    "to": "2026-12-08"
   },
   "archive": {
-    "from": "2024-11-01",
-    "to": "2026-10-31"
+    "from": "2024-11-08",
+    "to": "2026-11-07"
   },
   "events": [
     {
-      "id": 6116,
-      "name": "Global Education and Scholarship Fair 2026",
-      "date": "2026-11-07",
-      "time": "09:00 - 15:00",
-      "location": "Phnom Penh, Cambodia",
-      "organizer": "IDP Education Cambodia Ltd",
-      "agent_name": "IDP Education Cambodia Ltd",
-      "agent_country": "Cambodia",
-      "agent_website": "https://www.idp.com/cambodia/education-counsellor-office-finder/",
-      "registration_url": "https://www.idp.com/cambodia/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6117,
+      "id": 7049,
       "name": "Global Education and Scholarship Fair 2026",
       "date": "2026-11-08",
       "time": "14:00 - 18:00",
