@@ -1,34 +1,18 @@
 {
   "country": "malaysia",
   "country_name": "Malaysia",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
     {
-      "id": 7285,
-      "name": "MONASH MALAYSIA INFO DAY – JB",
-      "date": "2026-11-14",
-      "time": "13:00 - 18:00",
-      "location": "Ed Network JB @ 16 Jalan Horizon Perdana 6 Horizon Hills, Johor Bahru, Malaysia",
-      "organizer": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_name": "ED NETWORK INTERNATIONAL EDUCATION SDN BHD",
-      "agent_country": "Malaysia",
-      "agent_website": "www.ednet.com.my",
-      "registration_url": "https://www.ednet.com.my/event-pre-registration/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "EN"
-    },
-    {
-      "id": 7286,
+      "id": 7567,
       "name": "MONASH MALAYSIA INFO DAY – BATU PAHAT",
       "date": "2026-11-15",
       "time": "12:00 - 17:00",
@@ -42,6 +26,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EN"
+    },
+    {
+      "id": 7566,
+      "name": "Test",
+      "date": "2026-11-16",
+      "time": "18:53 - 18:53 WIB",
+      "location": "Online",
+      "organizer": "Fortrust Education Services",
+      "agent_name": "Fortrust Education Services",
+      "agent_country": "Malaysia",
+      "agent_website": "https://fortrust.com/?page_id=35",
+      "registration_url": "https://fortrust.com/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "FE"
     }
   ],
   "past": [

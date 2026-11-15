@@ -1,64 +1,16 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
-    {
-      "id": 7293,
-      "name": "Study in Ireland: Meet Dublin City University in Islamabad",
-      "date": "2026-11-10",
-      "time": "11:00 AM - 2:00 PM",
-      "location": "Islamabad, Pakistan",
-      "organizer": "IDP Pakistan",
-      "agent_name": "IDP Pakistan",
-      "agent_country": "Pakistan",
-      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "https://www.idp.com/pakistan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IP"
-    },
-    {
-      "id": 6695,
-      "name": "Bahawalpur Study Abroad Expo 2026",
-      "date": "2026-11-12",
-      "time": "12:00 PM - 7:00 PM",
-      "location": "Times Office - Bahawalpur, Bahawalpur, Pakistan",
-      "organizer": "Times Consultant",
-      "agent_name": "Times Consultant",
-      "agent_country": "Pakistan",
-      "agent_website": "https://timesconsultant.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "TC"
-    },
-    {
-      "id": 7294,
-      "name": "Study in Ireland: Meet Dublin City University in Karachi",
-      "date": "2026-11-13",
-      "time": "11:00 AM - 2:00 PM",
-      "location": "Karachi, Pakistan",
-      "organizer": "IDP Pakistan",
-      "agent_name": "IDP Pakistan",
-      "agent_country": "Pakistan",
-      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
-      "registration_url": "https://www.idp.com/pakistan/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IP"
-    },
     {
       "id": 6694,
       "name": "Abbottabad Study Abroad Expo 2026",
@@ -124,6 +76,22 @@
       "initials": "IP"
     },
     {
+      "id": 7589,
+      "name": "Study Abroad Assessment Day | AHZ Bogura",
+      "date": "2026-11-19",
+      "time": "12:00 – 15:00",
+      "location": "Bogura, Pakistan",
+      "organizer": "AHZ Associates Ltd",
+      "agent_name": "AHZ Associates Ltd",
+      "agent_country": "Pakistan",
+      "agent_website": "ahzassociates.co.uk/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
       "id": 6697,
       "name": "Gujranwala Study Abroad Expo 2026",
       "date": "2026-11-21",
@@ -138,15 +106,13 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "TC"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 6969,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 – 16:00",
-      "location": "Dhanmondi, Bangladesh",
+      "id": 7590,
+      "name": "South Champagne Business School Open Day @ AHZ DHA Lahore",
+      "date": "2026-11-23",
+      "time": "16:00 – 18:00",
+      "location": "Lahore, Pakistan",
       "organizer": "AHZ Associates Ltd",
       "agent_name": "AHZ Associates Ltd",
       "agent_country": "Pakistan",
@@ -156,6 +122,56 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AA"
+    }
+  ],
+  "past": [
+    {
+      "id": 7294,
+      "name": "Study in Ireland: Meet Dublin City University in Karachi",
+      "date": "2026-11-13",
+      "time": "11:00 AM - 2:00 PM",
+      "location": "Karachi, Pakistan",
+      "organizer": "IDP Pakistan",
+      "agent_name": "IDP Pakistan",
+      "agent_country": "Pakistan",
+      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
+      "registration_url": "https://www.idp.com/pakistan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IP"
+    },
+    {
+      "id": 6695,
+      "name": "Bahawalpur Study Abroad Expo 2026",
+      "date": "2026-11-12",
+      "time": "12:00 PM - 7:00 PM",
+      "location": "Times Office - Bahawalpur, Bahawalpur, Pakistan",
+      "organizer": "Times Consultant",
+      "agent_name": "Times Consultant",
+      "agent_country": "Pakistan",
+      "agent_website": "https://timesconsultant.com/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TC"
+    },
+    {
+      "id": 7293,
+      "name": "Study in Ireland: Meet Dublin City University in Islamabad",
+      "date": "2026-11-10",
+      "time": "11:00 AM - 2:00 PM",
+      "location": "Islamabad, Pakistan",
+      "organizer": "IDP Pakistan",
+      "agent_name": "IDP Pakistan",
+      "agent_country": "Pakistan",
+      "agent_website": "https://www.idp.com/pakistan/office/sialkot/idp-sialkot/pk-1015/",
+      "registration_url": "https://www.idp.com/pakistan/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IP"
     },
     {
       "id": 6693,

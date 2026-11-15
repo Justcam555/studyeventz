@@ -1,31 +1,31 @@
 {
   "country": "korea",
   "country_name": "South Korea",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
     {
-      "id": 6945,
-      "name": "[AU] 모나쉬대학교 세미나",
-      "date": "2026-11-09",
-      "time": "4:00 PM - 6:00 PM",
+      "id": 7564,
+      "name": "2026 영국 명문대 1:1 세션",
+      "date": "2026-11-18",
+      "time": "17:00 - 19:00",
       "location": "Seoul, South Korea",
-      "organizer": "IDP Education Australia",
-      "agent_name": "IDP Education Australia",
-      "agent_country": "Korea",
-      "agent_website": "https://www.idp.com/korea/study-abroad-consultants/seoul/gangnam/kr-1000/",
+      "organizer": "IDP",
+      "agent_name": "IDP",
+      "agent_country": "South Korea",
+      "agent_website": "www.idp.com/korea/studyabroad",
       "registration_url": "",
       "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "IE"
+      "initials": "ID"
     },
     {
       "id": 7284,
@@ -42,21 +42,53 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SE"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 6946,
+      "id": 7563,
       "name": "입학 설명회",
-      "date": "2026-11-07",
+      "date": "2026-11-21",
       "time": "",
       "location": "Online",
       "organizer": "International Education Network Inc (IEN)",
       "agent_name": "International Education Network Inc (IEN)",
       "agent_country": "Korea",
       "agent_website": "http://www.ienau.com",
-      "registration_url": "",
+      "registration_url": "https://www.ienau.com/community/news/",
       "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
+    },
+    {
+      "id": 7565,
+      "name": "IELTS Expert - 고득점 세미나 @서울 강남 Dec2026",
+      "date": "2026-12-10",
+      "time": "18:00 - 20:00",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP",
+      "agent_name": "IDP",
+      "agent_country": "South Korea",
+      "agent_website": "www.idp.com/korea/studyabroad",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ID"
+    }
+  ],
+  "past": [
+    {
+      "id": 6945,
+      "name": "[AU] 모나쉬대학교 세미나",
+      "date": "2026-11-09",
+      "time": "4:00 PM - 6:00 PM",
+      "location": "Seoul, South Korea",
+      "organizer": "IDP Education Australia",
+      "agent_name": "IDP Education Australia",
+      "agent_country": "Korea",
+      "agent_website": "https://www.idp.com/korea/study-abroad-consultants/seoul/gangnam/kr-1000/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"

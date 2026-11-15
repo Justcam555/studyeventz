@@ -1,14 +1,14 @@
 {
   "country": "saudi",
   "country_name": "Saudi Arabia",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [],
   "past": [

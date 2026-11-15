@@ -1,16 +1,33 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
-  "events": [],
+  "events": [
+    {
+      "id": 7373,
+      "name": "Tour Virtual del Campus - Universidades Australianas",
+      "date": "2026-11-20",
+      "time": "",
+      "location": "Online",
+      "organizer": "Studies Planet",
+      "agent_name": "Studies Planet",
+      "agent_country": "Brazil",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/es/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    }
+  ],
   "past": [
     {
       "id": 6501,
@@ -27,22 +44,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    },
-    {
-      "id": 4721,
-      "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",
-      "date": "2026-08-04",
-      "time": "",
-      "location": "Online",
-      "organizer": "Studies Planet",
-      "agent_name": "Studies Planet",
-      "agent_country": "Brazil",
-      "agent_website": "www.studiesplanet.com",
-      "registration_url": "https://www.studiesplanet.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SP"
     },
     {
       "id": 3460,

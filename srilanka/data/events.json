@@ -1,14 +1,14 @@
 {
   "country": "srilanka",
   "country_name": "Sri Lanka",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
     {
@@ -28,6 +28,54 @@
       "initials": "KO"
     },
     {
+      "id": 7599,
+      "name": "REC Freshers' Night 2026",
+      "date": "2026-11-15",
+      "time": "",
+      "location": "Online",
+      "organizer": "REC Campus",
+      "agent_name": "REC Campus",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://reccampus.com/management/",
+      "registration_url": "https://reccampus.com/news-events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "RC"
+    },
+    {
+      "id": 7601,
+      "name": "Study Abroad Assessment Day | AHZ Bogura",
+      "date": "2026-11-19",
+      "time": "12:00 – 15:00",
+      "location": "Bogura, Bangladesh",
+      "organizer": "AH&Z Associates",
+      "agent_name": "AH&Z Associates",
+      "agent_country": "Sri Lanka",
+      "agent_website": "https://www.ahzassociates.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 7600,
+      "name": "Massey University - MBA Information Session",
+      "date": "2026-11-21",
+      "time": "11:30 am to 1:30 pm",
+      "location": "Rivil Office - Mount Lavinia, Sri Lanka",
+      "organizer": "Rivil International (Pvt) Ltd",
+      "agent_name": "Rivil International (Pvt) Ltd",
+      "agent_country": "Sri Lanka",
+      "agent_website": "www.riviledu.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "RI"
+    },
+    {
       "id": 6977,
       "name": "University Visits",
       "date": "2026-11-26",
@@ -42,15 +90,13 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "VS"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 6978,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 - 16:00",
-      "location": "Dhanmondi, Sri Lanka",
+      "id": 7602,
+      "name": "Study in UK: Last Call for Jan'27 | AHZ Bangladesh",
+      "date": "2026-11-28",
+      "time": "10:00 – 18:00",
+      "location": "Bangladesh",
       "organizer": "AH&Z Associates",
       "agent_name": "AH&Z Associates",
       "agent_country": "Sri Lanka",
@@ -60,7 +106,9 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AZ"
-    },
+    }
+  ],
+  "past": [
     {
       "id": 6974,
       "name": "Meet & Greet with USA University",
@@ -268,22 +316,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CD"
-    },
-    {
-      "id": 4570,
-      "name": "James Cook University - Singapore - International Visit",
-      "date": "2026-07-31",
-      "time": "4 pm to 6 pm",
-      "location": "Rivil Office - Mount Lavinia, Sri Lanka",
-      "organizer": "Rivil International (Pvt) Ltd",
-      "agent_name": "Rivil International (Pvt) Ltd",
-      "agent_country": "Sri Lanka",
-      "agent_website": "www.riviledu.com",
-      "registration_url": "https://www.riviledu.com/events.php",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "RI"
     },
     {
       "id": 4562,

@@ -1,80 +1,16 @@
 {
   "country": "vietnam",
   "country_name": "Vietnam",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
-    {
-      "id": 7329,
-      "name": "Hội thảo trực tuyến: 60 phút tìm hiểu chuyên sâu ngành Y, Dược, Điều dưỡng tại Úc",
-      "date": "2026-11-08",
-      "time": "09:00 - 11:00",
-      "location": "Online",
-      "organizer": "IDP Education Vietnam Co Ltd",
-      "agent_name": "IDP Education Vietnam Co Ltd",
-      "agent_country": "Vietnam",
-      "agent_website": "https://www.idp.com/vietnam",
-      "registration_url": "https://www.idp.com/vietnam/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IE"
-    },
-    {
-      "id": 6763,
-      "name": "Ngày Hội 8 Trường Đại Học Hàng Đầu Úc - TP.HCM & Hà Nội",
-      "date": "2026-11-14",
-      "time": "",
-      "location": "TP. Hồ Chí Minh, Hà Nội",
-      "organizer": "Avenue To Success Company Limited",
-      "agent_name": "Avenue To Success Company Limited",
-      "agent_country": "Vietnam",
-      "agent_website": "www.ats.org.vn",
-      "registration_url": "https://ats.org.vn/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AT"
-    },
-    {
-      "id": 7337,
-      "name": "GẶP BAN TUYỂN SINH NUS, KHÁM PHÁ HỌC BỔNG CỬ NHÂN 2027",
-      "date": "2026-11-14",
-      "time": "",
-      "location": "Ho Chi Minh City",
-      "organizer": "Vietnam Centre Point",
-      "agent_name": "Vietnam Centre Point",
-      "agent_country": "Vietnam",
-      "agent_website": "https://duhochopdiem.edu.vn/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "VC"
-    },
-    {
-      "id": 7336,
-      "name": "Coffee Talk Du Học Mỹ - Canada Bậc Cao Đẳng: Lộ Trình Tối Ưu - Tiết Kiệm Chi Phí",
-      "date": "2026-11-14",
-      "time": "09:00 - 12:00",
-      "location": "Online / HCM (Văn phòng New World TP.HCM – Tòa nhà Vimedimex, Tầng 10, 246 Cống Quỳnh, Phường Bến Thành, TP.HCM)",
-      "organizer": "New World Study Abroad Consulting Company Ltd",
-      "agent_name": "New World Study Abroad Consulting Company Ltd",
-      "agent_country": "Vietnam",
-      "agent_website": "newworldedu.vn",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "NW"
-    },
     {
       "id": 6764,
       "name": "Ngày Hội 8 Trường Đại Học Hàng Đầu Úc - TP.HCM & Hà Nội",
@@ -92,7 +28,23 @@
       "initials": "AT"
     },
     {
-      "id": 7330,
+      "id": 7650,
+      "name": "Ngày Hội Hướng Nghiệp Du Học Hằng Lương 2026",
+      "date": "2026-11-15",
+      "time": "",
+      "location": "Online",
+      "organizer": "Hang Luong Company Limited",
+      "agent_name": "Hang Luong Company Limited",
+      "agent_country": "Vietnam",
+      "agent_website": "www.duhochangluong.edu.vn",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HL"
+    },
+    {
+      "id": 7641,
       "name": "Hội thảo du học Mỹ trực tuyến: Chiến thuật săn học bổng mỹ 50% - Không cần SAT, không bài luận - GPA và IELTS của bạn có thể mở khóa học bổng nào?",
       "date": "2026-11-15",
       "time": "09:00 - 10:30",
@@ -106,6 +58,54 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 7648,
+      "name": "School Tour: Hands On – BEO ghé thăm trường THPT Ngô Quyền",
+      "date": "2026-11-16",
+      "time": "07:00 - 09:00",
+      "location": "THPT Ngô Quyền, TP.HCM, Vietnam",
+      "organizer": "Education Tower/ Hands On - BEO",
+      "agent_name": "Education Tower/ Hands On - BEO",
+      "agent_country": "Vietnam",
+      "agent_website": "https://handson-beo.vn/",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ET"
+    },
+    {
+      "id": 7647,
+      "name": "[AUG Đà Nẵng] Workshop: BTEC TO THE WORLD – UNLOCK YOUR GLOBAL FUTURE",
+      "date": "2026-11-16",
+      "time": "13:30 - 16:00",
+      "location": "Văn phòng AUG Đà Nẵng, 219 Nguyễn Văn Linh, P. Thanh Khê, TP. Đà Nẵng, Vietnam",
+      "organizer": "AUG (AusEd UniEd Group) – Vietnam – Da Nang",
+      "agent_name": "AUG (AusEd UniEd Group) – Vietnam – Da Nang",
+      "agent_country": "Vietnam",
+      "agent_website": "https://augstudy.com/viet-nam",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 7651,
+      "name": "Ngày Hội Hướng Nghiệp - Du Học - Việc Làm Quốc Tế 11.2026",
+      "date": "2026-11-20",
+      "time": "",
+      "location": "Online",
+      "organizer": "Hang Luong Company Limited",
+      "agent_name": "Hang Luong Company Limited",
+      "agent_country": "Vietnam",
+      "agent_website": "www.duhochangluong.edu.vn",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "HL"
     },
     {
       "id": 6765,
@@ -140,7 +140,7 @@
       "initials": "DA"
     },
     {
-      "id": 7331,
+      "id": 7642,
       "name": "Hội thảo: Du học UK ngành TESOL - Bước đệm cho sự nghiệp quốc tế",
       "date": "2026-11-27",
       "time": "17:30 - 19:30",
@@ -156,7 +156,7 @@
       "initials": "IE"
     },
     {
-      "id": 7332,
+      "id": 7643,
       "name": "Hội thảo trực tuyến: Visa du học New Zealand có khó như bạn nghĩ?",
       "date": "2026-11-29",
       "time": "09:00 - 10:00",
@@ -172,7 +172,7 @@
       "initials": "IE"
     },
     {
-      "id": 7333,
+      "id": 7644,
       "name": "Hội thảo: Vững vàng khởi đầu tại Úc - Tự tin hòa nhập, chủ động tương lai - TP.HCM",
       "date": "2026-12-06",
       "time": "09:00 - 11:00",
@@ -186,9 +186,73 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
+    },
+    {
+      "id": 7646,
+      "name": "Du học Úc 2027: Cơ hội học bổng đến 60.000 AUD/năm tại Macquarie University",
+      "date": "2026-12-12",
+      "time": "09:00 - 10:30",
+      "location": "Online",
+      "organizer": "IDP Education Vietnam Co Ltd",
+      "agent_name": "IDP Education Vietnam Co Ltd",
+      "agent_country": "Vietnam",
+      "agent_website": "https://www.idp.com/vietnam",
+      "registration_url": "https://www.idp.com/vietnam/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IE"
     }
   ],
   "past": [
+    {
+      "id": 7336,
+      "name": "Coffee Talk Du Học Mỹ - Canada Bậc Cao Đẳng: Lộ Trình Tối Ưu - Tiết Kiệm Chi Phí",
+      "date": "2026-11-14",
+      "time": "09:00 - 12:00",
+      "location": "Online / HCM (Văn phòng New World TP.HCM – Tòa nhà Vimedimex, Tầng 10, 246 Cống Quỳnh, Phường Bến Thành, TP.HCM)",
+      "organizer": "New World Study Abroad Consulting Company Ltd",
+      "agent_name": "New World Study Abroad Consulting Company Ltd",
+      "agent_country": "Vietnam",
+      "agent_website": "newworldedu.vn",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "NW"
+    },
+    {
+      "id": 7337,
+      "name": "GẶP BAN TUYỂN SINH NUS, KHÁM PHÁ HỌC BỔNG CỬ NHÂN 2027",
+      "date": "2026-11-14",
+      "time": "",
+      "location": "Ho Chi Minh City",
+      "organizer": "Vietnam Centre Point",
+      "agent_name": "Vietnam Centre Point",
+      "agent_country": "Vietnam",
+      "agent_website": "https://duhochopdiem.edu.vn/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "VC"
+    },
+    {
+      "id": 6763,
+      "name": "Ngày Hội 8 Trường Đại Học Hàng Đầu Úc - TP.HCM & Hà Nội",
+      "date": "2026-11-14",
+      "time": "",
+      "location": "TP. Hồ Chí Minh, Hà Nội",
+      "organizer": "Avenue To Success Company Limited",
+      "agent_name": "Avenue To Success Company Limited",
+      "agent_country": "Vietnam",
+      "agent_website": "www.ats.org.vn",
+      "registration_url": "https://ats.org.vn/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AT"
+    },
     {
       "id": 7031,
       "name": "Workshop Online: Lên lộ trình du học Master UK 2027 cùng University of Exeter",
@@ -236,22 +300,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "DW"
-    },
-    {
-      "id": 7024,
-      "name": "Ngày Hội Hướng Nghiệp - Du Học - Việc Làm Quốc Tế 11.2026",
-      "date": "2026-11-01",
-      "time": "",
-      "location": "Online",
-      "organizer": "Hang Luong Company Limited",
-      "agent_name": "Hang Luong Company Limited",
-      "agent_country": "Vietnam",
-      "agent_website": "www.duhochangluong.edu.vn",
-      "registration_url": "https://www.duhochangluong.edu.vn/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "HL"
     },
     {
       "id": 6438,
@@ -316,22 +364,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GE"
-    },
-    {
-      "id": 6767,
-      "name": "Access MBA Ho Chi Minh City 2026",
-      "date": "2026-10-29",
-      "time": "17:00 - 21:15",
-      "location": "Ho Chi Minh City, Vietnam",
-      "organizer": "Education Tower/ Hands On - BEO",
-      "agent_name": "Education Tower/ Hands On - BEO",
-      "agent_country": "Vietnam",
-      "agent_website": "https://handson-beo.vn/",
-      "registration_url": "",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/HandsOn%20Logo.png",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "ET"
     },
     {
       "id": 6434,

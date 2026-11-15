@@ -1,48 +1,16 @@
 {
   "country": "colombia",
   "country_name": "Colombia",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
-    {
-      "id": 7092,
-      "name": "Estudia Higher Education en Irlanda – Tu Portal a Europ",
-      "date": "2026-11-10",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners - Colombia",
-      "agent_name": "Global Study Partners - Colombia",
-      "agent_country": "Colombia",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
-    {
-      "id": 7089,
-      "name": "",
-      "date": "2026-11-10",
-      "time": "18:00",
-      "location": "Online",
-      "organizer": "Latin American Education S.A.",
-      "agent_name": "Latin American Education S.A.",
-      "agent_country": "Colombia",
-      "agent_website": "https://lae-edu.com/oficina-cali-colombia/",
-      "registration_url": "https://lae-edu.com/eventos-lae/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "LA"
-    },
     {
       "id": 7093,
       "name": "Despega tu Carrera en IT en Western Australia con NIT",
@@ -58,6 +26,54 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
+    },
+    {
+      "id": 7419,
+      "name": "Webinars COLFUTURO 2027: agenda, requisitos y preparación para tu maestría",
+      "date": "2026-11-19",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "Blue Studies International Colombia",
+      "agent_name": "Blue Studies International Colombia",
+      "agent_country": "Colombia",
+      "agent_website": "https://www.bluestudies.com/",
+      "registration_url": "https://www.bluestudies.com/co/eventos",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "BS"
+    },
+    {
+      "id": 7422,
+      "name": "Tour Virtual del Campus - Universidades Australianas",
+      "date": "2026-11-20",
+      "time": "",
+      "location": "Online",
+      "organizer": "Studies Planet",
+      "agent_name": "Studies Planet",
+      "agent_country": "Colombia",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/es/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    },
+    {
+      "id": 7421,
+      "name": "Estudia inglés y trabaja en Australia y Nueva Zelanda",
+      "date": "2026-11-25",
+      "time": "",
+      "location": "Online",
+      "organizer": "Grasshopper International / Global Institutions S.A.S",
+      "agent_name": "Grasshopper International / Global Institutions S.A.S",
+      "agent_country": "Colombia",
+      "agent_website": "https://grasshopperstudy.com",
+      "registration_url": "https://grasshopperstudy.com/conoce-eventos-grasshopper/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
     },
     {
       "id": 7090,
@@ -76,23 +92,7 @@
       "initials": "LA"
     },
     {
-      "id": 7091,
-      "name": "Estudia inglés y trabaja en Australia y Nueva Zelanda",
-      "date": "2026-11-27",
-      "time": "",
-      "location": "Online",
-      "organizer": "Grasshopper International / Global Institutions S.A.S",
-      "agent_name": "Grasshopper International / Global Institutions S.A.S",
-      "agent_country": "Colombia",
-      "agent_website": "https://grasshopperstudy.com",
-      "registration_url": "https://grasshopperstudy.com/conoce-eventos-grasshopper/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GI"
-    },
-    {
-      "id": 7088,
+      "id": 7420,
       "name": "Expo exterior Bucaramanga Amor y Amistad 2026",
       "date": "2026-11-30",
       "time": "14:00",
@@ -109,6 +109,38 @@
     }
   ],
   "past": [
+    {
+      "id": 7089,
+      "name": "",
+      "date": "2026-11-10",
+      "time": "18:00",
+      "location": "Online",
+      "organizer": "Latin American Education S.A.",
+      "agent_name": "Latin American Education S.A.",
+      "agent_country": "Colombia",
+      "agent_website": "https://lae-edu.com/oficina-cali-colombia/",
+      "registration_url": "https://lae-edu.com/eventos-lae/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "LA"
+    },
+    {
+      "id": 7092,
+      "name": "Estudia Higher Education en Irlanda – Tu Portal a Europ",
+      "date": "2026-11-10",
+      "time": "",
+      "location": "Online",
+      "organizer": "Global Study Partners - Colombia",
+      "agent_name": "Global Study Partners - Colombia",
+      "agent_country": "Colombia",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GS"
+    },
     {
       "id": 6825,
       "name": "Estudia tu posgrado en UWE Bristol",
@@ -140,22 +172,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "EG"
-    },
-    {
-      "id": 4781,
-      "name": "Estudia tu maestría con una beca completa para estudiantes latinoamericanos",
-      "date": "2026-08-04",
-      "time": "",
-      "location": "Online",
-      "organizer": "Studies Planet",
-      "agent_name": "Studies Planet",
-      "agent_country": "Colombia",
-      "agent_website": "www.studiesplanet.com",
-      "registration_url": "https://www.studiesplanet.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "SP"
     },
     {
       "id": 3520,

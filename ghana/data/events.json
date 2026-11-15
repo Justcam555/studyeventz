@@ -1,14 +1,14 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
     {
@@ -60,22 +60,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "AI"
-    },
-    {
-      "id": 5248,
-      "name": "Study at Top UK & Australian Universities in Dubai Campuses - IDP Ghana",
-      "date": "2026-10-06",
-      "time": "09:00 - 17:00",
-      "location": "Accra (East Legon), Ghana",
-      "organizer": "IDP - Ghana",
-      "agent_name": "IDP - Ghana",
-      "agent_country": "Ghana",
-      "agent_website": "https://www.idp.com/ghana/study-abroad-consultants/kumasi/nhyiaeso/gh-1002/",
-      "registration_url": "https://www.idp.com/ghana/events/",
-      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "IG"
     },
     {
       "id": 5249,

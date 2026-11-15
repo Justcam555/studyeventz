@@ -1,16 +1,114 @@
 {
   "country": "nepal",
   "country_name": "Nepal",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
+    {
+      "id": 7572,
+      "name": "Grace Special Eduversé 2026",
+      "date": "2026-11-16",
+      "time": "10:00 AM Onwards",
+      "location": "Kathmandu, Nepal",
+      "organizer": "Grace International",
+      "agent_name": "Grace International",
+      "agent_country": "Nepal",
+      "agent_website": "https://graceintlgroup.com/",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "GI"
+    },
+    {
+      "id": 7573,
+      "name": "JCU Singapore University Visit",
+      "date": "2026-11-18",
+      "time": "14:30 - 15:30",
+      "location": "Calicut, India",
+      "organizer": "Viv's International Education Centre (VIEC)",
+      "agent_name": "Viv's International Education Centre (VIEC)",
+      "agent_country": "Nepal",
+      "agent_website": "http://www.vieceducation.com",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "VS"
+    },
+    {
+      "id": 7577,
+      "name": "Study Abroad Assessment Day | AHZ Bogura",
+      "date": "2026-11-19",
+      "time": "12:00 – 15:00",
+      "location": "Bogura, Nepal",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nepal",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 7570,
+      "name": "Global Education Fair",
+      "date": "2026-11-20",
+      "time": "11:00 - 17:00",
+      "location": "Kathmandu",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.gostudyin.com",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
+    },
+    {
+      "id": 7571,
+      "name": "Global Education Fair",
+      "date": "2026-11-21",
+      "time": "11:00 - 17:00",
+      "location": "Kathmandu",
+      "organizer": "StudyIn",
+      "agent_name": "StudyIn",
+      "agent_country": "Nepal",
+      "agent_website": "https://www.gostudyin.com",
+      "registration_url": "",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/studyin-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "ST"
+    },
+    {
+      "id": 7578,
+      "name": "Study in UK: Last Call for Jan'27 | AHZ Bangladesh",
+      "date": "2026-11-28",
+      "time": "10:00 – 18:00",
+      "location": "Bangladesh",
+      "organizer": "AHZ Associates",
+      "agent_name": "AHZ Associates",
+      "agent_country": "Nepal",
+      "agent_website": "ahzassociates.co.uk",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    }
+  ],
+  "past": [
     {
       "id": 7290,
       "name": "Virtual Event",
@@ -26,40 +124,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GR"
-    },
-    {
-      "id": 7291,
-      "name": "JCU Singapore",
-      "date": "2026-11-18",
-      "time": "14:30 - 15:30",
-      "location": "Calicut, India (Discard: Not in Nepal)",
-      "organizer": "Viv's International Education Centre (VIEC)",
-      "agent_name": "Viv's International Education Centre (VIEC)",
-      "agent_country": "Nepal",
-      "agent_website": "http://www.vieceducation.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "VS"
-    }
-  ],
-  "past": [
-    {
-      "id": 6952,
-      "name": "Cardiff Metropolitan University Application Day | AHZ Dhanmondi",
-      "date": "2026-11-03",
-      "time": "12:00 - 16:00",
-      "location": "Dhanmondi, Nepal",
-      "organizer": "AHZ Associates",
-      "agent_name": "AHZ Associates",
-      "agent_country": "Nepal",
-      "agent_website": "ahzassociates.co.uk",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
     },
     {
       "id": 6951,

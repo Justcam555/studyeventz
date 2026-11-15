@@ -1,32 +1,16 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:30",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
-    {
-      "id": 7287,
-      "name": "Estudia Higher Education en Irlanda – Tu Portal a Europa",
-      "date": "2026-11-10",
-      "time": "",
-      "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
-      "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "GS"
-    },
     {
       "id": 7288,
       "name": "Despega tu Carrera en IT en Western Australia con NIT",
@@ -44,7 +28,23 @@
       "initials": "GS"
     },
     {
-      "id": 7289,
+      "id": 7569,
+      "name": "Tour Virtual del Campus - Universidades Australianas",
+      "date": "2026-11-20",
+      "time": "",
+      "location": "Online",
+      "organizer": "Studies Planet.com",
+      "agent_name": "Studies Planet.com",
+      "agent_country": "Mexico",
+      "agent_website": "www.studiesplanet.com",
+      "registration_url": "https://www.studiesplanet.com/es/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "SP"
+    },
+    {
+      "id": 7568,
       "name": "Webinar: Estudia en Australia con Kaplan Business School",
       "date": "2026-11-25",
       "time": "",
@@ -62,20 +62,20 @@
   ],
   "past": [
     {
-      "id": 4485,
-      "name": "Study your Master's degree with a full scholarship for Latin American Students",
-      "date": "2026-08-04",
+      "id": 7287,
+      "name": "Estudia Higher Education en Irlanda – Tu Portal a Europa",
+      "date": "2026-11-10",
       "time": "",
       "location": "Online",
-      "organizer": "Studies Planet.com",
-      "agent_name": "Studies Planet.com",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
       "agent_country": "Mexico",
-      "agent_website": "www.studiesplanet.com",
-      "registration_url": "https://www.studiesplanet.com/events/",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "SP"
+      "initials": "GS"
     },
     {
       "id": 3857,

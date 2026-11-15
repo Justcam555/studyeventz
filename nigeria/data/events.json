@@ -1,14 +1,14 @@
 {
   "country": "nigeria",
   "country_name": "Nigeria",
-  "generated_at": "2026-11-08T21:21:07",
+  "generated_at": "2026-11-15T20:54:29",
   "window": {
-    "from": "2026-11-08",
-    "to": "2026-12-08"
+    "from": "2026-11-15",
+    "to": "2026-12-15"
   },
   "archive": {
-    "from": "2024-11-08",
-    "to": "2026-11-07"
+    "from": "2024-11-15",
+    "to": "2026-11-14"
   },
   "events": [
     {
@@ -28,6 +28,22 @@
       "initials": "CL"
     },
     {
+      "id": 7580,
+      "name": "Craydel Study Abroad Fair in Lagos",
+      "date": "2026-11-21",
+      "time": "9:00 AM – 5:00 PM",
+      "location": "Lagos, Nigeria",
+      "organizer": "Craydel Inc.",
+      "agent_name": "Craydel Inc.",
+      "agent_country": "Nigeria",
+      "agent_website": "https://craydel.com/about/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CR"
+    },
+    {
       "id": 6953,
       "name": "Craydel Study Abroad Fair in Abuja",
       "date": "2026-11-28",
@@ -42,6 +58,22 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "CL"
+    },
+    {
+      "id": 7579,
+      "name": "Craydel Study Abroad Fair in Abuja",
+      "date": "2026-11-28",
+      "time": "9:00 AM – 5:00 PM",
+      "location": "Abuja, Nigeria",
+      "organizer": "Craydel Inc.",
+      "agent_name": "Craydel Inc.",
+      "agent_country": "Nigeria",
+      "agent_website": "https://craydel.com/about/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "CR"
     }
   ],
   "past": [
@@ -364,22 +396,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "RP"
-    },
-    {
-      "id": 4520,
-      "name": "Study in Australia & New Zealand — Meet Navitas at Craydel",
-      "date": "2026-08-01",
-      "time": "10:00 AM – 3:00 PM",
-      "location": "Unit 6, Thompson Building, 17 Phillips Road, Belgravia, Harare, Zimbabwe",
-      "organizer": "Craydel Inc.",
-      "agent_name": "Craydel Inc.",
-      "agent_country": "Nigeria",
-      "agent_website": "https://craydel.com/about/contact",
-      "registration_url": "https://craydel.com/events",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "CR"
     },
     {
       "id": 3885,
