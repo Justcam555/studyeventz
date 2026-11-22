@@ -1,22 +1,54 @@
 {
   "country": "turkey",
   "country_name": "Turkey",
-  "generated_at": "2026-11-15T20:54:30",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
   "events": [
     {
-      "id": 7013,
-      "name": "Xaricdə Orta Məktəb Təhsili (Boarding Schools) üzrə Açıq Qapı Günü",
-      "date": "2026-11-21",
+      "id": 7865,
+      "name": "Hollanda'da Lisans ve Yüksek Lisans Fırsatları: Radboud University Webinarı",
+      "date": "2026-11-24",
+      "time": "17:00 - 18:00",
+      "location": "Online",
+      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
+      "agent_country": "Turkey",
+      "agent_website": "academix.com.tr",
+      "registration_url": "https://www.academix.com.tr/yurtdisi-egitim-etkinlikleri/hollandada-lisans-ve-yuksek-lisans-firsatlari-radboud-university-webinari",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AA"
+    },
+    {
+      "id": 7864,
+      "name": "Avustralya Şubat Alımları Webinarı",
+      "date": "2026-11-26",
+      "time": "19:00 - 20:00",
+      "location": "Online",
+      "organizer": "IDP Turkey",
+      "agent_name": "IDP Turkey",
+      "agent_country": "Turkey",
+      "agent_website": "https://www.idp.com/turkey/education-counsellor-office-finder/",
+      "registration_url": "https://www.idp.com/turkey/events/",
+      "logo_url": "/assets/logos/StudyeventZ%20logos/idp-logo.svg",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "IT"
+    },
+    {
+      "id": 7866,
+      "name": "День открытых дверей: Стипендии и образовательный бюджет!",
+      "date": "2026-11-28",
       "time": "11:00 – 17:00",
-      "location": "Baku, Azerbaijan",
+      "location": "Баку, Азербайджан",
       "organizer": "Azeristudent",
       "agent_name": "Azeristudent",
       "agent_country": "Turkey",
@@ -28,11 +60,43 @@
       "initials": "AZ"
     },
     {
-      "id": 7014,
-      "name": "Təqaüdlər və Təhsil Büdcəsi üzrə Açıq Qapı Günü",
-      "date": "2026-11-28",
+      "id": 7867,
+      "name": "День открытых дверей: Магистратура за рубежом!",
+      "date": "2026-12-05",
       "time": "11:00 – 17:00",
-      "location": "Baku, Azerbaijan",
+      "location": "Баку, Азербайджан",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 7868,
+      "name": "День открытых дверей: Обучение в Америке!",
+      "date": "2026-12-12",
+      "time": "11:00 – 17:00",
+      "location": "Баку, Азербайджан",
+      "organizer": "Azeristudent",
+      "agent_name": "Azeristudent",
+      "agent_country": "Turkey",
+      "agent_website": "azeristudent.az",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AZ"
+    },
+    {
+      "id": 7869,
+      "name": "День открытых дверей: Подача заявок в университеты и проверка документов!",
+      "date": "2026-12-19",
+      "time": "11:00 – 17:00",
+      "location": "Баку, Азербайджан",
       "organizer": "Azeristudent",
       "agent_name": "Azeristudent",
       "agent_country": "Turkey",
@@ -45,22 +109,6 @@
     }
   ],
   "past": [
-    {
-      "id": 7012,
-      "name": "A-Level və Digər Universitetə Qəbul İmtahanları üzrə Açıq Qapı Günü",
-      "date": "2026-11-14",
-      "time": "11:00 – 17:00",
-      "location": "Baku, Azerbaijan",
-      "organizer": "Azeristudent",
-      "agent_name": "Azeristudent",
-      "agent_country": "Turkey",
-      "agent_website": "azeristudent.az",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AZ"
-    },
     {
       "id": 7010,
       "name": "Cardiff Metropolitan University IDP İstanbul Ofisi’nde!",
@@ -94,22 +142,6 @@
       "initials": "OD"
     },
     {
-      "id": 7011,
-      "name": "Avropada Təhsil üzrə Açıq Qapı Günü",
-      "date": "2026-11-07",
-      "time": "11:00 – 17:00",
-      "location": "Baku, Azerbaijan",
-      "organizer": "Azeristudent",
-      "agent_name": "Azeristudent",
-      "agent_country": "Turkey",
-      "agent_website": "azeristudent.az",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AZ"
-    },
-    {
       "id": 6748,
       "name": "\"Study in Australia\" Days",
       "date": "2026-10-31",
@@ -124,22 +156,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "HE"
-    },
-    {
-      "id": 6749,
-      "name": "Ankara’da İtalya Eğitim Günleri: Üniversiteler, Burslar ve Başvuru Rehberi",
-      "date": "2026-10-28",
-      "time": "13:30",
-      "location": "Ramada by Wyndham, Ankara, Turkey",
-      "organizer": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_name": "Academix (Akademik Eğitim Danismanlik Tic. Ltd. Sti.)",
-      "agent_country": "Turkey",
-      "agent_website": "academix.com.tr",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
     },
     {
       "id": 2288,

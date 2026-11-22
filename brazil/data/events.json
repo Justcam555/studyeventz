@@ -1,16 +1,17 @@
 {
   "country": "brazil",
   "country_name": "Brazil",
-  "generated_at": "2026-11-15T20:54:30",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
-  "events": [
+  "events": [],
+  "past": [
     {
       "id": 7373,
       "name": "Tour Virtual del Campus - Universidades Australianas",
@@ -26,9 +27,7 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "SP"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 6501,
       "name": "Explore Adelaide University: Discover Its Six Faculties | Partner Webinar",

@@ -1,54 +1,40 @@
 {
   "country": "pakistan",
   "country_name": "Pakistan",
-  "generated_at": "2026-11-15T20:54:30",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
   "events": [
     {
-      "id": 6694,
-      "name": "Abbottabad Study Abroad Expo 2026",
-      "date": "2026-11-16",
-      "time": "12:00 PM - 07:00 PM",
-      "location": "Hotel One Abbottabad, Abbottabad, Pakistan",
-      "organizer": "Times Consultant",
-      "agent_name": "Times Consultant",
+      "id": 7847,
+      "name": "South Champagne Business School Open Day @ AHZ DHA Lahore",
+      "date": "2026-11-23",
+      "time": "16:00 – 18:00",
+      "location": "Lahore, Pakistan",
+      "organizer": "AHZ Associates Ltd",
+      "agent_name": "AHZ Associates Ltd",
       "agent_country": "Pakistan",
-      "agent_website": "https://timesconsultant.com/contact",
+      "agent_website": "ahzassociates.co.uk/",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "TC"
-    },
+      "initials": "AA"
+    }
+  ],
+  "past": [
     {
-      "id": 6696,
-      "name": "Faisalabad Study Abroad Expo 2026",
-      "date": "2026-11-17",
+      "id": 6697,
+      "name": "Gujranwala Study Abroad Expo 2026",
+      "date": "2026-11-21",
       "time": "12:00 PM - 07:00 PM",
-      "location": "Serena Hotel - Faisalabad, Faisalabad, Pakistan",
-      "organizer": "Times Consultant",
-      "agent_name": "Times Consultant",
-      "agent_country": "Pakistan",
-      "agent_website": "https://timesconsultant.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "TC"
-    },
-    {
-      "id": 6698,
-      "name": "Gujrat Study Abroad Expo 2026",
-      "date": "2026-11-18",
-      "time": "12:00 PM - 07:00 PM",
-      "location": "Times Office - Gujrat, Gujrat, Pakistan",
+      "location": "Times Office Near Gift University - Gujranwala, Gujranwala, Pakistan",
       "organizer": "Times Consultant",
       "agent_name": "Times Consultant",
       "agent_country": "Pakistan",
@@ -76,27 +62,11 @@
       "initials": "IP"
     },
     {
-      "id": 7589,
-      "name": "Study Abroad Assessment Day | AHZ Bogura",
-      "date": "2026-11-19",
-      "time": "12:00 – 15:00",
-      "location": "Bogura, Pakistan",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
-      "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AA"
-    },
-    {
-      "id": 6697,
-      "name": "Gujranwala Study Abroad Expo 2026",
-      "date": "2026-11-21",
+      "id": 6698,
+      "name": "Gujrat Study Abroad Expo 2026",
+      "date": "2026-11-18",
       "time": "12:00 PM - 07:00 PM",
-      "location": "Times Office Near Gift University - Gujranwala, Gujranwala, Pakistan",
+      "location": "Times Office - Gujrat, Gujrat, Pakistan",
       "organizer": "Times Consultant",
       "agent_name": "Times Consultant",
       "agent_country": "Pakistan",
@@ -108,23 +78,37 @@
       "initials": "TC"
     },
     {
-      "id": 7590,
-      "name": "South Champagne Business School Open Day @ AHZ DHA Lahore",
-      "date": "2026-11-23",
-      "time": "16:00 – 18:00",
-      "location": "Lahore, Pakistan",
-      "organizer": "AHZ Associates Ltd",
-      "agent_name": "AHZ Associates Ltd",
+      "id": 6696,
+      "name": "Faisalabad Study Abroad Expo 2026",
+      "date": "2026-11-17",
+      "time": "12:00 PM - 07:00 PM",
+      "location": "Serena Hotel - Faisalabad, Faisalabad, Pakistan",
+      "organizer": "Times Consultant",
+      "agent_name": "Times Consultant",
       "agent_country": "Pakistan",
-      "agent_website": "ahzassociates.co.uk/",
+      "agent_website": "https://timesconsultant.com/contact",
       "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AA"
-    }
-  ],
-  "past": [
+      "initials": "TC"
+    },
+    {
+      "id": 6694,
+      "name": "Abbottabad Study Abroad Expo 2026",
+      "date": "2026-11-16",
+      "time": "12:00 PM - 07:00 PM",
+      "location": "Hotel One Abbottabad, Abbottabad, Pakistan",
+      "organizer": "Times Consultant",
+      "agent_name": "Times Consultant",
+      "agent_country": "Pakistan",
+      "agent_website": "https://timesconsultant.com/contact",
+      "registration_url": "",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "TC"
+    },
     {
       "id": 7294,
       "name": "Study in Ireland: Meet Dublin City University in Karachi",

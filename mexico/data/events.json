@@ -1,32 +1,34 @@
 {
   "country": "mexico",
   "country_name": "Mexico",
-  "generated_at": "2026-11-15T20:54:30",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
   "events": [
     {
-      "id": 7288,
-      "name": "Despega tu Carrera en IT en Western Australia con NIT",
-      "date": "2026-11-18",
+      "id": 7843,
+      "name": "Webinar: Estudia en Australia con Kaplan Business School",
+      "date": "2026-11-25",
       "time": "",
       "location": "Online",
-      "organizer": "Global Study Partners, Mexico",
-      "agent_name": "Global Study Partners, Mexico",
+      "organizer": "Go Study Australia Pty. Ltd.",
+      "agent_name": "Go Study Australia Pty. Ltd.",
       "agent_country": "Mexico",
-      "agent_website": "www.upgradgsp.com",
-      "registration_url": "https://www.upgradgsp.com/events/",
+      "agent_website": "https://www.gostudyaus.es",
+      "registration_url": "https://gostudyaus.es/community/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    },
+    }
+  ],
+  "past": [
     {
       "id": 7569,
       "name": "Tour Virtual del Campus - Universidades Australianas",
@@ -44,23 +46,21 @@
       "initials": "SP"
     },
     {
-      "id": 7568,
-      "name": "Webinar: Estudia en Australia con Kaplan Business School",
-      "date": "2026-11-25",
+      "id": 7288,
+      "name": "Despega tu Carrera en IT en Western Australia con NIT",
+      "date": "2026-11-18",
       "time": "",
       "location": "Online",
-      "organizer": "Go Study Australia Pty. Ltd.",
-      "agent_name": "Go Study Australia Pty. Ltd.",
+      "organizer": "Global Study Partners, Mexico",
+      "agent_name": "Global Study Partners, Mexico",
       "agent_country": "Mexico",
-      "agent_website": "https://www.gostudyaus.es",
-      "registration_url": "https://gostudyaus.es/community/events/",
+      "agent_website": "www.upgradgsp.com",
+      "registration_url": "https://www.upgradgsp.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "GS"
-    }
-  ],
-  "past": [
+    },
     {
       "id": 7287,
       "name": "Estudia Higher Education en Irlanda – Tu Portal a Europa",

@@ -1,16 +1,64 @@
 {
   "country": "ghana",
   "country_name": "Ghana",
-  "generated_at": "2026-11-15T20:54:29",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
   "events": [
+    {
+      "id": 7706,
+      "name": "Asia Pacific University Malaysia for Partner Agents in Bangladesh",
+      "date": "2026-11-23",
+      "time": "14:30",
+      "location": "Online",
+      "organizer": "ApplyBoard",
+      "agent_name": "ApplyBoard",
+      "agent_country": "Ghana",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 7705,
+      "name": "Bangor University | January 2027 Intake: Admissions, Compliance & Conversion Masterclass",
+      "date": "2026-11-25",
+      "time": "16:00",
+      "location": "Online",
+      "organizer": "ApplyBoard",
+      "agent_name": "ApplyBoard",
+      "agent_country": "Ghana",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 7700,
+      "name": "Meet Algonquin College Representative in Kumasi",
+      "date": "2026-11-27",
+      "time": "",
+      "location": "Kumasi, Ghana",
+      "organizer": "Astolinks International",
+      "agent_name": "Astolinks International",
+      "agent_country": "Ghana",
+      "agent_website": "www.astolinks.net",
+      "registration_url": "https://astolinks.net/events",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AI"
+    },
     {
       "id": 6827,
       "name": "Explore Career Opportunities in Australia with QUT Webinar - IDP Ghana",
@@ -42,25 +90,57 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "IE"
-    }
-  ],
-  "past": [
+    },
     {
-      "id": 6160,
-      "name": "",
-      "date": "2026-10-30",
-      "time": "",
+      "id": 7707,
+      "name": "Malaysia Admissions Day",
+      "date": "2026-11-28",
+      "time": "11:30 AM",
       "location": "Online",
-      "organizer": "Astolinks International",
-      "agent_name": "Astolinks International",
+      "organizer": "Edvoy Education Ltd",
+      "agent_name": "Edvoy Education Ltd",
       "agent_country": "Ghana",
-      "agent_website": "www.astolinks.net",
-      "registration_url": "https://www.astolinks.net/events",
+      "agent_website": "www.edvoy.com",
+      "registration_url": "https://edvoy.com/events/",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "AI"
+      "initials": "EE"
     },
+    {
+      "id": 7704,
+      "name": "Grow Your Canada Placements with St. Clair College – for India and South Asia Partners",
+      "date": "2026-11-30",
+      "time": "17:30",
+      "location": "Online",
+      "organizer": "ApplyBoard",
+      "agent_name": "ApplyBoard",
+      "agent_country": "Ghana",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 7703,
+      "name": "Grow Your Canada Placements with St. Clair College – Africa Partners",
+      "date": "2026-12-08",
+      "time": "13:00",
+      "location": "Online",
+      "organizer": "ApplyBoard",
+      "agent_name": "ApplyBoard",
+      "agent_country": "Ghana",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    }
+  ],
+  "past": [
     {
       "id": 5249,
       "name": "UK UNIVERSITY EXPO 2026 | FIESTA ROYALE HOTEL, ACCRA, GHANA",

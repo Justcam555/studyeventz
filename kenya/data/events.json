@@ -1,31 +1,47 @@
 {
   "country": "kenya",
   "country_name": "Kenya",
-  "generated_at": "2026-11-15T20:54:30",
+  "generated_at": "2026-11-22T21:29:23",
   "window": {
-    "from": "2026-11-15",
-    "to": "2026-12-15"
+    "from": "2026-11-22",
+    "to": "2026-12-22"
   },
   "archive": {
-    "from": "2024-11-15",
-    "to": "2026-11-14"
+    "from": "2024-11-22",
+    "to": "2026-11-21"
   },
   "events": [
     {
-      "id": 7561,
-      "name": "Meet the University Representatives: Northern Lights College & University Fraser Valley - Students/Parents Seminar",
-      "date": "2026-11-20",
-      "time": "14:00",
-      "location": "Nairobi, Kenya",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
+      "id": 7837,
+      "name": "Asia Pacific University Malaysia for Partner Agents in Bangladesh",
+      "date": "2026-11-23",
+      "time": "14:30",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
       "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com",
-      "registration_url": "https://www.uniserveducation.com/events",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
-      "initials": "UE"
+      "initials": "AP"
+    },
+    {
+      "id": 7836,
+      "name": "Bangor University | January 2027 Intake: Admissions, Compliance & Conversion Masterclass",
+      "date": "2026-11-25",
+      "time": "16:00",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Kenya",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
     },
     {
       "id": 6934,
@@ -60,7 +76,23 @@
       "initials": "IK"
     },
     {
-      "id": 7562,
+      "id": 7835,
+      "name": "Grow Your Canada Placements with St. Clair College – for India and South Asia Partners",
+      "date": "2026-11-30",
+      "time": "17:30",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Kenya",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
+    },
+    {
+      "id": 7832,
       "name": "Study in the USA - August Intake 2027",
       "date": "2026-12-01",
       "time": "12:30",
@@ -68,12 +100,28 @@
       "organizer": "Uniserv Education",
       "agent_name": "Uniserv Education",
       "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com",
-      "registration_url": "https://www.uniserveducation.com/events",
+      "agent_website": "www.uniserveducation.com/contact",
+      "registration_url": "",
       "logo_url": "",
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "UE"
+    },
+    {
+      "id": 7834,
+      "name": "Grow Your Canada Placements with St. Clair College – Africa Partners",
+      "date": "2026-12-08",
+      "time": "13:00",
+      "location": "Online",
+      "organizer": "Applyboard",
+      "agent_name": "Applyboard",
+      "agent_country": "Kenya",
+      "agent_website": "www.applyboard.com",
+      "registration_url": "https://www.applyboard.com/webinars",
+      "logo_url": "",
+      "logo_needs_bg": false,
+      "logo_bg_color": "",
+      "initials": "AP"
     }
   ],
   "past": [
@@ -142,38 +190,6 @@
       "initials": "CR"
     },
     {
-      "id": 5934,
-      "name": "St. Lawrence College - Students/Parents Information Session",
-      "date": "2026-11-06",
-      "time": "14:00",
-      "location": "Nairobi, Kenya",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
-      "id": 5933,
-      "name": "St. Lawrence College - Students/Parents Information Session (Eldoret)",
-      "date": "2026-11-05",
-      "time": "14:00",
-      "location": "Eldoret, Kenya",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
       "id": 6657,
       "name": "Managing AI at Work and Employees as ...",
       "date": "2026-10-28",
@@ -222,54 +238,6 @@
       "initials": "SU"
     },
     {
-      "id": 5932,
-      "name": "Northeastern University: Global Study Expo Africa",
-      "date": "2026-10-17",
-      "time": "16:00",
-      "location": "Nairobi, Kenya",
-      "organizer": "Uniserv Education",
-      "agent_name": "Uniserv Education",
-      "agent_country": "Kenya",
-      "agent_website": "www.uniserveducation.com/contact",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "UE"
-    },
-    {
-      "id": 5730,
-      "name": "The New ApplyBoard Elevate: Simpler Tiers, Higher Commissions",
-      "date": "2026-10-13",
-      "time": "7:00 AM EDT | 4:30 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Kenya",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
-      "id": 5729,
-      "name": "Learn More About London School of Business and Finance (Malaysia and Singapore)",
-      "date": "2026-10-09",
-      "time": "8:30 AM EDT | 6:00 PM IST",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Kenya",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
-    },
-    {
       "id": 5317,
       "name": "Study Abroad Fair | Mombasa, Kenya",
       "date": "2026-10-06",
@@ -284,22 +252,6 @@
       "logo_needs_bg": false,
       "logo_bg_color": "",
       "initials": "ST"
-    },
-    {
-      "id": 5728,
-      "name": "Elevating Germany Recruitment: Exclusive ISM International School of Management & ApplyBoard Prime Masterclass",
-      "date": "2026-10-05",
-      "time": "2PM PKT",
-      "location": "Online",
-      "organizer": "Applyboard",
-      "agent_name": "Applyboard",
-      "agent_country": "Kenya",
-      "agent_website": "www.applyboard.com",
-      "registration_url": "",
-      "logo_url": "",
-      "logo_needs_bg": false,
-      "logo_bg_color": "",
-      "initials": "AP"
     },
     {
       "id": 5316,
